@@ -439,6 +439,13 @@ body {
 .btn-b:hover {
   background-color: #189EF2;
 }
+.layui-layer-title {
+  margin-top: 9px;
+  background: #ffffff !important;
+  border-bottom: none !important;
+  font-weight: bold;
+  font-size: 16px !important;
+}
 .w1180 {
   width: 1180px;
   margin: 0 auto;

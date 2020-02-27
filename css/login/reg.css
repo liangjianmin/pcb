@@ -439,6 +439,13 @@ body {
 .btn-b:hover {
   background-color: #189EF2;
 }
+.layui-layer-title {
+  margin-top: 9px;
+  background: #ffffff !important;
+  border-bottom: none !important;
+  font-weight: bold;
+  font-size: 16px !important;
+}
 @font-face {
   font-family: "iconfont";
   src: url('iconfont.eot?t=1579247373090');

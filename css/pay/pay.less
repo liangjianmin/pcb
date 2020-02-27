@@ -80,10 +80,10 @@
   padding-bottom: 80px;
   margin-bottom: 59px;
   border-bottom: 1px solid #F0F4F7;
+  margin-top: 43px;
 
   .pay-box-l {
     width: 880px;
-    margin-top: 43px;
 
     .tit {
       .l {
@@ -132,18 +132,22 @@
         border: 1px solid rgba(240, 244, 247, 1);
         padding: 20px 30px 30px 30px;
         float: left;
-        &:first-child{
+
+        &:first-child {
           margin-right: 20px;
         }
+
         .top {
           padding-bottom: 20px;
           border-bottom: 1px solid #F0F4F7;
-          .pay-ico2{
+
+          .pay-ico2 {
             width: 60px;
             height: 60px;
             background: url("../../images/pay/bank.png") no-repeat center;
             background-size: cover;
           }
+
           .pay-ico1 {
             width: 60px;
             height: 60px;
@@ -161,6 +165,7 @@
 
         .cen {
           margin-top: 20px;
+
           .l {
             .t1 {
               color: #828e99;
@@ -189,7 +194,7 @@
           }
         }
 
-        .txt{
+        .txt {
           margin-top: 60px;
           width: 370px;
           height: 39px;
@@ -197,36 +202,96 @@
           color: #828e99;
         }
 
-        .pay-btn{
-          width:180px;
-          height:40px;
-          background:rgba(255,13,13,1);
-          border-radius:2px;
+        .pay-btn {
+          width: 180px;
+          height: 40px;
+          background: rgba(255, 13, 13, 1);
+          border-radius: 2px;
           font-size: 14px;
           color: #ffffff;
           display: block;
           line-height: 40px;
           text-align: center;
           margin-top: 30px;
+          cursor: pointer;
         }
-        .pay-btn-a{
-          width:240px;
-          height:40px;
-          background:rgba(255,13,13,1);
-          border-radius:2px;
+
+        .pay-btn-a {
+          width: 240px;
+          height: 40px;
+          background: rgba(255, 13, 13, 1);
+          border-radius: 2px;
           font-size: 14px;
           color: #ffffff;
           display: block;
           line-height: 40px;
           text-align: center;
           margin-top: 30px;
+          cursor: pointer;
         }
       }
     }
   }
 
   .pay-box-r {
+    width: 241px;
+    padding-left: 19px;
+    text-align: left;
+    border-left: 1px solid #F0F4F7;
+    padding-bottom: 11px;
 
+    .t1 {
+      font-size: 16px;
+      color: #2b2f33;
+      font-weight: bold;
+      padding-bottom: 16px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #F0F4F7;
+    }
+
+    .t2 {
+      margin-bottom: 13px;
+
+      .t2-1 {
+        font-size: 13px;
+        color: #828e99;
+      }
+
+      .t2-2 {
+        font-size: 13px;
+        color: #2b2f33;
+        font-weight: bold;
+      }
+
+      .t2-3 {
+        font-size: 16px;
+        color: #2b2f33;
+        font-weight: bold;
+      }
+
+      .t2-4 {
+        font-size: 16px;
+        color: #ff0d0d;
+        font-weight: bold;
+      }
+    }
+
+    .t3 {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #2b2f33;
+      font-weight: bold;
+      border-bottom: 1px solid #F0F4F7;
+      padding-bottom: 16px;
+      margin-bottom: 17px;
+    }
+
+    .t4 {
+      width: 239px;
+      font-size: 13px;
+      color: #575e66;
+      line-height: 18px;
+    }
   }
 }
 
@@ -251,5 +316,131 @@
     font-size: 16px;
     color: #ffffff;
     margin-left: 7px;
+  }
+}
+
+.bankTransfer {
+  padding: 40px;
+
+  .tip {
+    margin-bottom: 18px;
+    height: 40px;
+    background: #FFF8ED;
+
+    .iconfont {
+      margin-left: 20px;
+      font-size: 24px;
+      color: #D9B379;
+    }
+
+    span {
+      font-size: 13px;
+      color: #e89721;
+      margin-left: 10px;
+    }
+  }
+
+  .txt {
+    font-size: 13px;
+    color: #2b2f33;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .ta {
+    width: 540px;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    tr {
+      td {
+        height: 38px;
+        border: 1px solid #F0F4F7;
+
+        .t1 {
+          font-size: 13px;
+          color: #828e99;
+          margin-left: 20px;
+          margin-right: 20px;
+          display: inline-block;
+          width: 204px;
+        }
+
+        .t2 {
+          font-size: 13px;
+          color: #2b2f33;
+          font-weight: bold;
+        }
+
+      }
+    }
+  }
+
+  .tt {
+    margin-top: 20px;
+
+    .t1 {
+      font-size: 13px;
+      color: #575E66;
+      line-height:20px;
+    }
+  }
+
+  .operate{
+    margin-top: 30px;
+    .l{
+      margin-top: 13px;
+      i{
+        width: 16px;
+        height: 16px;
+        background:url("../../images/pay/left.png") no-repeat center;
+        background-size: cover;
+      }
+      font-size: 13px;
+      color: #0081d2;
+    }
+    .r{
+      width:160px;
+      height:40px;
+      line-height: 40px;
+      background:rgba(0,129,210,1);
+      border-radius:2px;
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+
+.message{
+  padding: 40px;
+  .txt{
+    font-size: 13px;
+    color: #575e66;
+    margin-bottom: 40px;
+  }
+  .btn-1{
+    width:180px;
+    height:40px;
+    background:rgba(240,244,247,1);
+    border-radius:2px;
+    font-size: 14px;
+    color: #2b2f33;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .btn-2{
+    width:160px;
+    height:40px;
+    background:rgba(0,129,210,1);
+    border-radius:2px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
   }
 }

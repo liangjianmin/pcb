@@ -439,6 +439,13 @@ body {
 .btn-b:hover {
   background-color: #189EF2;
 }
+.layui-layer-title {
+  margin-top: 9px;
+  background: #ffffff !important;
+  border-bottom: none !important;
+  font-weight: bold;
+  font-size: 16px !important;
+}
 @font-face {
   font-family: "iconfont";
   src: url('iconfont.eot?t=1579247373090');
@@ -616,10 +623,10 @@ body {
   padding-bottom: 80px;
   margin-bottom: 59px;
   border-bottom: 1px solid #F0F4F7;
+  margin-top: 43px;
 }
 .pay-box .pay-box-l {
   width: 880px;
-  margin-top: 43px;
 }
 .pay-box .pay-box-l .tit .l {
   font-size: 16px;
@@ -723,6 +730,7 @@ body {
   line-height: 40px;
   text-align: center;
   margin-top: 30px;
+  cursor: pointer;
 }
 .pay-box .pay-box-l .pay-list li .pay-btn-a {
   width: 240px;
@@ -735,6 +743,59 @@ body {
   line-height: 40px;
   text-align: center;
   margin-top: 30px;
+  cursor: pointer;
+}
+.pay-box .pay-box-r {
+  width: 241px;
+  padding-left: 19px;
+  text-align: left;
+  border-left: 1px solid #F0F4F7;
+  padding-bottom: 11px;
+}
+.pay-box .pay-box-r .t1 {
+  font-size: 16px;
+  color: #2b2f33;
+  font-weight: bold;
+  padding-bottom: 16px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #F0F4F7;
+}
+.pay-box .pay-box-r .t2 {
+  margin-bottom: 13px;
+}
+.pay-box .pay-box-r .t2 .t2-1 {
+  font-size: 13px;
+  color: #828e99;
+}
+.pay-box .pay-box-r .t2 .t2-2 {
+  font-size: 13px;
+  color: #2b2f33;
+  font-weight: bold;
+}
+.pay-box .pay-box-r .t2 .t2-3 {
+  font-size: 16px;
+  color: #2b2f33;
+  font-weight: bold;
+}
+.pay-box .pay-box-r .t2 .t2-4 {
+  font-size: 16px;
+  color: #ff0d0d;
+  font-weight: bold;
+}
+.pay-box .pay-box-r .t3 {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #2b2f33;
+  font-weight: bold;
+  border-bottom: 1px solid #F0F4F7;
+  padding-bottom: 16px;
+  margin-bottom: 17px;
+}
+.pay-box .pay-box-r .t4 {
+  width: 239px;
+  font-size: 13px;
+  color: #575e66;
+  line-height: 18px;
 }
 .chat-with {
   position: fixed;
@@ -756,5 +817,115 @@ body {
   font-size: 16px;
   color: #ffffff;
   margin-left: 7px;
+}
+.bankTransfer {
+  padding: 40px;
+}
+.bankTransfer .tip {
+  margin-bottom: 18px;
+  height: 40px;
+  background: #FFF8ED;
+}
+.bankTransfer .tip .iconfont {
+  margin-left: 20px;
+  font-size: 24px;
+  color: #D9B379;
+}
+.bankTransfer .tip span {
+  font-size: 13px;
+  color: #e89721;
+  margin-left: 10px;
+}
+.bankTransfer .txt {
+  font-size: 13px;
+  color: #2b2f33;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.bankTransfer .ta {
+  width: 540px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.bankTransfer .ta tr td {
+  height: 38px;
+  border: 1px solid #F0F4F7;
+}
+.bankTransfer .ta tr td .t1 {
+  font-size: 13px;
+  color: #828e99;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  width: 204px;
+}
+.bankTransfer .ta tr td .t2 {
+  font-size: 13px;
+  color: #2b2f33;
+  font-weight: bold;
+}
+.bankTransfer .tt {
+  margin-top: 20px;
+}
+.bankTransfer .tt .t1 {
+  font-size: 13px;
+  color: #575E66;
+  line-height: 20px;
+}
+.bankTransfer .operate {
+  margin-top: 30px;
+}
+.bankTransfer .operate .l {
+  margin-top: 13px;
+  font-size: 13px;
+  color: #0081d2;
+}
+.bankTransfer .operate .l i {
+  width: 16px;
+  height: 16px;
+  background: url("../../images/pay/left.png") no-repeat center;
+  background-size: cover;
+}
+.bankTransfer .operate .r {
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  background: #0081d2;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+.message {
+  padding: 40px;
+}
+.message .txt {
+  font-size: 13px;
+  color: #575e66;
+  margin-bottom: 40px;
+}
+.message .btn-1 {
+  width: 180px;
+  height: 40px;
+  background: #f0f4f7;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #2b2f33;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.message .btn-2 {
+  width: 160px;
+  height: 40px;
+  background: #0081d2;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
 }
 /*# sourceMappingURL=pay.css.map */
