@@ -1,0 +1,387 @@
+@import '../common/base.less';
+@import '../common/font/iconfont.less';
+
+.cart-box-head {
+  width: 100%;
+  height: 120px;
+  background: #F0F4F7;
+
+  .l {
+    margin-top: 44px;
+    font-size: 24px;
+    color: #2b2f33;
+    border-left: 5px solid #C2C7CC;
+    padding-left: 10px;
+  }
+
+  .r {
+    margin-top: 20px;
+
+    ul {
+      li {
+        position: relative;
+        text-align: center;
+        margin-right: 48px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .t1 {
+          width: 44px;
+          height: 44px;
+          line-height: 44px;
+          text-align: center;
+          background: rgba(194, 199, 204, 1);
+          margin: 0 auto;
+          border-radius: 50%;
+
+          .iconfont {
+            font-size: 24px;
+            color: #fff;
+          }
+        }
+
+        b {
+          position: absolute;
+          top: 22px;
+          left: 87px;
+          width: 100px;
+          height: 1px;
+          border-top: 1px dashed #C2C7CC;
+          display: block;
+        }
+
+        p {
+          width: 110px;
+          height: 30px;
+          margin-top: 6px;
+          line-height: 15px;
+          font-size: 13px;
+          color: #828e99;
+          text-align: center;
+        }
+
+        &.curr {
+          .t1 {
+            background: #1DDA74;
+          }
+
+          p {
+            color: #2b2f33;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card-box-cen {
+  .wrap {
+    .head {
+      padding: 30px 0;
+
+      .l {
+        .icondianluban {
+          color: #087DC3;
+          font-size: 24px;
+        }
+
+        .t1 {
+          span {
+            color: #2b2f33;
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+          em {
+            position: relative;
+            top: -10px;
+            width: 16px;
+            height: 16px;
+            background: rgba(255, 13, 13, 1);
+            border-radius: 8px;
+            font-style: normal;
+            color: #ffffff;
+            font-size: 12px;
+            text-align: center;
+            line-height: 16px;
+          }
+        }
+
+      }
+
+      .r {
+        .txt {
+          .t1 {
+            font-size: 13px;
+            color: #828e99;
+          }
+
+          .t2 {
+            font-size: 13px;
+            color: #575e66;
+            margin-left: 30px;
+          }
+        }
+
+      }
+    }
+
+    .pcb-cart-empty{
+      .icongouwuche{
+        font-size: 60px;
+        color: #0184d0;
+        text-align: center;
+        display: block;
+        margin: 0 auto 60px;
+      }
+      .t1{
+        font-size: 24px;
+        color: #2b2f33;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .btn{
+        width:120px;
+        height:40px;
+        background:rgba(0,129,210,1);
+        border-radius:2px;
+        font-size: 14px;
+        color: #fff;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+
+    .pcb-cart {
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        tr {
+           border: 1px solid #FAFCFF;
+          th {
+            height: 50px;
+            padding: 0 20px;
+            background: #F0F4F7;
+            vertical-align: middle;
+            font-size: 13px;
+            color: #828e99;
+            font-weight: normal;
+            text-align: left;
+          }
+
+          td {
+            padding: 20px;
+            color: #2b2f33;
+            font-size: 13px;
+            text-align: left;
+
+            .t1 {
+              white-space: nowrap;
+
+              .cicle {
+                width: 12px;
+                height: 12px;
+                padding: 3px;
+                border-radius: 18px;
+                border: 1px solid #C2C7CC;
+                position: relative;
+                margin-right: 10px;
+                cursor: pointer;
+              }
+
+              &.act{
+                span{
+                  border-color: #0081D2;
+                  i{
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    background: #0081D2;
+                    border-radius: 12px;
+                  }
+                }
+
+              }
+
+
+              .t1-a {
+                font-size: 16px;
+                color: #2b2f33;
+                margin-bottom: 12px;
+                font-weight: bold;
+              }
+
+              .t1-b {
+                font-size: 13px;
+                color: #2b2f33;
+                margin-bottom: 12px;
+              }
+
+              .t1-c {
+                font-size: 13px;
+                color: #0081d2;
+              }
+
+            }
+
+            .go {
+              width: 80px;
+              height: 25px;
+              background: rgba(0, 129, 210, 1);
+              border-radius: 2px;
+              display: block;
+              text-align: center;
+              line-height: 25px;
+              font-size: 14px;
+              color: #ffffff;
+              margin-bottom: 9px;
+            }
+
+            .remove {
+              width: 80px;
+              font-size: 13px;
+              color: #828e99;
+              text-align: center;
+              display: block;
+            }
+
+            .t2 {
+              font-size: 16px;
+              color: #ff0d0d;
+              font-weight: bold;
+            }
+
+            .uploa-show {
+              span {
+                font-size: 13px;
+                color: #2B2F33;
+                font-weight: bold;
+              }
+            }
+
+            .upload-box {
+              margin-top: 7px;
+              .iconfile{
+                font-size: 26px;
+                color: #0081d2;
+              }
+              span {
+                font-size: 13px;
+                color: #0081d2;
+                margin-right: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .pcb-cart-detail {
+        margin-top: 30px;
+        padding: 0 20px;
+
+        .l {
+          .cicle {
+            width: 12px;
+            height: 12px;
+            padding: 3px;
+            border-radius: 18px;
+            border: 1px solid #C2C7CC;
+            position: relative;
+            margin-right: 10px;
+            cursor: pointer;
+          }
+
+          .t2 {
+            font-size: 13px;
+            color: #575e66;
+          }
+
+          .t3 {
+            font-size: 13px;
+            color: #575e66;
+            margin-left: 40px;
+            cursor: pointer;
+          }
+        }
+
+        .r {
+          .t1 {
+            font-size: 13px;
+            color: #575e66;
+            margin-right: 30px;
+
+            em {
+              color: #ff0d0d;
+              font-style: normal;
+            }
+          }
+
+          .t2 {
+            font-size: 16px;
+            color: #2b2f33;
+          }
+
+          .t3 {
+            font-size: 16px;
+            color: #ff0d0d;
+            font-weight: bold;
+          }
+
+          .btn {
+            width: 190px;
+            height: 60px;
+            background: rgba(232, 151, 33, 1);
+            font-size: 16px;
+            color: #ffffff;
+            line-height: 60px;
+            text-align: center;
+            margin-left: 18px;
+            transition: all 0.2s ease;
+            &:hover{
+              background: #FFB03D;
+            }
+          }
+        }
+      }
+    }
+
+    .pcb-tb {
+      .tit {
+        margin-top: 30px;
+        font-size: 16px;
+        color: #2b2f33;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .txt{
+        .t1{
+          font-size: 16px;
+          color: #2b2f33;
+          margin-bottom: 12px;
+        }
+        .t2{
+          font-size: 13px;
+          color: #575e66;
+          width: 518px;
+          line-height:20px;
+          margin-bottom: 30px;
+          a{
+            color: #0081d2;
+          }
+        }
+        .l{
+          width: 50%;
+        }
+        .r{
+          width: 50%;
+        }
+      }
+    }
+  }
+}

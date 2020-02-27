@@ -1,0 +1,563 @@
+﻿@charset "utf-8";
+.cl-b16a00{color: #b16a00;}
+.mt6{margin-top: 6px;}
+.mt15{margin-top: 15px;}
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
+.mr5{margin-right: 5px;}
+.mr4{margin-right: 4px;}
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px;}
+.w80{width: 80px;}
+.w100{width: 100px;}
+.w35{width: 35px;}
+.text-center{text-align: center;}
+.input-default{height: 24px; padding: 2px 10px; border: 1px solid #e7e7e7;}
+.select-default{ height: 30px; line-height: 30px; padding: 2px 5px; border: 1px solid #e7e7e7;}
+.cl-f00{color:#f00}
+.loading{position: absolute; left: 0; top: 0; width: 100%; height: 100%; background:#000;filter:alpha(opacity=20);-moz-opacity:0.2;opacity: 0.2;}
+.loading img{ width: 32px; height: 32px; margin-left: auto; margin-right: auto; display: block;}
+/*可通用的背景色*/
+.bg-f90{background-color: #f90;}
+.bg-fff5e7{background-color: #fff5e7;}
+.bg-8a8a8a{background-color: #8a8a8a;}
+/*可通用圆角、边框线*/
+.line-through{text-decoration: line-through;}
+.b-bradius4{-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; overflow: hidden;}
+.b-bradius0{-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; overflow: hidden;}
+.b2-f90{border: 2px solid #f90;}
+/*可通用图标*/
+.jp-ico{background-image: url("../../images/pcbonline/icons.png"); background-repeat: no-repeat; vertical-align: middle; display: inline-block;}
+.pcbonline-ico{width: 17px; height: 21px; margin-right: 4px;background-position: -46px -12px;}
+.optiontip-ico{width: 14px; height: 14px; background-position: -66px -12px; overflow: hidden;font-size:12px;}
+.subscript-ico{position: absolute; bottom: 0px; right: 0px; width: 10px; height: 10px; background-position: -40px 0;}
+.bigcart-ico{width: 26px; height: 26px; background-position: -82px -12px; margin-right: 10px;}
+/*可通用按钮*/
+.btn-yellow{background-color: #f90; color: #fff; border: none;}
+.btn-yellow:hover,.btn-yellow:focus{background-color: #ffad33; color: #fff;}
+
+.pcbonline{font-size: 14px; background-color: #f8f8f8; padding-top: 20px; padding-bottom: 100px;}
+.pcb-con .pcbonline-ico{background-position: -46px -12px;}
+/*计价参数*/
+.pcbonline-box {/*background-color: #fff;*/ padding-top: 20px; padding-bottom: 20px;position:relative;}
+.pcbonline-options{width: 800px;padding-top:0!important}
+.pcbonline-options .option{margin-bottom: 20px; padding-left: 25px; padding-right: 22px;}
+.pcbonline-options .title{width: 145px;}
+.pcbonline-options .h30{line-height: initial;}
+.option-con{width: 600px;}
+.bg-fff{background:#fff;}
+
+.xy-sizepanelpic {position:absolute; top:0px; right:20px;}
+.option-choose{margin: 0; padding: 0;}
+.option-choose li{float: left;}
+.option-choose .item{padding: 5px 10px 4px; height: 18px; line-height: 18px; color: #666; border: 1px solid #e7e7e7; margin-right: 8px; font-weight: 400; cursor: pointer; display: inline-block;}
+.option-choose .choose{border: 2px solid #f90; color: #000; padding-top: 4px; padding-bottom: 3px;}
+.pcbonline-options .option-number{width: 80px; height: 28px; border: 1px solid #e7e7e7; padding-left: 10px; padding-right: 10px;}
+.example-color{width: 12px; height: 12px; margin-right: 4px; display: inline-block; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;}
+.example-color-green{background-color: #007606;}
+.example-color-red{background-color: #c81609;}
+.example-color-yellow{background-color: #ffde00;}
+.example-color-blue{background-color: #0943c8;}
+.example-color-black{background-color: #000;}
+.example-color-white{background-color: #fff; border: 1px solid #ccc;}
+.example-color-matteblack{background-color: #333;}
+.example-color-mattegreen{background-color: #46c017;}
+.example-color-whitehigh{    background-color: #fff;
+    border: 1px solid #ccc;}
+
+.tipscon{background-color:#fff; width:500px; -webkit-box-shadow: 0 0 15px #999; -moz-box-shadow: 0 0 15px #999; box-shadow: 0 0 15px #999; padding:10px; color:#000; line-height:16px; font-weight:400; border:1px solid #ccc; text-align:left; position:absolute; top:-16px; left:20px; display:none; z-index:1000;text-indent:1px;}
+/*板子数量下拉*/
+.boardnumber {position:absolute;border:1px solid #f90;width:500px;padding:10px;top:28px;left:0;z-index:199;background-color:#fff;}
+.boardnumber label{display: block;}
+.boardnumber li {float:left;width:15%;padding:2px 0 2px 6px; margin-right:6px; margin-bottom:4px; line-height:normal; overflow: inherit;}
+.boardnumber li:hover {box-shadow:0 0 10px #ccc;}
+.boardnumber li label {display:block;}
+.boardnumber .boardnumberbtn {float:left;margin:10px 0;width:100%;}
+#hidNum{position:relative; z-index:200;}
+#txtSelNum{width: 100px; height: 20px; padding: 2px 10px; border: 1px solid #e7e7e7;}
+/*示例图片*/
+.example-diagram{display: inline-block;}
+.example-diagram-con{position: absolute; left: -34px; z-index: 20; padding: 15px; background-color: #fff; border: 1px solid #ddd;}
+/*计价结果*/
+.pcbonline-results{width: 480px;}
+.pcbonline-results h3{margin: 5px 0 15px;}
+.pcbonline-results .loading img{margin-top: 260px;}
+/*费用明细*/
+.cost-details-list{width: 514px; border-right: 1px solid #cacaca;}
+.cost-details-list dt,.cost-details-list dd,.price-delivery-list dt{ overflow: hidden;}
+.cost-details-list dt{background-color: #e1e1e1;}
+.cost-details-list .ww{width: 63px; padding-top: 4px; padding: 4px 0; border-left: 1px solid #cacaca; border-top: 1px solid #cacaca; border-bottom: 1px solid #cacaca; display: block;}
+.cost-details-list .w8{width: 65px;}
+/*PCB价格和交期*/
+.price-delivery-list dt{height: 35px; line-height: 35px; color: #fff;background:#f0f0f0!important;border-radius:4px}
+.price-delivery-list dt span{height: 35px; line-height: 35px; color: #8d8d8d;background:#f0f0f0!important;}
+.price-delivery-list dd{height: 42px; line-height: 26px;padding-bottom:18px;border-bottom:1px solid #f4f4f4;}
+.price-delivery-list .ww{display: block; }
+.price-delivery-list .w1{width: 40%;font-size:14px;}
+.price-delivery-list .w2{width: 30%;font-size:14px;}
+.price-delivery-list .w3{width: 30%;font-size:14px;}
+.c616161{color:#616161;}
+/*快递公司*/
+.courier-company{/*border-bottom: 1px solid #e5e5e5;*/ padding-bottom: 10px;}
+.courier-company .form-control{width: auto; display: inline-block; margin-right: 10px;}
+/*备注*/
+.remarks li{margin-bottom: 10px;}
+.remarks textarea{width: 500px; padding: 10px; border: 1px solid #ddd;}
+/*价格*/
+.price{margin-right: 10px; border-bottom: 1px solid #e8e8e8; padding-bottom: 5px;}
+/*加入购物车*/
+.add-cart{ cursor: pointer;width:430px;padding:0;height:46px;line-height:46px;}
+/*计价按钮*/
+.quotenow{ position:absolute; right:-70px; top:40%;width:70px; height:70px;line-height:70px ;border-radius:50%; z-index:111; text-align:center;background:#FF9900; background: linear-gradient(#FF9900,#FF6600) ;box-shadow: 0 0 10px #999; border: 1px solid #FF9900; cursor:pointer;}
+.quotenow a{ display:block; height:70px; line-height:22px; padding-top:12px; font-size:20px; text-decoration:none; color:#fff;}
+.quotenow:active a {font-size:22px;}
+
+.tip{font-size: 12px; line-height: 16px;  border-top: 1px solid #e5e5e5; margin-top: 20px; padding-top: 15px;}
+
+.pcbonline-options .solder-mask,.pcbonline-options .silkscreen-color{margin-bottom: 0;}
+.pcbonline-options .solder-mask li,.pcbonline-options .silkscreen-color li{margin-bottom: 10px;}
+
+/*其它特殊选项*/
+.other-special-options h3{height: 42px; line-height: 42px; background-color: #f4f4f4; padding-left: 25px; padding-right: 25px;}
+/*工艺边宽度*/
+.craft-edge-width{width: 120px; background-color: #eee; border: 1px solid #dcdcdc; margin-right: 10px;}
+.craft-edge-width .input-default{width: 64px;}
+/**/
+.imitation-requirements .request-item .title{width: 150px;}
+.imitation-requirements .request-item .option-con{width: 390px;}
+.imitation-requirements .request-item li{margin-top: 8px;}
+/*拼版要求提示*/
+.imposition-requires-presentation{width: 440px; padding: 10px; border: 1px solid #b16a00; background-color: #fff5e7;}
+.imposition-requires-presentation p{margin-bottom: 0;}
+.imposition-requires-presentation .btn-operating{position: absolute; right: 10px; bottom: 5px;}
+.imposition-requires-presentation .btn-operating a{height: 20px; text-align: center; line-height: 20px; padding-left: 10px; padding-right: 10px; display: inline-block;}
+
+/**/
+.single-sided li{float: left; margin-top: 8px;}
+.single-sided .option-number{width: 90px;}
+
+/*层序*/
+.layersort{width: 395px; }
+.layersort li{float: left; margin-top: 10px;    border: 1px solid #ccc;
+    color: #ccc;
+    margin-right: 5px;
+    width: 90px!important;
+    padding-left: 5px;
+    height: 30px;}
+
+
+.option-choose .unifyitem{width:36px;padding: 5px 0 4px;text-align: center;box-sizing:content-box}
+.option-choose .choose{padding-top:4px!important;padding-bottom:3px!important}
+/*20171024 计价页tab选项*/
+.quote-box{width:100%; padding: 87px 0 0;background:url("../../images/pcbonline/topbanner.jpg") no-repeat center center;margin:auto;height:50px;}
+.tab-quote{width:1300px; margin: 0 auto 0px;}
+.tab-quote li{float:left; height:50px; padding:0 24px;background-color:#ffffff;border-radius:3px 3px 0 0; text-align:center; line-height:50px; margin-left:0px; margin-right:11px;}
+.tab-quote li a{font-size:18px; color:#999; display:block;}
+.tab-quote li:nth-of-type(5){margin-right:0}
+.tab-quote .i-ico{width:29px; height:29px; vertical-align:middle; margin-right:10px; background-image:url('../../images/orderonline/icon_online.png');}
+.tab-quote .ico-pcb{background-position: 0px 0px;}
+.tab-quote .ico-pcba{background-position: 0px -29px;}
+.tab-quote .ico-stencil{background-position: 0px -58px;}
+.tab-quote .ico-stencil{background-position: 0px -58px;}
+.tab-quote .ico-membrane{background-position: 0px -116px;}
+.tab-quote .ico-bom{background-position: 0px -87px;}
+.tab-quote .ico-bmkg{background-position: 0px -143px;width:40px!important;}
+.tab-quote li.active,.tab-quote li:hover{background-color:#E89721; }
+.tab-quote li.active a{color:#fff; text-decoration:none;}
+.tab-quote li:hover a{color:#fff; text-decoration:none;}
+.tab-quote li.active .ico-pcb,.tab-quote li:hover .ico-pcb{background-position: -29px 0px;}
+.tab-quote li.active .ico-pcba,.tab-quote li:hover .ico-pcba{background-position: -29px -29px;}
+.tab-quote li.active .ico-stencil,.tab-quote li:hover .ico-stencil{background-position: -29px -58px;}
+.tab-quote li.active .ico-membrane,.tab-quote li:hover .ico-membrane{background-position: -29px -116px;}
+.tab-quote li.active .ico-bom,.tab-quote li:hover .ico-bom{background-position: -29px -87px;}
+.tab-quote li.active .ico-bmkg,.tab-quote li:hover .ico-bmkg{background-position: -40px -143px;}
+.tab-quote li:nth-of-type(4){margin-right:18px}
+
+.stepul{padding: 15px 40px 5px;}
+.stepul p{line-height: 24px;font-size: 14px;}
+.stepul li{width:20%;float:left;text-align:center;}
+.stepul li span{display:block;width:10px;height:10px;border-radius:50%;background:#ededed;margin:8px auto 0;}
+.stepul li div{display:block;width:100%;height:2px;background:#f7f7f7;margin:0 auto -14px;}
+.stepul .activeli span,.stepul .activeli div{background:#f90;}
+.stepul .activeli p{color:#f90}
+.DeliveryDaysStr{font-size:14px;font-weight:600}
+/*20180202 预计发货 预计到货*/
+.pcb-time{padding-bottom: 20px; border-bottom: 1px solid #e5e5e5;}
+.pcb-time .item{width: 210px;background:#fffaf3;height:60px;padding-top:10px;padding-left:40px;box-sizing:border-box;}
+.pcb-time .ico-pcbtime{width: 39px; height: 41px; background-image: url("../../images/pcbonline/newicon_pcbtime.png"); background-repeat: no-repeat;margin-right: 10px;}
+.pcb-time .expected-ship{background-position: 0px 0;}
+.pcb-time .expected-arrival{background-position: -80px 0;}
+.pcb-time .dividing-line{width: 17px; height: 50px; background-position: 0 0;}
+.pcb-time span{display:inline!important}
+
+/*20180502拼版信息*/
+.w65{width: 65px;}
+.h35{height: 35px; line-height: 35px;}
+.mr15{margin-right: 15px;}
+.cl-999{color: #999;}
+#informationpinban{position: fixed; top: 100px; left: 50%;  z-index:-999;  padding: 30px 20px; background-color: #fff;border: 1px solid #ddd; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; overflow: hidden;}
+.imposition-informationExample{position: absolute; z-index: -10;}
+.imposition-information{width:315px; padding: 15px 20px 30px 15px; background-color: #fff; border: 1px solid #ddd; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;}
+.imposition-information .panel-x{width: 200px;}
+.imposition-information .panel-x .number {position:relative;text-align:center;border-left:1px solid #d7d7d7;border-right:1px solid #d7d7d7;line-height:18px;height:18px;}
+.imposition-information .panel-x .number:after {position:absolute;left:0;top:9px;width:100%;height:1px;background-color:#d7d7d7;content:"";}
+.imposition-information .panel-x .number span {position:relative;z-index:1;padding:0 9px;line-height:18px;background:#fff;text-align:center;color:#999;}
+.imposition-information .panel-y {position:absolute;right:0px;top:55px;width:37px;}
+.imposition-information .panel-y .number {position:relative; height:auto; text-align:center;border-top:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7; z-index: 999;}
+.imposition-information .panel-y .number:after {position:absolute;left:18px;top:0;width:1px;height:100%;background-color:#d7d7d7;content:"";}
+.imposition-information .panel-y .number span {display:block;position:relative;top:50%;margin-top:-19px;z-index:1;background:#fff;text-align:center;color:#999;}
+.imposition-information .panel-item{width: 275px;}
+
+.imposition-information li{overflow: hidden; font-size: 0;}
+.imposition-information .item{display: block;background-color:#05b302; border-right:1px dashed #ccc; border-bottom:1px dashed #ccc;}
+
+.imposition-information .edgerailwidth{background-color: #0c3a0c;}
+
+#informationpinban .title{margin: 0;}
+#informationpinban .operating{width: 600px; margin-left: auto; margin-right: auto;}
+#informationpinban .operating a{display: block; padding-left: 15px; padding-right: 15px;}
+.suggest-masklayer{position: fixed; top: 0px; left: 0px; width: 100%; background-color: #000; opacity: 0.3; filter: alpha(opacity=30); z-index: 999;}
+.informationpinban-suggest{width: 730px; margin-left: -348px; }
+.informationpinban-suggest .suggest-imposition-information{margin-left: 20px;}
+.informationpinban-suggest .imposition-informationExample{position: relative;}
+.informationpinban-example{width: 500px; margin-left: -232px;}
+.informationpinban-example .suggest-imposition-information{margin-left: 0px;}
+.informationpinban-equal{width: 500px; margin-left: -232px;}
+.informationpinban-equal .suggest-imposition-information{margin-left: 520px;}
+
+/*新增201811105*/
+/*.priceTabletitle {background:#eee;padding-left:14px;border-radius:4px 4px 0 0;}*/
+.priceTabletitle h3 {margin-bottom:0;color:#000;font-size:20px;line-height:35px;}
+.option-con textarea {width: 500px; padding: 10px; border: 1px solid #ddd;}
+.main-l {width:800px;}
+.item-box{padding: 15px 10px 20px; background-color: #fff;}
+.pcb h3 {padding-left:24px;}
+.pcba-list{margin-bottom:10px;padding-left:175px;padding-right:0;position:relative;margin-top:10px;}
+.pcba-list h3{line-height: 14px; font-weight:400; display: inline-block; font-size:14px;margin:0 8px 0 0;min-width:170px;text-align:left;white-space:nowrap;left:0;position:absolute;top:11px;}
+.flexopt{ background:#fff;border:1px solid #eee;display:inline-block;*display:inline;*zoom:1; width:149px; border-radius:3px; overflow:hidden; vertical-align:middle; /*margin:0 5px 0 5px;*/ color:#666;font-size:12px; text-align:center; cursor:pointer;height:58px;}
+.flexopt span{display:block; font-weight:bold; color:#000; font-size:14px; padding-top:2px;}
+.flexopt p{ font-size:12px;color:#a6a6a6;text-align:left;padding:0 5px;}
+.flexopt i {display:none;}
+    .flexopt.selected {
+        border: 2px solid #f90;
+        background-image: url('../img/indexv3/bj.png');
+    }
+.flexopt.selected i{display:block}
+.pcba-list input[type=number]{border:1px solid #ccc;border-radius:4px;width:140px;height:28px;line-height:28px;padding-left:10px; position:relative;z-index:2;}
+.pcba-list span.tips{margin-left: 10px;}
+.pcba-list select{border: 1px solid #c6cad1; padding: 7px;-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.textarea{max-width:100%;min-height:70px;line-height:18px;padding:6px 10px;resize:none;width:90%;display:block;height:28px;font-size:14px;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:3px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}
+
+.note-assembly{ padding:10px;border:1px dashed #ccc; margin-bottom:10px; font-size:12px;}
+.note-assembly h4{ margin-bottom:8px; font-weight:bold;}
+.note-assembly li{ list-style:disc; margin-left:20px;color:#888; margin-bottom:5px;}
+.assembly-notice {background:#fff6e6;overflow:hidden;padding:10px;color:#888;font-size:12px;}
+
+.pcb h3{font-size: 20px;line-height:40px;}
+.pcb .title{ cursor: pointer;}
+.pcba .i-ico,.pcb .i-ico,.stencil .i-ico{background-position: -86px -492px; width: 7px; height: 5px; vertical-align: middle; margin-left: 6px;}
+.pcb .PCBSpecifications-note,.stencil .PCBSpecifications-note{ font-size:13px; font-weight:normal;}
+
+.pcb-con,.stencil-con{font-size: 14px;}
+/*.pcb-con li,.stencil-con li{float: left;line-height:28px;width:100%;margin:0 0 6px; overflow: inherit;}*/
+/*.pcb-con .fl,.stencil-con .fl{width:27%;margin-right:1%;text-align:right;}*/
+.pcb-con .fl .bg_ico,.stencil-con .fl .bg_ico{width:16px;height:16px;display:inline-block;background-position:0 -81px;margin-left:2px;}
+.pcb-con .fr,.stencil-con .fr{float: left; width: 72%;}
+.pcb-con .choose p,.stencil-con .choose p,.stencil-con select{color:#000; float:left; /*-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;*/ height:28px; position:relative;line-height:28px;padding:0 8px;margin-bottom:4px;border:1px solid #ddd;margin-right:10px;text-decoration:none;cursor:pointer;}
+.pcb-con .choose p input,.stencil-con .choose p input{display: none;}
+.pcb-con .choose .on,.stencil-con .choose .on{border: 2px solid #FF9900; color: #000;}
+.pcb-con .choose .on .bg_ico,.stencil-con .choose .on .bg_ico{width:12px;height:12px;display:inline-block;background-position:-74px -49px;position:absolute;right:-2px;bottom:-1px;}
+.choose p .green{color:green}
+.choose p .Red{color:#f00}
+.choose p .yellow{color:#ff0}
+.choose p .blue{color:#00f}
+.choose p .White i{color:#fff; height:6px; width:6px; border:1px solid #000; position:absolute; top:8px; left:8px;}
+.choose p .black{color:#000}
+.choose p .example-color-matteblack{color: #333;}
+.choose p .example-color-mattegreen{color: #46c017;}
+
+
+.pcb-con .area span{border:1px solid #ccc;border-radius:4px;width:80px;height:30px;line-height:30px;display:inline-block;overflow:hidden;}
+.pcb-con .area input{width:68px;padding:7px 6px;border:none;display:inline-block;text-indent:2px; border-radius: 4px;}
+.pcb-con .area em{display:inline-block;float:left;margin:2px 6px;}
+/*.pcb-con .xy-sizepanelpic {position:absolute;top:-4px;left:250px;}*/
+.pcb-con li .input,.stencil-con li .input{border:1px solid #ccc;border-radius:4px;width:189px;height:28px;line-height:28px;padding-left:10px; position:relative;z-index:2;}
+.pcb-con .ex-box {float:left;margin-left:15px;position:relative;}
+.pcb-con .ex-box a {cursor:pointer;}
+.pcb-con .ex-show {position:absolute;top:26px;left:0px;display:none;z-index:150;width:333px;height:209px;background:url('../../images/orderonline/o_show_box.png') no-repeat;}
+.pcb-con .ex-show img {width:300px;margin:0 auto;display:block;padding-top:20px;}
+.pcb-con .tipscon,.stencil-con .tipscon{background-color:#fff; width:500px; -webkit-box-shadow: 0 0 15px #999; -moz-box-shadow: 0 0 15px #999; box-shadow: 0 0 15px #999; padding:10px; color:#000; line-height:16px; font-weight:400; border:1px solid #ccc; text-align:left; position:absolute; top:-16px; left:20px; display:none; z-index:1000;}
+
+.btn-quote-now{width: 180px; height: 40px; text-align: center; line-height: 40px; margin: 20px auto 0; background-color: #f90; color: #fff; font-size: 24px; display: block; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.btn-quote-now:hover{color: #fff; text-decoration:none;}
+.btn-quote-now:active{font-size: 36px;}
+
+.main-r{width: 520px;}
+.select-result{width: 478px; position:relative; z-index:6;}
+
+.select-hd{padding-left: 27px; margin-bottom: 4px;}
+.select-hd span{font-size: 12px !important;}
+.select-result .item{padding: 5px 5px 5px 27px; font-size: 14px; position: relative; cursor: pointer;}
+.select-result .item label{width: 13px; height: 13px; cursor: pointer; display: inline-block; background: url('../../images/orderonline/jijia_ico.png') no-repeat -86px -470px; position: absolute; top: 11px; left: 8px;}
+.select-result .item input[type=radio]{display: none;}
+.select-result span{display: inline-block; font-size: 14px; text-align: center;}
+.select-result .w_1{width: 25%;}
+.select-result .w_1 img{height: 12px;}
+.select-result .w_2{width: 35%;}
+.select-result .w_3{width: 35%;}
+.select-result .price{color: #ff6a00;}
+
+.radioOn {border: 1px solid #f90 !important; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; overflow:hidden;}
+.radioOn .bg_ico{width:12px; height:12px; display:inline-block; background-position:-74px -49px; position:absolute; right:-2px; bottom:-1px }
+.select-result .item.radioOn label{background-position: -100px -470px;}
+
+.select-result select{border: 1px solid #cbcbcb;padding: 6px; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.expresstype{width: 130px; margin-right: 10px;}
+.input_cou{margin-left:10px;}
+.select-result .item-info img{margin-right: 10px;}
+.select-result .price-info{border-bottom: 1px dashed #ddd; padding-bottom: 5px;}
+.select-result .price-info li{font-size: 14px; line-height: 20px; overflow: hidden;}
+.select-result .price-info .price{font-size: 20px;}
+.select-result .your-eamil input[type=text]{width: 180px; padding: 6px; border: 1px solid #ccc; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.select-result .enter{display:block; padding: 0 25px; margin-top: 14px; height:40px; line-height:40px; border-radius: 4px; background:#FF9900; text-align:center;font-size:18px; color:#fff; text-decoration:none}
+.select-result .enter .bg_ico{vertical-align: text-bottom; width:26px; height:24px; background-position: 0 -49px; display:inline-block; margin-right:10px; margin-top:8px}
+
+.select-result .tips .i-ico{width: 13px; height: 16px; background-position: -82px -216px;}
+.select-result .tips span{width: 96%; margin-left: 1%; text-align: left; font-size: 12px; line-height: 16px; color: #ff6a00; display: block;}
+
+.btn-more .i-ico{margin-left: 4px;vertical-align: middle; width: 7px; height: 5px; background-position: -101px -216px; display: inline-block;}
+
+.boardnumber {position:absolute;border:1px solid #FF9900;width:500px;padding:10px;top:30px;left:0;z-index:999;background-color:#fff;}
+.boardnumber li {width:16%;padding:2px 0;line-height:normal;}
+.boardnumber li:hover {box-shadow:0 0 10px #ccc;}
+.boardnumber li label {display:block;}
+.boardnumber .boardnumberbtn {float:left;margin:10px 0;width:100%;}
+
+/*钢网*/
+.textarea {padding:10px; line-height:18px; border:1px solid #ccc; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+.stencil-con .textarea {width:460px; height:54px;}
+.stencil-con select {border:1px solid #ccc; height:28px; line-height:28px;}
+
+.gerberlist {margin: 10px 0; float: left;}
+
+/*钢网关联板子的弹出框*/
+#tabPcbInfoList {width:100%}
+#tabPcbInfoList thead {background-color:gainsboro;}
+#tabPcbInfoList thead th {font-weight:bold; padding:8px 0; text-align:left; text-indent:20px; font-size:14px;}
+#tabPcbInfoList td {padding:10px 0; text-indent:20px;}
+#tabPcbInfoList tbody tr:hover td{background-color:#efefef;}
+.layui-layer-title{color:#7c5000 !important;}
+#tabPcbInfoList input[type=radio]{margin-right:4px;}
+.btn_confirm{display:none; width:66px; height:25px; background-color:#E89721; color:#fff; outline:none; text-align:center; line-height:24px; position:absolute; right:10px; top:6px; border-radius:3px; border:none;}
+
+.color-333{color:#333;}
+
+ /*20170113 计价页tab选项*/
+ .main {padding-bottom:30px; background: #ececec;}
+/*.quote-box{width:1298px; padding: 15px 0; background-color:#fff; border:1px solid #e2e2e2; margin-bottom:15px;}
+.tab-quote{width:956px; margin: 0 auto 0px;}
+.tab-quote li{float:left; height:50px; padding-left: 14px; padding-right: 16px; background-color:#e9e9e9; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; text-align:center; line-height:50px; margin-left:10px; margin-right:10px;}
+.tab-quote li a{font-size:18px; color:#383838; display:block;}
+.tab-quote .i-ico{width:29px; height:29px; vertical-align:middle; margin-right:10px; background-image:url('../../images/orderonline/icon_online.png');}
+.tab-quote .ico-pcb{background-position: 0px 0px;}
+.tab-quote .ico-pcba{background-position: 0px -29px;}
+.tab-quote .ico-stencil{background-position: 0px -58px;}
+.tab-quote .ico-stencil{background-position: 0px -58px;}
+.tab-quote .ico-membrane{background-position: 0px -116px;}
+.tab-quote .ico-bom{background-position: 0px -87px;}
+.tab-quote li.active,.tab-quote li:hover{background-color:#E89721; }
+.tab-quote li.active a,.tab-quote li:hover a{color:#fff; text-decoration:none;}
+.tab-quote li.active .ico-pcb,.tab-quote li:hover .ico-pcb{background-position: -29px 0px;}
+.tab-quote li.active .ico-pcba,.tab-quote li:hover .ico-pcba{background-position: -29px -29px;}
+.tab-quote li.active .ico-stencil,.tab-quote li:hover .ico-stencil{background-position: -29px -58px;}
+.tab-quote li.active .ico-membrane,.tab-quote li:hover .ico-membrane{background-position: -29px -116px;}
+.tab-quote li.active .ico-bom,.tab-quote li:hover .ico-bom{background-position: -29px -87px;}*/
+.notic .w1180{width:1300px;}
+.notic,.min-menu{min-width:1300px;}
+.btn-quote-now:hover,.select-result .enter:hover{background-color: #ffad33;}
+
+/*层序*/
+.ml5{margin-left: 5px;}
+.mr4{margin-right: 4px;}
+.w35{width: 35px;}
+.input-default{height: 24px; padding: 2px 10px; border: 1px solid #e7e7e7;    /*border: 0;*/
+    outline: navajowhite}
+.multilayer-board .title{float: left;}
+.layersort{float: left; width: 415px; }
+.layersort li{float: left; width: auto; margin-top: 10px;}
+/*示例图片*/
+.example-diagram{display: inline-block;}
+.example-diagram-con{position: absolute; z-index: 20; padding: 15px; background-color: #fff; border: 1px solid #ddd;}
+body{    font: 12px/1.5 ROBOTO, Helvetica, Tahoma, Arial;}
+
+/*20180604 智能推荐*/
+.option-size{width: 260px; height: 30px; background-color: #eee; border-top: 1px solid #dcdcdc; border-right: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc;}
+.option-size .form-control{width: 75px; height: 28px; border-left: 1px solid #dcdcdc; border-right: 1px solid #dcdcdc; border-top: none; border-bottom: none; padding-left: 10px; padding-right: 10px;}
+.intelligent-recommendation{display: block; right: 0px; top: 0px; z-index: 99; font-size: 14px; background-color: #19A35F; color: #fff; padding: 4px 20px;}
+.intelligent-recommendation:hover{background-color: #2eb170; color: #fff; text-decoration: none;}
+.no-recommend{display: block; position: absolute; top: 1px; left: 515px;}
+/*是否选择关联*/
+.pcba-list .associateopt {
+    color: #000;
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 28px;
+    position: relative;
+    line-height: 28px;
+    padding: 0 8px;
+    margin-bottom: 4px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pcba-list .associateopt.selected {
+    border:2px solid #f90
+}
+.stencil,.pcba {width:800px;box-sizing:border-box}
+.pcba-list .associateopt input {display:none;}
+/*判断是否显示登录后右侧的email样式*/
+.download-or-sendmail {margin-top:20px;}
+.download-or-sendmail a {text-decoration:underline;}
+.stencil-con li{float: left;line-height:28px;width:100%;margin:0 0 6px; overflow: inherit;}
+.stencil-con .fl {width: 27%;margin-right: 1%;text-align: right;}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.stepul{padding: 15px 40px 5px;}
+.stepul p{line-height: 24px;font-size: 14px;}
+.stepul li{width:20%;float:left;text-align:center;}
+.stepul li span{display:block;width:10px;height:10px;border-radius:50%;background:#ededed;margin:8px auto 0;}
+.stepul li div{display:block;width:100%;height:2px;background:#f7f7f7;margin:0 auto -14px;}
+.stepul .activeli span,.stepul .activeli div{background:#f90;}
+.stepul .activeli p{color:#f90}
+.DeliveryDaysStr{font-size:14px;font-weight:600}
+
+
+
+
+/*新d*/
+.Product-option{padding:30px 0;margin-bottom:16px;padding-top:23px!important}
+.pcb-message{padding:30px 0 37px;}
+
+
+
+
+
+
+
+
+/*响应*/
+
+@media screen and (max-width:1320px) {
+ .quote-box{width:100%;}
+ .w1180{width:1300px!important}
+ /*.main-l{width:60%;}
+ .pcbonline-results{width:40%}*/
+ .pcbonline-options{width:100%;overflow-x:auto}
+ #scrollTop{width:100%!important}
+ .intelligent-recommendation{top:-15px;}
+ .at-custom-sidebar-btns,.rightsidebar{display:none!important}
+ .pcbonline-results{right:0px!important;}
+ .option-sizebox{width:655px;}
+}
+
+
+    /*计价响应*/
+    @media screen and (max-width:750px) {
+    .notic{padding:0 40px;}
+
+    /*.w1180,.tab-quote,.main-l,.option-con,.option-con textarea,.option-sizebox,.layersort,.online-quotes-input-row{width:100%!important;}
+    .quote-box,.pcbonline-options,.stencil, .pcba{width:96%;margin:auto;}
+    .tab-quote li{float:unset;margin-bottom:20px;}
+    .pcbonline-options{overflow-x:hidden}
+    #smtorderForm{padding-left:25px!important}
+    .item-box{padding-left:0;padding-right:0;}
+    .quotes-more-demand-box{padding:10px;}
+    .online-quotes-inputsmt li input,.online-quotes-input li select,.quotes-more-demand .title{width:100px!important;}
+    .online-quotes-input-row li{margin:0;width:50%;}
+    .pcbonline-results,.xy-sizepanelpic,.option img,.option .optiontip-ico,.intelligent-recommendation,.optiontip-ico{display:none}*/
+    }
+
+/*优品标品*/
+.pinzhiul li{border:1px solid #d8d8d8;border-radius:4px;height:46px;line-height:46px;font-size:14px;padding:0 40px 0 12px;cursor:pointer;}
+.pinzhiul .active{border:2px solid #f90;color:#E89721;}
+.pinzhiul .active .fr{font-weight:600}
+.pinzhiul li label{width: 14px;height: 46px;background: url(../../images/pcbonline/un_xz.png) no-repeat left center;margin-bottom: 0;margin-right: 5px;}
+.pinzhiul li.active label{background: url(../../images/pcbonline/xz.png) no-repeat left center;}
+
+.select-report{width:436px;height:160px;padding:10px 0px 5px;padding-bottom: 15px;border-bottom:1px solid #ddd;margin-bottom:20px}
+.select-report-option{margin-top:5px;width:432px;background:#FFFAF3;border:1px solid #f90;padding:5px 0px 10px;}
+.select-report-option li{float:left;cursor:pointer;position:relative;margin-bottom:4px;}
+.select-report-option li:nth-of-type(1){width:100%;}
+.select-report-option li:nth-of-type(2){width:270px}
+.select-report-option li div img{position:absolute;left:10px;top:2px;color:#222;}
+.select-report-option li p{font-size:14px;color:#222;}
+.select-report-option li div{float:left;cursor:pointer;position:relative;margin:2px;text-indent:33px;}
+.select-report-option li i{display:none;}
+.select-report-option li.current{color:#222;font-size:14px;}
+.select-report-option li.current i{display:block;}
+
+.reportcostul li{line-height:30px;}
+
+.option-choose .item.yp-icon {
+    background: url(../../images/pcbonline/zuans_y.png) no-repeat right center;
+    padding-right: 25px;
+}
+
+.UnitPrice-box{padding:28px 15px 22px;}
+.UnitPrice-box{padding:0px;}
+
+
+.laddertitle{background:#f0f0f0;border:1px solid #e5e5e5;height:32px;line-height:32px;margin-bottom:15px;}
+.laddertitle span{display:inline-block;font-size:14px;color:#333333;font-weight:bold}
+.laddertitle .w1{width:150px;text-indent:43px}
+.laddertitle .w2{width:94px;text-align:left}
+
+.laddercenter{padding:0 5px}
+.laddercenter span{display:inline-block;font-size:14px;color:#333333;line-height:32px}
+.laddercenter li{height:32px;position:relative;cursor:pointer}
+.laddercenter li.active{height:32px;background:#fff9f0;font-weight:bold}
+.laddercenter .w1{width:147px;text-indent:14px}
+.laddercenter .w2{width:94px;text-align:left}
+.laddercenter .w4{position:absolute;right:0px;top:0;height:32px;width:90px;color:#ff0000;font-weight:bold;
+                  background: url(../../images/pcbonline/jietibg.png) no-repeat 10px center;text-align:right;padding-right:10px}
+
+.laddercenter .w1 label{width: 16px;height: 32px;background: url(../../images/pcbonline/un_xz.png) no-repeat left center;
+                        margin-bottom: 0;margin-left:12px;background-size:100%;cursor:pointer}
+.laddercenter .active .w1 label{background: url(../../images/pcbonline/xz.png) no-repeat left center;background-size:100%;width:16px;}
+
+
+#dvConvertSize{margin-top:2px;height:24px;border-radius:4px;border:1px solid #ddd;margin-left:5px;cursor:pointer;box-shadow:3px 3px 10px 0px rgba(255, 255, 255, 0.75) inset, -1px -1px 3px 0px rgba(0, 0, 0, 0.1) inset;background:linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(238, 238, 238, 1) 100%)}
+
+.dvConvertSizebox{width:380px;height:110px;padding:0 20px;display:none}
+.dvConvertSizeboxdata>div{width:50%;margin-top:20px;text-align:center}
+.dvConvertSizeboxdata>div input{width:90px;margin:0 5px;height:26px;border-radius:4px;border:1px solid #ddd;}
+#btnConvert{width:70px;height:30px;text-align:center;line-height:30px;border-radius:4px;display:block;margin:20px auto;cursor:pointer;}
+
+
+.ant-btn-clicked:after{
+ content:"";
+ position:absolute;
+ top:-6px;
+ left:-6px;
+ bottom:-6px;
+ right:-6px;
+ border-radius:inherit;
+ border:0 solid #0070cc;
+ opacity:.2;
+ animation:fadeEffect 2s cubic-bezier(.08,.82,.17,1),waveEffect .4s cubic-bezier(.08,.82,.17,1);
+ animation-fill-mode:forwards;
+ pointer-events:none;
+ display:block;
+ background: #f90;
+}

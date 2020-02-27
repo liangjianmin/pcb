@@ -1,0 +1,255 @@
+@import '../common/base.less';
+@import '../common/font/iconfont.less';
+
+.cart-box-head {
+  width: 100%;
+  height: 120px;
+  background: #F0F4F7;
+
+  .l {
+    margin-top: 44px;
+    font-size: 24px;
+    color: #2b2f33;
+    border-left: 5px solid #C2C7CC;
+    padding-left: 10px;
+  }
+
+  .r {
+    margin-top: 20px;
+
+    ul {
+      li {
+        position: relative;
+        text-align: center;
+        margin-right: 48px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .t1 {
+          width: 44px;
+          height: 44px;
+          line-height: 44px;
+          text-align: center;
+          background: rgba(194, 199, 204, 1);
+          margin: 0 auto;
+          border-radius: 50%;
+
+          .iconfont {
+            font-size: 24px;
+            color: #fff;
+          }
+        }
+
+        b {
+          position: absolute;
+          top: 22px;
+          left: 87px;
+          width: 100px;
+          height: 1px;
+          border-top: 1px dashed #C2C7CC;
+          display: block;
+        }
+
+        p {
+          width: 110px;
+          height: 30px;
+          margin-top: 6px;
+          line-height: 15px;
+          font-size: 13px;
+          color: #828e99;
+          text-align: center;
+        }
+
+        &.curr {
+          .t1 {
+            background: #1DDA74;
+          }
+
+          p {
+            color: #2b2f33;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pay-box {
+  padding-bottom: 80px;
+  margin-bottom: 59px;
+  border-bottom: 1px solid #F0F4F7;
+
+  .pay-box-l {
+    width: 880px;
+    margin-top: 43px;
+
+    .tit {
+      .l {
+        font-size: 16px;
+        color: #2b2f33;
+      }
+
+      .r {
+        span {
+          font-size: 13px;
+          color: #575e66;
+        }
+
+        em {
+          font-size: 13px;
+          color: #0081d2;
+          font-style: normal;
+        }
+      }
+    }
+
+    .tip {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      height: 40px;
+      background: #FFF8ED;
+
+      .iconfont {
+        margin-left: 20px;
+        font-size: 24px;
+        color: #D9B379;
+      }
+
+      span {
+        font-size: 13px;
+        color: #e89721;
+        margin-left: 10px;
+      }
+    }
+
+    .pay-list {
+      li {
+        width: 368px;
+        height: 307px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(240, 244, 247, 1);
+        padding: 20px 30px 30px 30px;
+        float: left;
+        &:first-child{
+          margin-right: 20px;
+        }
+        .top {
+          padding-bottom: 20px;
+          border-bottom: 1px solid #F0F4F7;
+          .pay-ico2{
+            width: 60px;
+            height: 60px;
+            background: url("../../images/pay/bank.png") no-repeat center;
+            background-size: cover;
+          }
+          .pay-ico1 {
+            width: 60px;
+            height: 60px;
+            background: url("../../images/pay/Paypal.png") no-repeat center;
+            background-size: cover;
+          }
+
+          span {
+            margin-left: 20px;
+            font-size: 24px;
+            color: #2b2f33;
+            font-weight: bold;
+          }
+        }
+
+        .cen {
+          margin-top: 20px;
+          .l {
+            .t1 {
+              color: #828e99;
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+
+            .t2 {
+              font-size: 13px;
+              color: #2b2f33;
+            }
+          }
+
+          .r {
+            .t1 {
+              font-size: 13px;
+              color: #2b2f33;
+              margin-bottom: 6px;
+            }
+
+            .t2 {
+              font-size: 16px;
+              color: #ff0d0d;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .txt{
+          margin-top: 60px;
+          width: 370px;
+          height: 39px;
+          font-size: 11px;
+          color: #828e99;
+        }
+
+        .pay-btn{
+          width:180px;
+          height:40px;
+          background:rgba(255,13,13,1);
+          border-radius:2px;
+          font-size: 14px;
+          color: #ffffff;
+          display: block;
+          line-height: 40px;
+          text-align: center;
+          margin-top: 30px;
+        }
+        .pay-btn-a{
+          width:240px;
+          height:40px;
+          background:rgba(255,13,13,1);
+          border-radius:2px;
+          font-size: 14px;
+          color: #ffffff;
+          display: block;
+          line-height: 40px;
+          text-align: center;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .pay-box-r {
+
+  }
+}
+
+.chat-with {
+  position: fixed;
+  bottom: 50px;
+  right: 160px;
+  width: 180px;
+  height: 50px;
+  background: rgba(232, 151, 33, 1);
+  box-shadow: 0px -8px 10px 0px rgba(232, 151, 33, 0.2);
+  border-radius: 8px 8px 0px 0px;
+  text-align: center;
+  cursor: pointer;
+
+  i {
+    font-size: 28px;
+    color: #fff;
+  }
+
+  span {
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 7px;
+  }
+}
