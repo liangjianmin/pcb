@@ -382,29 +382,33 @@
     .t1 {
       font-size: 13px;
       color: #575E66;
-      line-height:20px;
+      line-height: 20px;
     }
   }
 
-  .operate{
+  .operate {
     margin-top: 30px;
-    .l{
+
+    .l {
       margin-top: 13px;
-      i{
+
+      i {
         width: 16px;
         height: 16px;
-        background:url("../../images/pay/left.png") no-repeat center;
+        background: url("../../images/pay/left.png") no-repeat center;
         background-size: cover;
       }
+
       font-size: 13px;
       color: #0081d2;
     }
-    .r{
-      width:160px;
-      height:40px;
+
+    .r {
+      width: 160px;
+      height: 40px;
       line-height: 40px;
-      background:rgba(0,129,210,1);
-      border-radius:2px;
+      background: rgba(0, 129, 210, 1);
+      border-radius: 2px;
       display: block;
       text-align: center;
       font-size: 14px;
@@ -413,18 +417,20 @@
   }
 }
 
-.message{
+.message {
   padding: 40px;
-  .txt{
+
+  .txt {
     font-size: 13px;
     color: #575e66;
     margin-bottom: 40px;
   }
-  .btn-1{
-    width:180px;
-    height:40px;
-    background:rgba(240,244,247,1);
-    border-radius:2px;
+
+  .btn-1 {
+    width: 180px;
+    height: 40px;
+    background: rgba(240, 244, 247, 1);
+    border-radius: 2px;
     font-size: 14px;
     color: #2b2f33;
     text-align: center;
@@ -432,15 +438,123 @@
     display: inline-block;
     margin-right: 20px;
   }
-  .btn-2{
-    width:160px;
-    height:40px;
-    background:rgba(0,129,210,1);
-    border-radius:2px;
+
+  .btn-2 {
+    width: 160px;
+    height: 40px;
+    background: rgba(0, 129, 210, 1);
+    border-radius: 2px;
     font-size: 14px;
     color: #FFFFFF;
     text-align: center;
     line-height: 40px;
     display: inline-block;
+  }
+}
+
+.pay-success-box {
+  background: #F0F4F7;
+  padding-top: 40px;
+  padding-bottom: 108px;
+
+  .pay-success {
+    width: 550px;
+    padding: 40px 80px 40px 80px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 6px 10px 0px rgba(0, 129, 210, 0.2);
+    border-radius: 2px;
+    margin: 0 auto;
+    position: relative;
+
+    .tip-ico {
+      position: absolute;
+      left: 0;
+      top: 28px;
+      width: 6px;
+      height: 31px;
+      background: rgba(232, 151, 33, 1);
+    }
+
+    .top {
+      .success-ico {
+        width: 120px;
+        height: 120px;
+        background: rgba(240, 244, 247, 1);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 120px;
+
+        .s-ico {
+          width: 80px;
+          height: 80px;
+          background: url("../../images/pay/success.png") no-repeat center;
+          background-size: contain;
+        }
+        .fail-ico{
+          width: 80px;
+          height: 80px;
+          background: url("../../images/pay/error.png") no-repeat center;
+          background-size: contain;
+        }
+      }
+
+      .text {
+        margin-left: 30px;
+
+        .t1 {
+          font-size: 24px;
+          color: #2b2f33;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .t2 {
+          font-size: 16px;
+          color: #2b2f33;
+          font-weight: bold;
+          margin-bottom: 12px;
+
+          em {
+            color: #ff0d0d;
+            font-style: normal;
+            margin-left: 10px;
+          }
+        }
+
+        .t3 {
+          font-size: 16px;
+          color: #0081d2;
+        }
+        .t4{
+          width:362px;
+          font-size: 16px;
+          color: #2b2f33;
+          em{
+            font-style: normal;
+            color: #0081d2;
+          }
+        }
+      }
+    }
+
+    .cen {
+      font-size: 13px;
+      color: #575e66;
+      width: 550px;
+      line-height: 20px;
+      margin: 42px auto 30px;
+    }
+
+    .btn {
+      width: 160px;
+      height: 40px;
+      background: rgba(0, 129, 210, 1);
+      border-radius: 2px;
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 40px;
+      text-align: center;
+      display: block;
+    }
   }
 }

@@ -928,4 +928,97 @@ body {
   line-height: 40px;
   display: inline-block;
 }
+.pay-success-box {
+  background: #F0F4F7;
+  padding-top: 40px;
+  padding-bottom: 108px;
+}
+.pay-success-box .pay-success {
+  width: 550px;
+  padding: 40px 80px 40px 80px;
+  background: #ffffff;
+  box-shadow: 0px 6px 10px 0px rgba(0, 129, 210, 0.2);
+  border-radius: 2px;
+  margin: 0 auto;
+  position: relative;
+}
+.pay-success-box .pay-success .tip-ico {
+  position: absolute;
+  left: 0;
+  top: 28px;
+  width: 6px;
+  height: 31px;
+  background: #e89721;
+}
+.pay-success-box .pay-success .top .success-ico {
+  width: 120px;
+  height: 120px;
+  background: #f0f4f7;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+}
+.pay-success-box .pay-success .top .success-ico .s-ico {
+  width: 80px;
+  height: 80px;
+  background: url("../../images/pay/success.png") no-repeat center;
+  background-size: contain;
+}
+.pay-success-box .pay-success .top .success-ico .fail-ico {
+  width: 80px;
+  height: 80px;
+  background: url("../../images/pay/error.png") no-repeat center;
+  background-size: contain;
+}
+.pay-success-box .pay-success .top .text {
+  margin-left: 30px;
+}
+.pay-success-box .pay-success .top .text .t1 {
+  font-size: 24px;
+  color: #2b2f33;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.pay-success-box .pay-success .top .text .t2 {
+  font-size: 16px;
+  color: #2b2f33;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.pay-success-box .pay-success .top .text .t2 em {
+  color: #ff0d0d;
+  font-style: normal;
+  margin-left: 10px;
+}
+.pay-success-box .pay-success .top .text .t3 {
+  font-size: 16px;
+  color: #0081d2;
+}
+.pay-success-box .pay-success .top .text .t4 {
+  width: 362px;
+  font-size: 16px;
+  color: #2b2f33;
+}
+.pay-success-box .pay-success .top .text .t4 em {
+  font-style: normal;
+  color: #0081d2;
+}
+.pay-success-box .pay-success .cen {
+  font-size: 13px;
+  color: #575e66;
+  width: 550px;
+  line-height: 20px;
+  margin: 42px auto 30px;
+}
+.pay-success-box .pay-success .btn {
+  width: 160px;
+  height: 40px;
+  background: #0081d2;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+}
 /*# sourceMappingURL=pay.css.map */
