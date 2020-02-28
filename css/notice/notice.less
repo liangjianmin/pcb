@@ -1,0 +1,144 @@
+@import '../common/base.less';
+@import '../common/font/iconfont.less';
+
+.notice-box {
+  .head {
+    padding: 20px 0 40px 0;
+    background: #0081D2;
+
+    .tit {
+      font-size: 13px;
+      color: #ffffff;
+
+      a {
+        font-size: 13px;
+        color: #ffffff;
+      }
+    }
+
+    .txt {
+      font-size: 38px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+
+  .notice-list {
+    ul {
+      margin-top: 40px;
+      li {
+        margin-bottom: 40px;
+        .l {
+          .pic {
+            width: 280px;
+            height: 200px;
+
+            img {
+              width: 280px;
+              height: 200px;
+            }
+          }
+          .text{
+            margin-left: 30px;
+            .t1{
+              font-size: 24px;
+              color: #2b2f33;
+              margin-bottom: 13px;
+              font-weight: bold;
+            }
+            .t2{
+              width: 790px;
+              font-size: 16px;
+              color: #575e66;
+              height: 38px;
+              margin-bottom: 45px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+            .t3{
+              font-size: 13px;
+              color: #828e99;
+            }
+          }
+        }
+
+        .r {
+          margin-top: 19px;
+          .iconjiantou {
+            font-size: 24px;
+            color: #28759F;
+          }
+        }
+      }
+    }
+  }
+}
+
+.notice-details{
+  padding: 22px 0 40px  0;
+  background: #F0F4F7;
+  .tit{
+    a{
+      font-size: 13px;
+      color: #828e99;
+    }
+    span{
+      font-size: 13px;
+      color: #828e99;
+    }
+  }
+  .notice-page{
+    margin-top: 22px;
+    width: 1060px;
+    background: #ffffff;
+    padding: 40px 60px 40px 60px;
+    .t1{
+      font-size: 24px;
+      color: #2b2f33;
+      line-height:28px;
+      margin-bottom: 10px;
+    }
+    .t2{
+      font-size: 13px;
+      color: #828e99;
+    }
+    .text{
+      margin-top: 88px;
+      font-size: 16px;
+      color: #2b2f33;
+      line-height:25px;
+      img{
+        max-width: 100px;
+        display: block;
+        margin: 10px auto 10px;
+      }
+    }
+  }
+}
+
+.chat-with {
+  position: fixed;
+  bottom: 50px;
+  right: 160px;
+  width: 180px;
+  height: 50px;
+  background: rgba(232, 151, 33, 1);
+  box-shadow: 0px -8px 10px 0px rgba(232, 151, 33, 0.2);
+  border-radius: 8px 8px 0px 0px;
+  text-align: center;
+  cursor: pointer;
+
+  i {
+    font-size: 28px;
+    color: #fff;
+  }
+
+  span {
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 7px;
+  }
+}
