@@ -534,6 +534,7 @@ body {
 }
 .pic-detail {
   background: #FFFFFF;
+  margin-top: 30px;
 }
 .pic-detail .pic-detail-head {
   padding: 40px 60px 40px 60px;
