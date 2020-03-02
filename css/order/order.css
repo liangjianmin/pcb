@@ -752,6 +752,7 @@ body {
   text-align: left;
 }
 .pcb-order .order-data table tr td {
+  position: relative;
   padding: 20px;
   color: #2b2f33;
   font-size: 13px;
@@ -780,6 +781,98 @@ body {
   font-size: 16px;
   color: #ff0d0d;
   font-weight: bold;
+}
+.pcb-order .order-data table tr td .coupon {
+  cursor: pointer;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.pcb-order .order-data table tr td .coupon .coupon-ico {
+  width: 20px;
+  height: 20px;
+  background: url("../../images/cart/coupon.png") no-repeat;
+  background-size: contain;
+}
+.pcb-order .order-data table tr td .coupon .coupon-txt {
+  color: #2b2f33;
+  font-size: 13px;
+  font-weight: bold;
+}
+.pcb-order .order-data table tr td .coupon-wrap {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  width: 166px;
+  padding: 20px 34px 18px 20px;
+  background: #ffffff;
+  box-shadow: 0px 3px 8px 0px rgba(194, 199, 204, 0.1);
+  border: 1px solid #f0f4f7;
+  z-index: 1;
+}
+.pcb-order .order-data table tr td .coupon-wrap dl {
+  margin-top: 14px;
+}
+.pcb-order .order-data table tr td .coupon-wrap dl dd {
+  margin-bottom: 9px;
+}
+.pcb-order .order-data table tr td .coupon-wrap dl dd .cicle {
+  width: 12px;
+  height: 12px;
+  padding: 3px;
+  border-radius: 18px;
+  border: 1px solid #C2C7CC;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.pcb-order .order-data table tr td .coupon-wrap dl dd.active .cicle {
+  border-color: #0081D2;
+}
+.pcb-order .order-data table tr td .coupon-wrap dl dd.active .cicle i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #0081D2;
+  border-radius: 12px;
+}
+.pcb-order .order-data table tr td .coupon-wrap dl dd .coupon-t3 {
+  font-size: 13px;
+  color: #2b2f33;
+  font-weight: bold;
+}
+.pcb-order .order-data table tr td .coupon-wrap .coupon-t1 {
+  font-size: 16px;
+  color: #ff0d0d;
+  font-weight: bold;
+}
+.pcb-order .order-data table tr td .coupon-wrap .coupon-t2 .coupon-t2-a {
+  font-size: 13px;
+  color: #2b2f33;
+}
+.pcb-order .order-data table tr td .coupon-wrap .coupon-t2 .coupon-t2-b {
+  font-size: 13px;
+  color: #2b2f33;
+  font-weight: bold;
+}
+.pcb-order .order-data table tr td .btn-wrap {
+  white-space: nowrap;
+  margin-top: 22px;
+}
+.pcb-order .order-data table tr td .btn-wrap .ok {
+  width: 80px;
+  height: 25px;
+  background: #0081d2;
+  border-radius: 2px;
+  margin-right: 44px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.pcb-order .order-data table tr td .btn-wrap .canel {
+  font-size: 13px;
+  color: #828e99;
 }
 .pcb-order .order-contact {
   padding: 30px 0 20px 0;

@@ -121,7 +121,7 @@
             </div>
         </div>
         <!--当购物车为空的时候-->
-        <div class="pcb-cart-empty" style="display: none">
+        <div class="pcb-cart-empty" style="display: block">
             <i class="iconfont icongouwuche"></i>
             <p class="t1">Your Shopping Cart Is Empty</p>
             <a href="javascript:;" class="btn">Order Now</a>
@@ -167,6 +167,35 @@
                     </td>
                     <td>
                         <span class="t2">$50.00</span>
+                        <div class="coupon">
+                            <i class="lineBlock coupon-ico va-m"></i>
+                            <span class="coupon-txt va-m">Coupon:-$0</span>
+                        </div>
+                        <div class="coupon-wrap" style="display: none">
+                            <p class="coupon-t1">$50.00</p>
+                            <p class="coupon-t2">
+                                <span class="coupon-t2-a">preferential :</span>
+                                <span class="coupon-t2-b">$0.00</span>
+                            </p>
+                            <dl class="couponSel">
+                                <dd class="active">
+                                    <span class="lineBlock cicle va-m"><i></i></span>
+                                    <span class="va-m coupon-t3">$1.25</span>
+                                </dd>
+                                <dd>
+                                    <span class="lineBlock cicle va-m"><i></i></span>
+                                    <span class="va-m coupon-t3">$2.65</span>
+                                </dd>
+                                <dd>
+                                    <span class="lineBlock cicle va-m"><i></i></span>
+                                    <span class="va-m coupon-t3">Do not use coupon</span>
+                                </dd>
+                            </dl>
+                            <div class="btn-wrap">
+                                <a href="javascript:;" class="lineBlock va-m ok">OK</a>
+                                <a href="javascript:;" class="lineBlock va-m canel">Cancel</a>
+                            </div>
+                        </div>
                     </td>
                     <td>
                         2019-12-06 10:30
@@ -178,7 +207,7 @@
                 </tr>
                 <tr>
                     <td style="width: 307px">
-                        <div class="t1 act">
+                        <div class="t1">
                             <span class="lineBlock cicle va-t"><i></i></span>
                             <div class="lineBlock va-t">
                                 <p class="t1-a">NO#: #T19152AS100</p>
@@ -194,13 +223,46 @@
                         48 hours
                     </td>
                     <td>
+                        <div class="uploa-show">
+                            <img src="./images/cart/u.png" alt="" class="va-m"/>
+                            <span class="va-m">pcbbuy.zip</span>
+                        </div>
                         <div class="upload-box">
-                            <i class="iconfont iconfile va-m"></i>
-                            <span class="va-m">Upload Gerber</span>
+                            <span>Download</span>
+                            <span>Change Gerber</span>
                         </div>
                     </td>
                     <td>
                         <span class="t2">$50.00</span>
+                        <div class="coupon">
+                            <i class="lineBlock coupon-ico va-m"></i>
+                            <span class="coupon-txt va-m">Coupon:-$0</span>
+                        </div>
+                        <div class="coupon-wrap" style="display: none">
+                            <p class="coupon-t1">$50.00</p>
+                            <p class="coupon-t2">
+                                <span class="coupon-t2-a">preferential :</span>
+                                <span class="coupon-t2-b">$0.00</span>
+                            </p>
+                            <dl class="couponSel">
+                                <dd class="active">
+                                    <span class="lineBlock cicle va-m"><i></i></span>
+                                    <span class="va-m coupon-t3">$1.25</span>
+                                </dd>
+                                <dd>
+                                    <span class="lineBlock cicle va-m"><i></i></span>
+                                    <span class="va-m coupon-t3">$2.65</span>
+                                </dd>
+                                <dd>
+                                    <span class="lineBlock cicle va-m"><i></i></span>
+                                    <span class="va-m coupon-t3">Do not use coupon</span>
+                                </dd>
+                            </dl>
+                            <div class="btn-wrap">
+                                <a href="javascript:;" class="lineBlock va-m ok">OK</a>
+                                <a href="javascript:;" class="lineBlock va-m canel">Cancel</a>
+                            </div>
+                        </div>
                     </td>
                     <td>
                         2019-12-06 10:30
@@ -240,7 +302,7 @@
                     <div class="fr l">
                         <div>
                             <p class="t1">Are you UL "Underwriters Laboratory" approved??</p>
-                            <p class="t2">Yes, you can use the following web link to access our UL registration. Learn more?  . <a>+MORE</a></p>
+                            <p class="t2">Yes, you can use the following web link to access our UL registration. Learn more? . <a>+MORE</a></p>
                         </div>
                         <div>
                             <p class="t1">What does "V-scoring" mean?</p>
@@ -323,6 +385,25 @@
   $(".go-forget .fl.clr").click(function () {
     $(this).toggleClass('act');
   })
+
+
+  $(document).on('click', '.couponSel dd', function () {
+    $(this).addClass('active').siblings('dd').removeClass('active');
+  });
+
+  $(document).on('click', '.coupon', function () {
+   $(this).next().show();
+  });
+
+
+  $(document).on('click', '.ok', function () {
+    $(".coupon-wrap").hide();
+  });
+
+  $(document).on('click', '.canel', function () {
+    $(".coupon-wrap").hide();
+  });
+
 </script>
 </body>
 </html>
