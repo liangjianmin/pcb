@@ -528,7 +528,7 @@ body {
   font-size: 13px;
   display: -webkit-box;
   overflow: hidden;
-  min-height: 80px;
+  height: 30px;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
