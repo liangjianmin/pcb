@@ -526,17 +526,20 @@ body {
 .pic-list .list-wrap ul li .wrap .t2 {
   color: #575e66;
   font-size: 13px;
-  display: -webkit-box;
+  min-height: 30px;
+  height: 80px;
   overflow: hidden;
-  height: 30px;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  margin-bottom: 40px;
+  margin-bottom: 13px;
 }
 .pic-list .list-wrap ul li .wrap .t3 {
   font-size: 11px;
   color: #828e99;
+  height: 28px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .pic-detail {
   background: #FFFFFF;
