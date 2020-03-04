@@ -746,26 +746,7 @@ var Head = {
 
             return false;
         }
-        $.ajax({
-            type: 'POST',
-            dataType: 'json',
-            async: true,
-            url: '/NewMember/AddMesg',
-            data: { name: name, email: email, tel: tel, message: message },
-            contentType: "application/x-www-form-urlencoded; charset=utf-8", //解决中文提交乱码问题
-            success: function (data) {
-                if (data) {
-                    layer.msg("Submit successfully,We will solve it as soon as possible!", function () {
-                        $('.maskLayer,.b-box').hide();
-                    });
-
-                }
-            }
-        });
     }
-
-
-
 }
 
 

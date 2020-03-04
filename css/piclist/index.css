@@ -526,7 +526,13 @@ body {
 .pic-list .list-wrap ul li .wrap .t2 {
   color: #575e66;
   font-size: 13px;
+  display: -webkit-box;
+  overflow: hidden;
   min-height: 80px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 40px;
 }
 .pic-list .list-wrap ul li .wrap .t3 {
   font-size: 11px;

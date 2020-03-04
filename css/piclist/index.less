@@ -97,7 +97,13 @@
           .t2 {
             color: #575e66;
             font-size: 13px;
+            display: -webkit-box;
+            overflow: hidden;
             min-height: 80px;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            margin-bottom: 40px;
           }
 
           .t3 {
@@ -113,6 +119,7 @@
 .pic-detail {
   background: #FFFFFF;
   margin-top: 30px;
+
   .pic-detail-head {
     padding: 40px 60px 40px 60px;
     border-bottom: 1px solid #F0F4F7;
@@ -165,7 +172,8 @@
     padding: 40px;
     font-size: 16px;
     color: #2b2f33;
-    img{
+
+    img {
       padding: 20px;
       max-width: 100%;
       margin: 0 auto;

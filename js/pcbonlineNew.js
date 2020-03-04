@@ -1695,7 +1695,7 @@ var Pcb = {
       } else {
         url = "/ashx/ExportQuotation.ashx?act=ExportQuotionDownloadFilePath&";
       }
-      $.ajax({
+     /* $.ajax({
         url: url + parm + "&t=" + new Date(),
         dataType: 'json',
         type: 'post',
@@ -1710,7 +1710,9 @@ var Pcb = {
             }
           }
         }
-      });
+      });*/
+     
+     
     } else {
       layer.alert("Please Finish the Pcb online calculation first.");
     }
@@ -2506,7 +2508,10 @@ var Smt = {
       
       var s = $("#smtorderForm").serialize() + "&RelationId=" + relaitonid + "&hidCountryId=" + _countryId;
       var requrl = "/ashx/smt.ashx?" + s + "&callback=?&act=AddCart";
-      $.ajax({
+      
+      
+      
+/*      $.ajax({
         type: "post",
         async: false,
         url: requrl,
@@ -2534,7 +2539,7 @@ var Smt = {
           
         }
         
-      });
+      });*/
       
     }
   }
@@ -2958,7 +2963,7 @@ var Stencil = {
     parm += "&StencilTotalPrice=" + $(".pcbonline-results [for-group='stencil'] dd").find("[name=radPrice]").attr("dataprice");
     parm += "&RelationId=" + relaitonid;
     var requrl = "/ashx/stencil.ashx?" + parm + "&callback=?&act=AddCartStencil";
-    $.ajax({
+   /* $.ajax({
       type: "post",
       async: false,
       url: requrl,
@@ -2983,7 +2988,7 @@ var Stencil = {
         
       }
       
-    });
+    });*/
     
     
   },
