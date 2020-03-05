@@ -268,7 +268,6 @@ body {
          display: block;
          color:#575E66;
          font-size: 13px;
-         cursor: pointer;
          &.active{
           color:#2B2F33 ;
           font-weight: 600;
@@ -308,7 +307,7 @@ body {
   }
 
   .account-btn {
-    width: 120px;
+    min-width: 120px;
     height: 32px;
     background-color: #E89721;
     border-radius: 19px;
@@ -316,7 +315,7 @@ body {
     position: relative;
     top: -10px;
     margin-left: 39px;
-    cursor: pointer;
+    white-space: nowrap; 
     &:hover{
       background-color: #FFB03D;
       .drop-down-menu{
@@ -337,7 +336,12 @@ body {
       font-size: 14px;
       margin: 0 3px;
       position: relative;
-      top: 4px;
+      top: -2px;
+      max-width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: middle;
     }
 
     .arrow-down-icon {
