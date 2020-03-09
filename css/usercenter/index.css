@@ -563,786 +563,183 @@ body {
 .iconzhuanshi:before {
   content: "\e622";
 }
-.cart-box-head {
-  width: 100%;
-  height: 120px;
+.user-center-head {
+  height: 130px;
   background: #F0F4F7;
 }
-.cart-box-head .l {
-  margin-top: 44px;
-  font-size: 24px;
-  color: #2b2f33;
-  border-left: 5px solid #C2C7CC;
-  padding-left: 10px;
+.user-center-head .l {
+  height: 130px;
 }
-.cart-box-head .r {
-  margin-top: 20px;
-}
-.cart-box-head .r ul li {
-  position: relative;
+.user-center-head .l .i1 {
+  width: 68px;
+  height: 68px;
+  line-height: 48px;
   text-align: center;
-  margin-right: 48px;
-}
-.cart-box-head .r ul li:last-child {
-  margin-right: 0;
-}
-.cart-box-head .r ul li .t1 {
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
-  text-align: center;
-  background: #c2c7cc;
-  margin: 0 auto;
+  background: #ffffff;
   border-radius: 50%;
 }
-.cart-box-head .r ul li .t1 .iconfont {
-  font-size: 24px;
-  color: #fff;
-}
-.cart-box-head .r ul li b {
-  position: absolute;
-  top: 22px;
-  left: 87px;
-  width: 100px;
-  height: 1px;
-  border-top: 1px dashed #C2C7CC;
+.user-center-head .l .i1 i {
+  font-size: 41px;
+  color: #cdcfd0;
+  margin-top: 8px;
   display: block;
 }
-.cart-box-head .r ul li p {
-  width: 110px;
-  height: 30px;
-  margin-top: 6px;
-  line-height: 15px;
-  font-size: 13px;
-  color: #828e99;
-  text-align: center;
-}
-.cart-box-head .r ul li.curr .t1 {
-  background: #1DDA74;
-}
-.cart-box-head .r ul li.curr p {
-  color: #2b2f33;
-}
-.pcb-order {
-  width: 100%;
-}
-.pcb-order .operation {
-  padding: 40px 0 0 0;
-}
-.pcb-order .operation .l {
-  font-size: 16px;
-  color: #2b2f33;
-  font-weight: bold;
-}
-.pcb-order .operation .r .iconaddress {
-  font-size: 24px;
-  color: #e89a20;
-  cursor: pointer;
-}
-.pcb-order .operation .r .icontianjia {
-  font-size: 24px;
-  color: #0181d3;
-  margin-left: 40px;
-  cursor: pointer;
-}
-.pcb-order .operation .r span {
-  font-size: 13px;
-  color: #2b2f33;
-  cursor: pointer;
-}
-.pcb-order .order-address {
-  margin-top: 20px;
-  padding: 30px 30px 30px 40px;
-  border: 2px solid #0081d2;
-}
-.pcb-order .order-address .l .t1 span {
-  font-size: 13px;
-  color: #828e99;
-}
-.pcb-order .order-address .l .t1 em {
-  font-size: 16px;
-  color: #2b2f33;
-  font-style: normal;
-}
-.pcb-order .order-address .l .t2 {
-  margin-top: 15px;
-  font-size: 13px;
-  color: #575e66;
-}
-.pcb-order .order-address .r {
-  margin-top: 15px;
-}
-.pcb-order .order-address .r .edit .iconbianji {
-  font-size: 26px;
-  color: #1b79b7;
-}
-.pcb-order .order-address .r .edit span {
-  font-size: 13px;
-  color: #828e99;
-}
-.pcb-order .order-address-empty {
-  height: 111px;
-  background: #f0f4f7;
-  text-align: center;
-  margin-top: 20px;
-}
-.pcb-order .order-address-empty .iconfont {
-  font-size: 30px;
-  color: #0181d3;
-}
-.pcb-order .order-address-empty span {
-  font-size: 16px;
-  color: #2b2f33;
-  font-weight: bold;
-}
-.pcb-order .order-transport {
-  margin-top: 30px;
-}
-.pcb-order .order-transport .tit {
-  font-size: 16px;
-  color: #2b2f33;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-.pcb-order .order-transport .transport-wrap {
-  padding: 33px 0 30px 40px;
-  border: 1px solid #F0F4F7;
-}
-.pcb-order .order-transport .transport-wrap .sel {
-  width: 144px;
-  height: 40px;
-  padding-left: 16px;
-  border: 1px solid #dae0e6;
-  margin-right: 8px;
-}
-.pcb-order .order-transport .transport-wrap .txt .t1 {
-  font-size: 13px;
-  color: #828e99;
-}
-.pcb-order .order-transport .transport-wrap .txt .t2 {
-  font-size: 13px;
-  color: #2b2f33;
-}
-.pcb-order .order-transport .transport-wrap .txt .t3 {
-  font-size: 13px;
-  color: #ff0d0d;
-  font-weight: bold;
-}
-.pcb-order .order-data {
-  margin-top: 30px;
-}
-.pcb-order .order-data .tit {
-  font-size: 16px;
-  color: #2b2f33;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.pcb-order .order-data table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.pcb-order .order-data table tr {
-  border: 1px solid #FAFCFF;
-}
-.pcb-order .order-data table tr th {
-  height: 50px;
-  padding: 0 20px;
-  background: #F0F4F7;
-  vertical-align: middle;
-  font-size: 13px;
-  color: #828e99;
-  font-weight: normal;
-  text-align: left;
-}
-.pcb-order .order-data table tr td {
-  position: relative;
-  padding: 20px;
-  color: #2b2f33;
-  font-size: 13px;
-  text-align: left;
-}
-.pcb-order .order-data table tr td .t1 {
-  white-space: nowrap;
-}
-.pcb-order .order-data table tr td .t1 .t1-a {
-  font-size: 16px;
-  color: #2b2f33;
-  margin-bottom: 12px;
-  font-weight: bold;
-}
-.pcb-order .order-data table tr td .t1 .t1-b {
-  font-size: 13px;
-  color: #2b2f33;
-  margin-bottom: 12px;
-}
-.pcb-order .order-data table tr td .t1 .t1-c {
-  font-size: 13px;
-  color: #0081d2;
-  cursor: pointer;
-}
-.pcb-order .order-data table tr td .t2 {
-  font-size: 16px;
-  color: #ff0d0d;
-  font-weight: bold;
-}
-.pcb-order .order-data table tr td .coupon {
-  cursor: pointer;
-  white-space: nowrap;
-  margin-top: 10px;
-}
-.pcb-order .order-data table tr td .coupon .coupon-ico {
-  width: 20px;
-  height: 20px;
-  background: url("../../images/cart/coupon.png") no-repeat;
-  background-size: contain;
-}
-.pcb-order .order-data table tr td .coupon .coupon-txt {
-  color: #2b2f33;
-  font-size: 13px;
-  font-weight: bold;
-}
-.pcb-order .order-data table tr td .coupon-wrap {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  right: 0;
-  width: 166px;
-  padding: 20px 34px 18px 20px;
-  background: #ffffff;
-  box-shadow: 0px 3px 8px 0px rgba(194, 199, 204, 0.1);
-  border: 1px solid #f0f4f7;
-  z-index: 1;
-}
-.pcb-order .order-data table tr td .coupon-wrap dl {
-  margin-top: 14px;
-}
-.pcb-order .order-data table tr td .coupon-wrap dl dd {
-  margin-bottom: 9px;
-}
-.pcb-order .order-data table tr td .coupon-wrap dl dd .cicle {
-  width: 12px;
-  height: 12px;
-  padding: 3px;
-  border-radius: 18px;
-  border: 1px solid #C2C7CC;
-  position: relative;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.pcb-order .order-data table tr td .coupon-wrap dl dd.active .cicle {
-  border-color: #0081D2;
-}
-.pcb-order .order-data table tr td .coupon-wrap dl dd.active .cicle i {
-  display: block;
-  width: 12px;
-  height: 12px;
-  background: #0081D2;
-  border-radius: 12px;
-}
-.pcb-order .order-data table tr td .coupon-wrap dl dd .coupon-t3 {
-  font-size: 13px;
-  color: #2b2f33;
-  font-weight: bold;
-}
-.pcb-order .order-data table tr td .coupon-wrap .coupon-t1 {
-  font-size: 16px;
-  color: #ff0d0d;
-  font-weight: bold;
-}
-.pcb-order .order-data table tr td .coupon-wrap .coupon-t2 .coupon-t2-a {
-  font-size: 13px;
-  color: #2b2f33;
-}
-.pcb-order .order-data table tr td .coupon-wrap .coupon-t2 .coupon-t2-b {
-  font-size: 13px;
-  color: #2b2f33;
-  font-weight: bold;
-}
-.pcb-order .order-data table tr td .btn-wrap {
-  white-space: nowrap;
-  margin-top: 22px;
-}
-.pcb-order .order-data table tr td .btn-wrap .ok {
-  width: 80px;
-  height: 25px;
-  background: #0081d2;
-  border-radius: 2px;
-  margin-right: 44px;
-  line-height: 25px;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-}
-.pcb-order .order-data table tr td .btn-wrap .canel {
-  font-size: 13px;
-  color: #828e99;
-}
-.pcb-order .order-contact {
-  padding: 30px 0 20px 0;
-}
-.pcb-order .order-contact .tit {
-  margin-bottom: 20px;
-}
-.pcb-order .order-contact .tit .l {
-  font-size: 16px;
-  color: #2b2f33;
-  font-weight: bold;
-}
-.pcb-order .order-contact .tit .r {
-  font-size: 13px;
-  color: #e89721;
-}
-.pcb-order .order-contact .ln {
-  border: 1px solid #f0f4f7;
-  padding: 30px 0 30px 37px;
-}
-.pcb-order .order-contact .ln .iconfont {
-  font-size: 20px;
-  color: #cbcdcf;
-  margin-left: 10px;
-  margin-right: 12px;
-}
-.pcb-order .order-contact .ln .inp {
-  width: 260px;
-  height: 40px;
-  background: #ffffff;
-  border-radius: 2px;
-  border: 1px solid #dae0e6;
-  margin-right: 28px;
-}
-.pcb-order .order-contact .ln .inp input::-webkit-input-placeholder {
-  color: #2b2f33;
-  opacity: 0.5;
-}
-.pcb-order .order-contact .ln .inpt {
-  margin-left: 37px;
-}
-.pcb-order .order-contact .ln .inpt .t1 {
-  font-size: 13px;
-  color: #575e66;
-  cursor: pointer;
-}
-.pcb-order .order-contact .ln .inpt .cicle {
-  width: 12px;
-  height: 12px;
-  padding: 3px;
-  border-radius: 18px;
-  border: 1px solid #C2C7CC;
-  position: relative;
-  margin-right: 8px;
-  cursor: pointer;
-}
-.pcb-order .order-contact .ln .active .cicle {
-  border-color: #0081D2 !important;
-}
-.pcb-order .order-contact .ln .active .cicle i {
-  display: block;
-  width: 12px;
-  height: 12px;
-  background: #0081D2;
-  border-radius: 12px;
-}
-.pcb-order .order-representative {
-  padding: 30px 0;
-}
-.pcb-order .order-representative .tit {
-  font-size: 16px;
-  color: #2b2f33;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-.pcb-order .order-representative .wrap {
-  padding: 30px 30px 30px 40px;
-  background: #F0F4F7;
-}
-.pcb-order .order-representative .wrap .l {
-  font-size: 13px;
-  color: #575e66;
-}
-.pcb-order .order-representative .wrap .r {
-  font-size: 13px;
-  color: #828e99;
-}
-.pcb-order .order-technical-contact {
-  padding: 30px 0;
-}
-.pcb-order .order-technical-contact .tit {
-  font-size: 16px;
-  color: #2b2f33;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-.pcb-order .order-technical-contact .coupon li {
-  position: relative;
-  width: 531px;
-  height: 131px;
-  background: url("../../images/order/coupon.png") no-repeat center;
-  background-size: cover;
-  margin-right: 40px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.pcb-order .order-technical-contact .coupon li .succ {
-  position: absolute;
-  right: -15px;
-  top: -9px;
-  width: 30px;
-  height: 30px;
-  background: #1DDA74;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 30px;
-  z-index: 2;
-}
-.pcb-order .order-technical-contact .coupon li .succ .iconfont {
-  font-size: 19px;
-  color: #fff;
-}
-.pcb-order .order-technical-contact .coupon li .ml {
+.user-center-head .l .text {
   margin-left: 15px;
 }
-.pcb-order .order-technical-contact .coupon li .ml45 {
-  margin-left: 45px;
-}
-.pcb-order .order-technical-contact .coupon li .mt10 {
-  margin: 8px 0;
-}
-.pcb-order .order-technical-contact .coupon li.curr {
-  background: url("../../images/order/coupos.png") no-repeat center;
-  background-size: cover;
-}
-.pcb-order .order-technical-contact .coupon li .t1 {
-  font-size: 28px;
-  color: #ffffff;
-}
-.pcb-order .order-technical-contact .coupon li .t2 {
-  font-size: 16px;
-  color: #ffffff;
-  opacity: 0.5;
-  margin-left: 13px;
-}
-.pcb-order .order-technical-contact .coupon li .t3 .t3-1 {
+.user-center-head .l .text .t1-1 {
   font-size: 16px;
   color: #2b2f33;
 }
-.pcb-order .order-technical-contact .coupon li .t3 .t3-2 {
+.user-center-head .l .text .t1-1 span {
+  font-size: 16px;
+  color: #0081d2;
+}
+.user-center-head .l .text .t1-2 {
+  margin-top: 10px;
   font-size: 13px;
   color: #828e99;
 }
-.pcb-order .order-technical-contact .coupon li .t4 .t4-1 {
-  font-size: 13px;
-  color: #828e99;
+.user-center-head .l .operate.ml225 {
+  margin-left: 225px;
 }
-.pcb-order .order-technical-contact .coupon li .t4 .t4-2 {
+.user-center-head .l .operate.ml80 {
+  margin-left: 80px;
+}
+.user-center-head .l .operate .t1 {
   font-size: 13px;
   color: #575e66;
+  margin-bottom: 16px;
 }
-.pcb-order .order-details {
-  padding: 30px 0 89px 0;
-  border-top: 1px solid #F0F4F7;
-  border-bottom: 1px solid #F0F4F7;
+.user-center-head .l .operate .operate-icn {
+  width: 20px;
+  height: 20px;
+  background: url("../../images/user/money.png") no-repeat;
+  background-size: contain;
 }
-.pcb-order .order-details .l {
-  margin-top: 137px;
-}
-.pcb-order .order-details .l .ml112 {
-  margin-left: 110px;
-}
-.pcb-order .order-details .l .t1 {
-  margin-bottom: 46px;
-  font-size: 16px;
+.user-center-head .l .operate .t2 {
+  font-size: 24px;
   color: #2b2f33;
-  font-weight: bold;
-}
-.pcb-order .order-details .l .t2 .t2-1 {
-  font-size: 13px;
-  color: #828e99;
-}
-.pcb-order .order-details .l .t2 .t2-2 {
-  font-size: 16px;
-  color: #2b2f33;
-  margin-left: 10px;
-  font-weight: bold;
-}
-.pcb-order .order-details .l .t3 {
-  width: 729px;
-  font-size: 13px;
-  color: #575e66;
-  margin-top: 16px;
-}
-.pcb-order .order-details .r .txt {
-  margin-bottom: 10px;
-}
-.pcb-order .order-details .r .txt .t1 {
-  width: 117px;
-  font-size: 13px;
-  color: #828e99;
-  text-align: right;
-}
-.pcb-order .order-details .r .txt .t2 {
-  width: 100px;
-  font-size: 13px;
-  color: #2b2f33;
-  text-align: right;
-  font-weight: bold;
-}
-.pcb-order .order-details .r .txt .t3 {
-  width: 100px;
-  font-size: 13px;
-  color: #FF0D0D;
-  text-align: right;
-  font-weight: bold;
-}
-.pcb-order .order-details .r .submit {
-  margin-top: 40px;
-  width: 220px;
-  height: 60px;
-  background: #ff0d0d;
-  border-radius: 2px;
-  font-size: 16px;
-  color: #ffffff;
-  display: block;
-  text-align: center;
-  line-height: 60px;
-}
-.pcb-order .order-details .r .submit:hover {
-  background: #FF5F5F;
-}
-.chat-with {
-  position: fixed;
-  bottom: 50px;
-  right: 160px;
-  width: 180px;
-  height: 50px;
-  background: #e89721;
-  box-shadow: 0px -8px 10px 0px rgba(232, 151, 33, 0.2);
-  border-radius: 8px 8px 0px 0px;
-  text-align: center;
-  cursor: pointer;
-}
-.chat-with i {
-  font-size: 28px;
-  color: #fff;
-}
-.chat-with span {
-  font-size: 16px;
-  color: #ffffff;
-  margin-left: 7px;
-}
-.addAddress-layer {
-  width: 85%;
-  margin: 0 auto;
-  padding: 40px;
-}
-.addAddress-layer .pcb-box {
-  white-space: nowrap;
-  margin-bottom: 23px;
-}
-.addAddress-layer .pcb-box .mr20 {
+  margin-left: 3px;
   margin-right: 20px;
 }
-.addAddress-layer .pcb-box .pcb-inline .t1 {
-  font-size: 13px;
-  color: #575e66;
-  margin-bottom: 12px;
-}
-.addAddress-layer .pcb-box .pcb-inline .t1 em {
-  color: #e89721;
-  font-style: normal;
-}
-.addAddress-layer .pcb-box .pcb-inline .select-box {
-  width: 100%;
-  height: 40px;
-  background: #ffffff;
-  border-radius: 2px;
-  border: 1px solid #dae0e6;
-  text-indent: 1em;
-  font-size: 14px;
-}
-.addAddress-layer .pcb-box .pcb-inline .textarea-box {
-  height: 80px;
-  background: #ffffff;
-  border-radius: 2px;
-  border: 1px solid #dae0e6;
-  text-indent: 1em;
-  font-size: 14px;
-  text-align: left;
-  padding: 10px 0;
-  resize: none;
-}
-.addAddress-layer .pcb-box .pcb-inline .textarea-box::-webkit-input-placeholder {
-  color: #2B2F33;
-  opacity: 0.5;
-}
-.addAddress-layer .pcb-box .pcb-inline .w260 {
-  width: 258px;
-}
-.addAddress-layer .pcb-box .pcb-inline .w540 {
-  width: 540px;
-}
-.addAddress-layer .pcb-box .pcb-inline .inp {
-  height: 40px;
-  background: #ffffff;
-  border-radius: 2px;
-  border: 1px solid #dae0e6;
-  text-indent: 1em;
-  font-size: 14px;
-}
-.addAddress-layer .pcb-box .pcb-inline .inp::-webkit-input-placeholder {
-  color: #2B2F33;
-  opacity: 0.5;
-}
-.addAddress-layer .pcb-box .toggle-btn .cicle {
-  width: 12px;
-  height: 12px;
-  padding: 3px;
-  border-radius: 18px;
-  border: 1px solid #C2C7CC;
-  position: relative;
-  margin-right: 8px;
-  cursor: pointer;
-}
-.addAddress-layer .pcb-box .toggle-btn.active .cicle {
-  border-color: #0081D2 !important;
-}
-.addAddress-layer .pcb-box .toggle-btn.active .cicle i {
-  display: block;
-  width: 12px;
-  height: 12px;
-  background: #0081D2;
-  border-radius: 12px;
-}
-.addAddress-layer .pcb-box .toggle-btn .t1 {
-  font-size: 13px;
-  color: #575e66;
-}
-.addAddress-layer .pcb-box .save-btn {
-  width: 160px;
-  height: 40px;
+.user-center-head .l .operate .btn {
+  width: 100px;
+  height: 30px;
   background: #0081d2;
   border-radius: 2px;
   font-size: 14px;
   color: #ffffff;
+  line-height: 30px;
   text-align: center;
-  line-height: 40px;
-  display: block;
 }
-.product-details-box {
-  padding: 40px;
-  margin: 0 auto;
-}
-.product-details-box table {
-  width: 1100px;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.product-details-box table tbody tr td {
-  height: 40px;
-  border: 1px solid #F0F4F7;
-  padding-left: 20px;
-}
-.product-details-box table tbody tr td .t1 {
-  width: 150px;
-  color: #828e99;
-  font-size: 13px;
-}
-.product-details-box table tbody tr td .t2 {
-  font-size: 13px;
-  color: #2b2f33;
-}
-.product-details-box .r {
+.user-center-head .r {
   margin-top: 20px;
-}
-.product-details-box .r .t1 {
-  font-size: 13px;
-  color: #828e99;
-}
-.product-details-box .r .t2 {
-  margin-left: 20px;
-  font-size: 13px;
-  color: #ff0d0d;
-  font-weight: bold;
-}
-.change-address {
-  padding: 20px;
-}
-.change-address ul li {
-  width: 1030px;
-  padding: 30px 30px 27px 40px;
-  border: 1px solid #F0F4F7;
-  transition: all 0.2s ease;
-  margin: 0 auto 20px;
-  cursor: pointer;
-}
-.change-address ul li:hover,
-.change-address ul li.cur {
-  border: 2px solid #0081D2;
-}
-.change-address ul li .l .mr120 {
-  margin-right: 120px;
-}
-.change-address ul li .l .mr150 {
-  margin-right: 150px;
-}
-.change-address ul li .l .t1 {
-  font-size: 13px;
-  color: #828e99;
-}
-.change-address ul li .l .t2 {
-  font-size: 16px;
-  color: #2b2f33;
-  font-weight: bold;
-}
-.change-address ul li .l .t3 {
-  margin: 16px 0;
-  color: #575e66;
-  font-size: 13px;
-}
-.change-address ul li .l .toggle-btn-edit .cicle {
-  width: 12px;
-  height: 12px;
-  padding: 3px;
-  border-radius: 18px;
-  border: 1px solid #C2C7CC;
-  position: relative;
-  margin-right: 8px;
-  cursor: pointer;
-}
-.change-address ul li .l .toggle-btn-edit .tt {
-  font-size: 13px;
-  color: #575e66;
-  cursor: pointer;
-}
-.change-address ul li .l .toggle-btn-edit.active .cicle {
-  border-color: #0081D2 !important;
-}
-.change-address ul li .l .toggle-btn-edit.active .cicle i {
-  display: block;
-  width: 12px;
-  height: 12px;
-  background: #0081D2;
-  border-radius: 12px;
-}
-.change-address ul li .r {
-  margin-top: 63px;
+  width: 300px;
+  padding: 0 0 0 20px;
+  background: #ffffff;
+  border-radius: 10px 10px 0px 0px;
   white-space: nowrap;
 }
-.change-address ul li .r .mr35 {
-  margin-right: 35px;
+.user-center-head .r .text {
+  position: relative;
+  top: -9px;
 }
-.change-address ul li .r .edit-ico .iconbianji {
-  font-size: 26px;
-  color: #1b79b7;
-}
-.change-address ul li .r .edit-ico .del {
-  width: 26px;
-  height: 26px;
-  background: url("../../images/order/del.png") no-repeat center;
-  background-size: cover;
-}
-.change-address ul li .r .edit-ico span {
+.user-center-head .r .text .t1 {
   font-size: 13px;
-  color: #828e99;
+  color: #2b2f33;
+  font-weight: bold;
+  margin-bottom: 9px;
 }
-/*# sourceMappingURL=order.css.map */
+.user-center-head .r .text .t2 {
+  font-size: 13px;
+  color: #2b2f33;
+  margin-bottom: 4px;
+}
+.user-center-head .r .text .t2 i {
+  width: 14px;
+  height: 14px;
+  background: url("../../images/user/i1.png") no-repeat center;
+  background-size: contain;
+  margin-right: 7px;
+}
+.user-center-head .r .text .t3 {
+  font-size: 13px;
+  color: #575e66;
+  margin-bottom: 4px;
+}
+.user-center-head .r .text .t3 i {
+  width: 14px;
+  height: 14px;
+  background: url("../../images/user/i2.png") no-repeat center;
+  background-size: contain;
+  margin-right: 7px;
+}
+.user-center-head .r .text .t4 {
+  font-size: 13px;
+  color: #0081d2;
+}
+.user-center-head .r .text .t4 i {
+  width: 14px;
+  height: 14px;
+  background: url("../../images/user/i3.png") no-repeat center;
+  background-size: contain;
+  margin-right: 7px;
+}
+.user-center-head .r .pic {
+  width: 106px;
+  height: 106px;
+}
+.user-center-head .r .pic img {
+  width: 106px;
+  height: 106px;
+}
+.user-center-content {
+  padding-top: 22px;
+}
+.user-center-content .l .top {
+  width: 200px;
+  height: 50px;
+  background: #0081d2;
+  border-radius: 4px;
+  text-align: center;
+}
+.user-center-content .l .top i {
+  width: 24px;
+  height: 24px;
+  background: url("../../images/user/home.png") no-repeat center;
+  background-size: contain;
+}
+.user-center-content .l .top span {
+  font-size: 16px;
+  color: #ffffff;
+}
+.user-center-content .l .menu {
+  margin-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.user-center-content .l .menu dt {
+  font-size: 13px;
+  color: #2b2f33;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.user-center-content .l .menu dd {
+  line-height: 20px;
+  margin-bottom: 8px;
+  transition: all 0.4s ease;
+}
+.user-center-content .l .menu dd a {
+  font-size: 13px;
+  color: #575e66;
+}
+.user-center-content .l .menu dd.curr a,
+.user-center-content .l .menu dd:hover a {
+  color: #0081d2;
+}
+.user-center-content .r {
+  width: 960px;
+  text-align: left;
+}
+/*# sourceMappingURL=index.css.map */
