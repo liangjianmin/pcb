@@ -327,10 +327,10 @@
             <p class="tit">Leave a message to sales representative</p>
             <div class="wrap clr">
                 <div class="fl l">
-                    Please do not leave any notes about PCB or stencil specifications,which can be remarked directly on the instant quote page.
+                    <input type="text" style="background: none;" id="txtCustomNote" placeholder="Please do not leave any notes about PCB or stencil specifications,which can be remarked directly on the instant quote page.">
                 </div>
                 <div class="fr r">
-                    0/30
+                    <label class="limitWords">0/30</label>
                 </div>
             </div>
         </div>
@@ -776,9 +776,21 @@
 </script>
 <script src="./js/jquery.js" type="text/javascript"></script>
 <script src="./js/layui/layui.all.js" type="text/javascript"></script>
-<script>
+<script type="text/javascript">
   $(function () {
 
+    //控制文字输入字数
+    $("#txtCustomNote").on('input propertychange', function () {
+      var val = $(this).val();
+      if (val) {
+        if (val.length > 30) {
+          $(this).val($(this).val().substring(0, 30));
+          $(".limitWords").text('30/30');
+        } else {
+          $(".limitWords").text(val.length + '/30');
+        }
+      }
+    });
 
     //Same contact
     $("#contact_btn").click(function () {
