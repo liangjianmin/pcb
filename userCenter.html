@@ -70,7 +70,7 @@
                 <div>
                     <i class="operate-icn lineBlock va-m"></i>
                     <span class="t2 va-m">$0.00</span>
-                    <a href="javascript:;" class="btn lineBlock va-m">Recharge</a>
+                    <a href="javascript:;" class="btn lineBlock va-m" id="rcharge">Recharge</a>
                 </div>
             </div>
             <div class="lineBlock va-m operate ml80">
@@ -107,37 +107,37 @@
 <div class="user-center-content">
     <div class="width-1180 clr">
         <!--左边菜单栏-->
-       <div class="fl l">
-           <div class="top">
-               <i class="icn lineBlock va-m"></i>
-               <span class="va-m">My Account</span>
-               <b class="lineBlock emptys"></b>
-           </div>
-           <dl class="menu">
-               <dt>Active Orders</dt>
-               <dd class="curr"><a href="#1">All Orders( 0 )</a></dd>
-               <dd><a href="#1">Awaiting Payment ( 0 )</a></dd>
-               <dd><a href="#1">Complete Payment ( 0 )</a></dd>
-               <dd><a href="#1">Awaiting Delivery( 0 )</a></dd>
-               <dd><a href="#1">Shipped( 0 )</a></dd>
-               <dd><a href="#1">Completed( 0 )</a></dd>
-               <dd><a href="#1">Cancelled( 0 )</a></dd>
-               <dd><a href="#1">My Message</a></dd>
+        <div class="fl l">
+            <div class="top">
+                <i class="icn lineBlock va-m"></i>
+                <span class="va-m">My Account</span>
+                <b class="lineBlock emptys"></b>
+            </div>
+            <dl class="menu">
+                <dt>Active Orders</dt>
+                <dd class="curr"><a href="#1">All Orders( 0 )</a></dd>
+                <dd><a href="#1">Awaiting Payment ( 0 )</a></dd>
+                <dd><a href="#1">Complete Payment ( 0 )</a></dd>
+                <dd><a href="#1">Awaiting Delivery( 0 )</a></dd>
+                <dd><a href="#1">Shipped( 0 )</a></dd>
+                <dd><a href="#1">Completed( 0 )</a></dd>
+                <dd><a href="#1">Cancelled( 0 )</a></dd>
+                <dd><a href="#1">My Message</a></dd>
             </dl>
-           <dl class="menu">
-               <dt>Specials</dt>
-               <dd><a href="">My Balance</a></dd>
-               <dd><a href="">My Feedback</a></dd>
-               <dd><a href="">My Invitation hot</a></dd>
-               <dd><a href="">My Coupon</a></dd>
-           </dl>
-           <dl class="menu">
-               <dt>My Profile</dt>
-               <dd><a href="">Delivery Address</a></dd>
-               <dd><a href="">My Information</a></dd>
-               <dd><a href="">Change Password</a></dd>
-           </dl>
-       </div>
+            <dl class="menu">
+                <dt>Specials</dt>
+                <dd><a href="">My Balance</a></dd>
+                <dd><a href="">My Feedback</a></dd>
+                <dd><a href="">My Invitation hot</a></dd>
+                <dd><a href="">My Coupon</a></dd>
+            </dl>
+            <dl class="menu">
+                <dt>My Profile</dt>
+                <dd><a href="">Delivery Address</a></dd>
+                <dd><a href="">My Information</a></dd>
+                <dd><a href="">Change Password</a></dd>
+            </dl>
+        </div>
         <!--右边内容区-->
         <div class="fr r">
             右边内容区
@@ -209,10 +209,46 @@
 </div>
 <!--尾部end-->
 
+<!--recharge弹窗操作-->
+<script type="text/html" id="topRechargeDivHtml">
+    <div class="recharge-box">
+        <h4><i class="ico ico01"></i>Transfer to the balance</h4>
+        <form style="margin: 0" method="post" id="frmSave" action="/newmember/recharge">
+            <label>Amount:</label>
+            <input class="inp-price" value="100.00" type="text" name="amount" id="amount"/>
+            <span>$</span>
+            <div class="mt10">
+                <label>PayPal Fee:</label>
+                <em id="paypalFee">$3.30</em>
+            </div>
+            <div class="mt10">
+                <label>Total Amount:</label>
+                <em class="green" id="totalAmount">$103.30</em>
+            </div>
+            <p><input class="rech-btn btn-rech" type="button" id="btnRechargeTop" value="Recharge"/></p>
+        </form>
+    </div>
+</script>
+
 <script src="./js/jquery.js" type="text/javascript"></script>
 <script src="./js/layui/layui.all.js" type="text/javascript"></script>
-<script>
+<script type="text/javascript">
+  $(function () {
 
+    $("#rcharge").on('click', function () {
+      layer.open({
+        title: "<b>Recharge</b>",
+        type: 1,
+        shade: 0.3,
+        shadeClose: false,
+        area: '520px',
+        content: $('#topRechargeDivHtml').html(), //捕获的元素
+        cancel: function (index) {
+          layer.close(index);
+        }
+      });
+    });
+  })
 </script>
 </body>
 </html>
