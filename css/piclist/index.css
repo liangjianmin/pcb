@@ -261,7 +261,7 @@ body {
   display: block;
   height: 32px;
   color: #fff;
-  font-size: 13px ;
+  font-size: 13px;
   text-align: center;
   line-height: 32px;
   cursor: pointer;
@@ -449,6 +449,33 @@ body {
   border-bottom: none !important;
   font-weight: bold;
   font-size: 16px !important;
+}
+.pcb-empty .pcb-empty-ico {
+  width: 120px;
+  height: 120px;
+  background: url("../../images/home/empty.png") no-repeat center;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+}
+.pcb-empty .pcb-empty-text {
+  font-size: 24px;
+  color: #2b2f33;
+  text-align: center;
+  margin: 30px auto 40px;
+  font-weight: bold;
+}
+.pcb-empty .pcb-empty-btn {
+  width: 120px;
+  height: 40px;
+  background: #0081d2;
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: #ffffff;
 }
 .w1180 {
   width: 1180px;
