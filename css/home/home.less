@@ -130,6 +130,112 @@
               padding-bottom: 10px;
             }
 
+            .text {
+              position: relative;
+              .txt-wrap{
+                line-height: 40px;
+                font-size: 16px;
+                color: #2B2F33;
+                font-weight: 600;
+                cursor: pointer;
+                display: block;
+              }
+              .selects-qty {
+                position: absolute;
+                left: 0px;
+                top: 48px;
+                z-index: 9;
+                width: 461px;
+                background-color: #ffffff;
+                border: solid 1px #e5e5e5;
+                padding: 10px 0 16px 18px;
+                display: none;
+                .arrow {
+                  position: absolute;
+                  left: 21px;
+                  top: -10px;
+                  width: 13px;
+                  height: 11px;
+                  background: url("../../images/home/ico.png") no-repeat -5px -52px;
+                }
+                .inp{
+                  height: 18px;
+                  padding: 5px 0;
+                  text-indent: 6px;
+                  color: #666666;
+                  font-size: 14px;
+                  transition: all 0.4s ease;
+                  width: 158px;
+                  border: solid 1px #e5e5e5;
+                }
+                ul {
+                  li {
+                    float: left;
+                    width: 14%;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    .arr {
+                      width: 14px;
+                      height: 13px;
+                      background: url("../../images/home/ico.png") no-repeat 0 0;
+                    }
+                    &.curr {
+                      .arr {
+                        width: 14px;
+                        height: 13px;
+                        background: url("../../images/home/ico.png") no-repeat -16px 0;
+                      }
+                    }
+                    span {
+                      font-size: 14px;
+                      color: #666666;
+                      margin-left: 5px;
+                    }
+                  }
+                }
+                .wrap {
+                  margin-top: 3px;
+                  label {
+                    font-size: 14px;
+                    color: #666666;
+                    margin-right: 13px;
+                  }
+                  .inp {
+                    width: 158px;
+                    border: solid 1px #e5e5e5;
+                    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                      -webkit-appearance: none !important;
+                      margin: 0;
+                    }
+                    &:focus {
+                      border: solid 1px #00a0e9;
+                    }
+                  }
+                  .btn {
+                    margin-left: 40px;
+                    a {
+                      width: 68px;
+                      height: 30px;
+                      border-radius: 2px;
+                      font-size: 14px;
+                      line-height: 30px;
+                      text-align: center;
+                      &.ok {
+                        background-color: #1080d0;
+                        color: #fefefe;
+                        margin-right: 10px;
+                      }
+                      &.canel {
+                        background-color: #f3f3f3;
+                        color: #666666;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
             .form-item {
               padding: 42px 0 42px 40px;
             }
@@ -710,6 +816,7 @@
           &.point-div-1 {
             top: 81px;
             left: 123px;
+
             .point-mark:before {
               content: '';
               width: 10px;
@@ -727,6 +834,7 @@
           &.point-div-2 {
             top: 116px;
             left: 113px;
+
             .point-mark:before {
               content: '';
               width: 10px;
@@ -744,6 +852,7 @@
           &.point-div-3 {
             top: 139px;
             left: 153px;
+
             .point-mark:before {
               content: '';
               width: 10px;
@@ -761,6 +870,7 @@
           &.point-div-4 {
             top: 222px;
             left: 199px;
+
             .point-mark:before {
               content: '';
               width: 10px;
@@ -778,6 +888,7 @@
           &.point-div-5 {
             top: 282px;
             left: 200px;
+
             .point-mark:before {
               content: '';
               width: 10px;
@@ -795,6 +906,7 @@
           &.point-div-6 {
             top: 111px;
             left: 355px;
+
             .point-mark:before {
               content: '';
               width: 10px;
@@ -812,6 +924,7 @@
           &.point-div-7 {
             top: 106px;
             left: 200px;
+
             .point-mark:before {
               content: '';
               width: 10px;
@@ -829,6 +942,7 @@
           &.point-div-8 {
             top: 128px;
             left: 375px;
+
             .point-mark:before {
               content: '';
               width: 10px;
@@ -846,6 +960,7 @@
           &.point-div-9 {
             top: 57px;
             left: 518px;
+
             .point-mark:before {
               content: '';
               width: 10px;
@@ -863,6 +978,7 @@
           &.point-div-10 {
             top: 267px;
             left: 592px;
+
             .point-mark:before {
               content: '';
               width: 10px;
