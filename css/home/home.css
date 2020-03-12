@@ -1625,6 +1625,7 @@ body {
 .home .faq-section .faq-datas .faq-datas-div {
   width: 1164px;
   transform: translateX(-64px);
+  padding-top: 30px;
 }
 .home .faq-section .faq-datas .faq-data {
   width: 518px;
@@ -1633,13 +1634,14 @@ body {
 .home .faq-section .faq-datas .faq-data .title {
   color: #2B2F33;
   font-size: 16px;
-  padding-top: 30px;
   font-weight: 600;
+  height: 47px;
 }
 .home .faq-section .faq-datas .faq-data .desc {
   padding-top: 12px;
   height: 68px;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 .home .faq-section .faq-datas .faq-data .desc .desc-text {
   color: #575E66;
@@ -1670,4 +1672,3 @@ body {
     opacity: 0;
   }
 }
-/*# sourceMappingURL=home.css.map */

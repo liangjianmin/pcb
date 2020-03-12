@@ -212,8 +212,8 @@ body {
   background: url('../../images/home/car-icon-b.png') 100% 100% no-repeat;
 }
 .common-header .title-logo {
-  width: 160px;
-  height: 50px;
+  width: 129px;
+  height: 39px;
   margin: 29px 38px 0 0;
 }
 .common-header .header-nav {
@@ -261,7 +261,7 @@ body {
   display: block;
   height: 32px;
   color: #fff;
-  font-size: 13px;
+  font-size: 13px ;
   text-align: center;
   line-height: 32px;
   cursor: pointer;
@@ -290,6 +290,7 @@ body {
   display: block;
   color: #575E66;
   font-size: 13px;
+  cursor: pointer;
 }
 .common-header .drop-down-menu ul li a.active {
   color: #2B2F33;
@@ -324,7 +325,7 @@ body {
   text-overflow: ellipsis;
 }
 .common-header .account-btn {
-  min-width: 120px;
+  width: 120px;
   height: 32px;
   background-color: #E89721;
   border-radius: 19px;
@@ -332,7 +333,7 @@ body {
   position: relative;
   top: -10px;
   margin-left: 39px;
-  white-space: nowrap;
+  cursor: pointer;
 }
 .common-header .account-btn:hover {
   background-color: #FFB03D;
@@ -352,12 +353,7 @@ body {
   font-size: 14px;
   margin: 0 3px;
   position: relative;
-  top: -2px;
-  max-width: 100px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  vertical-align: middle;
+  top: 4px;
 }
 .common-header .account-btn .arrow-down-icon {
   height: 5px;
@@ -442,40 +438,6 @@ body {
 }
 .btn-b:hover {
   background-color: #189EF2;
-}
-.layui-layer-title {
-  margin-top: 9px;
-  background: #ffffff !important;
-  border-bottom: none !important;
-  font-weight: bold;
-  font-size: 16px !important;
-}
-.pcb-empty .pcb-empty-ico {
-  width: 120px;
-  height: 120px;
-  background: url("../../images/home/empty.png") no-repeat center;
-  background-size: cover;
-  display: block;
-  margin: 0 auto;
-}
-.pcb-empty .pcb-empty-text {
-  font-size: 24px;
-  color: #2b2f33;
-  text-align: center;
-  margin: 30px auto 40px;
-  font-weight: bold;
-}
-.pcb-empty .pcb-empty-btn {
-  width: 120px;
-  height: 40px;
-  background: #0081d2;
-  border-radius: 2px;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 40px;
-  font-size: 14px;
-  color: #ffffff;
 }
 .w1180 {
   width: 1180px;
