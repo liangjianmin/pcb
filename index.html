@@ -1238,53 +1238,56 @@
                     <div class="faq-data fl">
                         <p class="title">Can I quickly re-order what I have already ordered?</p>
                         <p class="desc">
-                            1. If all parameters except for quantity are the same, you can directly re-order in “My orders - Completed”. But please kindly note that the final price is determined after reviewing.
-                            <span>+MORE</span>
+                            <span class="desc-text">
+                                1. If all parameters except for quantity are the same, you can
+                            <a>+MORE</a>
                         </p>
-
                     </div>
                     <div class="faq-data fl">
                         <p class="title">Can I quickly re-order what I have already ordered?</p>
                         <p class="desc">
-                            1. If all parameters except for quantity are the same, you can directly re-order in “My orders - Completed”. But please kindly note that the final price is determined after reviewing.
-                            <span>+MORE</span>
+                            <span class="desc-text">
+                                1. If all parameters except for quantity are the same, you can directly re-order in “My orders - Completed”. But please kindly note that the final price is determined after reviewing.
+                            </span>
+                            <a>+MORE</a>
                         </p>
-
                     </div>
                     <div class="faq-data fl">
                         <p class="title">Can I quickly re-order what I have already ordered?</p>
                         <p class="desc">
-                            1. If all parameters except for quantity are the same, you can directly re-order in “My orders - Completed”. But please kindly note that the final price is determined after reviewing.
-                            <span>+MORE</span>
+                            <span class="desc-text">
+                                1. If all parameters except for quantity are the samIf all parameters except for quantity are the samIf all parameters except for quantity are the samIf all parameters except for quantity are the samIf all parameters except for quantity are the sam
+                            </span>
+                            <a>+MORE</a>
                         </p>
-
                     </div>
                     <div class="faq-data fl">
                         <p class="title">Can I quickly re-order what I have already ordered?</p>
                         <p class="desc">
-                            1. If all parameters except for quantity are the same, you can directly re-order in “My orders - Completed”. But please kindly note that the final price is determined after reviewing.
-                            <span>+MORE</span>
+                            <span class="desc-text">
+                                1. If all parameters except for quantity are the sam
+                            </span>
+                            <a>+MORE</a>
                         </p>
-
                     </div>
                     <div class="faq-data fl">
                         <p class="title">Can I quickly re-order what I have already ordered?</p>
                         <p class="desc">
-                            1. If all parameters except for quantity are the same, you can directly re-order in “My orders - Completed”. But please kindly note that the final price is determined after reviewing.
-                            <span>+MORE</span>
+                            <span class="desc-text">
+                                1. If all parameters except for quantity are the sam
+                            </span>
+                            <a>+MORE</a>
                         </p>
-
                     </div>
                     <div class="faq-data fl">
                         <p class="title">Can I quickly re-order what I have already ordered?</p>
                         <p class="desc">
-                            1. If all parameters except for quantity are the same, you can directly re-order in “My orders - Completed”. But please kindly note that the final price is determined after reviewing.
-                            <span>+MORE</span>
+                            <span class="desc-text">
+                                1. If all parameters except for quantity are the sam
+                            </span>
+                            <a>+MORE</a>
                         </p>
-
                     </div>
-
-
                 </div>
                 <div class="learn-more">Learn More >></div>
             </div>
@@ -1358,32 +1361,44 @@
 <script type="text/javascript" src="js/base.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
 <script type="text/javascript">
-    $(function () {
-      //Choose Num(pcs)
-      $('#pcb_qty .txt-wrap').on('click', function () {
-        $("#pcb_qty").children('.selects-qty').toggle();
-      });
+  $(function () {
+    //Choose Num(pcs)
+    $('#pcb_qty .txt-wrap').on('click', function () {
+      $("#pcb_qty").children('.selects-qty').toggle();
+    });
 
-      $("#pcb_qty").find('.selects-qty > ul > li').on('click', function () {
-        var val = $(this).attr('data-value');
-        $(this).addClass('curr').siblings('li').removeClass('curr');
-        $("#pcb_qty").find('.txt-wrap').empty().text(val);
-        $("#pcb_qty").find('.canel').trigger('click');
+    $("#pcb_qty").find('.selects-qty > ul > li').on('click', function () {
+      var val = $(this).attr('data-value');
+      $(this).addClass('curr').siblings('li').removeClass('curr');
+      $("#pcb_qty").find('.txt-wrap').empty().text(val);
+      $("#pcb_qty").find('.canel').trigger('click');
 
-      });
+    });
 
-      //Quantity ok canel
-      $("#pcb_qty").find('.ok').on('click', function () {
-        var val= parseInt($.trim($("#pcb_num_input").val()));
-        $("#pcb_qty").find('.txt-wrap').empty().text(val);
-        $("#pcb_qty").find('.canel').trigger('click');
+    //Quantity ok canel
+    $("#pcb_qty").find('.ok').on('click', function () {
+      var val = parseInt($.trim($("#pcb_num_input").val()));
+      $("#pcb_qty").find('.txt-wrap').empty().text(val);
+      $("#pcb_qty").find('.canel').trigger('click');
 
-      });
-      $("#pcb_qty").find('.canel').on('click', function () {
-        $('.selects-qty').hide();
-      });
+    });
+    $("#pcb_qty").find('.canel').on('click', function () {
+      $('.selects-qty').hide();
+    });
 
-    })
+
+    //text
+    $(".faq-datas .faq-data").each(function (i, ele) {
+
+      var len = $.trim($(ele).find('.desc-text').text().length);
+      if (len > 200) {
+        var str = "";
+        str = $(ele).find('.desc-text').text().substring(0, 200) + "......";
+        $(ele).find('.desc-text').html(str);
+      }
+    });
+
+  })
 </script>
 </body>
 

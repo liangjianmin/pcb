@@ -636,9 +636,8 @@ body {
 }
 .home .home-header {
   height: 690px;
-  background: url(../../images/home/home-bg.png) no-repeat;
-  background-size: 1920px 690px;
-  background-position: center;
+  background: url('../../images/home/home-bg.png') no-repeat center;
+  background-size: cover;
   padding-top: 90px;
 }
 .home .home-header .width-1180 .home-header-title {
@@ -1638,11 +1637,15 @@ body {
   font-weight: 600;
 }
 .home .faq-section .faq-datas .faq-data .desc {
+  padding-top: 12px;
+  height: 68px;
+  overflow: hidden;
+}
+.home .faq-section .faq-datas .faq-data .desc .desc-text {
   color: #575E66;
   font-size: 13px;
-  padding-top: 12px;
 }
-.home .faq-section .faq-datas .faq-data .desc span {
+.home .faq-section .faq-datas .faq-data .desc a {
   color: #0081D2;
   cursor: pointer;
 }

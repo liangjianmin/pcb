@@ -53,9 +53,8 @@
 
   .home-header {
     height: 690px;
-    background: url(../../images/home/home-bg.png) no-repeat;
-    background-size: 1920px 690px;
-    background-position: center;
+    background:url('../../images/home/home-bg.png') no-repeat center;
+    background-size: cover;
     padding-top: 90px;
 
     .width-1180 {
@@ -1285,11 +1284,15 @@
         }
 
         .desc {
-          color: #575E66;
-          font-size: 13px;
           padding-top: 12px;
+          height: 68px;
 
-          span {
+          overflow: hidden;
+          .desc-text{
+            color: #575E66;
+            font-size: 13px;
+          }
+          a {
             color: #0081D2;
             cursor: pointer;
           }
