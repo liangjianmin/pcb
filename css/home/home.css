@@ -1635,7 +1635,11 @@ body {
   color: #2B2F33;
   font-size: 16px;
   font-weight: 600;
-  height: 47px;
+  height: 43px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .home .faq-section .faq-datas .faq-data .desc {
   padding-top: 12px;
