@@ -597,15 +597,34 @@ body {
 .user-center-head .l {
   height: 130px;
 }
-.user-center-head .l .i1 {
+.user-center-head .l .pic {
   width: 68px;
   height: 68px;
   line-height: 48px;
   text-align: center;
   background: #ffffff;
   border-radius: 50%;
+  position: relative;
 }
-.user-center-head .l .i1 i {
+.user-center-head .l .pic .fileclass {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 68px;
+  height: 68px;
+  opacity: 0;
+}
+.user-center-head .l .pic .im {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  display: block;
+  z-index: 1;
+}
+.user-center-head .l .pic i {
   font-size: 41px;
   color: #cdcfd0;
   margin-top: 8px;
@@ -769,3 +788,4 @@ body {
   width: 960px;
   text-align: left;
 }
+/*# sourceMappingURL=index.css.map */

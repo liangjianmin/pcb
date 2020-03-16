@@ -674,8 +674,9 @@ body {
   color: #575E66;
   font-size: 16px;
   cursor: pointer;
-  padding: 32px 65px 0 40px;
   height: 90px;
+  width: 20%;
+  padding: 32px 0 0 26px;
 }
 .home .home-header .width-1180 .header-form .header-form-navs .header-form-nav.active {
   color: #2B2F33;
@@ -691,9 +692,16 @@ body {
   font-size: 27px;
   margin-right: 10px;
 }
+.home .home-header .width-1180 .header-form .header-form-navs .header-form-nav .bb {
+  width: 30px;
+  height: 30px;
+  background: url("../../images/home/bb.png") no-repeat center;
+  display: inline-block;
+}
 .home .home-header .width-1180 .header-form .header-form-content .header-form-content-l .header-form-4,
 .home .home-header .width-1180 .header-form .header-form-content .header-form-content-l .header-form-2,
-.home .home-header .width-1180 .header-form .header-form-content .header-form-content-l .header-form-3 {
+.home .home-header .width-1180 .header-form .header-form-content .header-form-content-l .header-form-3,
+.home .home-header .width-1180 .header-form .header-form-content .header-form-content-l .header-form-5 {
   display: none;
 }
 .home .home-header .width-1180 .header-form .header-form-content .header-form-content-l .form-title {
