@@ -332,7 +332,273 @@ body {
   font-size: 40px;
   color: #fcfeff;
 }
-.home {
+.register-section {
   width: 100%;
+  padding: 40px 0 70px 0;
+  background: #F7F9FC;
+}
+.register-section .register-section-wrap {
+  width: 380px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+  text-align: center;
+  padding: 30px 100px 68px 100px;
+}
+.register-section .register-section-wrap .tit {
+  color: #3a3c40;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 10px solid #0081D2;
+  margin-bottom: 40px;
+}
+.register-section .register-section-wrap .inpt {
+  position: relative;
+  margin-bottom: 20px;
+}
+.register-section .register-section-wrap .inpt .iconfont {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  font-size: 30px;
+  color: #e6eaf2;
+}
+.register-section .register-section-wrap .inpt .inp {
+  width: 320px;
+  height: 58px;
+  line-height: 58px;
+  background: #f7f9fc;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  padding-left: 60px;
+  transition: all 0.4s ease;
+}
+.register-section .register-section-wrap .inpt .inp:focus {
+  border: 1px solid #0081d2;
+}
+.register-section .register-section-wrap .inpt .inp::-webkit-input-placeholder {
+  color: #959ba6;
+}
+.register-section .register-section-wrap .inpt .button-class {
+  font-size: 14px;
+  color: #0081d2;
+  position: absolute;
+  right: 21px;
+  top: 21px;
+  font-weight: bold;
+  background: none;
+}
+.register-section .register-section-wrap .inpt .error-text {
+  font-size: 12px;
+  color: #e82121;
+  text-align: left;
+  padding-left: 14px;
+  margin-top: 10px;
+  display: none;
+}
+.register-section .register-section-wrap .inpt.error .iconfont {
+  color: #e82121;
+}
+.register-section .register-section-wrap .inpt.error .inp {
+  border: 1px solid #e82121;
+  color: #e82121;
+}
+.register-section .register-section-wrap .inpt.status .iconfont {
+  color: #0081d2;
+}
+.register-section .register-section-wrap .register-bar {
+  text-align: left;
+}
+.register-section .register-section-wrap .register-bar .circle {
+  width: 12px;
+  height: 12px;
+  padding: 3px;
+  border-radius: 18px;
+  border: 1px solid #C2C7CC;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+}
+.register-section .register-section-wrap .register-bar .circle.act {
+  border-color: #0081D2;
+}
+.register-section .register-section-wrap .register-bar .circle.act i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #0081D2;
+  border-radius: 12px;
+}
+.register-section .register-section-wrap .register-bar .txt {
+  margin-left: 7px;
+  font-size: 14px;
+  color: #959ba6;
+}
+.register-section .register-section-wrap .register-bar .txt a {
+  font-size: 14px;
+  color: #5c5f66;
+  font-weight: bold;
+}
+.register-section .register-section-wrap .btn {
+  margin-top: 28px;
+}
+.register-section .register-section-wrap .btn a {
+  width: 380px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #0081D2;
+  border-radius: 2px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+}
+.register-section .register-section-wrap .txt-bar {
+  margin-top: 30px;
+}
+.register-section .register-section-wrap .txt-bar a {
+  text-align: center;
+  font-size: 14px;
+  color: #0081d2;
+}
+.register-agreement {
+  width: 100%;
+  padding: 40px 0 70px 0;
+  background: #F7F9FC;
+}
+.register-agreement .register-agreement-wrap {
+  width: 820px;
+  padding: 30px 80px 70px 80px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  text-align: center;
+}
+.register-agreement .register-agreement-wrap .title {
+  text-align: center;
+  font-size: 20px;
+  color: #3a3c40;
+  padding-bottom: 20px;
+  font-weight: bold;
+  border-bottom: 10px solid #0081D2;
+}
+.register-agreement .register-agreement-wrap .text {
+  margin-top: 38px;
+  text-align: left;
+}
+.register-agreement .register-agreement-wrap .text .tit {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.register-agreement .register-agreement-wrap .text .tt {
+  font-size: 14px;
+  color: #5c5f66;
+  line-height: 28px;
+}
+.register-agreement .register-agreement-wrap .btn {
+  display: block;
+  margin: 70px auto 0;
+  text-align: center;
+  width: 380px;
+  height: 60px;
+  background: #0090eb;
+  border-radius: 2px;
+  line-height: 60px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.register-success {
+  width: 100%;
+  padding: 40px 0 70px 0;
+  background: #F7F9FC;
+}
+.register-success .register-success-wrap {
+  width: 880px;
+  padding: 50px 90px 70px 90px;
+  margin: 0 auto;
+  background: #ffffff;
+  text-align: center;
+}
+.register-success .register-success-wrap .iconzujiantubiaochenggong {
+  font-size: 180px;
+  color: #07ce2b;
+}
+.register-success .register-success-wrap .t1 {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+.register-success .register-success-wrap .t2 {
+  color: #5c5f66;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.register-success .register-success-wrap .back {
+  color: #0081d2;
+  font-size: 14px;
+  margin-bottom: 50px;
+  display: block;
+}
+.register-success .register-success-wrap .form-box {
+  width: 800px;
+  height: 346px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #e6eaf2;
+  text-align: left;
+}
+.register-success .register-success-wrap .form-box .l {
+  width: 165px;
+  height: 346px;
+  border-radius: 2px 0px 0px 2px;
+  border-right: 1px solid #E6EAF2;
+  background: #F7F9FC;
+}
+.register-success .register-success-wrap .form-box .l ul {
+  width: 165px;
+}
+.register-success .register-success-wrap .form-box .l ul li {
+  position: relative;
+  width: 165px;
+  height: 78px;
+  line-height: 78px;
+  font-size: 16px;
+  color: #3a3c40;
+  text-align: center;
+  border-bottom: 1px solid #E6EAF2;
+  font-weight: bold;
+  cursor: pointer;
+}
+.register-success .register-success-wrap .form-box .l ul li.curr {
+  background: #fff;
+  right: -1px;
+}
+.register-success .register-success-wrap .form-box .l ul li.curr:before {
+  position: absolute;
+  left: -1px;
+  top: 29px;
+  width: 4px;
+  height: 22px;
+  background: #0081d2;
+  content: '';
+}
+.register-success .register-success-wrap .form-box .r {
+  padding-left: 40px;
+}
+.register-success .register-success-wrap .form-box .r .t1 span {
+  font-size: 14px;
+  color: #3a3c40;
+}
+.register-success .register-success-wrap .form-box .r .t1 em {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #5c5f66;
+  font-style: normal;
 }
 /*# sourceMappingURL=index.css.map */

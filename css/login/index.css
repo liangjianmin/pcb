@@ -332,7 +332,126 @@ body {
   font-size: 40px;
   color: #fcfeff;
 }
-.home {
+.login-section {
   width: 100%;
+  padding: 40px 0 70px 0;
+  background: #F7F9FC;
+}
+.login-section .login-section-wrap {
+  width: 380px;
+  margin: 0 auto;
+  padding: 30px 100px 68px 100px;
+  background: #ffffff;
+  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+  border-radius: 2px;
+}
+.login-section .login-section-wrap .text {
+  margin-bottom: 40px;
+}
+.login-section .login-section-wrap .text .error {
+  width: 380px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffb3b3;
+  border-radius: 2px;
+  text-align: center;
+}
+.login-section .login-section-wrap .text .error i {
+  font-size: 26px;
+  color: #E2231F;
+}
+.login-section .login-section-wrap .text .error span {
+  color: #e82121;
+}
+.login-section .login-section-wrap .text .tit {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+  padding-bottom: 19px;
+  border-bottom: 10px solid #0081D2;
+}
+.login-section .login-section-wrap .inpt {
+  position: relative;
+  margin-bottom: 20px;
+}
+.login-section .login-section-wrap .inpt .iconfont {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 30px;
+  color: #e6eaf2;
+  margin-top: -17px;
+}
+.login-section .login-section-wrap .inpt .inp {
+  width: 320px;
+  height: 58px;
+  line-height: 58px;
+  background: #f7f9fc;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  padding-left: 60px;
+  transition: all 0.4s ease;
+}
+.login-section .login-section-wrap .inpt .inp:focus {
+  border: 1px solid #0081d2;
+}
+.login-section .login-section-wrap .inpt .inp::-webkit-input-placeholder {
+  color: #959ba6;
+}
+.login-section .login-section-wrap .inpt.error .iconfont {
+  color: #e82121;
+}
+.login-section .login-section-wrap .inpt.error .inp {
+  border: 1px solid #e82121;
+  color: #e82121;
+}
+.login-section .login-section-wrap .inpt.status .iconfont {
+  color: #0081d2;
+}
+.login-section .login-section-wrap .btn {
+  margin-top: 20px;
+}
+.login-section .login-section-wrap .btn a {
+  width: 380px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #0081D2;
+  border-radius: 2px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+}
+.login-section .login-section-wrap .login-bar {
+  padding-top: 30px;
+}
+.login-section .login-section-wrap .login-bar .l .circle {
+  width: 12px;
+  height: 12px;
+  padding: 3px;
+  border-radius: 18px;
+  border: 1px solid #C2C7CC;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+}
+.login-section .login-section-wrap .login-bar .l .circle.act {
+  border-color: #0081D2;
+}
+.login-section .login-section-wrap .login-bar .l .circle.act i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #0081D2;
+  border-radius: 12px;
+}
+.login-section .login-section-wrap .login-bar .l .txt {
+  font-size: 14px;
+  color: #959ba6;
+  margin-left: 6px;
+}
+.login-section .login-section-wrap .login-bar .r a {
+  font-size: 14px;
+  color: #0081d2;
 }
 /*# sourceMappingURL=index.css.map */

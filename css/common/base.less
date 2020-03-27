@@ -1,5 +1,5 @@
 @import '../font/iconfont.less';
-  
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -130,6 +130,7 @@ a:hover, a:focus {
 
 html, body {
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -150,4 +151,130 @@ body {
   -webkit-text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.mr24 {
+  margin-right: 24px;
+}
+.mr26{
+  margin-right: 26px;
+}
+
+
+.pcb-head {
+  width: 100%;
+  height: 130px;
+
+  .pcb-head-wrap {
+    height: 100%;
+
+    .l {
+      height: 100%;
+
+      h2 {
+        a {
+          width: 166px;
+          height: 74px;
+          display: block;
+
+          img {
+            width: 166px;
+            height: 74px;
+          }
+        }
+      }
+
+      .logo-tit {
+        font-size: 16px;
+        color: #5c5f66;
+        font-weight: bold;
+        margin-left: 35px;
+      }
+
+      .text {
+        margin-left: 254px;
+
+        .text-t1 {
+          font-size: 12px;
+          margin-bottom: 8px;
+          color: #737780;
+        }
+      }
+    }
+
+    .r {
+      height: 100%;
+
+      .btn {
+        width: 120px;
+        height: 40px;
+        background: rgba(232, 151, 33, 1);
+        border-radius: 2px;
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 40px;
+      }
+    }
+  }
+
+}
+
+.pcb-footer {
+  padding: 30px 0;
+
+  .l {
+    .link {
+      margin-bottom: 12px;
+
+      dd {
+        float: left;
+
+        a {
+          font-size: 14px;
+          color: #5c5f66;
+          margin-right: 30px;
+        }
+      }
+    }
+
+    .txt {
+      font-size: 12px;
+      color: #959ba6;
+    }
+  }
+
+  .r {
+    white-space: nowrap;
+    .iconzujiantubiaodianhua{
+      font-size: 40px;
+      color: #007fd8;
+    }
+    .text{
+      margin-left: 18px;
+      margin-right: 46px;
+      .t1{
+        font-size: 14px;
+        color: #5c5f66;
+        margin-bottom: 7px;
+      }
+      .t2{
+        font-size: 16px;
+        color: #3A3C40;
+        font-weight: bold;
+      }
+    }
+    .ico{
+      width:51px;
+      height:51px;
+      border-radius: 50%;
+      background: #E6EAF2;
+      text-align: center;
+      line-height: 51px;
+      .iconfont{
+        font-size: 40px;
+        color: #fcfeff;
+      }
+    }
+  }
 }
