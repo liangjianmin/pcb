@@ -480,126 +480,156 @@ body {
 .sldie-bar dl dt:hover a p {
   color: #0081d2;
 }
-.login-section {
+.faq-head {
   width: 100%;
-  padding: 40px 0 70px 0;
-  background: #F7F9FC;
+  height: 258px;
+  background: url("../../images/faq/faq.jpg") no-repeat center;
+  background-size: cover;
 }
-.login-section .login-section-wrap {
-  width: 380px;
-  margin: 0 auto;
-  padding: 30px 100px 68px 100px;
-  background: #ffffff;
-  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
-  border-radius: 2px;
-}
-.login-section .login-section-wrap .text {
-  margin-bottom: 40px;
-}
-.login-section .login-section-wrap .text .error {
-  width: 380px;
-  height: 60px;
-  line-height: 60px;
-  background: #ffb3b3;
-  border-radius: 2px;
+.faq-head .txt {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 40px;
+  color: #ffffff;
   text-align: center;
 }
-.login-section .login-section-wrap .text .error i {
-  font-size: 26px;
-  color: #E2231F;
+.faq-head .search {
+  position: relative;
+  width: 680px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 2px;
+  margin: 0 auto;
 }
-.login-section .login-section-wrap .text .error span {
-  color: #e82121;
+.faq-head .search .inp {
+  padding-left: 20px;
+  height: 60px;
+  width: 500px;
+  line-height: 60px;
+  font-size: 16px;
 }
-.login-section .login-section-wrap .text .tit {
+.faq-head .search .inp::-webkit-input-placeholder {
+  color: #959ba6;
+}
+.faq-head .search .iconfont {
+  position: absolute;
+  right: 19px;
+  top: 10px;
+  font-size: 40px;
+  color: #0d7bbf;
+  cursor: pointer;
+}
+.faq-content {
+  padding-top: 30px;
+}
+.faq-content .tit a {
+  font-size: 12px;
+}
+.faq-content .tit .t1 {
+  color: #5c5f66;
+}
+.faq-content .tit .t2 {
+  color: #959ba6;
+}
+.faq-content .tit .iconfont {
+  font-size: 14px;
+  color: #bbbbbd;
+}
+.faq-content .list {
+  margin-top: 40px;
+}
+.faq-content .list ul {
+  border-bottom: 1px solid #E6EAF2;
+  white-space: nowrap;
+  padding-bottom: 58px;
+  margin-bottom: 60px;
+}
+.faq-content .list ul.bor {
+  border-bottom: none;
+}
+.faq-content .list ul li {
+  width: 400px;
+  margin-bottom: 20px;
+}
+.faq-content .list ul li .tit {
+  position: relative;
   font-size: 20px;
   color: #3a3c40;
   font-weight: bold;
-  padding-bottom: 19px;
-  border-bottom: 10px solid #0081D2;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
 }
-.login-section .login-section-wrap .inpt {
-  position: relative;
+.faq-content .list ul li .tit:after {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  height: 5px;
+  background: #0081D2;
+  width: 100%;
+  content: '';
+}
+.faq-content .list ul li .linka {
+  display: block;
   margin-bottom: 20px;
 }
-.login-section .login-section-wrap .inpt .iconfont {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  font-size: 30px;
-  color: #e6eaf2;
-  margin-top: -17px;
+.faq-content .list ul li .linka em {
+  width: 8px;
+  height: 8px;
+  background: #e6eaf2;
+  border-radius: 50%;
+  margin-right: 6px;
 }
-.login-section .login-section-wrap .inpt .inp {
-  width: 320px;
-  height: 58px;
-  line-height: 58px;
-  background: #f7f9fc;
-  border-radius: 2px;
-  border: 1px solid #E6EAF2;
-  padding-left: 60px;
-  transition: all 0.4s ease;
+.faq-content .list ul li .linka span {
+  width: 94%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #5c5f66;
+  font-size: 16px;
+  display: inline-block;
 }
-.login-section .login-section-wrap .inpt .inp:focus {
-  border: 1px solid #0081d2;
-}
-.login-section .login-section-wrap .inpt .inp::-webkit-input-placeholder {
-  color: #959ba6;
-}
-.login-section .login-section-wrap .inpt.error .iconfont {
-  color: #e82121;
-}
-.login-section .login-section-wrap .inpt.error .inp {
-  border: 1px solid #e82121;
-  color: #e82121;
-}
-.login-section .login-section-wrap .inpt.status .iconfont {
+.faq-content .list ul li .all {
+  font-size: 14px;
   color: #0081d2;
 }
-.login-section .login-section-wrap .btn {
-  margin-top: 20px;
+.faq-content .faq-detail {
+  width: 880px;
+  margin: 50px auto 0;
+  padding-bottom: 118px;
 }
-.login-section .login-section-wrap .btn a {
-  width: 380px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  background: #0081D2;
-  border-radius: 2px;
-  display: block;
-  font-size: 18px;
-  color: #ffffff;
-}
-.login-section .login-section-wrap .login-bar {
-  padding-top: 30px;
-}
-.login-section .login-section-wrap .login-bar .l .circle {
-  width: 12px;
-  height: 12px;
-  padding: 3px;
-  border-radius: 18px;
-  border: 1px solid #C2C7CC;
+.faq-content .faq-detail .tit {
   position: relative;
-  top: -2px;
-  cursor: pointer;
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
 }
-.login-section .login-section-wrap .login-bar .l .circle.act {
-  border-color: #0081D2;
-}
-.login-section .login-section-wrap .login-bar .l .circle.act i {
-  display: block;
-  width: 12px;
-  height: 12px;
+.faq-content .faq-detail .tit:after {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  height: 5px;
   background: #0081D2;
-  border-radius: 12px;
+  width: 80px;
+  content: '';
 }
-.login-section .login-section-wrap .login-bar .l .txt {
+.faq-content .faq-detail .textarea {
+  margin-top: 30px;
   font-size: 14px;
-  color: #959ba6;
-  margin-left: 6px;
+  color: #5c5f66;
+  line-height: 28px;
 }
-.login-section .login-section-wrap .login-bar .r a {
+.faq-content .empty {
+  padding: 10px 0;
+  text-align: center;
+}
+.faq-content .empty .iconfont {
+  font-size: 180px;
+  color: #eaebf1;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.faq-content .empty p {
+  text-align: center;
   font-size: 14px;
-  color: #0081d2;
+  color: #5c5f66;
 }
 /*# sourceMappingURL=index.css.map */
