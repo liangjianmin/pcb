@@ -550,6 +550,7 @@ body {
 .faq-content .list ul li {
   width: 400px;
   margin-bottom: 20px;
+  vertical-align: top;
 }
 .faq-content .list ul li .tit {
   position: relative;

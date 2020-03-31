@@ -480,7 +480,35 @@ body {
 .sldie-bar dl dt:hover a p {
   color: #0081d2;
 }
-.home {
+.home .nav-wrap .nav li {
+  position: relative;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 60px;
+  transition: all 0.4s ease;
+}
+.home .nav-wrap .nav li.curr:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #0081D2;
   width: 100%;
+  height: 3px;
+  content: '';
+}
+.home .nav-wrap .nav li a {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.home .nav-wrap .nav li.curr a,
+.home .nav-wrap .nav li:hover a {
+  color: #0081d2;
+}
+.home .banner {
+  width: 100%;
+  height: 450px;
+  background: url("../../images/home/banner.jpg") no-repeat;
 }
 /*# sourceMappingURL=index.css.map */
