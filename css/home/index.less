@@ -36,9 +36,77 @@
     }
   }
 
-  .banner {
-    width: 100%;
-    height: 450px;
-    background: url("../../images/home/banner.jpg") no-repeat;
+  .banner-box {
+    position: relative;
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 470px;
+      overflow: hidden;
+
+      .bd {
+        height: 470px;
+
+        ul {
+          height: 470px;
+
+          li {
+            width: 100%;
+            height: 470px;
+
+            a {
+              width: 100%;
+              height: 470px;
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+              display: block;
+            }
+          }
+        }
+      }
+
+      .hd {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          background: #353537;
+          border: solid 1px #7d7d7d;
+          cursor: pointer;
+          border-radius: 50%;
+          margin-right: 10px;
+          -webkit-transition: 0.3s ease-out;
+          transition: 0.3s ease-out;
+
+          &.on {
+            background-color: #b5b5b5;
+          }
+        }
+      }
+    }
+
+    .home-pcb {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      width: 1180px;
+      height:374px;
+      margin: 0 auto;
+      z-index: 2;
+      .home-pcb-box{
+        background: #FFFFFF;
+        width:634px;
+        height:374px;
+        border-radius:2px;
+      }
+    }
   }
 }

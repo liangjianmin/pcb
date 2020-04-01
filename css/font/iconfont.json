@@ -6,6 +6,139 @@
   "description": "pcb-国内版本",
   "glyphs": [
     {
+      "icon_id": "13834323",
+      "name": "组件／图标／礼物",
+      "font_class": "zujiantubiaoliwu17",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "13834319",
+      "name": "组件／图标／礼物(2)",
+      "font_class": "zujiantubiaoliwu16",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "13834318",
+      "name": "组件／图标／礼物(1)",
+      "font_class": "zujiantubiaoliwu15",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "13834314",
+      "name": "组件／图标／箭头",
+      "font_class": "zujiantubiaojiantou4",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "13834294",
+      "name": "组件／图标／箭头(1)",
+      "font_class": "zujiantubiaojiantou3",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "13789805",
+      "name": "组件／图标／头像",
+      "font_class": "zujiantubiaotouxiang",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "13789795",
+      "name": "组件／图标／礼物",
+      "font_class": "zujiantubiaoliwu14",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "13789790",
+      "name": "组件／图标／礼物(11)",
+      "font_class": "zujiantubiaoliwu13",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "13789789",
+      "name": "组件／图标／礼物(10)",
+      "font_class": "zujiantubiaoliwu12",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "13789776",
+      "name": "组件／图标／礼物(9)",
+      "font_class": "zujiantubiaoliwu11",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "13789753",
+      "name": "组件／图标／礼物(8)",
+      "font_class": "zujiantubiaoliwu10",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "13789745",
+      "name": "组件／图标／礼物(7)",
+      "font_class": "zujiantubiaoliwu9",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "13789736",
+      "name": "组件／图标／礼物(6)",
+      "font_class": "zujiantubiaoliwu8",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "13789732",
+      "name": "组件／图标／礼物(5)",
+      "font_class": "zujiantubiaoliwu7",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "13789729",
+      "name": "组件／图标／礼物(4)",
+      "font_class": "zujiantubiaoliwu6",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "13789722",
+      "name": "组件／图标／礼物(3)",
+      "font_class": "zujiantubiaoliwu5",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "13789719",
+      "name": "组件／图标／礼物(2)",
+      "font_class": "zujiantubiaoliwu4",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "13789695",
+      "name": "组件／图标／礼物(1)",
+      "font_class": "zujiantubiaoliwu3",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "13789693",
+      "name": "组件／图标／喇叭",
+      "font_class": "zujiantubiaolaba1",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
       "icon_id": "13780233",
       "name": "组件／图标／手机",
       "font_class": "zujiantubiaoshouji1",
