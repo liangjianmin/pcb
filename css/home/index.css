@@ -655,4 +655,276 @@ body {
   height: 374px;
   border-radius: 2px;
 }
+.home .banner-box .home-pcb .home-pcb-box .tab {
+  height: 49px;
+  background: #f7f9fc;
+  border-radius: 2px 0px 0px 2px;
+  background: #F7F9FC;
+  border-bottom: 1px solid #E6EAF2;
+}
+.home .banner-box .home-pcb .home-pcb-box .tab li {
+  position: relative;
+  width: 136px;
+  padding-left: 29px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #5c5f66;
+  border-right: 1px solid #E6EAF2;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.home .banner-box .home-pcb .home-pcb-box .tab li:last-child {
+  border-right: none;
+}
+.home .banner-box .home-pcb .home-pcb-box .tab li.curr {
+  color: #3a3c40;
+  font-weight: bold;
+  background: #FFFFFF;
+}
+.home .banner-box .home-pcb .home-pcb-box .tab li.curr:after {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 4px;
+  height: 22px;
+  background: #0081D2;
+  z-index: 1;
+  content: '';
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap {
+  padding: 19px 40px 25px 40px;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap .t1 {
+  margin-bottom: 20px;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap .t1 span {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap .t1 em {
+  font-size: 12px;
+  color: #5c5f66;
+  margin-left: 10px;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd {
+  margin-bottom: 20px;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd:nth-of-type(2n) {
+  margin-right: 0;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd label {
+  color: #3a3c40;
+  font-size: 14px;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap {
+  margin-top: 5px;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap .w98 {
+  width: 98px;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap .w220 {
+  width: 220px;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap .sel {
+  height: 50px;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  font-size: 14px;
+  padding-left: 10px;
+  background: #F9F9FB;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap .sel::-webkit-input-placeholder {
+  color: #959ba6;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap .inp {
+  height: 50px;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  font-size: 14px;
+  text-indent: 1em;
+  background: #F9F9FB;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap .inp::-webkit-input-placeholder {
+  color: #959ba6;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap .tt {
+  font-size: 14px;
+  color: #5c5f66;
+  padding: 0 5px;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap em {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #5c5f66;
+  font-style: normal;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap .btn-wrap .iconzujiantubiaolaba {
+  font-size: 20px;
+  color: #dfba84;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap .btn-wrap .btn-text {
+  font-size: 12px;
+  color: #e89721;
+  margin-left: 5px;
+  margin-right: 51px;
+}
+.home .banner-box .home-pcb .home-pcb-box .show-wrap .btn-wrap .btn {
+  width: 220px;
+  height: 50px;
+  background: #0081D2;
+  border-radius: 2px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+.home .notice {
+  padding: 46px 0 64px 0;
+}
+.home .notice .l ul {
+  padding-left: 29px;
+}
+.home .notice .l ul li .pic {
+  width: 60px;
+  height: 60px;
+  background: #E89721;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+}
+.home .notice .l ul li .pic .iconfont {
+  font-size: 40px;
+  color: #ffffff;
+}
+.home .notice .l ul li .text {
+  margin-left: 10px;
+}
+.home .notice .l ul li .text .t1 {
+  font-size: 16px;
+  color: #3a3c40;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.home .notice .l ul li .text .t2 {
+  font-size: 12px;
+  color: #959ba6;
+}
+.home .notice .r {
+  width: 280px;
+}
+.home .notice .r .tit .ll .iconfont {
+  font-size: 20px;
+  color: #62a1be;
+}
+.home .notice .r .tit .ll span {
+  font-size: 16px;
+  color: #3a3c40;
+  margin-left: 4px;
+  font-weight: bold;
+}
+.home .notice .r .tit .rr span {
+  font-size: 12px;
+  color: #959ba6;
+}
+.home .notice .r .tit .rr .iconfont {
+  color: #959ba6;
+  font-size: 12px;
+}
+.home .notice .r .news {
+  margin-top: 9px;
+}
+.home .notice .r .news dd {
+  margin-bottom: 7px;
+}
+.home .notice .r .news dd .ll {
+  width: 234px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  overflow: hidden;
+  color: #5c5f66;
+}
+.home .notice .r .news dd .rr {
+  font-size: 12px;
+  color: #5c5f66;
+}
+.home .home-price .tit {
+  border-bottom: 1px solid #E6EAF2;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+.home .home-price .tit .t1 {
+  position: relative;
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.home .home-price .tit .t1:after {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 5px;
+  width: 100%;
+  content: '';
+  z-index: 1;
+  background: #0081D2;
+}
+.home .home-price .tit .t2 {
+  font-size: 12px;
+  color: #5c5f66;
+  margin-left: 18px;
+}
+.home .question .title {
+  border-bottom: 1px solid #E6EAF2;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+.home .question .title .t1 {
+  position: relative;
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.home .question .title .t1:after {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 5px;
+  width: 100%;
+  content: '';
+  z-index: 1;
+  background: #0081D2;
+}
+.home .question .title .t2 {
+  font-size: 12px;
+  color: #5c5f66;
+  margin-left: 18px;
+}
+.home .question .question-content ul li {
+  width: 560px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+}
+.home .question .question-content ul li:nth-of-type(2n) {
+  margin-right: 0;
+}
+.home .question .question-content ul li .tit {
+  margin-bottom: 15px;
+}
+.home .question .question-content ul li .tit .l {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.home .question .question-content ul li .tit .time {
+  font-size: 12px;
+  color: #959ba6;
+}
+.home .question .question-content ul li .text {
+  font-size: 14px;
+  color: #5c5f66;
+  height: 38px;
+}
 /*# sourceMappingURL=index.css.map */
