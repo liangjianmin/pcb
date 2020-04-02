@@ -39,6 +39,27 @@
       return this;
     },
     handleBind: function (opt) {
+      
+      //scrollTop
+      $(window).on('scroll', function () {
+        var height = $(window).scrollTop();
+        
+        if (height > 100) {
+          $(".sldie-bar").fadeIn();
+        } else {
+          $(".sldie-bar").fadeOut();
+        }
+      });
+      
+      
+      //backtop
+      $("#backtop").on('click', function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 500);
+      });
+      
+      
       return this;
     },
   }, $(function () {

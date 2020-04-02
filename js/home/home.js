@@ -20,6 +20,22 @@
         });
       }
       
+      
+      //slide
+      if ($(".list-pic").length > 0) {
+        jQuery(".list-pic").slide({
+          mainCell: ".bd ul",
+          autoPlay: false,
+          prevCell: '.prev',
+          nextCell: '.next',
+          effect: "left",
+          pnLoop: false,
+          vis: 4
+        });
+      }
+      
+     
+      
       return this;
     }
   }, $(function () {
