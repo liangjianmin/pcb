@@ -6,6 +6,41 @@
   "description": "pcb-国内版本",
   "glyphs": [
     {
+      "icon_id": "13866777",
+      "name": "组件／图标／手机",
+      "font_class": "zujiantubiaoshouji2",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "13866773",
+      "name": "组件／图标／警告",
+      "font_class": "zujiantubiaojinggao1",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "13866743",
+      "name": "组件／图标／箭头",
+      "font_class": "zujiantubiaojiantou8",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "13866741",
+      "name": "组件／图标／箭头(2)",
+      "font_class": "zujiantubiaojiantou7",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "13866696",
+      "name": "组件／图标／箭头",
+      "font_class": "zujiantubiaojiantou6",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
       "icon_id": "13864487",
       "name": "组件／图标／箭头",
       "font_class": "zujiantubiaojiantou5",
