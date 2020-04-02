@@ -1,0 +1,106 @@
+@import '../common/base.less';
+
+.pay-status {
+  background: #F7F9FC;
+  height: 100px;
+
+  .l {
+    height: 100px;
+
+    p {
+      color: #3a3c40;
+      font-size: 20px;
+    }
+  }
+
+  .r {
+    height: 100px;
+
+    ul {
+      li {
+        position: relative;
+        width: 123px;
+        float: left;
+
+        p {
+          margin-bottom: 7px;
+
+          .iconfont {
+            color: #bbc1c8;
+            font-size: 30px;
+          }
+
+          span {
+            font-size: 14px;
+            color: #959ba6;
+            margin-left: 5px;
+          }
+        }
+
+        .circle {
+          width: 13px;
+          height: 13px;
+          background: #E6EAF2;
+          border-radius: 50%;
+          margin-left: 10px;
+        }
+
+        .line-0 {
+          position: absolute;
+          left: 14px;
+          top: 45px;
+          width: 60px;
+          height: 3px;
+          background: #E6EAF2;
+        }
+
+        .line-1 {
+          position: absolute;
+          left: -50px;
+          top: 45px;
+          width: 60px;
+          height: 3px;
+          background: #E6EAF2;
+        }
+
+        .line-2 {
+          position: absolute;
+          left: 22px;
+          top: 45px;
+          width: 60px;
+          height: 3px;
+          background: #E6EAF2;
+        }
+
+        &.curr {
+          p {
+            .iconfont {
+              color: #ffb74f;
+            }
+
+            span {
+              color: #3a3c40;
+              font-weight: bold;
+            }
+          }
+
+          .circle {
+            background: #E89721;
+          }
+
+          b {
+            background: #E89721;
+          }
+        }
+      }
+    }
+  }
+}
+
+.par-section {
+  background: #fff;
+  padding: 40px 0 100px 0;
+
+
+}
+

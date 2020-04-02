@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="./css/faq/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="./css/pay/index.css"/>
 </head>
 
 <body>
@@ -34,11 +35,8 @@
                 <div class="lineBlock va-m circle">0</div>
             </a>
             <div class="show lineBlock va-m">
-                <div class="bar">
-                    <a class="link" href="javascript:;">登录</a>
-                    <span class="lineBlock va-m"></span>
-                    <a class="link" href="javascript:;">注册</a>
-                </div>
+                <!--已登录显示手机号-->
+                <p class="tel">18589050841</p>
                 <div class="bar-bottom">
                     <a class="t1">我的订单</a>
                     <div class="lineBlock va-m circle">0</div>
@@ -51,35 +49,55 @@
 <!--head end-->
 
 <!--section-->
-<div class="faq-head">
-    <div class="width-1180">
-        <p class="txt">有什么可以帮到您？</p>
-        <div class="search">
-            <input type="text" placeholder="请输入搜索关键词" class="inp"/>
-            <i class="iconfont iconzujiantubiaoliwu1"></i>
+<div class="pay-status">
+    <div class="width-1180 clr">
+        <div class="fl l">
+            <p class="lineBlock va-m">订单支付</p>
+            <b class="lineBlock emptys"></b>
+        </div>
+        <div class="fr r">
+            <ul class="lineBlock va-m clr">
+                <li class="lbBox curr">
+                    <p>
+                        <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                        <span class="va-m">购物车</span>
+                    </p>
+                    <b class="circle lineBlock va-m"></b>
+                    <b class="line-0 lineBlock va-m"></b>
+                </li>
+                <li class="lbBox curr">
+                    <p>
+                        <i class="iconfont iconzujiantubiaoliwu17 va-m"></i>
+                        <span class="va-m">提交订单</span>
+                    </p>
+                    <b class="line-1 lineBlock va-m"></b>
+                    <b class="circle lineBlock va-m"></b>
+                    <b class="line-2 lineBlock va-m"></b>
+                </li>
+                <li class="lbBox curr">
+                    <p>
+                        <i class="iconfont iconzujiantubiaoliwu15 va-m"></i>
+                        <span class="va-m">订单支付</span>
+                    </p>
+                    <b class="line-1 lineBlock va-m"></b>
+                    <b class="circle lineBlock va-m"></b>
+                    <b class="line-2 lineBlock va-m"></b>
+                </li>
+                <li class="lbBox">
+                    <p>
+                        <i class="iconfont iconzujiantubiaoliwu16 va-m"></i>
+                        <span class="va-m">审核通过</span>
+                    </p>
+                    <b class="line-1 lineBlock va-m"></b>
+                    <b class="circle lineBlock va-m"></b>
+                </li>
+            </ul>
+            <b class="lineBlock emptys"></b>
         </div>
     </div>
 </div>
-<div class="faq-content">
-    <div class="width-1180">
-        <p class="tit">
-            <a class="va-m t1" href="/">首页</a>
-            <i class="iconfont iconzujiantubiaojiantou va-m"></i>
-            <a class="va-m t1" href="#1">帮助中心</a>
-            <i class="iconfont iconzujiantubiaojiantou va-m"></i>
-            <a class="va-m t2" href="#1">常见问题</a>
-        </p>
-        <div class="faq-detail">
-            <p class="tit">为什么我的订单不支持开发票？</p>
-            <div class="textarea">
-                1.1　用户应当同意本协议的条款并按照页面上的提示完成全部的注册程序。用户在进行注册程序过程中勾选"我已阅读并接受"模块即表示用户与产品名称达成协议，完全接受本协议项下的全部条款。<br/><br/>
+<div class="par-section">
 
-                1.2　用户注册成功后，产品名称将给予每个用户一个用户帐号及相应的密码，该用户帐号和密码由用户负责保管；用户应当对以其用户帐号进行的所有活动和事件负法律责任。<br/><br/>
-
-                1.3　用户可以使用产品名称各个频道单项服务，当用户使用产品名称各单项服务时，用户的使用行为视为其对该单项服务的服务条款以及产品名称在该单项服务中发出的各类公告的同意。<br/>
-            </div>
-        </div>
-    </div>
 </div>
 <!--section end-->
 
@@ -135,7 +153,6 @@
 </div>
 <!--slide bar end-->
 
-
 <!--footer-->
 <div class="pcb-footer">
     <div class="width-1180 clr">
@@ -169,11 +186,17 @@
     </div>
 </div>
 <!--footer end-->
+
+
+
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
+  $(function () {
 
+
+  })
 </script>
 </body>
 
