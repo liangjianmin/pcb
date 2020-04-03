@@ -131,6 +131,37 @@
         }
       }
       return object[value];
+    },
+    /**
+     *时分秒倒计时方法
+     */
+    timergo: function (time) {
+      var endTime = new Date(Number(time));
+      var ts = endTime - new Date();
+      console.log(ts)
+      if (ts > 0) {
+        var dd = parseInt(ts / 1000 / 60 / 60 / 24, 10);
+        var hh = parseInt(ts / 1000 / 60 / 60 % 24, 10);
+        var mm = parseInt(ts / 1000 / 60 % 60, 10);
+        var ss = parseInt(ts / 1000 % 60, 10);
+        dd = dd < 10 ? ("0" + dd) : dd;   //天
+        hh = hh < 10 ? ("0" + hh) : hh;   //时
+        mm = mm < 10 ? ("0" + mm) : mm;   //分
+        ss = ss < 10 ? ("0" + ss) : ss;   //秒
+        
+        $("#timer_h").text(Number(dd) * 24 + Number(hh) + '时');
+        $("#timer_m").text(mm + '分');
+        $("#timer_s").text(ss + '秒');
+        
+        setTimeout(function () {
+          Util.timergo(time);
+        }, 1000);
+        
+      } else {
+        $("#timer_h").text(0 + '时');
+        $("#timer_m").text(0 + '分');
+        $("#timer_s").text(0 + '秒');
+      }
     }
   };
   if (typeof define === "function" && define.amd) {

@@ -101,7 +101,15 @@
                 <i class="iconfont iconzujiantubiaochenggong va-m"></i>
                 <div class="text lineBlock va-m">
                     <p class="t1">订单提交成功！请尽快完成支付。</p>
-                    <p class="t2">请在<em>2小时0分</em>内完成支付, 超时后将取消订单！</p>
+                    <p class="t2">
+                        <span class="va-m">请在</span>
+                        <span class="va-m">
+                            <em id="timer_h"></em>
+                            <em id="timer_m"></em>
+                            <em id="timer_s"></em>
+                        </span>
+                        <span class="va-m">内完成支付, 超时后将取消订单！</span>
+                    </p>
                 </div>
             </div>
             <div class="fr r">
@@ -385,6 +393,7 @@
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
+<script type="text/javascript" src="js/pay/pay.js"></script>
 <script type="text/javascript">
   $(function () {
 
