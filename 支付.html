@@ -96,8 +96,132 @@
         </div>
     </div>
 </div>
-<div class="par-section">
-
+<div class="pay-section">
+    <div class="width-1180">
+        <div class="pay-head clr">
+            <div class="fl l lbBox">
+                <i class="iconfont iconzujiantubiaochenggong va-m"></i>
+                <div class="text lineBlock va-m">
+                    <p class="t1">订单提交成功！请尽快完成支付。</p>
+                    <p class="t2">请在<em>2小时0分</em>内完成支付, 超时后将取消订单！</p>
+                </div>
+            </div>
+            <div class="fr r">
+                <p>
+                    <span>应付总额：</span>
+                    <em>￥1245.00</em>
+                </p>
+            </div>
+        </div>
+        <div class="pay-content clr">
+            <div class="pay-operation clr">
+                <div class="pay-operation-head clr">
+                    <div class="fl l">
+                        <ul class="clr tab">
+                            <li class="curr">在线支付</li>
+                            <li>线下支付</li>
+                        </ul>
+                    </div>
+                    <div class="fr r">
+                        <span class="t1 va-m">专属客服：</span>
+                        <a href="javascript:;" class="va-m">
+                            <span class="t2 va-m">在线联系</span>
+                            <i class="iconfont iconzujiantubiaoliwu9 va-m"></i>
+                        </a>
+                        <span class="t3 va-m">李小组</span>
+                        <span class="t4 va-m">15012412345</span>
+                    </div>
+                </div>
+                <div class="pay-operation-box hide" style="display: block">
+                    <ul class="clr">
+                        <li>
+                            <p class="tit">平台支付</p>
+                            <dl class="clr">
+                                <dd class="weixin lbBox curr">
+                                    <i class="iconfont iconzujiantubiaojiantou12 va-m"></i>
+                                    <span class="va-m t1">微信支付</span>
+                                    <b class="lineBlock emptys"></b>
+                                </dd>
+                                <dd class="alipay lbBox">
+                                    <i class="iconfont iconzujiantubiaojiantou11 va-m"></i>
+                                    <span class="va-m t1">支付宝</span>
+                                    <b class="lineBlock emptys"></b>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <p class="tit">账户支付</p>
+                            <dl class="clr">
+                                <dd class="balancepay lbBox">
+                                    <span class="va-m t1">余额支付</span>
+                                    <b class="lineBlock emptys"></b>
+                                </dd>
+                                <dd class="balance lbBox">
+                                    <i class="iconfont iconzujiantubiaojiantou13 va-m"></i>
+                                    <span class="va-m t2">账户余额：</span>
+                                    <span class="va-m t3">￥2000.00</span>
+                                    <b class="lineBlock emptys"></b>
+                                </dd>
+                            </dl>
+                            <div class="tip lbBox">
+                                <i class="iconfont iconzujiantubiaojinggao2"></i>
+                                <span>提示：您的账户当前余额不足，无法完成支付。</span>
+                                <a href="javascript:;">充值</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pay-offline-payment hide">
+                    <p class="tit">提示：转账完成后，请将转账凭证发送至客服人员，确认款项后才可安排生产。</p>
+                    <ul class="clr">
+                        <li class="lbBox">
+                            <div class="lineBlock va-m pic">
+                                <img src="./images/pay/cmb.png" alt="">
+                                <a href="javascript:;">保存信息</a>
+                            </div>
+                            <div class="text lineBlock va-m">
+                                <p class="t1">
+                                    <span class="lineBlock va-m">开户行:</span>
+                                    <em class="va-m">深圳市上梅林支行</em>
+                                </p>
+                                <p class="t1">
+                                    <span class="lineBlock va-m">账号:</span>
+                                    <em class="va-m">0000 0000 0000 000</em>
+                                </p>
+                                <p class="t1">
+                                    <span class="lineBlock va-m">户名:</span>
+                                    <em class="va-m">深圳市猎板科技有限公司</em>
+                                </p>
+                            </div>
+                            <b class="lineBlock emptys"></b>
+                        </li>
+                        <li class="lbBox">
+                            <div class="lineBlock va-m pic">
+                                <img src="./images/pay/cmb.png" alt="">
+                                <a href="javascript:;">保存信息</a>
+                            </div>
+                            <div class="text lineBlock va-m">
+                                <p class="t1">
+                                    <span class="lineBlock va-m">开户行:</span>
+                                    <em class="va-m">深圳市上梅林支行</em>
+                                </p>
+                                <p class="t1">
+                                    <span class="lineBlock va-m">账号:</span>
+                                    <em class="va-m">0000 0000 0000 000</em>
+                                </p>
+                                <p class="t1">
+                                    <span class="lineBlock va-m">户名:</span>
+                                    <em class="va-m">深圳市猎板科技有限公司</em>
+                                </p>
+                            </div>
+                            <b class="lineBlock emptys"></b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="javascript:;" class="fr btn-pay">去支付</a>
+        </div>
+    </div>
 </div>
 <!--section end-->
 
@@ -188,6 +312,77 @@
 <!--footer end-->
 
 
+<script type="text/html" id="balancepayHtml">
+    <div class="balancepay-layer">
+        <div class="text">
+            <p class="t1 clr">
+                <span class="fl l">应付总额：</span>
+                <span class="fr r">￥1245.00</span>
+            </p>
+            <p class="t2 clr">
+                <span class="fl l">订单信息：</span>
+                <span class="fr r">NO.23412343423</span>
+            </p>
+            <p class="t3 clr">
+                <span class="fl l">账户余额：</span>
+                <span class="fr r">￥3000.00</span>
+            </p>
+        </div>
+        <div class="pay-num">
+            <ul class="pay-inp lbBox error">
+                <li class="lineBlock">
+                    <input type="text"/>
+                </li>
+                <li class="lineBlock">
+                    <input type="text"/>
+                </li>
+                <li class="lineBlock">
+                    <input type="text"/>
+                </li>
+                <li class="lineBlock"> 
+                    <input type="text"/>
+                </li>
+                <li class="lineBlock">
+                    <input type="text"/>
+                </li>
+                <li class="lineBlock">
+                    <input type="text"/>
+                </li>
+            </ul>
+            <div class="text clr">
+                <span class="fl l error">*密码错误，请输入正确的密码。</span>
+                <a href="javascript:;" class="fr r">忘记密码？</a>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="javascript:;">立即付款</a>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="payHtml">
+    <div class="pay-layer">
+        <p class="tit clr">
+            <span class="fl l">订单支付完成后，请选择对应结果。</span>
+            <a class="fr r" href="javascript:;">查看支付常见问题 ></a>
+        </p>
+        <ul class="lbBox">
+            <li class="ok lineBlock va-m">
+                <div class="circle lineBlock va-m">
+                    <i class="iconfont iconzujiantubiaojiantou7"></i>
+                </div>
+                <span class="va-m">支付成功</span>
+                <b class="lineBlock emptys"></b>
+            </li>
+            <li class="canel lineBlock va-m">
+                <div class="circle lineBlock va-m">
+                    <i class="iconfont iconzujiantubiaojiantou10"></i>
+                </div>
+                <span class="va-m">支付失败</span>
+                <b class="lineBlock emptys"></b>
+            </li>
+        </ul>
+    </div>
+</script>
 
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
@@ -195,6 +390,44 @@
 <script type="text/javascript">
   $(function () {
 
+    //选择支付方式
+    $(".tab li").on('click', function () {
+      var index = $(this).index();
+      $(this).addClass('curr').siblings('li').removeClass('curr');
+      $(".pay-operation .hide").eq(index).show().siblings('.hide').hide();
+    });
+
+
+    //正在支付订单
+    layer.open({
+      type: 1,
+      title: '<span>正在支付订单</span>',
+      area: ['640px', 'auto'],
+      shadeClose: true,
+      move: false,
+      content: $("#payHtml").html(),
+      success: function (layero, index) {
+
+
+      }
+    });
+
+
+    //余额支付
+    $(".balancepay").on('click', function () {
+      layer.open({
+        type: 1,
+        title: '<span>余额支付</span>',
+        area: ['500px ', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#balancepayHtml").html(),
+        success: function (layero, index) {
+
+
+        }
+      });
+    });
 
   })
 </script>
