@@ -44,11 +44,466 @@
         </div>
     </div>
 </div>
+<div class="home">
+    <div class="width-1180 nav-wrap clr">
+        <ul class="nav fl">
+            <li class="curr"><a href="">首页</a></li>
+            <li><a href="">PCB快速报价</a></li>
+            <li><a href="">高级PCB报价</a></li>
+            <li><a href="">SMT贴片</a></li>
+            <li><a href="">钢网计价</a></li>
+        </ul>
+        <div class="fr login-bar">
+            <!--未登录-->
+            <div class="logged lineBlock lbBox" style="display: none;">
+                <a href="" class="lg va-m">
+                    <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                    <span class="va-m">登录</span>
+                </a>
+                <span class="lineBlock line va-m"></span>
+                <a href="" class="rg va-m">注册</a>
+                <b class="lineBlock emptys"></b>
+            </div>
+            <!--已登录-->
+            <div class="logged-in lineBlock lbBox">
+                <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                <span class="tel va-m">15012479484</span>
+                <a class="text va-m" href="javascript:;">退出</a>
+            </div>
+            <b class="lineBlock emptys"></b>
+        </div>
+    </div>
+</div>
 <!--head end-->
 
 <!--section-->
 <div class="pcb">
-
+    <div class="width-1180">
+        <p class="title">PCB快速报价</p>
+        <div class="section clr">
+            <div class="fl pcb-l">
+                <form name="pcbform">
+                    <div class="pcb-box">
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">出货方式：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li class="curr">PCS(单片)</li>
+                                <li>SET(连片)</li>
+                            </ul>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">板子尺寸：</label>
+                            <div class="pcb-block-inline lineBlock va-m lbBox">
+                                <input type="text" placeholder="高度/Y" class="va-m inp w138"/>
+                                <span class="lineBlock va-m closeico">x</span>
+                                <input type="text" placeholder="长度/X" class="va-m inp w138"/>
+                                <span class="text va-m ml10">cm</span>
+                            </div>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">板子数量：</label>
+                            <div class="pcb-block-inline lineBlock va-m lbBox">
+                                <input type="text" placeholder="数量" class="va-m inp w138"/>
+                                <span class="text va-m ml10">PCS</span>
+                            </div>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">板子层数：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li>1</li>
+                                <li class="curr">2</li>
+                                <li>4</li>
+                                <li>6</li>
+                                <li>8</li>
+                                <li>10</li>
+                                <li>12</li>
+                            </ul>
+                        </div>
+                        <div class="line bor"></div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">设计文件数：</label>
+                            <div class="pcb-block-inline lineBlock va-m lbBox">
+                                <input type="text" placeholder="" class="va-m inp w138" value="1"/>
+                            </div>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">板材类型：</label>
+                            <ul class="pcb-block-inline  lineBlock va-m clr">
+                                <li class="curr">FR-4</li>
+                                <li>铝基板</li>
+                                <li>Rogers</li>
+                            </ul>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">板子厚度：</label>
+                            <ul class="pcb-block-inline  lineBlock va-m clr">
+                                <li class="disabled">0.2</li>
+                                <li>0.4</li>
+                                <li class="curr">0.6</li>
+                                <li>0.8</li>
+                                <li>1.0</li>
+                                <li>1.2</li>
+                                <li>2.4</li>
+                            </ul>
+                            <span class="text va-m">单位:mm</span>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">铜箔厚度：</label>
+                            <ul class="pcb-block-inline  lineBlock va-m clr">
+                                <li class="curr">1/1oz</li>
+                                <li>2/2oz</li>
+                            </ul>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">内铜厚度：</label>
+                            <ul class="pcb-block-inline  lineBlock va-m clr">
+                                <li class="curr">1oz</li>
+                                <li>1.5oz</li>
+                                <li>2oz</li>
+                            </ul>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">最小线宽/线距：</label>
+                            <ul class="pcb-block-inline  lineBlock va-m clr">
+                                <li class="disabled">4/4mil</li>
+                                <li>5/5mil</li>
+                                <li class="curr">6/6mil</li>
+                                <li>8/8mil&nbsp;↑</li>
+                            </ul>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">最小孔径：</label>
+                            <ul class="pcb-block-inline  lineBlock va-m clr">
+                                <li class="curr">0.25mm</li>
+                                <li>0.30mm</li>
+                                <li>0.35mm</li>
+                                <li>0.40mm&nbsp;↑</li>
+                            </ul>
+                        </div>
+                        <div class="line bor"></div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">阻焊颜色：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li>
+                                    <em class="lineBlock color1 va-m"></em>
+                                    <span class="va-m">绿色</span>
+                                    <b class="lineBlock emptys"></b>
+                                </li>
+                                <li>
+                                    <em class="lineBlock color2 va-m"></em>
+                                    <span class="va-m">红色</span>
+                                    <b class="lineBlock emptys"></b>
+                                </li>
+                                <li>
+                                    <em class="lineBlock color3 va-m"></em>
+                                    <span class="va-m">黄色</span>
+                                    <b class="lineBlock emptys"></b>
+                                </li>
+                                <li>
+                                    <em class="lineBlock color4 va-m"></em>
+                                    <span class="va-m">蓝色</span>
+                                    <b class="lineBlock emptys"></b>
+                                </li>
+                                <li>
+                                    <em class="lineBlock color5 va-m"></em>
+                                    <span class="va-m">白色</span>
+                                    <b class="lineBlock emptys"></b>
+                                </li>
+                                <li>
+                                    <em class="lineBlock color6 va-m"></em>
+                                    <span class="va-m">黑色</span>
+                                    <b class="lineBlock emptys"></b>
+                                </li>
+                            </ul>
+                            <p class="tiptext">*阻焊颜色和字符颜色不能一致</p>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">字符颜色：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li>
+                                    <em class="lineBlock color5 va-m"></em>
+                                    <span class="va-m">白色</span>
+                                    <b class="lineBlock emptys"></b>
+                                </li>
+                                <li>
+                                    <em class="lineBlock color6 va-m"></em>
+                                    <span class="va-m">黑色</span>
+                                    <b class="lineBlock emptys"></b>
+                                </li>
+                                <li>
+                                    <em class="lineBlock color3 va-m"></em>
+                                    <span class="va-m">黄色</span>
+                                    <b class="lineBlock emptys"></b>
+                                </li>
+                                <li>无</li>
+                            </ul>
+                            <p class="tiptext">*阻焊颜色和字符颜色不能一致</p>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">焊盘喷镀：</label>
+                            <ul class="pcb-block-inline  lineBlock va-m clr">
+                                <li class="curr">无铅喷锡</li>
+                                <li>沉金</li>
+                                <li>OSP</li>
+                                <li>有铅喷锡</li>
+                            </ul>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">阻焊覆盖：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li class="curr">过孔盖油</li>
+                                <li>过孔开窗</li>
+                            </ul>
+                            <p class="tiptext">*过孔盖油检验标准是过孔在过锡炉的时候不沾锡，属于工艺正常现象</p>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">测试选项：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li class="curr">全飞针测试</li>
+                                <li>测试架电测</li>
+                            </ul>
+                            <p class="tiptext">*样板以及多层板免费测试，测试架一次性费用，返单不收费，具体费用需审核</p>
+                        </div>
+                    </div>
+                    <div class="pcb-block-slideup">
+                        <div class="tit clr">
+                            <div class="fl l">
+                                <span class="t1 va-m">特殊工艺选项</span>
+                                <span class="t2 va-m">*可能会产生额外的费用</span>
+                            </div>
+                            <a href="javascript:;" class="fr r shrink">收缩</a>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">金(锡)手指倒斜边：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li class="curr">需要</li>
+                                <li>不需要</li>
+                            </ul>
+                        </div>
+                        <div class="pcb-block mb0 lbBox">
+                            <label for="" class="lineBlock va-m">阻抗控制：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li class="curr">无</li>
+                                <li>50Ω</li>
+                                <li>100Ω</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pcb-block-slideup">
+                        <div class="tit clr">
+                            <div class="fl l">
+                                <span class="t1 va-m">其它要求选项</span>
+                                <span class="t3 va-m">*和订单相关的辅助内容</span>
+                            </div>
+                            <a href="javascript:;" class="fr r shrink">收缩</a>
+                        </div>
+                        <div class="pcb-block lbBox">
+                            <label for="" class="lineBlock va-m">确认生产稿：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li>需要</li>
+                                <li class="curr">不需要</li>
+                            </ul>
+                        </div>
+                        <div class="pcb-block mb0 lbBox">
+                            <label for="" class="lineBlock va-t">订单备注：</label>
+                            <div class="textarea lineBlock va-t">
+                                <textarea placeholder="请填写订单备注"></textarea>
+                                <span>0/30</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="fr pcb-r">
+                <div class="pcb-r-boxs">
+                    <p class="tit clr">
+                        <span class="fl l">交期时间</span>
+                        <a href="javascript:;" class="fr r shrink">收缩</a>
+                    </p>
+                    <div class="delivery">
+                        <ul class="lbBox">
+                            <li class="lineBlock">
+                                <p class="t1">预计发货</p>
+                                <p class="t2">2019-12-08</p>
+                            </li>
+                            <li class="lineBlock">
+                                <p class="t1">预计发货</p>
+                                <p class="t2">2019-12-128</p>
+                            </li>
+                        </ul>
+                        <p class="text">
+                            <span class="lineBlock va-t">*提示：</span>
+                            <span class="lineBlock t1 va-t">订单确认付款时间超过20:00，交货日期从第二天开始计算</span>
+                        </p>
+                    </div>
+                    <p class="tit clr">
+                        <span class="fl l">快递物流</span>
+                        <a href="javascript:;" class="fr r shrink">收缩</a>
+                    </p>
+                    <div class="logistics">
+                        <div class="select-box clr">
+                            <div class="fl l">
+                                <select class="sel">
+                                    <option value="">广东</option>
+                                </select>
+                            </div>
+                            <div class="fr r">
+                                <select class="sel">
+                                    <option value="">顺丰快递(默认)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text clr">
+                            <p class="fl l">
+                                <span class="t1">预估重量：</span>
+                                <span class="t2">1.587kg</span>
+                            </p>
+                            <p class="fr r">
+                                <span class="t1">物流费用：</span>
+                                <span class="t3">￥0.00g</span>
+                            </p>
+                        </div>
+                        <div class="text clr mb0">
+                            <div class="fl l">
+                                <img src="./images/pcb/kuaidi.png" alt="" class="im">
+                            </div>
+                            <p class="fr r mt16">
+                                <span class="t1">物流时效：</span>
+                                <span class="t2">1-2天</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcb-r-box">
+                    <p class="tit clr">
+                        <span class="fl l">加工参数详情</span>
+                        <a href="javascript:;" class="fr r shrink">收缩</a>
+                    </p>
+                    <div class="detail">
+                        <table class="detail-wrap">
+                            <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <span class="t1 lineBlock va-m">尺寸:</span>
+                                    <span class="t2">23.00 x 23.00cm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bor">
+                                    <span class="t1 lineBlock va-m">板材:</span>
+                                    <span class="t2">FR-4</span>
+                                </td>
+                                <td class="pl18">
+                                    <span class="t1 lineBlock va-m">层数:</span>
+                                    <span class="t2">2层</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bor">
+                                    <span class="t1 lineBlock va-m">板子厚度:</span>
+                                    <span class="t2">1.8mm</span>
+                                </td>
+                                <td class="pl18">
+                                    <span class="t1 lineBlock va-m">油墨::</span>
+                                    <span class="t2">黑色</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bor">
+                                    <span class="t1 lineBlock va-m">出货方式:</span>
+                                    <span class="t2">拼版(代拼)</span>
+                                </td>
+                                <td class="pl18">
+                                    <span class="t1 lineBlock va-m">阻焊颜色:</span>
+                                    <span class="t2">绿色</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bor">
+                                    <span class="t1 lineBlock va-m">交货数量:</span>
+                                    <span class="t2">500SET</span>
+                                </td>
+                                <td class="pl18">
+                                    <span class="t1 lineBlock va-m">面积:</span>
+                                    <span class="t2">0.2645㎡</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bor">
+                                    <span class="t1 lineBlock va-m">阻焊覆盖:</span>
+                                    <span class="t2">过孔盖油</span>
+                                </td>
+                                <td class="pl18">
+                                    <span class="t1 lineBlock va-m">铜厚(内/外):</span>
+                                    <span class="t2">2oz/1oz</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bor">
+                                    <span class="t1 lineBlock va-m">功能测试:</span>
+                                    <span class="t2">AOI+测试</span>
+                                </td>
+                                <td class="pl18">
+                                    <span class="t1 lineBlock va-m">焊盘喷镀:</span>
+                                    <span class="t2">无铅喷锡</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bornone bor">
+                                    <span class="t1 lineBlock va-m">拼版款数:</span>
+                                    <span class="t2">1</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pcb-r-box">
+                    <p class="tit clr">
+                        <span class="fl l">PCB订单费用</span>
+                        <a href="javascript:;" class="fr r shrink">收缩</a>
+                    </p>
+                    <div class="cost">
+                        <p class="cost-tit clr">
+                            <span class="fl t1">工程费</span>
+                            <span class="fr t2">￥0.00</span>
+                        </p>
+                        <p class="cost-tit clr">
+                            <span class="fl t1">每平米板费</span>
+                            <span class="fr t2">￥0.00</span>
+                        </p>
+                        <p class="cost-tit clr">
+                            <span class="fl t1">菲林费</span>
+                            <span class="fr t2">￥0.00</span>
+                        </p>
+                        <p class="cost-tit clr">
+                            <span class="fl t1">其它</span>
+                            <span class="fr t2">￥0.00</span>
+                        </p>
+                        <p class="line"></p>
+                        <p class="cost-tit clr">
+                            <span class="fl t1">订单费用：</span>
+                            <span class="fr t2">￥3020.00</span>
+                        </p>
+                        <p class="cost-tit clr">
+                            <span class="fl t1">物流费用(1.587kg):</span>
+                            <span class="fr t2">￥20.00</span>
+                        </p>
+                        <p class="cost-tit clr">
+                            <span class="fl t1">其它费用：</span>
+                            <span class="fr t2">￥500.00</span>
+                        </p>
+                        <p class="line"></p>
+                        <p class="cost-tit mb0 clr">
+                            <span class="fl t3">总计：</span>
+                            <span class="fr t4">￥3750.00</span>
+                        </p>
+                    </div>
+                </div>
+                <a href="javascript:;" class="btn">提交订单</a>
+            </div>
+        </div>
+    </div>
 </div>
 <!--section end-->
 
@@ -138,10 +593,73 @@
 </div>
 <!--footer end-->
 
+<script type="text/html" id="boardUpHtml">
+    <div class="board-up-layer">
+        <ul class="list-wrap">
+            <li class="lbBox">
+                <span class="circle act lineBlock va-m"><i></i></span>
+                <span class="lineBlock va-m text">请联系本订单技术联系人确认层压信息</span>
+            </li>
+            <li class="lbBox">
+                <div class="circle lineBlock va-m"></div>
+                <span class="lineBlock va-m text">PCB设计文件中已标注层压内容</span>
+            </li>
+            <li class="lbBox">
+                <div class="circle lineBlock va-m"></div>
+                <span class="lineBlock va-m text">手动填写层序，按如下顺序加工</span>
+            </li>
+        </ul>
+        <ul class="input-group">
+            <li>
+                <label class="lineBlock">L1</label>
+                <input type="text" class="va-m"/>
+            </li>
+            <li>
+                <label class="lineBlock">L2</label>
+                <input type="text" class="va-m"/>
+            </li>
+            <li>
+                <label class="lineBlock">L3</label>
+                <input type="text" class="va-m"/>
+            </li>
+            <li>
+                <label class="lineBlock">L4</label>
+                <input type="text" class="va-m"/>
+            </li>
+            <li>
+                <label class="lineBlock">L5</label>
+                <input type="text" class="va-m"/>
+            </li>
+        </ul>
+        <div class="btn-wrap clr">
+            <div class="fr r">
+                <a href="javascript:;" class="canel lineBlock va-m">取消</a>
+                <a href="javascript:;" class="ok lineBlock va-m">确认</a>
+            </div>
+        </div>
+    </div>
+</script>
+
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript" src="js/pcb/pcb.js"></script>
+<script type="text/javascript">
+  $(function () {
+    /*    layer.open({
+          type: 1,
+          title: '<span>请提供多层板层压叠序</span>',
+          area: ['500px ', 'auto'],
+          shadeClose: true,
+          move: false,
+          content: $("#boardUpHtml").html(),
+          success: function (layero, index) {
+
+
+          }
+        });*/
+  })
+</script>
 </body>
 
 </html>
