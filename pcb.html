@@ -77,7 +77,8 @@
 <!--head end-->
 
 <!--section-->
-<div class="pcb">
+
+<div id="app" class="pcb">
     <div class="width-1180">
         <p class="title">PCB快速报价</p>
         <div class="section clr">
@@ -87,14 +88,27 @@
                         <div class="pcb-block lbBox">
                             <label for="" class="lineBlock va-m">出货方式：</label>
                             <ul class="pcb-block-inline lineBlock va-m clr">
-                                <li class="curr">PCS(单片)</li>
-                                <li>SET(连片)</li>
+                                <li :class="{curr:pcb_unit_active==index}" v-for="(v,index) in pcb_unit" v-text="v" @click="tab(index,'pcb_unit')"></li>
+                            </ul>
+                        </div>
+                        <!--拼版规则-->
+                        <div class="pcb-block lbBox" v-if="pcb_unit_flag">
+                            <label for="" class="lineBlock va-m">拼版规则：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li :class="{curr:pcb_pbtype_active==index}" v-for="(v,index) in pcb_pbtype" v-text="v" @click="tab(index,'pcb_pbtype')"></li>
+                            </ul>
+                        </div>
+                        <!--是否接受打叉板：-->
+                        <div class="pcb-block lbBox" v-if="pcb_unit_flag">
+                            <label for="" class="lineBlock va-m">是否接受打叉板：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li :class="{curr:pcb_pbxout_active==index}" v-for="(v,index) in pcb_pbxout" v-text="v" @click="tab(index,'pcb_pbxout')"></li>
                             </ul>
                         </div>
                         <div class="pcb-block lbBox">
                             <label for="" class="lineBlock va-m">板子尺寸：</label>
                             <div class="pcb-block-inline lineBlock va-m lbBox">
-                                <input type="text" placeholder="高度/Y" class="va-m inp w138"/>
+                                <input type="text" placeholder="高度/Y" class="va-m inp w138" v-model="pcb_width"/>
                                 <span class="lineBlock va-m closeico">x</span>
                                 <input type="text" placeholder="长度/X" class="va-m inp w138"/>
                                 <span class="text va-m ml10">cm</span>
@@ -110,13 +124,7 @@
                         <div class="pcb-block lbBox">
                             <label for="" class="lineBlock va-m">板子层数：</label>
                             <ul class="pcb-block-inline lineBlock va-m clr">
-                                <li>1</li>
-                                <li class="curr">2</li>
-                                <li>4</li>
-                                <li>6</li>
-                                <li>8</li>
-                                <li>10</li>
-                                <li>12</li>
+                                <li :class="{curr:pcb_layer_active==index}" v-for="(v,index) in pcb_layer" v-text="v" @click="tab(index,'pcb_layer')"></li>
                             </ul>
                         </div>
                         <div class="line bor"></div>
@@ -183,7 +191,7 @@
                         <div class="line bor"></div>
                         <div class="pcb-block lbBox">
                             <label for="" class="lineBlock va-m">阻焊颜色：</label>
-                            <ul class="pcb-block-inline lineBlock va-m clr">
+                            <ul class="pcb-block-inline pcb_boardcolor lineBlock va-m clr">
                                 <li>
                                     <em class="lineBlock color1 va-m"></em>
                                     <span class="va-m">绿色</span>
@@ -640,6 +648,8 @@
     </div>
 </script>
 
+
+<script type="text/javascript" src="js/common/vue.js"></script>
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>

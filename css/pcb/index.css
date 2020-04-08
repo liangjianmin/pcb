@@ -749,6 +749,9 @@ body {
   white-space: nowrap;
   margin-right: 8px;
 }
+.pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline {
+  width: 619px;
+}
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline li {
   float: left;
   height: 38px;
@@ -767,6 +770,7 @@ body {
   border: 2px solid #0081D2;
   color: #3a3c40;
   font-weight: bold;
+  background: #ffffff;
 }
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline .inp {
   height: 38px;
@@ -814,6 +818,9 @@ body {
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline span {
   font-size: 14px;
   color: #3a3c40;
+}
+.pcb .section .pcb-l .pcb-box .pcb-block .pcb_boardcolor li {
+  margin-bottom: 10px;
 }
 .pcb .section .pcb-l .pcb-box .pcb-block .text {
   font-size: 14px;
