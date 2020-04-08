@@ -1115,6 +1115,7 @@ body {
   border: 1px solid #E6EAF2;
   font-size: 14px;
   color: #3a3c40;
+  cursor: pointer;
 }
 .pcb .section .pcb-r .pcb-r-boxs .logistics .text {
   margin-bottom: 20px;
