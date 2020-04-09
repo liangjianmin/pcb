@@ -750,7 +750,7 @@ body {
   margin-right: 8px;
 }
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline {
-  width: 619px;
+  max-width: 619px;
 }
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline li {
   float: left;
