@@ -29,9 +29,11 @@
 }
 
 .disabled {
-  background: #F7F9FC !important;
+  //background: #F7F9FC !important;
+  background: #e0be7d !important;
   color: #959ba6 !important;
-  cursor: default !important;
+  cursor: not-allowed !important;
+  font-weight: normal !important;
   border: 1px solid transparent !important;
 
   span {
@@ -85,7 +87,7 @@
 
           .pcb-block-inline {
             position: relative;
-            max-width: 619px;
+            max-width: 536px;
 
             li {
               float: left;
@@ -102,6 +104,8 @@
               padding: 0 20px;
 
               &.curr {
+                height: 36px;
+                line-height: 36px;
                 border: 2px solid #0081D2;
                 color: #3a3c40;
                 font-weight: bold;
@@ -130,6 +134,7 @@
               transition: all 0.4s ease;
 
               &:focus {
+                background: #ffffff;
                 border: 1px solid #0081D2;
               }
 
@@ -267,6 +272,12 @@
 
           .pcb_boardcolor {
             li {
+              margin-bottom: 10px;
+            }
+          }
+
+          .pcb_thickness{
+            li{
               margin-bottom: 10px;
             }
           }

@@ -683,8 +683,8 @@ body {
   display: inline-block;
 }
 .layui-layer-page .layui-layer-content {
-  height: auto !important;
-  overflow: hidden !important;
+  height: auto;
+  overflow: hidden;
 }
 .faq-head {
   width: 100%;

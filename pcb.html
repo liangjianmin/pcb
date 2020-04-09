@@ -135,7 +135,7 @@
                         <div class="pcb-block lbBox" id="pcb_division" style="display: none">
                             <label for="" class="lineBlock va-m">分割方式：</label>
                             <div class="pcb-block-inline lineBlock va-m lbBox">
-                                <select  class="sel w140 va-m mr14">
+                                <select class="sel w140 va-m mr14">
                                     <option value="">请选择</option>
                                 </select>
                             </div>
@@ -154,19 +154,19 @@
                         <div class="pcb-block lbBox">
                             <label for="" class="lineBlock va-m">板子尺寸：</label>
                             <div class="pcb-block-inline lineBlock va-m lbBox">
-                                <input type="text" placeholder="高度/Y" class="va-m inp w138"/>
+                                <input type="text" placeholder="高度/Y" class="va-m inp w138" name="pcb_width" id="pcb_width"/>
                                 <span class="lineBlock va-m closeico">x</span>
-                                <input type="text" placeholder="长度/X" class="va-m inp w138"/>
+                                <input type="text" placeholder="长度/X" class="va-m inp w138" name="pcb_length" id="pcb_length"/>
                                 <span class="text va-m ml10">cm</span>
                             </div>
                         </div>
                         <div class="pcb-block lbBox">
                             <label for="" class="lineBlock va-m">板子数量：</label>
-                            <div class="pcb-block-inline lineBlock va-m lbBox">
-                               <div>
-                                   <input type="text" placeholder="数量" class="va-m inp w138"/>
-                                   <span class="text va-m ml10">PCS</span>
-                               </div>
+                            <div class="pcb-block-inline lineBlock va-m lbBox" id="pcb_qty">
+                                <div class="txt-wrap">
+                                    <input type="text" placeholder="数量" class="va-m inp w138" readonly name="pcb_num"/>
+                                    <span class="text va-m ml10">PCS</span>
+                                </div>
                                 <div class="selects-qty">
                                     <i class="lineBlock arrow"></i>
                                     <dl class="clr">
@@ -324,7 +324,7 @@
                                         </dd>
                                     </dl>
                                     <div class="wrap">
-                                        <label class="lineBlock va-m">其他数量：</label>
+                                        <label class="lineBlock va-m" style="width: 61px;">其他数量：</label>
                                         <input type="number" class="inp va-m" id="pcb_num_input">
                                         <div class="btn lineBlock va-m">
                                             <a href="javascript:;" class="lineBlock ok">确认</a>
@@ -334,16 +334,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pcb-block lbBox">
+                        <div class="pcb-block lbBox" id="pcb_layer">
                             <label for="" class="lineBlock va-m">板子层数：</label>
-                            <ul class="pcb-block-inline pcb_layer lineBlock va-m clr">
-                                <li>1</li>
-                                <li class="curr">2</li>
-                                <li>4</li>
-                                <li>6</li>
-                                <li>8</li>
-                                <li>10</li>
-                                <li>12</li>
+                            <ul class="pcb-block-inline  lineBlock va-m clr">
+                                <li data-value="1">1</li>
+                                <li data-value="2" class="curr">2</li>
+                                <li data-value="4">4</li>
+                                <li data-value="6">6</li>
                             </ul>
                         </div>
                         <div class="line bor"></div>
@@ -356,55 +353,53 @@
                         <div class="pcb-block lbBox">
                             <label for="" class="lineBlock va-m">板材类型：</label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
-                                <li class="curr">FR-4</li>
-                                <li>铝基板</li>
-                                <li>Rogers</li>
+                                <li data-value="FR-4" class="curr">FR-4</li>
                             </ul>
                         </div>
-                        <div class="pcb-block lbBox">
-                            <label for="" class="lineBlock va-m">板子厚度：</label>
-                            <ul class="pcb-block-inline  lineBlock va-m clr">
-                                <li class="disabled">0.2</li>
-                                <li>0.4</li>
-                                <li class="curr">0.6</li>
-                                <li>0.8</li>
-                                <li>1.0</li>
-                                <li>1.2</li>
-                                <li>2.4</li>
+                        <div class="pcb-block lbBox" id="pcb_thickness">
+                            <label for="" class="lineBlock va-t">板子厚度：</label>
+                            <ul class="pcb-block-inline  pcb_thickness lineBlock va-t clr">
+                                <li data-value="0.4">0.4</li>
+                                <li data-value="0.6">0.6</li>
+                                <li data-value="0.8">0.8</li>
+                                <li data-value="1.0">1.0</li>
+                                <li data-value="1.2">1.2</li>
+                                <li data-value="1.6" class="curr">1.6</li>
+                                <li data-value="2.0">2.0</li>
+                                <li data-value="2.4">2.4</li>
                             </ul>
-                            <span class="text va-m">单位:mm</span>
+                            <span class="text va-m" style="position: relative;top: 10px;">单位:mm</span>
                         </div>
-                        <div class="pcb-block lbBox">
+                        <div class="pcb-block lbBox" id="pcb_copperThickness">
                             <label for="" class="lineBlock va-m">铜箔厚度：</label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
-                                <li class="curr">1/1oz</li>
-                                <li>2/2oz</li>
+                                <li data-value="1" class="curr">1/1oz</li>
+                                <li data-value="2">2/2oz</li>
                             </ul>
                         </div>
-                        <div class="pcb-block lbBox">
+                        <div class="pcb-block lbBox" id="pcb_insidethickness" style="display: none">
                             <label for="" class="lineBlock va-m">内铜厚度：</label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
-                                <li class="curr">1oz</li>
-                                <li>1.5oz</li>
-                                <li>2oz</li>
+                                <li data-value="1" class="curr">1oz</li>
+                                <li data-value="2">2oz</li>
                             </ul>
                         </div>
-                        <div class="pcb-block lbBox">
+                        <div class="pcb-block lbBox" id="pcb_linespace">
                             <label for="" class="lineBlock va-m">最小线宽/线距：</label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
-                                <li class="disabled">4/4mil</li>
-                                <li>5/5mil</li>
-                                <li class="curr">6/6mil</li>
-                                <li>8/8mil&nbsp;↑</li>
+                                <li data-value="4/4mil">4/4mil</li>
+                                <li data-value="5/5mil">5/5mil</li>
+                                <li data-value="6/6mil">6/6mil&nbsp;↑</li>
+                                <li data-value="8/8mil" class="curr">8/8mil&nbsp;↑</li>
                             </ul>
                         </div>
-                        <div class="pcb-block lbBox">
+                        <div class="pcb-block lbBox" id="pcb_minholesize">
                             <label for="" class="lineBlock va-m">最小孔径：</label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
-                                <li class="curr">0.25mm</li>
-                                <li>0.30mm</li>
-                                <li>0.35mm</li>
-                                <li>0.40mm&nbsp;↑</li>
+                                <li data-value="0.25">0.25mm</li>
+                                <li data-value="0.3">0.3mm</li>
+                                <li data-value="0.35">0.35mm</li>
+                                <li data-value="0.4" class="curr">0.4mm&nbsp;↑</li>
                             </ul>
                         </div>
                         <div class="line bor"></div>
@@ -542,7 +537,7 @@
                 </form>
             </div>
             <div class="fr pcb-r">
-                <div class="pcb-r-boxs">
+                <div class="pcb-r-boxs" style="display: none">
                     <p class="tit clr">
                         <span class="fl l">交期时间</span>
                         <a href="javascript:;" class="fr r shrink">收缩</a>
@@ -606,13 +601,13 @@
                         <span class="fl l">加工参数详情</span>
                         <a href="javascript:;" class="fr r shrink">收缩</a>
                     </p>
-                    <div class="detail">
+                    <div class="detail" id="showpcb">
                         <table class="detail-wrap">
                             <tbody>
                             <tr>
                                 <td colspan="2">
                                     <span class="t1 lineBlock va-m">尺寸:</span>
-                                    <span class="t2">--</span>
+                                    <span class="t2 pcb_wl">--</span>
                                 </td>
                             </tr>
                             <tr>
@@ -628,7 +623,7 @@
                             <tr>
                                 <td class="bor">
                                     <span class="t1 lineBlock va-m">板子厚度:</span>
-                                    <span class="t2">--</span>
+                                    <span class="t2 pcb_thickness">--</span>
                                 </td>
                                 <td class="pl18">
                                     <span class="t1 lineBlock va-m">油墨::</span>
@@ -648,7 +643,7 @@
                             <tr>
                                 <td class="bor">
                                     <span class="t1 lineBlock va-m">交货数量:</span>
-                                    <span class="t2">--</span>
+                                    <span class="t2 pcb_num">--</span>
                                 </td>
                                 <td class="pl18">
                                     <span class="t1 lineBlock va-m">面积:</span>
@@ -824,15 +819,15 @@
     <div class="board-up-layer">
         <ul class="list-wrap">
             <li class="lbBox">
-                <span class="circle act lineBlock va-m"><i></i></span>
+                <span class="circle lineBlock va-m"><i></i></span>
                 <span class="lineBlock va-m text">请联系本订单技术联系人确认层压信息</span>
             </li>
             <li class="lbBox">
-                <div class="circle lineBlock va-m"></div>
+                <div class="circle lineBlock va-m"><i></i></div>
                 <span class="lineBlock va-m text">PCB设计文件中已标注层压内容</span>
             </li>
             <li class="lbBox">
-                <div class="circle lineBlock va-m"></div>
+                <div class="circle lineBlock va-m"><i></i></div>
                 <span class="lineBlock va-m text">手动填写层序，按如下顺序加工</span>
             </li>
         </ul>
@@ -874,18 +869,7 @@
 <script type="text/javascript" src="js/pcb/pcb.js"></script>
 <script type="text/javascript">
   $(function () {
-    /*    layer.open({
-          type: 1,
-          title: '<span>请提供多层板层压叠序</span>',
-          area: ['500px ', 'auto'],
-          shadeClose: true,
-          move: false,
-          content: $("#boardUpHtml").html(),
-          success: function (layero, index) {
 
-
-          }
-        });*/
   })
 </script>
 </body>

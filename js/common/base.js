@@ -144,12 +144,34 @@
       }
       
       $(obj).on('click', function () {
+        if ($(this).hasClass("disabled")) {
+          return;
+        }
         var index = $(this).index();
-        var val=$(this).attr('data-value');
+        var val = $(this).attr('data-value');
         $(obj).removeClass(currentClass);
         $(this).addClass(currentClass);
-       
-        typeof callback == 'function' && callback(index,val);
+        
+        typeof callback == 'function' && callback(index, val);
+      });
+    },
+    /**
+     *
+     * @param obj
+     */
+    filter: function (obj, arr, reset) {
+      $(obj).each(function (index, element) {
+        if (reset) {
+          $(element).removeClass('disabled');
+        } else {
+          if (arr.length > 0) {
+            for (var i = 0; i < arr.length; i++) {
+              if ($(element).attr('data-value') == arr[i]) {
+                $(element).addClass('disabled');
+              }
+            }
+          }
+        }
       });
     },
     /**
