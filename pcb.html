@@ -84,13 +84,73 @@
             <div class="fl pcb-l">
                 <form name="pcbform">
                     <div class="pcb-box">
-                        <div class="pcb-block lbBox">
+                        <div class="pcb-block lbBox" id="pcb_unit">
                             <label for="" class="lineBlock va-m">出货方式：</label>
                             <ul class="pcb-block-inline lineBlock va-m clr">
-                                <li class="curr">PCS(单片)</li>
-                                <li>SET(连片)</li>
+                                <li data-value="PCS" class="curr">PCS(单片)</li>
+                                <li data-value="SET">SET(连片)</li>
                             </ul>
                         </div>
+                        <!--拼版规则-->
+                        <div class="pcb-block lbBox" id="pcb_pbtype" style="display: none">
+                            <label for="" class="lineBlock va-m">拼版规则：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li data-value="客户自拼">客户自拼</li>
+                                <li data-value="工厂代拼">工厂代拼</li>
+                            </ul>
+                        </div>
+                        <!--是否接受打叉板-->
+                        <div class="pcb-block lbBox" id="pcb_pbxout" style="display: none">
+                            <label for="" class="lineBlock va-m">是否接受打叉板：</label>
+                            <ul class="pcb-block-inline lineBlock va-m clr">
+                                <li data-value="接受" class="curr">接受</li>
+                                <li data-value="不接受">不接受</li>
+                            </ul>
+                        </div>
+                        <!--拼板方式-->
+                        <div class="pcb-block lbBox" id="pcb_pbxy" style="display: none">
+                            <label for="" class="lineBlock va-m">拼板方式：</label>
+                            <div class="pcb-block-inline lineBlock va-m lbBox">
+                                <input type="text" placeholder="" class="va-m inp w138"/>
+                                <span class="lineBlock va-m closeico">x</span>
+                                <input type="text" placeholder="" class="va-m inp w138"/>
+                                <span class="text va-m ml10">个</span>
+                            </div>
+                        </div>
+                        <!--工艺边-->
+                        <div class="pcb-block lbBox" id="pcb_pbxys" style="display: none">
+                            <label for="" class="lineBlock va-m">工艺边：</label>
+                            <div class="pcb-block-inline lineBlock va-m lbBox">
+                                <select name="pcb_pbedge" class="sel w140 va-m mr14">
+                                    <option value="">请选择</option>
+                                    <option value="无">无</option>
+                                    <option value="上下">上下</option>
+                                    <option value="左右">左右</option>
+                                    <option value="四边">四边</option>
+                                </select>
+                                <input type="text" placeholder="" class="va-m inp w138"/>
+                            </div>
+                        </div>
+                        <!--分割方式-->
+                        <div class="pcb-block lbBox" id="pcb_division" style="display: none">
+                            <label for="" class="lineBlock va-m">分割方式：</label>
+                            <div class="pcb-block-inline lineBlock va-m lbBox">
+                                <select  class="sel w140 va-m mr14">
+                                    <option value="">请选择</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--槽间距-->
+                        <div class="pcb-block lbBox" id="pcb_slot" style="display: none">
+                            <label for="" class="lineBlock va-m">分割方式：</label>
+                            <div class="pcb-block-inline lineBlock va-m lbBox">
+                                <input type="text" placeholder="水平槽间距" class="va-m inp w138"/>
+                                <span class="lineBlock va-m closeico">x</span>
+                                <input type="text" placeholder="垂直槽间距" class="va-m inp w138"/>
+                                <span class="text va-m ml10">mm</span>
+                            </div>
+                        </div>
+                        <!--板子尺寸-->
                         <div class="pcb-block lbBox">
                             <label for="" class="lineBlock va-m">板子尺寸：</label>
                             <div class="pcb-block-inline lineBlock va-m lbBox">
@@ -103,13 +163,180 @@
                         <div class="pcb-block lbBox">
                             <label for="" class="lineBlock va-m">板子数量：</label>
                             <div class="pcb-block-inline lineBlock va-m lbBox">
-                                <input type="text" placeholder="数量" class="va-m inp w138"/>
-                                <span class="text va-m ml10">PCS</span>
+                               <div>
+                                   <input type="text" placeholder="数量" class="va-m inp w138"/>
+                                   <span class="text va-m ml10">PCS</span>
+                               </div>
+                                <div class="selects-qty">
+                                    <i class="lineBlock arrow"></i>
+                                    <dl class="clr">
+                                        <dd data-value="5">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">5</span>
+                                        </dd>
+                                        <dd data-value="10">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">10</span>
+                                        </dd>
+                                        <dd data-value="15">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">15</span>
+                                        </dd>
+                                        <dd data-value="20">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">20</span>
+                                        </dd>
+                                        <dd data-value="25">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">25</span>
+                                        </dd>
+                                        <dd data-value="30">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">30</span>
+                                        </dd>
+                                        <dd data-value="40">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">40</span>
+                                        </dd>
+                                        <dd data-value="50">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">50</span>
+                                        </dd>
+                                        <dd data-value="75">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">75</span>
+                                        </dd>
+                                        <dd data-value="100">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">100</span>
+                                        </dd>
+                                        <dd data-value="125">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">125</span>
+                                        </dd>
+                                        <dd data-value="150">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">150</span>
+                                        </dd>
+                                        <dd data-value="200">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">200</span>
+                                        </dd>
+                                        <dd data-value="250">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">250</span>
+                                        </dd>
+                                        <dd data-value="300">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">300</span>
+                                        </dd>
+                                        <dd data-value="350">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">350</span>
+                                        </dd>
+                                        <dd data-value="400">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">400</span>
+                                        </dd>
+                                        <dd data-value="450">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">450</span>
+                                        </dd>
+                                        <dd data-value="500">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">500</span>
+                                        </dd>
+                                        <dd data-value="600">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">600</span>
+                                        </dd>
+                                        <dd data-value="700">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">700</span>
+                                        </dd>
+                                        <dd data-value="800">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">800</span>
+                                        </dd>
+                                        <dd data-value="900">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">900</span>
+                                        </dd>
+                                        <dd data-value="1000">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">1000</span>
+                                        </dd>
+                                        <dd data-value="1500">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">1500</span>
+                                        </dd>
+                                        <dd data-value="2000">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">2000</span>
+                                        </dd>
+                                        <dd data-value="2500">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">2500</span>
+                                        </dd>
+                                        <dd data-value="3000">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">3000</span>
+                                        </dd>
+                                        <dd data-value="3500">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">3500</span>
+                                        </dd>
+                                        <dd data-value="4000">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">4000</span>
+                                        </dd>
+                                        <dd data-value="4500">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">4500</span>
+                                        </dd>
+                                        <dd data-value="5000">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">5000</span>
+                                        </dd>
+                                        <dd data-value="5500">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">5500</span>
+                                        </dd>
+                                        <dd data-value="6000">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">6000</span>
+                                        </dd>
+                                        <dd data-value="6500">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">6500</span>
+                                        </dd>
+                                        <dd data-value="7000">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">7000</span>
+                                        </dd>
+                                        <dd data-value="7500">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">7500</span>
+                                        </dd>
+                                        <dd data-value="8000">
+                                            <i class="arr lineBlock va-m"></i>
+                                            <span class="lineBlock va-m">8000</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="wrap">
+                                        <label class="lineBlock va-m">其他数量：</label>
+                                        <input type="number" class="inp va-m" id="pcb_num_input">
+                                        <div class="btn lineBlock va-m">
+                                            <a href="javascript:;" class="lineBlock ok">确认</a>
+                                            <a href="javascript:;" class="lineBlock canel">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="pcb-block lbBox">
                             <label for="" class="lineBlock va-m">板子层数：</label>
-                            <ul class="pcb-block-inline lineBlock va-m clr">
+                            <ul class="pcb-block-inline pcb_layer lineBlock va-m clr">
                                 <li>1</li>
                                 <li class="curr">2</li>
                                 <li>4</li>
@@ -385,73 +612,73 @@
                             <tr>
                                 <td colspan="2">
                                     <span class="t1 lineBlock va-m">尺寸:</span>
-                                    <span class="t2">23.00 x 23.00cm</span>
+                                    <span class="t2">--</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="bor">
                                     <span class="t1 lineBlock va-m">板材:</span>
-                                    <span class="t2">FR-4</span>
+                                    <span class="t2">--</span>
                                 </td>
                                 <td class="pl18">
                                     <span class="t1 lineBlock va-m">层数:</span>
-                                    <span class="t2">2层</span>
+                                    <span class="t2">--</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="bor">
                                     <span class="t1 lineBlock va-m">板子厚度:</span>
-                                    <span class="t2">1.8mm</span>
+                                    <span class="t2">--</span>
                                 </td>
                                 <td class="pl18">
                                     <span class="t1 lineBlock va-m">油墨::</span>
-                                    <span class="t2">黑色</span>
+                                    <span class="t2">--</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="bor">
                                     <span class="t1 lineBlock va-m">出货方式:</span>
-                                    <span class="t2">拼版(代拼)</span>
+                                    <span class="t2">--</span>
                                 </td>
                                 <td class="pl18">
                                     <span class="t1 lineBlock va-m">阻焊颜色:</span>
-                                    <span class="t2">绿色</span>
+                                    <span class="t2">--</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="bor">
                                     <span class="t1 lineBlock va-m">交货数量:</span>
-                                    <span class="t2">500SET</span>
+                                    <span class="t2">--</span>
                                 </td>
                                 <td class="pl18">
                                     <span class="t1 lineBlock va-m">面积:</span>
-                                    <span class="t2">0.2645㎡</span>
+                                    <span class="t2">--</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="bor">
                                     <span class="t1 lineBlock va-m">阻焊覆盖:</span>
-                                    <span class="t2">过孔盖油</span>
+                                    <span class="t2">--</span>
                                 </td>
                                 <td class="pl18">
                                     <span class="t1 lineBlock va-m">铜厚(内/外):</span>
-                                    <span class="t2">2oz/1oz</span>
+                                    <span class="t2">--</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="bor">
                                     <span class="t1 lineBlock va-m">功能测试:</span>
-                                    <span class="t2">AOI+测试</span>
+                                    <span class="t2">--</span>
                                 </td>
                                 <td class="pl18">
                                     <span class="t1 lineBlock va-m">焊盘喷镀:</span>
-                                    <span class="t2">无铅喷锡</span>
+                                    <span class="t2">--</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="bornone bor">
                                     <span class="t1 lineBlock va-m">拼版款数:</span>
-                                    <span class="t2">1</span>
+                                    <span class="t2">--</span>
                                 </td>
                             </tr>
                             </tbody>
@@ -643,6 +870,7 @@
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
+<script type="text/javascript" src="js/common/observer.js"></script>
 <script type="text/javascript" src="js/pcb/pcb.js"></script>
 <script type="text/javascript">
   $(function () {

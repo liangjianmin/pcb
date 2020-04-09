@@ -4,8 +4,16 @@
   width: 138px !important;
 }
 
+.w140 {
+  width: 140px !important;
+}
+
 .ml10 {
   margin-left: 10px !important;
+}
+
+.mr14 {
+  margin-right: 14px !important;
 }
 
 .mt16 {
@@ -76,6 +84,7 @@
           }
 
           .pcb-block-inline {
+            position: relative;
             max-width: 619px;
 
             li {
@@ -91,13 +100,23 @@
               color: #5c5f66;
               cursor: pointer;
               padding: 0 20px;
- 
+
               &.curr {
                 border: 2px solid #0081D2;
                 color: #3a3c40;
                 font-weight: bold;
                 background: #ffffff;
               }
+            }
+
+            .sel {
+              height: 40px;
+              background: #F7F9FC;
+              border-radius: 2px;
+              line-height: 38px;
+              border: 1px solid #E6EAF2;
+              text-indent: 1em;
+              font-size: 14px;
             }
 
             .inp {
@@ -158,6 +177,91 @@
               font-size: 14px;
               color: #3a3c40;
             }
+
+            .selects-qty {
+              position: absolute;
+              left: 0px;
+              top: 48px;
+              z-index: 9;
+              width: 461px;
+              background-color: #ffffff;
+              border: solid 1px #e5e5e5;
+              padding: 10px 0 16px 18px;
+              display: none;
+              .arrow {
+                position: absolute;
+                left: 21px;
+                top: -10px;
+                width: 13px;
+                height: 11px;
+                background: url("../../images/common/ico.png") no-repeat -5px -52px;
+              }
+              dl {
+                dd {
+                  float: left;
+                  width: 14%;
+                  margin-bottom: 15px;
+                  cursor: pointer;
+                  .arr {
+                    width: 14px;
+                    height: 13px;
+                    background: url("../../images/common/ico.png") no-repeat 0 0;
+                  }
+                  &.curr {
+                    .arr {
+                      width: 14px;
+                      height: 13px;
+                      background: url("../../images/common/ico.png") no-repeat -16px 0;
+                    }
+                  }
+                  span {
+                    font-size: 14px;
+                    color: #666666;
+                    margin-left: 5px;
+                  }
+                }
+              }
+              .wrap {
+                margin-top: 3px;
+                label {
+                  font-size: 14px;
+                  color: #666666;
+                  margin-right: 13px;
+                }
+                .inp {
+                  width: 158px;
+                  border: solid 1px #e5e5e5;
+                  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                    -webkit-appearance: none !important;
+                    margin: 0;
+                  }
+                  &:focus {
+                    border: solid 1px #00a0e9;
+                  }
+                }
+                .btn {
+                  margin-left: 40px;
+                  a {
+                    width: 68px;
+                    height: 30px;
+                    border-radius: 2px;
+                    font-size: 14px;
+                    line-height: 30px;
+                    text-align: center;
+                    &.ok {
+                      background-color: #1080d0;
+                      color: #fefefe;
+                      margin-right: 10px;
+                    }
+                    &.canel {
+                      background-color: #f3f3f3;
+                      color: #666666;
+                    }
+                  }
+                }
+              }
+            }
+
 
           }
 

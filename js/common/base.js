@@ -133,6 +133,26 @@
       return object[value];
     },
     /**
+     * tab切换
+     * @param obj
+     * @param callback
+     * @param currentClass
+     */
+    tabs: function (obj, callback, currentClass) {
+      if (typeof currentClass == 'undefined') {
+        currentClass = 'curr';
+      }
+      
+      $(obj).on('click', function () {
+        var index = $(this).index();
+        var val=$(this).attr('data-value');
+        $(obj).removeClass(currentClass);
+        $(this).addClass(currentClass);
+       
+        typeof callback == 'function' && callback(index,val);
+      });
+    },
+    /**
      *时分秒倒计时方法
      */
     timergo: function (time) {
