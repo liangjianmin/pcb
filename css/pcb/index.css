@@ -701,6 +701,9 @@ body {
 .mt16 {
   margin-top: 16px;
 }
+.mt20 {
+  margin-top: 20px;
+}
 .pl18 {
   padding-left: 18px !important;
 }
@@ -941,9 +944,6 @@ body {
   background: #FFFFFF;
   border-radius: 2px;
   border: 1px solid #E6EAF2;
-}
-.pcb .section .pcb-l .pcb-block-slideup .tit {
-  margin-bottom: 20px;
 }
 .pcb .section .pcb-l .pcb-block-slideup .tit .l .t1 {
   font-size: 20px;

@@ -11,14 +11,14 @@
     handleBind: function (opt) {
       
       //出货方式
-      Util.tabs('#pcb_unit ul li', function (index, val) {
+      Util.tabs('#PcbUnit ul li', function (index, val) {
         Observer.emit('pcb', {
-          type: 'pcb_unit',
+          type: 'PcbUnit',
           index: index,
           val: val
         });
         
-      })
+      });
       
       //拼版规则
       Util.tabs('#pcb_pbtype ul li', function (index, val) {
@@ -37,7 +37,6 @@
           val: val
         });
       });
-      
       
       //板子层数
       Util.tabs('#pcb_layer ul li', function (index, val) {
@@ -108,7 +107,7 @@
           val: val
         });
       });
-  
+      
       //最小孔径
       Util.tabs('#pcb_minholesize ul li', function (index, val) {
         Observer.emit('pcb', {
@@ -117,13 +116,20 @@
           val: val
         });
       });
-  
-  
-  
-  
-  
-  
-  
+      
+      
+      //收缩
+      $(document).on('click', '.shrink', function () {
+        if ($(this).text() == '收缩') {
+          $(this).text('展开');
+          $(this).parents('.pcb-block-slideup').find('.pcb-block').slideUp();
+        } else {
+          $(this).text('收缩');
+          $(this).parents('.pcb-block-slideup').find('.pcb-block').slideDown();
+        }
+      });
+      
+      
       $(document).on('click', '.board-up-layer .list-wrap li', function () {
         $(".board-up-layer .list-wrap li").find('.circle').removeClass('act');
         $(this).find('.circle').addClass('act');
@@ -136,15 +142,15 @@
       });
       
       //板子尺寸
-      $("#pcb_width").on('input propertychange', function () {
+      $("#BoardWidth").on('input propertychange', function () {
         var val = $(this).val();
-        opt.formObj.pcb_width = val;
+        opt.formObj.BoardWidth = val;
         
         opt.checkPcb(opt, opt.formObj);
       });
-      $("#pcb_length").on('input propertychange', function () {
+      $("#BoardHeight").on('input propertychange', function () {
         var val = $(this).val();
-        opt.formObj.pcb_length = val;
+        opt.formObj.BoardHeight = val;
         
         opt.checkPcb(opt, opt.formObj);
       });
@@ -177,7 +183,7 @@
       //监听函数
       Observer.on('pcb', function (e) {
         
-        if (e.args.type == 'pcb_unit') {
+        if (e.args.type == 'PcbUnit') {
           console.log(e.args.type)
           if (e.args.index == 0) {
             $("#pcb_pbtype").hide();
@@ -242,21 +248,21 @@
             Util.filter('#pcb_copperThickness ul li', e.args.copperThickness);
             $("#pcb_insidethickness").slideUp();
           }
-  
+          
           //层数2
           if (e.args.val == 2) {
             Util.filter('#pcb_thickness ul li', [], true);
             Util.filter('#pcb_copperThickness ul li', [], true);
             $("#pcb_insidethickness").slideUp();
           }
-  
+          
           //层数4
           if (e.args.val == 4) {
             Util.filter('#pcb_thickness ul li', e.args.thickness);
             Util.filter('#pcb_copperThickness ul li', [], true);
             $("#pcb_insidethickness").slideDown();
           }
-  
+          
           //层数6
           if (e.args.val == 6) {
             Util.filter('#pcb_thickness ul li', e.args.thickness);
@@ -268,7 +274,7 @@
         }
         //收集表单数据
         opt.formObj[e.args.type] = e.args.val;
-  
+        
         opt.calculation(opt);
       });
       
@@ -277,8 +283,8 @@
     },
     checkPcb: function (opt, obj) {
       
-      var pcbwidth = obj.pcb_width;
-      var pcblength = obj.pcb_length;
+      var pcbwidth = obj.BoardWidth;
+      var pcblength = obj.BoardHeight;
       
       if (pcbwidth > 120 || pcblength > 120) {
         layer.msg('我司可生产最大长度为120cm,单位为cm,请重新输入!');
@@ -292,8 +298,8 @@
     },
     calculation: function (opt) {
       
-      if (this.formObj.pcb_width && this.formObj.pcb_length) {
-        $("#showpcb .pcb_wl").text(this.formObj.pcb_width + ' * ' + this.formObj.pcb_length + 'cm');
+      if (this.formObj.BoardWidth && this.formObj.BoardHeight) {
+        $("#showpcb .pcb_wl").text(this.formObj.BoardWidth + ' * ' + this.formObj.BoardHeight + 'cm');
       }
       
       if (this.formObj.pcb_num) {
@@ -301,8 +307,8 @@
       }
       
       
-      if(this.formObj.pcb_thickness){
-        $("#showpcb .pcb_thickness").text(this.formObj.pcb_thickness+'mm');
+      if (this.formObj.pcb_thickness) {
+        $("#showpcb .pcb_thickness").text(this.formObj.pcb_thickness + 'mm');
       }
       
       
