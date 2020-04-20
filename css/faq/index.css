@@ -795,6 +795,7 @@ body {
   color: #5c5f66;
   font-size: 16px;
   display: inline-block;
+  white-space: nowrap;
 }
 .faq-content .list ul li .linka span b {
   color: #0081d2;
