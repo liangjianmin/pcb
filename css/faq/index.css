@@ -796,6 +796,9 @@ body {
   font-size: 16px;
   display: inline-block;
 }
+.faq-content .list ul li .linka span b {
+  color: #0081d2;
+}
 .faq-content .list ul li .linka:hover span {
   color: #0081d2;
 }
