@@ -702,7 +702,8 @@ body {
 .user-center .user-center-l .title {
   position: absolute;
   left: 0;
-  top: -32px;
+  top: -38px;
+  white-space: nowrap;
 }
 .user-center .user-center-l .title a {
   font-size: 12px;
@@ -783,6 +784,35 @@ body {
 }
 .user-center .user-center-r {
   width: 960px;
+}
+.user-center .user-center-r .title {
+  border-bottom: 1px solid #E6EAF2;
+}
+.user-center .user-center-r .title .l {
+  position: relative;
+  padding-bottom: 15px;
+}
+.user-center .user-center-r .title .l span {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.user-center .user-center-r .title .l span:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #0081D2;
+  content: '';
+}
+.user-center .user-center-r .title .r span {
+  font-size: 13px;
+  color: #959ba6;
+}
+.user-center .user-center-r .title .r .iconfont {
+  font-size: 14px;
+  color: #5c5f66;
 }
 .user-center .user-center-r .user-center-head .user-center-head-l {
   position: relative;
@@ -949,35 +979,6 @@ body {
 }
 .user-center .user-center-r .user-center-section {
   margin-top: 30px;
-}
-.user-center .user-center-r .user-center-section .title {
-  border-bottom: 1px solid #E6EAF2;
-}
-.user-center .user-center-r .user-center-section .title .l {
-  position: relative;
-  padding-bottom: 15px;
-}
-.user-center .user-center-r .user-center-section .title .l span {
-  font-size: 20px;
-  color: #3a3c40;
-  font-weight: bold;
-}
-.user-center .user-center-r .user-center-section .title .l span:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: #0081D2;
-  content: '';
-}
-.user-center .user-center-r .user-center-section .title .r span {
-  font-size: 13px;
-  color: #959ba6;
-}
-.user-center .user-center-r .user-center-section .title .r .iconfont {
-  font-size: 14px;
-  color: #5c5f66;
 }
 .user-center .user-center-r .user-center-section .order-status {
   white-space: nowrap;

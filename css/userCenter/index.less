@@ -3,6 +3,7 @@
 .user-center {
   padding: 58px 0 70px 0;
 
+
   .user-center-l {
     position: relative;
     width: 180px;
@@ -10,7 +11,8 @@
     .title {
       position: absolute;
       left: 0;
-      top: -32px;
+      top: -38px;
+      white-space: nowrap;
 
       a {
         font-size: 12px;
@@ -117,6 +119,43 @@
 
   .user-center-r {
     width: 960px;
+
+    .title {
+      border-bottom: 1px solid #E6EAF2;
+
+      .l {
+        position: relative;
+        padding-bottom: 15px;
+
+        span {
+          font-size: 20px;
+          color: #3a3c40;
+          font-weight: bold;
+
+          &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #0081D2;
+            content: '';
+          }
+        }
+      }
+
+      .r {
+        span {
+          font-size: 13px;
+          color: #959ba6;
+        }
+
+        .iconfont {
+          font-size: 14px;
+          color: #5c5f66;
+        }
+      }
+    }
 
     .user-center-head {
       .user-center-head-l {
@@ -337,42 +376,6 @@
     .user-center-section {
       margin-top: 30px;
 
-      .title {
-        border-bottom: 1px solid #E6EAF2;
-
-        .l {
-          position: relative;
-          padding-bottom: 15px;
-
-          span {
-            font-size: 20px;
-            color: #3a3c40;
-            font-weight: bold;
-
-            &:after {
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 100%;
-              height: 5px;
-              background: #0081D2;
-              content: '';
-            }
-          }
-        }
-
-        .r {
-          span {
-            font-size: 13px;
-            color: #959ba6;
-          }
-
-          .iconfont {
-            font-size: 14px;
-            color: #5c5f66;
-          }
-        }
-      }
 
       .order-status {
         white-space: nowrap;
@@ -657,9 +660,11 @@
             float: left;
             height: 383px;
             margin-right: 20px;
-            &:nth-of-type(3n){
+
+            &:nth-of-type(3n) {
               margin-right: 0;
             }
+
             a {
               display: block;
 

@@ -699,7 +699,6 @@ body {
 }
 .find-section .find-sectionn-wrap {
   width: 580px;
-  height: 437px;
   margin: 0 auto;
   background: #ffffff;
   box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
@@ -759,6 +758,33 @@ body {
 }
 .find-section .find-sectionn-wrap .status li.curr1 .line1 {
   background: #E89721;
+}
+.find-section .find-sectionn-wrap .status li.status2 .line1 {
+  position: absolute;
+  top: 18px;
+  left: -65px;
+  width: 80px;
+  height: 4px;
+  background: #E6EAF2;
+}
+.find-section .find-sectionn-wrap .status li.status2 .line2 {
+  position: absolute;
+  top: 18px;
+  left: 55px;
+  width: 80px;
+  height: 4px;
+  background: #E6EAF2;
+}
+.find-section .find-sectionn-wrap .status li.status2 span {
+  background: #E6EAF2;
+  color: #ffffff;
+}
+.find-section .find-sectionn-wrap .status li.status2 p {
+  color: #3a3c40;
+  font-weight: bold;
+}
+.find-section .find-sectionn-wrap .status li.status2 .line1 {
+  background: #E6EAF2;
 }
 .find-section .find-sectionn-wrap .status li.curr2 .line1 {
   position: absolute;
@@ -833,6 +859,9 @@ body {
   top: 21px;
   font-weight: bold;
   background: none;
+}
+.find-section .foram-wrap .inpt .button-class.btnDisabled {
+  color: #CCCCCC;
 }
 .find-section .foram-wrap .inpt .error-text {
   font-size: 12px;
