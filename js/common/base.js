@@ -204,6 +204,19 @@
         $("#timer_m").text(0 + '分');
         $("#timer_s").text(0 + '秒');
       }
+    },
+    /**
+     * 星星评分
+     */
+    star:function (obj,callback) {
+      $(obj).on('click',function () {
+        var index = $(this).index();
+  
+        $(""+obj+":lt(" + index + 1 + ")").removeClass("default");
+        $(""+obj+":gt(" + index + ")").addClass("default");
+  
+        typeof callback == 'function' && callback(index+1);
+      });
     }
   };
   if (typeof define === "function" && define.amd) {
