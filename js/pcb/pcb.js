@@ -108,6 +108,12 @@
         });
       });
       
+      //最小线宽/线距
+      Util.tabs('#LineWeight ul li', function (index, val) {
+      
+      });
+      
+      
       //最小孔径
       Util.tabs('#pcb_minholesize ul li', function (index, val) {
         Observer.emit('pcb', {
@@ -117,46 +123,46 @@
         });
       });
       
-     //阻焊颜色
+      //阻焊颜色
       Util.tabs('#SolderColor ul li', function (index, val) {
-    
+      
       });
-  
+      
       //字符颜色
       Util.tabs('#FontColor ul li', function (index, val) {
-    
+      
       });
-  
+      
       //焊盘喷镀
       Util.tabs('#SurfaceFinish ul li', function (index, val) {
-    
+      
       });
-  
+      
       //阻焊覆盖
       Util.tabs('#SolderCover ul li', function (index, val) {
-    
+      
       });
-  
+      
       //测试选项
       Util.tabs('#TestType ul li', function (index, val) {
-    
+      
       });
-  
+      
       //金(锡)手指
       Util.tabs('#Goldfinger ul li', function (index, val) {
-    
+      
       });
-  
+      
       //阻抗控制
       Util.tabs('#ImpedanceSize ul li', function (index, val) {
-    
+      
       });
-  
+      
       //确认生产稿
       Util.tabs('#ProductionDraft ul li', function (index, val) {
-    
+      
       });
-  
+      
       //收缩
       $(document).on('click', '.shrink', function () {
         if ($(this).text() == '收缩') {
