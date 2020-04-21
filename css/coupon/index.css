@@ -823,441 +823,175 @@ body {
   font-size: 14px;
   color: #5c5f66;
 }
-.user-center .user-center-r .user-center-head .user-center-head-l {
-  position: relative;
-  width: 460px;
-  height: 210px;
-  background: #FFFFFF;
-  border-radius: 40px 0 0 0;
+.coupon .tab {
+  margin-top: 20px;
+  width: 938px;
+  height: 60px;
+  line-height: 60px;
+  background: #F7F9FC;
   border: 1px solid #E6EAF2;
-  white-space: nowrap;
+  padding-right: 20px;
 }
-.user-center .user-center-r .user-center-head .user-center-head-l .pic {
-  width: 88px;
-  margin-left: 30px;
-  margin-right: 40px;
+.coupon .tab .l li {
+  position: relative;
+  width: 127px;
+  height: 60px;
+  border-right: 1px solid #E6EAF2;
+  color: #5c5f66;
+  font-size: 16px;
+  text-align: center;
+  float: left;
   cursor: pointer;
 }
-.user-center .user-center-r .user-center-head .user-center-head-l .pic img {
-  width: 88px;
-  height: 88px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .pic p {
-  margin-top: 12px;
-  text-align: center;
-  font-size: 12px;
-  color: #959ba6;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .text .t1 {
-  font-size: 20px;
-  color: #3a3c40;
-  font-weight: bold;
-  margin-bottom: 9px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .text .t2 {
-  font-size: 12px;
-  color: #959ba6;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .text .bar {
-  margin-top: 22px;
-  white-space: nowrap;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .text .bar li {
-  text-align: center;
-  padding-right: 46px;
-  margin-right: 36px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .text .bar li:first-child {
-  border-right: 1px solid #E6EAF2;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .text .bar .t3 .iconzujiantubiaojiantou15 {
-  font-size: 20px;
-  color: #ffa624;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .text .bar .t3 .iconzujiantubiaojiantou13 {
-  font-size: 20px;
-  color: #0090eb;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .text .bar .t3 span {
-  font-size: 12px;
-  color: #5c5f66;
-  margin-left: 5px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .text .bar .t4 {
-  font-size: 20px;
-  color: #e82121;
-  font-weight: bold;
-  text-align: center;
-  line-height: 28px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-l .setting {
-  position: absolute;
-  right: 18px;
-  top: 20px;
-  font-size: 12px;
-  color: #0081d2;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r {
-  width: 496px;
-  height: 210px;
-  background: #F7F9FC;
-  border-radius: 0px 2px 2px 0px;
-  border: 1px solid #E6EAF2;
-  border-left: none;
-  text-align: center;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-1 {
-  padding-right: 29px;
-  text-align: left;
-  border-right: 1px solid #E6EAF2;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li {
-  width: 200px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li:first-child {
-  margin-bottom: 30px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t1 {
-  margin-bottom: 6px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t1 .l {
-  font-size: 14px;
-  color: #5c5f66;
-  margin-top: 5px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t1 .r em {
-  font-size: 14px;
-  color: #0081d2;
-  vertical-align: middle;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t1 .r i {
-  font-size: 20px;
-  color: #0081d2;
-  vertical-align: middle;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t2 span {
-  font-size: 14px;
-  color: #3a3c40;
-  font-weight: bold;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t2 em {
-  font-size: 14px;
-  color: #959ba6;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-2 {
-  width: 200px;
-  padding-left: 28px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-2 .tit .l .iconfont {
-  font-size: 20px;
-  color: #0081d2;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-2 .tit .l span {
-  font-size: 16px;
-  color: #3a3c40;
-  font-weight: bold;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-2 .tit .r span {
-  font-size: 13px;
-  color: #959ba6;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-2 .tit .r .iconfont {
-  font-size: 14px;
-  color: #5c5f66;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-2 .text {
-  margin-top: 19px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-2 .text li {
-  margin-bottom: 10px;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-2 .text li a {
-  display: block;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-2 .text li a .l {
-  width: 150px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 12px;
-  color: #5c5f66;
-}
-.user-center .user-center-r .user-center-head .user-center-head-r .text-2 .text li a .r {
-  font-size: 12px;
-  color: #959ba6;
-}
-.user-center .user-center-r .user-center-section {
-  margin-top: 30px;
-}
-.user-center .user-center-r .user-center-section .order-status {
-  white-space: nowrap;
-}
-.user-center .user-center-r .user-center-section .order-status li {
-  width: 159px;
-  margin: 30px 0 35px 0;
-  border-right: 1px solid #E6EAF2;
-  text-align: center;
-  vertical-align: middle;
-}
-.user-center .user-center-r .user-center-section .order-status li .ico .iconfont {
-  font-size: 20px;
-  color: #959ba6;
-  vertical-align: middle;
-}
-.user-center .user-center-r .user-center-section .order-status li .ico .iconzujiantubiaojiantou {
-  color: #1A8ED7;
-}
-.user-center .user-center-r .user-center-section .order-status li .ico span {
-  font-size: 14px;
-  color: #3a3c40;
-  font-weight: bold;
-  vertical-align: middle;
-  margin-left: 4px;
-}
-.user-center .user-center-r .user-center-section .order-status li .num {
-  font-size: 20px;
-  color: #e82121;
-  font-weight: bold;
-}
-.user-center .user-center-r .user-center-section .order-status li:last-child {
+.coupon .tab .l li:last-child {
   border-right: none;
 }
-.user-center .user-center-r .user-center-section .order-status li em {
-  font-size: 14px;
-  color: #0081d2;
-  font-weight: bold;
-}
-.user-center .user-center-r .user-center-section .list-th {
-  width: 928px;
-  height: 50px;
-  padding-left: 30px;
-  line-height: 50px;
-  background: #F7F9FC;
-  border-radius: 2px;
-  border: 1px solid #E6EAF2;
-}
-.user-center .user-center-r .user-center-section .list-th li {
-  float: left;
-  font-size: 14px;
-  color: #5c5f66;
-}
-.user-center .user-center-r .user-center-section .list-th li.tc {
-  text-align: center;
-}
-.user-center .user-center-r .user-center-section .list-th li.tr {
-  text-align: right;
-}
-.user-center .user-center-r .user-center-section .data-list {
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
-.user-center .user-center-r .user-center-section .data-list table {
-  width: 960px;
-  border: 1px solid #E6EAF2;
-  border-collapse: collapse;
-  margin-bottom: 10px;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr {
-  border: 1px solid #E6EAF2;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr th {
-  white-space: nowrap;
-  padding-left: 30px;
-  height: 50px;
-  text-align: left;
-  font-weight: normal;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr th .t1 {
-  font-size: 14px;
+.coupon .tab .l li.curr {
+  background: #FFFFFF;
   color: #3a3c40;
-  font-weight: bold;
+  left: 1px;
 }
-.user-center .user-center-r .user-center-section .data-list table tbody tr th .t2 {
-  font-size: 14px;
-  color: #5c5f66;
+.coupon .tab .l li.curr:after {
+  position: absolute;
+  top: 20px;
+  left: -1px;
+  width: 4px;
+  height: 22px;
+  background: #0081D2;
+  content: '';
+  z-index: 1;
 }
-.user-center .user-center-r .user-center-section .data-list table tbody tr th .t3 i {
-  font-size: 26px;
-  color: #0081D2;
-  vertical-align: middle;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr th .t3 em {
-  font-size: 14px;
-  color: #0081d2;
-  vertical-align: middle;
-  margin-left: 8px;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td {
-  border: 1px solid #E6EAF2;
-  padding: 20px 0;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type1 {
-  padding-left: 30px;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type1 .t1 {
-  color: #3a3c40;
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type1 .t2 {
-  color: #5c5f66;
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type1 .t3 {
-  color: #5c5f66;
-  font-size: 14px;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type2 .t1 {
-  font-size: 14px;
-  color: #5C5F66;
-  text-align: center;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type3 {
-  text-align: center;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type3 .t1 .iconfont {
-  font-size: 24px;
-  color: #e8b46b;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type3 .t1 span {
-  font-size: 14px;
-  color: #3a3c40;
-  margin-left: 7px;
-  font-weight: bold;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type3 .t2 {
-  margin-top: 7px;
+.coupon .tab .r {
   font-size: 14px;
   color: #959ba6;
 }
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type4 {
-  padding-left: 9px;
+.coupon .list {
+  margin-top: 30px;
 }
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type4 .t1 {
-  color: #e82121;
-  font-size: 14px;
-  font-weight: bold;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type5 .t1 {
-  font-size: 14px;
-  color: #5c5f66;
-  text-align: center;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 {
-  font-size: 14px;
-  color: #e82121;
-  text-align: center;
-  font-weight: bold;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.type7 {
-  font-size: 14px;
-  color: #0081d2;
-  padding-left: 15px;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.sumtext {
-  height: 59px;
-  padding: 0 20px 0 30px;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.sumtext .l {
-  height: 100%;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.sumtext .l .t1 span {
-  font-size: 14px;
-  color: #5c5f66;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.sumtext .l .t1 em {
-  font-size: 14px;
-  color: #3a3c40;
-  font-weight: bold;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.sumtext .l .t2 span {
-  font-size: 14px;
-  color: #5c5f66;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.sumtext .l .t2 em {
-  font-size: 16px;
-  color: #e82121;
-  font-weight: bold;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.sumtext .r {
-  height: 59px;
-  white-space: nowrap;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.sumtext .r .canel {
-  font-size: 14px;
-  color: #959ba6;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-}
-.user-center .user-center-r .user-center-section .data-list table tbody tr td.sumtext .r .ok {
-  width: 120px;
-  height: 40px;
-  background: #E82121;
-  border-radius: 2px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-  margin-left: 20px;
-}
-.user-center .user-center-r .user-center-section .drying-list ul {
-  margin-top: 20px;
-  width: 960px;
-}
-.user-center .user-center-r .user-center-section .drying-list ul li {
+.coupon .list li {
+  position: relative;
+  width: 460px;
+  height: 140px;
+  background: url("../../images/coupon/1.png") no-repeat center;
+  background-size: cover;
+  margin-right: 40px;
+  margin-bottom: 30px;
   float: left;
-  height: 383px;
-  margin-right: 20px;
+  cursor: pointer;
 }
-.user-center .user-center-r .user-center-section .drying-list ul li:nth-of-type(3n) {
+.coupon .list li:nth-of-type(2n) {
   margin-right: 0;
 }
-.user-center .user-center-r .user-center-section .drying-list ul li a {
+.coupon .list li.type1 .ico-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 43px;
+  background: url("../../images/coupon/a.png") no-repeat center;
+  background-size: cover;
   display: block;
 }
-.user-center .user-center-r .user-center-section .drying-list ul li a .pic {
-  width: 280px;
-  height: 220px;
+.coupon .list li.type2 .ico-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 43px;
+  background: url("../../images/coupon/b.png") no-repeat center;
+  background-size: cover;
+  display: block;
 }
-.user-center .user-center-r .user-center-section .drying-list ul li a .pic img {
-  width: 280px;
-  height: 220px;
+.coupon .list li.type3 {
+  background: url("../../images/coupon/2.png") no-repeat center;
+  background-size: cover;
 }
-.user-center .user-center-r .user-center-section .drying-list ul li a .text {
-  padding: 20px 20px 30px 20px;
-  background: #ffffff;
+.coupon .list li.type3 .left .t1 span {
+  color: #959ba6 !important;
 }
-.user-center .user-center-r .user-center-section .drying-list ul li a .text .t1 {
+.coupon .list li.type3 .left .t1 em {
+  color: #959ba6 !important;
+}
+.coupon .list li.type3 .left .t2 {
+  color: #959ba6 !important;
+}
+.coupon .list li .left {
+  margin-left: 30px;
+}
+.coupon .list li .left .t1 span {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.coupon .list li .left .t1 em {
+  font-size: 44px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.coupon .list li .left .t2 {
+  font-size: 14px;
+  color: #ffffff;
+}
+.coupon .list li .text {
+  margin-left: 58px;
+}
+.coupon .list li .text .t1 {
+  font-size: 16px;
+  color: #3a3c40;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+.coupon .list li .text .t2 {
+  margin-bottom: 8px;
+}
+.coupon .list li .text .t2 span {
+  font-size: 12px;
+  color: #959ba6;
+}
+.coupon .list li .text .t2 .tip {
+  width: 12px;
+  height: 12px;
+  background: #E89721;
+  line-height: 12px;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.coupon .list li .text .t3 span {
+  font-size: 12px;
+  color: #959ba6;
+}
+.coupon .no-data {
+  padding-top: 70px;
+  text-align: center;
+}
+.coupon .no-data .iconfont {
+  font-size: 180px;
+  color: #0081d2;
+}
+.coupon .no-data .t1 {
+  font-size: 20px;
+  color: #3a3c40;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.coupon .no-data .t2 {
   font-size: 14px;
   color: #5c5f66;
-  margin-bottom: 30px;
-  width: 240px;
-  white-space: normal;
-  display: -webkit-box;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  margin-bottom: 20px;
 }
-.user-center .user-center-r .user-center-section .drying-list ul li a .text .t2 {
+.coupon .no-data .btn {
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  background: #0081D2;
+  border-radius: 2px;
   font-size: 14px;
-  color: #3a3c40;
-  margin-bottom: 6px;
-}
-.user-center .user-center-r .user-center-section .drying-list ul li a .text .t3 {
-  font-size: 12px;
-  color: #959BA6;
-}
-.user-center .user-center-r .user-center-section .drying-list ul li a .text .star dd {
-  float: left;
-  font-size: 16px;
-  color: #ea9621;
-  margin-right: 5px;
-}
-.user-center .user-center-r .user-center-section .drying-list ul li a .text .star dd.default {
-  color: #afb2bc;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=index.css.map */

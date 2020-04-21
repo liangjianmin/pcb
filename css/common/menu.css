@@ -1,0 +1,91 @@
+.user-center {
+  padding: 58px 0 70px 0;
+}
+.user-center .user-center-l {
+  position: relative;
+  width: 180px;
+}
+.user-center .user-center-l .title {
+  position: absolute;
+  left: 0;
+  top: -38px;
+  white-space: nowrap;
+}
+.user-center .user-center-l .title a {
+  font-size: 12px;
+  color: #5c5f66;
+}
+.user-center .user-center-l .title a.curr {
+  color: #959ba6;
+}
+.user-center .user-center-l .title .iconfont {
+  font-size: 14px;
+  color: #959ba6;
+  margin: 0 5px;
+}
+.user-center .user-center-l .menu dt {
+  width: 180px;
+  height: 50px;
+  background: #0081D2;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 2px 2px 0px 0px;
+}
+.user-center .user-center-l .menu dt .iconfont {
+  font-size: 17px;
+  color: #ffffff;
+}
+.user-center .user-center-l .menu dt span {
+  margin-left: 4px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.user-center .user-center-l .menu dd {
+  padding-top: 20px;
+  border-left: 1px solid #E6EAF2;
+  border-right: 1px solid #E6EAF2;
+}
+.user-center .user-center-l .menu dd:last-child {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E6EAF2;
+}
+.user-center .user-center-l .menu dd .tit {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+  padding-left: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+.user-center .user-center-l .menu dd ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  transition: all 0.4s ease;
+}
+.user-center .user-center-l .menu dd ul li:last-child {
+  margin-bottom: 0;
+}
+.user-center .user-center-l .menu dd ul li a {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.user-center .user-center-l .menu dd ul li:hover a {
+  color: #0081d2;
+  font-weight: bold;
+}
+.user-center .user-center-l .menu dd ul li.curr:after {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: '';
+  width: 3px;
+  height: 12px;
+  background: #0081D2;
+  z-index: 1;
+}
+.user-center .user-center-l .menu dd ul li.curr a {
+  color: #0081d2;
+  font-weight: bold;
+}
+/*# sourceMappingURL=menu.css.map */
