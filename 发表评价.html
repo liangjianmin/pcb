@@ -257,12 +257,19 @@
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
-  Util.tabs('.list li', function (index) {
+
+  $('.list li').on('click', function () {
+    if ($(this).hasClass('curr')) {
+      $(this).removeClass('curr');
+    } else {
+      $(this).addClass('curr');
+    }
+
 
   });
 
   Util.star('.star dd', function (val) {
-        console.log(val)
+    console.log(val)
   });
 
 
