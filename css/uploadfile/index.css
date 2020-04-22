@@ -704,239 +704,216 @@ body {
   height: auto;
   overflow: hidden;
 }
-.find-section {
-  width: 100%;
-  padding: 40px 0 70px 0;
-  background: #F7F9FC;
+.user-center {
+  padding: 58px 0 70px 0;
 }
-.find-section .find-sectionn-wrap {
-  width: 580px;
-  margin: 0 auto;
-  background: #ffffff;
-  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
-  text-align: center;
-  padding: 30px 0 68px 0;
+.user-center .user-center-l {
+  position: relative;
+  width: 180px;
 }
-.find-section .find-sectionn-wrap .tit {
-  color: #3a3c40;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 20px;
-  border-bottom: 10px solid #0081D2;
-  margin-bottom: 40px;
-}
-.find-section .find-sectionn-wrap .status {
-  margin-bottom: 80px;
+.user-center .user-center-l .title {
+  position: absolute;
+  left: 0;
+  top: -38px;
   white-space: nowrap;
 }
-.find-section .find-sectionn-wrap .status li {
-  position: relative;
-  margin-right: 128px;
+.user-center .user-center-l .title a {
+  font-size: 12px;
+  color: #5c5f66;
 }
-.find-section .find-sectionn-wrap .status li:last-child {
-  margin-right: 0;
-}
-.find-section .find-sectionn-wrap .status li span {
-  width: 40px;
-  height: 40px;
-  background: #e6eaf2;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-  color: #ffffff;
-}
-.find-section .find-sectionn-wrap .status li p {
-  margin-top: 20px;
-  font-size: 14px;
+.user-center .user-center-l .title a.curr {
   color: #959ba6;
 }
-.find-section .find-sectionn-wrap .status li.curr1 .line1 {
-  position: absolute;
-  top: 18px;
-  left: 48px;
-  width: 80px;
-  height: 4px;
-  background: #E6EAF2;
+.user-center .user-center-l .title .iconfont {
+  font-size: 14px;
+  color: #959ba6;
+  margin: 0 5px;
 }
-.find-section .find-sectionn-wrap .status li.curr1 span {
-  background: #E89721;
+.user-center .user-center-l .menu dt {
+  width: 180px;
+  height: 50px;
+  background: #0081D2;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 2px 2px 0px 0px;
+}
+.user-center .user-center-l .menu dt .iconfont {
+  font-size: 17px;
   color: #ffffff;
 }
-.find-section .find-sectionn-wrap .status li.curr1 p {
-  color: #3a3c40;
-  font-weight: bold;
-}
-.find-section .find-sectionn-wrap .status li.curr1 .line1 {
-  background: #E89721;
-}
-.find-section .find-sectionn-wrap .status li.status2 .line1 {
-  position: absolute;
-  top: 18px;
-  left: -65px;
-  width: 80px;
-  height: 4px;
-  background: #E6EAF2;
-}
-.find-section .find-sectionn-wrap .status li.status2 .line2 {
-  position: absolute;
-  top: 18px;
-  left: 55px;
-  width: 80px;
-  height: 4px;
-  background: #E6EAF2;
-}
-.find-section .find-sectionn-wrap .status li.status2 span {
-  background: #E6EAF2;
+.user-center .user-center-l .menu dt span {
+  margin-left: 4px;
+  font-size: 14px;
   color: #ffffff;
 }
-.find-section .find-sectionn-wrap .status li.status2 p {
+.user-center .user-center-l .menu dd {
+  padding-top: 20px;
+  border-left: 1px solid #E6EAF2;
+  border-right: 1px solid #E6EAF2;
+}
+.user-center .user-center-l .menu dd:last-child {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E6EAF2;
+}
+.user-center .user-center-l .menu dd .tit {
+  font-size: 14px;
   color: #3a3c40;
   font-weight: bold;
+  padding-left: 30px;
+  display: block;
+  margin-bottom: 10px;
 }
-.find-section .find-sectionn-wrap .status li.status2 .line1 {
-  background: #E6EAF2;
-}
-.find-section .find-sectionn-wrap .status li.curr2 .line1 {
-  position: absolute;
-  top: 18px;
-  left: -56px;
-  width: 80px;
-  height: 4px;
-  background: #E6EAF2;
-}
-.find-section .find-sectionn-wrap .status li.curr2 .line2 {
-  position: absolute;
-  top: 18px;
-  left: 55px;
-  width: 80px;
-  height: 4px;
-  background: #E89721;
-}
-.find-section .find-sectionn-wrap .status li.curr2 span {
-  background: #E89721;
-  color: #ffffff;
-}
-.find-section .find-sectionn-wrap .status li.curr2 p {
-  color: #3a3c40;
-  font-weight: bold;
-}
-.find-section .find-sectionn-wrap .status li.curr2 .line1 {
-  background: #E89721;
-}
-.find-section .find-sectionn-wrap .status li.curr3 .line1 {
-  position: absolute;
-  top: 18px;
-  left: -63px;
-  width: 80px;
-  height: 4px;
-  background: #E6EAF2;
-}
-.find-section .foram-wrap {
-  padding: 0 100px;
-}
-.find-section .foram-wrap .inpt {
+.user-center .user-center-l .menu dd ul li {
   position: relative;
-  margin-bottom: 20px;
-}
-.find-section .foram-wrap .inpt .iconfont {
-  position: absolute;
-  top: 15px;
-  left: 10px;
-  font-size: 30px;
-  color: #e6eaf2;
-}
-.find-section .foram-wrap .inpt .inp {
-  width: 320px;
-  height: 58px;
-  line-height: 58px;
-  background: #f7f9fc;
-  border-radius: 2px;
-  border: 1px solid #E6EAF2;
-  padding-left: 60px;
+  margin-bottom: 10px;
+  padding-left: 50px;
   transition: all 0.4s ease;
 }
-.find-section .foram-wrap .inpt .inp:focus {
-  border: 1px solid #0081d2;
+.user-center .user-center-l .menu dd ul li:last-child {
+  margin-bottom: 0;
 }
-.find-section .foram-wrap .inpt .inp::-webkit-input-placeholder {
-  color: #959ba6;
-}
-.find-section .foram-wrap .inpt .button-class {
-  font-size: 14px;
-  color: #0081d2;
-  position: absolute;
-  right: 21px;
-  top: 21px;
-  font-weight: bold;
-  background: none;
-}
-.find-section .foram-wrap .inpt .button-class.btnDisabled {
-  color: #CCCCCC;
-}
-.find-section .foram-wrap .inpt .error-text {
-  font-size: 12px;
-  color: #e82121;
-  text-align: left;
-  padding-left: 14px;
-  margin-top: 10px;
-  display: none;
-}
-.find-section .foram-wrap .inpt.error .iconfont {
-  color: #e82121;
-}
-.find-section .foram-wrap .inpt.error .inp {
-  border: 1px solid #e82121;
-  color: #e82121;
-}
-.find-section .foram-wrap .inpt.status .iconfont {
-  color: #0081d2;
-}
-.find-section .foram-wrap .btn {
-  margin-top: 28px;
-}
-.find-section .foram-wrap .btn a {
-  width: 380px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  background: #0081D2;
-  border-radius: 2px;
-  display: block;
-  font-size: 18px;
-  color: #ffffff;
-}
-.find-section .success {
-  margin-top: 20px;
-}
-.find-section .success .iconzujiantubiaochenggong {
-  font-size: 180px;
-  color: #02d321;
-}
-.find-section .success .t1 {
-  margin-top: 19px;
-  margin-bottom: 10px;
-  color: #3a3c40;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-.find-section .success .t2 {
+.user-center .user-center-l .menu dd ul li a {
   font-size: 14px;
   color: #5c5f66;
-  text-align: center;
-  margin-bottom: 20px;
 }
-.find-section .success .btn {
+.user-center .user-center-l .menu dd ul li:hover a {
+  color: #0081d2;
+  font-weight: bold;
+}
+.user-center .user-center-l .menu dd ul li.curr:after {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: '';
+  width: 3px;
+  height: 12px;
+  background: #0081D2;
+  z-index: 1;
+}
+.user-center .user-center-l .menu dd ul li.curr a {
+  color: #0081d2;
+  font-weight: bold;
+}
+.user-center .user-center-r {
+  width: 960px;
+}
+.user-center .user-center-r .title {
+  border-bottom: 1px solid #E6EAF2;
+}
+.user-center .user-center-r .title .l {
+  position: relative;
+  padding-bottom: 15px;
+}
+.user-center .user-center-r .title .l span {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.user-center .user-center-r .title .l span:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #0081D2;
+  content: '';
+}
+.user-center .user-center-r .title .l b {
+  padding-left: 30px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #5c5f66;
+  display: block;
+  position: relative;
+  top: 9px;
+}
+.user-center .user-center-r .title .l b a {
+  color: #e89721;
+}
+.user-center .user-center-r .title .r span {
+  font-size: 13px;
+  color: #959ba6;
+}
+.user-center .user-center-r .title .r .iconfont {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.user-center .user-center-r .title .r .btn {
   width: 120px;
   height: 36px;
   line-height: 36px;
-  background: #0081d2;
+  text-align: center;
+  background: #0081D2;
   border-radius: 2px;
-  margin: 0 auto;
-  color: #fff;
   font-size: 14px;
+  color: #ffffff;
   display: block;
+}
+.uploadfile .uploadfile-empty {
+  padding-top: 150px;
+  text-align: center;
+}
+.uploadfile .uploadfile-empty .iconfont {
+  font-size: 180px;
+  color: #0081d2;
+}
+.uploadfile .uploadfile-empty p {
+  margin-top: 19px;
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.uploadfile .list-table {
+  width: 960px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.uploadfile .list-table tr.bor {
+  border: 1px solid #E6EAF2;
+}
+.uploadfile .list-table tr th {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 50px;
+  border-radius: 2px;
+  background: #F7F9FC;
+  font-weight: normal;
+}
+.uploadfile .list-table tr td {
+  height: 60px;
+  border-top: 1px solid #E6EAF2;
+  border-bottom: 1px solid #E6EAF2;
+}
+.uploadfile .list-table tr td.type1 {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.uploadfile .list-table tr td.type2 {
+  font-size: 14px;
+  color: #5c5f66;
+  text-align: center;
+}
+.uploadfile .list-table tr td.type3 {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+  text-align: center;
+}
+.uploadfile .list-table tr td.type3 span {
+  font-size: 14px;
+  color: #959ba6;
+}
+.uploadfile .list-table tr td.type4 {
+  text-align: center;
+}
+.uploadfile .list-table tr td.type4 .ok {
+  color: #0081d2;
+  font-size: 14px;
+}
+.uploadfile .list-table tr td.type4 .del {
+  font-size: 14px;
+  color: #e82121;
 }
 /*# sourceMappingURL=index.css.map */
