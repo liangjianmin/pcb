@@ -737,6 +737,9 @@ body {
   content: "";
   z-index: 2;
 }
+.notice .list {
+  margin-top: 20px;
+}
 .notice .list li {
   width: 1180px;
   height: 60px;
