@@ -87,6 +87,12 @@
         
       });
       
+      //FR4-TG
+      Util.tabs('#FrTg ul li', function (index, val) {
+      
+      });
+      
+      
       //板子厚度
       Util.tabs('#pcb_thickness ul li', function (index, val) {
         
