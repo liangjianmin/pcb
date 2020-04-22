@@ -992,6 +992,7 @@
   padding: 30px 30px 40px 30px;
 
   .form-input {
+    position: relative;
     margin-bottom: 20px;
 
     label {
@@ -1062,6 +1063,32 @@
       text-align: center;
       font-size: 14px;
       color: #FFFFFF;
+    }
+  }
+
+  .area {
+    position: absolute;
+    top: 81px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 2px;
+    border: 1px solid #0081D2;
+    z-index: 1;
+    display: none;
+    ul{
+      padding: 16px 20px 20px 20px;
+      li{
+        float: left;
+        font-size: 14px;
+        color: #3a3c40;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        cursor: pointer;
+        &:hover{
+          color: #0081D2;
+        }
+      }
     }
   }
 }

@@ -1478,6 +1478,7 @@ body {
   padding: 30px 30px 40px 30px;
 }
 .address-add-layer .form-input {
+  position: relative;
   margin-bottom: 20px;
 }
 .address-add-layer .form-input label {
@@ -1538,6 +1539,31 @@ body {
   text-align: center;
   font-size: 14px;
   color: #FFFFFF;
+}
+.address-add-layer .area {
+  position: absolute;
+  top: 81px;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #0081D2;
+  z-index: 1;
+  display: none;
+}
+.address-add-layer .area ul {
+  padding: 16px 20px 20px 20px;
+}
+.address-add-layer .area ul li {
+  float: left;
+  font-size: 14px;
+  color: #3a3c40;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.address-add-layer .area ul li:hover {
+  color: #0081D2;
 }
 .address-choince-layer {
   padding: 20px 30px 40px 30px;

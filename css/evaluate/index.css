@@ -815,6 +815,18 @@ body {
   background: #0081D2;
   content: '';
 }
+.user-center .user-center-r .title .l b {
+  padding-left: 30px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #5c5f66;
+  display: block;
+  position: relative;
+  top: 9px;
+}
+.user-center .user-center-r .title .l b a {
+  color: #e89721;
+}
 .user-center .user-center-r .title .r span {
   font-size: 13px;
   color: #959ba6;
@@ -822,6 +834,17 @@ body {
 .user-center .user-center-r .title .r .iconfont {
   font-size: 14px;
   color: #5c5f66;
+}
+.user-center .user-center-r .title .r .btn {
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: #0081D2;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
 }
 .evaluate .tab {
   margin-top: 20px;
