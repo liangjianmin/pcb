@@ -335,24 +335,24 @@
             </p>
         </div>
         <div class="pay-num">
-            <ul class="pay-inp lbBox">
+            <ul class="pay-inp lbBox input-box">
                 <li class="lineBlock">
-                    <input type="text"/>
+                    <input type="text" maxlength="1"/>
                 </li>
                 <li class="lineBlock">
-                    <input type="text"/>
+                    <input type="text" maxlength="1"/>
                 </li>
                 <li class="lineBlock">
-                    <input type="text"/>
+                    <input type="text" maxlength="1"/>
                 </li>
                 <li class="lineBlock">
-                    <input type="text"/>
+                    <input type="text" maxlength="1"/>
                 </li>
                 <li class="lineBlock">
-                    <input type="text"/>
+                    <input type="text" maxlength="1"/>
                 </li>
                 <li class="lineBlock">
-                    <input type="text"/>
+                    <input type="text" maxlength="1"/>
                 </li>
             </ul>
             <div class="text clr">
@@ -396,6 +396,14 @@
 <script type="text/javascript" src="js/pay/pay.js"></script>
 <script type="text/javascript">
   $(function () {
+
+    $(document).on('input propertychange', '.input-box input', function () {
+      var val = $(this).val();
+      if (val) {
+        $(this).parent().next().children('input').focus();
+      }
+    });
+
 
     //选择支付方式
     $(".tab li").on('click', function () {

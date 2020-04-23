@@ -1,0 +1,133 @@
+@import '../common/base.less';
+@import '../common/menu.less';
+
+.paymentSetting {
+  margin-top: 60px;
+  padding-left: 60px;
+
+  .inpt-wrap {
+    margin-bottom: 20px;
+    white-space: nowrap;
+
+    .code-wrap {
+      position: relative;
+
+      .code {
+        position: absolute;
+        right: 10px;
+        top: 16px;
+        background: none;
+        font-size: 14px;
+        color: #0081d2;
+        &.btnDisabled{
+          color: #CCCCCC;
+        }
+      }
+
+      .inp0 {
+        width: 298px;
+        height: 48px;
+        border-radius: 2px;
+        border: 1px solid #E6EAF2;
+        background: #F7F9FC;
+        text-indent: 1em;
+
+        &:focus {
+          background: #ffffff;
+        }
+      }
+    }
+
+    label {
+      width: 96px;
+      font-size: 14px;
+      color: #5c5f66;
+      text-align: right;
+      margin-right: 22px;
+    }
+
+    .inp1 {
+      height: 48px;
+      line-height: 48px;
+      border-radius: 2px;
+      border: 1px solid #E6EAF2;
+      text-indent: 1em;
+      background: #F7F9FC;
+
+      &:focus {
+        background: #ffffff;
+      }
+    }
+
+    .inp2 {
+      height: 54px;
+      background: #F7F9FC;
+      border-radius: 2px;
+      border: 1px solid #E6EAF2;
+      margin-right: 8px;
+      font-size: 16px;
+      color: #3a3c40;
+      line-height: 54px;
+      text-align: center;
+
+      &:focus {
+        background: #ffffff;
+      }
+    }
+
+    .w2 {
+      width: 54px;
+    }
+
+    .w3 {
+      width: 198px;
+    }
+
+    .imgCode {
+      width: 76px;
+      height: 50px;
+
+      img {
+        width: 76px;
+        height: 50px;
+      }
+    }
+
+    .t1 {
+      font-size: 16px;
+      color: #3a3c40;
+      font-weight: bold;
+    }
+
+    .t2 {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #5c5f66;
+    }
+
+    .t3 {
+      font-size: 12px;
+      color: #0081d2;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+  }
+
+  .btn {
+    margin-top: 40px;
+    margin-left: 121px;
+
+    a {
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: #0081D2;
+      border-radius: 2px;
+      display: block;
+      color: #ffffff;
+      font-size: 14px;
+    }
+  }
+}
