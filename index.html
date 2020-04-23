@@ -665,6 +665,38 @@
     </div>
 </div>
 <!--footer end-->
+
+
+<script type="text/html" id="loginhtml">
+    <div class="login-layer">
+        <form>
+            <div class="inpt error">
+                <i class="iconfont iconzujiantubiaoshouji"></i>
+                <input type="text" placeholder="请输入手机号码" class="inp">
+            </div>
+            <div class="inpt status">
+                <i class="iconfont iconzujiantubiaomima"></i>
+                <input type="text" placeholder="请输入登录密码" class="inp">
+            </div>
+            <div class="btn">
+                <a href="javascript:;">登录</a>
+            </div>
+            <div class="login-bar clr">
+                <div class="fl l">
+                    <span class="circle act lineBlock va-m">
+                        <i></i>
+                    </span>
+                    <span class="txt va-m">记住登录状态</span>
+                </div>
+                <div class="fr r">
+                    <a href="" class="mr24">注册新用户</a>
+                    <a href="">忘记密码？</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</script>
+
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
@@ -675,6 +707,28 @@
     $(".tab li").on('click', function () {
       $(this).addClass('curr').siblings('li').removeClass('curr');
     });
+
+
+    $(document).on('click','.circle',function () {
+        $(this).toggleClass('act');
+    });
+
+    //快键登录
+    layer.open({
+      type: 1,
+      title: '<span>手机登录</span>',
+      area: ['500px', 'auto'],
+      shadeClose: true,
+      move: false,
+      content: $("#loginhtml").html(),
+      success: function (layero, index) {
+
+
+      }
+    });
+
+
+
   })
 </script>
 </body>

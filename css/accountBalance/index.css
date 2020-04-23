@@ -704,6 +704,94 @@ body {
   height: auto;
   overflow: hidden;
 }
+.login-layer {
+  padding: 50px 60px 40px 60px;
+}
+.login-layer .inpt {
+  position: relative;
+  margin-bottom: 20px;
+}
+.login-layer .inpt .iconfont {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 30px;
+  color: #e6eaf2;
+  margin-top: -17px;
+}
+.login-layer .inpt .inp {
+  width: 320px;
+  height: 58px;
+  line-height: 58px;
+  background: #f7f9fc;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  padding-left: 60px;
+  transition: all 0.4s ease;
+}
+.login-layer .inpt .inp:focus {
+  border: 1px solid #0081d2;
+  background: #ffffff;
+}
+.login-layer .inpt .inp::-webkit-input-placeholder {
+  color: #959ba6;
+}
+.login-layer .inpt.error .iconfont {
+  color: #e82121;
+}
+.login-layer .inpt.error .inp {
+  border: 1px solid #e82121;
+  color: #e82121;
+}
+.login-layer .inpt.status .iconfont {
+  color: #0081d2;
+}
+.login-layer .btn {
+  margin-top: 20px;
+}
+.login-layer .btn a {
+  width: 380px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #0081D2;
+  border-radius: 2px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+}
+.login-layer .login-bar {
+  padding-top: 30px;
+}
+.login-layer .login-bar .l .circle {
+  width: 12px;
+  height: 12px;
+  padding: 3px;
+  border-radius: 18px;
+  border: 1px solid #C2C7CC;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+}
+.login-layer .login-bar .l .circle.act {
+  border-color: #0081D2;
+}
+.login-layer .login-bar .l .circle.act i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #0081D2;
+  border-radius: 12px;
+}
+.login-layer .login-bar .l .txt {
+  font-size: 14px;
+  color: #959ba6;
+  margin-left: 6px;
+}
+.login-layer .login-bar .r a {
+  font-size: 14px;
+  color: #0081d2;
+}
 .user-center {
   padding: 58px 0 70px 0;
 }
@@ -1000,5 +1088,221 @@ body {
   font-size: 14px;
   color: #ffffff;
   display: block;
+}
+.accountBalance .accountBalance-wrap .tab {
+  margin-top: 40px;
+  width: 938px;
+  height: 60px;
+  line-height: 60px;
+  background: #F7F9FC;
+  border: 1px solid #E6EAF2;
+  padding-right: 20px;
+}
+.accountBalance .accountBalance-wrap .tab .l li {
+  position: relative;
+  width: 127px;
+  height: 60px;
+  border-right: 1px solid #E6EAF2;
+  color: #5c5f66;
+  font-size: 16px;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+}
+.accountBalance .accountBalance-wrap .tab .l li:last-child {
+  border-right: none;
+}
+.accountBalance .accountBalance-wrap .tab .l li.curr {
+  background: #FFFFFF;
+  color: #3a3c40;
+  left: 1px;
+  font-weight: bold;
+}
+.accountBalance .accountBalance-wrap .tab .l li.curr:after {
+  position: absolute;
+  top: 20px;
+  left: -1px;
+  width: 4px;
+  height: 22px;
+  background: #0081D2;
+  content: '';
+  z-index: 1;
+}
+.accountBalance .accountBalance-wrap .tab .r {
+  font-size: 14px;
+  color: #959ba6;
+}
+.accountBalance .accountBalance-wrap .list-table {
+  width: 960px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  display: none;
+}
+.accountBalance .accountBalance-wrap .list-table tr.bor {
+  border: 1px solid #E6EAF2;
+}
+.accountBalance .accountBalance-wrap .list-table tr th {
+  height: 50px;
+  border-radius: 2px;
+  background: #F7F9FC;
+  font-weight: normal;
+}
+.accountBalance .accountBalance-wrap .list-table tr td {
+  height: 60px;
+  border-top: 1px solid #E6EAF2;
+  border-bottom: 1px solid #E6EAF2;
+}
+.accountBalance .accountBalance-wrap .list-table tr td.type1 {
+  font-size: 14px;
+  color: #5C5F66;
+  padding-left: 30px;
+}
+.accountBalance .accountBalance-wrap .list-table tr td.type2 {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.accountBalance .accountBalance-wrap .list-table tr td.type3 {
+  font-size: 14px;
+  color: #e82121;
+  font-weight: bold;
+}
+.accountBalance .accountBalance-wrap .list-table tr td.type4 {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.accountBalance .accountBalance-wrap .list-table tr td.type5 {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.accountRecharge .head-text {
+  padding-left: 70px;
+  margin-top: 30px;
+  width: 888px;
+  height: 118px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+}
+.accountRecharge .head-text .l {
+  height: 100%;
+}
+.accountRecharge .head-text .l .iconfont {
+  font-size: 24px;
+  color: #0081d2;
+}
+.accountRecharge .head-text .l .t1 {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.accountRecharge .head-text .l .t2 {
+  font-size: 24px;
+  color: #e82121;
+  margin-left: 23px;
+}
+.accountRecharge .head-text .l .t3 {
+  font-size: 30px;
+  color: #e82121;
+}
+.accountRecharge .head-text .r {
+  height: 100%;
+}
+.accountRecharge .head-text .r .text {
+  width: 185px;
+}
+.accountRecharge .head-text .r .text .t1 {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.accountRecharge .head-text .r .text .t2 {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-left: 4px;
+}
+.accountRecharge .accountRecharge-form {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E6EAF2;
+}
+.accountRecharge .accountRecharge-form .input-wrap {
+  margin-bottom: 30px;
+  margin-left: 47px;
+}
+.accountRecharge .accountRecharge-form .input-wrap label {
+  width: 110px;
+  color: #5c5f66;
+  text-align: right;
+  margin-right: 22px;
+}
+.accountRecharge .accountRecharge-form .input-wrap .imgCode {
+  width: 76px;
+  height: 50px;
+}
+.accountRecharge .accountRecharge-form .input-wrap .imgCode img {
+  width: 76px;
+  height: 50px;
+}
+.accountRecharge .accountRecharge-form .input-wrap .t1 {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.accountRecharge .accountRecharge-form .input-wrap .t2 {
+  font-size: 14px;
+  color: #3a3c40;
+}
+.accountRecharge .accountRecharge-form .input-wrap .t3 {
+  font-size: 12px;
+  color: #0081d2;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.accountRecharge .accountRecharge-form .input-wrap input {
+  height: 48px;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  text-indent: 1em;
+  background: #F7F9FC;
+}
+.accountRecharge .accountRecharge-form .input-wrap input:focus {
+  background: #ffffff;
+}
+.accountRecharge .accountRecharge-form .input-wrap .w1 {
+  width: 298px;
+}
+.accountRecharge .accountRecharge-form .input-wrap .w2 {
+  width: 198px;
+}
+.accountRecharge .accountRecharge-form .btn {
+  margin-top: 40px;
+  margin-left: 182px;
+}
+.accountRecharge .accountRecharge-form .btn a {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #0081D2;
+  border-radius: 2px;
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+}
+.accountRecharge .accountRecharge-text {
+  margin-top: 40px;
+  margin-left: 183px;
+}
+.accountRecharge .accountRecharge-text .t1 {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.accountRecharge .accountRecharge-text .t2 {
+  margin-top: 13px;
+  font-size: 14px;
+  color: #5c5f66;
+  line-height: 20px;
 }
 /*# sourceMappingURL=index.css.map */

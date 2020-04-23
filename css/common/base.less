@@ -173,7 +173,6 @@ body {
   margin-left: 56px;
 }
 
-
 .pcb-head {
   width: 100%;
   height: 130px;
@@ -456,7 +455,6 @@ body {
   }
 }
 
-
 .home {
   border-bottom: 1px solid #E6EAF2;
 
@@ -591,3 +589,131 @@ body {
   height: auto;
   overflow: hidden;
 }
+
+
+.login-layer {
+  padding: 50px 60px 40px 60px;
+
+  .inpt {
+    position: relative;
+    margin-bottom: 20px;
+
+    .iconfont {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      font-size: 30px;
+      color: #e6eaf2;
+      margin-top: -17px;
+    }
+
+    .inp {
+      width: 320px;
+      height: 58px;
+      line-height: 58px;
+      background: rgba(247, 249, 252, 1);
+      border-radius: 2px;
+      border: 1px solid #E6EAF2;
+      padding-left: 60px;
+      transition: all 0.4s ease;
+
+      &:focus {
+        border: 1px solid #0081d2;
+        background: #ffffff;
+      }
+
+      &::-webkit-input-placeholder {
+        color: #959ba6;
+      }
+    }
+
+    &.error {
+      .iconfont {
+        color: #e82121;
+      }
+
+      .inp {
+        border: 1px solid #e82121;
+        color: #e82121;
+      }
+    }
+
+    &.status {
+      .iconfont {
+        color: #0081d2;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 20px;
+
+    a {
+      width: 380px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      background: #0081D2;
+      border-radius: 2px;
+      display: block;
+      font-size: 18px;
+      color: #ffffff;
+    }
+  }
+
+  .login-bar {
+    padding-top: 30px;
+
+    .l {
+      .circle {
+        width: 12px;
+        height: 12px;
+        padding: 3px;
+        border-radius: 18px;
+        border: 1px solid #C2C7CC;
+        position: relative;
+        top: -2px;
+        cursor: pointer;
+
+        &.act {
+          border-color: #0081D2;
+
+          i {
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: #0081D2;
+            border-radius: 12px;
+          }
+        }
+      }
+
+      .txt {
+        font-size: 14px;
+        color: #959ba6;
+        margin-left: 6px;
+      }
+    }
+
+    .r {
+      a {
+        font-size: 14px;
+        color: #0081d2;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

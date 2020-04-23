@@ -704,6 +704,94 @@ body {
   height: auto;
   overflow: hidden;
 }
+.login-layer {
+  padding: 50px 60px 40px 60px;
+}
+.login-layer .inpt {
+  position: relative;
+  margin-bottom: 20px;
+}
+.login-layer .inpt .iconfont {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 30px;
+  color: #e6eaf2;
+  margin-top: -17px;
+}
+.login-layer .inpt .inp {
+  width: 320px;
+  height: 58px;
+  line-height: 58px;
+  background: #f7f9fc;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  padding-left: 60px;
+  transition: all 0.4s ease;
+}
+.login-layer .inpt .inp:focus {
+  border: 1px solid #0081d2;
+  background: #ffffff;
+}
+.login-layer .inpt .inp::-webkit-input-placeholder {
+  color: #959ba6;
+}
+.login-layer .inpt.error .iconfont {
+  color: #e82121;
+}
+.login-layer .inpt.error .inp {
+  border: 1px solid #e82121;
+  color: #e82121;
+}
+.login-layer .inpt.status .iconfont {
+  color: #0081d2;
+}
+.login-layer .btn {
+  margin-top: 20px;
+}
+.login-layer .btn a {
+  width: 380px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #0081D2;
+  border-radius: 2px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+}
+.login-layer .login-bar {
+  padding-top: 30px;
+}
+.login-layer .login-bar .l .circle {
+  width: 12px;
+  height: 12px;
+  padding: 3px;
+  border-radius: 18px;
+  border: 1px solid #C2C7CC;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+}
+.login-layer .login-bar .l .circle.act {
+  border-color: #0081D2;
+}
+.login-layer .login-bar .l .circle.act i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #0081D2;
+  border-radius: 12px;
+}
+.login-layer .login-bar .l .txt {
+  font-size: 14px;
+  color: #959ba6;
+  margin-left: 6px;
+}
+.login-layer .login-bar .r a {
+  font-size: 14px;
+  color: #0081d2;
+}
 .pay-status {
   background: #F7F9FC;
   height: 100px;

@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="./css/accountBalance/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
 </head>
 
 <body>
@@ -175,6 +176,85 @@
                             <li>充值记录</li>
                         </ul>
                     </div>
+                    <table class="list-table" style="display:block">
+                        <tbody>
+                        <tr class="bor">
+                            <th style="width: 190px;text-align: left;padding-left: 30px;">时间</th>
+                            <th style="width: 180px;text-align: left">交易单号</th>
+                            <th style="width: 180px;text-align: left">金额</th>
+                            <th style="width: 190px;text-align: left">余额</th>
+                            <th style="width: 160px;text-align: left">备注</th>
+                        </tr>
+                        <tr>
+                            <td class="type1">2019-12-12 17:48</td>
+                            <td class="type2">PO#00023434</td>
+                            <td class="type3">-￥1,200.00</td>
+                            <td class="type4">￥2,400.00</td>
+                            <td class="type5">订单支出</td>
+                        </tr>
+                        <tr>
+                            <td class="type1">2019-12-12 17:48</td>
+                            <td class="type2">PO#00023434</td>
+                            <td class="type3">-￥1,200.00</td>
+                            <td class="type4">￥2,400.00</td>
+                            <td class="type5">订单支出</td>
+                        </tr>
+                        <tr>
+                            <td class="type1">2019-12-12 17:48</td>
+                            <td class="type2">PO#00023434</td>
+                            <td class="type3">-￥1,200.00</td>
+                            <td class="type4">￥2,400.00</td>
+                            <td class="type5">订单支出</td>
+                        </tr>
+                        <tr>
+                            <td class="type1">2019-12-12 17:48</td>
+                            <td class="type2">PO#00023434</td>
+                            <td class="type3">-￥1,200.00</td>
+                            <td class="type4">￥2,400.00</td>
+                            <td class="type5">订单支出</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table class="list-table">
+                        <tbody>
+                        <tr class="bor">
+                            <th style="width: 190px;text-align: left;padding-left: 30px;">时间</th>
+                            <th style="width: 180px;text-align: left">交易单号</th>
+                            <th style="width: 180px;text-align: left">金额</th>
+                            <th style="width: 190px;text-align: left">余额</th>
+                            <th style="width: 160px;text-align: left">备注</th>
+                        </tr>
+                        <tr>
+                            <td class="type1">2019-12-12 17:48</td>
+                            <td class="type2">PO#00023434</td>
+                            <td class="type3">+￥1,200.00</td>
+                            <td class="type4">￥2,400.00</td>
+                            <td class="type5">—</td>
+                        </tr>
+                        <tr>
+                            <td class="type1">2019-12-12 17:48</td>
+                            <td class="type2">PO#00023434</td>
+                            <td class="type3">+￥1,200.00</td>
+                            <td class="type4">￥2,400.00</td>
+                            <td class="type5">—</td>
+                        </tr>
+                        <tr>
+                            <td class="type1">2019-12-12 17:48</td>
+                            <td class="type2">PO#00023434</td>
+                            <td class="type3">+￥1,200.00</td>
+                            <td class="type4">￥2,400.00</td>
+                            <td class="type5">—</td>
+                        </tr>
+                        <tr>
+                            <td class="type1">2019-12-12 17:48</td>
+                            <td class="type2">PO#00023434</td>
+                            <td class="type3">+￥1,200.00</td>
+                            <td class="type4">￥2,400.00</td>
+                            <td class="type5">—</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div id="pagination" style="text-align: right;margin-top: 30px;"></div>
                 </div>
             </div>
         </div>
@@ -220,7 +300,24 @@
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
+  Util.tabs('.tab ul li', function (index) {
+    $('.list-table').eq(index).show().siblings('.list-table').hide();
+  });
 
+  layui.laypage.render({
+    elem: 'pagination',
+    count: 100,
+    limit: 10,
+    curr: 1,
+    theme: '#0081D2',
+    jump: function (obj, first) {
+
+      if (!first) {
+
+
+      }
+    }
+  });
 </script>
 </body>
 
