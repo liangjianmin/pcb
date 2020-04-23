@@ -910,7 +910,7 @@ body {
   font-size: 14px;
   color: #e89721;
 }
-.accountBalance .accountBalance-wrap .text {
+.accountBalance .accountBalance-wrap .text-head {
   margin-top: 30px;
   width: 848px;
   height: 90px;
@@ -920,7 +920,58 @@ body {
   border: 1px solid #E6EAF2;
   padding: 20px 60px 28px 50px;
 }
-.accountBalance .accountBalance-wrap .text .r .btn1 {
+.accountBalance .accountBalance-wrap .text-head .l .text {
+  width: 320px;
+  border-right: 1px solid #E6EAF2;
+}
+.accountBalance .accountBalance-wrap .text-head .l .text .t1 {
+  margin-bottom: 13px;
+}
+.accountBalance .accountBalance-wrap .text-head .l .text .t1 .iconfont {
+  font-size: 24px;
+  color: #0081d2;
+}
+.accountBalance .accountBalance-wrap .text-head .l .text .t1 span {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #5c5f66;
+}
+.accountBalance .accountBalance-wrap .text-head .l .text .t2 span {
+  font-size: 24px;
+  color: #e82121;
+}
+.accountBalance .accountBalance-wrap .text-head .l .text .t2 em {
+  margin-left: 10px;
+  font-size: 40px;
+  color: #e82121;
+}
+.accountBalance .accountBalance-wrap .text-head .l .bar {
+  padding-left: 48px;
+}
+.accountBalance .accountBalance-wrap .text-head .l .bar .t1 {
+  margin-bottom: 19px;
+}
+.accountBalance .accountBalance-wrap .text-head .l .bar .t1 span {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.accountBalance .accountBalance-wrap .text-head .l .bar .t1 em {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-left: 16px;
+}
+.accountBalance .accountBalance-wrap .text-head .l .bar .t2 span {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.accountBalance .accountBalance-wrap .text-head .l .bar .t2 em {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-left: 16px;
+}
+.accountBalance .accountBalance-wrap .text-head .r .btn1 {
   width: 120px;
   height: 36px;
   border-radius: 2px;
@@ -929,15 +980,16 @@ body {
   line-height: 36px;
   display: block;
 }
-.accountBalance .accountBalance-wrap .text .r .btn1 .iconfont {
+.accountBalance .accountBalance-wrap .text-head .r .btn1 .iconfont {
   font-size: 20px;
   color: #5c5f66;
 }
-.accountBalance .accountBalance-wrap .text .r .btn1 span {
+.accountBalance .accountBalance-wrap .text-head .r .btn1 span {
   font-size: 14px;
   color: #3a3c40;
+  font-weight: bold;
 }
-.accountBalance .accountBalance-wrap .text .r .btn2 {
+.accountBalance .accountBalance-wrap .text-head .r .btn2 {
   margin-top: 20px;
   width: 120px;
   height: 36px;
