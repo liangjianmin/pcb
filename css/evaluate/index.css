@@ -1446,12 +1446,12 @@ body {
 }
 .evaluate-page-detail .wrap .evaluate-page-text .text-wrap .pic {
   width: 800px;
-  height: 600px;
   margin: 30px auto 0;
 }
 .evaluate-page-detail .wrap .evaluate-page-text .text-wrap .pic img {
   width: 800px;
   height: 600px;
+  margin: 5px 0;
 }
 .evaluate-page-detail .wrap .list {
   margin-top: 30px;

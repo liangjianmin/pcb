@@ -1207,6 +1207,7 @@ body {
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type1 {
   padding-left: 30px;
+  width: 253px;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type1 .t1 {
   color: #3a3c40;
