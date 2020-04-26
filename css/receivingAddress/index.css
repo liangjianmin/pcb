@@ -1097,6 +1097,29 @@ body {
 .address-add-layer .form-input .inp input::-webkit-input-placeholder {
   color: #959ba6;
 }
+.address-add-layer .circle-wrap .circle {
+  width: 12px;
+  height: 12px;
+  padding: 3px;
+  border-radius: 18px;
+  border: 1px solid #C2C7CC;
+  cursor: pointer;
+}
+.address-add-layer .circle-wrap .circle.act {
+  border-color: #0081D2;
+}
+.address-add-layer .circle-wrap .circle.act i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #0081D2;
+  border-radius: 12px;
+}
+.address-add-layer .circle-wrap span {
+  font-size: 14px;
+  color: #3a3c40;
+  vertical-align: middle;
+}
 .address-add-layer .btn-wrap {
   text-align: right;
   margin-top: 30px;
