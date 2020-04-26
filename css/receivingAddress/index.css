@@ -937,6 +937,9 @@ body {
   color: #ffffff;
   display: block;
 }
+.layui-layer-page .layui-layer-content {
+  overflow: hidden !important;
+}
 .receiving-address .receiving-address-data {
   margin-top: 20px;
 }
