@@ -383,6 +383,7 @@
         border-radius: 2px;
         border: 1px solid #E6EAF2;
         background: #F7F9FC;
+        font-size: 14px;
 
         &::-webkit-input-placeholder {
           color: #959ba6;
@@ -490,6 +491,7 @@
 .applyInvoice-success {
   text-align: center;
   padding-top: 80px;
+
   .iconfont {
     font-size: 180px;
     color: #00d22c;
@@ -506,7 +508,8 @@
     font-size: 14px;
     color: #5c5f66;
     margin-bottom: 20px;
-    em{
+
+    em {
       color: #3a3c40;
       font-weight: bold;
     }
@@ -515,25 +518,368 @@
 
   .text {
     .ok {
-      width:120px;
-      height:36px;
+      width: 120px;
+      height: 36px;
       line-height: 36px;
       text-align: center;
-      background:#0081D2;
-      border-radius:2px;
+      background: #0081D2;
+      border-radius: 2px;
       font-size: 14px;
       color: #ffffff;
       margin-right: 20px;
     }
 
     .canel {
-      width:118px;
-      height:34px;
-      border-radius:2px;
-      border:1px solid #E6EAF2;
+      width: 118px;
+      height: 34px;
+      border-radius: 2px;
+      border: 1px solid #E6EAF2;
       font-size: 14px;
       color: #5c5f66;
       line-height: 34px;
+    }
+  }
+}
+
+.invoice {
+  .tab {
+    margin-top: 20px;
+    width: 938px;
+    height: 60px;
+    line-height: 60px;
+    background: #F7F9FC;
+    border: 1px solid #E6EAF2;
+    padding-right: 20px;
+
+    .l {
+      li {
+        position: relative;
+        width: 190px;
+        height: 60px;
+        border-right: 1px solid #E6EAF2;
+        color: #5c5f66;
+        font-size: 16px;
+        text-align: center;
+        float: left;
+        cursor: pointer;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        &.curr {
+          background: #FFFFFF;
+          color: #3a3c40;
+          left: 1px;
+          font-weight: bold;
+
+          &:after {
+            position: absolute;
+            top: 20px;
+            left: -1px;
+            width: 4px;
+            height: 22px;
+            background: #0081D2;
+            content: '';
+            z-index: 1;
+          }
+        }
+      }
+    }
+
+    .r {
+      font-size: 14px;
+      color: #959ba6;
+    }
+  }
+
+  .invoice-tab-wrap {
+    margin-top: 40px;
+    display: none;
+  }
+
+  .invoice-inpt-wrap {
+    margin-bottom: 20px;
+    padding-left: 44px;
+
+    .bar {
+      margin-left: 23px;
+
+      .t1 {
+        font-size: 14px;
+        color: #3a3c40;
+        font-weight: bold;
+      }
+
+      input {
+        width: 298px;
+        height: 48px;
+        line-height: 48px;
+        text-indent: 1em;
+        border-radius: 2px;
+        border: 1px solid #E6EAF2;
+        background: #F7F9FC;
+        font-size: 14px;
+
+        &::-webkit-input-placeholder {
+          color: #959ba6;
+        }
+
+        &:focus {
+          background: #ffffff;
+        }
+      }
+    }
+
+    label {
+      width: 112px;
+      text-align: right;
+      font-size: 14px;
+      color: #5c5f66;
+    }
+
+    ul {
+      li {
+        padding: 0 20px;
+        height: 48px;
+        background: #F7F9FC;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 2px;
+        border: 1px solid #E6EAF2;
+        float: left;
+        color: #5c5f66;
+        font-size: 14px;
+        margin-right: 20px;
+        cursor: pointer;
+
+        &.curr {
+          height: 46px;
+          line-height: 46px;
+          color: #3a3c40;
+          border: 2px solid #0081D2;
+        }
+      }
+    }
+
+  }
+
+  .invoice-fom-txt {
+    margin-top: 30px;
+    margin-left: 180px;
+
+    .btn {
+      margin-top: 30px;
+      width: 200px;
+      height: 50px;
+      background: #0081D2;
+      border-radius: 2px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+      display: block;
+    }
+  }
+
+  .line {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 960px;
+    height: 1px;
+    background: #E6EAF2;
+    color: #E6EAF2;
+  }
+
+  .text {
+    margin-left: 180px;
+
+    .t1 {
+      font-size: 14px;
+      color: #3a3c40;
+      font-weight: bold;
+      margin-bottom: 13px;
+    }
+
+    .t2 {
+      font-size: 14px;
+      color: #5c5f66;
+    }
+
+    .t3 {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #0081d2;
+      display: block;
+    }
+  }
+
+  .invoice-tab-wrap-text {
+    position: relative;
+    margin-top: 50px;
+
+    .del {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 98px;
+      height: 38px;
+      line-height: 38px;
+      border-radius: 2px;
+      text-align: center;
+      display: block;
+      border: 1px solid #E6EAF2;
+      font-size: 14px;
+      color: #5c5f66;
+    }
+  }
+
+
+}
+
+.invoice-record {
+  .invoice-record-empty {
+    padding-top: 80px;
+    text-align: center;
+    .iconfont{
+      font-size: 180px;
+      color: #0081d2;
+    }
+    p{
+      margin-top: 19px;
+      font-size: 20px;
+      color: #3a3c40;
+      font-weight: bold;
+    }
+  }
+
+  .invoice-record-form {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .l {
+      label {
+        font-size: 14px;
+        color: #5c5f66;
+        margin-right: 10px;
+      }
+
+      input {
+        width: 298px;
+        height: 48px;
+        border-radius: 2px;
+        border: 1px solid #E6EAF2;
+        font-size: 14px;
+        color: #3a3c40;
+        text-indent: 1em;
+      }
+    }
+
+    .r {
+      em {
+        font-size: 14px;
+        color: #5c5f66;
+        margin-right: 23px;
+      }
+
+      .t0 {
+        font-size: 24px;
+        color: #e82121;
+      }
+
+      .t1 {
+        font-size: 30px;
+        color: #e82121;
+      }
+    }
+  }
+
+  .list-table {
+    width: 960px;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    tr {
+      &.bor {
+        border: 1px solid #E6EAF2;
+      }
+
+      th {
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 50px;
+        border-radius: 2px;
+        background: #F7F9FC;
+        font-weight: normal;
+      }
+
+      td {
+        height: 60px;
+        border-top: 1px solid #E6EAF2;
+        border-bottom: 1px solid #E6EAF2;
+
+        &.type1 {
+          width: 200px;
+          padding-left: 30px;
+
+          .t1 {
+            font-size: 14px;
+            color: #5c5f66;
+            margin-bottom: 6px;
+          }
+
+          .t2 {
+            font-size: 14px;
+            color: #3a3c40;
+            font-weight: bold;
+          }
+        }
+
+        &.type2 {
+          width: 130px;
+          font-size: 14px;
+          color: #E82121;
+          text-align: center;
+          font-weight: bold;
+        }
+
+        &.type3 {
+          width: 150px;
+          font-size: 14px;
+          color: #5c5f66;
+          text-align: center;
+        }
+
+        &.type4 {
+          width: 190px;
+          font-size: 14px;
+          color: #5c5f66;
+          text-align: center;
+        }
+
+        &.type5 {
+          width: 130px;
+          text-align: center;
+
+          .t1 {
+            font-size: 14px;
+            color: #3a3c40;
+          }
+
+          .t2 {
+            font-size: 14px;
+            color: #0081d2;
+          }
+        }
+
+        &.type6 {
+          width: 100px;
+          text-align: center;
+          font-size: 14px;
+          color: #0081d2;
+        }
+
+      }
     }
   }
 }
