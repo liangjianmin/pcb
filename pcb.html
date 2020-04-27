@@ -413,7 +413,8 @@
                         <div class="line bor"></div>
                         <div class="pcb-block lbBox" id="SolderColor">
                             <label for="" class="lineBlock va-m">阻焊颜色：</label>
-+                            <ul class="pcb-block-inline pcb_boardcolor  lineBlock va-m clr">
+                            +
+                            <ul class="pcb-block-inline pcb_boardcolor  lineBlock va-m clr">
                                 <li>
                                     <em class="lineBlock color1 va-m"></em>
                                     <span class="va-m">绿色</span>
@@ -869,6 +870,13 @@
         </div>
     </div>
 </script>
+<script type="text/html" id="carLayerHtml">
+    <div class="car-layer lbBox">
+        <a href="javascript:;" class="cal lineBlock va-m">继续添加PCB计价</a>
+        <a href="javascript:;" class="ok lineBlock va-m">去购物车结算</a>
+    </div>
+</script>
+
 
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
@@ -877,7 +885,19 @@
 <script type="text/javascript" src="js/pcb/pcb.js"></script>
 <script type="text/javascript">
   $(function () {
+    //加入购物车
+    layer.open({
+      type: 1,
+      title: '<span>已成功加入购物车！</span>',
+      area: ['500px', 'auto'],
+      shadeClose: true,
+      move: false,
+      content: $("#carLayerHtml").html(),
+      success: function (layero, index) {
 
+
+      }
+    });
   })
 </script>
 </body>

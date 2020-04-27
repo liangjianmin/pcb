@@ -1449,4 +1449,30 @@ body {
   font-size: 14px;
   color: #FFFFFF;
 }
+.car-layer {
+  padding: 40px 0;
+  text-align: center;
+}
+.car-layer .cal {
+  width: 158px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  font-size: 14px;
+  color: #5c5f66;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 20px;
+}
+.car-layer .ok {
+  width: 120px;
+  height: 40px;
+  background: #0081d2;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+}
 /*# sourceMappingURL=index.css.map */
