@@ -1270,11 +1270,11 @@ body {
   line-height: 14px;
 }
 .order-section .invoice .invoice-box .l .check-box .iconfont {
-  color: #0081d2;
-  font-size: 16px;
+  font-size: 0px;
 }
 .order-section .invoice .invoice-box .l .check-box.check-box-curr .iconfont {
-  font-size: 0 !important;
+  color: #0081d2;
+  font-size: 16px;
 }
 .order-section .invoice .invoice-box .l .t1 {
   font-size: 14px;
@@ -1324,11 +1324,11 @@ body {
   line-height: 14px;
 }
 .order-section .receipt .receipt-box .l .check-box .iconfont {
-  color: #0081d2;
-  font-size: 16px;
+  font-size: 0px;
 }
 .order-section .receipt .receipt-box .l .check-box.check-box-curr .iconfont {
-  font-size: 0 !important;
+  color: #0081d2;
+  font-size: 16px;
 }
 .order-section .receipt .receipt-box .l .t1 {
   font-size: 14px;
@@ -1359,6 +1359,7 @@ body {
 }
 .order-section .coupon .coupon-box ul li {
   margin-right: 20px;
+  margin-bottom: 20px;
   width: 380px;
   height: 140px;
   background: url("../../images/order/coupon.png") no-repeat center;
@@ -1366,6 +1367,9 @@ body {
   float: left;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+.order-section .coupon .coupon-box ul li:nth-of-type(3n) {
+  margin-right: 0;
 }
 .order-section .coupon .coupon-box ul li .l-text {
   padding-left: 32px;

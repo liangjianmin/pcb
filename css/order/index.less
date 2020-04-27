@@ -610,13 +610,13 @@
           line-height: 14px;
 
           .iconfont {
-            color: #0081d2;
-            font-size: 16px;
+            font-size: 0px;
           }
 
           &.check-box-curr {
             .iconfont {
-              font-size: 0 !important;
+              color: #0081d2;
+              font-size: 16px;
             }
           }
         }
@@ -678,13 +678,13 @@
           line-height: 14px;
 
           .iconfont {
-            color: #0081d2;
-            font-size: 16px;
+            font-size: 0px;
           }
 
           &.check-box-curr {
             .iconfont {
-              font-size: 0 !important;
+              color: #0081d2;
+              font-size: 16px;
             }
           }
         }
@@ -729,6 +729,7 @@
       ul {
         li {
           margin-right: 20px;
+          margin-bottom: 20px;
           width: 380px;
           height: 140px;
           background: url("../../images/order/coupon.png") no-repeat center;
@@ -736,6 +737,9 @@
           float: left;
           cursor: pointer;
           transition: all 0.2s ease;
+          &:nth-of-type(3n){
+            margin-right: 0;
+          }
 
           .l-text {
             padding-left: 32px;
@@ -1076,16 +1080,19 @@
     border: 1px solid #0081D2;
     z-index: 1;
     display: none;
-    ul{
+
+    ul {
       padding: 16px 20px 20px 20px;
-      li{
+
+      li {
         float: left;
         font-size: 14px;
         color: #3a3c40;
         margin-bottom: 10px;
         margin-right: 20px;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
           color: #0081D2;
         }
       }
@@ -1108,7 +1115,7 @@
       margin-bottom: 20px;
       cursor: pointer;
 
-      .iconfont{
+      .iconfont {
         font-size: 20px;
         color: #0081d2;
         position: absolute;
@@ -1120,6 +1127,7 @@
       .text {
         white-space: nowrap;
         margin-bottom: 20px;
+
         .text-t1 {
           span {
             font-size: 14px;
@@ -1200,16 +1208,17 @@
         }
       }
 
-      &.curr{
-        border:2px solid #0081D2;
-        .iconfont{
+      &.curr {
+        border: 2px solid #0081D2;
+
+        .iconfont {
           display: block;
         }
       }
     }
   }
 
-  .btn-wrap{
+  .btn-wrap {
     text-align: right;
     margin-top: 30px;
 
