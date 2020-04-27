@@ -41,6 +41,10 @@
 }
 
 
+.city-picker-span > .title{
+    border-bottom: none !important;
+}
+
 .city-picker-span > .title > span {
     color: #333;
     padding: 5px;
