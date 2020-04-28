@@ -11,7 +11,8 @@
       background: #F7F9FC;
       margin-right: 10px;
       text-indent: 1em;
-      &::-webkit-input-placeholder{
+
+      &::-webkit-input-placeholder {
         color: #959ba6;
       }
 
@@ -35,5 +36,280 @@
 }
 
 .pcb-order {
+  .pcb-order-status {
+    ul {
+      border-bottom: 1px solid #E6EAF2;
 
+      li {
+        float: left;
+        width: 136px;
+        height: 98px;
+        text-align: center;
+        border-right: 1px solid #E6EAF2;
+        transition: all 0.4s ease;
+
+        &:hover {
+          background: #F7F9FC;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+
+        .t1 {
+          margin-bottom: 10px;
+
+          .iconfont {
+            font-size: 20px;
+            color: #5c5f66;
+          }
+
+          span {
+            font-size: 14px;
+            color: #3a3c40;
+            font-weight: bold;
+            margin-left: 5px;
+          }
+        }
+
+        .t2 {
+          font-size: 20px;
+          color: #e82121;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .data-list {
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    table {
+      width: 960px;
+      border: 1px solid #E6EAF2;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+
+      tbody {
+        tr {
+          border: 1px solid #E6EAF2;
+
+          th {
+            white-space: nowrap;
+            padding-left: 30px;
+            height: 50px;
+            text-align: left;
+            font-weight: normal;
+
+            .t1 {
+              font-size: 14px;
+              color: #3a3c40;
+              font-weight: bold;
+            }
+
+            .t2 {
+              font-size: 14px;
+              color: #5c5f66;
+            }
+
+            .t3 {
+              i {
+                font-size: 26px;
+                color: #0081D2;
+                vertical-align: middle;
+              }
+
+              em {
+                font-size: 14px;
+                color: #0081d2;
+                vertical-align: middle;
+                margin-left: 8px;
+              }
+            }
+          }
+
+          td {
+            border: 1px solid #E6EAF2;
+            padding: 20px 0;
+
+            &.type1 {
+              padding-left: 30px;
+              width: 253px;
+
+              .t1 {
+                color: #3a3c40;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 8px;
+              }
+
+              .t2 {
+                color: #5c5f66;
+                font-size: 14px;
+                margin-bottom: 8px;
+              }
+
+              .t3 {
+                color: #5c5f66;
+                font-size: 14px;
+              }
+            }
+
+            &.type2 {
+              .t1 {
+                font-size: 14px;
+                color: #5C5F66;
+                text-align: center;
+              }
+            }
+
+            &.type3 {
+              text-align: center;
+
+              .t1 {
+                .iconfont {
+                  font-size: 24px;
+                  color: #e8b46b;
+                }
+
+                span {
+                  font-size: 14px;
+                  color: #3a3c40;
+                  margin-left: 7px;
+                  font-weight: bold;
+                }
+              }
+
+              .t2 {
+                margin-top: 7px;
+                font-size: 14px;
+                color: #959ba6;
+              }
+            }
+
+            &.type4 {
+              padding-left: 9px;
+
+              .t1 {
+                color: #e82121;
+                font-size: 14px;
+                font-weight: bold;
+              }
+            }
+
+            &.type5 {
+              .t1 {
+                font-size: 14px;
+                color: #5c5f66;
+                text-align: center;
+              }
+            }
+
+            &.type6 {
+              font-size: 14px;
+              color: #e82121;
+              text-align: center;
+              font-weight: bold;
+
+              .t1 {
+                color: #E82121;
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 10px;
+              }
+
+              .t2 {
+                font-size: 14px;
+                color: #0081d2;
+                font-weight: bold;
+                margin-bottom: 10px;
+              }
+
+              .t3 {
+                font-size: 14px;
+                color: #5c5f66;
+              }
+            }
+
+            &.type7 {
+              text-align: center;
+
+              .t1 {
+                font-size: 14px;
+                color: #0081d2;
+                margin-bottom: 10px;
+                display: block;
+              }
+
+              .t2 {
+                font-size: 14px;
+                color: #5c5f66;
+              }
+            }
+
+            &.sumtext {
+              height: 59px;
+              padding: 0 20px 0 30px;
+
+              .l {
+                height: 100%;
+
+                .t1 {
+                  span {
+                    font-size: 14px;
+                    color: #5c5f66;
+                  }
+
+                  em {
+                    font-size: 14px;
+                    color: #3a3c40;
+                    font-weight: bold;
+                  }
+                }
+
+                .t2 {
+                  span {
+                    font-size: 14px;
+                    color: #5c5f66;
+                  }
+
+                  em {
+                    font-size: 16px;
+                    color: #e82121;
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              .r {
+                height: 59px;
+                white-space: nowrap;
+
+                .canel {
+                  font-size: 14px;
+                  color: #959ba6;
+                  height: 40px;
+                  line-height: 40px;
+                  text-align: center;
+                }
+
+                .ok {
+                  width: 120px;
+                  height: 40px;
+                  background: #E82121;
+                  border-radius: 2px;
+                  line-height: 40px;
+                  text-align: center;
+                  font-size: 14px;
+                  color: #ffffff;
+                  margin-left: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
