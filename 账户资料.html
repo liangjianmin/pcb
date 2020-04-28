@@ -11,6 +11,8 @@
     <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="./css/accountInformation/index.css"/>
     <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="./js/plugin/city-picker/css/city-picker.css"/>
+
 </head>
 
 <body>
@@ -212,11 +214,8 @@
                     </div>
                     <div class="inpt-wrap">
                         <label class="lineBlock va-m">所在地区：</label>
-                        <div class="lineBlock va-m" style="width: 300px">
-                            <select>
-                                <option value="">请选择所在城市</option>
-                                <option value="1">广东</option>
-                            </select>
+                        <div class="lineBlock va-m" style="width: 300px;position: relative">
+                            <input type="text" class="lineBlock va-m inp1 w1" placeholder="选择收获地址" readonly id="city-picker"/>
                         </div>
                     </div>
                     <div class="inpt-wrap">
@@ -281,9 +280,15 @@
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
+<script src="js/plugin/city-picker/js/city-picker.data.js"></script>
+<script src="js/plugin/city-picker/js/city-picker.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
-
+  $("#city-picker").citypicker({
+    province: "",
+    city: "",
+    district: ""
+  });
 
 </script>
 </body>
