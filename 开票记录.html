@@ -181,6 +181,7 @@
                     </tbody>
                 </table>
                 <div id="pagination" style="text-align: right;margin-top: 30px;margin-bottom: 50px;"></div>
+
             </div>
         </div>
     </div>
@@ -245,7 +246,9 @@
 
     layui.laydate.render({
       elem: '#time',
-      theme: '#0081D2'
+      theme: '#0081D2',
+      type: 'month',
+      range:true
     });
   })
 </script>
