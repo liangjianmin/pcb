@@ -11,6 +11,7 @@
     <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
     <link rel="stylesheet" type="text/css" href="./css/order/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/plugin/city-picker/css/city-picker.css"/>
 </head>
 
 <body>
@@ -685,7 +686,7 @@
 </script>
 <script type="text/html" id="addressHtml">
     <div class="address-add-layer">
-        <div class="form-input lbBox">
+        <div class="form-input lbBox" style="white-space: nowrap">
             <div class="lineBlock mr20">
                 <label>姓名</label>
                 <div class="inp">
@@ -702,42 +703,7 @@
         <div class="form-input lbBox">
             <label>地区</label>
             <div class="inp">
-                <input type="text" placeholder="选择省/市/区" id="area" class="w2"/>
-            </div>
-            <div class="area">
-                <ul class="clr">
-                    <li class="">北京</li>
-                    <li class="">天津</li>
-                    <li class="">河北</li>
-                    <li class="">山西</li>
-                    <li class="">内蒙古</li>
-                    <li class="">辽宁</li>
-                    <li class="">吉林</li>
-                    <li class="">黑龙江</li>
-                    <li class="">上海</li>
-                    <li class="">江苏</li>
-                    <li class="">浙江</li>
-                    <li class="">安徽</li>
-                    <li class="">福建</li>
-                    <li class="">江西</li>
-                    <li class="">山东</li>
-                    <li class="">河南</li>
-                    <li class="">湖北</li>
-                    <li class="">湖南</li>
-                    <li class="">广东</li>
-                    <li class="">广西</li>
-                    <li class="">海南</li>
-                    <li class="">重庆</li>
-                    <li class="">四川</li>
-                    <li class="">贵州</li>
-                    <li class="">云南</li>
-                    <li class="">西藏</li>
-                    <li class="">陕西</li>
-                    <li class="">甘肃</li>
-                    <li class="">青海</li>
-                    <li class="">宁夏</li>
-                    <li class="">新疆</li>
-                </ul>
+                <input type="text" placeholder="选择省/市/区" class="w2" id="city-picker" readonly/>
             </div>
         </div>
         <div class="form-input lbBox">
@@ -745,6 +711,12 @@
             <div class="inp">
                 <textarea placeholder="请完善详细地址"></textarea>
             </div>
+        </div>
+        <div class="circle-wrap">
+            <div class="circle lineBlock va-m act">
+                <i></i>
+            </div>
+            <span>设置默认</span>
         </div>
         <div class="btn-wrap">
             <a href="javascript:;" class="canel lineBlock va-m">取消</a>
@@ -818,6 +790,8 @@
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
+<script src="js/plugin/city-picker/js/city-picker.data.js"></script>
+<script src="js/plugin/city-picker/js/city-picker.js"></script>
 <script type="text/javascript">
   $(function () {
 
@@ -857,8 +831,11 @@
         move: false,
         content: $("#addressHtml").html(),
         success: function (layero, index) {
-
-
+          $("#city-picker").citypicker({
+            province: "",
+            city: "",
+            district: ""
+          });
         }
       });
     });

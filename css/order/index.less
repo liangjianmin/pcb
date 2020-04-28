@@ -737,7 +737,8 @@
           float: left;
           cursor: pointer;
           transition: all 0.2s ease;
-          &:nth-of-type(3n){
+
+          &:nth-of-type(3n) {
             margin-right: 0;
           }
 
@@ -1039,6 +1040,37 @@
           color: #959ba6;
         }
       }
+
+    }
+
+  }
+
+  .circle-wrap {
+    .circle {
+      width: 12px;
+      height: 12px;
+      padding: 3px;
+      border-radius: 18px;
+      border: 1px solid #C2C7CC;
+      cursor: pointer;
+
+      &.act {
+        border-color: #0081D2;
+
+        i {
+          display: block;
+          width: 12px;
+          height: 12px;
+          background: #0081D2;
+          border-radius: 12px;
+        }
+      }
+    }
+
+    span {
+      font-size: 14px;
+      color: #3a3c40;
+      vertical-align: middle;
     }
   }
 
@@ -1245,4 +1277,8 @@
       color: #FFFFFF;
     }
   }
+}
+
+.layui-layer-page .layui-layer-content {
+  overflow: hidden !important;
 }
