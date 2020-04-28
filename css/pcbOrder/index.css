@@ -1038,6 +1038,17 @@ body {
   vertical-align: middle;
   margin-left: 8px;
 }
+.pcb-order .data-list table tbody tr th .t4 i {
+  font-size: 26px;
+  color: #959BA6;
+  vertical-align: middle;
+}
+.pcb-order .data-list table tbody tr th .t4 em {
+  font-size: 14px;
+  color: #959BA6;
+  vertical-align: middle;
+  margin-left: 8px;
+}
 .pcb-order .data-list table tbody tr td {
   border: 1px solid #E6EAF2;
   padding: 20px 0;
