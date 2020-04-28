@@ -1769,6 +1769,7 @@ body {
 }
 .address-choince-layer ul li.curr {
   border: 2px solid #0081D2;
+  background: #ffffff;
 }
 .address-choince-layer ul li.curr .iconfont {
   display: block;
@@ -1800,5 +1801,11 @@ body {
 }
 .layui-layer-page .layui-layer-content {
   overflow: hidden !important;
+}
+.aa {
+  max-height: 634px !important;
+}
+.aa .layui-layer-content {
+  overflow: auto !important;
 }
 /*# sourceMappingURL=index.css.map */
