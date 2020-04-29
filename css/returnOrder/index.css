@@ -939,4 +939,36 @@ body {
   font-size: 14px;
   color: #ffffff;
 }
+.returnOrder .success {
+  padding-top: 70px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.returnOrder .success .iconfont {
+  font-size: 180px;
+  color: #07ce2b;
+}
+.returnOrder .success .t1 {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.returnOrder .success .t2 {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.returnOrder .success a {
+  width: 120px;
+  height: 36px;
+  background: #0081D2;
+  border-radius: 2px;
+  display: block;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=index.css.map */
