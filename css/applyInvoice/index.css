@@ -1210,6 +1210,12 @@ body {
 .applyInvoice .car-total .r:hover {
   background: #FF2424;
 }
+.applyInvoice .car-total .r.disabled {
+  background: #959ba6;
+}
+.applyInvoice .car-total .r.disabled:hover {
+  background: #959ba6;
+}
 .applyInvoice-information {
   margin-top: 50px;
 }
