@@ -1237,4 +1237,59 @@ body {
   font-size: 14px;
   color: #5c5f66;
 }
+.pcb-order-detail .pcb-order-section .pcb-logistics {
+  width: 1180px;
+  border-radius: 2px;
+  padding: 30px 30px 30px 30px;
+  border: 1px solid #E6EAF2;
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .l {
+  width: 500px;
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .l p {
+  margin-bottom: 14px;
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .l .t1 span {
+  width: 70px;
+  text-align: left;
+  margin-right: 24px;
+  font-size: 14px;
+  color: #959BA6;
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .l .t1 em {
+  font-size: 14px;
+  color: #3A3C40;
+  vertical-align: middle;
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .c ul li {
+  position: relative;
+  padding-left: 26px;
+  padding-bottom: 15px;
+  border-left: 2px solid #E6EAF2;
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .c ul li:after {
+  position: absolute;
+  left: -6px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  background: #ACB3BF;
+  border-radius: 50%;
+  content: "";
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .c ul li.curr:after {
+  width: 14px;
+  height: 14px;
+  background: #0081D2;
+  left: -8px;
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .c ul li .t1 {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-bottom: 2px;
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .c ul li .t2 {
+  font-size: 12px;
+  color: #959ba6;
+}
 /*# sourceMappingURL=index.css.map */
