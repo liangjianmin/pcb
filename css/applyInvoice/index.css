@@ -1169,6 +1169,10 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
+.applyInvoice .car-total .l .ll em {
+  font-size: 14px;
+  color: #5c5f66;
+}
 .applyInvoice .car-total .l .ll .delall {
   font-size: 14px;
   color: #5c5f66;
