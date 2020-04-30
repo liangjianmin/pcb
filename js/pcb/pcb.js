@@ -148,6 +148,11 @@
       Util.tabs('#SolderCover ul li', function (index, val) {
       
       });
+  
+      //沉金厚度
+      Util.tabs('#goldThickness ul li', function (index, val) {
+    
+      });
       
       //测试选项
       Util.tabs('#TestType ul li', function (index, val) {
