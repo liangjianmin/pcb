@@ -180,7 +180,6 @@
     timergo: function (time) {
       var endTime = new Date(Number(time));
       var ts = endTime - new Date();
-      console.log(ts)
       if (ts > 0) {
         var dd = parseInt(ts / 1000 / 60 / 60 / 24, 10);
         var hh = parseInt(ts / 1000 / 60 / 60 % 24, 10);
