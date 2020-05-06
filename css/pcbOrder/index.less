@@ -36,6 +36,23 @@
 }
 
 .pcb-order {
+  .pcb-order-empty {
+    padding: 60px 0;
+    text-align: center;
+
+    .iconfont {
+      font-size: 180px;
+      color: #0081d2;
+    }
+
+    p {
+      margin-top: 19px;
+      font-size: 20px;
+      color: #3a3c40;
+      font-weight: bold;
+    }
+  }
+
   .pcb-order-status {
     ul {
       border-bottom: 1px solid #E6EAF2;
@@ -47,6 +64,11 @@
         text-align: center;
         border-right: 1px solid #E6EAF2;
         transition: all 0.4s ease;
+
+        a {
+          display: block;
+          height: 100%;
+        }
 
         &:hover {
           background: #F7F9FC;
@@ -127,7 +149,8 @@
                 margin-left: 8px;
               }
             }
-            .t4{
+
+            .t4 {
               i {
                 font-size: 26px;
                 color: #959BA6;

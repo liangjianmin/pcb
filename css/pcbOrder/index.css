@@ -966,6 +966,20 @@ body {
   color: #ffffff;
   margin-left: 10px;
 }
+.pcb-order .pcb-order-empty {
+  padding: 60px 0;
+  text-align: center;
+}
+.pcb-order .pcb-order-empty .iconfont {
+  font-size: 180px;
+  color: #0081d2;
+}
+.pcb-order .pcb-order-empty p {
+  margin-top: 19px;
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+}
 .pcb-order .pcb-order-status ul {
   border-bottom: 1px solid #E6EAF2;
 }
@@ -976,6 +990,10 @@ body {
   text-align: center;
   border-right: 1px solid #E6EAF2;
   transition: all 0.4s ease;
+}
+.pcb-order .pcb-order-status ul li a {
+  display: block;
+  height: 100%;
 }
 .pcb-order .pcb-order-status ul li:hover {
   background: #F7F9FC;
