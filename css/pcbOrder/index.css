@@ -995,7 +995,8 @@ body {
   display: block;
   height: 100%;
 }
-.pcb-order .pcb-order-status ul li:hover {
+.pcb-order .pcb-order-status ul li:hover,
+.pcb-order .pcb-order-status ul li.curr {
   background: #F7F9FC;
 }
 .pcb-order .pcb-order-status ul li:last-child {
