@@ -713,6 +713,7 @@ body {
 .login-layer .inpt {
   position: relative;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 .login-layer .inpt .iconfont {
   position: absolute;
@@ -721,6 +722,14 @@ body {
   font-size: 30px;
   color: #e6eaf2;
   margin-top: -17px;
+}
+.login-layer .inpt .imgCode {
+  width: 164px;
+  text-align: right;
+}
+.login-layer .inpt .imgCode img {
+  width: 120px;
+  height: 30px;
 }
 .login-layer .inpt .inp {
   width: 320px;
@@ -820,6 +829,7 @@ body {
 .register-section .register-section-wrap .inpt {
   position: relative;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 .register-section .register-section-wrap .inpt .iconfont {
   position: absolute;
@@ -827,6 +837,13 @@ body {
   left: 10px;
   font-size: 30px;
   color: #e6eaf2;
+}
+.register-section .register-section-wrap .inpt .imgCode {
+  width: 167px;
+}
+.register-section .register-section-wrap .inpt .imgCode img {
+  width: 120px;
+  height: 30px;
 }
 .register-section .register-section-wrap .inpt .inp {
   width: 320px;
