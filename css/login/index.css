@@ -725,11 +725,12 @@ body {
 }
 .login-layer .inpt .imgCode {
   width: 164px;
+  height: 60px;
   text-align: right;
 }
 .login-layer .inpt .imgCode img {
   width: 120px;
-  height: 30px;
+  height: 60px;
 }
 .login-layer .inpt .inp {
   width: 320px;
@@ -857,11 +858,12 @@ body {
 }
 .login-section .login-section-wrap .inpt .imgCode {
   width: 164px;
+  height: 60px;
   text-align: right;
 }
 .login-section .login-section-wrap .inpt .imgCode img {
   width: 120px;
-  height: 30px;
+  height: 60px;
 }
 .login-section .login-section-wrap .inpt .inp {
   width: 320px;
