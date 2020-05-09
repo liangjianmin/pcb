@@ -806,233 +806,267 @@ body {
   font-size: 14px;
   color: #0081d2;
 }
-.notice {
+.information {
   margin-top: 22px;
   padding-bottom: 70px;
 }
-.notice .title a {
+.information .title {
+  margin-bottom: 20px;
+}
+.information .title a {
   font-size: 12px;
   color: #5c5f66;
 }
-.notice .title a.default {
+.information .title a.default {
   color: #959ba6;
 }
-.notice .title .iconfont {
+.information .title .iconfont {
   font-size: 14px;
   color: #5c5f66;
 }
-.notice .year {
-  margin-top: 40px;
-  position: relative;
-  border-bottom: 1px solid #E6EAF2;
-  padding-bottom: 15px;
+.information .section {
+  width: 100%;
 }
-.notice .year span {
-  font-size: 20px;
-  color: #3a3c40;
-  font-weight: bold;
+.information .section .l {
+  width: 880px;
 }
-.notice .year span:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 68px;
-  height: 5px;
-  background: #0081D2;
-  content: "";
-  z-index: 2;
+.information .section .l .banner {
+  width: 100%;
 }
-.notice .list {
-  margin-top: 20px;
+.information .section .l .banner .list {
+  width: 100%;
 }
-.notice .list li {
-  width: 1180px;
-  height: 60px;
-  border-bottom: 1px solid #E6EAF2;
-  padding: 40px 0 40px 0;
-  transition: all 0.4s ease;
+.information .section .l .banner .list li {
+  width: 100%;
+  height: 300px;
+  background: #d8d8d8;
 }
-.notice .list li a {
+.information .section .l .banner .list li a {
   display: block;
 }
-.notice .list li a .monthtext {
-  width: 60px;
-  height: 60px;
-  background: #0081D2;
-  border-radius: 2px;
-  text-align: center;
-}
-.notice .list li a .monthtext p {
-  font-size: 20px;
-  color: #ffffff;
-  line-height: 28px;
-}
-.notice .list li a .monthtext p.bor {
-  margin-top: 2px;
-  border-bottom: 1px solid #FFFFFF;
-}
-.notice .list li a .text {
-  margin-left: 20px;
-}
-.notice .list li a .text .t1 {
-  margin-bottom: 10px;
-}
-.notice .list li a .text .t1 span {
+.information .section .l .tit {
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 20px;
   color: #3a3c40;
   font-weight: bold;
 }
-.notice .list li a .text .t1 .type1 {
-  width: 50px;
-  height: 22px;
-  background: #0081D2;
-  border-radius: 2px;
-  line-height: 22px;
-  text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-  margin-left: 20px;
+.information .section .l .list li {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E6EAF2;
 }
-.notice .list li a .text .t1 .type2 {
-  width: 50px;
-  height: 22px;
-  background: #E89721;
-  border-radius: 2px;
-  line-height: 22px;
-  text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-  margin-left: 20px;
-}
-.notice .list li a .text .t2 {
-  font-size: 14px;
-  color: #959ba6;
-  width: 1014px;
-  text-overflow: ellipsis;
-  overflow: hidden;
+.information .section .l .list li a {
+  display: block;
   white-space: nowrap;
 }
-.notice .list li:hover {
-  width: 1150px;
-  background: #F7F9FC;
-  padding-left: 30px;
+.information .section .l .list li a .pic {
+  width: 200px;
+  height: 140px;
 }
-.notice-detail {
-  margin-top: 22px;
-  padding-bottom: 100px;
+.information .section .l .list li a .pic img {
+  width: 200px;
+  height: 140px;
 }
-.notice-detail .title a {
-  font-size: 12px;
-  color: #5c5f66;
+.information .section .l .list li a .text {
+  width: 600px;
+  white-space: normal;
+  margin-left: 28px;
 }
-.notice-detail .title a.default {
-  color: #959ba6 !important;
-}
-.notice-detail .title .iconfont {
-  font-size: 14px;
-  color: #5c5f66;
-}
-.notice-detail .detail-wrap .l {
-  width: 860px;
-}
-.notice-detail .detail-wrap .l .tit {
-  margin-top: 40px;
-  position: relative;
-  border-bottom: 1px solid #E6EAF2;
-  padding-bottom: 15px;
-}
-.notice-detail .detail-wrap .l .tit .t1 {
+.information .section .l .list li a .text .t1 {
   color: #3a3c40;
   font-size: 20px;
-  font-weight: bold;
-}
-.notice-detail .detail-wrap .l .tit .t1:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 80px;
-  height: 5px;
-  background: #0081D2;
-  content: "";
-  z-index: 1;
-}
-.notice-detail .detail-wrap .l .tit .t2 {
-  color: #3a3c40;
-  font-size: 20px;
-  font-weight: bold;
-}
-.notice-detail .detail-wrap .l .tit .t3 {
-  width: 50px;
-  height: 22px;
-  background: #0081D2;
-  border-radius: 2px;
-  line-height: 22px;
-  text-align: center;
-  margin-left: 20px;
-  font-size: 14px;
-  color: #ffffff;
-}
-.notice-detail .detail-wrap .l .time {
-  margin-top: 15px;
-  margin-bottom: 30px;
-  font-size: 14px;
-  color: #959ba6;
-}
-.notice-detail .detail-wrap .l .editor {
-  font-size: 14px;
-  color: #5c5f66;
-  line-height: 28px;
-}
-.notice-detail .detail-wrap .r {
-  width: 300px;
-  text-align: left;
-}
-.notice-detail .detail-wrap .r .tit {
-  font-size: 20px;
-  color: #3a3c40;
-  font-weight: bold;
-}
-.notice-detail .detail-wrap .r .list {
-  width: 300px;
-  border: 1px solid #E6EAF2;
-  background: #F7F9FC;
-  margin-top: 15px;
-}
-.notice-detail .detail-wrap .r .list li {
-  border-bottom: 1px solid #E6EAF2;
-  padding: 20px 0;
-  margin: 0 20px;
-}
-.notice-detail .detail-wrap .r .list li:last-child {
-  border-bottom: none;
-}
-.notice-detail .detail-wrap .r .list li .t1 {
-  font-size: 16px;
-  color: #3a3c40;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.notice-detail .detail-wrap .r .list li .t2 {
-  font-size: 12px;
-  color: #959ba6;
-  line-height: 17px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.information .section .l .list li a .text .t2 {
+  font-size: 14px;
+  color: #5c5f66;
+  line-height: 20px;
+  margin-bottom: 20px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.notice-detail .detail-wrap .r .list li .text .color1 {
-  font-size: 12px;
-  color: #0081d2;
-}
-.notice-detail .detail-wrap .r .list li .text .color2 {
-  font-size: 12px;
-  color: #e89721;
-}
-.notice-detail .detail-wrap .r .list li .text .time {
+.information .section .l .list li a .text .t3 span {
   font-size: 12px;
   color: #959ba6;
+}
+.information .section .l .list li a .text .t3 em {
+  font-size: 12px;
+  color: #5c5f66;
+}
+.information .section .l .more {
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  display: block;
+  background: #0081D2;
+  border-radius: 2px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #ffffff;
+}
+.information .section .r {
+  width: 280px;
+}
+.information .section .r .tit {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.information .section .r .list {
+  width: 280px;
+}
+.information .section .r .list li {
+  width: 280px;
+  margin-bottom: 20px;
+}
+.information .section .r .list li a {
+  display: block;
+}
+.information .section .r .list li a img {
+  width: 280px;
+  height: 160px;
+}
+.information .section .r .recommend {
+  width: 258px;
+  height: 206px;
+  background: #F7F9FC;
+  border: 1px solid #E6EAF2;
+  padding: 20px 0 10px 20px;
+}
+.information .section .r .recommend dt {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.information .section .r .recommend dd {
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.information .section .r .recommend dd a {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.information-detail {
+  margin-top: 22px;
+  padding-bottom: 70px;
+}
+.information-detail .title {
+  margin-bottom: 40px;
+}
+.information-detail .title a {
+  font-size: 12px;
+  color: #5c5f66;
+}
+.information-detail .title a.default {
+  color: #959ba6;
+}
+.information-detail .title .iconfont {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.information-detail .section {
+  width: 100%;
+}
+.information-detail .section .l {
+  width: 860px;
+}
+.information-detail .section .l .tit {
+  position: relative;
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E6EAF2;
+}
+.information-detail .section .l .tit:after {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  content: '';
+  width: 80px;
+  height: 5px;
+  background: #0081D2;
+}
+.information-detail .section .l .time {
+  margin-top: 15px;
+  margin-bottom: 26px;
+}
+.information-detail .section .l .time .t1 span {
+  font-size: 14px;
+  color: #959ba6;
+}
+.information-detail .section .l .time .t1 em {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.information-detail .section .l .text {
+  font-size: 14px;
+  color: #5c5f66;
+  line-height: 28px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E6EAF2;
+}
+.information-detail .section .l .info-link {
+  margin-top: 29px;
+}
+.information-detail .section .l .info-link .iconfont {
+  font-size: 26px;
+  color: #0081d2;
+}
+.information-detail .section .l .info-link span {
+  font-size: 16px;
+  color: #0081d2;
+}
+.information-detail .section .r {
+  width: 280px;
+}
+.information-detail .section .r .tit {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.information-detail .section .r .list {
+  width: 280px;
+}
+.information-detail .section .r .list li {
+  width: 280px;
+  margin-bottom: 20px;
+}
+.information-detail .section .r .list li a {
+  display: block;
+}
+.information-detail .section .r .list li a img {
+  width: 280px;
+  height: 160px;
+}
+.information-detail .section .r .recommend {
+  width: 258px;
+  height: 206px;
+  background: #F7F9FC;
+  border: 1px solid #E6EAF2;
+  padding: 20px 0 10px 20px;
+}
+.information-detail .section .r .recommend dt {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.information-detail .section .r .recommend dd {
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.information-detail .section .r .recommend dd a {
+  font-size: 14px;
+  color: #5c5f66;
 }
 /*# sourceMappingURL=index.css.map */

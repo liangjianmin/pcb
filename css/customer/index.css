@@ -472,6 +472,7 @@ body {
 }
 .pcb-footer {
   padding: 30px 0;
+  border-top: 1px solid #F7F9FC;
 }
 .pcb-footer .l .link {
   margin-bottom: 12px;
