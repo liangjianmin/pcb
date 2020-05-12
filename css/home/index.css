@@ -1429,11 +1429,13 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 459px;
+  width: 415px;
 }
 .home .question .question-content ul li .tit .time {
   font-size: 12px;
   color: #959ba6;
+  line-height: 24px;
+  width: 133px;
 }
 .home .question .question-content ul li .text {
   font-size: 14px;
