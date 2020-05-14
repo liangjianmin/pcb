@@ -10,7 +10,7 @@
     handleBind: function (opt) {
       
       //订单倒计时
-      Util.timergo(1585900139000);
+      Util.timergo(1589470689000);
       
       return this;
     }
