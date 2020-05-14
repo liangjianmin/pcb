@@ -410,6 +410,22 @@
     });
 
 
+    $(document).on('keyup', '.input-box input', function () {
+      var e = (e) ? e : window.event;
+      if (e.keyCode == 8) {
+        var index = $(this).parent().index();
+        if (index == 0) {
+          $(this).parent().find('li').eq(index - 1).find("input").val('');
+        } else {
+          $(this).parent().parent().find('li').eq(index - 1).find("input").val('').focus();
+        }
+      } else {
+        //输入其他字符，直接清空
+        var _val = this.value;
+        this.value = _val.replace(/\D/g, '');
+      }
+    });
+
     //选择支付方式
     $(".tab li").on('click', function () {
       var index = $(this).index();
