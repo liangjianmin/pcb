@@ -1158,6 +1158,9 @@ body {
 .pay-section .pay-content .btn-pay:hover {
   background: #FF2424;
 }
+.pay-section .pay-content .btn-pay.disabled {
+  background: #ccc !important;
+}
 .pay-success {
   padding: 30px 0 200px 0;
 }
