@@ -462,7 +462,7 @@
                 <p class="t1">订单备注</p>
                 <div class="textarea">
                     <textarea id="txtCustomNote" placeholder="仅填写订单、物流等特殊要求，请勿填写加工要求备注 "></textarea>
-                    <span class="limitWords">0/30</span>
+                    <span class="limitWords">0/50</span>
                 </div>
             </div>
             <div class="fr r">
@@ -897,7 +897,7 @@
     $(".choiceAddress").on('click', function () {
       layer.open({
         type: 1,
-        skin:'aa',
+        skin: 'aa',
         title: '<span>选择收货地址</span>',
         area: ['640px', 'auto'],
         shadeClose: true,
@@ -913,13 +913,12 @@
     //控制文字输入字数
     $("#txtCustomNote").on('input  propertychange', function () {
       var val = $(this).val();
-      console.log(val)
       if (val) {
-        if (val.length > 30) {
-          $(this).val($(this).val().substring(0, 30));
-          $(".limitWords").text('30/30');
+        if (val.length > 50) {
+          $(this).val($(this).val().substring(0, 50));
+          $(".limitWords").text('50/50');
         } else {
-          $(".limitWords").text(val.length + '/30');
+          $(".limitWords").text(val.length + '/50');
         }
       }
     });
