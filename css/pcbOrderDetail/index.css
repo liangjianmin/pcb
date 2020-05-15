@@ -1272,6 +1272,9 @@ body {
   color: #3A3C40;
   vertical-align: middle;
 }
+.pcb-order-detail .pcb-order-section .pcb-logistics .c {
+  width: 580px;
+}
 .pcb-order-detail .pcb-order-section .pcb-logistics .c ul li {
   position: relative;
   padding-left: 26px;
