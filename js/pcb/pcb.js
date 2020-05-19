@@ -2,7 +2,7 @@
   window.pcbController = {
     formObj: {},
     init: function () {
-      this.mounted(this).handleBind(this);
+      this.mounted(this).handleBind(this).onscrollFn();
     },
     mounted: function (opt) {
       
@@ -176,12 +176,48 @@
       
       //收缩
       $(document).on('click', '.shrink', function () {
+        opt.onscrollFn();
         if ($(this).text() == '收缩') {
           $(this).text('展开');
           $(this).parents('.pcb-block-slideup').find('.pcb-block').slideUp();
+          
+          if($(this).attr('data-type') == 'time'){
+            $(this).parents().addClass('timebor');
+            $(this).parents().parents().children('.delivery').slideUp();
+          }
+          
+          if($(this).attr('data-type') == 'logistics'){
+            $(this).parents().parents().children('.logistics').slideUp();
+          }
+  
+          if($(this).attr('data-type') == 'param'){
+            $(this).parents().parents().children('.detail').slideUp();
+          }
+  
+          if($(this).attr('data-type') == 'order'){
+            $(this).parents().parents().find('.cost-wrap').slideUp();
+          }
+          
         } else {
           $(this).text('收缩');
           $(this).parents('.pcb-block-slideup').find('.pcb-block').slideDown();
+          
+          if($(this).attr('data-type') == 'time'){
+            $(this).parents().removeClass('timebor');
+            $(this).parents().parents().children('.delivery').slideDown();
+          }
+  
+          if($(this).attr('data-type') == 'logistics'){
+            $(this).parents().parents().children('.logistics').slideDown();
+          }
+  
+          if($(this).attr('data-type') == 'param'){
+            $(this).parents().parents().children('.detail').slideDown();
+          }
+  
+          if($(this).attr('data-type') == 'order'){
+            $(this).parents().parents().find('.cost-wrap').slideDown();
+          }
         }
       });
       
@@ -368,6 +404,18 @@
       }
       
       
+    },
+    onscrollFn: function () {
+      if ($("#quote-scroll").length > 0) {
+        var layout = $("#quote-scroll").offset().top;
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > layout) {
+            $("#quote-scroll").addClass('onsroll');
+          } else {
+            $("#quote-scroll").removeClass('onsroll');
+          }
+        })
+      }
     }
   }, $(function () {
     pcbController.init();

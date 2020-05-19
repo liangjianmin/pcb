@@ -831,14 +831,27 @@ body {
   margin-bottom: 0 !important;
 }
 .disabled {
-  background: #e0be7d !important;
+  background: none !important;
   color: #959ba6 !important;
   cursor: not-allowed !important;
   font-weight: normal !important;
-  border: 1px solid transparent !important;
+  border: 1px dashed #E6EAF2 !important;
 }
 .disabled span {
   color: #959ba6 !important;
+}
+.onsroll {
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  left: 50%;
+  margin-left: 211px;
+  _position: absolute;
+  _bottom: auto;
+}
+.timebor {
+  border-bottom: 1px solid #E6EAF2;
+  padding-bottom: 25px;
 }
 .bor {
   border-bottom: 1px solid #E6EAF2;

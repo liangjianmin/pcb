@@ -556,7 +556,7 @@
                 <div class="pcb-r-boxs">
                     <p class="tit clr">
                         <span class="fl l">交期时间</span>
-                        <a href="javascript:;" class="fr r shrink">收缩</a>
+                        <a href="javascript:;" class="fr r shrink" data-type="time">收缩</a>
                     </p>
                     <div class="delivery">
                         <ul class="lbBox">
@@ -576,7 +576,7 @@
                     </div>
                     <p class="tit clr">
                         <span class="fl l">快递物流</span>
-                        <a href="javascript:;" class="fr r shrink">收缩</a>
+                        <a href="javascript:;" class="fr r shrink" data-type="logistics">收缩</a>
                     </p>
                     <div class="logistics">
                         <div class="select-box clr">
@@ -615,7 +615,7 @@
                 <div class="pcb-r-box">
                     <p class="tit clr">
                         <span class="fl l">加工参数详情</span>
-                        <a href="javascript:;" class="fr r shrink">收缩</a>
+                        <a href="javascript:;" class="fr r shrink" data-type="param">收缩</a>
                     </p>
                     <div class="detail" id="showpcb">
                         <table class="detail-wrap">
@@ -696,49 +696,53 @@
                         </table>
                     </div>
                 </div>
-                <div class="pcb-r-box">
-                    <p class="tit clr">
-                        <span class="fl l">PCB订单费用</span>
-                        <a href="javascript:;" class="fr r shrink">收缩</a>
-                    </p>
-                    <div class="cost">
-                        <p class="cost-tit clr">
-                            <span class="fl t1">工程费</span>
-                            <span class="fr t2">￥0.00</span>
+                <div id="quote-scroll">
+                    <div class="pcb-r-box">
+                        <p class="tit clr">
+                            <span class="fl l">PCB订单费用</span>
+                            <a href="javascript:;" class="fr r shrink" data-type="order">收缩</a>
                         </p>
-                        <p class="cost-tit clr">
-                            <span class="fl t1">每平米板费</span>
-                            <span class="fr t2">￥0.00</span>
-                        </p>
-                        <p class="cost-tit clr">
-                            <span class="fl t1">菲林费</span>
-                            <span class="fr t2">￥0.00</span>
-                        </p>
-                        <p class="cost-tit clr">
-                            <span class="fl t1">其它</span>
-                            <span class="fr t2">￥0.00</span>
-                        </p>
-                        <p class="line"></p>
-                        <p class="cost-tit clr">
-                            <span class="fl t1">订单费用：</span>
-                            <span class="fr t2">￥3020.00</span>
-                        </p>
-                        <p class="cost-tit clr">
-                            <span class="fl t1">物流费用(1.587kg):</span>
-                            <span class="fr t2">￥20.00</span>
-                        </p>
-                        <p class="cost-tit clr">
-                            <span class="fl t1">其它费用：</span>
-                            <span class="fr t2">￥500.00</span>
-                        </p>
-                        <p class="line"></p>
-                        <p class="cost-tit mb0 clr">
-                            <span class="fl t3">总计：</span>
-                            <span class="fr t4">￥3750.00</span>
-                        </p>
+                        <div class="cost">
+                            <div class="cost-wrap">
+                                <p class="cost-tit clr">
+                                    <span class="fl t1">工程费</span>
+                                    <span class="fr t2">￥0.00</span>
+                                </p>
+                                <p class="cost-tit clr">
+                                    <span class="fl t1">每平米板费</span>
+                                    <span class="fr t2">￥0.00</span>
+                                </p>
+                                <p class="cost-tit clr">
+                                    <span class="fl t1">菲林费</span>
+                                    <span class="fr t2">￥0.00</span>
+                                </p>
+                                <p class="cost-tit clr">
+                                    <span class="fl t1">其它</span>
+                                    <span class="fr t2">￥0.00</span>
+                                </p>
+                                <p class="line"></p>
+                                <p class="cost-tit clr">
+                                    <span class="fl t1">订单费用：</span>
+                                    <span class="fr t2">￥3020.00</span>
+                                </p>
+                                <p class="cost-tit clr">
+                                    <span class="fl t1">物流费用(1.587kg):</span>
+                                    <span class="fr t2">￥20.00</span>
+                                </p>
+                                <p class="cost-tit clr">
+                                    <span class="fl t1">其它费用：</span>
+                                    <span class="fr t2">￥500.00</span>
+                                </p>
+                                <p class="line"></p>
+                            </div>
+                            <p class="cost-tit mb0 clr">
+                                <span class="fl t3">总计：</span>
+                                <span class="fr t4">￥3750.00</span>
+                            </p>
+                        </div>
                     </div>
+                    <a href="javascript:;" class="btn">提交订单</a>
                 </div>
-                <a href="javascript:;" class="btn">提交订单</a>
             </div>
         </div>
     </div>
