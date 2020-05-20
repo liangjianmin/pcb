@@ -1189,6 +1189,20 @@ body {
   font-size: 14px;
   color: #5c5f66;
 }
+.accountBalance .accountBalance-empty {
+  padding-top: 80px;
+  text-align: center;
+}
+.accountBalance .accountBalance-empty .iconfont {
+  font-size: 180px;
+  color: #0081d2;
+}
+.accountBalance .accountBalance-empty p {
+  margin-top: 19px;
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+}
 .accountRecharge .head-text {
   padding-left: 70px;
   margin-top: 30px;
