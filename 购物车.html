@@ -112,6 +112,13 @@
             </div>
         </div>
         <div class="car-list">
+            <!--购物车为空-->
+            <div class="car-empty">
+                <i class="iconfont iconzujiantubiaogouwuche"></i>
+                <p class="t1">购物车内暂时没有商品</p>
+                <p class="t2">现在下单，预计最快明日02:00可以发货</p>
+                <a href="javscript:;">立刻下单</a>
+            </div>
             <table>
                 <tr>
                     <th width="280px">物料基本信息</th>
@@ -274,7 +281,7 @@
                     </td>
                 </tr>
             </table>
-            <div class="car-total lbBox">
+            <div class="car-total lbBox" id="quote-scroll">
                 <div class="lineBlock l clr va-m">
                     <div class="fl ll">
                         <input type="checkbox" class="va-m"/>
@@ -733,6 +740,18 @@
     $(document).on('click', '.tab li', function () {
       $(this).children('.circle').addClass('act').parent().siblings('li').children('.circle').removeClass('act');
     });
+
+    if ($("#quote-scroll").length > 0) {
+      var layout = $("#quote-scroll").offset().top;
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > layout) {
+          $("#quote-scroll").addClass('onsroll');
+        } else {
+          $("#quote-scroll").removeClass('onsroll');
+        }
+      })
+    }
+
 
   })
 </script>
