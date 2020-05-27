@@ -280,15 +280,19 @@
           if (e.args.index == 0) {
             $("#pcb_pbtype").hide();
             $("#pcb_pbxout").hide();
-            
+            $('.num-tips').css('visibility','hidden')
             $("#pcb_pbxy").hide();
             $("#pcb_pbxys").hide();
             $("#pcb_division").hide();
             $("#pcb_slot").hide();
-            
+            $('.pcsorset').text('PCS');
+            $('.cc-tips').text('*若不清楚尺寸,可填写1*1')
           } else if (e.args.index == 1) {
             $("#pcb_pbtype").show();
             $("#pcb_pbxout").show();
+            $('.num-tips').css('visibility','visible');
+            $('.pcsorset').text('SET');
+            $('.cc-tips').text('*此处填拼版后的大片尺寸')
           }
         }
         

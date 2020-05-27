@@ -47,7 +47,7 @@
 <div class="home">
     <div class="width-1180 nav-wrap clr">
         <ul class="nav fl">
-            <li class="curr"><a href="">首页</a></li>
+            <li class="curr "><a href="">首页</a></li>
             <li><a href="">PCB快速报价</a></li>
             <li><a href="">高级PCB报价</a></li>
             <li><a href="">SMT贴片</a></li>
@@ -85,11 +85,13 @@
                 <form name="pcbform">
                     <div class="pcb-box">
                         <div class="pcb-block lbBox" id="PcbUnit">
-                            <label for="" class="lineBlock va-m">出货方式：</label>
+                        <label for="" class="lineBlock va-m">出货方式：
+                        </label>
                             <ul class="pcb-block-inline lineBlock va-m clr">
                                 <li data-value="PCS" class="curr">PCS(单片)</li>
                                 <li data-value="SET">SET(连片)</li>
                             </ul>
+                           
                         </div>
                         <!--拼版规则-->
                         <div class="pcb-block lbBox" id="pcb_pbtype" style="display: none">
@@ -101,11 +103,16 @@
                         </div>
                         <!--是否接受打叉板-->
                         <div class="pcb-block lbBox" id="pcb_pbxout" style="display: none">
-                            <label for="" class="lineBlock va-m">是否接受打叉板：</label>
+                            <label for="" class="lineBlock va-m">是否接受打叉板：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips arrow-tips-500">
+                                    <i class="arrow"></i>
+                                    <p class="tips">针对拼板产品才涉及打叉板接受范围的选择</p>
+                                </div></label>
                             <ul class="pcb-block-inline lineBlock va-m clr">
                                 <li data-value="接受" class="curr">接受</li>
                                 <li data-value="不接受">不接受</li>
                             </ul>
+                            <p class="tiptext lineBlock fr4-tips va-m">不接受会收取一定费用。</p>
                         </div>
                         <!--拼板方式-->
                         <div class="pcb-block lbBox" id="pcb_pbxy" style="display: none">
@@ -115,6 +122,15 @@
                                 <span class="lineBlock va-m closeico">x</span>
                                 <input type="text" placeholder="" class="va-m inp w138"/>
                                 <span class="text va-m ml10">个</span>
+                                <div class="tiptext lineBlock  va-m sl-tips">
+                                    <span>示例</span>
+                                    <div class="sl-div">
+                                        <i class="arrow"></i>
+                                        <p class="img-p">
+                                            <img src="./images/pcb/sl1.png" alt="">
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!--工艺边-->
@@ -129,6 +145,16 @@
                                     <option value="四边">四边</option>
                                 </select>
                                 <input type="text" placeholder="" class="va-m inp w138"/>
+                                <span class="text va-m ml10">mm</span>
+                                <div class="tiptext lineBlock  va-m sl-tips">
+                                    <span>示例</span>
+                                    <div class="sl-div">
+                                        <i class="arrow"></i>
+                                        <p class="img-p">
+                                            <img src="./images/pcb/sl2.png" alt="">
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!--分割方式-->
@@ -152,20 +178,33 @@
                         </div>
                         <!--板子尺寸-->
                         <div class="pcb-block lbBox">
-                            <label for="" class="lineBlock va-m">板子尺寸：</label>
+                            <label for="" class="lineBlock va-m">板子尺寸：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips">
+                                    <i class="arrow"></i>
+                                    <p class="tips">板子大小指的是客户投单板子的长宽，如果是圆形板，长宽尺寸就是圆的直径；如果是外形不规则的电路板，长宽尺寸则按最大的外形范围测量；</p>
+                                </div>
+                            </span></label>
                             <div class="pcb-block-inline lineBlock va-m lbBox">
                                 <input type="text" placeholder="高度/Y" class="va-m inp w138" name="pcb_width" id="BoardWidth"/>
                                 <span class="lineBlock va-m closeico">x</span>
                                 <input type="text" placeholder="长度/X" class="va-m inp w138" name="pcb_length" id="BoardHeight"/>
                                 <span class="text va-m ml10">cm</span>
                             </div>
+                            <img src="./images/pcb/wt1.png" alt="" class="wt1">
+                            <p class="tiptext cc-tips">*若不清楚尺寸,可填写1*1</p>
                         </div>
                         <div class="pcb-block lbBox">
-                            <label for="" class="lineBlock va-m">板子数量：</label>
+                            <label for="" class="lineBlock va-m">板子数量：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips">
+                                    <i class="arrow"></i>
+                                    <p class="tips">最低选择5片，面积计算方式为（长*宽*板子数量）面积一平米内，数量50pcs内为样板，超出此范围则为小批量。</p>
+                                </div>
+                            </span></label>
                             <div class="pcb-block-inline lineBlock va-m lbBox" id="pcb_qty">
                                 <div class="txt-wrap">
                                     <input type="text" placeholder="数量" class="va-m inp w138" readonly name="pcb_num"/>
-                                    <span class="text va-m ml10">PCS</span>
+                                    <span class="text va-m ml10 pcsorset">PCS</span>
+                                    <p class="tiptext lineBlock num-tips va-m">* 此处填拼版后的大片数量。</p>
                                 </div>
                                 <div class="selects-qty">
                                     <i class="lineBlock arrow"></i>
@@ -335,7 +374,12 @@
                             </div>
                         </div>
                         <div class="pcb-block lbBox" id="pcb_layer">
-                            <label for="" class="lineBlock va-m">板子层数：</label>
+                            <label for="" class="lineBlock va-m">板子层数：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips arrow-tips-500">
+                                    <i class="arrow"></i>
+                                    <p class="tips">猎板提供的板子层数选择：1为单面板，2为双面板，4为四层板，6为六层板，层数越大相应费用越高。注：为了提升工作效率，样板基本上是拼版生产，有一部分单面板会跟双面板拼在一起生产，即单面板按双面板工艺生产，孔内会有铜但不会影响性能，可靠性能更高。如果电路板的设计是单面线路，要做孔内有铜的效果，投单时选双面板即可。PS：单面板和双面板的打样费用差不多。</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
                                 <li data-value="1">1</li>
                                 <li data-value="2" class="curr">2</li>
@@ -351,7 +395,12 @@
                             </div>
                         </div>
                         <div class="pcb-block lbBox">
-                            <label for="" class="lineBlock va-m">板材类型：</label>
+                            <label for="" class="lineBlock va-m">板材类型：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips arrow-tips-500">
+                                    <i class="arrow"></i>
+                                    <p class="tips">指的是板材厂商及档次最高的板料，板材的绝缘性、均匀性、阻抗稳定性及铜皮跟板料基材的可靠性，远远高于同类产品中的B、C级料，可用于生产要求绝对苛刻的军工电子用品！低档次板材B、C级料：板材制造商，因为电路板厂商低成本的需求而生产的板料，板材厂商在制造的过程中，以次充好，偷工减料，其性能稳定性远远不如军工级的A级料，并且价格远远低于A级料。</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
                                 <li data-value="FR-4" class="curr">FR-4</li>
                             </ul>
@@ -363,9 +412,15 @@
                                 <li data-value="TG150">TG150</li>
                                 <li data-value="TG170">TG170</li>
                             </ul>
+                            <p class="tiptext lineBlock fr4-tips va-m">* FR-4 玻璃化温度：TG130 耐焊值:288°C</p>
                         </div>
                         <div class="pcb-block lbBox" id="pcb_thickness">
-                            <label for="" class="lineBlock va-t">板子厚度：</label>
+                            <label for="" class="lineBlock va-t">板子厚度：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips arrow-tips-500">
+                                    <i class="arrow"></i>
+                                    <p class="tips">板子厚度是指电路板的厚度，在这说明一下板厚的公差，公司采用的是建滔、国纪A级料，公差相对较小，正常板厚在10%左右；10%主要是因为印阻焊和沉铜、电镀、油墨印刷引起的；如果对板厚公差另有要求，请在其它要求项备注，否则视为按正常板厚公差。</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline  pcb_thickness lineBlock va-t clr">
                                 <li data-value="0.4">0.4</li>
                                 <li data-value="0.6">0.6</li>
@@ -376,17 +431,29 @@
                                 <li data-value="2.0">2.0</li>
                                 <li data-value="2.4">2.4</li>
                             </ul>
-                            <span class="text va-m" style="position: relative;top: 10px;">单位:mm</span>
+                            <!-- <span class="text va-m" style="position: relative;top: 10px;">单位:mm</span> -->
+                            <img src="./images/pcb/wt2.png" alt="" class="wt2">
                         </div>
                         <div class="pcb-block lbBox" id="pcb_copperThickness">
-                            <label for="" class="lineBlock va-m">铜箔厚度：</label>
+                            <label for="" class="lineBlock va-m">铜箔厚度：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips">
+                                    <i class="arrow"></i>
+                                    <p class="tips">电镀铜为最基本的线路板导电层，我司按客户要求完成足够的铜厚以满足客户导电功能性需求</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
                                 <li data-value="1" class="curr">1/1oz</li>
                                 <li data-value="2">2/2oz</li>
                             </ul>
+                            <img src="./images/pcb/wt3.png" alt="" class="wt3">
                         </div>
                         <div class="pcb-block lbBox" id="pcb_insidethickness" style="display: none">
-                            <label for="" class="lineBlock va-m">内铜厚度：</label>
+                            <label for="" class="lineBlock va-m">内铜厚度：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips">
+                                    <i class="arrow"></i>
+                                    <p class="tips">针对多层板设计，内层也有导电功能，按客户要求完成足够的铜厚以满足内层本身及与外层之间的导电功能性需求</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
                                 <li data-value="1" class="curr">1oz</li>
                                 <li data-value="2">2oz</li>
@@ -400,6 +467,7 @@
                                 <li data-value="6/6mil">6/6mil&nbsp;↑</li>
                                 <li data-value="8/8mil" class="curr">8/8mil&nbsp;↑</li>
                             </ul>
+                            <img src="./images/pcb/wt4.png" alt="" class="wt4">
                         </div>
                         <div class="pcb-block lbBox" id="pcb_minholesize">
                             <label for="" class="lineBlock va-m">最小孔径：</label>
@@ -409,10 +477,16 @@
                                 <li data-value="0.35">0.35mm</li>
                                 <li data-value="0.4" class="curr">0.4mm&nbsp;↑</li>
                             </ul>
+                            <img src="./images/pcb/wt5.png" alt="" class="wt5">
                         </div>
                         <div class="line bor"></div>
                         <div class="pcb-block lbBox" id="SolderColor">
-                            <label for="" class="lineBlock va-m">阻焊颜色：</label>
+                            <label for="" class="lineBlock va-m">阻焊颜色：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips arrow-tips-500">
+                                    <i class="arrow"></i>
+                                    <p class="tips">阻焊颜色指的是电路板阻焊层表面的颜色，因考虑到电子行业普遍性及适用性及工厂内部的效率及成本，我司将绿色视为常规色，部分特殊颜色加收颜色费,如哑光绿、哑光黑以及黄油黑字或绿油黑字等</p>
+                                </div>
+                            </span></label>
                             +
                             <ul class="pcb-block-inline pcb_boardcolor  lineBlock va-m clr">
                                 <li>
@@ -449,7 +523,12 @@
                             <p class="tiptext">*阻焊颜色和字符颜色不能一致</p>
                         </div>
                         <div class="pcb-block lbBox" id="FontColor">
-                            <label for="" class="lineBlock va-m">字符颜色：</label>
+                            <label for="" class="lineBlock va-m">字符颜色：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips">
+                                    <i class="arrow"></i>
+                                    <p class="tips">指的是电路板字符色，我们只提供白色，如果阻焊油墨选白色时，字符为黑色。</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline lineBlock va-m clr">
                                 <li>
                                     <em class="lineBlock color5 va-m"></em>
@@ -471,7 +550,12 @@
                             <p class="tiptext">*阻焊颜色和字符颜色不能一致</p>
                         </div>
                         <div class="pcb-block lbBox" id="SurfaceFinish">
-                            <label for="" class="lineBlock va-m">焊盘喷镀：</label>
+                            <label for="" class="lineBlock va-m">焊盘喷镀：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips arrow-tips-500">
+                                    <i class="arrow"></i>
+                                    <p class="tips">指的是电路板表面处理，猎板提供有：有铅喷锡、无铅喷锡、沉金、OSP。在实际操作过程中，下单时选喷锡，为了效率及交期，有少部分电路板可能会拼在沉金板中生产，沉金的成本大大高于喷锡，且性能上是没有问题的，如果你不接受此项，请在其它要求备注不能更改工艺。</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
                                 <li class="curr">无铅喷锡</li>
                                 <li>沉金</li>
@@ -487,15 +571,26 @@
                             </ul>
                         </div>
                         <div class="pcb-block lbBox" id="SolderCover">
-                            <label for="" class="lineBlock va-m">阻焊覆盖：</label>
+                            <label for="" class="lineBlock va-m">阻焊覆盖：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips arrow-tips-500">
+                                    <i class="arrow"></i>
+                                    <p class="tips">此项经常存在争议，重点说明。现在提供三种：（1）过孔盖油 （2）过孔开窗 （3）gerber文件按文件加工，因为gerber文件中，没法分清过孔和插件孔，只能按文件加工；如果提供的是原文件，则过孔有属性，工厂在转菲林文件时会注意。如有此类不清楚的，可致电工作人员咨询。</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline lineBlock va-m clr">
                                 <li class="curr">过孔盖油</li>
                                 <li>过孔开窗</li>
                             </ul>
+                            <p class="tiptext lineBlock  va-m fr4-tips">注: 如是gerber文件，一律按文件加工，此选项无效！</p>
                             <p class="tiptext">*过孔盖油检验标准是过孔在过锡炉的时候不沾锡，属于工艺正常现象</p>
                         </div>
                         <div class="pcb-block lbBox" id="TestType">
-                            <label for="" class="lineBlock va-m">测试选项：</label>
+                            <label for="" class="lineBlock va-m">测试选项：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips arrow-tips-500">
+                                    <i class="arrow"></i>
+                                    <p class="tips">抽测试不收取费用，直通率95%以上，但只是针对比较简单，线宽线距比较大且稀疏、孔也比较大的板子，选择抽测试的订单，将允许存在一定比例的不良品，请慎重选择。</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline lineBlock va-m clr">
                                 <li class="curr">全飞针测试</li>
                                 <li>测试架电测</li>
@@ -512,7 +607,12 @@
                             <a href="javascript:;" class="fr r shrink">收缩</a>
                         </div>
                         <div class="pcb-block lbBox mt20" id="Goldfinger">
-                            <label for="" class="lineBlock va-m">金(锡)手指倒斜边：</label>
+                            <label for="" class="lineBlock va-m">金(锡)手指倒斜边：<br/><span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips">
+                                    <i class="arrow"></i>
+                                    <p class="tips">文件有金（锡）手指的才做此选项，如文件没有手指而选了此选项，因此而造成的品质问题我司不承担责任。</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline lineBlock va-m clr">
                                 <li class="curr">需要</li>
                                 <li>不需要</li>
@@ -536,7 +636,12 @@
                             <a href="javascript:;" class="fr r shrink">收缩</a>
                         </div>
                         <div class="pcb-block mt20 lbBox" id="ProductionDraft">
-                            <label for="" class="lineBlock va-m">确认生产稿：</label>
+                            <label for="" class="lineBlock va-m">确认生产稿：<span class="iconfont iconiconfontquestion va-m">
+                                <div class="arrow-tips">
+                                    <i class="arrow"></i>
+                                    <p class="tips">生产稿是指我司工程优化后的gerber文件，勾选了需要选项，猎板客服将联系客户对生产文件进行最终确认，订单交期将按确认生产稿时间重新计算</p>
+                                </div>
+                            </span></label>
                             <ul class="pcb-block-inline lineBlock va-m clr">
                                 <li>需要</li>
                                 <li class="curr">不需要</li>
