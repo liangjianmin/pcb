@@ -6,6 +6,13 @@
   "description": "pcb-国内版本",
   "glyphs": [
     {
+      "icon_id": "584016",
+      "name": "问号",
+      "font_class": "iconfontquestion",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
       "icon_id": "14243607",
       "name": "组件／图标／箭头",
       "font_class": "zujiantubiaojiantou18",
