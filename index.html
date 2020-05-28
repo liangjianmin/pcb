@@ -698,30 +698,6 @@
         </form>
     </div>
 </script>
-<!-- 意见反馈的弹窗 -->
-<script type="text/html" id="feedback">
-    <div class="feedback">
-        <div class="feedback-textarea-div">
-            <textarea placeholder="请输入反馈意见"></textarea>
-         </div>
-         <div class="clr feedback-form">
-            <div class="phone-div fl">
-                <p class="title">手机号</p>
-                <div><input type="text" placeholder="请输入手机号码"></div>
-            </div>
-            <div class="code-div fl">
-                <p class="title">验证码</p>
-                <div><input type="text"  placeholder="请输入验证码"></div>
-            </div>
-            <a href="#" class="fl code-a"><img src="./images/pcb/kuaidi.png" alt=""></a>
-         </div>
-         <div class="feedback-btns">
-            <a class="cancel-btn btn lineBlock">取消</a>
-            <a class="sure-btn btn lineBlock">确认</a>
-         </div>
-    </div>
-   
-</script>
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
@@ -739,26 +715,13 @@
     });
 
     //快键登录
-    // layer.open({
-    //   type: 1,
-    //   title: '<span>手机登录</span>',
-    //   area: ['500px', 'auto'],
-    //   shadeClose: true,
-    //   move: false,
-    //   content: $("#loginhtml").html(),
-    //   success: function (layero, index) {
-
-
-    //   }
-    // });
-       //意见反馈弹窗
     layer.open({
       type: 1,
-      title: '<span>意见反馈</span>',
-      area: ['640px', 'auto'],
+      title: '<span>手机登录</span>',
+      area: ['500px', 'auto'],
       shadeClose: true,
       move: false,
-      content: $("#feedback").html(),
+      content: $("#loginhtml").html(),
       success: function (layero, index) {
 
 
