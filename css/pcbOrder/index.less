@@ -109,21 +109,25 @@
 
     table {
       width: 960px;
-      border: 1px solid #E6EAF2;
-      border-collapse: collapse;
+      border: 1px solid #ACB3BF;
+      border-collapse: separate;
       margin-bottom: 10px;
 
       tbody {
         tr {
           border: 1px solid #E6EAF2;
-
+          &:nth-child(2){
+            td{
+              border-top:1px solid #ACB3BF;
+            }
+          }
           th {
             white-space: nowrap;
             padding-left: 30px;
             height: 50px;
             text-align: left;
             font-weight: normal;
-
+            background: #F7F9FC;
             .t1 {
               font-size: 14px;
               color: #3a3c40;
@@ -266,6 +270,82 @@
               .t3 {
                 font-size: 14px;
                 color: #5c5f66;
+              }
+              .t4 {
+                font-size: 14px;
+                color: #0081D2;
+                font-weight: 600;
+                margin-bottom: 10px;
+              }
+              .t5 {
+                font-size: 14px;
+                color: #5C5F66;
+                cursor: pointer;
+                position: relative;
+                &:hover{
+                  color:#0081D2;
+                  .translate-tips{
+                    height:auto
+                  }
+                }
+                .translate-tips{
+                  position: absolute;
+                  width:320px;
+                  left:-143px;
+                  z-index: 1;
+                  height: 0;
+                  overflow: hidden;
+                  .arrow{
+                    position: relative;
+                    z-index: 4;
+                    top:1px;
+                    left:165px;
+                    display: block;
+                    height:8px;
+                    width: 16px;
+                    background: url('../../images/pcb/top-arrow.png') no-repeat;
+                    background-size: 100% 100%;
+                  }
+                  .tips-text{
+                    border:1px solid #0081D2;
+                    padding:3px  24px 18px ;
+                    background-color: #fff;
+                    box-shadow:0px 5px 20px 0px rgba(172,179,191,0.2);
+                    border-radius: 2px;
+                    .tip{
+                      position: relative;
+                      margin-top:15px;
+                      .mark{
+                        position: absolute;
+                        display: block;
+                        width:9px;
+                        height:9px;
+                        border-radius: 50% 50%;
+                        background-color:#ACB3BF ;
+                        top:5px;
+                        &.active{
+                          background-color: #0081D2;
+                        }
+                      }
+                      .text{
+                        margin-left:31px;
+                        p{
+                          text-align: left;
+                          &.detail{
+                            font-size: 14px;
+                            color:#3A3C40
+                          }
+                          &.time{
+                            font-size: 12px;
+                            color:#959BA6;
+                            margin-top:2px;
+                          }
+                        }
+                      }
+                    }
+
+                  }
+                }
               }
             }
 

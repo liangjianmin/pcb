@@ -103,6 +103,20 @@
             color: #5c5f66;
             white-space: nowrap;
             margin-right: 8px;
+            span{
+              font-size:16px;
+              cursor: pointer;
+              color:#ABB3BE;
+              &:hover{
+                color:#0081D2;
+                .arrow-tips{
+                  height:100px;
+                  &.arrow-tips-500{
+                    height:180px;
+                  }
+                }
+              }
+            }
           }
 
           .pcb-block-inline {
@@ -111,43 +125,69 @@
 
             li {
               float: left;
-              height: 38px;
+              height: 28px;
               background: #F7F9FC;
               border-radius: 2px;
-              line-height: 38px;
+              line-height: 28px;
               text-align: center;
               border: 1px solid #E6EAF2;
               margin-right: 14px;
               font-size: 14px;
               color: #5c5f66;
               cursor: pointer;
-              padding: 0 20px;
+              padding: 0 13px;
 
               &.curr {
-                height: 36px;
-                line-height: 36px;
+                height: 26px;
+                line-height: 26px;
                 border: 2px solid #0081D2;
                 color: #3a3c40;
                 font-weight: bold;
                 background: #ffffff;
+                position: relative;
+                &::after{
+                  content: "";
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  border-bottom: 18px solid #0081D2;
+                  border-left: 18px solid transparent;
+                  bottom:0;
+                  right:0;
+                }
+                &::before{
+                  font-family: "iconfont" !important;
+                  font-size: 12px;
+                  font-style: normal;
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smoothing: grayscale;
+                  content: "\e644";
+                  position: absolute;
+                  bottom:-8px;
+                  right:-1px;
+                  z-index: 1;
+                  color:#fff;
+                  font-weight: normal;
+                }
+
               }
             }
 
             .sel {
-              height: 40px;
+              height:30px;
               background: #F7F9FC;
               border-radius: 2px;
-              line-height: 38px;
+              line-height: 28px;
               border: 1px solid #E6EAF2;
               text-indent: 1em;
               font-size: 14px;
             }
 
             .inp {
-              height: 38px;
+              height: 28px;
               background: #F7F9FC;
               border-radius: 2px;
-              line-height: 38px;
+              line-height: 28px;
               border: 1px solid #E6EAF2;
               text-indent: 1em;
               font-size: 14px;
@@ -312,7 +352,7 @@
 
           .pcb_thickness {
             li {
-              margin-bottom: 10px;
+              // margin-bottom: 10px;
             }
           }
 
@@ -325,7 +365,58 @@
             margin-top: 10px;
             font-size: 12px;
             color: #959ba6;
-            margin-left: 120px
+            margin-left: 130px;
+            &.cc-tips{
+              margin-top:0;
+              position: relative;
+              top:-8px
+            }
+            &.fr4-tips{
+              margin:0;
+            }
+            &.num-tips{
+              margin:0 0 0 20px;
+              color:#E89721;
+              visibility: hidden;
+            }
+            &.sl-tips{
+              margin:0 0 0 20px;
+              font-size: 14px;
+              border-bottom: 1px dashed #0081D2;
+              cursor: pointer;
+              position: relative;
+              &:hover{
+                .sl-div{
+                  height:295px;
+                }
+              }
+              span{
+                color:#0081D2;
+              }
+              .sl-div{
+                position: absolute;
+                left:-240px;
+                top:25px;
+                z-index: 3;
+                height:0;
+                overflow: hidden;
+                transition: all .2s linear;
+                .arrow{
+                  display: block;
+                  position: relative;
+                  top:2px;
+                  left:246px;
+                  width: 13px;
+                  height: 11px;
+                  background: url(../../images/common/ico.png) no-repeat -5px -52px;
+                }
+                .img-p{
+                  border: 1px solid #cccccc;
+                  background-color: #fff;
+                  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+                }
+              }
+            }
           }
         }
       }
@@ -375,27 +466,68 @@
             color: #5c5f66;
             white-space: nowrap;
             margin-right: 8px;
+            span{
+              font-size:16px;
+              cursor: pointer;
+              color:#ABB3BE;
+              &:hover{
+                color:#0081D2;
+                .arrow-tips{
+                  height:100px;
+                  &.arrow-tips-500{
+                    height:180px;
+                  }
+                }
+              }
+            }
           }
 
           .pcb-block-inline {
             li {
               float: left;
-              height: 38px;
+              height: 28px;
               background: #F7F9FC;
               border-radius: 2px;
-              line-height: 38px;
+              line-height: 28px;
               text-align: center;
               border: 1px solid #E6EAF2;
               margin-right: 14px;
               font-size: 14px;
               color: #5c5f66;
               cursor: pointer;
-              padding: 0 20px;
+              padding: 0 13px;
 
               &.curr {
                 border: 2px solid #0081D2;
                 color: #3a3c40;
                 font-weight: bold;
+                height: 26px;
+                line-height: 26px;
+                position: relative;
+                &::after{
+                  content: "";
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  border-bottom: 18px solid #0081D2;
+                  border-left: 18px solid transparent;
+                  bottom:0;
+                  right:0;
+                }
+                &::before{
+                  font-family: "iconfont" !important;
+                  font-size: 12px;
+                  font-style: normal;
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smoothing: grayscale;
+                  content: "\e644";
+                  position: absolute;
+                  bottom:-8px;
+                  right:-1px;
+                  z-index: 1;
+                  color:#fff;
+                  font-weight: normal;
+                }
               }
             }
 
@@ -861,5 +993,71 @@
     color: #ffffff;
     line-height: 40px;
     text-align: center;
+  }
+
+}
+.wt1{
+  height:54px;
+  width:156px;
+  margin-left:95px;
+}
+.wt2{
+  height:28px;
+  width:70px;
+  margin-left: 10px;
+}
+.wt3{
+  height:27px;
+  width:89px;
+  margin-left: 10px;
+}
+.wt4{
+  height:32px;
+  width:80px;
+  margin-left: 10px;
+}
+.wt5{
+  height:36px;
+  width:31px;
+  margin-left: 10px;
+}
+label{
+  .iconiconfontquestion{
+    position: relative;
+    .arrow-tips{
+      position: absolute;
+      z-index: 1;
+      top:18px;
+      left:-22px;
+      height:0px;
+      overflow: hidden;
+      transition: all .2s linear;
+      &.arrow-tips-500{
+        transition: all .3s linear;
+
+      }
+      .arrow{
+        position: relative;
+        z-index: 4;
+        top:1px;
+        left:21px;
+        display: block;
+        height:8px;
+        width: 16px;
+        background: url('../../images/pcb/top-arrow.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .tips{
+        background:#fff;
+        box-shadow:0px 5px 20px 0px rgba(172,179,191,0.2);
+        padding:20px;
+        border:1px solid #0081D2;
+        z-index: 3;
+        font-size: 12px;
+        color:#5C5F66;
+        width: 280px;
+        white-space:pre-wrap;
+      }
+    }
   }
 }
