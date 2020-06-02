@@ -1298,10 +1298,113 @@ body {
   text-align: center;
   font-weight: bold;
 }
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t1 {
+  color: #E82121;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t2 {
+  font-size: 14px;
+  color: #0081d2;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t3 {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t4 {
+  font-size: 14px;
+  color: #0081D2;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 {
+  font-size: 14px;
+  color: #5C5F66;
+  cursor: pointer;
+  position: relative;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5:hover {
+  color: #0081D2;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5:hover .translate-tips {
+  height: auto;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips {
+  position: absolute;
+  width: 320px;
+  left: -143px;
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .arrow {
+  position: relative;
+  z-index: 4;
+  top: 1px;
+  left: 165px;
+  display: block;
+  height: 8px;
+  width: 16px;
+  background: url('../../images/pcb/top-arrow.png') no-repeat;
+  background-size: 100% 100%;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text {
+  border: 1px solid #0081D2;
+  padding: 3px 24px 18px;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+  border-radius: 2px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text .tip {
+  position: relative;
+  margin-top: 15px;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text .tip .mark {
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50% 50%;
+  background-color: #ACB3BF;
+  top: 5px;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text .tip .mark.active {
+  background-color: #0081D2;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text .tip .text {
+  margin-left: 31px;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text .tip .text p {
+  text-align: left;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text .tip .text p.detail {
+  font-size: 14px;
+  color: #3A3C40;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text .tip .text p.time {
+  font-size: 12px;
+  color: #959BA6;
+  margin-top: 2px;
+}
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type7 {
   font-size: 14px;
   color: #0081d2;
-  padding-left: 15px;
+  text-align: center;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type7 .t1 {
+  font-size: 14px;
+  color: #0081d2;
+  margin-bottom: 10px;
+  display: block;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type7 .t2 {
+  font-size: 14px;
+  color: #5c5f66;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.sumtext {
   height: 59px;

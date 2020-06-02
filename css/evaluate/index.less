@@ -81,22 +81,37 @@
         line-height: 48px;
         background: #F7F9FC;
         border-radius: 2px;
-        border: 1px solid #E6EAF2;
         margin-bottom: 10px;
         font-size: 14px;
         color: #5c5f66;
+        border: 1px solid #ACB3BF;
       }
 
       dd {
         table {
           width: 960px;
-          border: 1px solid #E6EAF2;
+          border: 1px solid #ACB3BF;
           border-collapse: collapse;
           margin-bottom: 10px;
 
           tbody {
             tr {
-              border: 1px solid #E6EAF2;
+              &:nth-of-type(n+2) {
+                td:first-child {
+                  border-left: 1px solid #ACB3BF;
+                }
+
+                td:last-child {
+                  border-right: 1px solid #ACB3BF;
+                }
+
+                &:last-child {
+                  border-bottom: 1px solid #ACB3BF;
+                  td {
+                    border-bottom: 1px solid #ACB3BF;
+                  }
+                }
+              }
 
               th {
                 white-space: nowrap;
@@ -105,6 +120,7 @@
                 text-align: left;
                 font-weight: normal;
                 background: #F7F9FC;
+                border: 1px solid #ACB3BF;
 
                 .t1 {
                   font-size: 14px;
