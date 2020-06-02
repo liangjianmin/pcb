@@ -1190,12 +1190,20 @@ body {
 }
 .user-center .user-center-r .user-center-section .data-list table {
   width: 960px;
-  border: 1px solid #E6EAF2;
-  border-collapse: collapse;
+  border: 1px solid #ACB3BF;
   margin-bottom: 10px;
 }
-.user-center .user-center-r .user-center-section .data-list table tbody tr {
-  border: 1px solid #E6EAF2;
+.user-center .user-center-r .user-center-section .data-list table tbody tr:nth-of-type(n+2) td:first-child {
+  border-left: 1px solid #ACB3BF;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr:nth-of-type(n+2) td:last-child {
+  border-right: 1px solid #ACB3BF;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr:nth-of-type(n+2):last-child {
+  border-bottom: 1px solid #ACB3BF;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr:nth-of-type(n+2):last-child td {
+  border-bottom: 1px solid #ACB3BF;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr th {
   white-space: nowrap;
@@ -1203,6 +1211,7 @@ body {
   height: 50px;
   text-align: left;
   font-weight: normal;
+  border: 1px solid #ACB3BF;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr th .t1 {
   font-size: 14px;
