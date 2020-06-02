@@ -139,8 +139,9 @@
 
       .tab {
         li {
+          position: relative;
           width: 380px;
-          height: 90px;
+          height: 130px;
           background: rgba(247, 249, 252, 1);
           border-radius: 4px;
           float: left;
@@ -148,6 +149,17 @@
           text-align: left;
           padding-left: 40px;
           cursor: pointer;
+
+          .iconjuxing {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -13px;
+            font-size: 10px;
+            color: #0081D2;
+            text-align: center;
+            display: none;
+          }
 
           .t1 {
             font-size: 18px;
@@ -171,6 +183,10 @@
           &.curr {
             background: #0081D2;
 
+            .iconjuxing {
+              display: block;
+            }
+
             .t1 {
               color: #ffffff;
             }
@@ -187,6 +203,11 @@
           }
         }
 
+      }
+
+      .map-box {
+        margin-top: 30px;
+        padding-bottom: 70px;
       }
     }
   }
