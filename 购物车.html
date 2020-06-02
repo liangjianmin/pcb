@@ -113,7 +113,7 @@
         </div>
         <div class="car-list">
             <!--购物车为空-->
-            <div class="car-empty">
+            <div class="car-empty" style="display: none">
                 <i class="iconfont iconzujiantubiaogouwuche"></i>
                 <p class="t1">购物车内暂时没有商品</p>
                 <p class="t2">现在下单，预计最快明日02:00可以发货</p>
@@ -136,14 +136,12 @@
                         </span>
                         <div class="lineBlock va-t">
                             <p class="t1">PO#00023434-2321212121325t46577</p>
-                            <p class="t2">尺寸：23.00*23.32cm</p>
                             <p class="t2">
-                                <span class="t2-1">层数：2层</span>
-                                <span>板厚：1.6mm</span>
+                                <span class="t2-1">2层 1.6mm</span>
+                                <span>绿油白字   无铅喷锡</span>
                             </p>
-                            <p class="t3">绿油白字 无铅喷锡</p>
                         </div>
-                        <a href="javscript:;" class="detail lineBlock va-b">明细</a>
+                        <a href="javscript:;" class="detail">明细</a>
                     </td>
                     <td class="box2">
                         <p>03-28</p>
@@ -180,18 +178,12 @@
                         </span>
                         <div class="lineBlock va-t">
                             <p class="t1">PO#00023434-2321212121325t46577</p>
-                            <p class="t2">尺寸：23.00*23.32cm</p>
                             <p class="t2">
-                                <span class="t2-1">层数：2层</span>
-                                <span>板厚：1.6mm</span>
-                            </p>
-                            <p class="t3">绿油白字 无铅喷锡</p>
-                            <p class="relation-wrap">
-                                <span class="relation-t1 lineBlock va-m">PO#12002343</span>
-                                <span class="relation-t2 va-m">重新关联</span>
+                                <span class="t2-1">2层 1.6mm</span>
+                                <span>绿油白字   无铅喷锡</span>
                             </p>
                         </div>
-                        <a href="javscript:;" class="detail lineBlock va-b">明细</a>
+                        <a href="javscript:;" class="detail">明细</a>
                     </td>
                     <td class="box2">
                         <p>03-28</p>
@@ -229,20 +221,15 @@
                 </tr>
                 <tr>
                     <td class="box1">
-                        <span class="lineBlock va-t checkedbox">
-                            <input type="checkbox" checked="checked"/>
-                        </span>
+                        <span class="lineBlock va-t invalid">失效</span>
                         <div class="lineBlock va-t">
                             <p class="t1">PO#00023434-2321212121325t46577</p>
-                            <p class="t2">尺寸：23.00*23.32cm</p>
                             <p class="t2">
-                                <span class="t2-1">层数：2层</span>
-                                <span>板厚：1.6mm</span>
+                                <span class="t2-1">2层 1.6mm</span>
+                                <span>绿油白字   无铅喷锡</span>
                             </p>
-                            <p class="t3">绿油白字 无铅喷锡</p>
-                            <p class="relation">关联PCB订单</p>
                         </div>
-                        <a href="javscript:;" class="detail lineBlock va-b">明细</a>
+                        <a href="javscript:;" class="detail">明细</a>
                     </td>
                     <td class="box2">
                         <p>03-28</p>
@@ -265,8 +252,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--关联-->
-                        <p class="rlation">默认自动关联PCB文件</p>
                     </td>
                     <td class="box4">
                         <p>￥1500.00</p>
@@ -741,8 +726,8 @@
       $(this).children('.circle').addClass('act').parent().siblings('li').children('.circle').removeClass('act');
     });
 
-    if ($("#quote-scroll").length > 0) {
-      var layout = $("#quote-scroll").offset().top-500;
+    /*if ($("#quote-scroll").length > 0) {
+      var layout = $("#quote-scroll").offset().top-300;
       $(window).scroll(function () {
         if ($(this).scrollTop() > layout) {
           $("#quote-scroll").addClass('onsroll');
@@ -750,7 +735,7 @@
           $("#quote-scroll").removeClass('onsroll');
         }
       })
-    }
+    }*/
 
 
   })
