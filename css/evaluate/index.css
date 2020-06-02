@@ -1042,6 +1042,16 @@ body {
   border-collapse: collapse;
   margin-bottom: 10px;
 }
+.evaluate .evaluate-wrap .list dd table tbody tr.bor td {
+  border-bottom: 1px solid #ACB3BF;
+  border-top: 1px solid #ACB3BF;
+}
+.evaluate .evaluate-wrap .list dd table tbody tr.bor td:first-child {
+  border-left: 1px solid #ACB3BF;
+}
+.evaluate .evaluate-wrap .list dd table tbody tr.bor td:last-child {
+  border-right: 1px solid #ACB3BF;
+}
 .evaluate .evaluate-wrap .list dd table tbody tr:nth-of-type(n+2) td:first-child {
   border-left: 1px solid #ACB3BF;
 }
