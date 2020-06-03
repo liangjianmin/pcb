@@ -1358,7 +1358,7 @@ body {
 .home .home-section .list-pic .prev {
   position: absolute;
   left: 0;
-  top: 93px;
+  top: 114px;
   width: 60px;
   height: 60px;
   background: rgba(0, 0, 0, 0.25);
@@ -1379,7 +1379,7 @@ body {
 .home .home-section .list-pic .next {
   position: absolute;
   right: 0;
-  top: 93px;
+  top: 114px;
   width: 60px;
   height: 60px;
   background: rgba(0, 0, 0, 0.25);
