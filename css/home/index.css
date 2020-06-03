@@ -481,55 +481,101 @@ body {
 }
 .pcb-footer {
   padding: 30px 0;
-  border-top: 1px solid #F7F9FC;
+  border-top: 1px solid #E6EAF2;
 }
-.pcb-footer .l .link {
-  margin-bottom: 12px;
+.pcb-footer .pcb-footer-top .l ul {
+  border-right: 1px dashed #E6EAF2;
+  padding-right: 86px;
 }
-.pcb-footer .l .link dd {
+.pcb-footer .pcb-footer-top .l ul li {
   float: left;
+  margin-right: 90px;
 }
-.pcb-footer .l .link dd a {
+.pcb-footer .pcb-footer-top .l ul li a {
+  margin-bottom: 10px;
   font-size: 14px;
   color: #5c5f66;
-  margin-right: 30px;
+  display: block;
 }
-.pcb-footer .l .txt {
+.pcb-footer .pcb-footer-top .l ul li a:first-child {
+  margin-bottom: 12px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.pcb-footer .pcb-footer-top .l ul li:last-child {
+  margin-right: 0;
+}
+.pcb-footer .pcb-footer-top .r {
+  padding-left: 60px;
+}
+.pcb-footer .pcb-footer-top .r .t1 {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-bottom: 3px;
+}
+.pcb-footer .pcb-footer-top .r .t2 {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.pcb-footer .pcb-footer-top .r .t3 {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-bottom: 4px;
+}
+.pcb-footer .pcb-footer-top .r .t4 {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.pcb-footer .pcb-footer-top .r .code-pic {
+  padding-left: 47px;
+}
+.pcb-footer .pcb-footer-top .r .code-pic img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: 0 auto;
+}
+.pcb-footer .pcb-footer-top .r .code-pic p {
+  font-size: 12px;
+  color: #959ba6;
+  text-align: center;
+}
+.pcb-footer .pcb-footer-bottom {
+  border-top: 1px solid #E6EAF2;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+.pcb-footer .pcb-footer-bottom .l .text {
+  width: 504px;
+  margin-right: 97px;
+}
+.pcb-footer .pcb-footer-bottom .l .text p {
   font-size: 12px;
   color: #959ba6;
 }
-.pcb-footer .r {
-  white-space: nowrap;
+.pcb-footer .pcb-footer-bottom .l .text p.t1 {
+  margin-bottom: 8px;
 }
-.pcb-footer .r .iconzujiantubiaodianhua {
-  font-size: 40px;
-  color: #007fd8;
+.pcb-footer .pcb-footer-bottom .l .pic p {
+  font-size: 12px;
+  color: #959ba6;
+  margin-bottom: 12px;
 }
-.pcb-footer .r .text {
-  margin-left: 18px;
-  margin-right: 46px;
+.pcb-footer .pcb-footer-bottom .l .pic img {
+  width: 120px;
+  height: 40px;
+  margin-right: 20px;
 }
-.pcb-footer .r .text .t1 {
-  font-size: 14px;
-  color: #5c5f66;
-  margin-bottom: 7px;
+.pcb-footer .pcb-footer-bottom .r p {
+  font-size: 12px;
+  color: #959ba6;
 }
-.pcb-footer .r .text .t2 {
-  font-size: 16px;
-  color: #3A3C40;
-  font-weight: bold;
-}
-.pcb-footer .r .ico {
-  width: 51px;
-  height: 51px;
-  border-radius: 50%;
-  background: #E6EAF2;
-  text-align: center;
-  line-height: 51px;
-}
-.pcb-footer .r .ico .iconfont {
-  font-size: 40px;
-  color: #fcfeff;
+.pcb-footer .pcb-footer-bottom .r .pic img {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
 }
 .sldie-bar {
   position: fixed;
@@ -609,9 +655,6 @@ body {
 }
 .sldie-bar dl dt:hover a p {
   color: #0081d2;
-}
-.home {
-  border-bottom: 1px solid #E6EAF2;
 }
 .home .nav-wrap .nav li {
   position: relative;
@@ -876,7 +919,7 @@ body {
 }
 .home .banner-box .home-pcb .home-pcb-box {
   background: #FFFFFF;
-  width: 634px;
+  width: 550px;
   height: 374px;
   border-radius: 2px;
 }
@@ -947,10 +990,10 @@ body {
   margin-top: 5px;
 }
 .home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap .w98 {
-  width: 98px;
+  width: 78px;
 }
 .home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap .w220 {
-  width: 220px;
+  width: 180px;
 }
 .home .banner-box .home-pcb .home-pcb-box .show-wrap dl dd .inp-wrap .sel {
   height: 50px;
@@ -988,15 +1031,20 @@ body {
 .home .banner-box .home-pcb .home-pcb-box .show-wrap .btn-wrap .iconzujiantubiaolaba {
   font-size: 20px;
   color: #dfba84;
+  vertical-align: top;
 }
 .home .banner-box .home-pcb .home-pcb-box .show-wrap .btn-wrap .btn-text {
   font-size: 12px;
   color: #e89721;
   margin-left: 5px;
-  margin-right: 51px;
+  margin-right: 45px;
+  width: 180px;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
 }
 .home .banner-box .home-pcb .home-pcb-box .show-wrap .btn-wrap .btn {
-  width: 220px;
+  width: 180px;
   height: 50px;
   background: #0081D2;
   border-radius: 2px;
