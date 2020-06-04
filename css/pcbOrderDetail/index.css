@@ -896,6 +896,9 @@ body {
   left: -68px;
   background: #E89721;
 }
+.pcb-order-detail .pcb-order-section {
+  padding-bottom: 80px;
+}
 .pcb-order-detail .pcb-order-section .tit {
   margin-top: 40px;
   margin-bottom: 20px;
