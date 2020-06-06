@@ -207,14 +207,14 @@
     /**
      * 星星评分
      */
-    star:function (obj,callback) {
-      $(obj).on('click',function () {
+    star: function (obj, callback) {
+      $(obj).on('click', function () {
         var index = $(this).index();
-  
-        $(""+obj+":lt(" + index + 1 + ")").removeClass("default");
-        $(""+obj+":gt(" + index + ")").addClass("default");
-  
-        typeof callback == 'function' && callback(index+1);
+        
+        $("" + obj + ":lt(" + index + 1 + ")").removeClass("default");
+        $("" + obj + ":gt(" + index + ")").addClass("default");
+        
+        typeof callback == 'function' && callback(index + 1);
       });
     }
   };

@@ -12,13 +12,82 @@
       
       //出货方式
       Util.tabs('#PcbUnit ul li', function (index, val) {
-        Observer.emit('pcb', {
-          type: 'PcbUnit',
-          index: index,
-          val: val
-        });
-        
+        //拼板方式 是否接受打叉板 代拼板参数
+        if (index == 0) {
+          $("#PanelWayContentParam").hide();
+          $("#separatingWay").hide();
+          $("#pcb_pbxout").hide();
+        } else if (index == 1) {
+          $("#PanelWayContentParam").hide();
+          
+          $("#separatingWay").slideDown();
+          $("#pcb_pbxout").slideDown();
+        } else if (index == 2) {
+          $("#separatingWay").hide();
+          
+          
+          $("#pcb_pbxout").slideDown();
+          
+          
+          layer.open({
+            type: 1,
+            title: '<span>PCB工艺信息</span>',
+            skin: 'pcb-layer-box',
+            area: ['780px', 'auto'],
+            shadeClose: true,
+            move: false,
+            content: $("#pcbHtml").html(),
+            success: function (layero, index) {
+              layui.form.render();
+              
+              opt.dataShow($("#widthNumberForModal").val(), $('#lengthNumberForModal').val() * 1, $("input[name='pcb_width']").val(), $("input[name='pcb_length']").val());
+            }
+          });
+          
+          
+        }
       });
+      
+      
+      //PCB工艺信息
+      
+      layui.form.on('select(undis)', function (data) {
+        
+        if (data.value == 0) {
+          $(".needHold").addClass('needHoldnone');
+        } else if (data.value == 1) {
+          $(".needHold").find('.left,.right').hide();
+          $(".needHold").find('.bottom,.top').show();
+          $(".needHold").removeClass('needHoldnone');
+          
+        } else if (data.value == 2) {
+          $(".needHold").find('.bottom,.top').hide();
+          $(".needHold").find('.left,.right').show();
+          $(".needHold").removeClass('needHoldnone');
+          
+        } else if (data.value == 3) {
+          $(".needHold").find('.left,.right').show();
+          $(".needHold").find('.bottom,.top').show();
+          $(".needHold").removeClass('needHoldnone');
+          
+        }
+      });
+      
+      
+      $(document).on('input propertychange', '#widthNumberForModal', function () {
+        var val = $(this).val() * 1;
+        if (val) {
+          opt.dataShow(val, $('#lengthNumberForModal').val() * 1, $("input[name='pcb_width']").val(), $("input[name='pcb_length']").val());
+        }
+      });
+      
+      $(document).on('input propertychange', '#lengthNumberForModal', function () {
+        var val = $(this).val() * 1;
+        if (val) {
+          opt.dataShow($('#widthNumberForModal').val() * 1, val, $("input[name='pcb_width']").val(), $("input[name='pcb_length']").val());
+        }
+      });
+      
       
       //拼版规则
       Util.tabs('#pcb_pbtype ul li', function (index, val) {
@@ -87,11 +156,15 @@
         
       });
       
+      //板材类型
+      Util.tabs('#BoardType ul li', function (index, val) {
+      
+      });
+      
       //FR4-TG
       Util.tabs('#FrTg ul li', function (index, val) {
       
       });
-      
       
       //板子厚度
       Util.tabs('#pcb_thickness ul li', function (index, val) {
@@ -118,7 +191,6 @@
       Util.tabs('#LineWeight ul li', function (index, val) {
       
       });
-      
       
       //最小孔径
       Util.tabs('#pcb_minholesize ul li', function (index, val) {
@@ -148,10 +220,10 @@
       Util.tabs('#SolderCover ul li', function (index, val) {
       
       });
-  
+      
       //沉金厚度
       Util.tabs('#goldThickness ul li', function (index, val) {
-    
+      
       });
       
       //测试选项
@@ -164,8 +236,31 @@
       
       });
       
-      //阻抗控制
-      Util.tabs('#ImpedanceSize ul li', function (index, val) {
+      //阻抗
+      $(document).on('click', '#ImpedanceSize ul li', function () {
+        var index = $(this).index();
+        
+        if (index == 0) {
+          $(this).addClass('curr').siblings('li').removeClass('curr');
+          $("#impedancereportzone").hide();
+        } else {
+          $("#ImpedanceSize ul li.one").removeClass('curr');
+          $("#impedancereportzone").show();
+          if ($(this).hasClass('curr')) {
+            $(this).removeClass('curr');
+          } else {
+            if ($("#ImpedanceSize ul li.curr").length >= 2) {
+              return false;
+            }
+            $(this).addClass('curr');
+          }
+        }
+        
+      });
+      
+      
+      //阻抗报告
+      Util.tabs('#impedancereportzone ul li', function (index, val) {
       
       });
       
@@ -181,20 +276,20 @@
           $(this).text('展开');
           $(this).parents('.pcb-block-slideup').find('.pcb-block').slideUp();
           
-          if($(this).attr('data-type') == 'time'){
+          if ($(this).attr('data-type') == 'time') {
             $(this).parents().addClass('timebor');
             $(this).parents().parents().children('.delivery').slideUp();
           }
           
-          if($(this).attr('data-type') == 'logistics'){
+          if ($(this).attr('data-type') == 'logistics') {
             $(this).parents().parents().children('.logistics').slideUp();
           }
-  
-          if($(this).attr('data-type') == 'param'){
+          
+          if ($(this).attr('data-type') == 'param') {
             $(this).parents().parents().children('.detail').slideUp();
           }
-  
-          if($(this).attr('data-type') == 'order'){
+          
+          if ($(this).attr('data-type') == 'order') {
             $(this).parents().parents().find('.cost-wrap').slideUp();
           }
           
@@ -202,20 +297,20 @@
           $(this).text('收缩');
           $(this).parents('.pcb-block-slideup').find('.pcb-block').slideDown();
           
-          if($(this).attr('data-type') == 'time'){
+          if ($(this).attr('data-type') == 'time') {
             $(this).parents().removeClass('timebor');
             $(this).parents().parents().children('.delivery').slideDown();
           }
-  
-          if($(this).attr('data-type') == 'logistics'){
+          
+          if ($(this).attr('data-type') == 'logistics') {
             $(this).parents().parents().children('.logistics').slideDown();
           }
-  
-          if($(this).attr('data-type') == 'param'){
+          
+          if ($(this).attr('data-type') == 'param') {
             $(this).parents().parents().children('.detail').slideDown();
           }
-  
-          if($(this).attr('data-type') == 'order'){
+          
+          if ($(this).attr('data-type') == 'order') {
             $(this).parents().parents().find('.cost-wrap').slideDown();
           }
         }
@@ -275,44 +370,7 @@
       //监听函数
       Observer.on('pcb', function (e) {
         
-        if (e.args.type == 'PcbUnit') {
-          console.log(e.args.type)
-          if (e.args.index == 0) {
-            $("#pcb_pbtype").hide();
-            $("#pcb_pbxout").hide();
-            $('.num-tips').css('visibility','hidden')
-            $("#pcb_pbxy").hide();
-            $("#pcb_pbxys").hide();
-            $("#pcb_division").hide();
-            $("#pcb_slot").hide();
-            $('.pcsorset').text('PCS');
-            $('.cc-tips').text('*若不清楚尺寸,可填写1*1')
-          } else if (e.args.index == 1) {
-            $("#pcb_pbtype").show();
-            $("#pcb_pbxout").show();
-            $('.num-tips').css('visibility','visible');
-            $('.pcsorset').text('SET');
-            $('.cc-tips').text('*此处填拼版后的大片尺寸')
-          }
-        }
-        
-        
-        if (e.args.type == 'pcb_pbtype') {
-          if (e.args.index == 0) {
-            $("#pcb_pbxy").hide();
-            $("#pcb_pbxys").hide();
-            $("#pcb_division").hide();
-            $("#pcb_slot").hide();
-          } else if (e.args.index == 1) {
-            $("#pcb_pbxy").show();
-            $("#pcb_pbxys").show();
-            $("#pcb_division").show();
-            $("#pcb_slot").show();
-          }
-          
-        }
-        
-        
+        //板子层数
         if (e.args.type == 'pcb_layer') {
           
           //请提供多层板层压叠序
@@ -368,6 +426,7 @@
           
           
         }
+        
         //收集表单数据
         opt.formObj[e.args.type] = e.args.val;
         
@@ -408,6 +467,21 @@
       }
       
       
+    },
+    dataShow: function (width, length, widthVal, lengthVal) {
+      var arrHtml = [];
+      for (var i = 0; i < width; i++) {
+        arrHtml.push('<tr>');
+        for (var j = 0; j < length; j++) {
+          arrHtml.push('<td>' + widthVal + '*' + lengthVal + '</td>');
+        }
+        arrHtml.push('</tr>');
+      }
+      
+      
+      $(".datalist").empty().html(arrHtml.join(''));
+      
+      //console.log($(".datalist").height())
     },
     onscrollFn: function () {
       if ($("#quote-scroll").length > 0) {
