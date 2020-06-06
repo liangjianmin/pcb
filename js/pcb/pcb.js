@@ -153,6 +153,17 @@
           });
         }
         
+        //如果板子层数选8层
+        
+        if (layer == 8 || layer == 10 || layer == 12) {
+          Observer.emit('pcb', {
+            type: 'pcb_layer',
+            thickness: [0.4, 0.6, 0.8, 2.4],
+            index: index,
+            val: val
+          });
+        }
+        
         
       });
       
