@@ -352,7 +352,7 @@
                                     <div class="sl-div">
                                         <i class="arrow"></i>
                                         <p class="img-p">
-                                            <img src="/images/pcb/sl1.png" alt="">
+                                            <img src="./images/pcb/sl1.png" alt="">
                                         </p>
                                     </div>
                                 </div>
@@ -412,7 +412,7 @@
                             </div>
                         </div>
                         <!--是否接受打叉板-->
-                        <div class="pcb-block lbBox" id="pcb_pbxout" style="display: none">
+                        <div class="pcb-block lbBox" id="pcb_acceptCrossedZone" style="display: none">
                             <label class="lineBlock va-m">
                                 是否接受打叉板：
                                 <span class="iconfont iconiconfontquestion va-m">
@@ -688,7 +688,7 @@
                                 <li>不需要</li>
                             </ul>
                         </div>
-                        <div class="pcb-block lbBox mt20" id="">
+                        <div class="pcb-block lbBox mt20" id="BGANun">
                             <label class="lineBlock va-m">BGA数量：<span class="iconfont iconiconfontquestion va-m">
                                 <div class="arrow-tips">
                                     <i class="arrow"></i>
@@ -696,9 +696,11 @@
                                 </div>
                             </span></label>
                             <div class="pcb-block-inline lineBlock va-m clr">
-                                <input type="number"  placeholder="" class="va-m inp w138" value="0">
-                                <p class="tiptext lineBlock fr4-tips va-m" style="margin-left: 5px;margin-top: 0px;">个</p>
-                                <p class="tiptext lineBlock fr4-tips va-m" style="margin-left: 8px;margin-top: 0px;">不*BGA最小焊盘0.25mm。</p>
+                                <ul class="pcb-block-inline lineBlock va-m clr">
+                                    <li class="curr">有</li>
+                                    <li>无</li>
+                                </ul>
+                                <p class="tiptext lineBlock fr4-tips va-m" style="margin-left: 8px;margin-top: 0px;">*BGA最小焊盘0.25mm。</p>
                             </div>
                         </div>
                         <div class="pcb-block lbBox mt20" id="ImpedanceSize">
@@ -1280,7 +1282,10 @@
             <div class="fl l">
                 * 如果您对我们的拼版方式有疑问，请联系我们的<em>在线客服人员</em>
             </div>
-            <a class="fr btn" href="javascript:;" id="save">保存</a>
+            <div class="fr">
+                <a class="btn-calel lineBlock va-m" href="javascript:;" id="canel">取消</a>
+                <a class="btn lineBlock va-m" href="javascript:;" id="save">保存</a>
+            </div>
         </div>
     </div>
 
@@ -1330,6 +1335,11 @@
     $(document).on('click', '#save', function () {
       layer.closeAll();
       $("#PanelWayContentParam").show();
+    });
+
+    //PCB工艺信息-取消
+    $(document).on('click', '#canel', function () {
+      layer.closeAll();
     });
 
 

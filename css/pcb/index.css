@@ -1926,6 +1926,40 @@ label .iconiconfontquestion .arrow-tips .tips {
 .pcb-layer-box .pcb-way-layer .design .design-wrap .needHold.needHoldnone .bottom {
   display: none !important;
 }
+.pcb-layer-box .pcb-way-layer .design .design-wrap .needHold.needHoldleft {
+  padding: 0;
+  border: none;
+}
+.pcb-layer-box .pcb-way-layer .design .design-wrap .needHold.needHoldleft .left {
+  height: 98%;
+  left: -2px;
+  border: 1px solid #0081D2;
+}
+.pcb-layer-box .pcb-way-layer .design .design-wrap .needHold.needHoldleft .right {
+  height: 98%;
+  right: 0;
+  border: 1px solid #0081D2;
+  border-left: none;
+}
+.pcb-layer-box .pcb-way-layer .design .design-wrap .needHold.needHoldleft table {
+  width: 540px;
+  margin: 0 auto;
+  border-left: none;
+}
+.pcb-layer-box .pcb-way-layer .design .design-wrap .needHold.needHoldtop {
+  padding: 10px 0;
+  border: none;
+}
+.pcb-layer-box .pcb-way-layer .design .design-wrap .needHold.needHoldtop .top {
+  top: -7px;
+  border: 1px solid #0081D2;
+  border-bottom: none;
+}
+.pcb-layer-box .pcb-way-layer .design .design-wrap .needHold.needHoldtop .bottom {
+  bottom: -7px;
+  border: 1px solid #0081D2;
+  border-top: none;
+}
 .pcb-layer-box .pcb-way-layer .design .design-wrap table {
   width: 100%;
   margin: 0 auto;
@@ -1966,12 +2000,23 @@ label .iconiconfontquestion .arrow-tips .tips {
 .pcb-layer-box .pcb-way-layer .bnt-wrap .l em {
   color: #0081d2;
 }
+.pcb-layer-box .pcb-way-layer .bnt-wrap .btn-calel {
+  width: 118px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #5c5f66;
+  margin-right: 5px;
+  border: 1px solid #E6EAF2;
+}
 .pcb-layer-box .pcb-way-layer .bnt-wrap .btn {
   width: 120px;
   height: 40px;
   line-height: 40px;
   text-align: center;
-  display: block;
   background: #0081D2;
   border-radius: 2px;
   font-size: 14px;

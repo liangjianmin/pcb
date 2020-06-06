@@ -14,20 +14,21 @@
       Util.tabs('#PcbUnit ul li', function (index, val) {
         //拼板方式 是否接受打叉板 代拼板参数
         if (index == 0) {
-          $("#PanelWayContentParam").hide();
-          $("#separatingWay").hide();
-          $("#pcb_pbxout").hide();
+          $("#PanelWayContentParam").hide(); //代拼板参数
+          $("#separatingWay").hide();//分割方式
+          $("#pcb_acceptCrossedZone").hide();//是否接受打叉板
+          $("#PanelWayContent").hide();  //拼板方式
+          
         } else if (index == 1) {
-          $("#PanelWayContentParam").hide();
+          $("#PanelWayContentParam").hide(); //代拼板参数
+          $("#separatingWay").slideDown(); //分割方式
+          $("#pcb_acceptCrossedZone").slideDown(); //是否接受打叉板
+          $("#PanelWayContent").slideDown();  //拼板方式
           
-          $("#separatingWay").slideDown();
-          $("#pcb_pbxout").slideDown();
         } else if (index == 2) {
-          $("#separatingWay").hide();
-          
-          
-          $("#pcb_pbxout").slideDown();
-          
+          $("#separatingWay").hide();   //分割方式
+          $("#PanelWayContent").hide();  //拼板方式
+          $("#pcb_acceptCrossedZone").slideDown();  //是否接受打叉板
           
           layer.open({
             type: 1,
@@ -50,26 +51,34 @@
       
       
       //PCB工艺信息
-      
       layui.form.on('select(undis)', function (data) {
         
         if (data.value == 0) {
           $(".needHold").addClass('needHoldnone');
+          
         } else if (data.value == 1) {
           $(".needHold").find('.left,.right').hide();
           $(".needHold").find('.bottom,.top').show();
+          
           $(".needHold").removeClass('needHoldnone');
+          $(".needHold").removeClass('needHoldleft');
+          $(".needHold").addClass('needHoldtop');
           
         } else if (data.value == 2) {
           $(".needHold").find('.bottom,.top').hide();
           $(".needHold").find('.left,.right').show();
+          
           $(".needHold").removeClass('needHoldnone');
+          $(".needHold").removeClass('needHoldtop');
+          $(".needHold").addClass('needHoldleft');
           
         } else if (data.value == 3) {
           $(".needHold").find('.left,.right').show();
           $(".needHold").find('.bottom,.top').show();
-          $(".needHold").removeClass('needHoldnone');
           
+          $(".needHold").removeClass('needHoldnone');
+          $(".needHold").removeClass('needHoldleft');
+          $(".needHold").removeClass('needHoldtop');
         }
       });
       
@@ -99,9 +108,9 @@
       });
       
       //是否接受打叉板
-      Util.tabs('#pcb_pbxout ul li', function (index, val) {
+      Util.tabs('#pcb_acceptCrossedZone ul li', function (index, val) {
         Observer.emit('pcb', {
-          type: 'pcb_pbxout',
+          type: 'pcb_acceptCrossedZone',
           index: index,
           val: val
         });
@@ -244,6 +253,11 @@
       
       //金(锡)手指
       Util.tabs('#Goldfinger ul li', function (index, val) {
+      
+      });
+      
+      //BGA数量
+      Util.tabs('#BGANun ul li', function (index, val) {
       
       });
       
@@ -489,10 +503,8 @@
         arrHtml.push('</tr>');
       }
       
-      
       $(".datalist").empty().html(arrHtml.join(''));
       
-      //console.log($(".datalist").height())
     },
     onscrollFn: function () {
       if ($("#quote-scroll").length > 0) {
