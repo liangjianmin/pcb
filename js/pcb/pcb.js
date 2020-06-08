@@ -41,6 +41,8 @@
             success: function (layero, index) {
               layui.form.render();
               
+              $('input[name="pcb_num_layer"]').val($('input[name="pcb_num"]').val());
+              
               opt.dataShow($("#widthNumberForModal").val(), $('#lengthNumberForModal').val() * 1, $("input[name='pcb_width']").val(), $("input[name='pcb_length']").val());
             }
           });
