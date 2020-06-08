@@ -2022,4 +2022,10 @@ label .iconiconfontquestion .arrow-tips .tips {
   font-size: 14px;
   color: #ffffff;
 }
+.pcb-layer-box .layui-input,
+.layui-select,
+.layui-textarea {
+  height: 28px !important;
+  line-height: 28px !important;
+}
 /*# sourceMappingURL=index.css.map */
