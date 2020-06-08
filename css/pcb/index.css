@@ -1931,12 +1931,12 @@ label .iconiconfontquestion .arrow-tips .tips {
   border: none;
 }
 .pcb-layer-box .pcb-way-layer .design .design-wrap .needHold.needHoldleft .left {
-  height: 98%;
+  height: calc(100% - 2px);
   left: -2px;
   border: 1px solid #0081D2;
 }
 .pcb-layer-box .pcb-way-layer .design .design-wrap .needHold.needHoldleft .right {
-  height: 98%;
+  height: calc(100% - 2px);
   right: 0;
   border: 1px solid #0081D2;
   border-left: none;
@@ -1968,7 +1968,7 @@ label .iconiconfontquestion .arrow-tips .tips {
   border: 1px solid #0081D2;
 }
 .pcb-layer-box .pcb-way-layer .design .design-wrap table tr td {
-  height: 30px;
+  height: 56px;
   border-right: 1px solid #0081D2;
   border-bottom: 1px solid #0081D2;
   font-size: 14px;
@@ -1991,6 +1991,9 @@ label .iconiconfontquestion .arrow-tips .tips {
   color: #3a3c40;
   font-weight: bold;
   margin-left: 10px;
+}
+.pcb-layer-box .pcb-way-layer .bnt-wrap {
+  margin-top: 30px;
 }
 .pcb-layer-box .pcb-way-layer .bnt-wrap .l {
   margin-top: 10px;

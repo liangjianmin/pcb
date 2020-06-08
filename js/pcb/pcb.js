@@ -34,7 +34,7 @@
             type: 1,
             title: '<span>PCB工艺信息</span>',
             skin: 'pcb-layer-box',
-            area: ['780px', '800px'],
+            area: ['780px', '880px'],
             shadeClose: true,
             move: false,
             content: $("#pcbHtml").html(),
