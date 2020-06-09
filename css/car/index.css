@@ -741,7 +741,6 @@ body {
 }
 .car-section {
   padding-top: 40px;
-  padding-bottom: 70px;
   background: #fff;
 }
 .car-section .car-tit .l {
@@ -852,6 +851,27 @@ body {
   color: #0081d2;
   display: block;
   margin-left: 34px;
+  position: relative;
+}
+.car-section .car-list table tr td.box1 .detail:hover .detail-div {
+  display: block;
+}
+.car-section .car-list table tr td.box1 .detail .detail-div {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 900px;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+.car-section .car-list table tr td.box1 .detail .detail-div .title {
+  background: #3A3C40;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 12px;
+  opacity: 0.5;
 }
 .car-section .car-list table tr td.box1 .relation {
   margin-top: 7px;
@@ -1094,8 +1114,70 @@ body {
   color: #5c5f66;
   line-height: 20px;
 }
+.car-section .form-div {
+  height: 120px;
+  background-color: #0081D2;
+}
+.car-section .form-div .width-1180 {
+  height: 120px;
+}
+.car-section .form-div .width-1180 .l {
+  color: #fff;
+}
+.car-section .form-div .width-1180 .l h3 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 24px 0 10px;
+}
+.car-section .form-div .width-1180 .l p {
+  font-size: 14px;
+}
+.car-section .form-div .width-1180 .r {
+  padding-top: 35px;
+  height: 50px;
+}
+.car-section .form-div .width-1180 .r .input-v {
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 0 10px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #959BA6;
+  width: 100px;
+}
+.car-section .form-div .width-1180 .r span {
+  font-size: 14px;
+  color: #fff;
+  padding: 0 10px;
+}
+.car-section .form-div .width-1180 .r .sel-div {
+  width: 160px;
+  font-size: 14px;
+  color: #959BA6;
+  margin-left: 10px;
+}
+.car-section .form-div .width-1180 .r .sel-div input {
+  height: 50px;
+}
+.car-section .form-div .width-1180 .r .sel-div .layui-form-select dl dd.layui-this {
+  background-color: #0081D2;
+}
+.car-section .form-div .width-1180 .r .btn {
+  width: 160px;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  cursor: pointer;
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
 .material-layer dl {
-  padding: 40px 0;
   white-space: nowrap;
   text-align: center;
 }
@@ -1104,18 +1186,15 @@ body {
   margin-right: 39px;
   padding-right: 60px;
 }
-.material-layer dl dd p {
-  margin-bottom: 20px;
-}
 .material-layer dl dd p .t1 {
   width: 112px;
-  font-size: 14px;
+  font-size: 12px !important;
   color: #959ba6;
   text-align: left;
 }
 .material-layer dl dd p .t2 {
   width: 144px;
-  font-size: 14px;
+  font-size: 12px !important;
   color: #3a3c40;
   font-weight: bold;
   text-align: left;
@@ -1346,4 +1425,3 @@ body {
   top: 0;
   z-index: 999;
 }
-/*# sourceMappingURL=index.css.map */
