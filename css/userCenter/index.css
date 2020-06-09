@@ -811,8 +811,8 @@ body {
 }
 .user-center .user-center-r .user-center-head .user-center-head-l {
   position: relative;
-  width: 460px;
-  height: 210px;
+  width: 380px;
+  height: 291px;
   background: #FFFFFF;
   border-radius: 40px 0 0 0;
   border: 1px solid #E6EAF2;
@@ -820,38 +820,40 @@ body {
 }
 .user-center .user-center-r .user-center-head .user-center-head-l .pic {
   width: 88px;
-  margin-left: 30px;
-  margin-right: 40px;
   cursor: pointer;
+  margin: 30px auto 0;
 }
 .user-center .user-center-r .user-center-head .user-center-head-l .pic img {
   width: 88px;
   height: 88px;
 }
 .user-center .user-center-r .user-center-head .user-center-head-l .pic p {
-  margin-top: 12px;
+  margin-top: 10px;
   text-align: center;
   font-size: 12px;
   color: #959ba6;
+}
+.user-center .user-center-r .user-center-head .user-center-head-l .text {
+  text-align: center;
 }
 .user-center .user-center-r .user-center-head .user-center-head-l .text .t1 {
   font-size: 20px;
   color: #3a3c40;
   font-weight: bold;
   margin-bottom: 9px;
+  padding-top: 10px;
 }
 .user-center .user-center-r .user-center-head .user-center-head-l .text .t2 {
   font-size: 12px;
   color: #959ba6;
 }
 .user-center .user-center-r .user-center-head .user-center-head-l .text .bar {
-  margin-top: 22px;
+  margin-top: 19px;
   white-space: nowrap;
 }
 .user-center .user-center-r .user-center-head .user-center-head-l .text .bar li {
   text-align: center;
-  padding-right: 46px;
-  margin-right: 36px;
+  width: 50%;
 }
 .user-center .user-center-r .user-center-head .user-center-head-l .text .bar li:first-child {
   border-right: 1px solid #E6EAF2;
@@ -876,21 +878,31 @@ body {
   text-align: center;
   line-height: 28px;
 }
-.user-center .user-center-r .user-center-head .user-center-head-l .setting {
-  position: absolute;
-  right: 18px;
-  top: 20px;
-  font-size: 12px;
-  color: #0081d2;
-}
 .user-center .user-center-r .user-center-head .user-center-head-r {
-  width: 496px;
-  height: 210px;
+  width: 577px;
+  height: 291px;
   background: #F7F9FC;
   border-radius: 0px 2px 2px 0px;
   border: 1px solid #E6EAF2;
   border-left: none;
   text-align: center;
+}
+.user-center .user-center-r .user-center-head .user-center-head-r .my-account {
+  padding: 30px;
+  border-bottom: 1px solid #E6EAF2;
+}
+.user-center .user-center-r .user-center-head .user-center-head-r .my-account h3 {
+  color: #3A3C40;
+  font-size: 16px;
+  font-weight: 600;
+}
+.user-center .user-center-r .user-center-head .user-center-head-r .my-account .setting {
+  font-size: 12px;
+  color: #0081D2;
+  cursor: pointer;
+}
+.user-center .user-center-r .user-center-head .user-center-head-r .text-warpper {
+  margin-top: 40px;
 }
 .user-center .user-center-r .user-center-head .user-center-head-r .text-1 {
   padding-right: 29px;
@@ -898,18 +910,31 @@ body {
   border-right: 1px solid #E6EAF2;
 }
 .user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li {
-  width: 200px;
+  width: 250px;
+}
+.user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50% 50%;
+  border: 1px solid #E6EAF2;
+  box-sizing: border-box;
+  margin-right: 18px;
 }
 .user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li:first-child {
   margin-bottom: 30px;
 }
 .user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t1 {
   margin-bottom: 6px;
+  width: 182px;
 }
 .user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t1 .l {
   font-size: 14px;
   color: #5c5f66;
   margin-top: 5px;
+}
+.user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t1 .r {
+  position: relative;
+  top: 3px;
 }
 .user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t1 .r em {
   font-size: 14px;
@@ -925,6 +950,7 @@ body {
   font-size: 14px;
   color: #3a3c40;
   font-weight: bold;
+  margin-right: 10px;
 }
 .user-center .user-center-r .user-center-head .user-center-head-r .text-1 ul li .t2 em {
   font-size: 14px;
@@ -1359,4 +1385,3 @@ body {
 .user-center .user-center-r .user-center-section .drying-list ul li a .text .star dd.default {
   color: #afb2bc;
 }
-/*# sourceMappingURL=index.css.map */

@@ -664,6 +664,19 @@ body {
   font-size: 14px;
   color: #0081d2;
 }
+.certification .common-title {
+  color: #3A3C40;
+  text-align: center;
+}
+.certification .common-title span {
+  width: 100px;
+  height: 2px;
+  background-color: #E6EAF2;
+}
+.certification .common-title b {
+  font-size: 26px;
+  margin: 0 32px;
+}
 .certification .head-text {
   width: 100%;
   height: 300px;
@@ -680,4 +693,160 @@ body {
   font-size: 16px;
   color: #ffffff;
 }
-/*# sourceMappingURL=index.css.map */
+.certification .section-lc {
+  background-color: #F7F9FC;
+  padding-bottom: 153px;
+}
+.certification .section-lc .section1 {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+}
+.certification .section-lc .section1 .item {
+  background: #ffffff;
+  border-radius: 4px;
+  width: 580px;
+  height: 220px;
+  box-sizing: border-box;
+  padding: 20px 50px 30px 50px;
+}
+.certification .section-lc .section1 .item:last-child {
+  margin-left: 20px;
+}
+.certification .section-lc .section1 .item img {
+  height: 170px;
+  width: 170px;
+}
+.certification .section-lc .section1 .item .desc {
+  padding: 50px 0 0 70px;
+}
+.certification .section-lc .section1 .item h3 {
+  font-size: 18px;
+  color: #3A3C40;
+  font-weight: 600;
+}
+.certification .section-lc .section1 .item p {
+  font-size: 14px;
+  color: #737780;
+  line-height: 25px;
+  margin-top: 11px;
+}
+.certification .section-lc .section2 {
+  width: 1180px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+.certification .section-lc .section2 .lc-items .item {
+  text-align: center;
+}
+.certification .section-lc .section2 .lc-items .item img {
+  height: 170px;
+  width: 170px;
+}
+.certification .section-lc .section2 .lc-items .item p {
+  font-size: 14px;
+  color: #737780;
+}
+.certification .section-lc .section2 .lc-items .arrow-div {
+  position: relative;
+  top: -10px;
+}
+.certification .section-lc .section2 .lc-items .arrow-div .radius {
+  width: 6px;
+  height: 6px;
+  background: #E6EAF2;
+  border-radius: 50% 50%;
+}
+.certification .section-lc .section2 .lc-items .arrow-div .radius.ml7 {
+  margin-left: 7px;
+}
+.certification .section-lc .section2 .lc-items .arrow-div .radius.ml14 {
+  margin-left: 14px;
+}
+.certification .section-lc .section2 .lc-items .arrow-div .radius.mr7 {
+  margin-right: 7px;
+}
+.certification .section-lc .section2 .lc-items .arrow-div .arrow-icon {
+  height: 30px;
+  width: 30px;
+  background: url('../../images/certification/lc-arrow.png') no-repeat;
+  background-size: 100% 100%;
+  margin: 0 12px;
+}
+.certification .section-ys {
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+.certification .section-ys .section {
+  width: 1180px;
+  margin: 0 auto;
+}
+.certification .section-ys .sqrz-btn {
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  margin: 0 auto;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+.certification .section-ys .sqrz-btn.sqrz-btn-y {
+  background-color: #E89721;
+  position: relative;
+  top: -30px;
+}
+.certification .section-ys .sqrz-btn.sqrz-btn-b {
+  background-color: #0081D2;
+  margin-top: 120px;
+}
+.certification .section-ys .common-title {
+  margin-top: 70px;
+}
+.certification .section-ys .items {
+  margin-top: 40px;
+  text-align: center;
+}
+.certification .section-ys .items .item {
+  text-align: center;
+}
+.certification .section-ys .items .item img {
+  height: 140px;
+  width: 140px;
+}
+.certification .section-ys .items .item h3 {
+  color: #3A3C40;
+  font-size: 18px;
+  font-weight: 600;
+}
+.certification .section-ys .items .item p {
+  color: #737780;
+  font-size: 14px;
+  padding-top: 10px;
+}
+.certification .section-ys .items .line {
+  height: 130px;
+  border: 1px dashed #E6EAF2;
+  box-sizing: border-box;
+  margin: 0 127px;
+}
+.certification .rules {
+  width: 1180px;
+  border-top: 1px solid #E6EAF2;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+.certification .rules .title {
+  font-size: 18px;
+  color: #3A3C40;
+  font-weight: 600;
+  padding: 50px 0 20px;
+}
+.certification .rules .desc {
+  color: #737780;
+  font-size: 14px;
+  line-height: 26px;
+}
