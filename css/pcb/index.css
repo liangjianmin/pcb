@@ -1703,6 +1703,16 @@ label .iconiconfontquestion .arrow-tips .tips {
   font-size: 14px;
   margin-left: 10px;
 }
+.pcb-layer-box .pcb-way-layer .pcb-way-layer-input .pcb-way-layer-wrap select {
+  height: 28px;
+  line-height: 28px;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  text-indent: 1em;
+  font-size: 14px;
+  color: #3a3c40;
+  background: #F7F9FC;
+}
 .pcb-layer-box .pcb-way-layer .pcb-way-layer-input .pcb-way-layer-wrap .type {
   margin-bottom: 10px;
 }
