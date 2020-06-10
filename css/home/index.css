@@ -672,6 +672,7 @@ body {
   width: 100%;
   height: 470px;
   overflow: hidden;
+  z-index: 2;
 }
 .home .banner-box .banner .bd {
   height: 470px;
@@ -721,13 +722,14 @@ body {
   width: 1180px;
   height: 374px;
   margin: 0 auto;
-  z-index: 2;
 }
 .home .banner-box .home-pcb .home-pcb-box {
   background: #FFFFFF;
   width: 550px;
   height: 374px;
   border-radius: 2px;
+  position: relative;
+  z-index: 3;
 }
 .home .banner-box .home-pcb .home-pcb-box .tab {
   height: 49px;
