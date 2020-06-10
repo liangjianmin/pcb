@@ -664,6 +664,9 @@ body {
   font-size: 14px;
   color: #0081d2;
 }
+.w118 {
+  width: 118px !important;
+}
 .w138 {
   width: 138px !important;
 }
@@ -808,6 +811,10 @@ body {
   color: #5c5f66;
   cursor: pointer;
   padding: 0 13px;
+}
+.pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline li:hover {
+  border: 1px solid #0081D2;
+  position: relative;
 }
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline li.curr {
   height: 26px;
@@ -1164,6 +1171,9 @@ body {
   cursor: pointer;
   padding: 0 13px;
 }
+.pcb .section .pcb-l .pcb-block-slideup .pcb-block .pcb-block-inline li:hover {
+  border: 1px solid #0081D2;
+}
 .pcb .section .pcb-l .pcb-block-slideup .pcb-block .pcb-block-inline li.curr {
   border: 2px solid #0081D2;
   color: #3a3c40;
@@ -1329,6 +1339,7 @@ body {
 .pcb .section .pcb-r .pcb-r-box .detail .detail-wrap tr td {
   height: 38px;
   border-bottom: 1px solid #E6EAF2;
+  white-space: nowrap;
 }
 .pcb .section .pcb-r .pcb-r-box .detail .detail-wrap tr td.bornone {
   border-bottom: none;
@@ -1341,6 +1352,11 @@ body {
 .pcb .section .pcb-r .pcb-r-box .detail .detail-wrap tr td .t2 {
   font-size: 14px;
   color: #3a3c40;
+  max-width: 92px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  vertical-align: middle;
 }
 .pcb .section .pcb-r .pcb-r-boxs {
   width: 338px;
@@ -1572,28 +1588,28 @@ body {
   text-align: center;
 }
 .wt1 {
-  height: 54px;
-  width: 156px;
-  margin-left: 95px;
+  height: 59px;
+  width: 178px;
+  margin-left: 20px;
 }
 .wt2 {
-  height: 28px;
-  width: 70px;
+  height: 29px;
+  width: 74px;
   margin-left: 10px;
 }
 .wt3 {
-  height: 27px;
-  width: 89px;
+  height: 29px;
+  width: 77px;
   margin-left: 10px;
 }
 .wt4 {
-  height: 32px;
-  width: 80px;
+  height: 39px;
+  width: 67px;
   margin-left: 10px;
 }
 .wt5 {
-  height: 36px;
-  width: 31px;
+  height: 43px;
+  width: 36px;
   margin-left: 10px;
 }
 label .iconiconfontquestion {

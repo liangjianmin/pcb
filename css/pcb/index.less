@@ -1,5 +1,9 @@
 @import '../common/base.less';
 
+.w118 {
+  width: 118px !important;
+}
+
 .w138 {
   width: 138px !important;
 }
@@ -175,6 +179,11 @@
               color: #5c5f66;
               cursor: pointer;
               padding: 0 13px;
+
+              &:hover {
+                border: 1px solid #0081D2;
+                position: relative;
+              }
 
               &.curr {
                 height: 26px;
@@ -631,6 +640,10 @@
               cursor: pointer;
               padding: 0 13px;
 
+              &:hover {
+                border: 1px solid #0081D2;
+              }
+
               &.curr {
                 border: 2px solid #0081D2;
                 color: #3a3c40;
@@ -832,7 +845,7 @@
               td {
                 height: 38px;
                 border-bottom: 1px solid #E6EAF2;
-
+                white-space: nowrap;
                 &.bornone {
                   border-bottom: none;
                 }
@@ -846,6 +859,11 @@
                 .t2 {
                   font-size: 14px;
                   color: #3a3c40;
+                  max-width: 92px;
+                  overflow: hidden;
+                  display: inline-block;
+                  text-overflow: ellipsis;
+                  vertical-align: middle;
                 }
               }
             }
@@ -1134,32 +1152,32 @@
 }
 
 .wt1 {
-  height: 54px;
-  width: 156px;
-  margin-left: 95px;
+  height: 59px;
+  width: 178px;
+  margin-left: 20px;
 }
 
 .wt2 {
-  height: 28px;
-  width: 70px;
+  height: 29px;
+  width: 74px;
   margin-left: 10px;
 }
 
 .wt3 {
-  height: 27px;
-  width: 89px;
+  height: 29px;
+  width: 77px;
   margin-left: 10px;
 }
 
 .wt4 {
-  height: 32px;
-  width: 80px;
+  height: 39px;
+  width: 67px;
   margin-left: 10px;
 }
 
 .wt5 {
-  height: 36px;
-  width: 31px;
+  height: 43px;
+  width: 36px;
   margin-left: 10px;
 }
 
@@ -1296,7 +1314,7 @@ label {
           }
         }
 
-        select{
+        select {
           height: 28px;
           line-height: 28px;
           border-radius: 2px;
@@ -1571,6 +1589,7 @@ label {
               left: -2px;
               border: 1px solid #0081D2;
             }
+
             .right {
               height: calc(100% - 2px);
               right: 0;
@@ -1584,7 +1603,8 @@ label {
               border-left: none;
             }
           }
-          &.needHoldtop{
+
+          &.needHoldtop {
             padding: 10px 0;
             border: none;
 
@@ -1593,6 +1613,7 @@ label {
               border: 1px solid #0081D2;
               border-bottom: none;
             }
+
             .bottom {
               bottom: -7px;
               border: 1px solid #0081D2;
@@ -1644,6 +1665,7 @@ label {
 
     .bnt-wrap {
       margin-top: 30px;
+
       .l {
         margin-top: 10px;
         font-size: 14px;
@@ -1654,7 +1676,8 @@ label {
         }
 
       }
-      .btn-calel{
+
+      .btn-calel {
         width: 118px;
         height: 38px;
         line-height: 38px;
@@ -1666,6 +1689,7 @@ label {
         margin-right: 5px;
         border: 1px solid #E6EAF2;
       }
+
       .btn {
         width: 120px;
         height: 40px;
@@ -1680,7 +1704,7 @@ label {
   }
 }
 
-.pcb-layer-box .layui-input, .layui-select, .layui-textarea{
+.pcb-layer-box .layui-input, .layui-select, .layui-textarea {
   height: 28px !important;
   line-height: 28px !important;
 }
