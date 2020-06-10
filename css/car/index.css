@@ -1421,8 +1421,6 @@ body {
   margin: 0 auto;
 }
 .onsroll {
-  position: static;
-  top: 0;
-  z-index: 999;
+  position: static !important;
 }
 /*# sourceMappingURL=index.css.map */
