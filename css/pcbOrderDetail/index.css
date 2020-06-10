@@ -929,6 +929,26 @@ body {
   margin-bottom: 14px;
   white-space: nowrap;
 }
+.pcb-order-detail .pcb-order-section .text-order .no-invoice {
+  padding-bottom: 10px;
+}
+.pcb-order-detail .pcb-order-section .text-order .no-invoice a {
+  width: 118px;
+  height: 38px;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  line-height: 38px;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  color: #0081d2;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.pcb-order-detail .pcb-order-section .text-order .no-invoice span {
+  font-size: 12px;
+  color: #959ba6;
+}
 .pcb-order-detail .pcb-order-section .text-order span {
   width: 70px;
   text-align: left;
