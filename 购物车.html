@@ -977,20 +977,17 @@
 
     if ($("#quote-scroll").length > 0) {
       $(window).scroll(function () {
-        var totalheight = parseFloat($(window).height()) + parseFloat($(window).scrollTop());
-        var documentheight = parseFloat($(document).height());
-        if (documentheight - totalheight <= 300) {
-          $("#quote-scroll").addClass('onsroll');
-        } else {
-          $("#quote-scroll").removeClass('onsroll');
-        }
-
+        setTimeout(function () {
+          var totalheight = parseFloat($(window).height()) + parseFloat($(window).scrollTop());
+          var documentheight = parseFloat($(document).height());
+          if (documentheight - totalheight <= 300) {
+            $("#quote-scroll").addClass('onsroll');
+          } else {
+            $("#quote-scroll").removeClass('onsroll');
+          }
+        },800)
       })
-
-
     }
-
-
   })
 </script>
 </body>
