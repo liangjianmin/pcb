@@ -809,6 +809,10 @@ body {
   color: #ffffff;
   display: block;
 }
+.iconzujiantubiaojiantou20 {
+  font-size: 20px;
+  color: #acb3bf;
+}
 .applyInvoice .tit {
   width: 940px;
   height: 40px;
@@ -1460,10 +1464,18 @@ body {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+.invoice-record .invoice-record-form .l {
+  position: relative;
+}
 .invoice-record .invoice-record-form .l label {
   font-size: 14px;
   color: #5c5f66;
   margin-right: 10px;
+}
+.invoice-record .invoice-record-form .l .iconzujiantubiaojiantou20 {
+  position: absolute;
+  right: 10px;
+  top: 15px;
 }
 .invoice-record .invoice-record-form .l input {
   width: 298px;
