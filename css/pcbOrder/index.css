@@ -889,6 +889,26 @@ body {
   color: #e82121;
   font-weight: bold;
 }
+.pcb-order .list-th {
+  width: 928px;
+  height: 50px;
+  padding-left: 30px;
+  line-height: 50px;
+  background: #F7F9FC;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+}
+.pcb-order .list-th li {
+  float: left;
+  font-size: 14px;
+  color: #5c5f66;
+}
+.pcb-order .list-th li.tc {
+  text-align: center;
+}
+.pcb-order .list-th li.tr {
+  text-align: right;
+}
 .pcb-order .data-list {
   margin-top: 10px;
   margin-bottom: 40px;
