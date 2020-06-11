@@ -948,7 +948,10 @@ body {
   font-size: 12px;
   color: #959ba6;
 }
-.coupon .list li .text .t2 .tip {
+.coupon .list li .text .t2 .arrow-wrap {
+  position: relative;
+}
+.coupon .list li .text .t2 .arrow-wrap .ti {
   width: 12px;
   height: 12px;
   background: #E89721;
@@ -957,6 +960,40 @@ body {
   font-size: 12px;
   color: #ffffff;
   border-radius: 50%;
+}
+.coupon .list li .text .t2 .arrow-wrap .arrow-tips {
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  top: 18px;
+  left: -22px;
+  transition: all 0.2s linear;
+  display: none;
+}
+.coupon .list li .text .t2 .arrow-wrap .arrow-tips .arrow {
+  position: relative;
+  z-index: 4;
+  top: 1px;
+  left: 21px;
+  display: block;
+  height: 8px;
+  width: 16px;
+  background: url('../../images/pcb/top-arrow.png') no-repeat;
+  background-size: 100% 100%;
+}
+.coupon .list li .text .t2 .arrow-wrap .arrow-tips .tips {
+  background: #fff;
+  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+  padding: 10px;
+  border: 1px solid #0081D2;
+  z-index: 3;
+  font-size: 12px;
+  color: #5C5F66;
+  width: 280px;
+  line-height: 21px;
+}
+.coupon .list li .text .t2 .arrow-wrap:hover .arrow-tips {
+  display: block;
 }
 .coupon .list li .text .t3 span {
   font-size: 12px;
