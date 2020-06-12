@@ -1282,18 +1282,51 @@ body {
   color: #959BA6;
   margin-bottom: 8px;
 }
-.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 .ico {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 .arrow-wrap {
+  position: relative;
+}
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 .arrow-wrap .iconfont {
+  font-size: 14px;
+  color: #E89721;
   cursor: pointer;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #E89721;
-  color: #ffffff;
-  font-size: 12px;
-  text-align: center;
-  line-height: 12px;
-  font-style: normal;
-  margin-left: 8px;
+}
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 .arrow-wrap .text {
+  position: absolute;
+  left: 29px;
+  top: -8px;
+  width: 438px;
+  padding: 10px 20px 20px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+  border-radius: 2px;
+  border: 1px solid #0081D2;
+  display: none;
+  z-index: 10;
+}
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 .arrow-wrap .text .jiantou {
+  position: absolute;
+  left: -8px;
+  width: 9px;
+  height: 16px;
+  background: url("../../images/pcb/arr.png") no-repeat center;
+  display: block;
+}
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 .arrow-wrap .text .t1 {
+  font-size: 14px;
+  color: #959BA6;
+  margin-bottom: 6px;
+}
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 .arrow-wrap .text .t2 {
+  font-size: 14px;
+  color: #5c5f66;
+  line-height: 20px;
+}
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 .arrow-wrap .text .t2 em {
+  color: #3a3c40;
+  font-weight: bold;
+}
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 .arrow-wrap:hover .text {
+  display: block;
 }
 .order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 em {
   color: #5c5f66;

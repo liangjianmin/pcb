@@ -794,18 +794,61 @@
                   color: #959BA6;
                   margin-bottom: 8px;
 
-                  .ico {
-                    cursor: pointer;
-                    width: 12px;
-                    height: 12px;
-                    border-radius: 50%;
-                    background: #E89721;
-                    color: #ffffff;
-                    font-size: 12px;
-                    text-align: center;
-                    line-height: 12px;
-                    font-style: normal;
-                    margin-left: 8px;
+                  .arrow-wrap {
+                    position: relative;
+
+                    .iconfont {
+                      font-size: 14px;
+                      color: #E89721;
+                      cursor: pointer;
+                    }
+
+                    .text {
+                      position: absolute;
+                      left: 29px;
+                      top: -8px;
+                      width: 438px;
+                      padding: 10px 20px 20px 20px;
+                      background: #FFFFFF;
+                      box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+                      border-radius: 2px;
+                      border: 1px solid #0081D2;
+                      display: none;
+                      z-index: 10;
+
+                      .jiantou {
+                        position: absolute;
+                        left: -8px;
+                        width: 9px;
+                        height: 16px;
+                        background: url("../../images/pcb/arr.png") no-repeat center;
+                        display: block;
+                      }
+
+                      .t1 {
+                        font-size: 14px;
+                        color: #959BA6;
+                        margin-bottom: 6px;
+                      }
+
+                      .t2 {
+                        font-size: 14px;
+                        color: #5c5f66;
+                        line-height: 20px;
+
+                        em {
+                          color: #3a3c40;
+                          font-weight: bold;
+                        }
+                      }
+                    }
+
+                    &:hover {
+
+                      .text {
+                        display: block;
+                      }
+                    }
                   }
 
                   em {
