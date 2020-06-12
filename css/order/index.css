@@ -740,7 +740,7 @@ body {
 }
 .order-section {
   background: #fff;
-  padding: 40px 0 70px 0;
+  padding: 24px 0 70px 0;
 }
 .order-section .order-section-wrap {
   border: 1px solid #E6EAF2;
@@ -753,76 +753,536 @@ body {
   position: relative;
   padding: 30px 0;
 }
-.order-section .order-section-wrap .address .l span {
+.order-section .order-section-wrap .address .l .tit {
   font-size: 16px;
   color: #3a3c40;
   font-weight: bold;
 }
-.order-section .order-section-wrap .address .addAddress {
+.order-section .order-section-wrap .address .l .tit span {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: normal;
+}
+.order-section .order-section-wrap .address .r .more-address {
+  margin-right: 40px;
+  cursor: pointer;
+}
+.order-section .order-section-wrap .address .r .more-address span {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-right: 10px;
+}
+.order-section .order-section-wrap .address .r .more-address .iconfont {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.order-section .order-section-wrap .address .r .t1 {
+  font-size: 14px;
+  color: #0081d2;
+}
+.order-section .order-section-wrap .address .addAddress-box {
   position: absolute;
   left: 0;
   right: 0;
   text-align: center;
 }
-.order-section .order-section-wrap .address .addAddress .iconfont {
+.order-section .order-section-wrap .address .addAddress-box .iconfont {
   font-size: 20px;
   color: #0081d2;
 }
-.order-section .order-section-wrap .address .addAddress span {
+.order-section .order-section-wrap .address .addAddress-box span {
   font-size: 14px;
   color: #0081d2;
 }
-.order-section .order-section-wrap .coupon .coupon-box {
-  padding-bottom: 29px;
-  border-bottom: 1px solid #E6EAF2;
+.order-section .order-section-wrap .address-type {
+  padding: 30px 0;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li {
+.order-section .order-section-wrap .address-type .l .tit {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-right: 13px;
+}
+.order-section .order-section-wrap .address-type .l .arrow-wrap {
+  position: relative;
+}
+.order-section .order-section-wrap .address-type .l .arrow-wrap .iconfont {
+  font-size: 20px;
+  color: #ACB3BF;
+  cursor: pointer;
+}
+.order-section .order-section-wrap .address-type .l .arrow-wrap .text {
+  position: absolute;
+  left: 29px;
+  top: -8px;
+  width: 438px;
+  padding: 10px 20px 20px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+  border-radius: 2px;
+  border: 1px solid #0081D2;
+  display: none;
+  z-index: 10;
+}
+.order-section .order-section-wrap .address-type .l .arrow-wrap .text .jiantou {
+  position: absolute;
+  left: -8px;
+  width: 9px;
+  height: 16px;
+  background: url("../../images/pcb/arr.png") no-repeat center;
+  display: block;
+}
+.order-section .order-section-wrap .address-type .l .arrow-wrap .text .t1 {
+  font-size: 14px;
+  color: #3a3c40;
+}
+.order-section .order-section-wrap .address-type .l .arrow-wrap:hover .iconfont {
+  color: #0081D2;
+}
+.order-section .order-section-wrap .address-type .l .arrow-wrap:hover .text {
+  display: block;
+}
+.order-section .order-section-wrap .address-type .l .delivery li {
+  position: relative;
+  width: 123px;
+  height: 34px;
+  background: #F7F9FC;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+.order-section .order-section-wrap .address-type .l .delivery li:first-child {
+  margin-right: 25px;
+  margin-left: 47px;
+}
+.order-section .order-section-wrap .address-type .l .delivery li i {
+  width: 30px;
+  height: 30px;
+  background: url("../../images/order/shunfen.png") no-repeat center;
+  margin-right: 8px;
+}
+.order-section .order-section-wrap .address-type .l .delivery li span {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.order-section .order-section-wrap .address-type .l .delivery li.curr {
+  border: 2px solid #0081D2;
+  height: 32px;
+  background: #ffffff;
+}
+.order-section .order-section-wrap .address-type .l .delivery li.curr::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 18px solid #0081D2;
+  border-left: 18px solid transparent;
+  bottom: 0;
+  right: 0;
+}
+.order-section .order-section-wrap .address-type .l .delivery li.curr::before {
+  font-family: "iconfont" !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e644";
+  position: absolute;
+  bottom: -3px;
+  right: -2px;
+  z-index: 1;
+  color: #fff;
+  font-weight: normal;
+}
+.order-section .order-section-wrap .address-type .r {
+  margin-top: 9px;
+}
+.order-section .order-section-wrap .address-type .r .t1 span {
+  font-size: 14px;
+  color: #959ba6;
+}
+.order-section .order-section-wrap .address-type .r .t1 em {
+  font-size: 14px;
+  color: #3a3c40;
+}
+.order-section .order-section-wrap .address-type .r .t2 span {
+  font-size: 14px;
+  color: #959ba6;
+}
+.order-section .order-section-wrap .address-type .r .t2 em {
+  font-size: 14px;
+  color: #e82121;
+  font-weight: bold;
+}
+.order-section .order-section-wrap .order-info {
+  padding: 30px 0;
+}
+.order-section .order-section-wrap .order-info .tit {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.order-section .order-section-wrap .order-info .data-list {
+  margin-top: 20px;
+}
+.order-section .order-section-wrap .order-info .data-list table {
+  width: 1120px;
+  border: 1px solid #F7F9FC;
+  border-collapse: collapse;
+}
+.order-section .order-section-wrap .order-info .data-list table tr {
+  border-bottom: 1px solid #F7F9FC;
+}
+.order-section .order-section-wrap .order-info .data-list table tr th {
+  height: 40px;
+  background: #F7F9FC;
+  font-size: 14px;
+  color: #5c5f66;
+  font-weight: normal;
+  text-align: left;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td {
+  vertical-align: top;
+  padding: 16px 0;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box1 {
+  padding-left: 30px;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box1 .t1 {
+  font-size: 14px;
+  color: #5C5F66;
+  margin-bottom: 7px;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box2 .t1 {
+  font-size: 14px;
+  color: #5C5F66;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box3 .t1 {
+  font-size: 14px;
+  color: #5C5F66;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box4 {
+  text-align: center;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box4 .t1 .iconfont {
+  font-size: 24px;
+  color: #e8b46b;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box4 .t1 span {
+  font-size: 14px;
+  color: #5C5F66;
+  margin-left: 7px;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box4 .t2 {
+  margin-top: 7px;
+  font-size: 14px;
+  color: #959ba6;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box5 .t1 {
+  font-size: 14px;
+  color: #E82121;
+  font-weight: bold;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box6 a {
+  font-size: 14px;
+  color: #0081D2;
+}
+.order-section .order-section-wrap .contact-information {
+  padding: 30px 0;
+}
+.order-section .order-section-wrap .contact-information .l .tit {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-right: 50px;
+}
+.order-section .order-section-wrap .contact-information .l .inp {
+  position: relative;
+  margin-right: 20px;
+}
+.order-section .order-section-wrap .contact-information .l .inp .iconfont {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  font-size: 30px;
+  color: #ACB3BF;
+}
+.order-section .order-section-wrap .contact-information .l .inp input {
+  font-size: 14px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #E6EAF2;
+  width: 238px;
+  background: #F7F9FC;
+  text-indent: 51px;
+}
+.order-section .order-section-wrap .contact-information .l .inp input:focus {
+  background: #ffffff;
+  border: 1px solid #0081D2;
+}
+.order-section .order-section-wrap .contact-information .l .inp input::-webkit-input-placeholder {
+  color: #959ba6;
+}
+.order-section .order-section-wrap .contact-information .r {
+  margin-top: 8px;
+}
+.order-section .order-section-wrap .contact-information .r .check-box {
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: 2px solid #0081d2;
+  text-align: center;
+  cursor: pointer;
+  line-height: 14px;
+}
+.order-section .order-section-wrap .contact-information .r .check-box .iconfont {
+  font-size: 0px;
+}
+.order-section .order-section-wrap .contact-information .r .check-box.check-box-curr .iconfont {
+  color: #0081d2;
+  font-size: 16px;
+}
+.order-section .order-section-wrap .contact-information .r .t1 {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.order-section .order-section-wrap .invoice-information {
+  padding: 30px 0;
+}
+.order-section .order-section-wrap .invoice-information .l .tit {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.order-section .order-section-wrap .invoice-information .l .arrow-wrap {
+  position: relative;
+}
+.order-section .order-section-wrap .invoice-information .l .arrow-wrap .iconfont {
+  font-size: 20px;
+  color: #ACB3BF;
+  cursor: pointer;
+}
+.order-section .order-section-wrap .invoice-information .l .arrow-wrap .text {
+  position: absolute;
+  left: 29px;
+  top: -8px;
+  width: 438px;
+  padding: 10px 20px 20px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+  border-radius: 2px;
+  border: 1px solid #0081D2;
+  display: none;
+  z-index: 10;
+}
+.order-section .order-section-wrap .invoice-information .l .arrow-wrap .text .jiantou {
+  position: absolute;
+  left: -8px;
+  width: 9px;
+  height: 16px;
+  background: url("../../images/pcb/arr.png") no-repeat center;
+  display: block;
+}
+.order-section .order-section-wrap .invoice-information .l .arrow-wrap .text .t1 {
+  font-size: 14px;
+  color: #959BA6;
+  margin-bottom: 6px;
+}
+.order-section .order-section-wrap .invoice-information .l .arrow-wrap .text .t2 {
+  font-size: 14px;
+  color: #5c5f66;
+  line-height: 20px;
+}
+.order-section .order-section-wrap .invoice-information .l .arrow-wrap .text .t2 em {
+  color: #3a3c40;
+  font-weight: bold;
+}
+.order-section .order-section-wrap .invoice-information .l .arrow-wrap:hover .iconfont {
+  color: #0081D2;
+}
+.order-section .order-section-wrap .invoice-information .l .arrow-wrap:hover .text {
+  display: block;
+}
+.order-section .order-section-wrap .invoice-information .l .open-invoice {
+  margin-left: 54px;
+}
+.order-section .order-section-wrap .invoice-information .l .open-invoice .check-box {
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: 2px solid #0081d2;
+  text-align: center;
+  cursor: pointer;
+  line-height: 14px;
+}
+.order-section .order-section-wrap .invoice-information .l .open-invoice .check-box .iconfont {
+  font-size: 0px;
+}
+.order-section .order-section-wrap .invoice-information .l .open-invoice .check-box.check-box-curr .iconfont {
+  color: #0081d2;
+  font-size: 16px;
+}
+.order-section .order-section-wrap .invoice-information .l .open-invoice .t1 {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #5c5f66;
+}
+.order-section .order-section-wrap .invoice-information .r {
+  padding-right: 66px;
+}
+.order-section .order-section-wrap .invoice-information .r .tit {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-right: 14px;
+}
+.order-section .order-section-wrap .invoice-information .r .arrow-wrap {
+  position: relative;
+}
+.order-section .order-section-wrap .invoice-information .r .arrow-wrap .iconfont {
+  font-size: 20px;
+  color: #ACB3BF;
+  cursor: pointer;
+}
+.order-section .order-section-wrap .invoice-information .r .arrow-wrap .text {
+  position: absolute;
+  left: 29px;
+  top: -8px;
+  width: 438px;
+  padding: 10px 20px 20px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+  border-radius: 2px;
+  border: 1px solid #0081D2;
+  display: none;
+  z-index: 10;
+}
+.order-section .order-section-wrap .invoice-information .r .arrow-wrap .text .jiantou {
+  position: absolute;
+  left: -8px;
+  width: 9px;
+  height: 16px;
+  background: url("../../images/pcb/arr.png") no-repeat center;
+  display: block;
+}
+.order-section .order-section-wrap .invoice-information .r .arrow-wrap .text .t1 {
+  font-size: 14px;
+  color: #959BA6;
+  margin-bottom: 6px;
+}
+.order-section .order-section-wrap .invoice-information .r .arrow-wrap .text .t2 {
+  font-size: 14px;
+  color: #5c5f66;
+  line-height: 20px;
+}
+.order-section .order-section-wrap .invoice-information .r .arrow-wrap .text .t2 em {
+  color: #3a3c40;
+  font-weight: bold;
+}
+.order-section .order-section-wrap .invoice-information .r .arrow-wrap:hover .iconfont {
+  color: #0081D2;
+}
+.order-section .order-section-wrap .invoice-information .r .arrow-wrap:hover .text {
+  display: block;
+}
+.order-section .order-section-wrap .invoice-information .r .check-box .check-box {
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: 2px solid #0081d2;
+  text-align: center;
+  cursor: pointer;
+  line-height: 14px;
+}
+.order-section .order-section-wrap .invoice-information .r .check-box .check-box .iconfont {
+  font-size: 0px;
+}
+.order-section .order-section-wrap .invoice-information .r .check-box .check-box.check-box-curr .iconfont {
+  color: #0081d2;
+  font-size: 16px;
+}
+.order-section .order-section-wrap .invoice-information .r .check-box .t1 {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #5c5f66;
+}
+.order-section .order-section-wrap .coupon {
+  padding: 30px 0 0 0;
+}
+.order-section .order-section-wrap .coupon .l .tit {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.order-section .order-section-wrap .coupon .l .tit .l span {
+  margin-left: 46px;
+  font-size: 14px;
+  color: #5c5f66;
+}
+.order-section .order-section-wrap .coupon .l .tit .l span em {
+  color: #e89721;
+}
+.order-section .order-section-wrap .coupon .l .tit .r {
+  font-size: 14px;
+  color: #0081d2;
+}
+.order-section .order-section-wrap .coupon .l .coupon-box ul li {
+  position: relative;
   margin-right: 20px;
   margin-bottom: 20px;
-  width: 380px;
-  height: 140px;
+  width: 329px;
+  height: 109px;
   background: url("../../images/order/coupon.png") no-repeat center;
   background-size: cover;
   float: left;
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li:nth-of-type(3n) {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li:nth-of-type(3n) {
   margin-right: 0;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li .l-text {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .l-text {
   padding-left: 32px;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li .l-text .t1 {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .l-text .t1 {
   margin-bottom: 9px;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li .l-text .t1 em {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .l-text .t1 em {
   font-size: 20px;
   color: #ffffff;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li .l-text .t1 span {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .l-text .t1 span {
   font-size: 44px;
   color: #ffffff;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li .l-text .t2 {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .l-text .t2 {
   font-size: 14px;
   color: #ffffff;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li .c-text {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text {
   padding-left: 59px;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li .c-text .t1 {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t1 {
   font-size: 16px;
   color: #3a3c40;
   font-weight: bold;
   margin-bottom: 14px;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li .c-text .t2 {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 {
   font-size: 12px;
   color: #959BA6;
   margin-bottom: 8px;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li .c-text .t2 .ico {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 .ico {
   cursor: pointer;
   width: 12px;
   height: 12px;
@@ -835,39 +1295,68 @@ body {
   font-style: normal;
   margin-left: 8px;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li .c-text .t2 em {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li .c-text .t2 em {
   color: #5c5f66;
 }
-.order-section .order-section-wrap .coupon .coupon-box ul li.curr {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li.curr {
   background: url("../../images/order/coupon1.png") no-repeat center;
   background-size: cover;
 }
-.order-section .order-section-wrap .order-remarks {
+.order-section .order-section-wrap .coupon .l .coupon-box ul li.curr::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 18px solid #0081D2;
+  border-left: 18px solid transparent;
+  bottom: 0;
+  right: 0;
+}
+.order-section .order-section-wrap .coupon .l .coupon-box ul li.curr::before {
+  font-family: "iconfont" !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e644";
+  position: absolute;
+  bottom: -3px;
+  right: -2px;
+  z-index: 1;
+  color: #fff;
+  font-weight: normal;
+}
+.order-section .order-remarks {
   margin-top: 30px;
   margin-bottom: 30px;
+  padding: 0 30px;
 }
-.order-section .order-section-wrap .order-remarks .l .t1 {
+.order-section .order-remarks .l .t1 {
   font-size: 20px;
   color: #3a3c40;
   margin-bottom: 20px;
 }
-.order-section .order-section-wrap .order-remarks .l .textarea {
+.order-section .order-remarks .l .textarea {
   position: relative;
   width: 580px;
   height: 100px;
   border-radius: 2px;
   border: 1px solid #E6EAF2;
 }
-.order-section .order-section-wrap .order-remarks .l .textarea:focus {
+.order-section .order-remarks .l .textarea:focus {
   border: 1px solid #0081D2;
 }
-.order-section .order-section-wrap .order-remarks .l .textarea textarea {
+.order-section .order-remarks .l .textarea textarea {
   width: 570px;
-  height: 90px;
-  padding: 5px;
+  height: 80px;
   resize: none;
+  background: #F7F9FC;
+  padding: 15px 5px 5px 5px;
 }
-.order-section .order-section-wrap .order-remarks .l .textarea .limitWords {
+.order-section .order-remarks .l .textarea textarea:hover {
+  background: #ffffff;
+}
+.order-section .order-remarks .l .textarea .limitWords {
   font-size: 12px;
   color: #959ba6;
   position: absolute;
@@ -875,17 +1364,17 @@ body {
   bottom: 9px;
   z-index: 1;
 }
-.order-section .order-section-wrap .order-remarks .r .t1 {
+.order-section .order-remarks .r .t1 {
   margin-bottom: 12px;
 }
-.order-section .order-section-wrap .order-remarks .r .t1 label {
+.order-section .order-remarks .r .t1 label {
   font-size: 14px;
   color: #5c5f66;
   width: 118px;
   text-align: right;
   vertical-align: middle;
 }
-.order-section .order-section-wrap .order-remarks .r .t1 span {
+.order-section .order-remarks .r .t1 span {
   font-size: 14px;
   color: #3a3c40;
   font-weight: bold;
@@ -893,10 +1382,10 @@ body {
   text-align: right;
   width: 120px;
 }
-.order-section .order-section-wrap .order-remarks .r .t2 {
+.order-section .order-remarks .r .t2 {
   margin-top: 20px;
 }
-.order-section .order-section-wrap .order-remarks .r .t2 label {
+.order-section .order-remarks .r .t2 label {
   font-size: 20px;
   color: #3A3C40;
   width: 118px;
@@ -904,7 +1393,7 @@ body {
   text-align: right;
   vertical-align: middle;
 }
-.order-section .order-section-wrap .order-remarks .r .t2 span {
+.order-section .order-remarks .r .t2 span {
   font-size: 20px;
   color: #E82121;
   font-weight: bold;
@@ -912,55 +1401,49 @@ body {
   text-align: right;
   width: 120px;
 }
-.order-section .order-section-wrap .order-submit {
-  width: 1128px;
-  height: 100px;
+.order-section .order-submit {
+  width: 1180px;
+  height: 70px;
   background: #F7F9FC;
   border-radius: 2px;
-  border: 1px solid #E6EAF2;
-  padding: 0 30px 0 20px;
 }
-.order-section .order-section-wrap .order-submit .l {
+.order-section .order-submit .l {
   height: 100%;
+  padding-left: 30px;
 }
-.order-section .order-section-wrap .order-submit .l .iconfont {
-  font-size: 40px;
-  color: #0081d2;
-}
-.order-section .order-section-wrap .order-submit .l .text {
-  margin-left: 20px;
-}
-.order-section .order-section-wrap .order-submit .l .text .t1 em {
-  font-size: 16px;
-  color: #3a3c40;
-  font-weight: bold;
-}
-.order-section .order-section-wrap .order-submit .l .text .t1 span {
-  margin-left: 20px;
-  font-size: 16px;
-  color: #3a3c40;
-  font-weight: bold;
-}
-.order-section .order-section-wrap .order-submit .l .text .t2 {
-  margin-top: 10px;
+.order-section .order-submit .l .t1 span {
   font-size: 14px;
-  color: #3a3c40;
+  color: #959ba6;
 }
-.order-section .order-section-wrap .order-submit .r {
+.order-section .order-submit .r {
+  padding-right: 30px;
   height: 100%;
 }
-.order-section .order-section-wrap .order-submit .r .btn {
+.order-section .order-submit .r .t1 {
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-right: 26px;
+}
+.order-section .order-submit .r .t2 {
+  font-size: 20px;
+  color: #e82121;
+  font-weight: bold;
+}
+.order-section .btn-submit {
+  margin-top: 20px;
+  padding-right: 30px;
+}
+.order-section .btn-submit .btn {
   width: 200px;
   height: 60px;
   background: #E82121;
   border-radius: 2px;
-  line-height: 60px;
-  text-align: center;
   font-size: 20px;
   color: #ffffff;
-}
-.order-section .order-section-wrap .order-submit .r .btn:hover {
-  background: #ff2424;
+  text-align: center;
+  line-height: 60px;
+  display: block;
 }
 .material-layer dl {
   padding: 40px 0;

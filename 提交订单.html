@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
     <link rel="stylesheet" type="text/css" href="./css/order/index.css"/>
     <link rel="stylesheet" type="text/css" href="./js/plugin/city-picker/css/city-picker.css"/>
@@ -102,138 +102,334 @@
             <!--收获地址 无数据-->
             <div class="address bor clr">
                 <div class="fl l">
-                    <span>收货地址</span>
+                    <span class="tit">收货地址</span>
                 </div>
-                <a href="javascript:;" class="addAddress">
+                <a href="javascript:;" class="addAddress-box addAddress">
                     <i class="iconfont iconzujiantubiaojiantou6"></i>
                     <span>新增收货地址</span>
                 </a>
             </div>
-            <!--优惠券-->
-            <div class="coupon">
-                <div class="tit bor lbBox">
-                    <span class="t1 va-m">使用优惠券</span>
-                    <span class="t2 va-m">
-                    共<em>6</em>张优惠券，其中<em>2</em>张可用
-                </span>
-                    <a href="javascript:;" class="t3 va-m">领取优惠券</a>
+            <!--收获地址-->
+            <div class="address clr bor">
+                <div class="fl l">
+                    <p class="tit">
+                        <em style="margin-right: 34px;">收货地址</em>
+                        <span style="margin-right: 20px">拾贰。</span>
+                        <span style="margin-right: 20px">广东省深圳市龙岗区坂田街道五和大道南路2号万科星火Online天枢仓6栋3楼</span>
+                        <span>15012479484</span>
+                    </p>
                 </div>
-                <div class="coupon-box">
-                    <ul class="clr">
+                <div class="fr r lbBox">
+                    <div class="lineBlock va-m more-address lbBox choiceAddress">
+                        <span>更多地址</span>
+                        <i class="iconfont iconzujiantubiaojiantou1"></i>
+                    </div>
+                    <a href="javascript:;" class="t1 va-m addAddress">新增收货地址</a>
+                </div>
+            </div>
+            <!--快递方式-->
+            <div class="address-type clr bor">
+                <div class="fl l lbBox">
+                    <span class="tit va-m">快递方式</span>
+                    <div class="lineBlock va-m arrow-wrap">
+                        <b class="iconfont iconiconfontquestion"></b>
+                        <div class="text">
+                            <i class="jiantou"></i>
+                            <P class="t1">快递方式文案缺失</P>
+                        </div>
+                    </div>
+                    <ul class="delivery lineBlock va-m">
                         <li class="curr lbBox">
-                            <div class="l-text lineBlock va-m">
-                                <p class="t1">
-                                    <em>￥</em>
-                                    <span>10</span>
-                                </p>
-                                <p class="t2">满100元可用</p>
-                            </div>
-                            <div class="c-text lineBlock va-m">
-                                <p class="t1">全品类通用券</p>
-                                <p class="t2"><span class="va-m">适用类型：</span><em class="va-m">仅PCB</em><i class="ico lineBlock va-m">？</i></p>
-                                <p class="t2">有效期至：<em>2020-04-05</em></p>
-                            </div>
+                            <i class="lineBlock va-m"></i>
+                            <span class="lineBlock va-m">顺丰现付</span>
                             <b class="lineBlock emptys"></b>
                         </li>
                         <li class="lbBox">
-                            <div class="l-text lineBlock va-m">
-                                <p class="t1">
-                                    <em>￥</em>
-                                    <span>10</span>
-                                </p>
-                                <p class="t2">满100元可用</p>
-                            </div>
-                            <div class="c-text lineBlock va-m">
-                                <p class="t1">全品类通用券</p>
-                                <p class="t2"><span class="va-m">适用类型：</span><em class="va-m">仅PCB</em><i class="ico lineBlock va-m">？</i></p>
-                                <p class="t2">有效期至：<em>2020-04-05</em></p>
-                            </div>
-                            <b class="lineBlock emptys"></b>
-                        </li>
-                        <li class="lbBox">
-                            <div class="l-text lineBlock va-m">
-                                <p class="t1">
-                                    <em>￥</em>
-                                    <span>10</span>
-                                </p>
-                                <p class="t2">满100元可用</p>
-                            </div>
-                            <div class="c-text lineBlock va-m">
-                                <p class="t1">全品类通用券</p>
-                                <p class="t2"><span class="va-m">适用类型：</span><em class="va-m">仅PCB</em><i class="ico lineBlock va-m">？</i></p>
-                                <p class="t2">有效期至：<em>2020-04-05</em></p>
-                            </div>
-                            <b class="lineBlock emptys"></b>
-                        </li>
-                        <li class="lbBox">
-                            <div class="l-text lineBlock va-m">
-                                <p class="t1">
-                                    <em>￥</em>
-                                    <span>10</span>
-                                </p>
-                                <p class="t2">满100元可用</p>
-                            </div>
-                            <div class="c-text lineBlock va-m">
-                                <p class="t1">全品类通用券</p>
-                                <p class="t2"><span class="va-m">适用类型：</span><em class="va-m">仅PCB</em><i class="ico lineBlock va-m">？</i></p>
-                                <p class="t2">有效期至：<em>2020-04-05</em></p>
-                            </div>
+                            <i class="lineBlock va-m"></i>
+                            <span class="lineBlock va-m">顺丰到付</span>
                             <b class="lineBlock emptys"></b>
                         </li>
                     </ul>
                 </div>
+                <div class="fr r lbBox">
+                    <p class="lineBlock t1" style="margin-right: 30px">
+                        <span>物流时效：</span>
+                        <em>1-2天</em>
+                    </p>
+                    <p class="lineBlock t1" style="margin-right: 30px">
+                        <span>重量：</span>
+                        <em>1.587kg</em>
+                    </p>
+                    <p class="lineBlock t2">
+                        <span>快递费用：</span>
+                        <em>￥25.00</em>
+                    </p>
+                </div>
             </div>
-            <!--订单备注-->
-            <div class="order-remarks clr">
+            <!--订单信息-->
+            <div class="order-info bor">
+                <p class="tit">订单信息</p>
+                <div class="data-list">
+                    <table>
+                        <tr>
+                            <th width="280" style="padding-left: 30px">订单信息</th>
+                            <th width="160">预计交期</th>
+                            <th width="130">数量</th>
+                            <th width="240" style="text-align: center">文件</th>
+                            <th width="140">价格</th>
+                            <th width="100">价格</th>
+                        </tr>
+                        <tr>
+                            <td class="box1">
+                                <p class="t1">23.00*23.32cm FR-4 TG103</p>
+                                <p class="t1">2层 1.6mm 绿油白字 无铅喷锡</p>
+                            </td>
+                            <td class="box2">
+                                <span class="t1">03-28</span>
+                            </td>
+                            <td class="box3">
+                                <span class="t1">200PCS</span>
+                            </td>
+                            <td class="box4">
+                                <p class="t1 lbBox">
+                                    <i class="iconfont iconzujiantubiaojiantou3 va-m"></i>
+                                    <span class="va-m">PCBHUNT.pcb</span>
+                                </p>
+                            </td>
+                            <td class="box5">
+                                <span class="t1">￥1500.00</span>
+                            </td>
+                            <td class="box6">
+                                <a href="javascript:;" class="detail">明细</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="box1">
+                                <p class="t1">23.00*23.32cm FR-4 TG103</p>
+                                <p class="t1">2层 1.6mm 绿油白字 无铅喷锡</p>
+                            </td>
+                            <td class="box2">
+                                <span class="t1">03-28</span>
+                            </td>
+                            <td class="box3">
+                                <span class="t1">200PCS</span>
+                            </td>
+                            <td class="box4">
+                                <p class="t1 lbBox">
+                                    <i class="iconfont iconzujiantubiaojiantou3 va-m"></i>
+                                    <span class="va-m">PCBHUNT.pcb</span>
+                                </p>
+                            </td>
+                            <td class="box5">
+                                <span class="t1">￥1500.00</span>
+                            </td>
+                            <td class="box6">
+                                <a href="javascript:;" class="detail">明细</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--技术联系方式-->
+            <div class="contact-information clr bor">
+                <div class="fl l lbBox">
+                    <span class="tit">技术联系方式</span>
+                    <div class="lineBlock va-m inp">
+                        <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                        <input type="text" placeholder="请输入姓名(必填)" class="va-m"/>
+                    </div>
+                    <div class="lineBlock va-m inp">
+                        <i class="iconfont iconzujiantubiaoshouji va-m"></i>
+                        <input type="text" placeholder="请输入联系方式(必填)" class="va-m"/>
+                    </div>
+                    <div class="lineBlock va-m inp" style="margin-right: 0">
+                        <i class="iconfont iconzujiantubiaoQQ va-m"></i>
+                        <input type="text" placeholder="请输入QQ号码" class="va-m"/>
+                    </div>
+                </div>
+                <div class="fr r lbBox">
+                    <div class="lineBlock va-m check-box check-box-curr">
+                        <i class="iconfont iconzujiantubiaojiantou7"></i>
+                    </div>
+                    <span class="va-m t1">同收件人一致</span>
+                </div>
+            </div>
+            <!--发票信息-->
+            <div class="invoice-information clr bor">
+                <div class="fl l lbBox">
+                    <span class="tit va-m">发票信息</span>
+                    <div class="lineBlock va-m arrow-wrap">
+                        <b class="iconfont iconiconfontquestion"></b>
+                        <div class="text">
+                            <i class="jiantou"></i>
+                            <p class="t1">发票须知：</p>
+                            <p class="t2">1. 发票将会<em>收取税费</em>；</p>
+                            <p class="t2">2. 发票与货物分开寄送，在订单完成后，在会员中心申请开票和寄送；</p>
+                            <p class="t2">3. 发票金额为实际支付金额，不包含优惠券、礼品卡等。</p>
+                        </div>
+                    </div>
+                    <div class="open-invoice lineBlock va-m">
+                        <div class="lineBlock va-m check-box check-box-curr">
+                            <i class="iconfont iconzujiantubiaojiantou7"></i>
+                        </div>
+                        <span class="va-m t1">需要开票</span>
+                    </div>
+                </div>
+                <div class="fr r lbBox">
+                    <span class="tit va-m">收据/送货单选项</span>
+                    <div class="lineBlock va-m arrow-wrap">
+                        <b class="iconfont iconiconfontquestion"></b>
+                        <div class="text">
+                            <i class="jiantou"></i>
+                            <p class="t1">发票须知：</p>
+                            <p class="t2">1. 发票将会<em>收取税费</em>；</p>
+                            <p class="t2">2. 发票与货物分开寄送，在订单完成后，在会员中心申请开票和寄送；</p>
+                            <p class="t2">3. 发票金额为实际支付金额，不包含优惠券、礼品卡等。</p>
+                        </div>
+                    </div>
+                    <div class="check-box lineBlock va-m" style="margin-right: 56px;margin-left: 44px;">
+                        <div class="lineBlock va-m check-box check-box-curr">
+                            <i class="iconfont iconzujiantubiaojiantou7"></i>
+                        </div>
+                        <span class="va-m t1">需要(默认)</span>
+                    </div>
+                    <div class="check-box lineBlock va-m">
+                        <div class="lineBlock va-m check-box check-box-curr">
+                            <i class="iconfont iconzujiantubiaojiantou7"></i>
+                        </div>
+                        <span class="va-m t1">无需收据/送货单</span>
+                    </div>
+                </div>
+            </div>
+            <!--优惠券-->
+            <div class="coupon clr">
                 <div class="fl l">
-                    <p class="t1">订单备注</p>
-                    <div class="textarea">
-                        <textarea id="txtCustomNote" placeholder="仅填写订单、物流等特殊要求，请勿填写加工要求备注 "></textarea>
-                        <span class="limitWords">0/50</span>
+                    <div class="tit clr">
+                        <div class="fl l">使用优惠券<span>共<em>6</em>张优惠券，其中<em>2</em>张可用</span></div>
+                        <a class="fr r" href="javascript:;">领取优惠券</a>
+                    </div>
+                    <div class="coupon-box">
+                        <ul class="clr">
+                            <li class="curr lbBox">
+                                <div class="l-text lineBlock va-m">
+                                    <p class="t1">
+                                        <em>￥</em>
+                                        <span>10</span>
+                                    </p>
+                                    <p class="t2">满100元可用</p>
+                                </div>
+                                <div class="c-text lineBlock va-m">
+                                    <p class="t1">全品类通用券</p>
+                                    <p class="t2"><span class="va-m">适用类型：</span><em class="va-m">仅PCB</em><i class="ico lineBlock va-m">？</i></p>
+                                    <p class="t2">有效期至：<em>2020-04-05</em></p>
+                                </div>
+                                <b class="lineBlock emptys"></b>
+                            </li>
+                            <li class="lbBox">
+                                <div class="l-text lineBlock va-m">
+                                    <p class="t1">
+                                        <em>￥</em>
+                                        <span>10</span>
+                                    </p>
+                                    <p class="t2">满100元可用</p>
+                                </div>
+                                <div class="c-text lineBlock va-m">
+                                    <p class="t1">全品类通用券</p>
+                                    <p class="t2"><span class="va-m">适用类型：</span><em class="va-m">仅PCB</em><i class="ico lineBlock va-m">？</i></p>
+                                    <p class="t2">有效期至：<em>2020-04-05</em></p>
+                                </div>
+                                <b class="lineBlock emptys"></b>
+                            </li>
+                            <li class="lbBox">
+                                <div class="l-text lineBlock va-m">
+                                    <p class="t1">
+                                        <em>￥</em>
+                                        <span>10</span>
+                                    </p>
+                                    <p class="t2">满100元可用</p>
+                                </div>
+                                <div class="c-text lineBlock va-m">
+                                    <p class="t1">全品类通用券</p>
+                                    <p class="t2"><span class="va-m">适用类型：</span><em class="va-m">仅PCB</em><i class="ico lineBlock va-m">？</i></p>
+                                    <p class="t2">有效期至：<em>2020-04-05</em></p>
+                                </div>
+                                <b class="lineBlock emptys"></b>
+                            </li>
+                            <li class="lbBox">
+                                <div class="l-text lineBlock va-m">
+                                    <p class="t1">
+                                        <em>￥</em>
+                                        <span>10</span>
+                                    </p>
+                                    <p class="t2">满100元可用</p>
+                                </div>
+                                <div class="c-text lineBlock va-m">
+                                    <p class="t1">全品类通用券</p>
+                                    <p class="t2"><span class="va-m">适用类型：</span><em class="va-m">仅PCB</em><i class="ico lineBlock va-m">？</i></p>
+                                    <p class="t2">有效期至：<em>2020-04-05</em></p>
+                                </div>
+                                <b class="lineBlock emptys"></b>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="fr r">
-                    <p class="t1 lbBox">
-                        <label class="lineBlock va-m">商品总价：</label>
-                        <span class="lineBlock">￥1245.00</span>
-                    </p>
-                    <p class="t1 lbBox">
-                        <label class="lineBlock va-m">税费：</label>
-                        <span class="lineBlock">￥125</span>
-                    </p>
-                    <p class="t1 lbBox">
-                        <label class="lineBlock va-m">活动优惠：</label>
-                        <span class="lineBlock">-￥.00</span>
-                    </p>
-                    <p class="t1 lbBox">
-                        <label class="lineBlock va-m">优惠券抵扣：</label>
-                        <span class="lineBlock">-￥10.00</span>
-                    </p>
-                    <p class="t1 lbBox">
-                        <label class="lineBlock va-m">运费(1.578kg)：</label>
-                        <span class="lineBlock">￥25.00</span>
-                    </p>
-                    <p class="t2 lbBox">
-                        <label class="lineBlock va-m">应付总额：</label>
-                        <span class="lineBlock">￥1245.00</span>
-                    </p>
+
                 </div>
             </div>
-            <div class="order-submit clr">
-                <div class="fl l">
-                    <div class="lineBlock va-m">
-                        <i class="iconfont iconzujiantubiaojinggao1 va-m "></i>
-                        <div class="text lineBlock va-m">
-                            <p class="t1"><em>拾贰。</em><span>15012479484</span></p>
-                            <p class="t2">广东省深圳市龙岗区坂田街道五和大道南路2号万科星火Online天枢仓6栋3楼</p>
-                        </div>
-                    </div>
-                    <b class="lineBlock emptys"></b>
+        </div>
+        <!--订单备注-->
+        <div class="order-remarks clr">
+            <div class="fl l">
+                <div class="textarea">
+                    <textarea id="txtCustomNote" placeholder="仅填写订单、物流等特殊要求，请勿填写加工要求备注 "></textarea>
+                    <span class="limitWords">0/50</span>
                 </div>
-                <div class="fr r lbBox">
-                    <a href="javascript:;" class="lineBlock btn va-m">提交订单</a>
-                    <b class="lineBlock emptys"></b>
+            </div>
+            <div class="fr r">
+                <p class="t1 lbBox">
+                    <label class="lineBlock va-m">商品总价：</label>
+                    <span class="lineBlock">￥1245.00</span>
+                </p>
+                <p class="t1 lbBox">
+                    <label class="lineBlock va-m">税费：</label>
+                    <span class="lineBlock">￥125</span>
+                </p>
+                <p class="t1 lbBox">
+                    <label class="lineBlock va-m">活动优惠：</label>
+                    <span class="lineBlock">-￥.00</span>
+                </p>
+                <p class="t1 lbBox">
+                    <label class="lineBlock va-m">优惠券抵扣：</label>
+                    <span class="lineBlock">-￥10.00</span>
+                </p>
+                <p class="t1 lbBox">
+                    <label class="lineBlock va-m">运费(1.578kg)：</label>
+                    <span class="lineBlock">￥25.00</span>
+                </p>
+            </div>
+        </div>
+        <!--应付金额-->
+        <div class="order-submit clr">
+            <div class="fl l">
+                <div class="t1 lineBlock va-m lbBox">
+                    <span style="margin-right: 20px;">广东省深圳市龙岗区坂田街道五和大道南路2号万科星火Online天枢仓6栋3楼</span>
+                    <span style="margin-right: 20px;">拾贰。</span>
+                    <span>15012479484</span>
                 </div>
+                <b class="lineBlock emptys"></b>
+            </div>
+            <div class="fr r lbBox">
+                <div class="lineBlock va-m">
+                    <span class="t1">应付总额：</span>
+                    <span class="t2">￥1245.00</span>
+                </div>
+                <b class="lineBlock emptys"> </b>
+            </div>
+        </div>
+        <div class="btn-submit clr">
+            <div class="fr">
+                <a href="javascript:;" class="btn">提交订单</a>
             </div>
         </div>
     </div>
@@ -615,6 +811,11 @@
 <script type="text/javascript">
   $(function () {
 
+
+    Util.tabs('.delivery  li', function (index) {
+
+    });
+
     $(document).on('focus', '#area', function () {
       $(this).parent().next().show();
     });
@@ -691,6 +892,13 @@
       }
     });
 
+    $(document).on('focus','.contact-information input',function () {
+        $(this).prev().css({color:'#0081D2'})
+    });
+
+    $(document).on('blur','.contact-information input',function () {
+      $(this).prev().css({color:'#ACB3BF'})
+    });
 
     $(".check-box").on('click', function () {
       $(this).toggleClass('check-box-curr');
