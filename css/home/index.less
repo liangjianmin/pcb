@@ -71,8 +71,8 @@
 
       .home-pcb-box {
         background: #FFFFFF;
-        width: 550px;
-        height: 374px;
+        width: 480px;
+        height: 402px;
         border-radius: 2px;
         position: relative;
         z-index: 3;
@@ -120,88 +120,91 @@
         }
 
         .show-wrap {
-          padding: 19px 40px 25px 40px;
+          padding: 19px 30px 0 30px;
 
           .t1 {
-            margin-bottom: 20px;
+            margin-bottom: 6px;
 
-            span {
-              font-size: 14px;
-              color: #3a3c40;
-              font-weight: bold;
-            }
+            font-size: 14px;
+            color: #3a3c40;
+            font-weight: bold;
 
-            em {
-              font-size: 12px;
-              color: #5c5f66;
-              margin-left: 10px;
-            }
           }
 
-          dl.bb {
-            > dd {
+          .t2 {
+            font-size: 12px;
+            color: #5c5f66;
+            margin-bottom: 20px;
+          }
+
+          .form-box {
+
+
+            .form-boxs {
+              white-space: nowrap;
               margin-bottom: 20px;
+            }
 
-              &:nth-of-type(2n) {
-                margin-right: 0;
+
+            label {
+              color: #3a3c40;
+              font-size: 14px;
+            }
+
+            .inp-wrap {
+              margin-top: 5px;
+              white-space: nowrap;
+
+              .w98 {
+                width: 73px;
               }
 
-              label {
-                color: #3a3c40;
+              .w220 {
+                width: 180px;
+              }
+
+              .sel {
+                height: 50px;
+                border-radius: 2px;
+                border: 1px solid #E6EAF2;
                 font-size: 14px;
-              }
+                padding-left: 10px;
+                background: #F9F9FB;
 
-              .inp-wrap {
-                margin-top: 5px;
-                white-space: nowrap;
-
-                .w98 {
-                  width: 78px;
-                }
-
-                .w220 {
-                  width: 180px;
-                }
-
-                .sel {
-                  height: 50px;
-                  border-radius: 2px;
-                  border: 1px solid #E6EAF2;
-                  font-size: 14px;
-                  padding-left: 10px;
-                  background: #F9F9FB;
-
-                  &::-webkit-input-placeholder {
-                    color: #959ba6;
-                  }
-                }
-
-                .inp {
-                  height: 50px;
-                  border-radius: 2px;
-                  border: 1px solid #E6EAF2;
-                  font-size: 14px;
-                  text-indent: 1em;
-                  background: #F9F9FB;
-
-                  &::-webkit-input-placeholder {
-                    color: #959ba6;
-                  }
-                }
-
-                .tt {
-                  font-size: 14px;
-                  color: #5c5f66;
-                  padding: 0 5px;
-                }
-
-                em {
-                  margin-left: 12px;
-                  font-size: 14px;
-                  color: #5c5f66;
-                  font-style: normal;
+                &::-webkit-input-placeholder {
+                  color: #959ba6;
                 }
               }
+
+              .inp {
+                height: 48px;
+                border-radius: 2px;
+                border: 1px solid #E6EAF2;
+                font-size: 14px;
+                text-indent: 1em;
+                background: #F9F9FB;
+
+                &::-webkit-input-placeholder {
+                  color: #959ba6;
+                }
+              }
+
+              .tt {
+                font-size: 14px;
+                color: #5c5f66;
+                padding: 0 5px;
+              }
+
+              em {
+                margin-left: 6px;
+                font-size: 14px;
+                color: #5c5f66;
+                font-style: normal;
+              }
+            }
+
+            .layui-input{
+              height: 50px !important;
             }
           }
 
@@ -216,15 +219,15 @@
               font-size: 12px;
               color: #e89721;
               margin-left: 5px;
-              margin-right: 45px;
-              width: 180px;
+              margin-right: 22px;
+              width: 158px;
               display: inline-block;
               white-space: normal;
               vertical-align: top;
             }
 
             .btn {
-              width: 180px;
+              width: 170px;
               height: 50px;
               background: #0081D2;
               border-radius: 2px;
@@ -453,7 +456,8 @@
             border: 1px solid #E6EAF2;
             padding: 20px 0 0 0;
             margin-right: 20px;
-            &:nth-of-type(2n){
+
+            &:nth-of-type(2n) {
               margin-right: 0;
             }
 
