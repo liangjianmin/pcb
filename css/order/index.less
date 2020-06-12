@@ -1,7 +1,6 @@
 @import '../common/base.less';
 
 .order-status {
-  background: #F7F9FC;
   height: 100px;
 
   .l {
@@ -101,150 +100,226 @@
   background: #fff;
   padding: 40px 0 70px 0;
 
-  .tit {
-    margin-bottom: 20px;
+  .order-section-wrap {
+    border: 1px solid #E6EAF2;
+    padding: 30px;
 
-    &.bor {
-      padding-bottom: 20px;
+    .bor {
       border-bottom: 1px solid #E6EAF2;
     }
 
-    .l {
-      font-size: 20px;
-      color: #3a3c40;
-    }
-
-    .t1 {
-      font-size: 20px;
-      color: #3a3c40;
-    }
-
-    .t2 {
-      font-size: 14px;
-      color: #5c5f66;
-      margin-left: 40px;
-
-      em {
-        color: #e89721;
-      }
-    }
-
-    .t3 {
-      font-size: 14px;
-      color: #0081d2;
-      margin-left: 40px;
-    }
-
-
-    .r {
-      .t1 {
-        font-size: 14px;
-        color: #5c5f66;
-      }
-
-      .t2 {
-        color: #0081d2;
-        font-size: 14px;
-      }
-
-      .t3 {
-        font-size: 14px;
-        color: #5c5f66;
-        margin-left: 20px;
-        margin-right: 10px;
-      }
-
-      .t4 {
-        font-size: 14px;
-        color: #959ba6;
-      }
-
-      .iconfont {
-        color: #0081d2;
-        font-size: 20px;
-      }
-    }
-  }
-
-  .address {
-    .address-empty {
-      height: 120px;
-      background: #F7F9FC;
-      border-radius: 2px;
-      border: 1px solid #E6EAF2;
-      margin-bottom: 40px;
+    .address {
+      position: relative;
+      padding: 30px 0;
 
       .l {
-        width: 780px;
-        text-align: center;
-        padding-top: 45px;
-
-        .iconfont {
-          font-size: 30px;
-          color: #0081d2;
-        }
-
         span {
           font-size: 16px;
           color: #3a3c40;
           font-weight: bold;
-          margin-left: 7px;
         }
       }
 
-      .r {
-        height: 100%;
-        white-space: nowrap;
-
-        .line {
-          width: 1px;
-          height: 60px;
-          color: #e6eaf2;
-          background: #E6EAF2;
-          margin-right: 34px;
+      .addAddress{
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        .iconfont{
+          font-size: 20px;
+          color: #0081d2;
         }
+        span{
+          font-size: 14px;
+          color: #0081d2;
+        }
+      }
+    }
+
+    .coupon {
+      .coupon-box {
+        padding-bottom: 29px;
+        border-bottom: 1px solid #E6EAF2;
 
         ul {
-
           li {
-            margin-right: 30px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            width: 380px;
+            height: 140px;
+            background: url("../../images/order/coupon.png") no-repeat center;
+            background-size: cover;
+            float: left;
             cursor: pointer;
+            transition: all 0.2s ease;
 
-            .circle {
-              width: 30px;
-              height: 30px;
-              background: #0081D2;
-              border-radius: 50%;
-              text-align: center;
-              line-height: 30px;
-
-              .iconfont {
-                font-size: 20px;
-                color: #ffffff;
-              }
-
+            &:nth-of-type(3n) {
+              margin-right: 0;
             }
 
-            span {
-              font-size: 14px;
-              color: #5c5f66;
-              margin-left: 4px;
+            .l-text {
+              padding-left: 32px;
+
+              .t1 {
+                margin-bottom: 9px;
+
+                em {
+                  font-size: 20px;
+                  color: #ffffff;
+                }
+
+                span {
+                  font-size: 44px;
+                  color: #ffffff;
+                }
+              }
+
+              .t2 {
+                font-size: 14px;
+                color: #ffffff;
+              }
+            }
+
+            .c-text {
+              padding-left: 59px;
+
+              .t1 {
+                font-size: 16px;
+                color: #3a3c40;
+                font-weight: bold;
+                margin-bottom: 14px;
+              }
+
+              .t2 {
+                font-size: 12px;
+                color: #959BA6;
+                margin-bottom: 8px;
+
+                .ico {
+                  cursor: pointer;
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 50%;
+                  background: #E89721;
+                  color: #ffffff;
+                  font-size: 12px;
+                  text-align: center;
+                  line-height: 12px;
+                  font-style: normal;
+                  margin-left: 8px;
+                }
+
+                em {
+                  color: #5c5f66;
+                }
+              }
+            }
+
+            &.curr {
+              background: url("../../images/order/coupon1.png") no-repeat center;
+              background-size: cover;
             }
           }
         }
       }
     }
 
-    .address-box {
-      height: 120px;
+    .order-remarks {
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      .l {
+        .t1 {
+          font-size: 20px;
+          color: #3a3c40;
+          margin-bottom: 20px;
+        }
+
+        .textarea {
+          position: relative;
+          width: 580px;
+          height: 100px;
+          border-radius: 2px;
+          border: 1px solid #E6EAF2;
+
+          &:focus {
+            border: 1px solid #0081D2;
+          }
+
+          textarea {
+            width: 570px;
+            height: 90px;
+            padding: 5px;
+            resize: none;
+          }
+
+          .limitWords {
+            font-size: 12px;
+            color: #959ba6;
+            position: absolute;
+            right: 14px;
+            bottom: 9px;
+            z-index: 1;
+          }
+        }
+      }
+
+      .r {
+        .t1 {
+          margin-bottom: 12px;
+
+          label {
+            font-size: 14px;
+            color: #5c5f66;
+            width: 118px;
+            text-align: right;
+            vertical-align: middle;
+          }
+
+          span {
+            font-size: 14px;
+            color: #3a3c40;
+            font-weight: bold;
+            vertical-align: middle;
+            text-align: right;
+            width: 120px;
+          }
+        }
+
+        .t2 {
+          margin-top: 20px;
+
+          label {
+            font-size: 20px;
+            color: #3A3C40;
+            width: 118px;
+            font-weight: bold;
+            text-align: right;
+            vertical-align: middle;
+          }
+
+          span {
+            font-size: 20px;
+            color: #E82121;
+            font-weight: bold;
+            vertical-align: middle;
+            text-align: right;
+            width: 120px;
+          }
+        }
+      }
+    }
+
+    .order-submit {
+      width: 1128px;
+      height: 100px;
       background: #F7F9FC;
       border-radius: 2px;
       border: 1px solid #E6EAF2;
-      margin-bottom: 40px;
+      padding: 0 30px 0 20px;
 
       .l {
         height: 100%;
-        padding-left: 30px;
 
         .iconfont {
           font-size: 40px;
@@ -252,21 +327,17 @@
         }
 
         .text {
-          margin-left: 28px;
+          margin-left: 20px;
 
           .t1 {
-            .t1-a {
-              font-size: 14px;
-              color: #959ba6;
-            }
-
-            .t1-b {
-              font-size: 14px;
-              color: #959ba6;
-              margin-left: 135px;
-            }
-
             em {
+              font-size: 16px;
+              color: #3a3c40;
+              font-weight: bold;
+            }
+
+            span {
+              margin-left: 20px;
               font-size: 16px;
               color: #3a3c40;
               font-weight: bold;
@@ -274,684 +345,29 @@
           }
 
           .t2 {
-            width: 610px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
+            margin-top: 10px;
             font-size: 14px;
             color: #3a3c40;
-            margin-top: 20px;
           }
         }
       }
 
       .r {
         height: 100%;
-        white-space: nowrap;
 
-        .line {
-          width: 1px;
+        .btn {
+          width: 200px;
           height: 60px;
-          color: #e6eaf2;
-          background: #E6EAF2;
-          margin-right: 34px;
-        }
-
-        ul {
-
-          li {
-            margin-right: 30px;
-            cursor: pointer;
-
-            .circle {
-              width: 30px;
-              height: 30px;
-              background: #0081D2;
-              border-radius: 50%;
-              text-align: center;
-              line-height: 30px;
-
-              .iconfont {
-                font-size: 20px;
-                color: #ffffff;
-              }
-
-            }
-
-            span {
-              font-size: 14px;
-              color: #5c5f66;
-              margin-left: 4px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .express-way {
-    margin-bottom: 40px;
-
-    .express-way-box {
-      width: 1120px;
-      height: 108px;
-      background: #FFFFFF;
-      border-radius: 2px;
-      border: 1px solid #E6EAF2;
-      padding: 0 30px;
-
-      .l {
-        height: 100%;
-
-        dl {
-          dd {
-            position: relative;
-            width: 128px;
-            height: 46px;
-            line-height: 48px;
-            float: left;
-            margin-right: 20px;
-            border: 1px solid #E6EAF2;
-            text-align: center;
-            cursor: pointer;
-
-            img {
-              width: 30px;
-              height: 30px;
-            }
-
-            span {
-              font-size: 14px;
-              color: #5c5f66;
-            }
-
-            .iconfont {
-              color: #0081d2;
-              font-size: 20px;
-              display: none;
-            }
-
-            &.curr {
-              border: 2px solid #0081D2;
-
-              span {
-                color: #3a3c40;
-                font-weight: bold;
-              }
-
-              .iconfont {
-                position: absolute;
-                right: 0;
-                top: -12px;
-                display: block;
-              }
-            }
-          }
-        }
-      }
-
-      .r {
-        height: 100%;
-
-        .t1 {
-          font-size: 14px;
-          color: #959ba6;
-        }
-
-        .t2 {
-          font-size: 14px;
-          color: #3a3c40;
-          margin-right: 30px;
-        }
-
-        .t3 {
-          font-size: 14px;
-          color: #e82121;
-          font-weight: bold;
-        }
-
-      }
-    }
-  }
-
-  .order-message {
-    margin-bottom: 40px;
-
-    .order-message-box {
-      table {
-        width: 1180px;
-        border: 1px solid #E6EAF2;
-        border-collapse: collapse;
-
-        tr {
-          th {
-            height: 60px;
-            background: #F7F9FC;
-            font-size: 14px;
-            color: #5c5f66;
-            font-weight: normal;
-            text-align: left;
-            padding-left: 20px;
-          }
-
-          td {
-            vertical-align: top;
-            padding: 20px 0 20px 20px;
-            border-top: 1px solid #E6EAF2;
-            border-bottom: 1px solid #E6EAF2;
-
-            &.box1 {
-              .t1 {
-                font-size: 16px;
-                color: #3a3c40;
-                width: 230px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                font-weight: bold;
-              }
-
-              .t2 {
-                margin-top: 15px;
-                margin-bottom: 7px;
-                font-size: 14px;
-                color: #5c5f66;
-
-                .t2-1 {
-                  margin-right: 28px;
-                }
-              }
-
-              .t3 {
-                font-size: 14px;
-                color: #5c5f66;
-              }
-            }
-
-            &.box2 {
-              .t1 {
-                color: #5c5f66;
-                font-size: 14px;
-              }
-            }
-
-            &.box3 {
-              .iconfont {
-                font-size: 24px;
-                color: #e9b164;
-              }
-
-              .t1 {
-                font-size: 14px;
-                color: #3a3c40;
-                font-weight: bold;
-              }
-            }
-
-            &.box4 {
-              .t1 {
-                font-size: 14px;
-                color: #e82121;
-                font-weight: bold;
-              }
-            }
-
-            &.box5 {
-              a {
-                font-size: 14px;
-                color: #0081d2;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .contact {
-    margin-bottom: 40px;
-
-    .contact-box {
-      width: 1100px;
-      height: 110px;
-      background: #ffffff;
-      border-radius: 2px;
-      border: 1px solid #E6EAF2;
-      padding: 0 50px 0 30px;
-
-      .l {
-        height: 100%;
-
-        .inp-box {
-          white-space: nowrap;
-
-          .inp {
-            width: 280px;
-            height: 50px;
-            border-radius: 2px;
-            border: 1px solid #E6EAF2;
-            margin-right: 30px;
-
-            .iconfont {
-              font-size: 30px;
-              color: #e6eaf2;
-              padding-left: 16px;
-              margin-right: 15px;
-            }
-
-            input {
-              font-size: 16px;
-
-              &::-webkit-input-placeholder {
-                color: #959ba6;
-              }
-            }
-          }
-        }
-      }
-
-      .r {
-        height: 100%;
-
-        .check-box {
-          width: 14px;
-          height: 14px;
-          background: rgba(255, 255, 255, 1);
-          border-radius: 3px;
-          border: 2px solid rgba(0, 129, 210, 1);
+          background: #E82121;
+          border-radius: 2px;
+          line-height: 60px;
           text-align: center;
-          cursor: pointer;
-          line-height: 14px;
-
-          .iconfont {
-            font-size: 0px;
-          }
-
-          &.check-box-curr {
-            .iconfont {
-              color: #0081d2;
-              font-size: 16px;
-            }
-          }
-        }
-
-        .t1 {
-          font-size: 14px;
-          color: #3a3c40;
-          font-weight: bold;
-          margin-left: 8px;
-        }
-      }
-    }
-  }
-
-  .invoice {
-    margin-bottom: 40px;
-
-    .invoice-box {
-      width: 1090px;
-      height: 110px;
-      background: #F7F9FC;
-      border-radius: 2px;
-      border: 1px solid #E6EAF2;
-      padding: 0 60px 0 30px;
-
-      .l {
-        height: 100%;
-
-        .check-box {
-          width: 14px;
-          height: 14px;
-          background: rgba(255, 255, 255, 1);
-          border-radius: 3px;
-          border: 2px solid rgba(0, 129, 210, 1);
-          text-align: center;
-          cursor: pointer;
-          line-height: 14px;
-
-          .iconfont {
-            font-size: 0px;
-          }
-
-          &.check-box-curr {
-            .iconfont {
-              color: #0081d2;
-              font-size: 16px;
-            }
-          }
-        }
-
-        .t1 {
-          font-size: 14px;
-          color: #3a3c40;
-          font-weight: bold;
-          margin-left: 8px;
-        }
-      }
-
-      .r {
-        height: 100%;
-
-        .t1 {
-          font-size: 14px;
-          color: #959ba6;
-        }
-
-        .t2 {
-          margin-left: 20px;
-
-          P {
-            font-size: 14px;
-            color: #959ba6;
-
-            span {
-              color: #3a3c40;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .receipt {
-    margin-bottom: 40px;
-
-    .receipt-box {
-      width: 1090px;
-      height: 110px;
-      background: #F7F9FC;
-      border-radius: 2px;
-      border: 1px solid #E6EAF2;
-      padding: 0 60px 0 30px;
-
-      .l {
-        height: 100%;
-
-        .check-box {
-          width: 14px;
-          height: 14px;
-          background: rgba(255, 255, 255, 1);
-          border-radius: 3px;
-          border: 2px solid rgba(0, 129, 210, 1);
-          text-align: center;
-          cursor: pointer;
-          line-height: 14px;
-
-          .iconfont {
-            font-size: 0px;
-          }
-
-          &.check-box-curr {
-            .iconfont {
-              color: #0081d2;
-              font-size: 16px;
-            }
-          }
-        }
-
-        .t1 {
-          font-size: 14px;
-          color: #3a3c40;
-          font-weight: bold;
-          margin-left: 8px;
-        }
-      }
-
-      .r {
-        height: 100%;
-
-        .t1 {
-          font-size: 14px;
-          color: #959ba6;
-        }
-
-        .t2 {
-          margin-left: 20px;
-
-          P {
-            font-size: 14px;
-            color: #959ba6;
-
-            span {
-              color: #3a3c40;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .coupon {
-    .coupon-box {
-      padding-bottom: 29px;
-      border-bottom: 1px solid #E6EAF2;
-
-      ul {
-        li {
-          margin-right: 20px;
-          margin-bottom: 20px;
-          width: 380px;
-          height: 140px;
-          background: url("../../images/order/coupon.png") no-repeat center;
-          background-size: cover;
-          float: left;
-          cursor: pointer;
-          transition: all 0.2s ease;
-
-          &:nth-of-type(3n) {
-            margin-right: 0;
-          }
-
-          .l-text {
-            padding-left: 32px;
-
-            .t1 {
-              margin-bottom: 9px;
-
-              em {
-                font-size: 20px;
-                color: #ffffff;
-              }
-
-              span {
-                font-size: 44px;
-                color: #ffffff;
-              }
-            }
-
-            .t2 {
-              font-size: 14px;
-              color: #ffffff;
-            }
-          }
-
-          .c-text {
-            padding-left: 59px;
-
-            .t1 {
-              font-size: 16px;
-              color: #3a3c40;
-              font-weight: bold;
-              margin-bottom: 14px;
-            }
-
-            .t2 {
-              font-size: 12px;
-              color: #959BA6;
-              margin-bottom: 8px;
-
-              .ico {
-                cursor: pointer;
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                background: #E89721;
-                color: #ffffff;
-                font-size: 12px;
-                text-align: center;
-                line-height: 12px;
-                font-style: normal;
-                margin-left: 8px;
-              }
-
-              em {
-                color: #5c5f66;
-              }
-            }
-          }
-
-          &.curr {
-            background: url("../../images/order/coupon1.png") no-repeat center;
-            background-size: cover;
-          }
-        }
-      }
-    }
-  }
-
-  .order-remarks {
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-    .l {
-      .t1 {
-        font-size: 20px;
-        color: #3a3c40;
-        margin-bottom: 20px;
-      }
-
-      .textarea {
-        position: relative;
-        width: 580px;
-        height: 100px;
-        border-radius: 2px;
-        border: 1px solid #E6EAF2;
-
-        &:focus {
-          border: 1px solid #0081D2;
-        }
-
-        textarea {
-          width: 570px;
-          height: 90px;
-          padding: 5px;
-          resize: none;
-        }
-
-        .limitWords {
-          font-size: 12px;
-          color: #959ba6;
-          position: absolute;
-          right: 14px;
-          bottom: 9px;
-          z-index: 1;
-        }
-      }
-    }
-
-    .r {
-      .t1 {
-        margin-bottom: 12px;
-
-        label {
-          font-size: 14px;
-          color: #5c5f66;
-          width: 118px;
-          text-align: right;
-          vertical-align: middle;
-        }
-
-        span {
-          font-size: 14px;
-          color: #3a3c40;
-          font-weight: bold;
-          vertical-align: middle;
-          text-align: right;
-          width: 120px;
-        }
-      }
-
-      .t2 {
-        margin-top: 20px;
-
-        label {
           font-size: 20px;
-          color: #3A3C40;
-          width: 118px;
-          font-weight: bold;
-          text-align: right;
-          vertical-align: middle;
-        }
+          color: #ffffff;
 
-        span {
-          font-size: 20px;
-          color: #E82121;
-          font-weight: bold;
-          vertical-align: middle;
-          text-align: right;
-          width: 120px;
-        }
-      }
-    }
-  }
-
-  .order-submit {
-    width: 1128px;
-    height: 100px;
-    background: #F7F9FC;
-    border-radius: 2px;
-    border: 1px solid #E6EAF2;
-    padding: 0 30px 0 20px;
-
-    .l {
-      height: 100%;
-
-      .iconfont {
-        font-size: 40px;
-        color: #0081d2;
-      }
-
-      .text {
-        margin-left: 20px;
-
-        .t1 {
-          em {
-            font-size: 16px;
-            color: #3a3c40;
-            font-weight: bold;
+          &:hover {
+            background: #ff2424;
           }
-
-          span {
-            margin-left: 20px;
-            font-size: 16px;
-            color: #3a3c40;
-            font-weight: bold;
-          }
-        }
-
-        .t2 {
-          margin-top: 10px;
-          font-size: 14px;
-          color: #3a3c40;
-        }
-      }
-    }
-
-    .r {
-      height: 100%;
-
-      .btn {
-        width: 200px;
-        height: 60px;
-        background: #E82121;
-        border-radius: 2px;
-        line-height: 60px;
-        text-align: center;
-        font-size: 20px;
-        color: #ffffff;
-
-        &:hover {
-          background: #ff2424;
         }
       }
     }
@@ -1243,6 +659,7 @@
       &.curr {
         border: 2px solid #0081D2;
         background: #ffffff;
+
         .iconfont {
           display: block;
         }
@@ -1283,7 +700,7 @@
   overflow: hidden !important;
 }
 
-.aa{
+.aa {
   max-height: 634px !important;
 }
 

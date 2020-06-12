@@ -999,6 +999,7 @@ body {
   color: #959ba6;
 }
 .user-center .user-center-r .user-center-section {
+  position: relative;
   margin-top: 30px;
 }
 .user-center .user-center-r .user-center-section .order-status {
@@ -1385,3 +1386,4 @@ body {
 .user-center .user-center-r .user-center-section .drying-list ul li a .text .star dd.default {
   color: #afb2bc;
 }
+/*# sourceMappingURL=index.css.map */
