@@ -255,7 +255,7 @@
                                 <p class="t1">2020-03-28</p>
                             </td>
                             <td class="type6 va-t">
-                                <p class="t1">待支付</p>
+                                <p class="t1 pending_review">待支付</p>
                             </td>
                             <td class="type7 va-t">
                                 <a class="t1">订单详情</a>
@@ -766,6 +766,30 @@
         </div>
     </div>
 </script>
+<script type="text/html" id="reviewHtml">
+    <div class="review-layer">
+        <table>
+            <tbody>
+            <tr>
+                <td>审核结果</td>
+                <td>审核不通过 2020-06-15 15：41</td>
+            </tr>
+            <tr>
+                <td>未通过原因</td>
+                <td>文件的内容有问题/文件参数有问题/其他问题</td>
+            </tr>
+            <tr>
+                <td>联系客服</td>
+                <td>
+                    <p>跟单人员：习近平 185895058963</p>
+                    <p>业务人员：特朗普 185895058963</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <a href="javascript:;" class="btn pending_review_btn">我已知晓</a>
+    </div>
+</script>
 
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
@@ -787,6 +811,30 @@
           layui.form.render();
         }
       });
+    });
+
+
+    $(document).on('click', '.pending_review', function () {
+
+      layer.open({
+        type: 1,
+        skin: 'aa',
+        title: '<span>猎板网订单审核结果</span>',
+        area: ['500px', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#reviewHtml").html(),
+        success: function (layero, index) {
+          layui.form.render();
+        }
+      });
+
+    });
+
+    $(document).on('click', '.pending_review_btn', function () {
+
+      layer.closeAll();
+
     });
 
 
