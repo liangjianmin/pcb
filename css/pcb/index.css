@@ -1649,9 +1649,6 @@ label .iconiconfontquestion .arrow-tips .tips {
   width: 280px;
   white-space: pre-wrap;
 }
-.pcb-layer-box .layui-layer-content {
-  max-height: 900px;
-}
 .pcb-layer-box .pcb-way-layer {
   position: relative;
   padding: 30px 60px 40px 50px;
