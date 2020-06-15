@@ -1483,4 +1483,7 @@ body {
   margin: 20px auto 0;
   display: block;
 }
+.layui-textarea {
+  font-size: 14px;
+}
 /*# sourceMappingURL=index.css.map */
