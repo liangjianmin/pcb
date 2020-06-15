@@ -1387,4 +1387,42 @@ body {
 .user-center .user-center-r .user-center-section .drying-list ul li a .text .star dd.default {
   color: #afb2bc;
 }
+.user-center-layer {
+  padding: 30px;
+}
+.user-center-layer .t1 {
+  font-size: 15px;
+  color: #5c5f66;
+}
+.user-center-layer .txt {
+  margin-top: 30px;
+}
+.user-center-layer .txt .t2 {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-right: 5px;
+}
+.user-center-layer .btn {
+  margin-top: 30px;
+  margin-left: 63px;
+}
+.user-center-layer .btn a {
+  width: 100px;
+  height: 40px;
+  background: #0081d2;
+  border-radius: 2px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: block;
+}
+.layui-form-select .layui-input,
+.layui-form-select dl dd,
+.layui-form-select dl dt {
+  font-size: 14px;
+}
+.layui-form-select dl dd.layui-this {
+  background: #0081d2 !important;
+}
 /*# sourceMappingURL=index.css.map */
