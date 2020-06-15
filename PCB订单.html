@@ -743,12 +743,51 @@
     </div>
 </div>
 <!--footer end-->
+
+<script type="text/html" id="canelHtml">
+    <div class="user-center-layer layui-form">
+        <div>
+            <p class="t1">是否确定取消订单包[G87878787878]</p>
+            <div class="lbBox txt">
+                <span class="lineBlock va-m t2">取消原因</span>
+                <div class="lineBlock va-m" style="width: 200px;">
+                    <select name="" id="">
+                        <option value="">请选择</option>
+                        <option value="">价格贵</option>
+                        <option value="">超制程</option>
+                        <option value="">下错订单</option>
+                        <option value="">审核后另加交期费用</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="javascript:;">确定</a>
+        </div>
+    </div>
+</script>
+
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
   $(function () {
+
+    $(document).on('click', '.canel', function () {
+      layer.open({
+        type: 1,
+        skin: 'aa',
+        title: '<span>取消订单</span>',
+        area: ['400px', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#canelHtml").html(),
+        success: function (layero, index) {
+          layui.form.render();
+        }
+      });
+    });
 
 
     layui.laypage.render({
