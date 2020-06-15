@@ -985,9 +985,31 @@ body {
   color: #E82121;
   font-weight: bold;
 }
-.order-section .order-section-wrap .order-info .data-list table tr td.box6 a {
+.order-section .order-section-wrap .order-info .data-list table tr td.box6 .detail {
   font-size: 14px;
   color: #0081D2;
+  position: relative;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box6 .detail:hover .detail-div {
+  display: block;
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box6 .detail .detail-div {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -863px;
+  width: 900px;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+.order-section .order-section-wrap .order-info .data-list table tr td.box6 .detail .detail-div .title {
+  background: #3A3C40;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 12px;
+  opacity: 0.5;
+  text-align: right;
 }
 .order-section .order-section-wrap .contact-information {
   padding: 30px 0;
@@ -1742,5 +1764,27 @@ body {
 }
 .aa .layui-layer-content {
   overflow: auto !important;
+}
+.material-layer dl {
+  white-space: nowrap;
+  text-align: center;
+}
+.material-layer dl dd:first-child {
+  border-right: 1px solid #E6EAF2;
+  margin-right: 39px;
+  padding-right: 60px;
+}
+.material-layer dl dd p .t1 {
+  width: 112px;
+  font-size: 12px !important;
+  color: #959ba6;
+  text-align: left;
+}
+.material-layer dl dd p .t2 {
+  width: 144px;
+  font-size: 12px !important;
+  color: #3a3c40;
+  font-weight: bold;
+  text-align: left;
 }
 /*# sourceMappingURL=index.css.map */
