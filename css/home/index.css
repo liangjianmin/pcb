@@ -1006,6 +1006,7 @@ body {
   margin-right: 20px;
 }
 .home .home-price .home-price-wrap .l .btn {
+  position: relative;
   width: 160px;
   height: 40px;
   line-height: 40px;
@@ -1014,14 +1015,40 @@ body {
   border-radius: 2px;
   display: block;
   margin: 0 auto;
+  overflow: hidden;
 }
-.home .home-price .home-price-wrap .l .btn i {
-  font-size: 20px;
-  color: #ffffff;
-}
-.home .home-price .home-price-wrap .l .btn span {
+.home .home-price .home-price-wrap .l .btn .imme_price_txt1 {
+  transform: translate(-90px, 0);
+  transition: all 0.3s;
+  position: absolute;
+  z-index: 9;
+  display: block;
   font-size: 14px;
   color: #ffffff;
+}
+.home .home-price .home-price-wrap .l .btn .imme_price_txt1 .arrow_long_right {
+  background-position: -361px -89px;
+  width: 20px;
+  height: 7px;
+  vertical-align: middle;
+  margin-left: 7px;
+  background-image: url(../../images/home/icons5.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.home .home-price .home-price-wrap .l .btn .imme_price_txt2 {
+  font-size: 14px;
+  color: #ffffff;
+  transition: all 0.3s;
+  position: absolute;
+  z-index: 7;
+  transform: translate(-30px, 0);
+}
+.home .home-price .home-price-wrap .l .btn:hover .imme_price_txt1 {
+  transform: translate(43px, 0);
+}
+.home .home-price .home-price-wrap .l .btn:hover .imme_price_txt2 {
+  transform: translate(100px, 0);
 }
 .home .home-price .home-price-wrap .r ul li {
   width: 328px;
@@ -1057,6 +1084,7 @@ body {
   margin-bottom: 20px;
 }
 .home .home-price .home-price-wrap .r ul .btn {
+  position: relative;
   width: 120px;
   height: 36px;
   background: #0081D2;
@@ -1067,6 +1095,41 @@ body {
   color: #ffffff;
   margin: 0 auto;
   display: block;
+  overflow: hidden;
+}
+.home .home-price .home-price-wrap .r ul .btn .imme_price_txt1 {
+  transform: translate(-90px, 0);
+  transition: all 0.3s;
+  position: absolute;
+  z-index: 9;
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+}
+.home .home-price .home-price-wrap .r ul .btn .imme_price_txt1 .arrow_long_right {
+  background-position: -361px -89px;
+  width: 20px;
+  height: 7px;
+  vertical-align: middle;
+  margin-left: 7px;
+  background-image: url(../../images/home/icons5.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.home .home-price .home-price-wrap .r ul .btn .imme_price_txt2 {
+  font-size: 14px;
+  color: #ffffff;
+  transition: all 0.3s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 7;
+}
+.home .home-price .home-price-wrap .r ul .btn:hover .imme_price_txt1 {
+  transform: translate(22px, 0);
+}
+.home .home-price .home-price-wrap .r ul .btn:hover .imme_price_txt2 {
+  transform: translate(100px, 0);
 }
 .home .explain {
   height: 160px;
