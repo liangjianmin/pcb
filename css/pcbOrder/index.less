@@ -70,7 +70,7 @@
           height: 100%;
         }
 
-        &:hover,&.curr {
+        &:hover, &.curr {
           background: #F7F9FC;
         }
 
@@ -140,11 +140,13 @@
       tbody {
         tr {
           border: 1px solid #E6EAF2;
-          &:nth-child(2){
-            td{
-              border-top:1px solid #ACB3BF;
+
+          &:nth-child(2) {
+            td {
+              border-top: 1px solid #ACB3BF;
             }
           }
+
           th {
             white-space: nowrap;
             padding-left: 30px;
@@ -152,6 +154,7 @@
             text-align: left;
             font-weight: normal;
             background: #F7F9FC;
+
             .t1 {
               font-size: 14px;
               color: #3a3c40;
@@ -203,6 +206,7 @@
               width: 253px;
 
               .t1 {
+                width: 253px;
                 color: #3a3c40;
                 font-size: 16px;
                 font-weight: bold;
@@ -222,7 +226,10 @@
             }
 
             &.type2 {
+              width: 83px;
+
               .t1 {
+                width: 83px;
                 font-size: 14px;
                 color: #5C5F66;
                 text-align: center;
@@ -230,9 +237,12 @@
             }
 
             &.type3 {
+              width: 218px;
               text-align: center;
 
               .t1 {
+                width: 218px;
+
                 .iconfont {
                   font-size: 24px;
                   color: #e8b46b;
@@ -247,6 +257,7 @@
               }
 
               .t2 {
+                width: 218px;
                 margin-top: 7px;
                 font-size: 14px;
                 color: #959ba6;
@@ -255,8 +266,10 @@
 
             &.type4 {
               padding-left: 9px;
+              width: 127px;
 
               .t1 {
+                width: 116px;
                 color: #e82121;
                 font-size: 14px;
                 font-weight: bold;
@@ -264,7 +277,10 @@
             }
 
             &.type5 {
+              width: 95px;
+
               .t1 {
+                width: 93px;
                 font-size: 14px;
                 color: #5c5f66;
                 text-align: center;
@@ -276,61 +292,75 @@
               color: #e82121;
               text-align: center;
               font-weight: bold;
+              white-space: nowrap;
 
               .t1 {
+                width: 57px;
                 color: #E82121;
                 font-size: 14px;
                 font-weight: bold;
-                margin-bottom: 10px;
+                margin: 0 auto 10px;
+                text-align: center;
               }
 
               .t2 {
                 font-size: 14px;
                 color: #0081d2;
                 font-weight: bold;
-                margin-bottom: 10px;
+                margin: 0 auto 10px;
+                width: 55px;
               }
 
               .t3 {
                 font-size: 14px;
                 color: #5c5f66;
+                width: 55px;
               }
+
               .t4 {
                 font-size: 14px;
                 color: #0081D2;
                 font-weight: 600;
                 margin-bottom: 10px;
+                width: 55px;
               }
+
               .t5 {
                 font-size: 14px;
                 color: #5C5F66;
                 cursor: pointer;
                 position: relative;
-                &:hover{
-                  color:#0081D2;
-                  .translate-tips{
-                    height:auto
+                width: 55px;
+
+                &:hover {
+                  color: #0081D2;
+
+                  .translate-tips {
+                    height: auto
                   }
                 }
-                .translate-tips{
+
+                .translate-tips {
                   position: absolute;
-                  width:320px;
-                  left:-143px;
+                  width: 320px;
+                  left: -143px;
                   z-index: 1;
                   height: 0;
                   overflow: hidden;
-                  .arrow{
+
+                  .arrow {
                     position: relative;
                     z-index: 4;
-                    top:1px;
-                    left:165px;
+                    top: 1px;
+                    left: 165px;
                     display: block;
-                    height:8px;
+                    height: 8px;
                     width: 16px;
                     background: url('../../images/pcb/top-arrow.png') no-repeat;
                     background-size: 100% 100%;
                   }
-                  .tips-text{
+
+                  .tips-text {
                     border: 1px solid #0081D2;
                     padding: 3px 24px 18px;
                     background-color: #fff;
@@ -338,33 +368,40 @@
                     border-radius: 2px;
                     max-height: 300px;
                     overflow-y: auto;
-                    .tip{
+
+                    .tip {
                       position: relative;
-                      margin-top:15px;
-                      .mark{
+                      margin-top: 15px;
+
+                      .mark {
                         position: absolute;
                         display: block;
-                        width:9px;
-                        height:9px;
+                        width: 9px;
+                        height: 9px;
                         border-radius: 50% 50%;
-                        background-color:#ACB3BF ;
-                        top:5px;
-                        &.active{
+                        background-color: #ACB3BF;
+                        top: 5px;
+
+                        &.active {
                           background-color: #0081D2;
                         }
                       }
-                      .text{
-                        margin-left:31px;
-                        p{
+
+                      .text {
+                        margin-left: 31px;
+
+                        p {
                           text-align: left;
-                          &.detail{
+
+                          &.detail {
                             font-size: 14px;
-                            color:#3A3C40
+                            color: #3A3C40
                           }
-                          &.time{
+
+                          &.time {
                             font-size: 12px;
-                            color:#959BA6;
-                            margin-top:2px;
+                            color: #959BA6;
+                            margin-top: 2px;
                           }
                         }
                       }
@@ -379,13 +416,16 @@
               text-align: center;
 
               .t1 {
+                width: 64px;
                 font-size: 14px;
                 color: #0081d2;
-                margin-bottom: 10px;
+                margin: 0 auto 10px;
                 display: block;
               }
 
               .t2 {
+                width: 64px;
+                text-align: center;
                 font-size: 14px;
                 color: #5c5f66;
               }
@@ -479,6 +519,7 @@
   .btn {
     margin-top: 30px;
     margin-left: 63px;
+
     a {
       width: 100px;
       height: 40px;
@@ -498,11 +539,11 @@
   font-size: 14px;
 }
 
-.layui-form-select dl dd.layui-this{
+.layui-form-select dl dd.layui-this {
   background: #0081d2 !important;
 }
 
-.layui-layer-page .layui-layer-content{
+.layui-layer-page .layui-layer-content {
   height: auto !important;
   overflow: visible !important;
 }

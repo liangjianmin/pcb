@@ -973,6 +973,7 @@ body {
   width: 253px;
 }
 .pcb-order .data-list table tbody tr td.type1 .t1 {
+  width: 253px;
   color: #3a3c40;
   font-size: 16px;
   font-weight: bold;
@@ -987,13 +988,21 @@ body {
   color: #5c5f66;
   font-size: 14px;
 }
+.pcb-order .data-list table tbody tr td.type2 {
+  width: 83px;
+}
 .pcb-order .data-list table tbody tr td.type2 .t1 {
+  width: 83px;
   font-size: 14px;
   color: #5C5F66;
   text-align: center;
 }
 .pcb-order .data-list table tbody tr td.type3 {
+  width: 218px;
   text-align: center;
+}
+.pcb-order .data-list table tbody tr td.type3 .t1 {
+  width: 218px;
 }
 .pcb-order .data-list table tbody tr td.type3 .t1 .iconfont {
   font-size: 24px;
@@ -1006,19 +1015,26 @@ body {
   font-weight: bold;
 }
 .pcb-order .data-list table tbody tr td.type3 .t2 {
+  width: 218px;
   margin-top: 7px;
   font-size: 14px;
   color: #959ba6;
 }
 .pcb-order .data-list table tbody tr td.type4 {
   padding-left: 9px;
+  width: 127px;
 }
 .pcb-order .data-list table tbody tr td.type4 .t1 {
+  width: 116px;
   color: #e82121;
   font-size: 14px;
   font-weight: bold;
 }
+.pcb-order .data-list table tbody tr td.type5 {
+  width: 95px;
+}
 .pcb-order .data-list table tbody tr td.type5 .t1 {
+  width: 93px;
   font-size: 14px;
   color: #5c5f66;
   text-align: center;
@@ -1028,34 +1044,41 @@ body {
   color: #e82121;
   text-align: center;
   font-weight: bold;
+  white-space: nowrap;
 }
 .pcb-order .data-list table tbody tr td.type6 .t1 {
+  width: 57px;
   color: #E82121;
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+  text-align: center;
 }
 .pcb-order .data-list table tbody tr td.type6 .t2 {
   font-size: 14px;
   color: #0081d2;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+  width: 55px;
 }
 .pcb-order .data-list table tbody tr td.type6 .t3 {
   font-size: 14px;
   color: #5c5f66;
+  width: 55px;
 }
 .pcb-order .data-list table tbody tr td.type6 .t4 {
   font-size: 14px;
   color: #0081D2;
   font-weight: 600;
   margin-bottom: 10px;
+  width: 55px;
 }
 .pcb-order .data-list table tbody tr td.type6 .t5 {
   font-size: 14px;
   color: #5C5F66;
   cursor: pointer;
   position: relative;
+  width: 55px;
 }
 .pcb-order .data-list table tbody tr td.type6 .t5:hover {
   color: #0081D2;
@@ -1126,12 +1149,15 @@ body {
   text-align: center;
 }
 .pcb-order .data-list table tbody tr td.type7 .t1 {
+  width: 64px;
   font-size: 14px;
   color: #0081d2;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   display: block;
 }
 .pcb-order .data-list table tbody tr td.type7 .t2 {
+  width: 64px;
+  text-align: center;
   font-size: 14px;
   color: #5c5f66;
 }

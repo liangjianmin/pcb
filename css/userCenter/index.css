@@ -1118,6 +1118,7 @@ body {
   width: 253px;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type1 .t1 {
+  width: 253px;
   color: #3a3c40;
   font-size: 16px;
   font-weight: bold;
@@ -1132,13 +1133,21 @@ body {
   color: #5c5f66;
   font-size: 14px;
 }
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type2 {
+  width: 72px;
+}
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type2 .t1 {
+  width: 72px;
   font-size: 14px;
   color: #5C5F66;
   text-align: center;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type3 {
   text-align: center;
+  width: 218px;
+}
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type3 .t1 {
+  width: 218px;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type3 .t1 .iconfont {
   font-size: 24px;
@@ -1151,52 +1160,65 @@ body {
   font-weight: bold;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type3 .t2 {
+  width: 218px;
   margin-top: 7px;
   font-size: 14px;
   color: #959ba6;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type4 {
+  width: 128px;
   padding-left: 9px;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type4 .t1 {
+  width: 118px;
   color: #e82121;
   font-size: 14px;
   font-weight: bold;
 }
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type5 {
+  width: 100px;
+}
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type5 .t1 {
+  width: 100px;
   font-size: 14px;
   color: #5c5f66;
   text-align: center;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 {
+  width: 72px;
   font-size: 14px;
   color: #e82121;
   text-align: center;
   font-weight: bold;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t1 {
+  width: 72px;
   color: #E82121;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t2 {
+  width: 72px;
   font-size: 14px;
   color: #0081d2;
   font-weight: bold;
   margin-bottom: 10px;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t3 {
+  width: 72px;
   font-size: 14px;
   color: #5c5f66;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t4 {
+  width: 72px;
   font-size: 14px;
   color: #0081D2;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 {
+  width: 72px;
   font-size: 14px;
   color: #5C5F66;
   cursor: pointer;
@@ -1268,17 +1290,20 @@ body {
   margin-top: 2px;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type7 {
+  width: 70px;
   font-size: 14px;
   color: #0081d2;
   text-align: center;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type7 .t1 {
+  width: 70px;
   font-size: 14px;
   color: #0081d2;
   margin-bottom: 10px;
   display: block;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type7 .t2 {
+  width: 70px;
   font-size: 14px;
   color: #5c5f66;
 }
