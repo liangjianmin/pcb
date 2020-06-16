@@ -864,6 +864,7 @@ body {
   margin-bottom: 20px;
 }
 .pay-section .pay-content .pay-operation .pay-operation-box ul li dl dd {
+  position: relative;
   cursor: pointer;
   float: left;
   text-align: center;
@@ -931,6 +932,30 @@ body {
 }
 .pay-section .pay-content .pay-operation .pay-operation-box ul li dl dd.curr {
   border: 2px solid #0081D2;
+}
+.pay-section .pay-content .pay-operation .pay-operation-box ul li dl dd.curr::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 18px solid #0081D2;
+  border-left: 18px solid transparent;
+  bottom: 0;
+  right: 0;
+}
+.pay-section .pay-content .pay-operation .pay-operation-box ul li dl dd.curr::before {
+  font-family: "iconfont" !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e644";
+  position: absolute;
+  bottom: -3px;
+  right: -2px;
+  z-index: 1;
+  color: #fff;
+  font-weight: normal;
 }
 .pay-section .pay-content .pay-operation .pay-operation-box ul li .tip {
   margin-top: 22px;

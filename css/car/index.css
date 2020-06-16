@@ -1009,10 +1009,6 @@ body {
   background: #F7F9FC;
 }
 .car-section .car-list .car-total {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 10px;
   text-align: center;
   margin: 40px auto 0;
   width: 1190px;
