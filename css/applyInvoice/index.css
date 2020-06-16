@@ -303,6 +303,9 @@ body {
   color: #5c5f66;
   display: block;
 }
+.pcb-footer .pcb-footer-top .l ul li a:hover {
+  color: #0081d2;
+}
 .pcb-footer .pcb-footer-top .l ul li a:first-child {
   margin-bottom: 12px;
   color: #3a3c40;

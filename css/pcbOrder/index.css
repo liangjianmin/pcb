@@ -303,6 +303,9 @@ body {
   color: #5c5f66;
   display: block;
 }
+.pcb-footer .pcb-footer-top .l ul li a:hover {
+  color: #0081d2;
+}
 .pcb-footer .pcb-footer-top .l ul li a:first-child {
   margin-bottom: 12px;
   color: #3a3c40;
@@ -890,7 +893,7 @@ body {
   font-weight: bold;
 }
 .pcb-order .pcb-order-status ul li.curr {
-  border-bottom: 5px solid #ACB3BF;
+  border-bottom: 5px solid #0081D2;
 }
 .pcb-order .list-th {
   width: 928px;

@@ -303,6 +303,9 @@ body {
   color: #5c5f66;
   display: block;
 }
+.pcb-footer .pcb-footer-top .l ul li a:hover {
+  color: #0081d2;
+}
 .pcb-footer .pcb-footer-top .l ul li a:first-child {
   margin-bottom: 12px;
   color: #3a3c40;
@@ -923,6 +926,9 @@ body {
 .home .notice .r .news dd {
   margin-bottom: 7px;
 }
+.home .notice .r .news dd:hover .ll {
+  color: #0081d2;
+}
 .home .notice .r .news dd .ll {
   width: 234px;
   white-space: nowrap;
@@ -930,6 +936,7 @@ body {
   font-size: 12px;
   overflow: hidden;
   color: #5c5f66;
+  cursor: pointer;
 }
 .home .notice .r .news dd .rr {
   font-size: 12px;
