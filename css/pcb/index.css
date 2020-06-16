@@ -898,6 +898,9 @@ body {
 }
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline em.color5 {
   background: #FFFFFF;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ACB3BF;
 }
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline em.color6 {
   background: #000000;
