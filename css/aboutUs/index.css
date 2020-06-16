@@ -742,7 +742,7 @@ body {
   width: 254px;
   text-align: center;
   line-height: 75px;
-  font-size: 26px ;
+  font-size: 26px;
   font-weight: 600;
   color: #fff;
   margin: 0 auto;
@@ -752,6 +752,7 @@ body {
   margin-top: 70px;
 }
 .about-us .about-us-center .icon-group .icon-item {
+  position: relative;
   width: 220px;
   height: 300px;
   background: #fff;
@@ -759,6 +760,7 @@ body {
   box-sizing: border-box;
   padding-top: 30px;
   margin-left: 60px;
+  transition: all 0.2s ease;
 }
 .about-us .about-us-center .icon-group .icon-item.noMarginLeft {
   margin-left: 0;
@@ -800,6 +802,14 @@ body {
   color: #959BA6;
   text-align: center;
   line-height: 25px;
+}
+.about-us .about-us-center .icon-group .icon-item:hover {
+  margin-top: -3px;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transform: translate3d(0, -1px, 0);
+  -ms-transform: translate3d(0, -1px, 0);
+  transform: translate3d(0, -1px, 0);
 }
 .about-us .about-us-bottom {
   text-align: center;
@@ -865,14 +875,14 @@ body {
   width: 253px;
 }
 .about-us .about-us-bottom .good-group .good-item .item-desc .good-mark {
-  font-size: 12px ;
+  font-size: 12px;
   color: #0081D2;
   margin-top: 4px;
   width: 253px;
 }
 .about-us .about-us-bottom .good-group .good-item .item-desc .good-mark div {
   cursor: pointer;
-  margin: 4px 0 0 11px ;
+  margin: 4px 0 0 11px;
 }
 .about-us .about-us-bottom .good-group .good-item .item-desc .immediate-pricing-btn {
   width: 100px;
