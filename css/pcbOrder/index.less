@@ -58,6 +58,7 @@
       border-bottom: 1px solid #E6EAF2;
 
       li {
+        position: relative;
         float: left;
         width: 136px;
         height: 98px;
@@ -70,7 +71,7 @@
           height: 100%;
         }
 
-        &:hover, &.curr {
+        &:hover{
           background: #F7F9FC;
         }
 
@@ -98,6 +99,10 @@
           font-size: 20px;
           color: #e82121;
           font-weight: bold;
+        }
+
+        &.curr{
+          border-bottom: 5px solid #ACB3BF;
         }
       }
     }

@@ -853,6 +853,7 @@ body {
   border-bottom: 1px solid #E6EAF2;
 }
 .pcb-order .pcb-order-status ul li {
+  position: relative;
   float: left;
   width: 136px;
   height: 98px;
@@ -864,8 +865,7 @@ body {
   display: block;
   height: 100%;
 }
-.pcb-order .pcb-order-status ul li:hover,
-.pcb-order .pcb-order-status ul li.curr {
+.pcb-order .pcb-order-status ul li:hover {
   background: #F7F9FC;
 }
 .pcb-order .pcb-order-status ul li:last-child {
@@ -888,6 +888,9 @@ body {
   font-size: 20px;
   color: #e82121;
   font-weight: bold;
+}
+.pcb-order .pcb-order-status ul li.curr {
+  border-bottom: 5px solid #ACB3BF;
 }
 .pcb-order .list-th {
   width: 928px;
