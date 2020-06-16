@@ -874,6 +874,10 @@ body {
   border-radius: 50%;
   line-height: 60px;
   text-align: center;
+  transition: all 0.8s ease;
+}
+.home .notice .l ul li .pic:hover {
+  transform: rotateY(360deg);
 }
 .home .notice .l ul li .pic .iconfont {
   font-size: 40px;
@@ -966,6 +970,7 @@ body {
   height: 220px;
   background: url('../../images/home/xb.png') no-repeat center;
   background-size: cover;
+  transition: all 0.2s ease;
 }
 .home .home-price .home-price-wrap .l .t1 {
   font-size: 24px;
@@ -1050,7 +1055,16 @@ body {
 .home .home-price .home-price-wrap .l .btn:hover .imme_price_txt2 {
   transform: translate(100px, 0);
 }
+.home .home-price .home-price-wrap .l:hover {
+  margin-top: -3px;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transform: translate3d(0, -1px, 0);
+  -ms-transform: translate3d(0, -1px, 0);
+  transform: translate3d(0, -1px, 0);
+}
 .home .home-price .home-price-wrap .r ul li {
+  position: relative;
   width: 328px;
   height: 278px;
   float: left;
@@ -1058,6 +1072,7 @@ body {
   border: 1px solid #E6EAF2;
   padding: 20px 0 0 0;
   margin-right: 20px;
+  transition: all 0.2s ease;
 }
 .home .home-price .home-price-wrap .r ul li:nth-of-type(2n) {
   margin-right: 0;
@@ -1070,6 +1085,14 @@ body {
 .home .home-price .home-price-wrap .r ul li .pic img {
   width: 160px;
   height: 120px;
+}
+.home .home-price .home-price-wrap .r ul li:hover {
+  margin-top: -3px;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transform: translate3d(0, -1px, 0);
+  -ms-transform: translate3d(0, -1px, 0);
+  transform: translate3d(0, -1px, 0);
 }
 .home .home-price .home-price-wrap .r ul .t1 {
   font-size: 16px;
@@ -1163,6 +1186,10 @@ body {
   text-align: center;
   font-size: 14px;
   color: #ffffff;
+  transition: all 0.2s ease;
+}
+.home .explain .l-bar a:hover {
+  background: #0090eb;
 }
 .home .explain .r-bar {
   width: 892px;
@@ -1195,6 +1222,12 @@ body {
   vertical-align: top;
   position: relative;
   top: 16px;
+}
+.home .explain .r-bar dl dd:hover .text .iconfont {
+  color: #0081d2;
+}
+.home .explain .r-bar dl dd:hover .text p {
+  color: #0081d2;
 }
 .home .home-section {
   padding: 50px 0;
@@ -1325,9 +1358,19 @@ body {
   height: 383px;
 }
 .home .home-section .list-pic .bd ul li {
+  position: relative;
   float: left;
   height: 383px;
   margin-right: 20px;
+  transition: all 0.4s ease;
+}
+.home .home-section .list-pic .bd ul li:hover {
+  margin-top: -3px;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transform: translate3d(0, -1px, 0);
+  -ms-transform: translate3d(0, -1px, 0);
+  transform: translate3d(0, -1px, 0);
 }
 .home .home-section .list-pic .bd ul li a {
   display: block;
@@ -1335,10 +1378,15 @@ body {
 .home .home-section .list-pic .bd ul li a .pic {
   width: 280px;
   height: 220px;
+  overflow: hidden;
 }
 .home .home-section .list-pic .bd ul li a .pic img {
   width: 280px;
   height: 220px;
+  transition: all 0.2s ease;
+}
+.home .home-section .list-pic .bd ul li a .pic:hover img {
+  transform: scale(1.1);
 }
 .home .home-section .list-pic .bd ul li a .text {
   padding: 20px 20px 30px 20px;

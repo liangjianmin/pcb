@@ -257,6 +257,11 @@
             border-radius: 50%;
             line-height: 60px;
             text-align: center;
+            transition: all 0.8s ease;
+
+            &:hover {
+              transform: rotateY(360deg);
+            }
 
             .iconfont {
               font-size: 40px;
@@ -378,6 +383,7 @@
         height: 220px;
         background: url('../../images/home/xb.png') no-repeat center;
         background-size: cover;
+        transition: all 0.2s ease;
 
         .t1 {
           font-size: 24px;
@@ -477,11 +483,21 @@
             }
           }
         }
+
+        &:hover {
+          margin-top: -3px;
+          -webkit-transition: all .3s cubic-bezier(.55, 0, .1, 1);
+          transition: all .3s cubic-bezier(.55, 0, .1, 1);
+          -webkit-transform: translate3d(0, -1px, 0);
+          -ms-transform: translate3d(0, -1px, 0);
+          transform: translate3d(0, -1px, 0);
+        }
       }
 
       .r {
         ul {
           li {
+            position: relative;
             width: 328px;
             height: 278px;
             float: left;
@@ -489,6 +505,7 @@
             border: 1px solid #E6EAF2;
             padding: 20px 0 0 0;
             margin-right: 20px;
+            transition: all 0.2s ease;
 
             &:nth-of-type(2n) {
               margin-right: 0;
@@ -503,6 +520,15 @@
                 width: 160px;
                 height: 120px;
               }
+            }
+
+            &:hover {
+              margin-top: -3px;
+              -webkit-transition: all .3s cubic-bezier(.55, 0, .1, 1);
+              transition: all .3s cubic-bezier(.55, 0, .1, 1);
+              -webkit-transform: translate3d(0, -1px, 0);
+              -ms-transform: translate3d(0, -1px, 0);
+              transform: translate3d(0, -1px, 0);
             }
           }
 
@@ -615,6 +641,11 @@
         text-align: center;
         font-size: 14px;
         color: #ffffff;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: #0090eb;
+        }
       }
     }
 
@@ -654,6 +685,19 @@
             vertical-align: top;
             position: relative;
             top: 16px;
+          }
+
+          &:hover {
+            .text {
+              .iconfont {
+                color: #0081d2;
+              }
+
+              p {
+                color: #0081d2;
+
+              }
+            }
           }
         }
       }
@@ -816,9 +860,20 @@
           height: 383px;
 
           li {
+            position: relative;
             float: left;
             height: 383px;
             margin-right: 20px;
+            transition: all 0.4s ease;
+
+            &:hover {
+              margin-top: -3px;
+              -webkit-transition: all .3s cubic-bezier(.55, 0, .1, 1);
+              transition: all .3s cubic-bezier(.55, 0, .1, 1);
+              -webkit-transform: translate3d(0, -1px, 0);
+              -ms-transform: translate3d(0, -1px, 0);
+              transform: translate3d(0, -1px, 0);
+            }
 
             a {
               display: block;
@@ -826,10 +881,18 @@
               .pic {
                 width: 280px;
                 height: 220px;
+                overflow: hidden;
 
                 img {
                   width: 280px;
                   height: 220px;
+                  transition: all 0.2s ease;
+                }
+
+                &:hover {
+                  img {
+                    transform: scale(1.1);
+                  }
                 }
               }
 
