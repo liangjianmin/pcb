@@ -734,7 +734,11 @@
               background: #F9F8FD;
               font-size: 14px;
               resize: none;
-
+              transition: all 0.2s ease;
+              &:focus{
+                background: #ffffff;
+                border: 1px solid #0081D2;
+              }
               &::-webkit-input-placeholder {
                 color: #959ba6;
               }
@@ -1024,6 +1028,9 @@
         font-weight: bold;
         color: #ffffff;
         display: block;
+        &:hover{
+          background: #0090EB;
+        }
       }
     }
   }

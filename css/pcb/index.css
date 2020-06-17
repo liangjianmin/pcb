@@ -85,6 +85,7 @@ h6 {
 }
 a {
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 img {
   border: none;
@@ -260,6 +261,9 @@ body {
   line-height: 16px;
   text-align: center;
   padding: 0 3px;
+}
+.pcb-head .pcb-head-wrap .r .car:hover span {
+  color: #0081d2;
 }
 .pcb-head .pcb-head-wrap .r .show {
   margin-left: 50px;
@@ -471,7 +475,7 @@ body {
   height: 60px;
   line-height: 60px;
   margin-right: 60px;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 .home .nav-wrap .nav li.curr:after {
   position: absolute;
@@ -1255,6 +1259,11 @@ body {
   background: #F9F8FD;
   font-size: 14px;
   resize: none;
+  transition: all 0.2s ease;
+}
+.pcb .section .pcb-l .pcb-block-slideup .pcb-block .textarea textarea:focus {
+  background: #ffffff;
+  border: 1px solid #0081D2;
 }
 .pcb .section .pcb-l .pcb-block-slideup .pcb-block .textarea textarea::-webkit-input-placeholder {
   color: #959ba6;
@@ -1488,6 +1497,9 @@ body {
   font-weight: bold;
   color: #ffffff;
   display: block;
+}
+.pcb .section .pcb-r .btn:hover {
+  background: #0090EB;
 }
 .board-up-layer {
   padding: 30px 30px 40px 50px;

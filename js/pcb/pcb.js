@@ -36,7 +36,6 @@
             skin: 'pcb-layer-box',
             area: ['780px', '650px'],
             shadeClose: true,
-            move: false,
             content: $("#pcbHtml").html(),
             success: function (layero, index) {
               layui.form.render();
