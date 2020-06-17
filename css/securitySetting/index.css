@@ -277,6 +277,9 @@ body {
   font-size: 14px;
   color: #5c5f66;
 }
+.pcb-head .pcb-head-wrap .r .show .bar-bottom .t1:hover {
+  color: #0090eb;
+}
 .pcb-head .pcb-head-wrap .r .show .bar-bottom .circle {
   min-width: 10px;
   height: 16px;
@@ -504,6 +507,9 @@ body {
   padding: 0 20px;
   background: #F7F9FC;
   vertical-align: top;
+}
+.home .nav-wrap .login-bar .logged a:hover {
+  color: #0090eb;
 }
 .home .nav-wrap .login-bar .logged .lg .iconfont {
   font-size: 26px;
