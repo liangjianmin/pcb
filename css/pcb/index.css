@@ -1373,6 +1373,10 @@ body {
   border: 1px solid #0081D2;
   margin-bottom: 20px;
 }
+.pcb .section .pcb-r .pcb-r-boxs .timebor {
+  border-bottom: none;
+  padding-bottom: 0 !important;
+}
 .pcb .section .pcb-r .pcb-r-boxs .tit {
   margin-bottom: 10px;
 }
