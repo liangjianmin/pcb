@@ -1271,7 +1271,7 @@ body {
 }
 .pcb .section .pcb-r .pcb-r-box {
   width: 338px;
-  padding: 20px 20px 30px 20px;
+  padding: 15px 20px 20px 20px;
   background: #FFFFFF;
   box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
   border-radius: 2px;
@@ -1310,8 +1310,8 @@ body {
   background: #E6EAF2;
 }
 .pcb .section .pcb-r .pcb-r-box .cost .cost-tit {
-  margin-top: 20px;
-  margin-bottom: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .pcb .section .pcb-r .pcb-r-box .cost .cost-tit .t1 {
   font-size: 14px;
@@ -1366,7 +1366,7 @@ body {
 }
 .pcb .section .pcb-r .pcb-r-boxs {
   width: 338px;
-  padding: 20px 20px 30px 20px;
+  padding: 15px 20px 20px 20px;
   background: #FFFFFF;
   box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
   border-radius: 2px;
@@ -1400,7 +1400,7 @@ body {
 }
 .pcb .section .pcb-r .pcb-r-boxs .delivery ul {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 .pcb .section .pcb-r .pcb-r-boxs .delivery ul li {
@@ -1408,7 +1408,7 @@ body {
   background: #ffffff;
   border-radius: 2px;
   border: 1px solid #E6EAF2;
-  padding: 10px 0 14px 0;
+  padding: 10px 0 10px 0;
   text-align: center;
 }
 .pcb .section .pcb-r .pcb-r-boxs .delivery ul li:first-child {
