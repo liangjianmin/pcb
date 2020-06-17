@@ -672,6 +672,22 @@ body {
   background: url('../../images/aboutus/bg.png') no-repeat;
   background-position: center;
   min-width: 1180px;
+  display: table;
+  width: 100%;
+}
+.about-us .about-us-img .txt {
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+.about-us .about-us-img .txt .t1 {
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.about-us .about-us-img .txt .t2 {
+  font-size: 16px;
+  color: #ffffff;
 }
 .about-us .about-us-head {
   padding: 90px 0 145px;

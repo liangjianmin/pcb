@@ -672,6 +672,22 @@ body {
   background: url(../../images/aboutus/bg.png) no-repeat center;
   background-size: cover;
   min-width: 1180px;
+  display: table;
+  width: 100%;
+}
+.contactus .banner .txt {
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+.contactus .banner .txt .t1 {
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.contactus .banner .txt .t2 {
+  font-size: 16px;
+  color: #ffffff;
 }
 .contactus .section {
   padding-top: 50px;
