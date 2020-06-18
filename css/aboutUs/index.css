@@ -696,6 +696,7 @@ body {
   top: 0;
   font-size: 15px;
   color: #e89721;
+  cursor: pointer;
 }
 .about-us .about-us-img {
   height: 258px;

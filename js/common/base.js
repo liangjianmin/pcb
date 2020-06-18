@@ -60,6 +60,10 @@
       });
       
       
+      $(document).on('click','.tip .iconfont',function () {
+          $(".tip").hide();
+      });
+      
       return this;
     },
   }, $(function () {

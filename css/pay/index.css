@@ -696,6 +696,7 @@ body {
   top: 0;
   font-size: 15px;
   color: #e89721;
+  cursor: pointer;
 }
 .pay-status {
   background: #F7F9FC;
