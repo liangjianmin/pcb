@@ -769,6 +769,7 @@ body {
 }
 .user-center .user-center-r {
   width: 960px;
+  min-height: 500px;
 }
 .user-center .user-center-r .title {
   border-bottom: 1px solid #E6EAF2;
@@ -1517,3 +1518,4 @@ body {
   color: #3a3c40;
   font-weight: bold;
 }
+/*# sourceMappingURL=index.css.map */
