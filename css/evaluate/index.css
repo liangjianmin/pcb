@@ -761,7 +761,6 @@ body {
   position: relative;
   margin-bottom: 10px;
   padding-left: 50px;
-  transition: all 0.4s ease;
 }
 .user-center .user-center-l .menu dd ul li:last-child {
   margin-bottom: 0;
