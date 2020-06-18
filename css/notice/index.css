@@ -677,6 +677,26 @@ body {
   font-size: 14px;
   color: #0081d2;
 }
+.tip {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background: rgba(255, 224, 178, 0.5);
+}
+.tip .tip-wrap {
+  position: relative;
+}
+.tip .tip-wrap span {
+  font-size: 14px;
+  color: #e89721;
+}
+.tip .tip-wrap .iconfont {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 15px;
+  color: #e89721;
+}
 .notice {
   margin-top: 22px;
   padding-bottom: 70px;
