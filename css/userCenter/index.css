@@ -1502,4 +1502,18 @@ body {
 .layui-textarea {
   font-size: 14px;
 }
-/*# sourceMappingURL=index.css.map */
+.user-center-empty {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.user-center-empty .iconfont {
+  font-size: 180px;
+  color: #0081d2;
+}
+.user-center-empty p {
+  margin-top: 19px;
+  font-size: 20px;
+  color: #3a3c40;
+  font-weight: bold;
+}
