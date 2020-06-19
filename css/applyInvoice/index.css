@@ -1244,6 +1244,17 @@ body {
   color: #3a3c40;
   font-weight: bold;
 }
+.applyInvoice-information .txt .t1 {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.applyInvoice-information .txt .t2 {
+  font-size: 14px;
+  color: #5c5f66;
+  line-height: 20px;
+}
 .applyInvoice-information .line {
   margin-top: 30px;
   margin-bottom: 30px;
