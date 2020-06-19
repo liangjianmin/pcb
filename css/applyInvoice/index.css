@@ -843,6 +843,10 @@ body {
   color: #ffffff;
   display: block;
 }
+.disabled {
+  background: #ACB3BF !important;
+  color: #ffffff !important;
+}
 .iconzujiantubiaojiantou20 {
   font-size: 20px;
   color: #acb3bf;
