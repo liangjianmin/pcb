@@ -206,91 +206,8 @@ body {
 .pcb-head .pcb-head-wrap .l {
   height: 100%;
 }
-.pcb-head .pcb-head-wrap .l h2 a {
-  width: 166px;
-  height: 74px;
-  display: block;
-}
-.pcb-head .pcb-head-wrap .l h2 a img {
-  width: 166px;
-  height: 74px;
-}
-.pcb-head .pcb-head-wrap .l .logo-tit {
-  font-size: 16px;
-  color: #5c5f66;
-  font-weight: bold;
-  margin-left: 35px;
-}
-.pcb-head .pcb-head-wrap .l .text {
-  margin-left: 254px;
-}
-.pcb-head .pcb-head-wrap .l .text .text-t1 {
-  font-size: 12px;
-  margin-bottom: 8px;
-  color: #737780;
-}
 .pcb-head .pcb-head-wrap .r {
   height: 100%;
-}
-.pcb-head .pcb-head-wrap .r .btn {
-  width: 120px;
-  height: 40px;
-  background: #e89721;
-  border-radius: 2px;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 40px;
-}
-.pcb-head .pcb-head-wrap .r .car .iconfont {
-  font-size: 32px;
-  color: #d89941;
-}
-.pcb-head .pcb-head-wrap .r .car span {
-  font-size: 14px;
-  color: #5c5f66;
-  padding: 0 10px 0 6px;
-}
-.pcb-head .pcb-head-wrap .r .car .circle {
-  min-width: 10px;
-  height: 16px;
-  background: #E82121;
-  border-radius: 8px;
-  font-size: 12px;
-  color: #FFFFFF;
-  line-height: 16px;
-  text-align: center;
-  padding: 0 3px;
-}
-.pcb-head .pcb-head-wrap .r .car:hover span {
-  color: #0081d2;
-}
-.pcb-head .pcb-head-wrap .r .show {
-  margin-left: 50px;
-}
-.pcb-head .pcb-head-wrap .r .show .tel {
-  font-size: 14px;
-  color: #0081d2;
-  margin-bottom: 5px;
-}
-.pcb-head .pcb-head-wrap .r .show .bar-bottom .t1 {
-  font-size: 14px;
-  color: #5c5f66;
-}
-.pcb-head .pcb-head-wrap .r .show .bar-bottom .t1:hover {
-  color: #0090eb;
-}
-.pcb-head .pcb-head-wrap .r .show .bar-bottom .circle {
-  min-width: 10px;
-  height: 16px;
-  background: #E82121;
-  border-radius: 8px;
-  font-size: 12px;
-  color: #FFFFFF;
-  line-height: 16px;
-  text-align: center;
-  padding: 0 3px;
-  margin-left: 7px;
 }
 .pcb-footer {
   padding: 30px 0;
@@ -676,5 +593,26 @@ body {
 .login-layer .login-bar .r a {
   font-size: 14px;
   color: #0081d2;
+}
+.tip {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background: rgba(255, 224, 178, 0.5);
+}
+.tip .tip-wrap {
+  position: relative;
+}
+.tip .tip-wrap span {
+  font-size: 14px;
+  color: #e89721;
+}
+.tip .tip-wrap .iconfont {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 15px;
+  color: #e89721;
+  cursor: pointer;
 }
 /*# sourceMappingURL=base.css.map */

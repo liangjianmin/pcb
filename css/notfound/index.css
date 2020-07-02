@@ -197,8 +197,7 @@ body {
 }
 .pcb-head {
   width: 100%;
-  height: 130px;
-  border-bottom: 1px solid #E6EAF2;
+  height: 70px;
 }
 .pcb-head .pcb-head-wrap {
   height: 100%;
@@ -206,91 +205,31 @@ body {
 .pcb-head .pcb-head-wrap .l {
   height: 100%;
 }
-.pcb-head .pcb-head-wrap .l h2 a {
-  width: 166px;
-  height: 74px;
-  display: block;
-}
-.pcb-head .pcb-head-wrap .l h2 a img {
-  width: 166px;
-  height: 74px;
-}
-.pcb-head .pcb-head-wrap .l .logo-tit {
+.pcb-head .pcb-head-wrap .l .t1 {
   font-size: 16px;
   color: #5c5f66;
-  font-weight: bold;
-  margin-left: 35px;
-}
-.pcb-head .pcb-head-wrap .l .text {
-  margin-left: 254px;
-}
-.pcb-head .pcb-head-wrap .l .text .text-t1 {
-  font-size: 12px;
-  margin-bottom: 8px;
-  color: #737780;
+  font-weight: 600;
+  margin-left: 20px;
 }
 .pcb-head .pcb-head-wrap .r {
   height: 100%;
 }
-.pcb-head .pcb-head-wrap .r .btn {
-  width: 120px;
-  height: 40px;
-  background: #e89721;
-  border-radius: 2px;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 40px;
-}
-.pcb-head .pcb-head-wrap .r .car .iconfont {
-  font-size: 32px;
-  color: #d89941;
-}
-.pcb-head .pcb-head-wrap .r .car span {
-  font-size: 14px;
-  color: #5c5f66;
-  padding: 0 10px 0 6px;
-}
-.pcb-head .pcb-head-wrap .r .car .circle {
-  min-width: 10px;
-  height: 16px;
-  background: #E82121;
-  border-radius: 8px;
+.pcb-head .pcb-head-wrap .r .t1 em {
   font-size: 12px;
-  color: #FFFFFF;
-  line-height: 16px;
-  text-align: center;
-  padding: 0 3px;
+  color: #959ba6;
 }
-.pcb-head .pcb-head-wrap .r .car:hover span {
-  color: #0081d2;
-}
-.pcb-head .pcb-head-wrap .r .show {
-  margin-left: 50px;
-}
-.pcb-head .pcb-head-wrap .r .show .tel {
-  font-size: 14px;
-  color: #0081d2;
-  margin-bottom: 5px;
-}
-.pcb-head .pcb-head-wrap .r .show .bar-bottom .t1 {
-  font-size: 14px;
-  color: #5c5f66;
-}
-.pcb-head .pcb-head-wrap .r .show .bar-bottom .t1:hover {
-  color: #0090eb;
-}
-.pcb-head .pcb-head-wrap .r .show .bar-bottom .circle {
-  min-width: 10px;
-  height: 16px;
-  background: #E82121;
-  border-radius: 8px;
+.pcb-head .pcb-head-wrap .r .t1 span {
   font-size: 12px;
-  color: #FFFFFF;
-  line-height: 16px;
-  text-align: center;
-  padding: 0 3px;
-  margin-left: 7px;
+  color: #737780;
+}
+.pcb-head .pcb-head-wrap .r .t2 em {
+  font-size: 12px;
+  color: #959ba6;
+}
+.pcb-head .pcb-head-wrap .r .t2 span {
+  font-size: 12px;
+  color: #5c5f66;
+  font-weight: bold;
 }
 .pcb-footer {
   padding: 30px 0;
@@ -472,80 +411,138 @@ body {
 .sldie-bar dl dt:hover a p {
   color: #0081d2;
 }
+.home {
+  height: 48px;
+  background: #0081D2;
+}
+.home .nav-wrap {
+  height: 48px;
+}
 .home .nav-wrap .nav li {
   position: relative;
   float: left;
-  height: 60px;
-  line-height: 60px;
-  margin-right: 60px;
+  height: 48px;
+  line-height: 48px;
+  margin-right: 40px;
   transition: all 0.2s ease;
 }
 .home .nav-wrap .nav li.curr:after {
   position: absolute;
   left: 0;
-  bottom: 0;
-  background: #0081D2;
+  bottom: 1px;
+  background: #FFFFFF;
   width: 100%;
   height: 3px;
   content: '';
 }
 .home .nav-wrap .nav li a {
   font-size: 16px;
-  color: #3a3c40;
+  color: #FFFFFF;
   font-weight: bold;
 }
 .home .nav-wrap .nav li.curr a,
 .home .nav-wrap .nav li:hover a {
-  color: #0081d2;
+  color: #FFFFFF;
 }
 .home .nav-wrap .login-bar {
-  height: 60px;
+  height: 100%;
+  white-space: nowrap;
 }
 .home .nav-wrap .login-bar .logged {
-  width: 140px;
-  height: 60px;
+  height: 100%;
   padding: 0 20px;
-  background: #F7F9FC;
   vertical-align: top;
 }
 .home .nav-wrap .login-bar .logged a:hover {
   color: #0090eb;
 }
 .home .nav-wrap .login-bar .logged .lg .iconfont {
-  font-size: 26px;
-  color: #959ba6;
+  font-size: 20px;
+  color: #ffffff;
 }
 .home .nav-wrap .login-bar .logged .lg span {
-  font-size: 16px;
-  color: #0081d2;
-  font-weight: bold;
-  margin-left: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 5px;
 }
 .home .nav-wrap .login-bar .logged .line {
   width: 1px;
-  height: 20px;
+  height: 14px;
   background: #E6EAF2;
   color: #e6eaf2;
-  margin: 0 20px 0 16px;
+  margin: 0 5px 0 5px;
 }
 .home .nav-wrap .login-bar .logged .rg {
-  font-size: 16px;
-  color: #0081d2;
-  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
 }
-.home .nav-wrap .login-bar .logged-in .iconfont {
-  font-size: 26px;
-  color: #959ba6;
+.home .nav-wrap .login-bar .logged .car {
+  margin-left: 30px;
+}
+.home .nav-wrap .login-bar .logged .car .iconfont {
+  font-size: 20px;
+  color: #ffffff;
+}
+.home .nav-wrap .login-bar .logged .car span {
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 5px;
+  margin-right: 6px;
+}
+.home .nav-wrap .login-bar .logged .car .circle {
+  min-width: 10px;
+  height: 16px;
+  background: #E82121;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #FFFFFF;
+  line-height: 16px;
+  text-align: center;
+  padding: 0 3px;
+}
+.home .nav-wrap .login-bar .logged-in {
+  position: relative;
+  width: 150px;
+  height: 100%;
+  background: #07507d;
+  text-align: center;
+  cursor: pointer;
+}
+.home .nav-wrap .login-bar .logged-in ul {
+  position: absolute;
+  bottom: -74px;
+  width: 100%;
+  background: #0081D2;
+  z-index: 99999999;
+  display: none;
+}
+.home .nav-wrap .login-bar .logged-in ul li {
+  height: 37px;
+  line-height: 37px;
+}
+.home .nav-wrap .login-bar .logged-in ul li a {
+  font-size: 14px;
+  color: #ffffff;
+}
+.home .nav-wrap .login-bar .logged-in .iconzujiantubiaojiantou9 {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.home .nav-wrap .login-bar .logged-in .iconzujiantubiaojiantou1 {
+  font-size: 14px;
+  color: #5C5F66;
 }
 .home .nav-wrap .login-bar .logged-in .tel {
-  font-size: 16px;
-  color: #0081d2;
   font-weight: bold;
-  padding: 0 10px;
-}
-.home .nav-wrap .login-bar .logged-in .text {
+  padding: 0 5px;
   font-size: 14px;
-  color: #959ba6;
+  color: #ffffff;
+}
+.home .nav-wrap .login-bar .logged-in:hover ul {
+  display: block;
+}
+.home .nav-wrap .login-bar .logged-in:hover .iconzujiantubiaojiantou1 {
+  transform: rotate(90deg);
 }
 .layui-layer-setwin {
   right: 36px !important;

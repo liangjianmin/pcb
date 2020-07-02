@@ -179,8 +179,7 @@ body {
 
 .pcb-head {
   width: 100%;
-  height: 130px;
-  border-bottom: 1px solid #E6EAF2;
+  height: 70px;
 
   .pcb-head-wrap {
     height: 100%;
@@ -188,116 +187,42 @@ body {
     .l {
       height: 100%;
 
-      h2 {
-        a {
-          width: 166px;
-          height: 74px;
-          display: block;
-
-          img {
-            width: 166px;
-            height: 74px;
-          }
-        }
-      }
-
-      .logo-tit {
+      .t1 {
         font-size: 16px;
         color: #5c5f66;
-        font-weight: bold;
-        margin-left: 35px;
+        font-weight: 600;
+        margin-left: 20px;
       }
 
-      .text {
-        margin-left: 254px;
-
-        .text-t1 {
-          font-size: 12px;
-          margin-bottom: 8px;
-          color: #737780;
-        }
-      }
     }
 
     .r {
       height: 100%;
 
-      .btn {
-        width: 120px;
-        height: 40px;
-        background: rgba(232, 151, 33, 1);
-        border-radius: 2px;
-        font-size: 14px;
-        color: #ffffff;
-        text-align: center;
-        line-height: 40px;
-      }
-
-      .car {
-        .iconfont {
-          font-size: 32px;
-          color: #d89941;
+      .t1 {
+        em {
+          font-size: 12px;
+          color: #959ba6;
         }
 
         span {
-          font-size: 14px;
-          color: #5c5f66;
-          padding: 0 10px 0 6px;
-        }
-
-        .circle {
-          min-width: 10px;
-          height: 16px;
-          background: #E82121;
-          border-radius: 8px;
           font-size: 12px;
-          color: #FFFFFF;
-          line-height: 16px;
-          text-align: center;
-          padding: 0 3px;
-        }
-
-        &:hover {
-          span {
-            color: #0081d2;
-          }
+          color: #737780;
         }
       }
 
-      .show {
-        margin-left: 50px;
-
-        .tel {
-          font-size: 14px;
-          color: #0081d2;
-          margin-bottom: 5px;
+      .t2 {
+        em {
+          font-size: 12px;
+          color: #959ba6;
         }
 
-        .bar-bottom {
-          .t1 {
-            font-size: 14px;
-            color: #5c5f66;
-
-            &:hover {
-              color: #0090eb;
-            }
-          }
-
-          .circle {
-            min-width: 10px;
-            height: 16px;
-            background: #E82121;
-            border-radius: 8px;
-            font-size: 12px;
-            color: #FFFFFF;
-            line-height: 16px;
-            text-align: center;
-            padding: 0 3px;
-            margin-left: 7px;
-          }
+        span {
+          font-size: 12px;
+          color: #5c5f66;
+          font-weight: bold;
         }
       }
-
     }
   }
 
@@ -541,21 +466,26 @@ body {
 }
 
 .home {
+  height: 48px;
+  background: #0081D2;
+
   .nav-wrap {
+    height: 48px;
+
     .nav {
       li {
         position: relative;
         float: left;
-        height: 60px;
-        line-height: 60px;
-        margin-right: 60px;
+        height: 48px;
+        line-height: 48px;
+        margin-right: 40px;
         transition: all 0.2s ease;
 
         &.curr:after {
           position: absolute;
           left: 0;
-          bottom: 0;
-          background: #0081D2;
+          bottom: 1px;
+          background: #FFFFFF;
           width: 100%;
           height: 3px;
           content: '';
@@ -563,26 +493,25 @@ body {
 
         a {
           font-size: 16px;
-          color: #3a3c40;
+          color: #FFFFFF;
           font-weight: bold;
         }
 
         &.curr, &:hover {
           a {
-            color: #0081d2;
+            color: #FFFFFF;
           }
         }
       }
     }
 
     .login-bar {
-      height: 60px;
+      height: 100%;
+      white-space: nowrap;
 
       .logged {
-        width: 140px;
-        height: 60px;
+        height: 100%;
         padding: 0 20px;
-        background: #F7F9FC;
         vertical-align: top;
 
         a {
@@ -593,49 +522,107 @@ body {
 
         .lg {
           .iconfont {
-            font-size: 26px;
-            color: #959ba6;
+            font-size: 20px;
+            color: #ffffff;
           }
 
           span {
-            font-size: 16px;
-            color: #0081d2;
-            font-weight: bold;
-            margin-left: 10px;
+            font-size: 14px;
+            color: #ffffff;
+            margin-left: 5px;
           }
         }
 
         .line {
           width: 1px;
-          height: 20px;
+          height: 14px;
           background: #E6EAF2;
           color: #e6eaf2;
-          margin: 0 20px 0 16px;
+          margin: 0 5px 0 5px;
         }
 
         .rg {
-          font-size: 16px;
-          color: #0081d2;
-          font-weight: bold;
+          font-size: 14px;
+          color: #ffffff;
+        }
+
+        .car {
+          margin-left: 30px;
+
+          .iconfont {
+            font-size: 20px;
+            color: #ffffff;
+          }
+
+          span {
+            font-size: 14px;
+            color: #ffffff;
+            margin-left: 5px;
+            margin-right: 6px;
+          }
+
+          .circle {
+            min-width: 10px;
+            height: 16px;
+            background: #E82121;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #FFFFFF;
+            line-height: 16px;
+            text-align: center;
+            padding: 0 3px;
+          }
         }
       }
 
       .logged-in {
-        .iconfont {
-          font-size: 26px;
-          color: #959ba6;
+        position: relative;
+        width: 150px;
+        height: 100%;
+        background: #07507d;
+        text-align: center;
+        cursor: pointer;
+
+        ul{
+          position: absolute;
+          bottom: -74px;
+          width: 100%;
+          background: #0081D2;
+          z-index: 99999999;
+          display: none;
+          li{
+            height: 37px;
+            line-height: 37px;
+            a{
+              font-size: 14px;
+              color: #ffffff;
+            }
+          }
+        }
+        .iconzujiantubiaojiantou9 {
+          font-size: 20px;
+          color: #FFFFFF;
+        }
+
+        .iconzujiantubiaojiantou1 {
+          font-size: 14px;
+          color: #5C5F66;
         }
 
         .tel {
-          font-size: 16px;
-          color: #0081d2;
           font-weight: bold;
-          padding: 0 10px;
+          padding: 0 5px;
+          font-size: 14px;
+          color: #ffffff;
         }
 
-        .text {
-          font-size: 14px;
-          color: #959ba6;
+        &:hover{
+          ul{
+            display: block;
+          }
+          .iconzujiantubiaojiantou1{
+            transform:rotate(90deg);
+          }
         }
       }
     }
@@ -804,18 +791,21 @@ body {
   }
 }
 
-.tip{
+.tip {
   text-align: center;
   height: 40px;
   line-height: 40px;
   background: rgba(255, 224, 178, 0.5);
-  .tip-wrap{
+
+  .tip-wrap {
     position: relative;
-    span{
+
+    span {
       font-size: 14px;
       color: #e89721;
     }
-    .iconfont{
+
+    .iconfont {
       position: absolute;
       right: 0;
       top: 0;
