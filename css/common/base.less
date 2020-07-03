@@ -593,15 +593,16 @@ body {
 
         .logged-in-bar {
           position: relative;
-          width: 150px;
           text-align: center;
           cursor: pointer;
           height: 100%;
+          padding: 0 10px;
 
           ul {
             position: absolute;
             bottom: -74px;
             width: 100%;
+            left: 0;
             background: #0081D2;
             z-index: 99999999;
             display: none;
@@ -655,8 +656,8 @@ body {
         }
 
         .car {
-          margin-left: 10px;
-
+          height: 100%;
+          padding: 0 10px;
           .iconfont {
             font-size: 20px;
             color: #ffffff;
@@ -679,6 +680,10 @@ body {
             line-height: 16px;
             text-align: center;
             padding: 0 3px;
+          }
+
+          &:hover{
+            background: #0090EB;
           }
         }
 
