@@ -503,16 +503,16 @@ body {
           }
         }
 
-        &:hover{
-         &:after{
-           position: absolute;
-           left: 0;
-           bottom: 1px;
-           background: #FFFFFF;
-           width: 100%;
-           height: 3px;
-           content: '';
-         }
+        &:hover {
+          &:after {
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            background: #FFFFFF;
+            width: 100%;
+            height: 3px;
+            content: '';
+          }
         }
       }
     }
@@ -588,57 +588,100 @@ body {
       }
 
       .logged-in {
-        position: relative;
-        width: 150px;
         height: 100%;
-        text-align: center;
-        cursor: pointer;
 
-        ul{
-          position: absolute;
-          bottom: -74px;
-          width: 100%;
-          background: #FFA624;
-          z-index: 99999999;
-          display: none;
-          li{
-            height: 37px;
-            line-height: 37px;
-            a{
-              font-size: 14px;
-              color: #ffffff;
+
+        .logged-in-bar {
+          position: relative;
+          width: 150px;
+          text-align: center;
+          cursor: pointer;
+          height: 100%;
+
+          ul {
+            position: absolute;
+            bottom: -74px;
+            width: 100%;
+            background: #0081D2;
+            z-index: 99999999;
+            display: none;
+
+            li {
+              height: 37px;
+              line-height: 37px;
+              transition: all 0.2s ease;
+
+              &:hover {
+                background: #0090EB;
+              }
+
+              a {
+                font-size: 14px;
+                color: #ffffff;
+              }
+            }
+          }
+
+          .iconzujiantubiaojiantou9 {
+            font-size: 20px;
+            color: #FFFFFF;
+          }
+
+          .iconzujiantubiaojiantou1 {
+            font-size: 14px;
+            color: #FFFFFF;
+          }
+
+          .tel {
+            font-weight: bold;
+            padding: 0 5px;
+            font-size: 14px;
+            color: #ffffff;
+          }
+
+          &:hover {
+            background: #0090EB;
+
+            ul {
+              display: block;
+            }
+
+            .iconzujiantubiaojiantou1 {
+              &:before {
+                content: "\e628";
+              }
             }
           }
         }
-        .iconzujiantubiaojiantou9 {
-          font-size: 20px;
-          color: #FFFFFF;
-        }
 
-        .iconzujiantubiaojiantou1 {
-          font-size: 14px;
-          color: #FFFFFF;
-        }
+        .car {
+          margin-left: 10px;
 
-        .tel {
-          font-weight: bold;
-          padding: 0 5px;
-          font-size: 14px;
-          color: #ffffff;
-        }
-
-        &:hover{
-          background: #E89721;
-          ul{
-            display: block;
+          .iconfont {
+            font-size: 20px;
+            color: #ffffff;
           }
-          .iconzujiantubiaojiantou1{
-            color: #FFB03D;
-            &:before{
-              content: "\e628";
-            }
+
+          span {
+            font-size: 14px;
+            color: #ffffff;
+            margin-left: 5px;
+            margin-right: 6px;
+          }
+
+          .circle {
+            min-width: 10px;
+            height: 16px;
+            background: #E82121;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #FFFFFF;
+            line-height: 16px;
+            text-align: center;
+            padding: 0 3px;
           }
         }
+
       }
     }
   }
