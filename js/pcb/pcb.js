@@ -298,8 +298,9 @@
       //收缩
       $(document).on('click', '.shrink', function () {
         opt.onscrollFn();
-        if ($(this).text() == '收缩') {
-          $(this).text('展开');
+        var statusDom = $(this).find('.arrow-icon')
+        if (statusDom.hasClass('arrow-t')) {
+          statusDom.addClass('arrow-b').removeClass('arrow-t')
           $(this).parents('.pcb-block-slideup').find('.pcb-block').slideUp();
           
           if ($(this).attr('data-type') == 'time') {
@@ -320,7 +321,7 @@
           }
           
         } else {
-          $(this).text('收缩');
+          statusDom.addClass('arrow-t').removeClass('arrow-b')
           $(this).parents('.pcb-block-slideup').find('.pcb-block').slideDown();
           
           if ($(this).attr('data-type') == 'time') {
@@ -508,16 +509,16 @@
       
     },
     onscrollFn: function () {
-      if ($("#quote-scroll").length > 0) {
-        var layout = $("#quote-scroll").offset().top;
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > layout) {
-            $("#quote-scroll").addClass('onsroll');
-          } else {
-            $("#quote-scroll").removeClass('onsroll');
-          }
-        })
-      }
+      // if ($("#quote-scroll").length > 0) {
+      //   var layout = $("#quote-scroll").offset().top;
+      //   $(window).scroll(function () {
+      //     if ($(this).scrollTop() > layout) {
+      //       $("#quote-scroll").addClass('onsroll');
+      //     } else {
+      //       $("#quote-scroll").removeClass('onsroll');
+      //     }
+      //   })
+      // }
     }
   }, $(function () {
     pcbController.init();

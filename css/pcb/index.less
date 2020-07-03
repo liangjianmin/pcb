@@ -3,6 +3,12 @@
 .w118 {
   width: 118px !important;
 }
+.w78 {
+  width: 78px !important;
+}
+.w178 {
+  width: 178px !important;
+}
 
 .w138 {
   width: 138px !important;
@@ -73,7 +79,7 @@
 
 
 .bor {
-  border-bottom: 1px solid #E6EAF2;
+  border-bottom: 10px solid #E6EAF2;
 }
 
 .pcb {
@@ -91,12 +97,13 @@
     .pcb-l {
       width: 780px;
 
-      .pcb-box {
-        padding: 20px 30px 30px 30px;
+      .pcb-box,.pcb-bz {
+        padding: 20px 30px 20px 30px;
         margin-bottom: 20px;
         background: #FFFFFF;
         border-radius: 2px;
-        border: 1px solid #E6EAF2;
+        // border: 1px solid #E6EAF2;
+
 
         .tit {
           margin-bottom: 20px;
@@ -120,7 +127,7 @@
             }
           }
 
-          .shrink {
+          .shrink{
             font-size: 12px;
             color: #0081d2;
           }
@@ -132,11 +139,11 @@
         }
 
         .pcb-block {
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           white-space: nowrap;
 
           label {
-            width: 122px;
+            width: 125px;
             text-align: left;
             font-size: 14px;
             color: #5c5f66;
@@ -164,21 +171,21 @@
 
           .pcb-block-inline {
             position: relative;
-            max-width: 536px;
+            max-width: 533px;
 
             li {
               float: left;
               height: 28px;
-              background: #F7F9FC;
+              background: #FFF;
               border-radius: 2px;
               line-height: 28px;
               text-align: center;
               border: 1px solid #E6EAF2;
-              margin-right: 14px;
+              margin-right: 10px;
               font-size: 14px;
               color: #5c5f66;
               cursor: pointer;
-              padding: 0 13px;
+              padding: 0 10px;
 
               &:hover {
                 border: 1px solid #0081D2;
@@ -186,39 +193,36 @@
               }
 
               &.curr {
-                height: 26px;
-                line-height: 26px;
-                border: 2px solid #0081D2;
+                border: 1px solid #0081D2;
                 color: #3a3c40;
-                font-weight: bold;
-                background: #ffffff;
+                background: #F7F9FC;
                 position: relative;
 
-                &::after {
-                  content: "";
-                  position: absolute;
-                  width: 0;
-                  height: 0;
-                  border-bottom: 18px solid #0081D2;
-                  border-left: 18px solid transparent;
-                  bottom: 0;
-                  right: 0;
-                }
+                // &::after {
+                //   content: "";
+                //   position: absolute;
+                //   width: 0;
+                //   height: 0;
+                //   border-bottom: 18px solid #0081D2;
+                //   border-left: 18px solid transparent;
+                //   bottom: 0;
+                //   right: 0;
+                // }
 
-                &::before {
-                  font-family: "iconfont" !important;
-                  font-size: 12px;
-                  font-style: normal;
-                  -webkit-font-smoothing: antialiased;
-                  -moz-osx-font-smoothing: grayscale;
-                  content: "\e644";
-                  position: absolute;
-                  bottom: -8px;
-                  right: -1px;
-                  z-index: 1;
-                  color: #fff;
-                  font-weight: normal;
-                }
+                // &::before {
+                //   font-family: "iconfont" !important;
+                //   font-size: 12px;
+                //   font-style: normal;
+                //   -webkit-font-smoothing: antialiased;
+                //   -moz-osx-font-smoothing: grayscale;
+                //   content: "\e644";
+                //   position: absolute;
+                //   bottom: -8px;
+                //   right: -1px;
+                //   z-index: 1;
+                //   color: #fff;
+                //   font-weight: normal;
+                // }
 
               }
             }
@@ -598,11 +602,11 @@
         }
 
         .pcb-block {
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           white-space: nowrap;
 
           label {
-            width: 122px;
+            width: 125px;
             text-align: left;
             font-size: 14px;
             color: #5c5f66;
@@ -760,73 +764,70 @@
 
     .pcb-r {
       width: 380px;
-
+      background: #FFFFFF;
+      box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+      border-radius: 2px;
       .pcb-r-box {
-        width: 338px;
-        padding: 10px 20px 10px 20px;
-        background: #FFFFFF;
-        box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
-        border-radius: 2px;
-        border: 1px solid #0081D2;
-        margin-bottom: 20px;
-
+        width: 340px;
+        margin: 0 20px 0 20px;
+        border-bottom: 1px dashed #E6EAF2;
+        padding-top:20px;
+        &.price-r-box,&.textarea-box{
+          border:none;
+          padding-top: 0;
+        }
         .tit {
           margin-bottom: 10px;
 
           .l {
-            padding-bottom: 11px;
+            padding-bottom: 10px;
             position: relative;
-            font-size: 20px;
+            font-size: 14px;
             color: #3a3c40;
             font-weight: bold;
 
-            &:after {
-              width: 30px;
-              height: 5px;
-              background: rgba(0, 129, 210, 1);
-              position: absolute;
-              left: 0;
-              bottom: 0;
-              content: '';
-              z-index: 1;
-            }
+            // &:after {
+            //   width: 30px;
+            //   height: 5px;
+            //   background: rgba(0, 129, 210, 1);
+            //   position: absolute;
+            //   left: 0;
+            //   bottom: 0;
+            //   content: '';
+            //   z-index: 1;
+            // }
           }
 
-          .shrink {
+          .shrink1 {
             margin-top: 6px;
             font-size: 12px;
             color: #0081d2;
           }
+          .shrink{
+             font-size: 12px;
+             color:#959BA6;
+             .arrow-icon{
+               height:20px;
+               width:20px;
+               &.arrow-b{
+                 background: url('../../images/pcb/arrow-b.png');
+               }
+               &.arrow-t{
+                background: url('../../images/pcb/arrow-t.png');
+              }
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+             }
+          }
         }
 
         .cost {
-          .line {
-            width: 340px;
-            height: 1px;
-            color: #E6EAF2;
-            background: #E6EAF2;
-          }
 
           .cost-tit {
-            margin-top: 10px;
-            margin-bottom: 10px;
-
-            .t1 {
-              font-size: 14px;
-              color: #5c5f66;
-            }
-
-            .t2 {
-              font-size: 14px;
-              color: #3a3c40;
-              font-weight: bold;
-              text-align: right;
-            }
-
+            padding: 10px 0 15px;
             .t3 {
-              font-size: 20px;
-              color: #3a3c40;
-              font-weight: bold;
+              font-size: 14px;
+              color: #5C5F66;
               text-align: left;
             }
 
@@ -836,14 +837,13 @@
               font-weight: bold;
               text-align: right;
             }
+            
           }
-        }
-
-        .detail {
           .detail-wrap {
             width: 340px;
             border-collapse: collapse;
-
+            border:1px solid #E6EAF2;
+            margin-bottom: 20px;
             tr {
               .bor {
                 border-right: 1px solid #E6EAF2;
@@ -859,35 +859,91 @@
                 }
 
                 .t1 {
-                  width: 77px;
-                  font-size: 14px;
-                  color: #959ba6;
+                  width: 68px;
+                  font-size: 12px;
+                  color: #5C5F66;
+                  box-sizing: border-box;
+                  padding:0 10px ;
+                  height:100%;
+                  line-height:38px;
+                  background-color: #F7F9FC;
+
                 }
 
                 .t2 {
-                  font-size: 14px;
+                  font-size: 12px;
                   color: #3a3c40;
-                  max-width: 92px;
+                  // max-width: 92px;
+                  width:92px;
                   overflow: hidden;
                   display: inline-block;
                   text-overflow: ellipsis;
                   vertical-align: middle;
+                  box-sizing: border-box;
+                  padding:0 10px;
                 }
               }
             }
           }
         }
+
+        .detail {
+          .detail-wrap {
+            width: 340px;
+            border-collapse: collapse;
+            border:1px solid #E6EAF2;
+            tr {
+              .bor {
+                border-right: 1px solid #E6EAF2;
+              }
+
+              td {
+                height: 38px;
+                border-bottom: 1px solid #E6EAF2;
+                white-space: nowrap;
+
+                &.bornone {
+                  border-bottom: none;
+                }
+
+                .t1 {
+                  width: 68px;
+                  font-size: 12px;
+                  color: #5C5F66;
+                  box-sizing: border-box;
+                  padding:0 10px ;
+                  height:100%;
+                  line-height:38px;
+                  background-color: #F7F9FC;
+
+                }
+
+                .t2 {
+                  font-size: 12px;
+                  color: #3a3c40;
+                  // max-width: 92px;
+                  width:92px;
+                  overflow: hidden;
+                  display: inline-block;
+                  text-overflow: ellipsis;
+                  vertical-align: middle;
+                  box-sizing: border-box;
+                  padding:0 10px;
+                }
+              }
+            }
+          }
+          .table-tips{
+            color:#959BA6;
+            font-size: 12px;
+            padding:10px 0 20px;
+          }
+        }
       }
 
       .pcb-r-boxs {
-        width: 338px;
-        padding: 10px 20px 10px 20px;
-        background: #FFFFFF;
-        box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
-        border-radius: 2px;
-        border: 1px solid #0081D2;
-        margin-bottom: 20px;
-
+        width: 340px;
+        padding: 20px 20px 20px 20px;
         .timebor {
           border-bottom: none;
           padding-bottom: 0 !important;
@@ -897,22 +953,21 @@
           margin-bottom: 10px;
 
           .l {
-            padding-bottom: 11px;
             position: relative;
-            font-size: 20px;
+            font-size: 14px;
             color: #3a3c40;
             font-weight: bold;
 
-            &:after {
-              width: 30px;
-              height: 5px;
-              background: rgba(0, 129, 210, 1);
-              position: absolute;
-              left: 0;
-              bottom: 0;
-              content: '';
-              z-index: 1;
-            }
+            // &:after {
+            //   width: 30px;
+            //   height: 5px;
+            //   background: rgba(0, 129, 210, 1);
+            //   position: absolute;
+            //   left: 0;
+            //   bottom: 0;
+            //   content: '';
+            //   z-index: 1;
+            // }
           }
 
           .shrink {
@@ -924,31 +979,23 @@
 
         .delivery {
           ul {
-            text-align: center;
-            margin-top: 15px;
-            margin-bottom: 15px;
-
+            // margin-top: 15px;
+            // margin-bottom: 15px;
+            background-color: #F7F9FC;
+            padding:5px 10px;
             li {
-              width: 138px;
-              background: rgba(255, 255, 255, 1);
-              border-radius: 2px;
-              border: 1px solid #E6EAF2;
-              padding: 5px 0;
-              text-align: center;
-
               &:first-child {
-                margin-right: 40px;
+                margin-right: 30px;
               }
 
               .t1 {
                 font-size: 14px;
                 color: #5c5f66;
-                margin-bottom: 3px;
               }
 
               .t2 {
                 font-size: 14px;
-                color: #3a3c40;
+                color: #0081D2;
                 font-weight: bold;
               }
             }
@@ -1018,18 +1065,71 @@
 
       .btn {
         width: 380px;
-        height: 80px;
-        line-height: 80px;
+        height: 50px;
+        line-height: 50px;
         text-align: center;
         background: #0081D2;
         box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
         border-radius: 2px;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: bold;
         color: #ffffff;
         display: block;
         &:hover{
           background: #0090EB;
+        }
+      }
+      .textarea-box{
+        .textarea {
+          position: relative;
+          textarea {
+            width: 318px;
+            height: 48px;
+            border-radius: 2px;
+            border: 1px solid #E6EAF2;
+            padding: 15px 10px;
+            background: #F9F8FD;
+            font-size: 14px;
+            resize: none;
+            transition: all 0.2s ease;
+            &:focus{
+              background: #ffffff;
+              // border: 1px solid #0081D2;
+            }
+            &::-webkit-input-placeholder {
+              color: #959ba6;
+            }
+          }
+
+          span {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-size: 12px;
+            color: #959ba6;
+          }
+        }
+      }
+      .warn-div{
+        padding:20px 20px 20px 20px;
+        .warn-title{
+          span{
+            font-size: 14px;
+            color: #5C5F66;
+            font-weight: 600;
+          }
+          .warn-icon{
+            height:18px;
+            width:18px;
+            background: url('../../images/pcb/warn-icon.png') no-repeat;
+            background-size: 100% 100%;
+            margin-right: 6px;
+          }
+        }
+        .warn-tips{
+          margin-top: 6px;
+          font-size: 12px;
+          color:#959BA6
         }
       }
     }
