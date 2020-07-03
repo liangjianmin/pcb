@@ -1459,6 +1459,10 @@ body {
   color: #fff;
   font-weight: normal;
 }
+.order-section .order-section-wrap .coupon .l .coupon-box ul li.disabled {
+  background: url("../../images/order/coupon2.png") no-repeat center;
+  background-size: cover;
+}
 .order-section .order-remarks {
   margin-top: 30px;
   margin-bottom: 30px;
