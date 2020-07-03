@@ -502,6 +502,18 @@ body {
             color: #FFFFFF;
           }
         }
+
+        &:hover{
+         &:after{
+           position: absolute;
+           left: 0;
+           bottom: 1px;
+           background: #FFFFFF;
+           width: 100%;
+           height: 3px;
+           content: '';
+         }
+        }
       }
     }
 
@@ -579,7 +591,6 @@ body {
         position: relative;
         width: 150px;
         height: 100%;
-        background: #07507d;
         text-align: center;
         cursor: pointer;
 
@@ -587,7 +598,7 @@ body {
           position: absolute;
           bottom: -74px;
           width: 100%;
-          background: #0081D2;
+          background: #FFA624;
           z-index: 99999999;
           display: none;
           li{
@@ -606,7 +617,7 @@ body {
 
         .iconzujiantubiaojiantou1 {
           font-size: 14px;
-          color: #5C5F66;
+          color: #FFFFFF;
         }
 
         .tel {
@@ -617,11 +628,15 @@ body {
         }
 
         &:hover{
+          background: #E89721;
           ul{
             display: block;
           }
           .iconzujiantubiaojiantou1{
-            transform:rotate(90deg);
+            color: #FFB03D;
+            &:before{
+              content: "\e628";
+            }
           }
         }
       }

@@ -444,6 +444,15 @@ body {
 .home .nav-wrap .nav li:hover a {
   color: #FFFFFF;
 }
+.home .nav-wrap .nav li:hover:after {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: #FFFFFF;
+  width: 100%;
+  height: 3px;
+  content: '';
+}
 .home .nav-wrap .login-bar {
   height: 100%;
   white-space: nowrap;
@@ -504,7 +513,6 @@ body {
   position: relative;
   width: 150px;
   height: 100%;
-  background: #07507d;
   text-align: center;
   cursor: pointer;
 }
@@ -512,7 +520,7 @@ body {
   position: absolute;
   bottom: -74px;
   width: 100%;
-  background: #0081D2;
+  background: #FFA624;
   z-index: 99999999;
   display: none;
 }
@@ -530,7 +538,7 @@ body {
 }
 .home .nav-wrap .login-bar .logged-in .iconzujiantubiaojiantou1 {
   font-size: 14px;
-  color: #5C5F66;
+  color: #FFFFFF;
 }
 .home .nav-wrap .login-bar .logged-in .tel {
   font-weight: bold;
@@ -538,11 +546,17 @@ body {
   font-size: 14px;
   color: #ffffff;
 }
+.home .nav-wrap .login-bar .logged-in:hover {
+  background: #E89721;
+}
 .home .nav-wrap .login-bar .logged-in:hover ul {
   display: block;
 }
 .home .nav-wrap .login-bar .logged-in:hover .iconzujiantubiaojiantou1 {
-  transform: rotate(90deg);
+  color: #FFB03D;
+}
+.home .nav-wrap .login-bar .logged-in:hover .iconzujiantubiaojiantou1:before {
+  content: "\e628";
 }
 .layui-layer-setwin {
   right: 36px !important;
