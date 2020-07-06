@@ -593,14 +593,14 @@ body {
 }
 .layui-layer-setwin {
   right: 36px !important;
-  top: 47px !important;
+  top: 26px !important;
 }
 .layui-layer-title {
   font-size: 20px !important;
   font-weight: bold !important;
   background: #ffffff !important;
   height: auto !important;
-  padding: 30px 0 15px 0 !important;
+  padding: 10px 0 15px 0 !important;
   margin: 0 30px;
 }
 .layui-layer-title span {
@@ -919,7 +919,7 @@ body {
 .pcb .section .pcb-l .pcb-bz .pcb-block .pcb-block-inline li.curr {
   border: 1px solid #0081D2;
   color: #3a3c40;
-  background: #F7F9FC;
+  background: #E6F7FF;
   position: relative;
 }
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-block-inline .sel,
@@ -1471,7 +1471,7 @@ body {
   border-right: 1px solid #E6EAF2;
 }
 .pcb .section .pcb-r .pcb-r-box .cost .detail-wrap tr td {
-  height: 38px;
+  height: 34px;
   border-bottom: 1px solid #E6EAF2;
   white-space: nowrap;
 }
@@ -1485,7 +1485,7 @@ body {
   box-sizing: border-box;
   padding: 0 10px ;
   height: 100%;
-  line-height: 38px;
+  line-height: 34px;
   background-color: #F7F9FC;
 }
 .pcb .section .pcb-r .pcb-r-box .cost .detail-wrap tr td .t2 {
@@ -1508,7 +1508,7 @@ body {
   border-right: 1px solid #E6EAF2;
 }
 .pcb .section .pcb-r .pcb-r-box .detail .detail-wrap tr td {
-  height: 38px;
+  height: 34px;
   border-bottom: 1px solid #E6EAF2;
   white-space: nowrap;
 }
@@ -1522,7 +1522,7 @@ body {
   box-sizing: border-box;
   padding: 0 10px ;
   height: 100%;
-  line-height: 38px;
+  line-height: 34px;
   background-color: #F7F9FC;
 }
 .pcb .section .pcb-r .pcb-r-box .detail .detail-wrap tr td .t2 {
@@ -1568,7 +1568,7 @@ body {
   padding: 5px 10px;
 }
 .pcb .section .pcb-r .pcb-r-boxs .delivery ul li:first-child {
-  margin-right: 30px;
+  margin-right: 59px;
 }
 .pcb .section .pcb-r .pcb-r-boxs .delivery ul li .t1 {
   font-size: 14px;
@@ -1653,7 +1653,7 @@ body {
   border: 1px solid #E6EAF2;
   padding: 15px 10px;
   background: #F9F8FD;
-  font-size: 14px;
+  font-size: 13px;
   resize: none;
   transition: all 0.2s ease;
 }
@@ -1859,6 +1859,17 @@ label .iconiconfontquestion .arrow-tips .tips {
   color: #5C5F66;
   width: 280px;
   white-space: pre-wrap;
+}
+.pcb-layer-box .save {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #0081D2;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 124px;
 }
 .pcb-layer-box .pcb-way-layer {
   position: relative;

@@ -5,9 +5,11 @@
       this.mounted(this).handleBind(this).onscrollFn();
     },
     mounted: function (opt) {
-      var height=$(window).height()-118;
       
-      $("#quote-scroll").css({maxHeight:height});
+      $("html,body").animate({
+        scrollTop: 118
+      },500)
+      
       
       return this;
     },
@@ -145,9 +147,6 @@
           opt.change(X, Y, spacingX, spacingY);
         }
       });
-      
-      
-      
       
       
       //拼版规则
@@ -349,22 +348,17 @@
       //收缩
       $(document).on('click', '.shrink', function () {
         opt.onscrollFn();
-        var statusDom = $(this).find('.arrow-icon')
+        var statusDom = $(this).find('.arrow-icon');
+        
+        
         if (statusDom.hasClass('arrow-t')) {
-          statusDom.addClass('arrow-b').removeClass('arrow-t')
-          $(this).parents('.pcb-block-slideup').find('.pcb-block').slideUp();
           
-          if ($(this).attr('data-type') == 'time') {
-            $(this).parents().addClass('timebor');
-            $(this).parents().parents().children('.delivery').slideUp();
-          }
+          statusDom.addClass('arrow-b').removeClass('arrow-t');
           
-          if ($(this).attr('data-type') == 'logistics') {
-            $(this).parents().parents().children('.logistics').slideUp();
-          }
           
           if ($(this).attr('data-type') == 'param') {
             $(this).parents().parents().children('.detail').slideUp();
+            
           }
           
           if ($(this).attr('data-type') == 'order') {
@@ -372,24 +366,23 @@
           }
           
         } else {
-          statusDom.addClass('arrow-t').removeClass('arrow-b')
-          $(this).parents('.pcb-block-slideup').find('.pcb-block').slideDown();
           
-          if ($(this).attr('data-type') == 'time') {
-            $(this).parents().removeClass('timebor');
-            $(this).parents().parents().children('.delivery').slideDown();
-          }
-          
-          if ($(this).attr('data-type') == 'logistics') {
-            $(this).parents().parents().children('.logistics').slideDown();
-          }
+          statusDom.addClass('arrow-t').removeClass('arrow-b');
           
           if ($(this).attr('data-type') == 'param') {
             $(this).parents().parents().children('.detail').slideDown();
+            
+            $('.cost-wrap').slideUp();
+            $('.cost-wrap').parent().parent().find('.arrow-icon').addClass('arrow-b').removeClass('arrow-t');
+            
           }
           
           if ($(this).attr('data-type') == 'order') {
             $(this).parents().parents().find('.cost-wrap').slideDown();
+            
+            $(".detail").slideUp();
+            $('.detail').parent().find('.arrow-icon').addClass('arrow-b').removeClass('arrow-t');
+            
           }
         }
       });
@@ -445,12 +438,12 @@
       });
       
       //弹窗板子数量
-  
-      $(document).on('click',"#pcb_qty_layer .txt-wrap",function () {
+      
+      $(document).on('click', "#pcb_qty_layer .txt-wrap", function () {
         $("#pcb_qty_layer").children('.selects-qty').toggle();
       });
       
-      $(document).on('click', "#pcb_qty_layer .selects-qty > dl > dd",function () {
+      $(document).on('click', "#pcb_qty_layer .selects-qty > dl > dd", function () {
         var val = $(this).attr('data-value');
         $(this).addClass('curr').siblings('dd').removeClass('curr');
         $("#pcb_qty_layer").find('.txt-wrap input').val(val);
@@ -458,23 +451,17 @@
       });
       
       
-      $(document).on('click',"#pcb_qty_layer .ok", function () {
+      $(document).on('click', "#pcb_qty_layer .ok", function () {
         var val = parseInt($.trim($("#pcb_num_inputs").val()));
         $("#pcb_qty_layer").find('.txt-wrap input').val(val);
         $("#pcb_qty_layer").find('.canel').trigger('click');
         
       });
-      $(document).on('click', "#pcb_qty_layer .canel",function () {
+      $(document).on('click', "#pcb_qty_layer .canel", function () {
         $('#pcb_qty_layer .selects-qty').hide();
       });
-  
-  
-  
-  
-  
-  
-  
-  
+      
+      
       //监听函数
       Observer.on('pcb', function (e) {
         
@@ -590,7 +577,7 @@
       
     },
     change: function (X, Y, spacingX, spacingY) {
-      if (X >=1 && Y >= 1) {
+      if (X >= 1 && Y >= 1) {
         
         if (spacingX) {
           for (var i = 0; i < X - 1; i++) {
