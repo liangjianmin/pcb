@@ -25,36 +25,31 @@
 <div class="pcb-head">
     <div class="width-1180 pcb-head-wrap clr">
         <div class="fl l">
-            <h2 class="lineBlock va-m">
-                <a href="/"><img src="./images/common/login.png" alt="猎板网" title="猎板网"></a>
-            </h2>
-            <p class="lineBlock va-m logo-tit">PCB打样智能工厂</p>
-            <div class="text lineBlock va-m">
-                <p class="text-t1">客服热线：400-0000-000</p>
-                <p class="text-t1">服务时间：周一至周六 09:00-22:00</p>
-            </div>
-            <b class="emptys lineBlock"></b>
+            <h2 class="lineBlock va-m"><a href="/"><img src="./images/home/logos.png" alt=""></a></h2>
+            <span class="t1 va-m">PCB打样智能工厂</span>
+            <b class="lineBlock emptys"></b>
         </div>
         <div class="fr r">
-            <a class="car lineBlock va-m lbBox" href="javascript:;">
-                <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
-                <span class="va-m">购物车</span>
-                <div class="lineBlock va-m circle">0</div>
-            </a>
-            <div class="show lineBlock va-m">
-                <div class="bar-bottom">
-                    <a class="t1">我的订单</a>
-                    <div class="lineBlock va-m circle">0</div>
-                </div>
-            </div>
-            <b class="emptys lineBlock"></b>
+            <p class="lineBlock va-m t1" style="margin-right: 30px">
+                <em>服务时间：</em>
+                <span>周一至周六 09:00-22:00</span>
+            </p>
+            <p class="lineBlock va-m t1" style="margin-right: 30px">
+                <em>客服QQ：</em>
+                <span>800183356</span>
+            </p>
+            <p class="lineBlock va-m t2">
+                <em>服务热线：</em>
+                <span>0571-86609386</span>
+            </p>
+            <b class="lineBlock emptys"></b>
         </div>
     </div>
 </div>
 <div class="home">
     <div class="width-1180 nav-wrap clr">
         <ul class="nav fl">
-            <li class="curr "><a href="">首页</a></li>
+            <li class="curr"><a href="">首页</a></li>
             <li><a href="">PCB快速报价</a></li>
             <li><a href="">高级PCB报价</a></li>
             <li><a href="">SMT贴片</a></li>
@@ -69,15 +64,37 @@
                 </a>
                 <span class="lineBlock line va-m"></span>
                 <a href="" class="rg va-m">注册</a>
+                <a class="car lineBlock va-m lbBox" href="javascript:;" rel="nofollow">
+                    <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                    <span class="va-m">购物车</span>
+                    <div class="lineBlock va-m circle cartCnt">0</div>
+                </a>
                 <b class="lineBlock emptys"></b>
             </div>
             <!--已登录-->
-            <div class="logged-in lineBlock lbBox">
-                <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
-                <span class="tel va-m">15012479484</span>
-                <a class="text va-m" href="javascript:;">退出</a>
+            <div class="logged-in lineBlock lbBox" style="display: block">
+                <div class="lineBlock va-m logged-in-bar">
+                    <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                    <span class="tel va-m">15012479484</span>
+                    <i class="iconfont iconzujiantubiaojiantou1 va-m"></i>
+                    <b class="lineBlock emptys"></b>
+                    <ul>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="">安全退出</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="car lineBlock va-m lbBox" href="javascript:;" rel="nofollow">
+                    <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                    <span class="va-m">购物车</span>
+                    <div class="lineBlock va-m circle cartCnt">0</div>
+                    <b class="lineBlock emptys"></b>
+                </a>
+                <b class="lineBlock emptys"></b>
             </div>
-            <b class="lineBlock emptys"></b>
         </div>
     </div>
 </div>
@@ -1163,20 +1180,11 @@
 </script>
 <script type="text/html" id="pcbHtml">
     <div class="pcb-way-layer">
-        <div class="pcb-way-show">
-            <div class="pic">
-                <img src="./images/pcb/pp.png" alt="">
-            </div>
-            <a href="javascript:;" class="pic-text">
-                <i class="iconfont iconzujiantubiaoliwu1 va-m"></i>
-                <span class="va-m" id="viewpic">查看大图</span>
-            </a>
-        </div>
         <div class="pcb-way-layer-input lbBox">
             <label class="lineBlock va-m">工艺边参数：</label>
             <div class="pcb-way-layer-wrap lineBlock va-m">
                 <div class="lineBlock va-m" style="width: 140px">
-                    <select name="undis" lay-filter="undis" style="width: 140px">
+                    <select id="undis" name="undis" lay-filter="undis" style="width: 140px">
                         <option value="0">无(默认)</option>
                         <option value="1">上下方向</option>
                         <option value="2">左右方向</option>
@@ -1191,7 +1199,7 @@
             </div>
         </div>
         <div class="pcb-way-layer-input lbBox">
-            <label class="lineBlock va-m">分割方式：</label>
+            <label class="lineBlock va-t" style="margin-top: 5px">分割方式：</label>
             <div class="pcb-way-layer-wrap lineBlock va-m">
                 <div class="lineBlock va-m" style="width: 140px">
                     <select name="" style="width: 140px">
@@ -1201,15 +1209,12 @@
                         <option value="vcutluocao">V割+锣槽</option>
                     </select>
                 </div>
-            </div>
-        </div>
-        <div class="pcb-way-layer-input lbBox">
-            <label class="lineBlock va-t">槽间距：</label>
-            <div class="pcb-way-layer-wrap lineBlock va-t">
-                <div class="pcb-way-inp lbBox">
-                    <input type="text" placeholder="水平槽间距" class="w1 mr14"/>
-                    <input type="text" placeholder="垂直槽间距" class="w1"/>
-                    <span class="tip-text">mm</span>
+                <div class="lineBlock va-m">
+                    <div class="pcb-way-inp lbBox">
+                        <input type="text" placeholder="水平槽间距" class="w1" id="spacingX" style="margin-right: 5px;"/>
+                        <input type="text" placeholder="垂直槽间距" class="w1" id="spacingY"/>
+                        <span class="tip-text">mm</span>
+                    </div>
                 </div>
                 <p class="txt" style="margin-top: 4px;">* 垂直方向和水平方向槽间距需有一个为0 且另一个值在2-10之间</p>
             </div>
@@ -1224,28 +1229,30 @@
             </div>
         </div>
         <div class="pcb-way-layer-input lbBox">
-            <label class="lineBlock va-t" style="margin-top: 6px;">拼版方式：</label>
-            <div class="pcb-way-layer-wrap lineBlock va-t">
-                <div class="type lbBox">
+            <label class="lineBlock va-m">单片数量：</label>
+            <div class="pcb-way-layer-wrap lineBlock va-m">
+                <span>100pcs</span>
+            </div>
+        </div>
+        <div class="pcb-way-layer-input lbBox">
+            <label class="lineBlock va-t" style="margin-top: 6px;">拼版规则：</label>
+            <div class="pcb-way-layer-wrap lineBlock va-t clr" style="width: 73%">
+                <div class="type lbBox fl">
                     <p class="lineBlock va-m">
-                        <span>尺寸为</span>
-                        <em>10cm</em>
-                        <span>方向的拼版</span>
+                        <span>横列片数</span>
                     </p>
                     <div class="lineBlock va-m txt-wrap">
                         <input type="text" value="2" class="w1" id="widthNumberForModal"/>
-                        <span>个</span>
+                        <span style="margin-left: 8px">pcs</span>
                     </div>
                 </div>
-                <div class="type lbBox">
+                <div class="type lbBox fr">
                     <p class="lineBlock va-m">
-                        <span>尺寸为</span>
-                        <em>10cm</em>
-                        <span>方向的拼版</span>
+                        <span>纵列片数</span>
                     </p>
                     <div class="lineBlock va-m txt-wrap">
                         <input type="text" value="2" class="w1" id="lengthNumberForModal"/>
-                        <span>个</span>
+                        <span style="margin-left: 8px">pcs</span>
                     </div>
                 </div>
             </div>
@@ -1310,7 +1317,6 @@
                 * 如果您对我们的拼版方式有疑问，请联系我们的<em>在线客服人员</em>
             </div>
             <div class="fr">
-                <a class="btn-calel lineBlock va-m" href="javascript:;" id="canel">取消</a>
                 <a class="btn lineBlock va-m" href="javascript:;" id="save">保存</a>
             </div>
         </div>
@@ -1346,7 +1352,7 @@
         type: 1,
         title: '<span>PCB工艺信息</span>',
         skin: 'pcb-layer-box',
-        area: ['780px', '650px'],
+        area: ['780px', '677px'],
         shadeClose: true,
         move: false,
         content: $("#pcbHtml").html(),

@@ -34,7 +34,7 @@
             type: 1,
             title: '<span>PCB工艺信息</span>',
             skin: 'pcb-layer-box',
-            area: ['780px', '650px'],
+            area: ['780px', '677px'],
             shadeClose: true,
             content: $("#pcbHtml").html(),
             success: function (layero, index) {
@@ -50,14 +50,51 @@
         }
       });
       
+      //水平，垂直槽间距
+      $(document).on('input propertychange', '#spacingX', function () {
+        var val = $(this).val();
+        
+        var dataX = $("#widthNumberForModal").val();
+        var dataY = $("#lengthNumberForModal").val();
+        
+        if (dataX) {
+          console.log(dataX)
+        }
+      });
+      $(document).on('input propertychange', '#spacingY', function () {
+        var val = $(this).val();
+        
+        var dataX = $("#widthNumberForModal").val();
+        var dataY = $("#lengthNumberForModal").val();
+  
+        if (dataX > 1) {
+          for (var i = 0; i < dataX; i++) {
+            for(var j=0;j<dataY-1;j++){
+              $('.datalist').find('tr').eq(i).find('td').eq(j).css({borderBottom:"3px solid #0081D2"});
+            }
+          }
+        }
+        
+        if (dataY > 1) {
+          for (var i = 0; i < dataX; i++) {
+             for(var j=0;j<dataY-1;j++){
+               $('.datalist').find('tr').eq(i).find('td').eq(j).css({borderRight:"3px solid #0081D2"});
+             }
+          }
+        }
+        
+        
+        
+      });
       
       //PCB工艺信息
-      layui.form.on('select(undis)', function (data) {
+      $(document).on('change', '#undis', function () {
+        var value = $(this).val();
         
-        if (data.value == 0) {
+        if (value == 0) {
           $(".needHold").addClass('needHoldnone');
           
-        } else if (data.value == 1) {
+        } else if (value == 1) {
           $(".needHold").find('.left,.right').hide();
           $(".needHold").find('.bottom,.top').show();
           
@@ -65,7 +102,7 @@
           $(".needHold").removeClass('needHoldleft');
           $(".needHold").addClass('needHoldtop');
           
-        } else if (data.value == 2) {
+        } else if (value == 2) {
           $(".needHold").find('.bottom,.top').hide();
           $(".needHold").find('.left,.right').show();
           
@@ -73,7 +110,7 @@
           $(".needHold").removeClass('needHoldtop');
           $(".needHold").addClass('needHoldleft');
           
-        } else if (data.value == 3) {
+        } else if (value == 3) {
           $(".needHold").find('.left,.right').show();
           $(".needHold").find('.bottom,.top').show();
           

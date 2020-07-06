@@ -1013,7 +1013,7 @@ body {
 .pcb .section .pcb-l .pcb-bz .pcb-block .pcb-block-inline .selects-qty {
   position: absolute;
   left: 0px;
-  top: 48px;
+  top: 39px;
   z-index: 9;
   width: 461px;
   background-color: #ffffff;
@@ -1860,7 +1860,7 @@ label .iconiconfontquestion .arrow-tips .tips {
 }
 .pcb-layer-box .pcb-way-layer {
   position: relative;
-  padding: 30px 60px 40px 50px;
+  padding: 20px 30px 30px 40px;
 }
 .pcb-layer-box .pcb-way-layer .pcb-way-show {
   position: absolute;
@@ -1886,7 +1886,7 @@ label .iconiconfontquestion .arrow-tips .tips {
   color: #0081d2;
 }
 .pcb-layer-box .pcb-way-layer .pcb-way-layer-input {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .pcb-layer-box .pcb-way-layer .pcb-way-layer-input label {
   width: 84px;
@@ -1999,7 +1999,7 @@ label .iconiconfontquestion .arrow-tips .tips {
   height: 1px;
   color: #e6eaf2;
   background: #E6EAF2;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .pcb-layer-box .pcb-way-layer .design {
   padding-top: 28px;
@@ -2050,9 +2050,9 @@ label .iconiconfontquestion .arrow-tips .tips {
 }
 .pcb-layer-box .pcb-way-layer .design .design-wrap .design-wrap-tit {
   position: absolute;
-  right: 13px;
+  right: 33px;
   width: 1px;
-  height: 100%;
+  height: 99%;
   background: #E6EAF2;
   margin: 0 auto;
 }
@@ -2264,3 +2264,4 @@ label .iconiconfontquestion .arrow-tips .tips {
   height: 28px !important;
   line-height: 28px !important;
 }
+/*# sourceMappingURL=index.css.map */
