@@ -814,15 +814,15 @@
                 </form>
             </div>
                 <!-- <div class="fr pcb-r">111</div> -->
-            <div class="fr pcb-r">
+            <div class="fr pcb-r" id="quote-scroll">
                 <div class="pcb-r-box">
                     <p class="tit clr">
                         <span class="fl l">PCB参数详情</span>
                         <a href="javascript:;" class="fr r shrink" data-type="param">
                             <span class="va-m">详情</span>
-                            <span class="lineBlock arrow-icon arrow-t va-m"></span></a>
+                            <span class="lineBlock arrow-icon arrow-b va-m"></span></a>
                     </p>
-                    <div class="detail" id="showpcb">
+                    <div class="detail" id="showpcb" style="display: none">
                         <table class="detail-wrap">
                             <tbody>
                             <tr>
@@ -892,7 +892,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="quote-scroll">
+                <div>
                     <div class="pcb-r-boxs">
                         <p class="tit clr">
                             <span class="fl l">交期时间</span>
@@ -1223,8 +1223,175 @@
         <div class="pcb-way-layer-input lbBox">
             <label class="lineBlock va-m">拼板数量：</label>
             <div class="pcb-way-layer-wrap lineBlock va-m">
-                <div class="pcb-way-inp lbBox">
-                    <input type="text" placeholder="请输入拼板数量" class="w1" name="pcb_num_layer"/>
+                <div class="pcb-way-inp lbBox" id="pcb_qty_layer">
+                    <div class="txt-wrap">
+                        <input type="text" placeholder="请输入拼板数量" class="w1" name="pcb_num_layer" readonly="readonly" />
+                    </div>
+                    <div class="selects-qty" style="display: none;">
+                        <i class="lineBlock arrow"></i>
+                        <dl class="clr">
+                            <dd data-value="5" class="">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">5</span>
+                            </dd>
+                            <dd data-value="10">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">10</span>
+                            </dd>
+                            <dd data-value="15">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">15</span>
+                            </dd>
+                            <dd data-value="20">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">20</span>
+                            </dd>
+                            <dd data-value="25">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">25</span>
+                            </dd>
+                            <dd data-value="30">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">30</span>
+                            </dd>
+                            <dd data-value="40">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">40</span>
+                            </dd>
+                            <dd data-value="50">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">50</span>
+                            </dd>
+                            <dd data-value="75">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">75</span>
+                            </dd>
+                            <dd data-value="100">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">100</span>
+                            </dd>
+                            <dd data-value="125">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">125</span>
+                            </dd>
+                            <dd data-value="150">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">150</span>
+                            </dd>
+                            <dd data-value="200">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">200</span>
+                            </dd>
+                            <dd data-value="250">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">250</span>
+                            </dd>
+                            <dd data-value="300">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">300</span>
+                            </dd>
+                            <dd data-value="350">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">350</span>
+                            </dd>
+                            <dd data-value="400">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">400</span>
+                            </dd>
+                            <dd data-value="450">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">450</span>
+                            </dd>
+                            <dd data-value="500">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">500</span>
+                            </dd>
+                            <dd data-value="600">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">600</span>
+                            </dd>
+                            <dd data-value="700">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">700</span>
+                            </dd>
+                            <dd data-value="800">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">800</span>
+                            </dd>
+                            <dd data-value="900">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">900</span>
+                            </dd>
+                            <dd data-value="1000">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">1000</span>
+                            </dd>
+                            <dd data-value="1500">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">1500</span>
+                            </dd>
+                            <dd data-value="2000">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">2000</span>
+                            </dd>
+                            <dd data-value="2500">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">2500</span>
+                            </dd>
+                            <dd data-value="3000">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">3000</span>
+                            </dd>
+                            <dd data-value="3500">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">3500</span>
+                            </dd>
+                            <dd data-value="4000">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">4000</span>
+                            </dd>
+                            <dd data-value="4500">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">4500</span>
+                            </dd>
+                            <dd data-value="5000">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">5000</span>
+                            </dd>
+                            <dd data-value="5500">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">5500</span>
+                            </dd>
+                            <dd data-value="6000">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">6000</span>
+                            </dd>
+                            <dd data-value="6500">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">6500</span>
+                            </dd>
+                            <dd data-value="7000">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">7000</span>
+                            </dd>
+                            <dd data-value="7500">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">7500</span>
+                            </dd>
+                            <dd data-value="8000">
+                                <i class="arr lineBlock va-m"></i>
+                                <span class="lineBlock va-m">8000</span>
+                            </dd>
+                        </dl>
+                        <div class="wrap">
+                            <label class="lineBlock va-m" style="width: 61px;">其他数量：</label>
+                            <input type="number" class="inp va-m" id="pcb_num_inputs">
+                            <div class="btn lineBlock va-m">
+                                <a href="javascript:;" class="lineBlock ok">确认</a>
+                                <a href="javascript:;" class="lineBlock canel">取消</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

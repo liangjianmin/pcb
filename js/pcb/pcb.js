@@ -438,7 +438,37 @@
         $('#pcb_qty .selects-qty').hide();
       });
       
+      //弹窗板子数量
+  
+      $(document).on('click',"#pcb_qty_layer .txt-wrap",function () {
+        $("#pcb_qty_layer").children('.selects-qty').toggle();
+      });
       
+      $(document).on('click', "#pcb_qty_layer .selects-qty > dl > dd",function () {
+        var val = $(this).attr('data-value');
+        $(this).addClass('curr').siblings('dd').removeClass('curr');
+        $("#pcb_qty_layer").find('.txt-wrap input').val(val);
+        $("#pcb_qty_layer").find('.canel').trigger('click');
+      });
+      
+      
+      $(document).on('click',"#pcb_qty_layer .ok", function () {
+        var val = parseInt($.trim($("#pcb_num_inputs").val()));
+        $("#pcb_qty_layer").find('.txt-wrap input').val(val);
+        $("#pcb_qty_layer").find('.canel').trigger('click');
+        
+      });
+      $(document).on('click', "#pcb_qty_layer .canel",function () {
+        $('#pcb_qty_layer .selects-qty').hide();
+      });
+  
+  
+  
+  
+  
+  
+  
+  
       //监听函数
       Observer.on('pcb', function (e) {
         
@@ -575,16 +605,16 @@
       }
     },
     onscrollFn: function () {
-      // if ($("#quote-scroll").length > 0) {
-      //   var layout = $("#quote-scroll").offset().top;
-      //   $(window).scroll(function () {
-      //     if ($(this).scrollTop() > layout) {
-      //       $("#quote-scroll").addClass('onsroll');
-      //     } else {
-      //       $("#quote-scroll").removeClass('onsroll');
-      //     }
-      //   })
-      // }
+      if ($("#quote-scroll").length > 0) {
+        var layout = $("#quote-scroll").offset().top;
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > layout) {
+            $("#quote-scroll").addClass('onsroll');
+          } else {
+            $("#quote-scroll").removeClass('onsroll');
+          }
+        })
+      }
     }
   }, $(function () {
     pcbController.init();
