@@ -808,7 +808,7 @@ body {
   border-bottom: 10px solid #E6EAF2;
 }
 .pcb {
-  padding: 30px 0 70px 0;
+  padding: 0px 0 70px 0;
   background: #F9F8FD;
 }
 .pcb .title {
@@ -822,8 +822,8 @@ body {
 }
 .pcb .section .pcb-l .pcb-box,
 .pcb .section .pcb-l .pcb-bz {
-  padding: 20px 30px 20px 30px;
-  margin-bottom: 10px;
+  padding: 5px 30px 5px 30px;
+  margin-bottom: 5px;
   background: #FFFFFF;
   border-radius: 2px;
 }
@@ -860,14 +860,14 @@ body {
 }
 .pcb .section .pcb-l .pcb-box .pcb-block,
 .pcb .section .pcb-l .pcb-bz .pcb-block {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   white-space: nowrap;
 }
 .pcb .section .pcb-l .pcb-box .pcb-block label,
 .pcb .section .pcb-l .pcb-bz .pcb-block label {
   width: 125px;
   text-align: left;
-  font-size: 14px;
+  font-size: 13px;
   color: #5c5f66;
   white-space: nowrap;
   margin-right: 8px;
@@ -905,7 +905,7 @@ body {
   text-align: center;
   border: 1px solid #E6EAF2;
   margin-right: 10px;
-  font-size: 14px;
+  font-size: 13px;
   color: #5c5f66;
   cursor: pointer;
   padding: 0 10px;
