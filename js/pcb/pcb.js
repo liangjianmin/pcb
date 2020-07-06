@@ -5,6 +5,9 @@
       this.mounted(this).handleBind(this).onscrollFn();
     },
     mounted: function (opt) {
+      var height=$(window).height()-118;
+      
+      $("#quote-scroll").height(height);
       
       return this;
     },
@@ -142,6 +145,9 @@
           opt.change(X, Y, spacingX, spacingY);
         }
       });
+      
+      
+      
       
       
       //拼版规则
