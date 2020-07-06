@@ -596,10 +596,11 @@ body {
   top: 26px !important;
 }
 .layui-layer-title {
-  font-size: 20px !important;
+  font-size: 13px !important;
   font-weight: bold !important;
   background: #ffffff !important;
   height: auto !important;
+  line-height: 21px !important;
   padding: 10px 0 15px 0 !important;
   margin: 0 30px;
 }

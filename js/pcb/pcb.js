@@ -19,20 +19,22 @@
       Util.tabs('#PcbUnit ul li', function (index, val) {
         //拼板方式 是否接受打叉板 代拼板参数
         if (index == 0) {
-          $("#PanelWayContentParam").hide(); //代拼板参数
-          $("#separatingWay").hide();//分割方式
-          $("#pcb_acceptCrossedZone").hide();//是否接受打叉板
-          $("#PanelWayContent").hide();  //拼板方式
+          $("#PanelWayContentParam").slideUp(); //代拼板参数
+          $("#separatingWay").slideUp();//分割方式
+          $("#pcb_acceptCrossedZone").slideUp();//是否接受打叉板
+          $("#PanelWayContent").slideUp();  //拼板方式
           
         } else if (index == 1) {
-          $("#PanelWayContentParam").hide(); //代拼板参数
+          $("#PanelWayContentParam").slideUp(); //代拼板参数
+          
           $("#separatingWay").slideDown(); //分割方式
           $("#pcb_acceptCrossedZone").slideDown(); //是否接受打叉板
           $("#PanelWayContent").slideDown();  //拼板方式
           
         } else if (index == 2) {
-          $("#separatingWay").hide();   //分割方式
-          $("#PanelWayContent").hide();  //拼板方式
+          $("#separatingWay").slideUp();   //分割方式
+          $("#PanelWayContent").slideUp();  //拼板方式
+          
           $("#pcb_acceptCrossedZone").slideDown();  //是否接受打叉板
           
           layer.open({
