@@ -554,7 +554,7 @@
       
     },
     change: function (X, Y, spacingX, spacingY) {
-      if (X > 1 && Y > 1) {
+      if (X >=1 && Y >= 1) {
         
         if (spacingX) {
           for (var i = 0; i < X - 1; i++) {
