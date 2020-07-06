@@ -7,7 +7,7 @@
     mounted: function (opt) {
       var height=$(window).height()-118;
       
-      $("#quote-scroll").height(height);
+      $("#quote-scroll").css({maxHeight:height});
       
       return this;
     },
