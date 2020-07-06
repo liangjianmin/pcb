@@ -52,37 +52,27 @@
       
       //水平，垂直槽间距
       $(document).on('input propertychange', '#spacingX', function () {
-        var val = $(this).val();
+        var spacingX = $("#spacingX").val() * 1;
+        var spacingY = $("#spacingY").val() * 1;
         
-        var dataX = $("#widthNumberForModal").val();
-        var dataY = $("#lengthNumberForModal").val();
+        var X = $("#widthNumberForModal").val() * 1;
+        var Y = $("#lengthNumberForModal").val() * 1;
         
-        if (dataX) {
-          console.log(dataX)
+        if (spacingX) {
+          opt.change(X, Y, spacingX, spacingY);
         }
       });
+      
       $(document).on('input propertychange', '#spacingY', function () {
-        var val = $(this).val();
+        var spacingX = $("#spacingX").val() * 1;
+        var spacingY = $("#spacingY").val() * 1;
         
-        var dataX = $("#widthNumberForModal").val();
-        var dataY = $("#lengthNumberForModal").val();
-  
-        if (dataX > 1) {
-          for (var i = 0; i < dataX; i++) {
-            for(var j=0;j<dataY-1;j++){
-              $('.datalist').find('tr').eq(i).find('td').eq(j).css({borderBottom:"3px solid #0081D2"});
-            }
-          }
+        var X = $("#widthNumberForModal").val() * 1;
+        var Y = $("#lengthNumberForModal").val() * 1;
+        
+        if (spacingY) {
+          opt.change(X, Y, spacingX, spacingY);
         }
-        
-        if (dataY > 1) {
-          for (var i = 0; i < dataX; i++) {
-             for(var j=0;j<dataY-1;j++){
-               $('.datalist').find('tr').eq(i).find('td').eq(j).css({borderRight:"3px solid #0081D2"});
-             }
-          }
-        }
-        
         
         
       });
@@ -122,16 +112,34 @@
       
       
       $(document).on('input propertychange', '#widthNumberForModal', function () {
-        var val = $(this).val() * 1;
-        if (val) {
-          opt.dataShow(val, $('#lengthNumberForModal').val() * 1, $("input[name='pcb_width']").val(), $("input[name='pcb_length']").val());
+        
+        
+        var spacingX = $("#spacingX").val() * 1;
+        var spacingY = $("#spacingY").val() * 1;
+        
+        var X = $("#widthNumberForModal").val() * 1;
+        var Y = $("#lengthNumberForModal").val() * 1;
+        
+        
+        if (X) {
+          opt.dataShow(X, $('#lengthNumberForModal').val() * 1, $("input[name='pcb_width']").val(), $("input[name='pcb_length']").val());
+          opt.change(X, Y, spacingX, spacingY);
         }
+        
+        
       });
       
       $(document).on('input propertychange', '#lengthNumberForModal', function () {
-        var val = $(this).val() * 1;
-        if (val) {
-          opt.dataShow($('#widthNumberForModal').val() * 1, val, $("input[name='pcb_width']").val(), $("input[name='pcb_length']").val());
+        var spacingX = $("#spacingX").val() * 1;
+        var spacingY = $("#spacingY").val() * 1;
+        
+        var X = $("#widthNumberForModal").val() * 1;
+        var Y = $("#lengthNumberForModal").val() * 1;
+        
+        
+        if (Y) {
+          opt.dataShow($('#widthNumberForModal').val() * 1, Y, $("input[name='pcb_width']").val(), $("input[name='pcb_length']").val());
+          opt.change(X, Y, spacingX, spacingY);
         }
       });
       
@@ -544,6 +552,27 @@
       
       $(".datalist").empty().html(arrHtml.join(''));
       
+    },
+    change: function (X, Y, spacingX, spacingY) {
+      if (X > 1 && Y > 1) {
+        
+        if (spacingX) {
+          for (var i = 0; i < X - 1; i++) {
+            for (var j = 0; j < Y; j++) {
+              $('.datalist').find('tr').eq(i).find('td').eq(j).css({borderBottom: "3px solid #0081D2"});
+            }
+          }
+        }
+        
+        if (spacingY) {
+          for (var i = 0; i < X; i++) {
+            for (var j = 0; j < Y - 1; j++) {
+              $('.datalist').find('tr').eq(i).find('td').eq(j).css({borderRight: "3px solid #0081D2"});
+            }
+          }
+        }
+        
+      }
     },
     onscrollFn: function () {
       // if ($("#quote-scroll").length > 0) {
