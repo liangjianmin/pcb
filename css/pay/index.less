@@ -391,6 +391,61 @@
         }
       }
 
+      .balance-box {
+        padding: 40px 0 52px 40px;
+
+        .t1 {
+          font-size: 20px;
+          color: #3A3C40;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+
+        .text {
+          width: 260px;
+          height: 60px;
+          background: rgba(255, 255, 255, 1);
+          border-radius: 2px;
+          border: 1px solid rgba(230, 234, 242, 1);
+          text-align: center;
+          margin-bottom: 22px;
+
+          .iconfont {
+            font-size: 30px;
+            color: #0081d2;
+          }
+
+          span {
+            font-size: 14px;
+            color: #5c5f66;
+            margin-left: 8px;
+          }
+
+          em {
+            font-size: 20px;
+            color: #e82121;
+          }
+        }
+
+        .balance-tip {
+          .iconfont {
+            font-size: 16px;
+            color: #e89721;
+          }
+
+          span {
+            font-size: 12px;
+            color: #e89721;
+          }
+
+          a {
+            font-size: 14px;
+            color: #0081d2;
+            font-weight: bold;
+          }
+        }
+      }
+
       .pay-offline-payment {
         margin-top: 30px;
         margin-bottom: 50px;
@@ -404,53 +459,99 @@
 
         ul {
           li {
-            float: left;
-            width: 543px;
-            height: 166px;
-            background: #F7F9FC;
-            border-radius: 2px;
-            border: 1px solid #E6EAF2;
-            margin-right: 20px;
+            width: 466px;
+            height: 226px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 14px 0px rgba(230, 234, 242, 0.5);
+            border-radius: 10px;
+            border: 2px solid rgba(0, 129, 210, 1);
+            padding: 20px 30px 0 30px;
 
-            .pic {
-              width: 180px;
-              text-align: center;
-              margin-left: 30px;
+            .top {
+              padding-bottom: 20px;
+              border-bottom: 1px dashed #E6EAF2;
 
-              img {
+              .pic {
                 width: 180px;
                 height: 60px;
-                display: block;
+
+                img {
+                  width: 180px;
+                  height: 60px;
+                }
               }
 
-              a {
-                margin-top: 18px;
-                font-size: 14px;
-                color: #0081d2;
-              }
-            }
-
-            .text {
-              margin-left: 35px;
-
-              .t1 {
-                margin-bottom: 16px;
+              .text {
+                margin-top: 20px;
 
                 span {
-                  width: 46px;
                   font-size: 14px;
                   color: #959ba6;
-                  text-align: left;
                 }
 
                 em {
-                  margin-left: 14px;
-                  font-size: 16px;
+                  font-size: 14px;
                   color: #3a3c40;
+                  margin-left: 18px;
                   font-weight: bold;
                 }
               }
             }
+
+            .content {
+              margin-top: 29px;
+
+              .t1 {
+                margin-bottom: 10px;
+
+                span {
+                  font-size: 14px;
+                  color: #959ba6;
+                  margin-right: 20px;
+                }
+
+                em {
+                  font-size: 14px;
+                  color: #5c5f66;
+                }
+              }
+            }
+          }
+        }
+
+        .pay-offline-payment-tip {
+          margin-top: 20px;
+          display: block;
+
+          .iconfont {
+            font-size: 30px;
+            color: #959BA6;
+          }
+
+          span {
+            font-size: 14px;
+            color: #3a3c40;
+            font-weight: bold;
+            margin-left: 6px;
+          }
+        }
+
+        .pay-pia {
+          position: relative;
+          top: 139px;
+
+          .pay-pia-ixo {
+            span {
+              font-size: 14px;
+              color: #5c5f66;
+              margin-left: 8px;
+            }
+          }
+
+          .pay-pia-text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #959ba6;
           }
         }
       }
@@ -506,9 +607,19 @@
     .bar {
       text-align: left;
 
-      .iconfont {
+      .iconzujiantubiaochenggong {
         font-size: 100px;
         color: #02d32d;
+      }
+
+      .iconzujiantubiaocuowu {
+        font-size: 100px;
+        color: #E82121;
+      }
+
+      .iconzujiantubiaojinggao {
+        font-size: 100px;
+        color: #E89721;
       }
 
       .text {
@@ -560,74 +671,62 @@
     }
 
     .kefu {
-      margin-left: 220px;
-      width: 279px;
+      margin-left: 227px;
+      width: 278px;
+      height: 290px;
+      background: rgba(255, 255, 255, 1);
       border-radius: 2px;
-
-      .tit {
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        background: #0081D2;
-
-        .iconfont {
-          font-size: 20px;
-          color: #ffffff;
-        }
-
-        span {
-          font-size: 14px;
-          color: #ffffff;
-          margin-left: 5px;
+      border: 1px solid rgba(230, 234, 242, 1);
+      .pic{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        top: -25px;
+        img{
+          width:100px;
+          height:100px;
+          border-radius: 50%;
         }
       }
-
-      .wrap {
-        padding: 30px 40px 30px 20px;
-        white-space: nowrap;
-        text-align: left;
-
-        .pic {
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          background: #EFEEF1;
-
-          img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-          }
+      .t1{
+        font-size: 16px;
+        color: #3a3c40;
+        font-weight:600;
+        margin-bottom: 10px;
+      }
+      .t2{
+        font-size: 14px;
+        color: #5c5f66;
+        margin-bottom: 23px;
+      }
+      .t3{
+        margin-bottom: 26px;
+        .iconfont{
+          font-size: 15px;
+          color: #959ba6;
         }
-
-        .text {
-          margin-left: 19px;
-
-          .t1 {
-            span {
-              font-size: 16px;
-              color: #0081d2;
-              margin-right: 8px;
-            }
-
-            .iconfont {
-              font-size: 30px;
-              color: #0081d2;
-            }
-          }
-
-          .t2 {
-            span {
-              font-size: 14px;
-              color: #5c5f66;
-            }
-
-            em {
-              font-size: 14px;
-              color: #959ba6;
-              margin-left: 10px;
-            }
-          }
+        span{
+          font-size: 14px;
+          color: #959ba6;
+        }
+      }
+      .wrap{
+        width:160px;
+        height:50px;
+        background:rgba(247,249,252,1);
+        border-radius:2px;
+        border:1px solid rgba(230,234,242,1);
+        text-align: center;
+        margin: 0 auto;
+        .iconfont{
+          font-size: 30px;
+          color: #ffa624;
+        }
+        span{
+          font-size: 14px;
+          color: #5c5f66;
+          margin-left: 8px;
         }
       }
     }

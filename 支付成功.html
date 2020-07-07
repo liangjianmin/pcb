@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
     <link rel="stylesheet" type="text/css" href="./css/pay/index.css"/>
 </head>
@@ -103,7 +103,12 @@
         </p>
         <div class="lbBox pay-success-box">
             <div class="lineBlock va-t bar lbBox">
+                <!--支付成功-->
                 <i class="iconfont iconzujiantubiaochenggong va-t"></i>
+                <!--支付失败-->
+                <i class="iconfont iconzujiantubiaocuowu va-t" style="display: none"></i>
+                <!--支付异常-->
+                <i class="iconfont iconzujiantubiaojinggao va-t" style="display: none"></i>
                 <div class="lineBlock text">
                     <p class="t1"><span>支付金额：</span><em>￥1245.00</em></p>
                     <p class="t2">订单支付成功！等待客服人员审核订单。</p>
@@ -113,23 +118,16 @@
                 </div>
             </div>
             <div class="lineBlock va-t kefu">
-                <p class="tit"><i class="iconfont iconzujiantubiaoliwu13"></i><span>专属客服</span></p>
+                <div class="pic">
+                    <img src="./images/pay/pp.png" alt="">
+                </div>
+                <p class="t1">李小姐</p>
+                <p class="t2">跟单专员</p>
+                <p class="t3"><i class="iconfont iconzujiantubiaoshouji"></i><span>15012412345</span></p>
                 <div class="wrap">
-                    <div class="lineBlock pic va-m">
-                        <img src="./images/pay/pp.png" alt="">
-                    </div>
-                    <div class="text lineBlock va-m">
-                        <a href="javascript:;">
-                            <p class="t1">
-                                <span class="va-m">在线联系</span>
-                                <i class="iconfont iconzujiantubiaoliwu9 va-m"></i>
-                            </p>
-                            <p class="t2">
-                                <span>李小姐</span>
-                                <em>15012412345</em>
-                            </p>
-                        </a>
-                    </div>
+                    <i class="iconfont iconzujiantubiaoliwu9 va-m"></i>
+                    <span class="va-m">在线联系</span>
+                    <b class="lineBlock emptys"></b>
                 </div>
             </div>
         </div>

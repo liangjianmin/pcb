@@ -1054,6 +1054,50 @@ body {
   color: #0081d2;
   font-weight: bold;
 }
+.pay-section .pay-content .pay-operation .balance-box {
+  padding: 40px 0 52px 40px;
+}
+.pay-section .pay-content .pay-operation .balance-box .t1 {
+  font-size: 20px;
+  color: #3A3C40;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.pay-section .pay-content .pay-operation .balance-box .text {
+  width: 260px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #e6eaf2;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.pay-section .pay-content .pay-operation .balance-box .text .iconfont {
+  font-size: 30px;
+  color: #0081d2;
+}
+.pay-section .pay-content .pay-operation .balance-box .text span {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-left: 8px;
+}
+.pay-section .pay-content .pay-operation .balance-box .text em {
+  font-size: 20px;
+  color: #e82121;
+}
+.pay-section .pay-content .pay-operation .balance-box .balance-tip .iconfont {
+  font-size: 16px;
+  color: #e89721;
+}
+.pay-section .pay-content .pay-operation .balance-box .balance-tip span {
+  font-size: 12px;
+  color: #e89721;
+}
+.pay-section .pay-content .pay-operation .balance-box .balance-tip a {
+  font-size: 14px;
+  color: #0081d2;
+  font-weight: bold;
+}
 .pay-section .pay-content .pay-operation .pay-offline-payment {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -1065,46 +1109,81 @@ body {
   margin-bottom: 40px;
 }
 .pay-section .pay-content .pay-operation .pay-offline-payment ul li {
-  float: left;
-  width: 543px;
-  height: 166px;
-  background: #F7F9FC;
-  border-radius: 2px;
-  border: 1px solid #E6EAF2;
-  margin-right: 20px;
+  width: 466px;
+  height: 226px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 14px 0px rgba(230, 234, 242, 0.5);
+  border-radius: 10px;
+  border: 2px solid #0081d2;
+  padding: 20px 30px 0 30px;
 }
-.pay-section .pay-content .pay-operation .pay-offline-payment ul li .pic {
-  width: 180px;
-  text-align: center;
-  margin-left: 30px;
+.pay-section .pay-content .pay-operation .pay-offline-payment ul li .top {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #E6EAF2;
 }
-.pay-section .pay-content .pay-operation .pay-offline-payment ul li .pic img {
+.pay-section .pay-content .pay-operation .pay-offline-payment ul li .top .pic {
   width: 180px;
   height: 60px;
-  display: block;
 }
-.pay-section .pay-content .pay-operation .pay-offline-payment ul li .pic a {
-  margin-top: 18px;
-  font-size: 14px;
-  color: #0081d2;
+.pay-section .pay-content .pay-operation .pay-offline-payment ul li .top .pic img {
+  width: 180px;
+  height: 60px;
 }
-.pay-section .pay-content .pay-operation .pay-offline-payment ul li .text {
-  margin-left: 35px;
+.pay-section .pay-content .pay-operation .pay-offline-payment ul li .top .text {
+  margin-top: 20px;
 }
-.pay-section .pay-content .pay-operation .pay-offline-payment ul li .text .t1 {
-  margin-bottom: 16px;
-}
-.pay-section .pay-content .pay-operation .pay-offline-payment ul li .text .t1 span {
-  width: 46px;
+.pay-section .pay-content .pay-operation .pay-offline-payment ul li .top .text span {
   font-size: 14px;
   color: #959ba6;
-  text-align: left;
 }
-.pay-section .pay-content .pay-operation .pay-offline-payment ul li .text .t1 em {
-  margin-left: 14px;
-  font-size: 16px;
+.pay-section .pay-content .pay-operation .pay-offline-payment ul li .top .text em {
+  font-size: 14px;
+  color: #3a3c40;
+  margin-left: 18px;
+  font-weight: bold;
+}
+.pay-section .pay-content .pay-operation .pay-offline-payment ul li .content {
+  margin-top: 29px;
+}
+.pay-section .pay-content .pay-operation .pay-offline-payment ul li .content .t1 {
+  margin-bottom: 10px;
+}
+.pay-section .pay-content .pay-operation .pay-offline-payment ul li .content .t1 span {
+  font-size: 14px;
+  color: #959ba6;
+  margin-right: 20px;
+}
+.pay-section .pay-content .pay-operation .pay-offline-payment ul li .content .t1 em {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.pay-section .pay-content .pay-operation .pay-offline-payment .pay-offline-payment-tip {
+  margin-top: 20px;
+  display: block;
+}
+.pay-section .pay-content .pay-operation .pay-offline-payment .pay-offline-payment-tip .iconfont {
+  font-size: 30px;
+  color: #959BA6;
+}
+.pay-section .pay-content .pay-operation .pay-offline-payment .pay-offline-payment-tip span {
+  font-size: 14px;
   color: #3a3c40;
   font-weight: bold;
+  margin-left: 6px;
+}
+.pay-section .pay-content .pay-operation .pay-offline-payment .pay-pia {
+  position: relative;
+  top: 139px;
+}
+.pay-section .pay-content .pay-operation .pay-offline-payment .pay-pia .pay-pia-ixo span {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-left: 8px;
+}
+.pay-section .pay-content .pay-operation .pay-offline-payment .pay-pia .pay-pia-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #959ba6;
 }
 .pay-section .pay-content .btn-pay {
   width: 200px;
@@ -1148,9 +1227,17 @@ body {
 .pay-success .pay-success-box .bar {
   text-align: left;
 }
-.pay-success .pay-success-box .bar .iconfont {
+.pay-success .pay-success-box .bar .iconzujiantubiaochenggong {
   font-size: 100px;
   color: #02d32d;
+}
+.pay-success .pay-success-box .bar .iconzujiantubiaocuowu {
+  font-size: 100px;
+  color: #E82121;
+}
+.pay-success .pay-success-box .bar .iconzujiantubiaojinggao {
+  font-size: 100px;
+  color: #E89721;
 }
 .pay-success .pay-success-box .bar .text {
   margin-left: 30px;
@@ -1193,61 +1280,64 @@ body {
   display: block;
 }
 .pay-success .pay-success-box .kefu {
-  margin-left: 220px;
-  width: 279px;
+  margin-left: 227px;
+  width: 278px;
+  height: 290px;
+  background: #ffffff;
   border-radius: 2px;
+  border: 1px solid #e6eaf2;
 }
-.pay-success .pay-success-box .kefu .tit {
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background: #0081D2;
+.pay-success .pay-success-box .kefu .pic {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  top: -25px;
 }
-.pay-success .pay-success-box .kefu .tit .iconfont {
-  font-size: 20px;
-  color: #ffffff;
-}
-.pay-success .pay-success-box .kefu .tit span {
-  font-size: 14px;
-  color: #ffffff;
-  margin-left: 5px;
-}
-.pay-success .pay-success-box .kefu .wrap {
-  padding: 30px 40px 30px 20px;
-  white-space: nowrap;
-  text-align: left;
-}
-.pay-success .pay-success-box .kefu .wrap .pic {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #EFEEF1;
-}
-.pay-success .pay-success-box .kefu .wrap .pic img {
-  width: 60px;
-  height: 60px;
+.pay-success .pay-success-box .kefu .pic img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
-.pay-success .pay-success-box .kefu .wrap .text {
-  margin-left: 19px;
-}
-.pay-success .pay-success-box .kefu .wrap .text .t1 span {
+.pay-success .pay-success-box .kefu .t1 {
   font-size: 16px;
-  color: #0081d2;
-  margin-right: 8px;
+  color: #3a3c40;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-.pay-success .pay-success-box .kefu .wrap .text .t1 .iconfont {
-  font-size: 30px;
-  color: #0081d2;
-}
-.pay-success .pay-success-box .kefu .wrap .text .t2 span {
+.pay-success .pay-success-box .kefu .t2 {
   font-size: 14px;
   color: #5c5f66;
+  margin-bottom: 23px;
 }
-.pay-success .pay-success-box .kefu .wrap .text .t2 em {
+.pay-success .pay-success-box .kefu .t3 {
+  margin-bottom: 26px;
+}
+.pay-success .pay-success-box .kefu .t3 .iconfont {
+  font-size: 15px;
+  color: #959ba6;
+}
+.pay-success .pay-success-box .kefu .t3 span {
   font-size: 14px;
   color: #959ba6;
-  margin-left: 10px;
+}
+.pay-success .pay-success-box .kefu .wrap {
+  width: 160px;
+  height: 50px;
+  background: #f7f9fc;
+  border-radius: 2px;
+  border: 1px solid #e6eaf2;
+  text-align: center;
+  margin: 0 auto;
+}
+.pay-success .pay-success-box .kefu .wrap .iconfont {
+  font-size: 30px;
+  color: #ffa624;
+}
+.pay-success .pay-success-box .kefu .wrap span {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-left: 8px;
 }
 .pay-layer {
   padding: 28px 56px 70px 56px;

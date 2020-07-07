@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
     <link rel="stylesheet" type="text/css" href="./css/pay/index.css"/>
 </head>
@@ -19,29 +19,76 @@
 <div class="pcb-head">
     <div class="width-1180 pcb-head-wrap clr">
         <div class="fl l">
-            <h2 class="lineBlock va-m">
-                <a href="/"><img src="./images/common/login.png" alt="猎板网" title="猎板网"></a>
-            </h2>
-            <p class="lineBlock va-m logo-tit">PCB打样智能工厂</p>
-            <div class="text lineBlock va-m">
-                <p class="text-t1">客服热线：400-0000-000</p>
-                <p class="text-t1">服务时间：周一至周六 09:00-22:00</p>
-            </div>
-            <b class="emptys lineBlock"></b>
+            <h2 class="lineBlock va-m"><a href="/"><img src="./images/home/logos.png" alt=""></a></h2>
+            <span class="t1 va-m">PCB打样智能工厂</span>
+            <b class="lineBlock emptys"></b>
         </div>
         <div class="fr r">
-            <a class="car lineBlock va-m lbBox" href="javascript:;">
-                <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
-                <span class="va-m">购物车</span>
-                <div class="lineBlock va-m circle">0</div>
-            </a>
-            <div class="show lineBlock va-m">
-                <div class="bar-bottom">
-                    <a class="t1">我的订单</a>
-                    <div class="lineBlock va-m circle">0</div>
-                </div>
+            <p class="lineBlock va-m t1" style="margin-right: 30px">
+                <em>服务时间：</em>
+                <span>周一至周六 09:00-22:00</span>
+            </p>
+            <p class="lineBlock va-m t1" style="margin-right: 30px">
+                <em>客服QQ：</em>
+                <span>800183356</span>
+            </p>
+            <p class="lineBlock va-m t2">
+                <em>服务热线：</em>
+                <span>0571-86609386</span>
+            </p>
+            <b class="lineBlock emptys"></b>
+        </div>
+    </div>
+</div>
+<div class="home">
+    <div class="width-1180 nav-wrap clr">
+        <ul class="nav fl">
+            <li class="curr"><a href="">首页</a></li>
+            <li><a href="">PCB快速报价</a></li>
+            <li><a href="">高级PCB报价</a></li>
+            <li><a href="">SMT贴片</a></li>
+            <li><a href="">钢网计价</a></li>
+        </ul>
+        <div class="fr login-bar">
+            <!--未登录-->
+            <div class="logged lineBlock lbBox" style="display: none;">
+                <a href="" class="lg va-m">
+                    <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                    <span class="va-m">登录</span>
+                </a>
+                <span class="lineBlock line va-m"></span>
+                <a href="" class="rg va-m">注册</a>
+                <a class="car lineBlock va-m lbBox" href="javascript:;" rel="nofollow">
+                    <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                    <span class="va-m">购物车</span>
+                    <div class="lineBlock va-m circle cartCnt">0</div>
+                </a>
+                <b class="lineBlock emptys"></b>
             </div>
-            <b class="emptys lineBlock"></b>
+            <!--已登录-->
+            <div class="logged-in lineBlock lbBox" style="display: block">
+                <div class="lineBlock va-m logged-in-bar">
+                    <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                    <span class="tel va-m">15012479484</span>
+                    <i class="iconfont iconzujiantubiaojiantou1 va-m"></i>
+                    <b class="lineBlock emptys"></b>
+                    <ul>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="">安全退出</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="car lineBlock va-m lbBox" href="javascript:;" rel="nofollow">
+                    <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                    <span class="va-m">购物车</span>
+                    <div class="lineBlock va-m circle cartCnt">0</div>
+                    <b class="lineBlock emptys"></b>
+                </a>
+                <b class="lineBlock emptys"></b>
+            </div>
         </div>
     </div>
 </div>
@@ -126,7 +173,8 @@
                     <div class="fl l">
                         <ul class="clr tab">
                             <li class="curr">在线支付</li>
-                            <li>线下支付</li>
+                            <li>账户余额</li>
+                            <li>快捷对公转款</li>
                         </ul>
                     </div>
                     <div class="fr r">
@@ -183,52 +231,51 @@
                         </li>
                     </ul>
                 </div>
+                <div class="balance-box boxsiz hide">
+                    <p class="t1">余额支付</p>
+                    <div class="text">
+                        <i class="iconfont iconzujiantubiaojiantou13 va-m"></i>
+                        <span class="va-m">账户余额：</span>
+                        <em class="va-m">￥2000.00</em>
+                        <b class="lineBlock emptys"></b>
+                    </div>
+                    <div class="balance-tip">
+                        <i class="iconfont iconzujiantubiaojinggao2"></i>
+                        <span>提示：您的账户当前余额不足，无法完成支付。</span>
+                        <a href="javascript:;">去充值</a>
+                    </div>
+                </div>
                 <div class="pay-offline-payment hide">
-                    <p class="tit">提示：转账完成后，请将转账凭证发送至客服人员，确认款项后才可安排生产。</p>
+                    <p class="tit">确认使用快捷对公转款支付后，请直接将应付金额转款到您的专属转账子账号，无需填写转账备注信息。</p>
                     <ul class="clr">
                         <li class="lbBox">
-                            <div class="lineBlock va-m pic">
-                                <img src="./images/pay/cmb.png" alt="">
-                                <a href="javascript:;">保存信息</a>
+                            <div class="top clr">
+                                <div class="pic fl">
+                                    <img src="./images/pay/a.png" alt="">
+                                </div>
+                                <div class="fr text">
+                                    <span>转账金额:</span>
+                                    <em>6000.00元</em>
+                                </div>
                             </div>
-                            <div class="text lineBlock va-m">
-                                <p class="t1">
-                                    <span class="lineBlock va-m">开户行:</span>
-                                    <em class="va-m">深圳市上梅林支行</em>
-                                </p>
-                                <p class="t1">
-                                    <span class="lineBlock va-m">账号:</span>
-                                    <em class="va-m">0000 0000 0000 000</em>
-                                </p>
-                                <p class="t1">
-                                    <span class="lineBlock va-m">户名:</span>
-                                    <em class="va-m">深圳市猎板科技有限公司</em>
-                                </p>
+                            <div class="content">
+                                <p class="t1"><span>收款银行:</span><em>平安银行杭州拱墅支行</em></p>
+                                <p class="t1"><span>收款户名:</span><em>杭州猎板科技有限公司</em></p>
+                                <p class="t1"><span>收款账号:</span><em>320 2093 9999 9999 9999 9999 2</em></p>
                             </div>
-                            <b class="lineBlock emptys"></b>
-                        </li>
-                        <li class="lbBox">
-                            <div class="lineBlock va-m pic">
-                                <img src="./images/pay/cmb.png" alt="">
-                                <a href="javascript:;">保存信息</a>
-                            </div>
-                            <div class="text lineBlock va-m">
-                                <p class="t1">
-                                    <span class="lineBlock va-m">开户行:</span>
-                                    <em class="va-m">深圳市上梅林支行</em>
-                                </p>
-                                <p class="t1">
-                                    <span class="lineBlock va-m">账号:</span>
-                                    <em class="va-m">0000 0000 0000 000</em>
-                                </p>
-                                <p class="t1">
-                                    <span class="lineBlock va-m">户名:</span>
-                                    <em class="va-m">深圳市猎板科技有限公司</em>
-                                </p>
-                            </div>
-                            <b class="lineBlock emptys"></b>
                         </li>
                     </ul>
+                    <a class="pay-offline-payment-tip">
+                        <i class="iconfont iconzujiantubiaojiantou22 va-m"></i>
+                        <span class="va-m">下载猎板科技专属汇款账户证明文件</span>
+                    </a>
+                    <div class="pay-pia">
+                        <div class="pay-pia-ixo">
+                            <input type="checkbox" checked/>
+                            <span>我已授权款项到账后会自动完成该笔订单支付</span>
+                        </div>
+                        <div class="pay-pia-text">*确认使用快捷对公转款支付后,该订单将只能通过对公转账的方式来支付</div>
+                    </div>
                 </div>
             </div>
             <a href="javascript:;" class="fr btn-pay disabled">去支付</a>
@@ -436,7 +483,6 @@
         </ul>
     </div>
 </script>
-
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
@@ -480,19 +526,19 @@
     });
 
 
-    //正在支付订单
-    layer.open({
-      type: 1,
-      title: '<span>正在支付订单</span>',
-      area: ['640px', 'auto'],
-      shadeClose: true,
-      move: false,
-      content: $("#payHtml").html(),
-      success: function (layero, index) {
+    /*  //正在支付订单
+      layer.open({
+        type: 1,
+        title: '<span>正在支付订单</span>',
+        area: ['640px', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#payHtml").html(),
+        success: function (layero, index) {
 
 
-      }
-    });
+        }
+      });*/
 
 
     //余额支付
