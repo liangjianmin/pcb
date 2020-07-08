@@ -60,8 +60,8 @@
       });
       
       
-      $(document).on('click','.tip .iconfont',function () {
-          $(".tip").hide();
+      $(document).on('click','.website-tip .iconfont',function () {
+          $(".website-tip").hide();
       });
       
       return this;
