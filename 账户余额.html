@@ -19,29 +19,76 @@
 <div class="pcb-head">
     <div class="width-1180 pcb-head-wrap clr">
         <div class="fl l">
-            <h2 class="lineBlock va-m">
-                <a href="/"><img src="./images/common/login.png" alt="猎板网" title="猎板网"></a>
-            </h2>
-            <p class="lineBlock va-m logo-tit">PCB打样智能工厂</p>
-            <div class="text lineBlock va-m">
-                <p class="text-t1">客服热线：400-0000-000</p>
-                <p class="text-t1">服务时间：周一至周六 09:00-22:00</p>
-            </div>
-            <b class="emptys lineBlock"></b>
+            <h2 class="lineBlock va-m"><a href="/"><img src="./images/home/logos.png" alt=""></a></h2>
+            <span class="t1 va-m">PCB打样智能工厂</span>
+            <b class="lineBlock emptys"></b>
         </div>
         <div class="fr r">
-            <a class="car lineBlock va-m lbBox" href="javascript:;">
-                <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
-                <span class="va-m">购物车</span>
-                <div class="lineBlock va-m circle">0</div>
-            </a>
-            <div class="show lineBlock va-m">
-                <div class="bar-bottom">
-                    <a class="t1">我的订单</a>
-                    <div class="lineBlock va-m circle">0</div>
-                </div>
+            <p class="lineBlock va-m t1" style="margin-right: 30px">
+                <em>服务时间：</em>
+                <span>周一至周六 09:00-22:00</span>
+            </p>
+            <p class="lineBlock va-m t1" style="margin-right: 30px">
+                <em>客服QQ：</em>
+                <span>800183356</span>
+            </p>
+            <p class="lineBlock va-m t2">
+                <em>服务热线：</em>
+                <span>0571-86609386</span>
+            </p>
+            <b class="lineBlock emptys"></b>
+        </div>
+    </div>
+</div>
+<div class="home">
+    <div class="width-1180 nav-wrap clr">
+        <ul class="nav fl">
+            <li class="curr"><a href="">首页</a></li>
+            <li><a href="">PCB快速报价</a></li>
+            <li><a href="">高级PCB报价</a></li>
+            <li><a href="">SMT贴片</a></li>
+            <li><a href="">钢网计价</a></li>
+        </ul>
+        <div class="fr login-bar">
+            <!--未登录-->
+            <div class="logged lineBlock lbBox" style="display: none;">
+                <a href="" class="lg va-m">
+                    <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                    <span class="va-m">登录</span>
+                </a>
+                <span class="lineBlock line va-m"></span>
+                <a href="" class="rg va-m">注册</a>
+                <a class="car lineBlock va-m lbBox" href="javascript:;" rel="nofollow">
+                    <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                    <span class="va-m">购物车</span>
+                    <div class="lineBlock va-m circle cartCnt">0</div>
+                </a>
+                <b class="lineBlock emptys"></b>
             </div>
-            <b class="emptys lineBlock"></b>
+            <!--已登录-->
+            <div class="logged-in lineBlock lbBox" style="display: block">
+                <div class="lineBlock va-m logged-in-bar">
+                    <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                    <span class="tel va-m">15012479484</span>
+                    <i class="iconfont iconzujiantubiaojiantou1 va-m"></i>
+                    <b class="lineBlock emptys"></b>
+                    <ul>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="">安全退出</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="car lineBlock va-m lbBox" href="javascript:;" rel="nofollow">
+                    <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                    <span class="va-m">购物车</span>
+                    <div class="lineBlock va-m circle cartCnt">0</div>
+                    <b class="lineBlock emptys"></b>
+                </a>
+                <b class="lineBlock emptys"></b>
+            </div>
         </div>
     </div>
 </div>
@@ -115,7 +162,7 @@
             </div>
             <div class="accountBalance">
                 <!--未开通-->
-                <div class="not-opened" style="display: none">
+                <div class="not-opened" style="display: block">
                     <p class="t1">您尚未开通现金账户</p>
                     <p class="t2">使用现金账户让您在猎板网购物、支付更加便捷</p>
                     <a href="javascript:;" class="btn">免费安全开通</a>
@@ -134,8 +181,66 @@
                         </li>
                     </ul>
                 </div>
+                <!--申请开通-->
+                <div class="application-opening" style="display: block">
+                    <div class="inpt-wrap">
+                        <label class="lineBlock va-m">绑定手机号：</label>
+                        <span class="t1 lineBlock va-m">15012479484 </span>
+                    </div>
+                    <div class="inpt-wrap">
+                        <label class="lineBlock va-t" style="margin-top: 12px;">* 支付密码：</label>
+                        <div class="lineBlock va-t pwd">
+                            <div class="lbBox input-box">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                            </div>
+                            <p class="t2">* 请设置新6位数字支付密码</p>
+                        </div>
+                    </div>
+                    <div class="inpt-wrap">
+                        <label class="lineBlock va-t" style="margin-top: 12px;">* 重复密码：</label>
+                        <div class="lineBlock va-t pwd">
+                            <div class="lbBox input-box">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                                <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                            </div>
+                            <p class="t2">* 请再次输入6位数字支付密码</p>
+                        </div>
+                    </div>
+                    <div class="inpt-wrap">
+                        <label class="lineBlock va-m">* 验证码：</label>
+                        <input type="text" class="lineBlock va-m inp1 w3" placeholder="">
+                        <a href="javascript:;" class="imgCode"><img src="./images/home/verify.png" alt=""></a>
+                        <span class="va-m t3">看不清楚？换一张</span>
+                    </div>
+                    <div class="inpt-wrap">
+                        <label class="lineBlock va-m">* 短信验证码：</label>
+                        <div class="code-wrap lineBlock va-m">
+                            <input type="text" placeholder="请输入短信验证码" class="inp0">
+                            <input type="button" value="发送验证码" class="code">
+                        </div>
+                    </div>
+                    <div class="inpt-wrap-text">
+                        <input type="checkbox" checked />
+                        <span>我已了解</span>
+                        <a href="javascript:;">《关于账户充值》</a>
+                        <a href="javascript:;">《关于账户余额》</a>
+                        <a href="javascript:;">《关于会员账户使用说明》</a>
+                    </div>
+                    <div class="btn">
+                        <a href="javascript:;">确认开通</a>
+                    </div>
+                </div>
                 <!--账户余额-->
-                <div class="accountBalance-wrap">
+                <div class="accountBalance-wrap" style="display: block">
                     <p class="tit clr">
                         <i class="fl iconfont iconzujiantubiaojinggao2"></i>
                         <span class="fl">为了保证您账户余额的安全，如需提现，请致电客服进行申请和审核：400-000-0000</span>
@@ -181,9 +286,9 @@
                         <tbody>
                         <tr class="bor">
                             <th style="width: 190px;text-align: left;padding-left: 30px;">时间</th>
-                            <th style="width: 180px;text-align: left">交易单号</th>
-                            <th style="width: 180px;text-align: left">金额</th>
-                            <th style="width: 190px;text-align: left">余额</th>
+                            <th style="width: 180px;text-align: left">充值单号</th>
+                            <th style="width: 180px;text-align: left">充值金额</th>
+                            <th style="width: 190px;text-align: left">账户余额</th>
                             <th style="width: 160px;text-align: left">备注</th>
                         </tr>
                         <tr>
@@ -337,6 +442,26 @@
     </div>
 </div>
 <!--footer end-->
+
+<script type="text/html" id="accountBalanceTipHtml">
+    <div class="accountBalance-layer">
+        <div class="head lbBox">
+            <div class="pic lineBlock va-m">
+                <i class="iconfont iconzujiantubiaojiantou7"></i>
+            </div>
+            <div class="text lineBlock va-m">
+                <p class="t1">您已成功开通账户余额功能</p>
+                <p class="t2">使用账户余额支付更快捷、安全</p>
+            </div>
+        </div>
+        <div class="btn lbBox">
+            <a href="javascript:;" class="canel lineBlock">返回账户</a>
+            <a href="javascript:;" class="ok lineBlock">去充值</a>
+        </div>
+    </div>
+</script>
+
+
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
@@ -345,6 +470,21 @@
   Util.tabs('.tab ul li', function (index) {
     $('.list-table').eq(index).show().siblings('.list-table').hide();
   });
+
+  layer.open({
+    type: 1,
+    title: '<span>开通提示</span>',
+    area: ['640px ', 'auto'],
+    shadeClose: true,
+    move: false,
+    content: $("#accountBalanceTipHtml").html(),
+    success: function (layero, index) {
+
+
+    }
+  });
+
+
 
   layui.laypage.render({
     elem: 'pagination',

@@ -242,6 +242,24 @@
     </div>
 </div>
 <!--footer end-->
+
+<script type="text/html" id="accountBalanceTipHtml">
+    <div class="paymentSetting-layer">
+        <div class="head lbBox">
+            <div class="pic lineBlock va-m">
+                <i class="iconfont iconzujiantubiaojiantou7"></i>
+            </div>
+            <div class="text lineBlock va-m">
+                <p class="t1">您已成功修改了新的账户密码</p>
+                <p class="t2">请您妥善保管好您的账户信息 </p>
+            </div>
+        </div>
+        <div class="btn lbBox">
+            <a href="javascript:;" class="ok lineBlock">关闭</a>
+        </div>
+    </div>
+</script>
+
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
@@ -307,6 +325,18 @@
     }
   });
 
+  layer.open({
+    type: 1,
+    title: '<span>提示</span>',
+    area: ['640px ', 'auto'],
+    shadeClose: true,
+    move: false,
+    content: $("#accountBalanceTipHtml").html(),
+    success: function (layero, index) {
+
+
+    }
+  });
 
 </script>
 </body>
