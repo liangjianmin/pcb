@@ -998,4 +998,60 @@ body {
   color: #ffffff;
   font-size: 14px;
 }
+.paymentSetting-layer {
+  padding: 28px 30px 40px 50px;
+}
+.paymentSetting-layer .head .pic {
+  width: 60px;
+  height: 60px;
+  background: #0081D2;
+  border-radius: 50%;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 60px;
+}
+.paymentSetting-layer .head .pic .iconfont {
+  font-size: 40px;
+  color: #FFFFFF;
+}
+.paymentSetting-layer .head .text {
+  margin-left: 20px;
+}
+.paymentSetting-layer .head .text .t1 {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.paymentSetting-layer .head .text .t2 {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-top: 5px;
+}
+.paymentSetting-layer .btn {
+  margin-top: 30px;
+  text-align: right;
+  white-space: nowrap;
+}
+.paymentSetting-layer .btn .canel {
+  width: 100px;
+  height: 38px;
+  border-radius: 2px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid #E6EAF2;
+  font-size: 14px;
+  color: #5c5f66;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.paymentSetting-layer .btn .ok {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #0081D2;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+}
 /*# sourceMappingURL=index.css.map */

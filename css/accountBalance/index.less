@@ -180,7 +180,7 @@
         }
 
         .btn2 {
-          margin-top:30px;
+          margin-top: 30px;
           width: 120px;
           height: 36px;
           background: #0081D2;
@@ -301,18 +301,166 @@
     }
   }
 
-  .accountBalance-empty{
+  .accountBalance-empty {
     padding-top: 80px;
     text-align: center;
-    .iconfont{
+
+    .iconfont {
       font-size: 180px;
       color: #0081d2;
     }
-    p{
+
+    p {
       margin-top: 19px;
       font-size: 20px;
       color: #3a3c40;
       font-weight: bold;
+    }
+  }
+
+  .application-opening {
+    padding-top: 60px;
+
+    .inpt-wrap {
+      margin-bottom: 20px;
+      white-space: nowrap;
+
+      .code-wrap {
+        position: relative;
+
+        .code {
+          position: absolute;
+          right: 10px;
+          top: 16px;
+          background: none;
+          font-size: 14px;
+          color: #0081d2;
+
+          &.btnDisabled {
+            color: #CCCCCC;
+          }
+        }
+
+        .inp0 {
+          width: 298px;
+          height: 48px;
+          border-radius: 2px;
+          border: 1px solid #E6EAF2;
+          background: #F7F9FC;
+          text-indent: 1em;
+
+          &:focus {
+            background: #ffffff;
+          }
+        }
+      }
+
+      label {
+        width: 96px;
+        font-size: 14px;
+        color: #5c5f66;
+        text-align: right;
+        margin-right: 22px;
+      }
+
+      .inp1 {
+        height: 48px;
+        line-height: 48px;
+        border-radius: 2px;
+        border: 1px solid #E6EAF2;
+        text-indent: 1em;
+        background: #F7F9FC;
+
+        &:focus {
+          background: #ffffff;
+        }
+      }
+
+      .inp2 {
+        height: 54px;
+        background: #F7F9FC;
+        border-radius: 2px;
+        border: 1px solid #E6EAF2;
+        margin-right: 8px;
+        font-size: 16px;
+        color: #3a3c40;
+        line-height: 54px;
+        text-align: center;
+
+        &:focus {
+          background: #ffffff;
+        }
+      }
+
+      .w2 {
+        width: 54px;
+      }
+
+      .w3 {
+        width: 198px;
+      }
+
+      .imgCode {
+        width: 76px;
+        height: 50px;
+
+        img {
+          width: 76px;
+          height: 50px;
+        }
+      }
+
+      .t1 {
+        font-size: 16px;
+        color: #3a3c40;
+        font-weight: bold;
+      }
+
+      .t2 {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #5c5f66;
+      }
+
+      .t3 {
+        font-size: 12px;
+        color: #0081d2;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+    }
+
+    .btn {
+      margin-top: 40px;
+      margin-left: 121px;
+
+      a {
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #0081D2;
+        border-radius: 2px;
+        display: block;
+        color: #ffffff;
+        font-size: 14px;
+      }
+    }
+
+    .inpt-wrap-text {
+      margin-left: 121px;
+
+      span {
+        margin-left: 8px;
+        font-size: 14px;
+        color: #5c5f66;
+      }
+
+      a {
+        font-size: 14px;
+        color: #0081d2;
+      }
     }
   }
 
@@ -390,14 +538,17 @@
         text-align: right;
         margin-right: 22px;
       }
-      .imgCode{
-        width:76px;
-        height:50px;
-        img{
-          width:76px;
-          height:50px;
+
+      .imgCode {
+        width: 76px;
+        height: 50px;
+
+        img {
+          width: 76px;
+          height: 50px;
         }
       }
+
       .t1 {
         font-size: 16px;
         color: #3a3c40;
@@ -422,7 +573,8 @@
         border: 1px solid #E6EAF2;
         text-indent: 1em;
         background: #F7F9FC;
-        &:focus{
+
+        &:focus {
           background: #ffffff;
         }
       }
@@ -436,9 +588,25 @@
       }
     }
 
+    .inpt-wrap-text {
+      margin-left: 184px;
+
+      span {
+        margin-left: 8px;
+        font-size: 14px;
+        color: #5c5f66;
+      }
+
+      a {
+        font-size: 14px;
+        color: #0081d2;
+      }
+    }
+
     .btn {
       margin-top: 40px;
       margin-left: 182px;
+
       a {
         width: 200px;
         height: 50px;
@@ -452,19 +620,83 @@
       }
     }
   }
-  .accountRecharge-text{
+
+  .accountRecharge-text {
     margin-top: 40px;
     margin-left: 183px;
-    .t1{
+
+    .t1 {
       font-size: 14px;
       color: #3a3c40;
       font-weight: bold;
     }
-    .t2{
+
+    .t2 {
       margin-top: 13px;
       font-size: 14px;
       color: #5c5f66;
-      line-height:20px;
+      line-height: 31px;
+    }
+  }
+}
+
+
+.accountBalance-layer {
+  padding: 28px 30px 40px 50px;
+
+  .head {
+    .pic{
+      width:60px;
+      height:60px;
+      background:#0081D2;
+      border-radius: 50%;
+      white-space: nowrap;
+      text-align: center;
+      line-height: 60px;
+      .iconfont{
+        font-size: 40px;
+        color: #FFFFFF;
+      }
+    }
+    .text{
+      margin-left: 20px;
+      .t1{
+        font-size: 14px;
+        color: #3a3c40;
+        font-weight: bold;
+      }
+      .t2{
+        font-size: 14px;
+        color: #5c5f66;
+        margin-top: 5px;
+      }
+    }
+  }
+  .btn{
+    margin-top: 30px;
+    text-align: right;
+    white-space: nowrap;
+    .canel{
+      width:100px;
+      height:38px;
+      border-radius:2px;
+      line-height: 38px;
+      text-align: center;
+      border:1px solid #E6EAF2;
+      font-size: 14px;
+      color: #5c5f66;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+    .ok{
+      width:100px;
+      height:40px;
+      line-height: 40px;
+      text-align: center;
+      background: #0081D2;
+      border-radius:2px;
+      font-size: 14px;
+      color: #ffffff;
     }
   }
 }

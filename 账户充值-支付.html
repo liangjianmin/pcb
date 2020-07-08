@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>猎板网</title>
+    <meta name="keywords" content="猎板网-全功能定制PCB服务"/>
+    <meta name="description" content="猎板网-全功能定制PCB服务"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="./css/pay/index.css"/>
+</head>
+
+<body>
+<!--head-->
+<div class="pcb-head">
+    <div class="width-1180 pcb-head-wrap clr">
+        <div class="fl l">
+            <h2 class="lineBlock va-m"><a href="/"><img src="./images/home/logos.png" alt=""></a></h2>
+            <span class="t1 va-m">PCB打样智能工厂</span>
+            <b class="lineBlock emptys"></b>
+        </div>
+        <div class="fr r">
+            <p class="lineBlock va-m t1" style="margin-right: 30px">
+                <em>服务时间：</em>
+                <span>周一至周六 09:00-22:00</span>
+            </p>
+            <p class="lineBlock va-m t1" style="margin-right: 30px">
+                <em>客服QQ：</em>
+                <span>800183356</span>
+            </p>
+            <p class="lineBlock va-m t2">
+                <em>服务热线：</em>
+                <span>0571-86609386</span>
+            </p>
+            <b class="lineBlock emptys"></b>
+        </div>
+    </div>
+</div>
+<div class="home">
+    <div class="width-1180 nav-wrap clr">
+        <ul class="nav fl">
+            <li class="curr"><a href="">首页</a></li>
+            <li><a href="">PCB快速报价</a></li>
+            <li><a href="">高级PCB报价</a></li>
+            <li><a href="">SMT贴片</a></li>
+            <li><a href="">钢网计价</a></li>
+        </ul>
+        <div class="fr login-bar">
+            <!--未登录-->
+            <div class="logged lineBlock lbBox" style="display: none;">
+                <a href="" class="lg va-m">
+                    <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                    <span class="va-m">登录</span>
+                </a>
+                <span class="lineBlock line va-m"></span>
+                <a href="" class="rg va-m">注册</a>
+                <a class="car lineBlock va-m lbBox" href="javascript:;" rel="nofollow">
+                    <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                    <span class="va-m">购物车</span>
+                    <div class="lineBlock va-m circle cartCnt">0</div>
+                </a>
+                <b class="lineBlock emptys"></b>
+            </div>
+            <!--已登录-->
+            <div class="logged-in lineBlock lbBox" style="display: block">
+                <div class="lineBlock va-m logged-in-bar">
+                    <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                    <span class="tel va-m">15012479484</span>
+                    <i class="iconfont iconzujiantubiaojiantou1 va-m"></i>
+                    <b class="lineBlock emptys"></b>
+                    <ul>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="">安全退出</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="car lineBlock va-m lbBox" href="javascript:;" rel="nofollow">
+                    <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                    <span class="va-m">购物车</span>
+                    <div class="lineBlock va-m circle cartCnt">0</div>
+                    <b class="lineBlock emptys"></b>
+                </a>
+                <b class="lineBlock emptys"></b>
+            </div>
+        </div>
+    </div>
+</div>
+<!--head end-->
+
+<!--section-->
+<div class="pay-status">
+    <div class="width-1180 clr">
+        <div class="fl l">
+            <p class="lineBlock va-m">订单支付</p>
+            <b class="lineBlock emptys"></b>
+        </div>
+        <div class="fr r">
+            <ul class="lineBlock va-m clr">
+                <li class="lbBox curr">
+                    <p>
+                        <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                        <span class="va-m">购物车</span>
+                    </p>
+                    <b class="circle lineBlock va-m"></b>
+                    <b class="line-0 lineBlock va-m"></b>
+                </li>
+                <li class="lbBox curr">
+                    <p>
+                        <i class="iconfont iconzujiantubiaoliwu17 va-m"></i>
+                        <span class="va-m">提交订单</span>
+                    </p>
+                    <b class="line-1 lineBlock va-m"></b>
+                    <b class="circle lineBlock va-m"></b>
+                    <b class="line-2 lineBlock va-m"></b>
+                </li>
+                <li class="lbBox curr">
+                    <p>
+                        <i class="iconfont iconzujiantubiaoliwu15 va-m"></i>
+                        <span class="va-m">订单支付</span>
+                    </p>
+                    <b class="line-1 lineBlock va-m"></b>
+                    <b class="circle lineBlock va-m"></b>
+                    <b class="line-2 lineBlock va-m"></b>
+                </li>
+                <li class="lbBox">
+                    <p>
+                        <i class="iconfont iconzujiantubiaoliwu16 va-m"></i>
+                        <span class="va-m">审核通过</span>
+                    </p>
+                    <b class="line-1 lineBlock va-m"></b>
+                    <b class="circle lineBlock va-m"></b>
+                </li>
+            </ul>
+            <b class="lineBlock emptys"></b>
+        </div>
+    </div>
+</div>
+<div class="pay-section">
+    <div class="width-1180">
+        <div class="pay-head clr">
+            <div class="fl l lbBox">
+                <i class="iconfont iconzujiantubiaochenggong va-m"></i>
+                <div class="text lineBlock va-m">
+                    <p class="t1">订单提交成功！请尽快完成支付。</p>
+                    <p class="t2">
+                        <span class="va-m">请在</span>
+                        <span class="va-m">
+                            <em id="timer_h"></em>
+                            <em id="timer_m"></em>
+                            <em id="timer_s"></em>
+                        </span>
+                        <span class="va-m">内完成支付, 超时后将取消订单！</span>
+                    </p>
+                </div>
+            </div>
+            <div class="fr r">
+                <p>
+                    <span>应付总额：</span>
+                    <em>￥1245.00</em>
+                </p>
+            </div>
+        </div>
+        <div class="pay-content clr">
+            <div class="pay-operation clr">
+                <div class="pay-operation-head clr">
+                    <div class="fl l">
+                        <ul class="clr tab">
+                            <li class="curr">在线支付</li>
+                        </ul>
+                    </div>
+                    <div class="fr r">
+                        <span class="t1 va-m">专属客服：</span>
+                        <a href="javascript:;" class="va-m">
+                            <span class="t2 va-m">在线联系</span>
+                            <i class="iconfont iconzujiantubiaoliwu9 va-m"></i>
+                        </a>
+                        <span class="t3 va-m">李小组</span>
+                        <span class="t4 va-m">15012412345</span>
+                    </div>
+                </div>
+                <div class="pay-operation-box hide" style="display: block">
+                    <ul class="clr">
+                        <li>
+                            <p class="tit">平台支付</p>
+                            <dl class="clr">
+                                <dd class="weixin lbBox curr">
+                                    <i class="iconfont iconzujiantubiaojiantou12 va-m"></i>
+                                    <span class="va-m t1">微信支付</span>
+                                    <b class="lineBlock emptys"></b>
+                                </dd>
+                                <dd class="alipay lbBox">
+                                    <i class="iconfont iconzujiantubiaojiantou11 va-m"></i>
+                                    <span class="va-m t1">支付宝</span>
+                                    <b class="lineBlock emptys"></b>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="javascript:;" class="fr btn-pay disabled">去支付</a>
+        </div>
+    </div>
+</div>
+<!--section end-->
+
+<!--slide bar-->
+<div class="sldie-bar">
+    <dl>
+        <dd>
+            <a href="javascript:;">
+                <div class="lineBlock va-m">
+                    <i class="iconfont iconzujiantubiaogouwuche"></i>
+                    <p>购物车</p>
+                    <div class="circle">2</div>
+                </div>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dd>
+        <dd>
+            <a href="javascript:;">
+                <div class="lineBlock va-m">
+                    <i class="iconfont iconzujiantubiaoliwu2"></i>
+                    <p>在线报价</p>
+                </div>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dd>
+        <dd>
+            <a href="javascript:;">
+                <div class="lineBlock va-m">
+                    <i class="iconfont iconzujiantubiaoliwu"></i>
+                    <p>在线客服</p>
+                </div>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dd>
+        <dd>
+            <a href="javascript:;">
+                <div class="lineBlock va-m">
+                    <i class="iconfont iconzujiantubiaoshouji1"></i>
+                    <p>意见反馈</p>
+                </div>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dd>
+        <dt id="backtop">
+            <a href="javascript:;">
+                <div class="lineBlock va-m">
+                    <i class="iconfont iconzujiantubiaojiantou2"></i>
+                </div>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dt>
+    </dl>
+</div>
+<!--slide bar end-->
+
+<!--footer-->
+<div class="pcb-footer">
+    <div class="width-1180">
+        <div class="pcb-footer-top clr">
+            <div class="fl l">
+                <ul class="clr">
+                    <li>
+                        <a href="">产品中心</a>
+                        <a href="">PCB计价</a>
+                        <a href="">免费打样</a>
+                    </li>
+                    <li>
+                        <a href="">服务支持</a>
+                        <a href="">工厂展示</a>
+                        <a href="">产品展示</a>
+                    </li>
+                    <li>
+                        <a href="">新闻资讯</a>
+                        <a href="">行业资讯</a>
+                        <a href="">技术动态</a>
+                        <a href="">公司报导</a>
+                    </li>
+                    <li>
+                        <a href="">帮助中心</a>
+                        <a href="">下单流程</a>
+                        <a href="">支付流程</a>
+                        <a href="">开票流程</a>
+                    </li>
+                    <li>
+                        <a href="">关于猎板</a>
+                        <a href="">关于猎板</a>
+                        <a href="">人才招聘</a>
+                        <a href="">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr r">
+                <div class="lineBlock va-m">
+                    <p class="t1">服务热线：</p>
+                    <p class="t2">0571 - 86609386</p>
+                    <p class="t3">服务时间：9:00-22:00</p>
+                    <p class="t4">客服邮箱：service@pcbhunt.com</p>
+                </div>
+                <div class="lineBlock va-m code-pic">
+                    <img src="./images/common/code.png" alt="">
+                    <p>微信公众号</p>
+                </div>
+            </div>
+        </div>
+        <div class="pcb-footer-bottom clr">
+            <div class="fl l">
+                <div class="va-t lineBlock text">
+                    <p class="t1">Copyright © www.PCBhunt.com, All Rights Reserved. 版权所有:杭州猎板网络科技有限公司</p>
+                    <p class="t1">浙ICP备20015009号-1 浙公网安备20015009号-1</p>
+                    <p>联系地址：浙江省杭州市拱墅区万达广场C栋6楼</p>
+                </div>
+                <div class="va-t lineBlock pic">
+                    <p>合作快递</p>
+                    <img src="./images/common/1.png" alt="">
+                    <img src="./images/common/2.png" alt="">
+                </div>
+            </div>
+            <div class="fr r">
+                <p>支付方式</p>
+                <div class="pic">
+                    <img src="./images/common/3.png" alt="">
+                    <img src="./images/common/4.png" alt="">
+                    <img src="./images/common/5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+
+<script type="text/html" id="balancepayHtml">
+    <div class="balancepay-layer">
+        <div class="text">
+            <p class="t1 clr">
+                <span class="fl l">应付总额：</span>
+                <span class="fr r">￥1245.00</span>
+            </p>
+            <p class="t2 clr">
+                <span class="fl l">订单信息：</span>
+                <span class="fr r">NO.23412343423</span>
+            </p>
+            <p class="t3 clr">
+                <span class="fl l">账户余额：</span>
+                <span class="fr r">￥3000.00</span>
+            </p>
+        </div>
+        <div class="pay-num">
+            <ul class="pay-inp lbBox input-box">
+                <li class="lineBlock">
+                    <input type="password" maxlength="1"/>
+                </li>
+                <li class="lineBlock">
+                    <input type="password" maxlength="1"/>
+                </li>
+                <li class="lineBlock">
+                    <input type="password" maxlength="1"/>
+                </li>
+                <li class="lineBlock">
+                    <input type="password" maxlength="1"/>
+                </li>
+                <li class="lineBlock">
+                    <input type="password" maxlength="1"/>
+                </li>
+                <li class="lineBlock">
+                    <input type="password" maxlength="1"/>
+                </li>
+            </ul>
+            <div class="text clr">
+                <span class="fl l error">*密码错误，请输入正确的密码。</span>
+                <a href="javascript:;" class="fr r">忘记密码？</a>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="javascript:;">立即付款</a>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="payHtml">
+    <div class="pay-layer">
+        <p class="tit clr">
+            <span class="fl l">订单支付完成后，请选择对应结果。</span>
+            <a class="fr r" href="javascript:;">查看支付常见问题 ></a>
+        </p>
+        <ul class="lbBox">
+            <li class="ok lineBlock va-m">
+                <div class="circle lineBlock va-m">
+                    <i class="iconfont iconzujiantubiaojiantou7"></i>
+                </div>
+                <span class="va-m">支付成功</span>
+                <b class="lineBlock emptys"></b>
+            </li>
+            <li class="canel lineBlock va-m">
+                <div class="circle lineBlock va-m">
+                    <i class="iconfont iconzujiantubiaojiantou10"></i>
+                </div>
+                <span class="va-m">支付失败</span>
+                <b class="lineBlock emptys"></b>
+            </li>
+        </ul>
+    </div>
+</script>
+<script type="text/javascript" src="js/common/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
+<script type="text/javascript" src="js/common/base.js"></script>
+<script type="text/javascript" src="js/pay/pay.js"></script>
+<script type="text/javascript">
+  $(function () {
+
+    $(document).on('input propertychange', '.input-box input', function () {
+      var val = $(this).val();
+      if (val) {
+        $(this).parent().next().children('input').focus();
+      }
+    });
+
+
+    $(document).on('keyup', '.input-box input', function () {
+      var e = (e) ? e : window.event;
+      if (e.keyCode == 8) {
+        var index = $(this).parent().index();
+        if (index == 0) {
+          $(this).parent().find('li').eq(index - 1).find("input").val('');
+        } else {
+          $(this).parent().parent().find('li').eq(index - 1).find("input").val('').focus();
+        }
+      } else {
+        //输入其他字符，直接清空
+        var _val = this.value;
+        this.value = _val.replace(/\D/g, '');
+      }
+    });
+
+    //选择支付方式
+    $(".tab li").on('click', function () {
+      var index = $(this).index();
+      $(this).addClass('curr').siblings('li').removeClass('curr');
+      $(".pay-operation .hide").eq(index).show().siblings('.hide').hide();
+    });
+
+
+    /*  //正在支付订单
+      layer.open({
+        type: 1,
+        title: '<span>正在支付订单</span>',
+        area: ['640px', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#payHtml").html(),
+        success: function (layero, index) {
+
+
+        }
+      });*/
+
+
+    //余额支付
+    $(".balancepay").on('click', function () {
+      layer.open({
+        type: 1,
+        title: '<span>余额支付</span>',
+        area: ['500px ', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#balancepayHtml").html(),
+        success: function (layero, index) {
+
+
+        }
+      });
+    });
+
+  })
+</script>
+</body>
+
+</html>
