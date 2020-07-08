@@ -722,20 +722,20 @@ body {
   font-size: 14px;
   color: #0081d2;
 }
-.tip {
+.website-tip {
   text-align: center;
   height: 40px;
   line-height: 40px;
   background: rgba(255, 224, 178, 0.5);
 }
-.tip .tip-wrap {
+.website-tip .tip-wrap {
   position: relative;
 }
-.tip .tip-wrap span {
+.website-tip .tip-wrap span {
   font-size: 14px;
   color: #e89721;
 }
-.tip .tip-wrap .iconfont {
+.website-tip .tip-wrap .iconfont {
   position: absolute;
   right: 0;
   top: 0;
@@ -905,11 +905,11 @@ body {
 }
 .accountInformation .inpt-wrap {
   margin-bottom: 20px;
-  margin-left: 73px;
+  margin-left: 45px;
   white-space: nowrap;
 }
 .accountInformation .inpt-wrap label {
-  width: 84px;
+  width: 112px;
   font-size: 14px;
   color: #5c5f66;
   text-align: right;
@@ -951,6 +951,11 @@ body {
 .accountInformation .inpt-wrap .imgCode img {
   width: 76px;
   height: 50px;
+}
+.accountInformation .inpt-wrap .txt {
+  font-size: 14px;
+  color: #5c5f66;
+  font-weight: bold;
 }
 .accountInformation .upload-box .pic {
   width: 88px;

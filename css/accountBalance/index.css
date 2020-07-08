@@ -722,20 +722,20 @@ body {
   font-size: 14px;
   color: #0081d2;
 }
-.tip {
+.website-tip {
   text-align: center;
   height: 40px;
   line-height: 40px;
   background: rgba(255, 224, 178, 0.5);
 }
-.tip .tip-wrap {
+.website-tip .tip-wrap {
   position: relative;
 }
-.tip .tip-wrap span {
+.website-tip .tip-wrap span {
   font-size: 14px;
   color: #e89721;
 }
-.tip .tip-wrap .iconfont {
+.website-tip .tip-wrap .iconfont {
   position: absolute;
   right: 0;
   top: 0;
@@ -1029,7 +1029,7 @@ body {
   font-weight: bold;
 }
 .accountBalance .accountBalance-wrap .text-head .r .btn2 {
-  margin-top: 20px;
+  margin-top: 30px;
   width: 120px;
   height: 36px;
   background: #0081D2;
