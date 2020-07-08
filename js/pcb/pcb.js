@@ -564,9 +564,19 @@
     onscrollFn: function () {
       if ($("#quote-scroll").length > 0) {
         var layout = $("#quote-scroll").offset().top;
+        
         $(window).scroll(function () {
+          var footOffsetY = $(".pcb-footer").offset().top;
+          
+          var height=$("#quote-scroll").height();
+          
+          
           if ($(this).scrollTop() > layout) {
-            $("#quote-scroll").addClass('onsroll');
+            if($(this).scrollTop()+height > footOffsetY){
+              $("#quote-scroll").removeClass('onsroll');
+            }else {
+              $("#quote-scroll").addClass('onsroll');
+            }
           } else {
             $("#quote-scroll").removeClass('onsroll');
           }

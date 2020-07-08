@@ -743,6 +743,87 @@ body {
   color: #e89721;
   cursor: pointer;
 }
+.selects-qty {
+  position: absolute;
+  left: 0px;
+  top: 39px;
+  z-index: 9;
+  width: 461px;
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+  padding: 10px 0 16px 18px;
+  display: none;
+}
+.selects-qty .arrow {
+  position: absolute;
+  left: 21px;
+  top: -10px;
+  width: 13px;
+  height: 11px;
+  background: url("../../images/common/ico.png") no-repeat -5px -52px;
+  background-color: #fff;
+}
+.selects-qty dl dd {
+  float: left;
+  width: 14%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.selects-qty dl dd .arr {
+  width: 14px;
+  height: 13px;
+  background: url("../../images/common/ico.png") no-repeat 0 0;
+}
+.selects-qty dl dd.curr .arr {
+  width: 14px;
+  height: 13px;
+  background: url("../../images/common/ico.png") no-repeat -16px 0;
+}
+.selects-qty dl dd span {
+  font-size: 14px;
+  color: #666666;
+  margin-left: 5px;
+}
+.selects-qty .wrap {
+  margin-top: 3px;
+}
+.selects-qty .wrap label {
+  font-size: 14px;
+  color: #666666;
+  margin-right: 13px;
+}
+.selects-qty .wrap .inp {
+  width: 158px;
+  border: solid 1px #e5e5e5;
+}
+.selects-qty .wrap .inp::-webkit-outer-spin-button,
+.selects-qty .wrap .inp::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+.selects-qty .wrap .inp:focus {
+  border: solid 1px #00a0e9;
+}
+.selects-qty .wrap .btn {
+  margin-left: 40px;
+}
+.selects-qty .wrap .btn a {
+  width: 68px;
+  height: 30px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.selects-qty .wrap .btn a.ok {
+  background-color: #1080d0;
+  color: #fefefe;
+  margin-right: 10px;
+}
+.selects-qty .wrap .btn a.canel {
+  background-color: #f3f3f3;
+  color: #666666;
+}
 .about-us .about-us-img {
   height: 258px;
   background: url('../../images/aboutus/bg.png') no-repeat;
