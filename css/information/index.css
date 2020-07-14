@@ -849,7 +849,10 @@ body {
   width: 880px;
 }
 .information .section .l .banner {
+  position: relative;
   width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
 .information .section .l .banner .list {
   width: 100%;
@@ -857,10 +860,36 @@ body {
 .information .section .l .banner .list li {
   width: 100%;
   height: 300px;
-  background: #d8d8d8;
 }
 .information .section .l .banner .list li a {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: block;
+}
+.information .section .l .banner .hd {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.information .section .l .banner .hd li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #353537;
+  border: solid 1px #7d7d7d;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-right: 10px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+.information .section .l .banner .hd li.on {
+  background-color: #b5b5b5;
 }
 .information .section .l .tit {
   margin-top: 30px;

@@ -111,9 +111,18 @@
         <div class="section clr">
             <div class="fl l">
                 <div class="banner">
-                    <ul class="list">
-                        <li><a href=""></a></li>
-                    </ul>
+                    <div class="bd">
+                        <ul class="list">
+                            <li><a href="" style="background-image: url('./images/home/b.png')"></a></li>
+                            <li><a href="" style="background-image: url('./images/home/banner.jpg')"></a></li>
+                        </ul>
+                    </div>
+                    <div class="hd clr">
+                        <ul>
+                            <li class="on"></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
                 <p class="tit">热点推荐</p>
                 <ul class="list">
@@ -375,7 +384,18 @@
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
+    $(function () {
+      //slide
+      if ($(".banner").length > 0) {
+        jQuery(".banner").slide({
+          mainCell: ".bd ul",
+          titCell: ".hd  li",
+          autoPlay: true,
+          interTime: 5000
+        });
+      }
 
+    })
 </script>
 </body>
 

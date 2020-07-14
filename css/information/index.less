@@ -30,18 +30,49 @@
       width: 880px;
 
       .banner {
+        position: relative;
         width: 100%;
-
+        height: 300px;
+        overflow: hidden;
         .list {
           width: 100%;
 
           li {
             width: 100%;
             height: 300px;
-            background: rgba(216, 216, 216, 1);
 
             a {
+              width: 100%;
+              height: 300px;
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
               display: block;
+            }
+          }
+        }
+
+        .hd {
+          position: absolute;
+          bottom: 5px;
+          left: 0;
+          right: 0;
+          text-align: center;
+
+          li {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: #353537;
+            border: solid 1px #7d7d7d;
+            cursor: pointer;
+            border-radius: 50%;
+            margin-right: 10px;
+            -webkit-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+
+            &.on {
+              background-color: #b5b5b5;
             }
           }
         }
