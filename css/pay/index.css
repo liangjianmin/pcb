@@ -1267,6 +1267,8 @@ body {
   color: #959ba6;
 }
 .pay-section .pay-content .btn-pay {
+  position: relative;
+  z-index: 99;
   width: 200px;
   height: 60px;
   background: #E82121;
