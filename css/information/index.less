@@ -324,3 +324,34 @@
     }
   }
 }
+
+.information-fix{
+  position: fixed;
+  width: 150px;
+  top: 146px;
+  left: 50%;
+  right: 50%;
+  margin-left: -760px;
+  z-index: 1000;
+  background-color: #f7f9fc;
+  li{
+    text-align: center;
+    border-bottom: 1px solid #E6EAF2;
+    &:last-child{
+      border-bottom: none;
+    }
+    a{
+      position: relative;
+      display: block;
+      color: #666;
+      padding: 18px 0 16px 0;
+    }
+    &.curr{
+      background-color: #1a6eb3;
+      border-radius: 4px 4px 0 0;
+      a{
+        color: #fff;
+      }
+    }
+  }
+}

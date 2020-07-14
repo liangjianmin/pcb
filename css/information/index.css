@@ -1087,4 +1087,34 @@ body {
   font-size: 14px;
   color: #5c5f66;
 }
+.information-fix {
+  position: fixed;
+  width: 150px;
+  top: 146px;
+  left: 50%;
+  right: 50%;
+  margin-left: -760px;
+  z-index: 1000;
+  background-color: #f7f9fc;
+}
+.information-fix li {
+  text-align: center;
+  border-bottom: 1px solid #E6EAF2;
+}
+.information-fix li:last-child {
+  border-bottom: none;
+}
+.information-fix li a {
+  position: relative;
+  display: block;
+  color: #666;
+  padding: 18px 0 16px 0;
+}
+.information-fix li.curr {
+  background-color: #1a6eb3;
+  border-radius: 4px 4px 0 0;
+}
+.information-fix li.curr a {
+  color: #fff;
+}
 /*# sourceMappingURL=index.css.map */
