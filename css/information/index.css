@@ -851,17 +851,17 @@ body {
 .information .section .l .banner {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 376px;
   overflow: hidden;
 }
-.information .section .l .banner .list {
+.information .section .l .banner .listpic {
   width: 100%;
 }
-.information .section .l .banner .list li {
+.information .section .l .banner .listpic li {
   width: 100%;
   height: 300px;
 }
-.information .section .l .banner .list li a {
+.information .section .l .banner .listpic li a {
   width: 100%;
   height: 300px;
   background-repeat: no-repeat;
@@ -871,7 +871,7 @@ body {
 }
 .information .section .l .banner .hd {
   position: absolute;
-  bottom: 5px;
+  bottom: 100px;
   left: 0;
   right: 0;
   text-align: center;
@@ -890,6 +890,19 @@ body {
 }
 .information .section .l .banner .hd li.on {
   background-color: #b5b5b5;
+}
+.information .section .l .banner .text {
+  background: #FFFFFF;
+  padding: 20px;
+}
+.information .section .l .banner .text .t1 {
+  color: #333;
+  font-size: 22px;
+}
+.information .section .l .banner .text .t2 {
+  margin-top: 10px;
+  color: #999;
+  font-size: 14px;
 }
 .information .section .l .tit {
   margin-top: 30px;
@@ -1119,10 +1132,11 @@ body {
 .information-fix {
   position: fixed;
   width: 150px;
-  top: 146px;
+  top: 50%;
   left: 50%;
   right: 50%;
   margin-left: -760px;
+  margin-top: -268px;
   z-index: 1000;
   background-color: #f7f9fc;
 }
