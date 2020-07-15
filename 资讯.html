@@ -103,8 +103,8 @@
 <!--section-->
 <div class="information">
     <ul class="information-fix">
-        <li class="curr"><a href="">新闻中心</a></li>
-        <li><a href="">新闻中心</a></li>
+        <li class="curr"><a href="javascript:;">新闻中心</a></li>
+        <li class="active"><a href="">新闻中心</a></li>
         <li><a href="">新闻中心</a></li>
         <li><a href="">新闻中心</a></li>
     </ul>
@@ -401,6 +401,11 @@
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
     $(function () {
+      Util.tabs('.information-fix  li', function (index) {
+
+      });
+
+
       //slide
       if ($(".banner").length > 0) {
         jQuery(".banner").slide({

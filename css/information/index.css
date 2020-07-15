@@ -1169,6 +1169,9 @@ body {
 .information-fix li.curr a {
   color: #fff;
 }
+.information-fix li.active a {
+  color: #1a6eb3;
+}
 .information-fix li:hover a {
   color: #1a6eb3;
 }
