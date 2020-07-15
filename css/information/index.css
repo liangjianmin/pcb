@@ -1172,4 +1172,7 @@ body {
 .information-fix li:hover a {
   color: #1a6eb3;
 }
+.information-fix li:hover.curr a {
+  color: #FFFFFF;
+}
 /*# sourceMappingURL=index.css.map */
