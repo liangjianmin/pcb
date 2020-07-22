@@ -2038,6 +2038,69 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+.home-section .form-div {
+  height: 100px;
+  background-color: #0081D2;
+}
+.home-section .form-div .width-1180 {
+  height: 100px;
+}
+.home-section .form-div .width-1180 .l {
+  color: #fff;
+}
+.home-section .form-div .width-1180 .l h3 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 0 4px;
+}
+.home-section .form-div .width-1180 .l p {
+  font-size: 14px;
+}
+.home-section .form-div .width-1180 .r {
+  padding-top: 35px;
+  height: 50px;
+}
+.home-section .form-div .width-1180 .r .input-v {
+  height: 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 0 10px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #959BA6;
+  width: 100px;
+}
+.home-section .form-div .width-1180 .r span {
+  font-size: 14px;
+  color: #fff;
+  padding: 0 10px;
+}
+.home-section .form-div .width-1180 .r .sel-div {
+  width: 160px;
+  font-size: 14px;
+  color: #959BA6;
+  margin-left: 10px;
+}
+.home-section .form-div .width-1180 .r .sel-div input {
+  height: 40px;
+}
+.home-section .form-div .width-1180 .r .sel-div .layui-form-select dl dd.layui-this {
+  background-color: #0081D2;
+}
+.home-section .form-div .width-1180 .r .btn {
+  width: 160px;
+  height: 40px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-size: 14px;
+  background-color: #E89721;
+}
 .layui-form-select .layui-input {
   font-size: 14px;
 }
