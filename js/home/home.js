@@ -35,12 +35,11 @@
       }
       //地图上面的点随机闪烁
       var pointLen = $('.map-r').find('.point').length;
-      setInterval(function(){
-        var randomNum = Math.floor(Math.random()*pointLen);
+      setInterval(function () {
+        var randomNum = Math.floor(Math.random() * pointLen);
         $('.map-r').find('.point').eq(randomNum).addClass('active').siblings().removeClass('active')
-      },2000)
+      }, 800);
       
-     
       
       return this;
     }

@@ -1468,6 +1468,7 @@ body {
   background-color: #E6EAF2;
   text-align: center;
   line-height: 20px;
+  border-radius: 50%;
 }
 .home-section .home-price .explain .r-bar dl dd:hover .text .iconfont {
   color: #0081d2;
@@ -2123,3 +2124,4 @@ body {
     opacity: 0;
   }
 }
+/*# sourceMappingURL=index0721.css.map */
