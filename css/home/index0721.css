@@ -1373,8 +1373,20 @@ body {
   right: 0;
   z-index: 7;
 }
-.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2 .icon {
+.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2 b {
+  font-weight: normal;
+}
+.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2 em {
+  display: none;
+}
+.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2 em .icon {
   font-size: 24px;
+}
+.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2:hover b {
+  display: none;
+}
+.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2:hover em {
+  display: block;
 }
 .home-section .home-price .explain {
   position: relative;
@@ -1852,6 +1864,16 @@ body {
 .home-section .evaluate-section .list-pic .bd ul li a .text .text-top {
   padding-top: 20px;
 }
+.home-section .evaluate-section .list-pic .bd ul li a .text .text-top .im {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+.home-section .evaluate-section .list-pic .bd ul li a .text .text-top .im img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
 .home-section .evaluate-section .list-pic .bd ul li a .text .text-top-l .icon {
   font-size: 36px;
   color: #959BA6;
@@ -2072,7 +2094,7 @@ body {
   color: #959BA6;
   width: 100px;
 }
-.home-section .form-div .width-1180 .r span {
+.home-section .form-div .width-1180 .r span.tt {
   font-size: 14px;
   color: #fff;
   padding: 0 10px;
@@ -2089,7 +2111,7 @@ body {
 .home-section .form-div .width-1180 .r .sel-div .layui-form-select dl dd.layui-this {
   background-color: #0081D2;
 }
-.home-section .form-div .width-1180 .r .btn {
+.home-section .form-div .width-1180 .r .btns {
   width: 160px;
   height: 40px;
   border-radius: 2px;
@@ -2101,6 +2123,14 @@ body {
   color: #FFFFFF;
   font-size: 14px;
   background-color: #E89721;
+}
+.home-section .form-div .width-1180 .r .selects-qty .inp {
+  height: 34px;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  font-size: 14px;
+  text-indent: 1em;
+  background: #F9F9FB;
 }
 .layui-form-select .layui-input {
   font-size: 14px;
