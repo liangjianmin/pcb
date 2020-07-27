@@ -1373,20 +1373,11 @@ body {
   right: 0;
   z-index: 7;
 }
-.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2 b {
-  font-weight: normal;
+.home-section .home-price .home-price-wrap .r ul .btn:hover .imme_price_txt1 {
+  transform: translate(44px, 0);
 }
-.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2 em {
-  display: none;
-}
-.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2 em .icon {
-  font-size: 24px;
-}
-.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2:hover b {
-  display: none;
-}
-.home-section .home-price .home-price-wrap .r ul .btn .imme_price_txt2:hover em {
-  display: block;
+.home-section .home-price .home-price-wrap .r ul .btn:hover .imme_price_txt2 {
+  transform: translate(150px, 0);
 }
 .home-section .home-price .explain {
   position: relative;
