@@ -986,6 +986,7 @@ body {
 .information .section .l .list li a .pic {
   width: 200px;
   height: 140px;
+  overflow: hidden;
 }
 .information .section .l .list li a .pic img {
   width: 200px;
@@ -1242,5 +1243,11 @@ body {
 }
 .information-fix li:hover.curr a {
   color: #FFFFFF;
+}
+@media screen and (max-width: 1440px) {
+  .information-fix {
+    width: 96px;
+    margin-left: -696px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

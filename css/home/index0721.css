@@ -1142,13 +1142,15 @@ body {
 }
 .home-section .banner-box .notice .notice-r .news {
   margin-top: 10px;
-  color: #fff;
-  font-size: 12px;
   height: 60px;
   overflow: hidden;
 }
 .home-section .banner-box .notice .notice-r .news dd {
   margin-top: 4px;
+}
+.home-section .banner-box .notice .notice-r .news dd span {
+  color: #fff;
+  font-size: 12px;
 }
 .home-section .home-price {
   margin: 80px auto 0;
@@ -1957,6 +1959,9 @@ body {
 }
 .home-section .news-questions-section .news-l .news-div .news-div-l {
   position: relative;
+  height: 280px;
+  width: 380px;
+  overflow: hidden;
 }
 .home-section .news-questions-section .news-l .news-div .news-div-l img {
   height: 280px;

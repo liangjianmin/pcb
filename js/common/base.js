@@ -35,6 +35,7 @@
     },
     mounted: function (opt) {
       
+      Util.imgZoom($(".imgZoomT"), true);
       
       return this;
     },
@@ -60,8 +61,8 @@
       });
       
       
-      $(document).on('click','.website-tip .iconfont',function () {
-          $(".website-tip").hide();
+      $(document).on('click', '.website-tip .iconfont', function () {
+        $(".website-tip").hide();
       });
       
       return this;
@@ -219,6 +220,74 @@
         $("" + obj + ":gt(" + index + ")").addClass("default");
         
         typeof callback == 'function' && callback(index + 1);
+      });
+    },
+    imgZoom: function (imgObj, cut) {
+      imgObj.each(function () {
+        var me = $(this);
+        var imgPath = me.attr("src");
+        var boxW = me.parent().width();
+        var boxH = me.parent().height();
+        var rate = boxW / boxH;
+        var newImg = new Image();
+        newImg.onload = function () {
+          var imgW = newImg.width;
+          var imgH = newImg.height;
+          if (imgW / imgH == rate) {
+            me.css({
+              width: boxW + "px",
+              height: boxH + "px",
+              display: "block"
+            });
+            return;
+          }
+          if (cut) {
+            if (imgW / imgH >= rate) {
+              me.css({
+                height: "100%",
+                width: "auto",
+                display: "block"
+              });
+              me.css({
+                marginLeft: (boxW - me.width()) / 2 + "px",
+                marginTop: "0px"
+              });
+            } else {
+              me.css({
+                width: "100%",
+                height: "auto",
+                display: "block"
+              });
+              me.css({
+                marginTop: (boxH - me.height()) / 2 + "px",
+                marginLeft: "0px"
+              });
+            }
+          } else {
+            if (imgW / imgH > rate) {
+              me.css({
+                width: "100%",
+                height: "auto",
+                display: "block"
+              });
+              me.css({
+                marginTop: (boxH - me.height()) / 2 + "px",
+                marginLeft: "0px"
+              });
+            } else {
+              me.css({
+                height: "100%",
+                width: "auto",
+                display: "block"
+              });
+              me.css({
+                marginLeft: (boxW - me.width()) / 2 + "px",
+                marginTop: "0px"
+              });
+            }
+          }
+        }
+        newImg.src = imgPath;
       });
     }
   };
