@@ -55,11 +55,22 @@
         }
 
         .pdf-box .text {
+            position: relative;
             margin-top: 20px;
         }
 
         .pdf-box .text p {
             margin-bottom: 5px;
+        }
+        .pdf-box .seal{
+            position: absolute;
+            left: 65px;
+            top: -83px;
+        }
+        .pdf-box .seal img{
+            width: 158px;
+            height: 158px;
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -98,7 +109,6 @@
             <td>客户文件名</td>
             <td>单价</td>
             <td>出货方式</td>
-            <td>数量</td>
             <td>金额（元）</td>
         </tr>
         <tr>
@@ -108,7 +118,6 @@
             <td>2121</td>
             <td>2121</td>
             <td>2121</td>
-            <td>10</td>
             <td>￥999.00</td>
         </tr>
         <tr>
@@ -118,7 +127,6 @@
             <td>2121</td>
             <td>2121</td>
             <td>2121</td>
-            <td>10</td>
             <td>￥999.00</td>
         </tr>
         <tr>
@@ -128,12 +136,18 @@
             <td>2121</td>
             <td>2121</td>
             <td>2121</td>
-            <td>10</td>
             <td>￥999.00</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="text-align: center">订单运费</td>
+            <td>￥999.99</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="text-align: center">其他费用</td>
+            <td>￥999.99</td>
         </tr>
         <tr>
             <td colspan="6" style="text-align: center">合计</td>
-            <td>999</td>
             <td>￥999.99</td>
         </tr>
         <tr>
@@ -143,9 +157,8 @@
     </table>
     <div class="text clr">
         <div class="fl">
-            <p>(1)如对产品数量有疑问,请在收到货后三天内提出,逾期不予受理</p>
-            <p>(2)如对产品质量有疑问,请在收到货后一周内提出,逾期不予受理</p>
-            <p>(3)退换货,需保持原始包装、标签完整</p>
+            <p>(1)如对产品质量有疑问,请在收到货后30天内提出,逾期视为验收完成</p>
+            <p>(2)退换货,需保持原始包装、标签完整</p>
         </div>
         <div class="fr">
             <img src="./images/home/code.png" alt="">
@@ -153,6 +166,9 @@
     </div>
     <div class="text clr">
         <div class="fl">
+            <div class="seal lineBlock">
+                <img src="./images/home/b89ca6eecbf05fbe36ddbfba91d5c4be.png">
+            </div>
             <p>送货单位及经手人：王路嘉</p>
         </div>
         <div class="fr">
