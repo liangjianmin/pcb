@@ -1,179 +1,167 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 
 <head>
-    <title>猎板网</title>
-    <meta name="keywords" content="猎板网-全功能定制PCB服务"/>
-    <meta name="description" content="猎板网-全功能定制PCB服务"/>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/register/index.css"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="./js/flexible.min.js"></script>
+    <link rel="stylesheet" href="./js/vue/index.css"/>
+    <link rel="stylesheet" href="./css/register/index.css">
 </head>
-
 <body>
-<!--head-->
-<div class="pcb-head">
-    <div class="width-1180 pcb-head-wrap clr">
-        <div class="fl l">
-            <h2 class="lineBlock va-m">
-                <a href="/"><img src="./images/common/login.png" alt="猎板网" title="猎板网"></a>
-            </h2>
-            <p class="lineBlock va-m logo-tit">PCB打样智能工厂</p>
-            <div class="text lineBlock va-m">
-                <p class="text-t1">客服热线：400-0000-000</p>
-                <p class="text-t1">服务时间：周一至周六 09:00-22:00</p>
-            </div>
-            <b class="emptys lineBlock"></b>
+<div id="app">
+    <div class="register">
+        <div class="head row verCenter rowCenter">
+            <img src="images/register/logo.png">
         </div>
-        <div class="fr r">
-            <a href="javascript:;" class="btn lineBlock va-m">返回首页</a>
-            <b class="emptys lineBlock"></b>
+        <div class="form-box">
+            <div class="inp-wrap row verCenter">
+                <i class="iconfont iconicondanseshouji"></i>
+                <input type="text" placeholder="请输入注册手机号码" class="inp" v-model="form.phone"/>
+            </div>
+            <div class="inp-wrap row verCenter bothSide">
+                <div class="row verCenter">
+                    <i class="iconfont iconicondanseshouji1"></i>
+                    <input type="text" placeholder="请输入短信验证码" class="inp" v-model="form.code"/>
+                </div>
+                <div>
+                    <input type="button" class="code" :value="codetext" :class="{'disabled':codeactive}" :disabled="disabled" @click="codeFn"/>
+                </div>
+            </div>
+            <div class="inp-wrap row verCenter bothSide">
+                <div class="row rowCenter">
+                    <i class="iconfont iconicondanseshouji11"></i>
+                    <input :type="type" placeholder="请设置6-20位登录密码" class="inp" v-model="form.password"/>
+                </div>
+                <van-switch v-model="checked" size="24" @change="change"></van-switch>
+            </div>
+            <div class="inp-wrap row verCenter">
+                <i class="iconfont iconicondanseshouji11"></i>
+                <input type="password" placeholder="请两次确认登录密码" class="inp" v-model="form.repassword"/>
+            </div>
+            <div class="agreement row verCenter">
+                <div class="gou row rowCenter verCenter">
+                    <i class="iconfont iconbianzu"></i>
+                </div>
+                <p class="txt">
+                    <span>同意</span>
+                    <a href="javascript:;">《猎板网用户服务协议》</a>
+                </p>
+            </div>
+            <a href="javascript:;" class="btn" @click="submit()">注册</a>
+        </div>
+        <div class="activity">
+            <div class="title">
+                <b class="l"></b>
+                <b class="r"></b>
+                <em class="l"></em>
+                <em class="r"></em>
+                <span>活动</span>
+            </div>
+            <div class="ad row rowCenter verCenter">广告位</div>
         </div>
     </div>
 </div>
-<!--head end-->
 
-<!--section-->
-<div class="register-section">
-    <div class="register-section-wrap">
-        <p class="tit lineBlock">新用户注册</p>
-        <form>
-            <div class="inpt error">
-                <i class="iconfont iconzujiantubiaogongsi"></i>
-                <input type="text" placeholder="请输入公司名称" class="inp"/>
-                <p class="error-text" style="display: block">* 验证码错误，请输入正确的验证码</p>
-            </div>
-            <div class="inpt">
-                <i class="iconfont iconzujiantubiaoshouji"></i>
-                <input type="text" placeholder="请输入手机号码（必填）" class="inp"/>
-                <p class="error-text">* 验证码错误，请输入正确的验证码</p>
-            </div>
-            <div class="inpt">
-                <i class="iconfont iconzujiantubiaodunpai"></i>
-                <input type="text" placeholder="请输入图形验证码" class="inp" style="width: 150px"/>
-                <a href="javascript:;" class="lineBlock imgCode va-m"><img title="看不清楚？换一张" src="./images/home/verify.png" alt=""></a>
-                <p class="error-text">* 验证码错误，请输入正确的验证码</p>
-            </div>
-            <div class="inpt">
-                <i class="iconfont iconzujiantubiaodunpai"></i>
-                <input type="text" placeholder="请输入短信验证码（必填）" class="inp"/>
-                <input type="button" value="发送验证码" class="button-class"/>
-                <p class="error-text">* 验证码错误，请输入正确的验证码</p>
-            </div>
-            <div class="inpt">
-                <i class="iconfont iconzujiantubiaomima"></i>
-                <input type="text" placeholder="请设置6至20位登录密码（必填）" class="inp"/>
-                <p class="error-text">* 验证码错误，请输入正确的验证码</p>
-            </div>
-            <div class="inpt">
-                <i class="iconfont iconzujiantubiaomima"></i>
-                <input type="text" placeholder="请再次输入登录密码（必填）" class="inp"/>
-                <p class="error-text">* 验证码错误，请输入正确的验证码</p>
-            </div>
-            <div class="register-bar">
-                <span class="circle act lineBlock va-m">
-                      <i></i>
-                </span>
-                <p class="txt lineBlock">勾选同意<a>《用户服务协议》</a></p>
-            </div>
-            <div class="btn">
-                <a href="javascript:;">注册</a>
-            </div>
-            <div class="txt-bar">
-                <a href="">已有账号，立即登录</a>
-            </div>
-        </form>
-    </div>
-</div>
-<!--section end-->
+<script src="./js/vue/vue.min.js"></script>
+<script src="./js/vue/vant.min.js"></script>
+<script>
 
-<!--footer-->
-<div class="pcb-footer">
-    <div class="width-1180">
-        <div class="pcb-footer-top clr">
-            <div class="fl l">
-                <ul class="clr">
-                    <li>
-                        <a href="">产品中心</a>
-                        <a href="">PCB计价</a>
-                        <a href="">免费打样</a>
-                    </li>
-                    <li>
-                        <a href="">服务支持</a>
-                        <a href="">工厂展示</a>
-                        <a href="">产品展示</a>
-                    </li>
-                    <li>
-                        <a href="">新闻资讯</a>
-                        <a href="">行业资讯</a>
-                        <a href="">技术动态</a>
-                        <a href="">公司报导</a>
-                    </li>
-                    <li>
-                        <a href="">帮助中心</a>
-                        <a href="">下单流程</a>
-                        <a href="">支付流程</a>
-                        <a href="">开票流程</a>
-                    </li>
-                    <li>
-                        <a href="">关于猎板</a>
-                        <a href="">关于猎板</a>
-                        <a href="">人才招聘</a>
-                        <a href="">联系我们</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="fr r">
-                <div class="lineBlock va-m">
-                    <p class="t1">服务热线：</p>
-                    <p class="t2">0571 - 86609386</p>
-                    <p class="t3">服务时间：9:00-22:00</p>
-                    <p class="t4">客服邮箱：service@pcbhunt.com</p>
-                </div>
-                <div class="lineBlock va-m code-pic">
-                    <img src="./images/common/code.png" alt="">
-                    <p>微信公众号</p>
-                </div>
-            </div>
-        </div>
-        <div class="pcb-footer-bottom clr">
-            <div class="fl l">
-                <div class="va-t lineBlock text">
-                    <p class="t1">Copyright © www.PCBhunt.com, All Rights Reserved. 版权所有:杭州猎板网络科技有限公司</p>
-                    <p class="t1">浙ICP备20015009号-1 浙公网安备20015009号-1</p>
-                    <p>联系地址：浙江省杭州市拱墅区万达广场C栋6楼</p>
-                </div>
-                <div class="va-t lineBlock pic">
-                    <p>合作快递</p>
-                    <img src="./images/common/1.png" alt="">
-                    <img src="./images/common/2.png" alt="">
-                </div>
-            </div>
-            <div class="fr r">
-                <p>支付方式</p>
-                <div class="pic">
-                    <img src="./images/common/3.png" alt="">
-                    <img src="./images/common/4.png" alt="">
-                    <img src="./images/common/5.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--footer end-->
-<script type="text/javascript" src="js/common/jquery.min.js"></script>
-<script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
-<script type="text/javascript" src="js/common/base.js"></script>
-<script type="text/javascript">
-    $(function () {
-      $(".circle").on('click',function () {
-        $(this).toggleClass('act');
-      });
-    })
+  new Vue({
+    el: '#app',
+    data: {
+      type:'password',
+      checked: false,
+      codetext: '发送验证码',
+      disabled: false,
+      codeactive: false,
+      form: {
+        phone: '',
+        code: '',
+        password: '',
+        repassword: ''
+      }
+    },
+    methods: {
+      timeNum() {
+        var me = this;
+        var wait = 60;
+        me.disabled = true;
+        me.codeactive = true;
+        me.codetext = wait + '秒后获取';
+        var clock = setInterval(doLoop, 1000);
+
+        function doLoop() {
+          wait--;
+          if (wait > 0) {
+            me.codetext = wait + '秒后获取';
+            me.codeactive = true;
+          } else {
+            clearInterval(clock);
+            me.disabled = false;
+            me.codeactive = false;
+            me.codetext = '重新获取';
+            wait = 60;
+          }
+        }
+      },
+      codeFn() {
+
+        if (!this.form.phone) {
+          vant.Toast('请输入手机号');
+          return false;
+        }
+
+        this.timeNum();
+
+      },
+      change(val) {
+        if (val) {
+            this.type='text';
+        } else {
+          this.type='password';
+        }
+      },
+      submit() {
+        if (!this.form.phone) {
+          vant.Toast('请输入手机号');
+          return false;
+        }
+
+        if (!this.form.code) {
+          vant.Toast('请输入短信验证码');
+          return false;
+        }
+
+        if (!this.form.password) {
+          vant.Toast('请输入密码');
+          return false;
+        }
+
+        if (!this.form.repassword) {
+          vant.Toast('请再次输入密码');
+          return false;
+        }
+
+
+      }
+    }
+  });
+
+
 </script>
 </body>
-
 </html>

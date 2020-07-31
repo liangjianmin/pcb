@@ -1,0 +1,51 @@
+{
+  "id": "1976930",
+  "name": "pcb_h5",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16253436",
+      "name": "编组",
+      "font_class": "bianzu",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "16242557",
+      "name": "形状结合",
+      "font_class": "xingzhuangjiehe",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "16242545",
+      "name": "形状结合 (1)",
+      "font_class": "xingzhuangjiehe1",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "16242524",
+      "name": "icon／单色／手机 (1)",
+      "font_class": "icondanseshouji11",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "16242495",
+      "name": "icon／单色／手机(1)",
+      "font_class": "icondanseshouji1",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "16242496",
+      "name": "icon／单色／手机",
+      "font_class": "icondanseshouji",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    }
+  ]
+}
