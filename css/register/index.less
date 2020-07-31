@@ -24,6 +24,14 @@
       padding-right: 0.27rem;
       background: #F0F9FC;
 
+      &:focus-within {
+        border: 1px solid #0081D2;
+        background: #ffffff;
+        .iconfont{
+          color: #0081D2;
+        }
+      }
+
       .iconfont {
         font-size: 24px;
         color: #ACC6CF;
@@ -299,37 +307,41 @@
   }
 }
 
-.reg-agreement{
+.reg-agreement {
   background: #F0F9FC;
   padding: 0.53rem 0.64rem 0.3rem 0.64rem;
-  .title{
+
+  .title {
     font-size: 21px;
     color: #2e3033;
     text-align: center;
     font-weight: bold;
     margin-bottom: 0.53rem;
   }
-  .content{
-    .tit{
+
+  .content {
+    .tit {
       font-size: 14px;
       color: #2e3033;
       font-weight: bold;
       margin-bottom: 0.28rem;
     }
-    .t1{
+
+    .t1 {
       font-size: 13px;
       color: #556266;
       text-align: justify;
       margin-bottom: 0.27rem;
     }
   }
-  .btn{
 
-    height:50px;
+  .btn {
+
+    height: 50px;
     line-height: 50px;
     text-align: center;
-    background:#0081D2;
-    font-size:16px;
+    background: #0081D2;
+    font-size: 16px;
     color: #FFFFFF;
     display: block;
   }

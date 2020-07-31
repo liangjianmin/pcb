@@ -260,6 +260,13 @@ body {
   padding-right: 0.27rem;
   background: #F0F9FC;
 }
+.register .form-box .inp-wrap:focus-within {
+  border: 1px solid #0081D2;
+  background: #ffffff;
+}
+.register .form-box .inp-wrap:focus-within .iconfont {
+  color: #0081D2;
+}
 .register .form-box .inp-wrap .iconfont {
   font-size: 24px;
   color: #ACC6CF;
