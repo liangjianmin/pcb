@@ -21,12 +21,16 @@
         }
 
         .pdf-box {
-            width: 800px;
+            width: 900px;
             margin: 0 auto;
             background: #ffffff;
             padding: 50px;
-            color: #3a3c40;
+            color: #666666;
             font-size: 14px;
+            font-family: sans-serif;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .pdf-box h2 {
@@ -41,7 +45,6 @@
             border-collapse: collapse;
             color: #3a3c40;
             font-size: 14px;
-            margin-top: 20px;
         }
 
         .pdf-box table tr td {
@@ -52,6 +55,18 @@
         .pdf-box .text {
             margin-top: 20px;
             line-height: 28px;
+        }
+
+        .seal{
+            position: absolute;
+            right: 0;
+            top: 56px;
+        }
+
+        .seal img{
+            width: 158px;
+            height: 158px;
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -66,8 +81,8 @@
         </p>
         <p>
             购⽅（甲⽅）：江苏紫德智能科技有限公司<br/>
-            销⽅（⼄⽅）：杭州猎板⽹络科技有限公司<br/><br/>
-            甲⼄双⽅本着合作互利的原则，就⼄⽅为甲⽅加⼯⽣产电⼦线路印制板产品的双⽅合作 事宜，达成以下协议<br/><br/>
+            销⽅（⼄⽅）：杭州猎板⽹络科技有限公司<br/>
+            甲⼄双⽅本着合作互利的原则，就⼄⽅为甲⽅加⼯⽣产电⼦线路印制板产品的双⽅合作 事宜，达成以下协议<br/>
             ⼀、   甲⽅提供的产品资料：以在www.pcbhunt.com上上传的⽂件为准；如有特殊需求 的请下单时在备注要求⾥⾯说明，没有说明的⼄⽅将按照正常标准⽣产<br/>
             ⼆、      ⼄⽅应检查甲⽅提供的资料及⼯艺要求是否符合⼄⽅的⽣产技术⽔平，如⽆法满 ⾜要求，⼄⽅需尽快通知甲⽅并解除订单；<br/>
             三、      在⼄⽅投料⽣产后，甲⽅提出设计资料更改或者停⽌⽣产加⼯的，甲⽅应承担⼄ ⽅因此额外产⽣的加⼯成本及材料费⽤；在不造成报废的前提下，⼄⽅尽量满⾜甲⽅的 更改要求，并相应顺延交期；<br/>
@@ -80,8 +95,8 @@
             ⼗、      快递被签收后30天内甲⽅未对货物质量提出异议的，则视为⼄⽅交付的货物符 合规定，甲⽅逾期对货物质量提出异议的，⼄⽅⽆需承担任何责任<br/>
             ⼗⼀、本协议⾃双⽅签订⽇期之⽇起正式⽣效，其他未尽事宜，由双⽅共同协商解决<br/>
             ⼗⼆、因本协议或与本协议有关⽽产⽣的任何争议均应由双⽅通过友好磋商加以解决。 如果通过协商未能达成任何解决⽅案，则该争议应提交⼄⽅所在地有管辖权的⼈⺠法院 通过诉讼途径解决<br/>
-            ⼗三、双⽅业务中所发传真件同原件具同等法律效⼒，其他相关协议、⼿册等⽂件、资 料和本合同有冲突时，以本合同为准；<br/><br/>
-            （以下为签署⻚）<br/>
+            ⼗三、双⽅业务中所发传真件同原件具同等法律效⼒，其他相关协议、⼿册等⽂件、资 料和本合同有冲突时，以本合同为准；<br/>
+            （以下为签署⻚）
         </p>
         <table class="box1">
             <tbody>
@@ -129,75 +144,80 @@
             </tr>
             </tbody>
         </table>
-        <p style="margin-top: 20px">附件：订单详情（以下为案例）</p>
-        <table class="box1">
-            <tbody>
-            <tr>
-                <td>订单包号</td>
-                <td colspan="2">212121212</td>
-                <td>订单包序号</td>
-                <td colspan="2">1020205655656565656</td>
-                <td>合同签订时间</td>
-                <td>2020/7/28</td>
-                <td>结算货币</td>
-                <td>人民币</td>
-            </tr>
-            <tr>
-                <td>订单号</td>
-                <td>长*宽/cm</td>
-                <td>层数</td>
-                <td>板材类型</td>
-                <td>客户文件名</td>
-                <td>订购数量</td>
-                <td>单价</td>
-                <td>交期(天)</td>
-                <td>税费(元)</td>
-                <td>小计金额(元)</td>
-            </tr>
-            <tr>
-                <td>订单号1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>6</td>
-                <td>1</td>
-                <td>1212</td>
-                <td>1212</td>
-            </tr>
-            <tr>
-                <td>订单包备注</td>
-                <td colspan="9">备注</td>
-            </tr>
-            <tr>
-                <td>订单运费</td>
-                <td>8888.88</td>
-                <td>其他费用</td>
-                <td>8888.88</td>
-                <td>实际结算总金额</td>
-                <td colspan="2">8888.88</td>
-                <td>结算总金额大写</td>
-                <td colspan="2">叁拾贰元肆角</td>
-            </tr>
-            <tr>
-                <td>说明</td>
-                <td colspan="9">
-                    付款时间付款时间（非下单时间非下单）<br/>
-                    在19点前交期从当天开始计算，19点后付款，19点30分后更新文件或20点确认工程问题，交期讲增加1天；<br/>
-                    周六周六19点后和周日下单付款等同于周一下单付款点后和周日下单付款等同于周一下单付款
-                </td>
-            </tr>
-            <tr>
-                <td>发货方式</td>
-                <td>顺丰快递</td>
-                <td>客户收货信息</td>
-                <td colspan="7">收货人收货人：王路嘉  	电话：1866493697518664936975
-                    OnlineOnline天枢仓天枢仓66栋栋	33楼楼
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <p style="margin-top: 5px">附件：订单详情（以下为案例）</p>
+        <div style="position: relative">
+            <div class="seal lineBlock">
+                <img src="./images/home/b89ca6eecbf05fbe36ddbfba91d5c4be.png">
+            </div>
+            <table class="box1">
+                <tbody>
+                <tr>
+                    <td>订单包号</td>
+                    <td colspan="2">212121212</td>
+                    <td>订单包序号</td>
+                    <td colspan="2">1020205655656565656</td>
+                    <td>合同签订时间</td>
+                    <td>2020/7/28</td>
+                    <td>结算货币</td>
+                    <td>人民币</td>
+                </tr>
+                <tr>
+                    <td>订单号</td>
+                    <td>长*宽/cm</td>
+                    <td>层数</td>
+                    <td>板材类型</td>
+                    <td>客户文件名</td>
+                    <td>订购数量</td>
+                    <td>单价</td>
+                    <td>交期(天)</td>
+                    <td>税费(元)</td>
+                    <td>小计金额(元)</td>
+                </tr>
+                <tr>
+                    <td>订单号1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>1212</td>
+                    <td>1212</td>
+                </tr>
+                <tr>
+                    <td>订单包备注</td>
+                    <td colspan="9">备注</td>
+                </tr>
+                <tr>
+                    <td>订单运费</td>
+                    <td>8888.88</td>
+                    <td>其他费用</td>
+                    <td>8888.88</td>
+                    <td>实际结算总金额</td>
+                    <td colspan="2">8888.88</td>
+                    <td>结算总金额大写</td>
+                    <td colspan="2">叁拾贰元肆角</td>
+                </tr>
+                <tr>
+                    <td>说明</td>
+                    <td colspan="9">
+                        付款时间付款时间（非下单时间非下单）<br/>
+                        在19点前交期从当天开始计算，19点后付款，19点30分后更新文件或20点确认工程问题，交期讲增加1天；<br/>
+                        周六周六19点后和周日下单付款等同于周一下单付款点后和周日下单付款等同于周一下单付款
+                    </td>
+                </tr>
+                <tr>
+                    <td>发货方式</td>
+                    <td>顺丰快递</td>
+                    <td>客户收货信息</td>
+                    <td colspan="7">收货人收货人：王路嘉  	电话：1866493697518664936975
+                        OnlineOnline天枢仓天枢仓66栋栋	33楼楼
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 <script src="js/common/jquery.min.js"></script>
@@ -213,7 +233,7 @@
         useCORS: true,
         allowTaint: true,
         logging: true,
-        pagesplit: true//不分页
+        pagesplit: false//不分页
       };
       pdf.addHTML($('.pdf-box').get(0), 0, 0, options, function () {
         // 用.h1Title 标签的名字命名  pdf
