@@ -1729,4 +1729,34 @@ body {
   color: #3a3c40;
   font-weight: bold;
 }
+.downloadbox-layer {
+  padding: 30px;
+}
+.downloadbox-layer .label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #959ba6;
+}
+.downloadbox-layer input {
+  width: 80%;
+  padding-left: 10px;
+  height: 40px;
+  line-height: 40px;
+  background: #f7f9fc;
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  transition: all 0.4s ease;
+}
+.downloadbox-layer .btn {
+  width: 100px;
+  height: 40px;
+  background: #0081d2;
+  border-radius: 2px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: block;
+  margin-top: 20px;
+}
 /*# sourceMappingURL=index.css.map */

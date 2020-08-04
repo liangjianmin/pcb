@@ -229,7 +229,7 @@
                                 <span style="width: 220px;margin-right: 110px;" class="t1 lineBlock">订单包：PO#00023434</span>
                                 <span style="width: 220px;margin-right: 118px;" class="t2">订单时间: 2020-04-09 14:09:56</span>
                                 <a href="javascript:;" class="t3 va-m lineBlock" style="margin-right: 40px"><i class="iconfont iconzujiantubiaojiantou14"></i><em>打印合同</em></a>
-                                <a href="javascript:;" class="t3 va-m lineBlock"><i class="iconfont iconzujiantubiaojiantou14"></i><em>打印发货单</em></a>
+                                <a id="download" href="javascript:;" class="t3 va-m lineBlock"><i class="iconfont iconzujiantubiaojiantou14"></i><em>打印发货单</em></a>
                             </th>
                         </tr>
                         <tr>
@@ -796,6 +796,13 @@
         <a href="javascript:;" class="btn pending_review_btn">我已知晓</a>
     </div>
 </script>
+<script type="text/html" id="downloadHtml">
+    <div class="downloadbox-layer">
+        <p class="label">请填写签订合同方名称(个人/公司) </p>
+        <input type="text" placeholder="" maxlength="50"/>
+        <a href="javascript:;" class="btn pending_review_btn">确定</a>
+    </div>
+</script>
 
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
@@ -841,6 +848,21 @@
 
       layer.closeAll();
 
+    });
+
+    $(document).on('click','#download',function () {
+      layer.open({
+        type: 1,
+        skin: 'aa',
+        title: '<span>合同</span>',
+        area: ['400px', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#downloadHtml").html(),
+        success: function (layero, index) {
+
+        }
+      });
     });
 
 
