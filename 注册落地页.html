@@ -85,7 +85,7 @@
                     <p class="tit">立即注册体验</p>
                     <div class="inpt-wrap lbBox">
                         <i class="iconfont iconzujiantubiaoshouji va-m"></i>
-                        <input type="text" placeholder="请输入手机号码（必填）" class="inp"/>
+                        <input type="text" placeholder="请输入手机号码（必填）" class="inp" value="" name="phone"/>
                         <b class="lineBlock emptys"></b>
                     </div>
                     <div class="inpt-wrap lbBox">
@@ -108,7 +108,7 @@
                         <span class="circle act lineBlock va-m">
                               <i></i>
                         </span>
-                        <p class="txt lineBlock va-m">勾选同意<a>《用户服务协议》</a></p>
+                        <p class="txt lineBlock va-m">勾选同意<a href="a">《用户服务协议》</a></p>
                     </div>
                     <div class="btn">
                         <a href="javascript:;">注册账户</a>
@@ -664,9 +664,9 @@
             <i class="iconfont iconzujiantubiaojiantou10" id="close"></i>
             <div class="input-wrap lineBlock va-m">
                 <i class="iconfont iconzujiantubiaoshouji va-m"></i>
-                <input type="text" placeholder="请输入手机号码"/>
+                <input type="text" placeholder="请输入手机号码" name="tel"/>
             </div>
-            <a href="javascript:;" class="btn lineBlock va-m">点击领取抵扣券</a>
+            <a href="javascript:;" class="btn lineBlock va-m" id="receive">点击领取抵扣券</a>
             <b class="lineBlock emptys"></b>
         </div>
     </div>
@@ -697,6 +697,26 @@
       $("#close").on('click',function () {
             $(".fast-key").hide();
       });
+
+
+      $("#receive").on('click',function () {
+        var val=$('input[name="tel"]').val();
+        var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
+
+        if(!val){
+          layer.msg('请填写手机号');
+          return false;
+        }else if(!myreg.test(val)){
+          layer.msg('请填写正确手机号');
+          return  false;
+        }else{
+          $('body,html').animate({
+            scrollTop: 0
+          }, 500);
+          $("input[name='phone']").val(val);
+        }
+      });
+
       
     })
 </script>
