@@ -899,6 +899,7 @@ body {
 }
 .processshow {
   background: #f2f3f7;
+  padding-bottom: 30px;
 }
 .processshow .processshow-wrap {
   background: #FFFFFF;
