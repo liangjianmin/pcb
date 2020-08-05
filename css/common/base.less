@@ -204,11 +204,13 @@ body {
           font-size: 12px;
           color: #959ba6;
         }
-        .iconfont{
+
+        .iconfont {
           color: #0081d2;
           font-size: 20px;
           cursor: pointer;
         }
+
         span {
           font-size: 12px;
           color: #737780;
@@ -384,41 +386,49 @@ body {
       height: 50px;
       text-align: center;
       background: #fff;
-      box-shadow:0px 2px 24px 0px rgba(230,234,242,0.5);
-      &:hover{
+      box-shadow: 0px 2px 24px 0px rgba(230, 234, 242, 0.5);
+
+      &:hover {
         background-color: #E6EAF2;
       }
+
       a {
         height: 50px;
         display: block;
         text-align: center;
-        &.phone-a{
+
+        &.phone-a {
           position: relative;
-          &:hover{
-            .phone-div{
+
+          &:hover {
+            .phone-div {
               display: block;
             }
           }
-          .phone-div{
+
+          .phone-div {
             text-align: left;
             position: absolute;
-            height:185px;
+            height: 185px;
             width: 200px;
-            box-shadow:0px 2px 24px 0px rgba(230,234,242,0.5);
+            box-shadow: 0px 2px 24px 0px rgba(230, 234, 242, 0.5);
             background-color: #fff;
             z-index: 99;
-            padding:8px 0;
+            padding: 8px 0;
             box-sizing: border-box;
-            top:0;
-            left:-215px;
+            top: 0;
+            left: -215px;
             display: none;
-            .item{
-              padding:12px 0 0 20px;
-              h3{
+
+            .item {
+              padding: 12px 0 0 20px;
+
+              h3 {
                 font-size: 12px;
                 color: #959BA6;
               }
-              p{
+
+              p {
                 font-size: 14px;
                 color: #3A3C40;
                 padding-top: 4px;
@@ -426,30 +436,35 @@ body {
             }
           }
         }
-        &.ewm-a{
+
+        &.ewm-a {
           position: relative;
-          &:hover{
-            .ewm-div{
+
+          &:hover {
+            .ewm-div {
               display: block;
             }
           }
-          .ewm-div{
+
+          .ewm-div {
             position: absolute;
-            height:225px;
+            height: 225px;
             width: 200px;
-            box-shadow:0px 2px 24px 0px rgba(230,234,242,0.5);
+            box-shadow: 0px 2px 24px 0px rgba(230, 234, 242, 0.5);
             background-color: #fff;
             z-index: 99;
-            top:0;
-            left:-215px;
+            top: 0;
+            left: -215px;
             display: none;
             box-sizing: border-box;
             padding-top: 20px;
-            img{
-              width:160px;
-              height:160px;
+
+            img {
+              width: 160px;
+              height: 160px;
             }
-            p{
+
+            p {
               font-size: 12px;
               color: #959BA6;
               margin-top: 8px;
@@ -457,28 +472,35 @@ body {
           }
         }
 
-        .icon{
-          height:40px;
+        .icon {
+          height: 40px;
           width: 40px;
           margin: 5px 4px;
-          &.car-icon{
+
+          &.car-icon {
             background-image: url('../../images/common/slide1.png');
           }
-          &.message-icon{
+
+          &.message-icon {
             background-image: url('../../images/common/slide2.png');
           }
-          &.jsq-icon{
+
+          &.jsq-icon {
             background-image: url('../../images/common/slide3.png');
           }
-          &.ewm-icon{
+
+          &.ewm-icon {
             background-image: url('../../images/common/slide4.png');
           }
-          &.edit-icon{
+
+          &.edit-icon {
             background-image: url('../../images/common/slide5.png');
           }
+
           background-repeat: no-repeat;
           background-size: 100% 100%;
         }
+
         .circle {
           position: absolute;
           right: 0;
@@ -501,7 +523,7 @@ body {
     dt {
       width: 48px;
       height: 48px;
-      margin-top:10px;
+      margin-top: 10px;
       background: #737780;
 
       a {
@@ -509,6 +531,7 @@ body {
         display: block;
         text-align: center;
         line-height: 48px;
+
         .iconfont {
           font-size: 40px;
           color: #fff;
@@ -712,6 +735,7 @@ body {
         .car {
           height: 100%;
           padding: 0 10px;
+
           .iconfont {
             font-size: 20px;
             color: #ffffff;
@@ -736,7 +760,7 @@ body {
             padding: 0 3px;
           }
 
-          &:hover{
+          &:hover {
             background: #0090EB;
           }
         }
@@ -933,6 +957,7 @@ body {
     }
   }
 }
+
 //数量选择弹窗
 .selects-qty {
   position: absolute;
@@ -1030,6 +1055,120 @@ body {
         }
       }
     }
+  }
+}
+
+.pcb-ad {
+  .indexRightAd {
+    position: fixed;
+    width: 186px;
+    height: 204px;
+    bottom: 0px;
+    z-index: 101;
+  }
+
+  .adv_open {
+    position: fixed;
+    height: 200px;
+    bottom: 0px;
+    z-index: 1000000;
+    overflow: hidden;
+
+    &.none {
+      width: 0;
+    }
+
+    &.show {
+      width: 100%;
+    }
+
+    .adv_bg {
+      width: 100%;
+      height: 200px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .close_icon {
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      top: 60px;
+      left: 80%;
+      opacity: .5;
+      cursor: pointer;
+    }
+
+    .adv_form_div {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      font-size: 14px;
+      text-align: center;
+
+      .adv_form_div_clear {
+        vertical-align: bottom;
+      }
+
+      .mobile_div {
+        display: inline-block;
+        height: 40px;
+        background-color: #fff;
+        width: 210px;
+        border-radius: 5px;
+        text-align: left;
+
+        .mobile_icon {
+          display: inline-block;
+          height: 25px;
+          width: 25px;
+          background: url("https://static.ichunt.com/dist/res/home/images/user-icon.png") no-repeat;
+          background-size: 100% 100%;
+          vertical-align: middle;
+          margin: 0 10px;
+        }
+      }
+
+      input, button {
+        height: 40px;
+        line-height: 40px;
+        background-color: #fff;
+      }
+
+      .yzm_input {
+        width: 115px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-left: 10px;
+      }
+
+      .fs_yzm {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 0 10px;
+      }
+
+      button {
+        color: #fff;
+        background-color: #ff6600
+      }
+
+      .djlq {
+        padding: 0 40px;
+        border-radius: 5px;
+        margin-left: 10px
+      }
+    }
+
   }
 }
 
