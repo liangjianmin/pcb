@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>猎板网</title>
+    <meta name="keywords" content="猎板网-全功能定制PCB服务"/>
+    <meta name="description" content="猎板网-全功能定制PCB服务"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/processshow/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
+</head>
+
+<body>
+<!--head-->
+<div class="pcb-head">
+    <div class="width-1180 pcb-head-wrap clr">
+        <div class="fl l">
+            <h2 class="lineBlock va-m"><a href="/"><img src="./images/home/logos.png" alt=""></a></h2>
+            <div class="lineBlock va-m">
+                <p class="t1 va-m">猎芯旗下</p>
+                <span class="t1 va-m">PCB打样智能工厂</span>
+            </div>
+            <b class="lineBlock emptys"></b>
+        </div>
+        <div class="fr r">
+            <p class="lineBlock va-m t1" style="margin-right: 30px">
+                <em>服务时间：</em>
+                <span>周一至周六 09:00-22:00</span>
+            </p>
+            <p class="lineBlock va-m t1" style="margin-right: 30px">
+                <em>在线客服：</em>
+                <a href="tencent://message/?Menu=yes&uin=800183356&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45" class="iconfont iconzujiantubiaoliwu9 va-m"></a>
+                <!--                <span>800183356</span>-->
+            </p>
+            <p class="lineBlock va-m t2">
+                <em>服务热线：</em>
+                <span>0571-86609386 15068181342</span>
+            </p>
+            <b class="lineBlock emptys"></b>
+        </div>
+    </div>
+</div>
+<div class="home">
+    <div class="width-1180 nav-wrap clr">
+        <ul class="nav fl">
+            <li class="curr"><a href="">首页</a></li>
+            <li><a href="">PCB快速报价</a></li>
+            <li><a href="">高级PCB报价</a></li>
+            <li><a href="">SMT贴片</a></li>
+            <li><a href="">钢网计价</a></li>
+        </ul>
+        <div class="fr login-bar">
+            <!--未登录-->
+            <div class="logged lineBlock lbBox" style="display: none;">
+                <a href="" class="lg va-m">
+                    <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                    <span class="va-m">登录</span>
+                </a>
+                <span class="lineBlock line va-m"></span>
+                <a href="" class="rg va-m">注册</a>
+                <a class="car lineBlock va-m lbBox" href="javascript:;" rel="nofollow">
+                    <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                    <span class="va-m">购物车</span>
+                    <div class="lineBlock va-m circle cartCnt">0</div>
+                </a>
+                <b class="lineBlock emptys"></b>
+            </div>
+            <!--已登录-->
+            <div class="logged-in lineBlock lbBox" style="display: block">
+                <div class="lineBlock va-m logged-in-bar">
+                    <i class="iconfont iconzujiantubiaojiantou9 va-m"></i>
+                    <span class="tel va-m">15012479484</span>
+                    <i class="iconfont iconzujiantubiaojiantou1 va-m"></i>
+                    <b class="lineBlock emptys"></b>
+                    <ul>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="">安全退出</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="car lineBlock va-m lbBox" href="javascript:;" rel="nofollow">
+                    <i class="iconfont iconzujiantubiaogouwuche va-m"></i>
+                    <span class="va-m">购物车</span>
+                    <div class="lineBlock va-m circle cartCnt">0</div>
+                    <b class="lineBlock emptys"></b>
+                </a>
+                <b class="lineBlock emptys"></b>
+            </div>
+        </div>
+    </div>
+</div>
+<!--head end-->
+
+<!--section-->
+<div class="processshow-ad">
+    <div class="width-1180">
+        <img src="https://img.jdbpcb.com/new_web/images/img/craft-show-banner.jpg">
+    </div>
+</div>
+<div class="processshow">
+    <div class="width-1180 processshow-wrap">
+        <a class="processshow-btn fr" href="javascript:;">工艺能力</a>
+        <table class="processshow-table">
+            <tbody>
+            <tr style="box-sizing: border-box;" class="firstRow">
+                <th width="25%">
+                    <span>项目名称</span>
+                </th>
+                <th width="75%">
+                    <span>制程能力</span>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">层数</p>
+                    <p>Layer Count</p>
+                </td>
+                <td>1-8层 备注：层数，是指PCB中的电气层数（敷铜层数）。目前猎板只接受1~8层通孔板（不接受盲埋孔板）</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">生产板尺寸（最大）</p>
+                    <p>Panel Size(Max)</p>
+                </td>
+                <td>620×620mm 备注：猎板开料裁剪的工作板一般尺寸为60cm * 50cm，通常允许客户的PCB设计尺寸在45cm * 45cm以内，具体以文件审核为准。</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">生产板尺寸（最小）</p>
+                    <p>Panel Size(Min)</p>
+                </td>
+                <td>60×60mm 备注：猎板开料裁剪的工作板一般尺寸为60cm * 50cm，通常允许客户的PCB设计尺寸在45cm * 45cm以内，具体以文件审核为准。</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">板厚度（最大）</p>
+                    <p>Board Thickness(Max)</p>
+                </td>
+                <td>3.2mm 备注：目前生产板厚：0.4/0.6/0.8/1.0/1.2/1.6/2.0/2.4 mm，客户有特殊需求请联系所属客服</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">板厚度（最小）</p>
+                    <p>Board Thickness(Min)</p>
+                </td>
+                <td>0.3mm 备注：目前生产板厚：0.4/0.6/0.8/1.0/1.2/1.6/2.0/2.4 mm，客户有特殊需求请联系所属客服</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">芯板厚度（最小）</p>
+                    <p>Thin Core Thickness(Min)</p>
+                </td>
+                <td>0.15mm 备注：内层不含铜厚度</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">成品厚度公差（板厚≥0.8mm）</p>
+                    <p>Finished Board Thickness Tolerance(Board Thickness≥0.8mm)</p>
+                </td>
+                <td>±10% 备注：比如板厚T=1.6mm，实物板厚为1.44mm（T－1.6×10%）~1.76mm（T＋1.6×10%）</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">成品厚度公差（0.4mm≤板厚< 0.8mm）</p>
+                    <p>inished Board Thickness Tolerance(0.4mm≤Board Thickness<0.8mm)</p>
+                </td>
+                <td>±0.075mm 备注：比如板厚T=0.6mm，实物板厚为0.5mm（T-0.1）~0.7mm（T+0.1）</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">板曲(最小)</p>
+                    <p>Warpage(Min)</p>
+                </td>
+                <td>0.75%</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">钻孔孔径（最大）</p>
+                    <p>Drill Size(Max)</p>
+                </td>
+                <td>Φ6.0mm 备注：大于6.0mm可扩孔</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">钻孔孔径（最小）</p>
+                    <p>Drill Size(Min)</p>
+                </td>
+                <td>Φ0.25mm 备注：0.25mm是钻孔的最小孔径</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">外层底铜厚度(最小)</p>
+                    <p>Base Copper Thickness of Outer Layer(Min)</p>
+                </td>
+                <td>单面板：HOZ、双面及多层1/3 OZ 备注：指成品电路板外层线路铜箔的最小厚度，猎板最小做到：单面板HOZ、双面及多层1/3 OZ</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">外层底铜厚度(最大)</p>
+                    <p>Base Copper Thickness of Outer Layer(Max)</p>
+                </td>
+                <td>4 OZ 备注：指成品电路板外层线路铜箔的最大厚度，猎板最大做到4 OZ</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">内层底铜厚度(最小)</p>
+                    <p>Base Copper Thickness of inner Layer(Min)</p>
+                </td>
+                <td>1/3 OZ 备注：指成品电路板内层线路铜箔的最小厚度，猎板最小做到1/3 OZ</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">内层底铜厚度(最大)</p>
+                    <p>Base Copper Thickness of inner Layer(Min)</p>
+                </td>
+                <td>3 OZ 备注：指成品电路板内层线路铜箔的最大厚度，猎板最大做到3 OZ</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">绝缘层厚度(最小)</p>
+                    <p>Dielectric Thickness(Min)</p>
+                </td>
+                <td>0.10mm 备注：PP胶片压合后厚度0.10mm</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">孔电镀纵横比(最大)</p>
+                    <p>Aspect Ratio(Max)</p>
+                </td>
+                <td>10:1</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">孔径公差(镀通孔)</p>
+                    <p>Hole Diameter Tolerance(PTH)</p>
+                </td>
+                <td>±0.075mm 备注：镀铜孔：钻孔的公差为±0.075mm，例如设计为0.6mm的孔，实物板的成品孔径在0.525mm-0.675mm是合格允许的</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">孔径公差(非镀通孔)</p>
+                    <p>Hole Diameter Tolerance(NPTH)</p>
+                </td>
+                <td>±0.05mm 备注：非镀铜孔：钻孔的公差为±0.05mm，例如设计为0.6mm的孔，实物板的成品孔径在0.55mm-0.65mm是合格允许的</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">孔位公差</p>
+                    <p>Hole Position Tolerance(Compared with CAD Data)</p>
+                </td>
+                <td>±0.05mm</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">孔壁铜厚（通孔）</p>
+                    <p>Holewall Copper Thickness(Full Hole)</p>
+                </td>
+                <td>常规平均值≥18um 备注：客户可另作指定</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">外层设计线宽/间距（最小）</p>
+                    <p>Line Width/Spacing of Outer Layer(Min)</p>
+                </td>
+                <td>
+                    T/T OZ: 3mil/ 3mil（T=1/3OZ）<br/>
+                    H/H OZ: 4mil/ 4mil<br/>
+                    1/1 OZ: 4mil/ 4mil<br/>
+                    2/2 OZ: 6mil/ 6mil<br/>
+                    3/3 OZ: 10mil/ 10mil<br/>
+                    4/4OZ：14 mil/ 14 mil<br/>
+                    备注：此参数为猎板默认
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">内层设计线宽/间距（最小）</p>
+                    <p>Line Width/Spacing of Inner Layer(Min)</p>
+                </td>
+                <td>
+                    T/T OZ: 3mil/ 3mil（T=1/3OZ）<br/>
+                    H/H OZ: 4mil/ 4mil<br/>
+                    1/1 OZ: 4mil/ 4mil<br/>
+                    2/2 OZ: 5mil/ 5mil<br/>
+                    3/3 OZ: 8mil/ 8mil<br/>
+                    备注：
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">蚀刻公差</p>
+                    <p>Etching Tolerance</p>
+                </td>
+                <td>±15% 备注：例如线宽 T=4mil，实际线宽为3.4mil（T－4mil×15%）~4.6mil（T＋4mil×15%）</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">外层图形对孔位精度（最小）</p>
+                    <p>Outer Image to Hole Tolerance(Min)</p>
+                </td>
+                <td>±3mil 备注：线路图像对孔位精度，实物相差±3mil是合格允许的</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">孔位对孔位精度(最小)</p>
+                    <p>Hole to Hole Tolerance(Min)</p>
+                </td>
+                <td>±2mil 备注：线路图像孔位对实物孔位精度±2mil是合格允许的</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">阻焊对位精度公差</p>
+                    <p>Solder Mask Registration Tolerance</p>
+                </td>
+                <td>±3mil 备注：线路图像对防焊位置精度公差±3mil是合格允许的</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">阻焊厚度（最小）</p>
+                    <p>Solder Mask Thickness(Min)</p>
+                </td>
+                <td>≥8μm 备注：猎板阻焊采用广信油墨≥8μm</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">阻焊桥宽（最小）</p>
+                    <p>Solder Mask Bridge Width(Min)</p>
+                </td>
+                <td>
+                    绿油：4mil<br/>
+                    黑/白色：5mil<br/>
+                    其他杂色油：4mil<br/>
+                    备注：若有阻焊桥要求，必须备注！阻焊桥 价格会根据工艺要求上浮。若阻焊颜色为绿色焊盘间保留油墨宽度必须≥4mil，黑色、白色焊盘间保留油墨宽度必须≥5mil，其它杂色油焊盘间保留油墨宽度必须为≥4mil
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">阻焊塞孔孔径</p>
+                    <p>Solder Mask Plugged Hole Diameter</p>
+                </td>
+                <td>≤0.45mm 备注：为了提高小孔径过孔的稳定性，猎板阻焊塞孔孔径规定≤0.45mm</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">沉镍沉金镍厚</p>
+                    <p>Minimum Nickel Thickness of ENIG</p>
+                </td>
+                <td>100-200uin 备注：特殊需求可指定</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">沉镍沉金金厚</p>
+                    <p>Minimum Gold Thickness of ENIG(Max)</p>
+                </td>
+                <td>1-3uin 备注：特殊需求可指定</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">锡厚（热风整平）</p>
+                    <p>Solder Thickness on XFP(HAL)</p>
+                </td>
+                <td>200-300uin</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">铣外形公差</p>
+                    <p>Routing Dimension Tolerance</p>
+                </td>
+                <td>±4mil</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">铣外形公差（孔到边）</p>
+                    <p>Routing Dimension Tolerance(Hole to Edge)</p>
+                </td>
+                <td>±4mil</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">铣外形圆弧（内角）（最小）</p>
+                    <p>Radius by Routing (Internal Angle)(Min)</p>
+                </td>
+                <td>R≥0.5mm</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">铣沉头孔孔径</p>
+                    <p>Countersink Hole Size</p>
+                </td>
+                <td>依客户要求</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">V-CUT剩余厚度公差（最小）</p>
+                    <p>V-CUT Remaining Thickness Tolerance(MIN)</p>
+                </td>
+                <td>±0.10mm 备注：V-CUT剩余厚度公差最小±0.10mm</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">V-CUT错位度（最小）</p>
+                    <p>V-CUT MISREGISTRATION （MIN）</p>
+                </td>
+                <td>0.10mm 备注：V-CUT错位度最小0.10mm</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">V-CUT板厚厚度（最小/最大）</p>
+                    <p>V-CUT Board Thickness(Min/Max）</p>
+                </td>
+                <td>0.5mm/3.2mm 备注：目前猎板支持V-CUT板厚0.5mm~3.2mm</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="t">阻抗公差（最小）</p>
+                    <p>Impedance Tolerance(Min)</p>
+                </td>
+                <td>±10% 备注：例如选择的阻抗值为T=50Ω，实际阻抗为45Ω（T－50Ω×10%）~55Ω（T＋50Ω×10%）</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--section end-->
+
+<!--slide bar-->
+<div class="sldie-bar">
+    <dl>
+        <dd>
+            <a href="javascript:;">
+                <div class="lineBlock va-m">
+                    <div class="icon car-icon "></div>
+                    <div class="circle">2</div>
+                </div>
+            </a>
+        </dd>
+        <dd>
+            <a href="javascript:;" class="phone-a">
+                <div class="lineBlock va-m">
+                    <div class="icon message-icon "></div>
+                </div>
+                <div class="phone-div">
+                    <div class="item">
+                        <h3>客服QQ</h3>
+                        <p>800183356</p>
+                    </div>
+                    <div class="item">
+                        <h3>客服热线</h3>
+                        <p>0571-86609386</p>
+                    </div>
+                    <div class="item">
+                        <h3>工作时间</h3>
+                        <p>8:40-22:00(周一至周六)</p>
+                    </div>
+                </div>
+            </a>
+        </dd>
+        <dd>
+            <a href="javascript:;">
+                <div class="lineBlock va-m">
+                    <div class="icon jsq-icon "></div>
+                </div>
+            </a>
+        </dd>
+        <dd>
+            <a href="javascript:;" class="ewm-a">
+                <div class="lineBlock va-m">
+                    <div class="icon ewm-icon "></div>
+                    <div class="ewm-div">
+                        <img src="./images/common/code.png" alt="">
+                        <p>扫描立即关注公众号</p>
+                    </div>
+                </div>
+            </a>
+        </dd>
+        <dd>
+            <a href="javascript:;">
+                <div class="lineBlock va-m">
+                    <div class="icon edit-icon "></div>
+                </div>
+            </a>
+        </dd>
+        <dt id="backtop">
+            <a href="javascript:;">
+                <div class="iconfont iconzujiantubiaojiantou2">
+
+                </div>
+            </a>
+        </dt>
+    </dl>
+</div>
+<!--slide bar end-->
+
+<!--footer-->
+<div class="pcb-footer">
+    <div class="width-1180">
+        <div class="pcb-footer-top clr">
+            <div class="fl l">
+                <ul class="clr">
+                    <li>
+                        <a href="">产品中心</a>
+                        <a href="">PCB计价</a>
+                        <a href="">免费打样</a>
+                    </li>
+                    <li>
+                        <a href="">服务支持</a>
+                        <a href="">工厂展示</a>
+                        <a href="">产品展示</a>
+                    </li>
+                    <li>
+                        <a href="">新闻资讯</a>
+                        <a href="">行业资讯</a>
+                        <a href="">技术动态</a>
+                        <a href="">公司报导</a>
+                    </li>
+                    <li>
+                        <a href="">帮助中心</a>
+                        <a href="">下单流程</a>
+                        <a href="">支付流程</a>
+                        <a href="">开票流程</a>
+                    </li>
+                    <li>
+                        <a href="">关于猎板</a>
+                        <a href="">关于猎板</a>
+                        <a href="">人才招聘</a>
+                        <a href="">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr r">
+                <div class="lineBlock va-m">
+                    <p class="t1">服务热线：</p>
+                    <p class="t2">0571 - 86609386</p>
+                    <p class="t3">服务时间：9:00-22:00</p>
+                    <p class="t4">客服邮箱：service@pcbhunt.com</p>
+                </div>
+                <div class="lineBlock va-m code-pic">
+                    <img src="./images/common/code.png" alt="">
+                    <p>微信公众号</p>
+                </div>
+            </div>
+        </div>
+        <div class="pcb-footer-bottom clr">
+            <div class="fl l">
+                <div class="va-t lineBlock text">
+                    <p class="t1">Copyright © www.PCBhunt.com, All Rights Reserved. 版权所有:杭州猎板网络科技有限公司</p>
+                    <p class="t1">浙ICP备20015009号-1 浙公网安备20015009号-1</p>
+                    <p>联系地址：浙江省杭州市拱墅区万达广场C栋6楼</p>
+                </div>
+                <div class="va-t lineBlock pic">
+                    <p>合作快递</p>
+                    <img src="./images/common/1.png" alt="">
+                    <img src="./images/common/2.png" alt="">
+                </div>
+            </div>
+            <div class="fr r">
+                <p>支付方式</p>
+                <div class="pic">
+                    <img src="./images/common/3.png" alt="">
+                    <img src="./images/common/4.png" alt="">
+                    <img src="./images/common/5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+<script type="text/javascript" src="js/common/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugin/slide.js"></script>
+<script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
+<script type="text/javascript" src="js/common/base.js"></script>
+<script type="text/javascript">
+  $(function () {
+    
+    
+  })
+</script>
+
+</body>
+
+</html>

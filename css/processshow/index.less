@@ -1,0 +1,57 @@
+@import '../common/base.less';
+
+.processshow-ad{
+  position: relative;
+  text-align: center;
+  background-color: #171c1f;
+  -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.18);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.processshow{
+  background: #f2f3f7;
+  .processshow-wrap{
+    background: #FFFFFF;
+    padding: 30px 0;
+    .processshow-btn{
+      padding: 5px 20px;
+      color: #fff;
+      background: #0081D2;
+      text-align: center;
+      display: inline-block;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 20px;
+    }
+    .processshow-table{
+      width: 1120px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      font-size: 14px;
+      tr{
+        th{
+          border: 1px solid #767676;
+          background-color: #767676;
+          color: #fff;
+          padding: 8px 20px;
+          text-align: left;
+        }
+        td{
+          padding: 15px 20px;
+          border: 1px solid #e7e7e7;
+          color: #333;
+          font-size: 14px;
+          line-height: 25px;
+          .t{
+            margin-bottom: 5px;
+          }
+          &.bold{
+            font-weight: bold;
+            background-color: #f2f3f7;
+          }
+        }
+      }
+    }
+  }
+}
