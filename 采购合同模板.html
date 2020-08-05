@@ -191,6 +191,54 @@
                     <td>1212</td>
                 </tr>
                 <tr>
+                    <td>订单号1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>1212</td>
+                    <td>1212</td>
+                </tr>
+                <tr>
+                    <td>订单号1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>1212</td>
+                    <td>1212</td>
+                </tr>
+                <tr>
+                    <td>订单号1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>1212</td>
+                    <td>1212</td>
+                </tr>
+                <tr>
+                    <td>订单号1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>1212</td>
+                    <td>1212</td>
+                </tr>
+                <tr>
                     <td>订单包备注</td>
                     <td colspan="9">备注</td>
                 </tr>
@@ -233,14 +281,14 @@
   $(function () {
     $(document).on('click', '#exportBtn', function () {
       var pdf = new jsPDF('p', 'pt', 'a4');
-      pdf.internal.scaleFactor = 1;  //可以调整缩放比例
+      pdf.internal.scaleFactor = 2;  //可以调整缩放比例
       var options = {
         useCORS: true,
         allowTaint: true,
         logging: true,
         pagesplit: true//不分页
       };
-      pdf.addHTML($('.pdf-box').get(0), 0, 0, options, function () {
+      pdf.addHTML($('.pdf-box').get(0), 15, 15, options, function () {
         // 用.h1Title 标签的名字命名  pdf
         pdf.save('1');
       });
