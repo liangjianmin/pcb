@@ -195,6 +195,8 @@
         mm = mm < 10 ? ("0" + mm) : mm;   //分
         ss = ss < 10 ? ("0" + ss) : ss;   //秒
         
+        
+        $("#timer_d").text(Number(dd) + '天');
         $("#timer_h").text(Number(dd) * 24 + Number(hh) + '时');
         $("#timer_m").text(mm + '分');
         $("#timer_s").text(ss + '秒');
@@ -204,6 +206,7 @@
         }, 1000);
         
       } else {
+        $("#timer_d").text(0 + '天');
         $("#timer_h").text(0 + '时');
         $("#timer_m").text(0 + '分');
         $("#timer_s").text(0 + '秒');
