@@ -1621,13 +1621,16 @@ body {
 .downloadbox-layer {
   padding: 30px;
 }
+.downloadbox-layer .downloadbox-layer-box {
+  margin-bottom: 15px;
+}
 .downloadbox-layer .label {
   margin-bottom: 10px;
   font-size: 14px;
   color: #959ba6;
 }
 .downloadbox-layer input {
-  width: 80%;
+  width: 95%;
   padding-left: 10px;
   height: 40px;
   line-height: 40px;
@@ -1637,7 +1640,7 @@ body {
   transition: all 0.4s ease;
 }
 .downloadbox-layer .btn {
-  width: 100px;
+  width: 128px;
   height: 40px;
   background: #0081d2;
   border-radius: 2px;
@@ -1646,6 +1649,6 @@ body {
   font-size: 14px;
   color: #FFFFFF;
   display: block;
-  margin-top: 20px;
+  margin: 20px auto 0;
 }
 /*# sourceMappingURL=index.css.map */

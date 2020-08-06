@@ -798,9 +798,31 @@
 </script>
 <script type="text/html" id="downloadHtml">
     <div class="downloadbox-layer">
-        <p class="label">请填写签订合同方名称(个人/公司) </p>
-        <input type="text" placeholder="" maxlength="50"/>
-        <a href="javascript:;" class="btn pending_review_btn">确定</a>
+        <div class="downloadbox-layer-box">
+            <input type="text" placeholder="订单编号" maxlength="50" readonly="readonly" value="112"/>
+        </div>
+        <div class="downloadbox-layer-box">
+            <input type="text" placeholder="购⽅（甲⽅）（必填）" maxlength="50" name="user"/>
+        </div>
+        <div class="downloadbox-layer-box">
+            <input type="text" placeholder="经办⼈" maxlength="50"/>
+        </div>
+        <div class="downloadbox-layer-box">
+            <input type="text" placeholder="联系电话" maxlength="50"/>
+        </div>
+        <div class="downloadbox-layer-box">
+            <input type="text" placeholder="银行账号" maxlength="50"/>
+        </div>
+        <div class="downloadbox-layer-box">
+            <input type="text" placeholder="开户行" maxlength="50"/>
+        </div>
+        <div class="downloadbox-layer-box">
+            <input type="text" placeholder="户名" maxlength="50"/>
+        </div>
+        <div class="downloadbox-layer-box">
+            <input type="text" placeholder="统一社会信用代码/身份证" maxlength="50"/>
+        </div>
+        <a href="javascript:;" class="btn pending_review_btn">生成合同并下载</a>
     </div>
 </script>
 
@@ -844,10 +866,13 @@
 
     });
 
-    $(document).on('click', '.pending_review_btn', function () {
+    $(document).on('click','.pending_review_btn',function () {
+      var val=$("input[name='user']").val();
+      if(!val){
+        layer.msg('购⽅（甲⽅）（必填）');
+      }
 
-      layer.closeAll();
-
+      //layer.closeAll();
     });
 
     $(document).on('click','#download',function () {
