@@ -576,6 +576,7 @@ body {
 }
 .home .nav-wrap .login-bar .logged-in {
   height: 100%;
+  vertical-align: top;
 }
 .home .nav-wrap .login-bar .logged-in .logged-in-bar {
   position: relative;
@@ -984,6 +985,10 @@ body {
   padding: 0 40px;
   border-radius: 5px;
   margin-left: 10px;
+}
+.layui-form-checked[lay-skin=primary] i {
+  border-color: #0081D2 !important;
+  background-color: #0081D2 !important;
 }
 .notfound {
   padding-top: 80px;
