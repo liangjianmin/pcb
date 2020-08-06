@@ -897,12 +897,19 @@ body {
   bottom: 0px;
   z-index: 101;
 }
+.pcb-ad .indexRightAd.none {
+  left: -186px;
+}
+.pcb-ad .indexRightAd.show {
+  left: 0;
+}
 .pcb-ad .adv_open {
   position: fixed;
   height: 200px;
   bottom: 0px;
   z-index: 1000000;
   overflow: hidden;
+  display: none;
 }
 .pcb-ad .adv_open.none {
   width: 0;

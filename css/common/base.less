@@ -666,7 +666,7 @@ body {
 
       .logged-in {
         height: 100%;
-        vertical-align:top; 
+        vertical-align: top;
 
         .logged-in-bar {
           position: relative;
@@ -1065,6 +1065,14 @@ body {
     height: 204px;
     bottom: 0px;
     z-index: 101;
+
+    &.none {
+      left: -186px;
+    }
+
+    &.show {
+      left: 0;
+    }
   }
 
   .adv_open {
@@ -1073,6 +1081,7 @@ body {
     bottom: 0px;
     z-index: 1000000;
     overflow: hidden;
+    display: none;
 
     &.none {
       width: 0;
@@ -1173,8 +1182,7 @@ body {
 }
 
 
-
-.layui-form-checked[lay-skin=primary] i{
+.layui-form-checked[lay-skin=primary] i {
   border-color: #0081D2 !important;
   background-color: #0081D2 !important;
 }
