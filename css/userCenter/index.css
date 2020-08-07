@@ -1709,6 +1709,7 @@ body {
 .user-center .user-center-r .user-center-section .drying-list ul li a .pic {
   width: 280px;
   height: 220px;
+  overflow: hidden;
 }
 .user-center .user-center-r .user-center-section .drying-list ul li a .pic img {
   width: 280px;
