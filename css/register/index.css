@@ -892,106 +892,111 @@ body {
 }
 .pcb-ad .indexRightAd {
   position: fixed;
-  width: 186px;
-  height: 204px;
-  bottom: 0px;
+  width: 140px;
+  height: 254px;
+  bottom: 54px;
   z-index: 101;
 }
+.pcb-ad .indexRightAd img {
+  width: 140px;
+  height: 254px;
+}
 .pcb-ad .indexRightAd.none {
-  left: -186px;
+  left: -150px;
 }
 .pcb-ad .indexRightAd.show {
-  left: 0;
+  left: 10px;
 }
-.pcb-ad .adv_open {
+.pcb-ad .fast-key {
   position: fixed;
-  height: 200px;
-  bottom: 0px;
-  z-index: 1000000;
-  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 120px;
+  background: #0860BF;
+  z-index: 999;
+}
+.pcb-ad .fast-key.none {
   display: none;
 }
-.pcb-ad .adv_open.none {
-  width: 0;
+.pcb-ad .fast-key.show {
+  display: block;
 }
-.pcb-ad .adv_open.show {
-  width: 100%;
+.pcb-ad .fast-key .fast-key-wrap .l {
+  position: relative;
+  height: 120px;
+  white-space: nowrap;
 }
-.pcb-ad .adv_open .adv_bg {
-  width: 100%;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-position: center;
+.pcb-ad .fast-key .fast-key-wrap .l .pic {
+  position: absolute;
+  top: -46px;
+  left: 0;
+  width: 162px;
+  height: 146px;
+  background: url("../../images/registerPage/b.png") no-repeat center;
   background-size: cover;
 }
-.pcb-ad .adv_open img {
-  height: 100%;
-  width: 100%;
+.pcb-ad .fast-key .fast-key-wrap .l .text {
+  margin-left: 191px;
 }
-.pcb-ad .adv_open .close_icon {
-  height: 25px;
-  width: 25px;
+.pcb-ad .fast-key .fast-key-wrap .l .text .t1 {
+  font-size: 20px;
+  color: #f7f9fc;
+}
+.pcb-ad .fast-key .fast-key-wrap .l .text .t2 {
+  font-size: 30px;
+  color: #f7f9fc;
+  font-weight: bold;
+}
+.pcb-ad .fast-key .fast-key-wrap .l .text .t2 em {
+  font-size: 30px;
+  color: #e0c629;
+  font-weight: bold;
+}
+.pcb-ad .fast-key .fast-key-wrap .r {
+  position: relative;
+  height: 120px;
+  white-space: nowrap;
+}
+.pcb-ad .fast-key .fast-key-wrap .r .iconzujiantubiaojiantou10 {
   position: absolute;
-  top: 60px;
-  left: 80%;
-  opacity: 0.5;
+  right: -46px;
+  top: 10px;
+  font-size: 20px;
+  color: #ffffff;
   cursor: pointer;
 }
-.pcb-ad .adv_open .adv_form_div {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
+.pcb-ad .fast-key .fast-key-wrap .r .input-wrap {
+  width: 360px;
+  height: 48px;
+  border-radius: 2px;
+  background: #FFFFFF;
+  border: 1px solid #ffffff;
+}
+.pcb-ad .fast-key .fast-key-wrap .r .input-wrap .iconfont {
+  font-size: 30px;
+  color: #BBC1CC;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.pcb-ad .fast-key .fast-key-wrap .r .input-wrap input {
   font-size: 14px;
-  text-align: center;
-}
-.pcb-ad .adv_open .adv_form_div .adv_form_div_clear {
-  vertical-align: bottom;
-}
-.pcb-ad .adv_open .adv_form_div .mobile_div {
-  display: inline-block;
-  height: 40px;
-  background-color: #fff;
-  width: 210px;
-  border-radius: 5px;
-  text-align: left;
-}
-.pcb-ad .adv_open .adv_form_div .mobile_div .mobile_icon {
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-  background: url("https://static.ichunt.com/dist/res/home/images/user-icon.png") no-repeat;
-  background-size: 100% 100%;
+  height: 100%;
   vertical-align: middle;
-  margin: 0 10px;
 }
-.pcb-ad .adv_open .adv_form_div input,
-.pcb-ad .adv_open .adv_form_div button {
-  height: 40px;
-  line-height: 40px;
-  background-color: #fff;
+.pcb-ad .fast-key .fast-key-wrap .r .input-wrap input::-webkit-input-placeholder {
+  color: #959ba6;
 }
-.pcb-ad .adv_open .adv_form_div .yzm_input {
-  width: 115px;
-  padding: 0 10px;
-  box-sizing: border-box;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  margin-left: 10px;
-}
-.pcb-ad .adv_open .adv_form_div .fs_yzm {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 0 10px;
-}
-.pcb-ad .adv_open .adv_form_div button {
-  color: #fff;
-  background-color: #ff6600;
-}
-.pcb-ad .adv_open .adv_form_div .djlq {
-  padding: 0 40px;
-  border-radius: 5px;
-  margin-left: 10px;
+.pcb-ad .fast-key .fast-key-wrap .r .btn {
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #e89721;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 20px;
 }
 .layui-form-checked[lay-skin=primary] i {
   border-color: #0081D2 !important;

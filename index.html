@@ -982,21 +982,27 @@
 
 <!--ad-->
 <div class="pcb-ad">
-    <a class="indexRightAd none" href="javascript:void(0)">
-        <img src="http://img.ichunt.com/images/cms/202003/24/cd3a1ac831d1c5637568e32cb81e0d50.png" alt="未登录">
+    <a class="indexRightAd show" href="javascript:void(0)">
+        <img src="./images/home/a.png" alt="">
     </a>
-    <div class="adv_open none" style="width: 100%;">
-        <div style="background-image: url(http://img.ichunt.com/images/cms/202001/09/30eac3fe5f017a51a189b66ce8128670.png)" class="adv_bg" guid=""></div>
-        <img src="https://static.ichunt.com/dist/res/home/images/adv_close.png" alt="" class="close_icon">
-        <div class="adv_form_div none" style="display: block;">
-            <div class="clr adv_form_div_clear lineBlock">
-                <div class="mobile_div fl">
-                    <span class="mobile_icon"></span>
-                    <input type="text" placeholder="请输入手机号码" id="advPhone" onkeyup="if(event.keyCode !=37 &amp;&amp; event.keyCode != 39){if (!/^[\d]+$/ig.test(this.value)){this.value='';}}">
+    <div class="fast-key none">
+        <div class="width-1180 fast-key-wrap">
+            <div class="fl l">
+                <div class="pic lineBlock va-m"></div>
+                <div class="text lineBlock va-m">
+                    <p class="t1">新用户专属礼包</p>
+                    <p class="t2"><em>160元</em>现金抵扣券</p>
                 </div>
-                <input type="text" class="yzm_input fl" placeholder="请输入验证码" id="advMobileCode">
-                <button class="fs_yzm fl">发送验证码</button>
-                <button class="djlq fl">点击领取</button>
+                <b class="lineBlock emptys"></b>
+            </div>
+            <div class="fr r lbBox">
+                <i class="iconfont iconzujiantubiaojiantou10" id="close"></i>
+                <div class="input-wrap lineBlock va-m">
+                    <i class="iconfont iconzujiantubiaoshouji va-m"></i>
+                    <input type="text" placeholder="请输入手机号码" name="tel">
+                </div>
+                <a href="javascript:;" class="btn lineBlock va-m" id="receive">点击领取抵扣券</a>
+                <b class="lineBlock emptys"></b>
             </div>
         </div>
     </div>
@@ -1055,7 +1061,7 @@
 
 
     $(document).on('click', '.circle', function () {
-      $(this).toggleClass('act');
+      //$(this).toggleClass('act');
     });
 
 
@@ -1063,7 +1069,8 @@
     $('#pcb_qty_layers').numofboards();
 
     //快键登录
-    /*layer.open({
+    /*
+    layer.open({
       type: 1,
       title: '<span>手机登录</span>',
       area: ['500px', 'auto'],
@@ -1075,41 +1082,33 @@
 
       }
     });
-*/
+    */
 
     //ad
     $(".adv_open").show();
 
-    //展示5秒后自动缩小至左下方
-    setTimeout(function () {
-        $(".close_icon").trigger('click');
-    },5000);
 
     $(document).on('click', '.indexRightAd', function () {
       $(this).animate({
-        left: "-186px"
-      }, 600, function () {
-        $('.adv_open').animate({
+        left: "-150px"
+      }, 500, function () {
+        $(".fast-key").show();
+        $('.fast-key').animate({
           width: "100%"
-        }, 600, function () {
-          $(".adv_form_div").show();
+        }, 800, function () {
+
         })
       });
     });
 
-    $(document).on('click', '.close_icon', function (event) {
-      if (event.stopPropagation) {
-        event.stopPropagation();
-      } else if (window.event) {
-        window.event.cancelBubble = true;
-      }
-      $(".adv_form_div").hide();
-      $('.adv_open').animate({
+    $(document).on('click', '#close', function (event) {
+      $('.fast-key').animate({
         width: 0
-      }, 600, function () {
+      }, 500, function () {
+        $('.fast-key').hide();
         $('.indexRightAd').animate({
           left: 0
-        }, 600)
+        }, 800)
       });
     });
 
