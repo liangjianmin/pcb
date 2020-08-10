@@ -1094,6 +1094,25 @@ body {
   font-weight: bold;
   background: #FFFFFF;
 }
+.home-section .banner-box .home-pcb .home-pcb-box .location {
+  height: 39px;
+  margin-right: 24px;
+}
+.home-section .banner-box .home-pcb .home-pcb-box .location .iconfont {
+  font-size: 20px;
+  color: #0081d2;
+}
+.home-section .banner-box .home-pcb .home-pcb-box .location em {
+  font-size: 14px;
+  color: #959ba6;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.home-section .banner-box .home-pcb .home-pcb-box .location span {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+}
 .home-section .banner-box .home-pcb .home-pcb-box .show-wrap {
   padding: 20px 30px 0 30px;
 }
