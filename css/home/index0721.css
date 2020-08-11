@@ -1101,6 +1101,7 @@ body {
 .home-section .banner-box .home-pcb .home-pcb-box .location .iconfont {
   font-size: 20px;
   color: #0081d2;
+  margin-right: 4px;
 }
 .home-section .banner-box .home-pcb .home-pcb-box .location em {
   font-size: 14px;
