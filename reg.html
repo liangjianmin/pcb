@@ -225,7 +225,8 @@
         }).then((data) => {
           let res = data.data;
           if (res.Code === 200) {
-            Toast.success('注册成功');
+            Toast.success(res.Message);
+            Util.setCookie('token', res.Data.Token, 1);
             setTimeout(() => {
               window.location.href = '/regSuccess.html'
             }, 2000)
