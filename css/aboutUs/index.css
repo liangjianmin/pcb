@@ -304,8 +304,8 @@ body {
 }
 .pcb-footer .pcb-footer-bottom {
   border-top: 1px solid #E6EAF2;
-  padding-top: 30px;
-  margin-top: 30px;
+  padding-top: 20px;
+  margin-top: 10px;
 }
 .pcb-footer .pcb-footer-bottom .l .text {
   width: 504px;
@@ -1004,8 +1004,7 @@ body {
 }
 .about-us .about-us-img {
   height: 258px;
-  background: url('../../images/aboutus/bg.png') no-repeat;
-  background-position: center;
+  background: url('../../images/aboutus/bg.png') no-repeat center;
   min-width: 1180px;
   display: table;
   width: 100%;
@@ -1025,7 +1024,7 @@ body {
   color: #ffffff;
 }
 .about-us .about-us-head {
-  padding: 90px 0 145px;
+  padding: 90px 0 90px;
 }
 .about-us .about-us-head .head-left {
   margin-left: 80px;
@@ -1046,18 +1045,13 @@ body {
   font-size: 14px;
   padding: 2px 0 0 27px;
 }
-.about-us .about-us-head .head-left .company-intro .icon-span {
+.about-us .about-us-head .head-left .company-intro .bor {
   position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #E89721;
-  text-align: center;
-  line-height: 40px;
-  right: -20px;
-  top: 25px;
-}
-.about-us .about-us-head .head-left .company-intro .icon-span i {
-  font-size: 30px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #DE9228;
 }
 .about-us .about-us-head .head-left .company-img {
   height: 304px;
@@ -1074,6 +1068,7 @@ body {
 }
 .about-us .about-us-head .head-right p {
   line-height: 25px;
+  text-indent: 2em;
 }
 .about-us .about-us-head .head-right p.margin-p {
   margin-top: 25px;
@@ -1082,21 +1077,63 @@ body {
   color: #0081D2;
   cursor: pointer;
 }
+.about-us .about-course {
+  height: 409px;
+  background: #0860BF;
+}
+.about-us .about-course .t1 {
+  padding-top: 50px;
+  margin-bottom: 2px;
+  text-align: center;
+  font-size: 26px;
+  color: #ffffff;
+}
+.about-us .about-course .t2 {
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.8;
+  text-align: center;
+}
+.about-us .about-course .pic {
+  width: 1080px;
+  height: 222px;
+  margin: 0 auto;
+  background: url("../../images/aboutus/about1.png") no-repeat center;
+  background-size: cover;
+}
 .about-us .about-us-center {
   background-color: #F7F9FC;
   padding-bottom: 110px;
 }
 .about-us .about-us-center .text-mark {
-  background: url('../../images/aboutus/text-mark.png') no-repeat;
-  background-size: 100% 100%;
+  position: relative;
+  width: 300px;
   height: 90px;
-  width: 254px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 26px;
-  font-weight: 600;
-  color: #fff;
+  background: #DE9228;
   margin: 0 auto;
+}
+.about-us .about-us-center .text-mark span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 6px;
+  background: #0860BF;
+}
+.about-us .about-us-center .text-mark .t1 {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 14px;
+  margin-bottom: 2px;
+}
+.about-us .about-us-center .text-mark .t2 {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.8;
 }
 .about-us .about-us-center .icon-group {
   text-align: center;
@@ -1162,89 +1199,63 @@ body {
   -ms-transform: translate3d(0, -1px, 0);
   transform: translate3d(0, -1px, 0);
 }
-.about-us .about-us-bottom {
-  text-align: center;
-  padding-bottom: 110px;
-}
-.about-us .about-us-bottom .title-h {
-  font-size: 26px;
-  color: #3A3C40;
-  padding-top: 80px;
-}
-.about-us .about-us-bottom .title-p {
-  font-size: 14px;
-  color: #959BA6;
-  padding-top: 13px;
-}
-.about-us .about-us-bottom .good-group {
-  margin-top: 60px;
-}
-.about-us .about-us-bottom .good-group .good-item {
-  width: 580px;
-  border: 1px solid #E6EAF2;
+.about-us .about-us-team {
   background-color: #FFFFFF;
-  border-radius: 4px;
-  box-sizing: border-box;
-  padding: 20px 35px;
+  padding-bottom: 70px;
 }
-.about-us .about-us-bottom .good-group .good-item:last-child {
-  margin-left: 20px;
-}
-.about-us .about-us-bottom .good-group .good-item img {
-  height: 170px;
-  width: 170px;
-}
-.about-us .about-us-bottom .good-group .good-item .item-desc {
-  margin-left: 73px;
-  text-align: left;
-  padding-top: 10px;
-}
-.about-us .about-us-bottom .good-group .good-item .item-desc h1 {
-  font-size: 18px;
-  color: #3A3C40;
-  font-weight: 600;
-  width: 253px;
-}
-.about-us .about-us-bottom .good-group .good-item .item-desc ul {
-  font-size: 12px;
-  color: #5C5F66;
-  margin-top: 10px;
-}
-.about-us .about-us-bottom .good-group .good-item .item-desc ul li {
-  margin-top: 3px;
-}
-.about-us .about-us-bottom .good-group .good-item .item-desc ul .circle-icon {
-  width: 5px;
-  height: 5px;
-  background: #0081D2;
-  border-radius: 50% 50%;
+.about-us .about-us-team .text-mark {
   position: relative;
-  top: 6px;
+  width: 300px;
+  height: 90px;
+  background: #0860BF;
+  margin: 0 auto;
 }
-.about-us .about-us-bottom .good-group .good-item .item-desc ul p {
-  margin-left: 6px;
-  width: 253px;
+.about-us .about-us-team .text-mark span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 6px;
+  background: #DE9228;
 }
-.about-us .about-us-bottom .good-group .good-item .item-desc .good-mark {
-  font-size: 12px;
-  color: #0081D2;
-  margin-top: 4px;
-  width: 253px;
-}
-.about-us .about-us-bottom .good-group .good-item .item-desc .good-mark div {
-  cursor: pointer;
-  margin: 4px 0 0 11px;
-}
-.about-us .about-us-bottom .good-group .good-item .item-desc .immediate-pricing-btn {
-  width: 100px;
-  height: 38px;
-  background: #0081D2;
-  border-radius: 2px;
+.about-us .about-us-team .text-mark .t1 {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: bold;
   text-align: center;
-  line-height: 38px;
-  color: #FFFFFF;
+  padding-top: 14px;
+  margin-bottom: 2px;
+}
+.about-us .about-us-team .text-mark .t2 {
   font-size: 14px;
-  cursor: pointer;
-  margin-top: 14px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.8;
+}
+.about-us .about-us-team .list {
+  margin-top: 70px;
+  text-align: center;
+}
+.about-us .about-us-team .list li {
+  margin-right: 19px;
+}
+.about-us .about-us-team .list li .pic {
+  width: 258px;
+  height: 172px;
+  overflow: hidden;
+}
+.about-us .about-us-team .list li .pic img {
+  width: 258px;
+  height: 172px;
+}
+.about-us .about-us-team .list li p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #737780;
+  text-align: center;
+}
+.about-us .about-us-team .list li:last-child {
+  margin-right: 0;
 }
 /*# sourceMappingURL=index.css.map */
