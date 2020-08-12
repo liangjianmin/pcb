@@ -30,12 +30,12 @@
         <div class="form-box">
             <div class="inp-wrap row verCenter">
                 <i class="iconfont iconicondanseshouji"></i>
-                <input type="text" placeholder="请输入注册手机号码" class="inp" v-model="form.phone"/>
+                <input type="text" placeholder="请输入注册手机号码" class="inp" v-model="form.Mobile"/>
             </div>
             <div class="inp-wrap row verCenter bothSide">
                 <div class="row verCenter">
                     <i class="iconfont iconicondanseshouji1"></i>
-                    <input type="text" placeholder="请输入短信验证码" class="inp" v-model="form.code"/>
+                    <input type="text" placeholder="请输入短信验证码" class="inp" v-model="form.ValidCode"/>
                 </div>
                 <div>
                     <input type="button" class="code" :value="codetext" :class="{'disabled':codeactive}" :disabled="disabled" @click="codeFn"/>
@@ -44,13 +44,13 @@
             <div class="inp-wrap row verCenter bothSide">
                 <div class="row rowCenter">
                     <i class="iconfont iconicondanseshouji11"></i>
-                    <input :type="type" placeholder="请设置6-20位登录密码" class="inp" v-model="form.password"/>
+                    <input :type="type" placeholder="请设置6-20位登录密码" class="inp" v-model="form.Pwd"/>
                 </div>
                 <van-switch v-model="checked" size="24" @change="change"></van-switch>
             </div>
             <div class="inp-wrap row verCenter">
                 <i class="iconfont iconicondanseshouji11"></i>
-                <input type="password" placeholder="请两次确认登录密码" class="inp" v-model="form.repassword"/>
+                <input type="password" placeholder="请两次确认登录密码" class="inp" v-model="form.PwdConfirm"/>
             </div>
             <div class="agreement row verCenter">
                 <div class="gou row rowCenter verCenter">
@@ -77,22 +77,29 @@
 </div>
 
 <script src="./js/vue/vue.min.js"></script>
+<script src="./js/vue/axios.min.js"></script>
 <script src="./js/vue/vant.min.js"></script>
 <script>
+
+  var apiUrl = 'http://111.231.8.26:5000'; //测试
+  // var apiUrl = 'https://test.pcbhunt.com'; //预发
+
+  axios.defaults.headers.post['Content-Type'] = 'application/json';
+
 
   new Vue({
     el: '#app',
     data: {
-      type:'password',
+      type: 'password',
       checked: false,
       codetext: '发送验证码',
       disabled: false,
       codeactive: false,
       form: {
-        phone: '',
-        code: '',
-        password: '',
-        repassword: ''
+        Mobile: '',
+        ValidCode: '',
+        Pwd: '',
+        PwdConfirm: ''
       }
     },
     methods: {
@@ -120,7 +127,7 @@
       },
       codeFn() {
 
-        if (!this.form.phone) {
+        if (!this.form.Mobile) {
           vant.Toast('请输入手机号');
           return false;
         }
@@ -130,31 +137,44 @@
       },
       change(val) {
         if (val) {
-            this.type='text';
+          this.type = 'text';
         } else {
-          this.type='password';
+          this.type = 'password';
         }
       },
       submit() {
-        if (!this.form.phone) {
+        if (!this.form.Mobile) {
           vant.Toast('请输入手机号');
           return false;
         }
 
-        if (!this.form.code) {
+        if (!this.form.ValidCode) {
           vant.Toast('请输入短信验证码');
           return false;
         }
 
-        if (!this.form.password) {
+        if (!this.form.Pwd) {
           vant.Toast('请输入密码');
           return false;
         }
 
-        if (!this.form.repassword) {
+        if (!this.form.PwdConfirm) {
           vant.Toast('请再次输入密码');
           return false;
         }
+
+        axios.post(apiUrl + '/api/MemberShip/MinARegister', {
+          'Mobile': this.form.Mobile,
+          'Pwd': this.form.Pwd,
+          'PwdConfirm': this.form.PwdConfirm,
+          'ValidCode': this.form.ValidCode,
+          'WebPromotion': this.form.WebPromotion,
+          'WebSource': this.form.WebSource
+        }).then(function (res) {
+          console.log(res)
+        }).catch(function (error) {
+          vant.Toast('网络出现问题，请重试！');
+        });
 
 
       }
