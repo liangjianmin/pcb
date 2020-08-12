@@ -50,15 +50,15 @@
             </div>
             <div class="inp-wrap row verCenter">
                 <i class="iconfont iconicondanseshouji11"></i>
-                <input type="password" placeholder="请两次确认登录密码" class="inp" v-model="form.PwdConfirm"/>
+                <input :type="type" placeholder="请两次确认登录密码" class="inp" v-model="form.PwdConfirm"/>
             </div>
             <div class="agreement row verCenter">
-                <div class="gou row rowCenter verCenter">
+                <div class="gou row rowCenter verCenter" :class="agreement ? '':'gouactive'" @click="agreement=!agreement">
                     <i class="iconfont iconbianzu"></i>
                 </div>
                 <p class="txt">
                     <span>同意</span>
-                    <a href="javascript:;">《猎板网用户服务协议》</a>
+                    <a href="/agreement.html">《猎板网用户服务协议》</a>
                 </p>
             </div>
             <a href="javascript:;" class="btn" @click="submit()">注册</a>
@@ -90,6 +90,7 @@
   new Vue({
     el: '#app',
     data: {
+      agreement: true,
       type: 'password',
       checked: false,
       codetext: '发送验证码',
@@ -99,11 +100,14 @@
         Mobile: '',
         ValidCode: '',
         Pwd: '',
-        PwdConfirm: ''
+        PwdConfirm: '',
+        WebPromotion: '',
+        WebSource: ''
       }
     },
     methods: {
       timeNum() {
+
         var me = this;
         var wait = 60;
         me.disabled = true;
@@ -126,13 +130,32 @@
         }
       },
       codeFn() {
+        var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
 
         if (!this.form.Mobile) {
           vant.Toast('请输入手机号');
           return false;
         }
 
-        this.timeNum();
+        if (!myreg.test(this.form.Mobile)) {
+          vant.Toast('请输入正确的手机号');
+          return false;
+        }
+
+        axios.post(apiUrl + '/api/MemberShip/SendValidCode', {
+          'Mobile': this.form.Mobile
+        }).then((data) => {
+          let res = data.data;
+
+          if (res.Code === 200) {
+            this.timeNum();
+          } else {
+            vant.Toast(res.Message);
+          }
+        }).catch(function (error) {
+          vant.Toast('网络出现问题，请重试！');
+        });
+
 
       },
       change(val) {
@@ -143,8 +166,16 @@
         }
       },
       submit() {
+
+        var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
+
         if (!this.form.Mobile) {
           vant.Toast('请输入手机号');
+          return false;
+        }
+
+        if (!myreg.test(this.form.Mobile)) {
+          vant.Toast('请输入正确的手机号');
           return false;
         }
 
@@ -163,6 +194,12 @@
           return false;
         }
 
+        if (!this.agreement) {
+          vant.Toast('请同意协议继续');
+          return false;
+        }
+
+
         axios.post(apiUrl + '/api/MemberShip/MinARegister', {
           'Mobile': this.form.Mobile,
           'Pwd': this.form.Pwd,
@@ -170,8 +207,16 @@
           'ValidCode': this.form.ValidCode,
           'WebPromotion': this.form.WebPromotion,
           'WebSource': this.form.WebSource
-        }).then(function (res) {
-          console.log(res)
+        }).then((data) => {
+          let res = data.data;
+          if (res.Code === 200) {
+            Toast.success('注册成功');
+            setTimeout(() => {
+              window.location.href = '/regSuccess.html'
+            }, 2000)
+          } else {
+            vant.Toast(res.Message);
+          }
         }).catch(function (error) {
           vant.Toast('网络出现问题，请重试！');
         });
