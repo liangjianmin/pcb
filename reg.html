@@ -79,10 +79,11 @@
 <script src="./js/vue/vue.min.js"></script>
 <script src="./js/vue/axios.min.js"></script>
 <script src="./js/vue/vant.min.js"></script>
+<script src="./js/util.js"></script>
 <script>
 
   var apiUrl = 'http://111.231.8.26:5000'; //测试
-  // var apiUrl = 'https://test.pcbhunt.com'; //预发
+  //var apiUrl = 'https://test.pcbhunt.com'; //预发
 
   axios.defaults.headers.post['Content-Type'] = 'application/json';
 
@@ -96,6 +97,7 @@
       codetext: '发送验证码',
       disabled: false,
       codeactive: false,
+      c: '',
       form: {
         Mobile: '',
         ValidCode: '',
@@ -104,6 +106,18 @@
         WebPromotion: '',
         WebSource: ''
       }
+    },
+    created() {
+
+      var c = Util.getRequest('c');
+
+      if (c) {
+        if (!Util.getCookie('WebPromotion')) {
+          Util.setCookie('WebPromotion', c, 15);
+        }
+      }
+
+
     },
     methods: {
       timeNum() {
@@ -205,7 +219,7 @@
           'Pwd': this.form.Pwd,
           'PwdConfirm': this.form.PwdConfirm,
           'ValidCode': this.form.ValidCode,
-          'WebPromotion': this.form.WebPromotion,
+          'WebPromotion': Util.getCookie('WebPromotion'),
           'WebSource': this.form.WebSource
         }).then((data) => {
           let res = data.data;
@@ -225,8 +239,6 @@
       }
     }
   });
-
-
 </script>
 </body>
 </html>
