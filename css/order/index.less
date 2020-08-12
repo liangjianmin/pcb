@@ -412,28 +412,31 @@
               }
 
               &.box6 {
-                .detail{
+                .detail {
                   font-size: 14px;
                   color: #0081D2;
                   position: relative;
-                  &:hover{
-                    .detail-div{
+
+                  &:hover {
+                    .detail-div {
                       display: block;
                     }
                   }
-                  .detail-div{
+
+                  .detail-div {
                     display: none;
                     position: absolute;
                     top: 20px;
                     left: -863px;
-                    width:900px;
+                    width: 900px;
                     background-color: #fff;
                     z-index: 2;
                     box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
-                    .title{
+
+                    .title {
                       background: #3A3C40;
-                      color:#fff;
-                      padding:10px 10px;
+                      color: #fff;
+                      padding: 10px 10px;
                       font-size: 12px;
                       opacity: .5;
                       text-align: right;
@@ -768,7 +771,7 @@
               position: relative;
               margin-right: 20px;
               margin-bottom: 20px;
-              width: 329px;
+              width: 359px;
               height: 109px;
               background: url("../../images/order/coupon.png") no-repeat center;
               background-size: cover;
@@ -776,12 +779,32 @@
               cursor: pointer;
               transition: all 0.2s ease;
 
+              .arrow-1 {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 48px;
+                height: 43px;
+                background: url("../../images/order/p1.png") no-repeat center;
+                background-size: cover;
+              }
+
+              .arrow-2 {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 48px;
+                height: 43px;
+                background: url("../../images/order/p2.png") no-repeat center;
+                background-size: cover;
+              }
+
               &:nth-of-type(3n) {
                 margin-right: 0;
               }
 
               .l-text {
-                padding-left: 32px;
+                padding-left: 24px;
 
                 .t1 {
                   margin-bottom: 9px;
@@ -795,16 +818,27 @@
                     font-size: 44px;
                     color: #ffffff;
                   }
+
+                  b {
+                    font-size: 30px;
+                    color: #ffffff;
+                    font-weight: bold;
+                  }
                 }
 
                 .t2 {
                   font-size: 14px;
                   color: #ffffff;
                 }
+
+                .t3 {
+                  font-size: 12px;
+                  color: #ffffff;
+                }
               }
 
               .c-text {
-                padding-left: 59px;
+                padding-left: 44px;
 
                 .t1 {
                   font-size: 16px;
@@ -912,9 +946,34 @@
                 }
               }
 
-              &.disabled{
+              &.disabled {
                 background: url("../../images/order/coupon2.png") no-repeat center;
                 background-size: cover;
+                &::after {
+                  display: none;
+                }
+              }
+
+              &.status {
+                background: url("../../images/order/coupon3.png") no-repeat center;
+                background-size: cover;
+
+                &.curr{
+                  background: url("../../images/order/coupon4.png") no-repeat center;
+                  background-size: cover;
+                }
+
+                &::after {
+                  border-bottom: 18px solid #E89721;
+                }
+
+                .l-text {
+                  padding-left: 19px;
+                }
+
+                .c-text {
+                  padding-left: 35px;
+                }
               }
             }
           }
