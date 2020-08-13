@@ -1003,8 +1003,8 @@ body {
   background-color: #0081D2 !important;
 }
 .factory .factory-banner {
-  height: 258px;
-  background: url('../../images/aboutus/bg.png') no-repeat center;
+  height: 200px;
+  background: url('../../images/factory/bb.png') no-repeat center;
   min-width: 1180px;
   display: table;
   width: 100%;

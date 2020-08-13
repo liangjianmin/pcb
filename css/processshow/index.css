@@ -1002,6 +1002,28 @@ body {
   border-color: #0081D2 !important;
   background-color: #0081D2 !important;
 }
+.factory-banner {
+  height: 200px;
+  background: url('../../images/factory/bb.png') no-repeat center;
+  min-width: 1180px;
+  display: table;
+  width: 100%;
+}
+.factory-banner .txt {
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+.factory-banner .txt .t1 {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.factory-banner .txt .t2 {
+  font-size: 16px;
+  color: #ffffff;
+}
 .processshow-ad {
   width: 100%;
   height: 120px;
