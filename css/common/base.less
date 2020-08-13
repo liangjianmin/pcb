@@ -556,6 +556,7 @@ body {
         height: 48px;
         line-height: 48px;
         margin-right: 40px;
+        white-space: nowrap;
         transition: all 0.2s ease;
 
         &.curr:after {
@@ -568,10 +569,41 @@ body {
           content: '';
         }
 
-        a {
+        a.link {
           font-size: 16px;
           color: #FFFFFF;
           font-weight: bold;
+        }
+
+        .iconzujiantubiaojiantou1 {
+          font-size: 14px;
+          color: #FFFFFF;
+        }
+
+        dl {
+          position: absolute;
+          bottom: -74px;
+          width: 100%;
+          left: 0;
+          background: #0081D2;
+          z-index: 99999999;
+          display: none;
+
+          dd {
+            text-align: center;
+            height: 37px;
+            line-height: 37px;
+            transition: all 0.2s ease;
+
+            &:hover {
+              background: #0090EB;
+            }
+
+            a {
+              font-size: 14px;
+              color: #ffffff;
+            }
+          }
         }
 
         &.curr, &:hover {
@@ -589,6 +621,10 @@ body {
             width: 100%;
             height: 3px;
             content: '';
+          }
+
+          dl {
+            display: block;
           }
         }
       }

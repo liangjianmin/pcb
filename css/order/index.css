@@ -489,6 +489,7 @@ body {
   height: 48px;
   line-height: 48px;
   margin-right: 40px;
+  white-space: nowrap;
   transition: all 0.2s ease;
 }
 .home .nav-wrap .nav li.curr:after {
@@ -500,10 +501,36 @@ body {
   height: 3px;
   content: '';
 }
-.home .nav-wrap .nav li a {
+.home .nav-wrap .nav li a.link {
   font-size: 16px;
   color: #FFFFFF;
   font-weight: bold;
+}
+.home .nav-wrap .nav li .iconzujiantubiaojiantou1 {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.home .nav-wrap .nav li dl {
+  position: absolute;
+  bottom: -74px;
+  width: 100%;
+  left: 0;
+  background: #0081D2;
+  z-index: 99999999;
+  display: none;
+}
+.home .nav-wrap .nav li dl dd {
+  text-align: center;
+  height: 37px;
+  line-height: 37px;
+  transition: all 0.2s ease;
+}
+.home .nav-wrap .nav li dl dd:hover {
+  background: #0090EB;
+}
+.home .nav-wrap .nav li dl dd a {
+  font-size: 14px;
+  color: #ffffff;
 }
 .home .nav-wrap .nav li.curr a,
 .home .nav-wrap .nav li:hover a {
@@ -517,6 +544,9 @@ body {
   width: 100%;
   height: 3px;
   content: '';
+}
+.home .nav-wrap .nav li:hover dl {
+  display: block;
 }
 .home .nav-wrap .login-bar {
   height: 100%;
