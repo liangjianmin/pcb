@@ -1231,6 +1231,10 @@ body {
   background-size: cover;
   float: left;
   margin-right: 20px;
+  margin-bottom: 20px;
+}
+.coupon .list li:nth-of-type(4n) {
+  margin-right: 0;
 }
 .coupon .list li:last-child {
   margin-right: 0;
