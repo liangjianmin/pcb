@@ -501,36 +501,21 @@ body {
   font-size: 11px;
   color: #acc6cf;
 }
-.reg-agreement {
-  background: #F0F9FC;
-  padding: 0.53rem 0.64rem 0.3rem 0.64rem;
+.van-dialog__message {
+  white-space: inherit !important;
 }
-.reg-agreement .title {
-  font-size: 21px;
-  color: #2e3033;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 0.53rem;
-}
-.reg-agreement .content .tit {
+.reg-agreement .tit {
   font-size: 14px;
   color: #2e3033;
   font-weight: bold;
   margin-bottom: 0.28rem;
+  white-space: normal !important;
 }
-.reg-agreement .content .t1 {
+.reg-agreement .t1 {
   font-size: 13px;
   color: #556266;
   text-align: justify;
   margin-bottom: 0.27rem;
-}
-.reg-agreement .btn {
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background: #0081D2;
-  font-size: 16px;
-  color: #FFFFFF;
-  display: block;
+  white-space: normal !important;
 }
 /*# sourceMappingURL=index.css.map */

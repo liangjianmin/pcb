@@ -58,7 +58,7 @@
                 </div>
                 <p class="txt">
                     <span>同意</span>
-                    <a href="/agreement.html">《猎板网用户服务协议》</a>
+                    <a @click="tip">《猎板网用户服务协议》</a>
                 </p>
             </div>
             <a href="javascript:;" class="btn" @click="submit()">注册</a>
@@ -121,6 +121,36 @@
 
     },
     methods: {
+      tip() {
+        var html = `
+            <div class="reg-agreement">
+        <p class="tit">总则</p>
+        <p class="t1">本协议详述您在猎板网平台（https://www.pcbhunt.com/）使用我们的服务所须遵守的条款和条件。如您有任何疑问，请及时联系我们。</p>
+        <p class="tit">提示条款</p>
+        <p class="t1">
+            欢迎您与猎板网平台共同签署本《猎板网平台服务协议》（下称“本协议”）并使用猎板网平台服务！
+            各服务条款前所列索引关键词仅为帮助您理解该条款表达的主旨之用，不影响或限制本协议条款的含义或解释。为维护您自身权益，建议您仔细阅读各条款具体表述。
+            【审慎阅读】您在申请注册流程中点击同意本协议之前，应当认真阅读本协议。请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款、法律适用和争议解决条款。免除或者限制责任的条款将以粗体下划线标识，您应重点阅读。如您对协议有任何疑问，可向猎板网平台客服咨询。
+            【签约动作】当您按照注册页面提示填写信息、阅读并同意本协议且完成全部注册程序后，即表示您已充分阅读、理解并接受本协议的全部内容，并与猎板网达成一致，成为猎板网平台“用户”。阅读本协议的过程中，如果您不同意本协议或其中任何条款约定，您应立即停止注册程序。
+        </p>
+        <p class="tit">一、定义</p>
+        <p class="t1">
+            (一) 【猎板网平台】：指包括猎板网（www.pcbhunt.com），猎板网网站移动版（m.pcbhunt.com）等网站及客户端。
+            (二) 【猎板网平台服务】：猎板网基于互联网，以包含猎板网平台网站、客户端等在内的各种形态（包括未来技术发展出现的新的服务形态）向您提供的各项服务
+            (三) 【同一用户】：使用同一身份认证信息或经猎板网排查认定多个猎板网账户的实际控制人为同一人的，均视为同一用户。
+            (四) 【补充协议】：由于互联网高速发展，您与猎板网签署的本协议列明的条款并不能完整罗列并覆盖您与猎板网所有权利与义务，现有的约定也不能保证完全符合未来发展的需求。因此，猎板网平台法律声明及隐私权政策、猎板网平台规则均为本协议的补充协议猎板网平台服务，如您使用上述补充协议，视为您同意上述协议，与本协议不可分割且具有同等法律效力。
+        </p>
+    </div>
+        `;
+        vant.Dialog.alert({
+          title: '用户服务协议',
+          message: html,
+          confirmButtonText:'我已阅读用户协议',
+          messageAlign: 'left'
+        }).then(() => {
+
+        });
+      },
       timeNum() {
 
         var me = this;
@@ -225,16 +255,21 @@
         }).then((data) => {
           let res = data.data;
           if (res.Code === 200) {
-            Toast.success(res.Message);
+            vant.Toast.success(res.Message);
+
             Util.setCookie('token', res.Data.Token, 1);
+
             setTimeout(() => {
               window.location.href = '/regSuccess.html'
             }, 2000)
+
           } else {
+
             vant.Toast(res.Message);
+
           }
         }).catch(function (error) {
-          vant.Toast('网络出现问题，请重试！');
+
         });
 
 
