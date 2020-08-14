@@ -19,7 +19,7 @@
     <meta name="description" content="">
     <script src="./js/flexible.min.js"></script>
     <link rel="stylesheet" href="./css/register/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.9/lib/index.css"/>
+    <link rel="stylesheet" href="./js/vue/index.css"/>
 </head>
 <body>
 <div id="app">
@@ -29,10 +29,10 @@
         </div>
         <p class="t1">账户注册成功</p>
         <p class="t2">会员中心-账户钱包</p>
-        <p class="t2">请至PC端访问<a href="www.pcbhunt.com">www.pcbhunt.com</a></p>
+        <p class="t2">请至PC端访问<a href="https://www.pcbhunt.com">www.pcbhunt.com</a></p>
         <div class="btn-wrap">
-            <a href="javascript:;" class="btn">参观猎板网</a>
-            <a href="javascript:;" class="share">分享微信好友</a>
+            <a href="https://www.pcbhunt.com" class="btn">参观猎板网</a>
+            <a href="javascript:;" class="share" @click="show=true">关注猎板公众号</a>
         </div>
         <div class="activity">
             <div class="title">
@@ -44,15 +44,30 @@
             </div>
             <div class="ad row rowCenter verCenter">广告位</div>
         </div>
+        <van-overlay :show="show" @click="show = false">
+            <div class="code-shade column verCenter rowCenter">
+                <img src="./images/register/code.jpg" alt="">
+            </div>
+        </van-overlay>
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vant@2.9/lib/vant.min.js"></script>
+<script src="./js/vue/vue.min.js"></script>
+<script src="./js/vue/axios.min.js"></script>
+<script src="./js/vue/vant.min.js"></script>
+<script src="./js/util.js"></script>
 <script>
 
   new Vue({
     el: '#app',
+    data: {
+      show:false
+    },
+    methods: {
+      share(){
+
+      }
+    }
   });
 
 

@@ -518,4 +518,11 @@ body {
   margin-bottom: 0.27rem;
   white-space: normal !important;
 }
+.code-shade {
+  height: 100%;
+}
+.code-shade img {
+  width: 200px;
+  height: 200px;
+}
 /*# sourceMappingURL=index.css.map */
