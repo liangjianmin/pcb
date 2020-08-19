@@ -525,6 +525,9 @@ body {
   width: 200px;
   height: 200px;
 }
+.van-image {
+  height: 100%;
+}
 .my-swipe {
   width: 100%;
   height: 100%;
