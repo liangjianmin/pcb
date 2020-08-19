@@ -42,7 +42,16 @@
                 <em class="r"></em>
                 <span>活动</span>
             </div>
-            <div class="ad row rowCenter verCenter">广告位</div>
+            <div class="ad row rowCenter verCenter">
+                <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+                    <van-swipe-item>
+                        <van-image fit="cover" src="https://img.yzcdn.cn/vant/apple-1.jpg" alt="" />
+                    </van-swipe-item>
+                    <van-swipe-item>
+                        <van-image fit="cover" src="https://img.yzcdn.cn/vant/apple-1.jpg" alt="" />
+                    </van-swipe-item>
+                </van-swipe>
+            </div>
         </div>
         <van-overlay :show="show" @click="show = false">
             <div class="code-shade column verCenter rowCenter">
