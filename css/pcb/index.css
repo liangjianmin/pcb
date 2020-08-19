@@ -1686,7 +1686,7 @@ body {
   font-size: 12px;
   color: #5C5F66;
   box-sizing: border-box;
-  padding: 0 10px ;
+  padding: 0 10px;
   height: 100%;
   line-height: 34px;
   background-color: #F7F9FC;
@@ -1723,7 +1723,7 @@ body {
   font-size: 12px;
   color: #5C5F66;
   box-sizing: border-box;
-  padding: 0 10px ;
+  padding: 0 10px;
   height: 100%;
   line-height: 34px;
   background-color: #F7F9FC;
@@ -1872,6 +1872,99 @@ body {
   bottom: 10px;
   font-size: 12px;
   color: #959ba6;
+}
+.pcb .section .pcb-r .freight {
+  margin: 0 20px 0 20px;
+  padding-bottom: 10px;
+}
+.pcb .section .pcb-r .freight .tit .t1 {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.pcb .section .pcb-r .freight .tit .t2 {
+  font-size: 12px;
+  color: #3a3c40;
+}
+.pcb .section .pcb-r .freight .tit a {
+  font-size: 14px;
+  color: #0081D2;
+  text-decoration: underline;
+}
+.pcb .section .pcb-r .freight .address {
+  padding: 5px 0;
+}
+.pcb .section .pcb-r .freight .address .sel {
+  width: 40%;
+}
+.pcb .section .pcb-r .freight .address .sel select,
+.pcb .section .pcb-r .freight .address .sel option {
+  font-size: 14px;
+  color: #3a3c40;
+}
+.pcb .section .pcb-r .freight .freight-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pcb .section .pcb-r .freight .freight-list .a {
+  width: 40%;
+}
+.pcb .section .pcb-r .freight .freight-list .b {
+  width: 30%;
+  padding-left: 32px;
+}
+.pcb .section .pcb-r .freight .freight-list .c {
+  width: 30%;
+}
+.pcb .section .pcb-r .freight .freight-list dt {
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+.pcb .section .pcb-r .freight .freight-list dt span {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.pcb .section .pcb-r .freight .freight-list dd {
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.pcb .section .pcb-r .freight .freight-list dd .box {
+  vertical-align: top;
+  white-space: nowrap;
+}
+.pcb .section .pcb-r .freight .freight-list dd .box .t1 {
+  font-size: 14px;
+  color: #3a3c40;
+  white-space: normal;
+  padding-left: 5px;
+}
+.pcb .section .pcb-r .freight .freight-list dd .box .t2 {
+  color: #E82121;
+  font-size: 12px;
+}
+.pcb .section .pcb-r .freight .freight-list dd .box .t3 {
+  font-size: 12px;
+  color: #3a3c40;
+}
+.pcb .section .pcb-r .freight .freight-list dd .box .circle {
+  width: 10px;
+  height: 10px;
+  padding: 3px;
+  border-radius: 50%;
+  border: 1px solid #C2C7CC;
+  position: relative;
+  cursor: pointer;
+}
+.pcb .section .pcb-r .freight .freight-list dd .box .circle.act {
+  border-color: #0081D2;
+}
+.pcb .section .pcb-r .freight .freight-list dd .box .circle.act i {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #0081D2;
+  border-radius: 50%;
 }
 .pcb .section .pcb-r .gift-div .gift-mark .gift-icon {
   height: 18px;

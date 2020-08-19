@@ -16,17 +16,20 @@
 
 <body>
 <div class="website-tip">
-   <div class="width-1180 tip-wrap">
-       <span>恭喜猎板网于2020.06.18正式上线，当前工厂为试生产阶段为非常规交期，试运营完成后常规交期恢复24小时！欢迎关注</span>
-       <i class="iconfont iconzujiantubiaojiantou10" title="关闭"></i>
-   </div>
+    <div class="width-1180 tip-wrap">
+        <span>恭喜猎板网于2020.06.18正式上线，当前工厂为试生产阶段为非常规交期，试运营完成后常规交期恢复24小时！欢迎关注</span>
+        <i class="iconfont iconzujiantubiaojiantou10" title="关闭"></i>
+    </div>
 </div>
 <!--head-->
 <div class="pcb-head">
     <div class="width-1180 pcb-head-wrap clr">
         <div class="fl l">
             <h2 class="lineBlock va-m"><a href="/"><img src="./images/home/logos.png" alt=""></a></h2>
-            <span class="t1 va-m">PCB打样智能工厂</span>
+            <div class="lineBlock va-m">
+                <p class="t1 va-m">猎芯旗下</p>
+                <span class="t1 va-m">PCB打样智能工厂</span>
+            </div>
             <b class="lineBlock emptys"></b>
         </div>
         <div class="fr r">
@@ -35,12 +38,13 @@
                 <span>周一至周六 09:00-22:00</span>
             </p>
             <p class="lineBlock va-m t1" style="margin-right: 30px">
-                <em>客服QQ：</em>
-                <span>800183356</span>
+                <em>在线客服：</em>
+                <a href="tencent://message/?Menu=yes&uin=800183356&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45" class="iconfont iconzujiantubiaoliwu9 va-m"></a>
+                <!--                <span>800183356</span>-->
             </p>
             <p class="lineBlock va-m t2">
                 <em>服务热线：</em>
-                <span>0571-86609386</span>
+                <span>0571-86609386 15068181342</span>
             </p>
             <b class="lineBlock emptys"></b>
         </div>
@@ -49,11 +53,21 @@
 <div class="home">
     <div class="width-1180 nav-wrap clr">
         <ul class="nav fl">
-            <li class="curr"><a href="">首页</a></li>
-            <li><a href="">PCB快速报价</a></li>
-            <li><a href="">高级PCB报价</a></li>
-            <li><a href="">SMT贴片</a></li>
-            <li><a href="">钢网计价</a></li>
+            <li class="curr"><a href="" class="link">首页</a></li>
+            <li><a class="link" href="">PCB快速报价</a></li>
+            <li><a class="link" href="">客户晒单</a></li>
+            <li><a class="link" href="">制程工艺</a></li>
+            <li><a class="link" href="">新闻资讯</a></li>
+            <li><a class="link" href="">帮助中心</a></li>
+            <li><a class="link" href="">关于我们</a></li>
+            <li>
+                <a class="link" href="">PCB快速报价</a>
+                <i class="iconfont iconzujiantubiaojiantou1"></i>
+                <dl>
+                    <dd><a href="">联系我们</a></dd>
+                    <dd><a href="">联系我们</a></dd>
+                </dl>
+            </li>
         </ul>
         <div class="fr login-bar">
             <!--未登录-->
@@ -124,8 +138,8 @@
                                 <!-- <span class="text va-m" style="margin-left: 7px;color: #959BA6;">*单片(SET)尺寸</span> -->
                             </div>
                             <img src="./images/pcb/wt1.png" alt="" class="wt1">
-                            <a style="color: #0081D2;font-size: 14px;margin-left: 20px;border-bottom: 1px dashed #0081D2;"  target="_blank" href="https://www.pcbhunt.com/faq/19.html" class="lineBlock va-m">下单人员必看</a>
-                           <!-- <p class="tiptext cc-tips">* 尺寸可以精确到2位小数</p>-->
+                            <a style="color: #0081D2;font-size: 14px;margin-left: 20px;border-bottom: 1px dashed #0081D2;" target="_blank" href="https://www.pcbhunt.com/faq/19.html" class="lineBlock va-m">下单人员必看</a>
+                            <!-- <p class="tiptext cc-tips">* 尺寸可以精确到2位小数</p>-->
                         </div>
                         <!--板子数量-->
                         <div class="pcb-block lbBox">
@@ -141,7 +155,7 @@
                                     <span class="text va-m ml10 pcsorset">单片（PCS）</span>
                                     <p class="tiptext lineBlock num-tips va-m">* 此处填拼版后的大片数量。</p>
                                 </div>
-                               
+
                             </div>
                         </div>
                         <!--板子层数-->
@@ -650,7 +664,7 @@
                     </div> -->
                 </form>
             </div>
-                <!-- <div class="fr pcb-r">111</div> -->
+            <!-- <div class="fr pcb-r">111</div> -->
             <div class="fr pcb-r" id="quote-scroll">
                 <div class="pcb-r-box">
                     <p class="tit clr">
@@ -809,9 +823,88 @@
                                     </tr>
                                     </tbody>
                                 </table>
-                            
+
                             </div>
                         </div>
+                    </div>
+                    <div class="freight">
+                        <p class="tit">
+                            <span class="t1">选择快递</span>
+                            <span class="t2">（板子估重：0.24KG）</span>
+                            <a href="">运费预收规则</a>
+                        </p>
+                        <div class="address">
+                            <div class="lineBlock sel">
+                                <select class="lineBlock">
+                                    <option value="">江西省</option>
+                                    <option value="">江西省</option>
+                                    <option value="">江西省</option>
+                                    <option value="">江西省</option>
+                                    <option value="">江西省</option>
+                                </select>
+                            </div>
+                            <div class="lineBlock sel">
+                                <select class="lineBlock">
+                                    <option value="">赣州市</option>
+                                </select>
+                            </div>
+                        </div>
+                        <dl class="freight-list">
+                            <dt class="lbBox">
+                                <span class="lineBlock a">运费预付</span>
+                                <span class="lineBlock b">运费(估计)</span>
+                                <span class="lineBlock c">时效</span>
+                            </dt>
+                            <dd class="lbBox">
+                                <div class="box lineBlock a">
+                                    <span class="circle act lineBlock va-t">
+                                          <i></i>
+                                    </span>
+                                    <span class="t1 lineBlock va-t">顺丰标准快递(时效保证，顺丰空运)</span>
+                                </div>
+                                <div class="box lineBlock b">
+                                    <span class="t2">¥13</span>
+                                </div>
+                                <div class="box lineBlock c">
+                                    <span class="t3">1-2天左右</span>
+                                </div>
+                            </dd>
+                            <dd class="lbBox">
+                                <div class="box lineBlock a">
+                                    <span class="circle  lineBlock va-t">
+                                          <i></i>
+                                    </span>
+                                    <span class="t1 lineBlock va-t">京东特惠快递(小批量性价比)</span>
+                                </div>
+                                <div class="box lineBlock b">
+                                    <span class="t2">¥13</span>
+                                </div>
+                                <div class="box lineBlock c">
+                                    <span class="t3">1-2天左右</span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="freight-list">
+                            <dt class="lbBox">
+                                <span class="lineBlock a">运费到付</span>
+                                <span class="lineBlock b"></span>
+                                <span class="lineBlock c"></span>
+                            </dt>
+                            <dd class="lbBox">
+                                <div class="box lineBlock a">
+                                    <span class="circle lineBlock va-t">
+                                          <i></i>
+                                    </span>
+                                    <span class="t1 lineBlock va-t">顺丰标准快递（运费到付）</span>
+                                </div>
+                                <div class="box lineBlock b">
+                                    <span class="t2">运费贵</span>
+                                </div>
+                                <div class="box lineBlock c">
+                                    <span class="t3">1-2天左右</span>
+                                </div>
+                            </dd>
+                        </dl>
                     </div>
                     <div class="gift-div pcb-r-box">
                         <div class="gift-mark lbBox">
@@ -907,9 +1000,9 @@
         <dt id="backtop">
             <a href="javascript:;">
                 <div class="iconfont iconzujiantubiaojiantou2">
-                   
-                </div>        
-             </a>
+
+                </div>
+            </a>
         </dt>
     </dl>
 </div>
@@ -1089,7 +1182,7 @@
             <div class="pcb-way-layer-wrap lineBlock va-m">
                 <div class="pcb-way-inp lbBox" id="pcb_qty_layer">
                     <div class="txt-wrap">
-                        <input type="text" placeholder="请输入拼板数量" class="w1" name="pcb_num" readonly="readonly" />
+                        <input type="text" placeholder="请输入拼板数量" class="w1" name="pcb_num" readonly="readonly"/>
                     </div>
                 </div>
             </div>
@@ -1258,6 +1351,13 @@
         move: false,
         content: img,
       });
+    });
+
+
+    //运费预付
+    $(document).on('click', '.circle ', function () {
+      $(".freight-list").find('.circle').removeClass('act');
+      $(this).addClass('act');
     });
 
 
