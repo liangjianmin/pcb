@@ -467,6 +467,23 @@
             }
 
           }
+
+          .pcb-textarea{
+            width:590px;
+            height:80px;
+            border-radius:2px;
+            border:1px solid #E6EAF2;
+            box-sizing: border-box;
+            textarea{
+              width: 568px;
+              padding: 15px 10px;
+              resize: none;
+              font-size: 14px;
+              &::-webkit-input-placeholder{
+                color: #959ba6;
+              }
+            }
+          }
         }
       }
 
@@ -669,477 +686,320 @@
 
     .pcb-r {
       width: 380px;
-      background: #FFFFFF;
-      box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
       border-radius: 2px;
       overflow-x: hidden;
       overflow-y: auto;
 
-      .pcb-r-box {
-        width: 340px;
-        margin: 0 20px 0 20px;
-        border-bottom: 1px dashed #E6EAF2;
-        padding-top: 20px;
+      .psb-submit-box {
+        padding: 17px 20px 20px 20px;
+        background: #ffffff;
 
-        &.price-r-box, &.textarea-box, &.gift-div {
-          border: none;
-          padding-top: 0;
-        }
+        .pcb-param {
+          padding-bottom: 16px;
+          border-bottom: 1px dashed #E6EAF2;
 
-        .tit {
-          margin-bottom: 5px;
+          .pcb-title {
+            margin-bottom: 10px;
 
-          .l {
-            padding-bottom: 10px;
-            position: relative;
-            font-size: 14px;
-            color: #3a3c40;
-            font-weight: bold;
+            .l {
+              font-size: 14px;
+              color: #3a3c40;
+              font-weight: bold;
+              line-height: 26px;
+              display: block;
+            }
 
-            // &:after {
-            //   width: 30px;
-            //   height: 5px;
-            //   background: rgba(0, 129, 210, 1);
-            //   position: absolute;
-            //   left: 0;
-            //   bottom: 0;
-            //   content: '';
-            //   z-index: 1;
-            // }
+            .r {
+              line-height: 26px;
+
+              .t1 {
+                font-size: 12px;
+                color: #0081d2;
+                margin-right: 20px;
+              }
+
+              .shrink {
+                font-size: 12px;
+                color: #959BA6;
+
+                .arrow-icon {
+                  height: 20px;
+                  width: 20px;
+                  background: url(../../images/pcb/arrow-b.png) no-repeat center;
+                  background-size: cover;
+                }
+
+                &.curr{
+                  .arrow-icon{
+                    background: url(../../images/pcb/arrow-t.png) no-repeat center;
+                    background-size: cover;
+                  }
+                }
+              }
+            }
           }
 
-          .shrink1 {
-            margin-top: 6px;
-            font-size: 12px;
-            color: #0081d2;
+          .detail-wrap {
+            width: 340px;
+            border-collapse: collapse;
+            border: 1px solid #E6EAF2;
+
+            tr {
+              .bor {
+                border-right: 1px solid #E6EAF2;
+              }
+
+              td {
+                height: 34px;
+                border-bottom: 1px solid #E6EAF2;
+                white-space: nowrap;
+
+                &.bornone {
+                  border-bottom: none;
+                }
+
+                .t1 {
+                  width: 68px;
+                  font-size: 12px;
+                  color: #5C5F66;
+                  box-sizing: border-box;
+                  padding: 0 10px;
+                  height: 100%;
+                  line-height: 34px;
+                  background-color: #F7F9FC;
+
+                }
+
+                .t2 {
+                  font-size: 12px;
+                  color: #3a3c40;
+                  width: 92px;
+                  overflow: hidden;
+                  display: inline-block;
+                  text-overflow: ellipsis;
+                  vertical-align: middle;
+                  box-sizing: border-box;
+                  padding: 0 10px;
+                }
+
+              }
+              &:nth-of-type(n+4) {
+                display: none;
+              }
+            }
           }
 
-          .shrink {
-            font-size: 12px;
-            color: #959BA6;
+          .pcb-param-more {
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+
+            span {
+              color: #959ba6;
+              font-size: 12px;
+            }
 
             .arrow-icon {
               height: 20px;
               width: 20px;
-
-              &.arrow-b {
-                background: url('../../images/pcb/arrow-b.png');
-              }
-
-              &.arrow-t {
-                background: url('../../images/pcb/arrow-t.png');
-              }
-
-              background-repeat: no-repeat;
-              background-size: 100% 100%;
+              background: url(../../images/pcb/arrow-b.png) no-repeat center;
+              background-size: cover;
             }
           }
         }
 
-        .cost {
-          .cost-origin-price {
-            font-size: 14px;
-            color: #5C5F66;
-            padding-bottom: 10px;
+        .pcb-price {
+          padding-top: 15px;
+          padding-bottom: 16px;
+          border-bottom: 1px dashed #E6EAF2;
 
-            .origin-text {
-              text-decoration: line-through;
-            }
-          }
+          .pcb-title {
+            margin-bottom: 10px;
 
-          .cost-tit {
-            padding: 0 0 15px;
-
-            .t3 {
+            .l {
               font-size: 14px;
-              color: #5C5F66;
-              text-align: left;
-            }
-
-            .t4 {
-              font-size: 20px;
-              color: #e82121;
+              color: #3a3c40;
               font-weight: bold;
-              text-align: right;
+              line-height: 26px;
+              display: block;
             }
 
-          }
-
-          .detail-wrap {
-            width: 340px;
-            border-collapse: collapse;
-            border: 1px solid #E6EAF2;
-            margin-bottom: 20px;
-
-            tr {
-              .bor {
-                border-right: 1px solid #E6EAF2;
-              }
-
-              td {
-                height: 34px;
-                border-bottom: 1px solid #E6EAF2;
-                white-space: nowrap;
-
-                &.bornone {
-                  border-bottom: none;
-                }
-
-                .t1 {
-                  width: 68px;
-                  font-size: 12px;
-                  color: #5C5F66;
-                  box-sizing: border-box;
-                  padding: 0 10px;
-                  height: 100%;
-                  line-height: 34px;
-                  background-color: #F7F9FC;
-
-                }
-
-                .t2 {
-                  font-size: 12px;
-                  color: #3a3c40;
-                  // max-width: 92px;
-                  width: 92px;
-                  overflow: hidden;
-                  display: inline-block;
-                  text-overflow: ellipsis;
-                  vertical-align: middle;
-                  box-sizing: border-box;
-                  padding: 0 10px;
-                }
-              }
-            }
-          }
-        }
-
-        .detail {
-          .detail-wrap {
-            width: 340px;
-            border-collapse: collapse;
-            border: 1px solid #E6EAF2;
-
-            tr {
-              .bor {
-                border-right: 1px solid #E6EAF2;
-              }
-
-              td {
-                height: 34px;
-                border-bottom: 1px solid #E6EAF2;
-                white-space: nowrap;
-
-                &.bornone {
-                  border-bottom: none;
-                }
-
-                .t1 {
-                  width: 68px;
-                  font-size: 12px;
-                  color: #5C5F66;
-                  box-sizing: border-box;
-                  padding: 0 10px;
-                  height: 100%;
-                  line-height: 34px;
-                  background-color: #F7F9FC;
-
-                }
-
-                .t2 {
-                  font-size: 12px;
-                  color: #3a3c40;
-                  // max-width: 92px;
-                  width: 92px;
-                  overflow: hidden;
-                  display: inline-block;
-                  text-overflow: ellipsis;
-                  vertical-align: middle;
-                  box-sizing: border-box;
-                  padding: 0 10px;
-                }
-              }
-            }
-          }
-
-          .table-tips {
-            color: #959BA6;
-            font-size: 12px;
-            padding: 10px 0 20px;
-          }
-        }
-      }
-
-      .pcb-r-boxs {
-        width: 340px;
-        padding: 20px 20px 20px 20px;
-
-        .timebor {
-          border-bottom: none;
-          padding-bottom: 0 !important;
-        }
-
-        .tit {
-          margin-bottom: 10px;
-
-          .l {
-            position: relative;
-            font-size: 14px;
-            color: #3a3c40;
-            font-weight: bold;
-
-            // &:after {
-            //   width: 30px;
-            //   height: 5px;
-            //   background: rgba(0, 129, 210, 1);
-            //   position: absolute;
-            //   left: 0;
-            //   bottom: 0;
-            //   content: '';
-            //   z-index: 1;
-            // }
-          }
-
-          .shrink {
-            margin-top: 6px;
-            font-size: 12px;
-            color: #0081d2;
-          }
-        }
-
-        .delivery {
-          ul {
-            // margin-top: 15px;
-            // margin-bottom: 15px;
-            background-color: #F7F9FC;
-            padding: 5px 10px;
-
-            li {
-              &:first-child {
-                margin-right: 59px;
-              }
+            .r {
+              line-height: 26px;
 
               .t1 {
+                font-size: 12px;
+                color: #0081d2;
+                margin-right: 20px;
+              }
+
+              .shrink {
+                font-size: 12px;
+                color: #959BA6;
+
+                .arrow-icon {
+                  height: 20px;
+                  width: 20px;
+                  background: url(../../images/pcb/arrow-b.png) no-repeat center;
+                  background-size: cover;
+                }
+                &.curr{
+                  .arrow-icon{
+                    background: url(../../images/pcb/arrow-t.png) no-repeat center;
+                    background-size: cover;
+                  }
+                }
+              }
+            }
+          }
+
+          .detail {
+            li {
+              margin-bottom: 12px;
+
+              .l {
                 font-size: 14px;
                 color: #5c5f66;
               }
 
-              .t2 {
+              .r {
+                .t1 {
+                  font-size: 14px;
+                  color: #0081d2;
+                  font-weight: bold;
+                }
+
+                .t2 {
+                  font-size: 14px;
+                  color: #5c5f66;
+                }
+
+                .t3 {
+                  font-size: 20px;
+                  color: #e82121;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+
+          .detail-wrap {
+            width: 340px;
+            border-collapse: collapse;
+            border: 1px solid #E6EAF2;
+
+            tr {
+              .bor {
+                border-right: 1px solid #E6EAF2;
+              }
+
+              td {
+                height: 34px;
+                border-bottom: 1px solid #E6EAF2;
+                white-space: nowrap;
+
+                &.bornone {
+                  border-bottom: none;
+                }
+
+                .t1 {
+                  width: 68px;
+                  font-size: 12px;
+                  color: #5C5F66;
+                  box-sizing: border-box;
+                  padding: 0 10px;
+                  height: 100%;
+                  line-height: 34px;
+                  background-color: #F7F9FC;
+
+                }
+
+                .t2 {
+                  font-size: 12px;
+                  color: #3a3c40;
+                  // max-width: 92px;
+                  width: 92px;
+                  overflow: hidden;
+                  display: inline-block;
+                  text-overflow: ellipsis;
+                  vertical-align: middle;
+                  box-sizing: border-box;
+                  padding: 0 10px;
+                }
+              }
+            }
+          }
+
+          .promotion {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #e89721;
+          }
+        }
+
+        .pcb-delivery {
+          margin-top: 15px;
+
+          .pcb-title {
+            .l {
+              span {
                 font-size: 14px;
-                color: #0081D2;
+                color: #3a3c40;
                 font-weight: bold;
               }
-            }
-          }
 
-          .text {
-            font-size: 12px;
-            color: #5c5f66;
-            white-space: nowrap;
-            margin-bottom: 10px;
-
-            .t1 {
-              width: 290px;
-              white-space: normal;
-            }
-          }
-        }
-
-        .logistics {
-          margin-top: 20px;
-
-          .select-box {
-            margin-bottom: 13px;
-
-            .sel {
-              width: 160px;
-              height: 40px;
-              padding-left: 10px;
-              line-height: 40px;
-              border-radius: 2px;
-              border: 1px solid #E6EAF2;
-              font-size: 14px;
-              color: #3a3c40;
-              cursor: pointer;
-            }
-          }
-
-          .text {
-            margin-bottom: 20px;
-
-            .t1 {
-              font-size: 14px;
-              color: #5c5f66;
-            }
-
-            .t2 {
-              font-size: 14px;
-              color: #3a3c40;
-              font-weight: bold;
-            }
-
-            .t3 {
-              font-size: 14px;
-              color: #e82121;
-              font-weight: bold;
-            }
-
-            .im {
-              width: 120px;
-              height: 40px;
-            }
-          }
-        }
-
-
-      }
-
-      .btn {
-        width: 380px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        background: #0081D2;
-        box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
-        border-radius: 2px;
-        font-size: 14px;
-        font-weight: bold;
-        color: #ffffff;
-        display: block;
-
-        &:hover {
-          background: #0090EB;
-        }
-      }
-
-      .textarea-box {
-        .textarea {
-          position: relative;
-
-          textarea {
-            width: 318px;
-            height: 48px;
-            border-radius: 2px;
-            border: 1px solid #E6EAF2;
-            padding: 15px 10px;
-            background: #F9F8FD;
-            font-size: 13px;
-            resize: none;
-            transition: all 0.2s ease;
-
-            &:focus {
-              background: #ffffff;
-              // border: 1px solid #0081D2;
-            }
-
-            &::-webkit-input-placeholder {
-              color: #959ba6;
-            }
-          }
-
-          span {
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
-            font-size: 12px;
-            color: #959ba6;
-          }
-        }
-      }
-
-      .freight {
-        margin: 0 20px 0 20px;
-        padding-bottom: 10px;
-
-        .tit {
-          .t1 {
-            font-size: 16px;
-            color: #3a3c40;
-            font-weight: bold;
-          }
-
-          .t2 {
-            font-size: 12px;
-            color: #3a3c40;
-          }
-          a{
-            font-size: 14px;
-            color: #0081D2;
-            text-decoration: underline;
-          }
-        }
-
-        .address{
-          padding: 5px 0;
-          .sel{
-            width: 40%;
-            select,option{
-              font-size: 14px;
-              color: #3a3c40;
-            }
-          }
-        }
-
-        .freight-list {
-          margin-top: 10px;
-          margin-bottom: 10px;
-
-          .a {
-            width: 40%;
-          }
-
-          .b {
-            width: 30%;
-            padding-left: 32px;
-          }
-
-          .c {
-            width: 30%;
-          }
-
-          dt {
-            margin-bottom: 10px;
-            white-space: nowrap;
-
-            span {
-              font-size: 14px;
-              color: #3a3c40;
-              font-weight: bold;
-            }
-          }
-
-          dd {
-            white-space: nowrap;
-            margin-bottom: 10px;
-
-            .box {
-              vertical-align: top;
-              white-space: nowrap;
-
-              .t1 {
-                font-size: 14px;
-                color: #3a3c40;
-                white-space: normal;
-                padding-left: 5px;
-              }
-
-              .t2 {
-                color: #E82121;
+              em {
+                margin-left: 8px;
                 font-size: 12px;
+                color: #959ba6;
+              }
+            }
+
+            .r {
+              .mr {
+                margin-right: 4px;
               }
 
-              .t3 {
+              select {
+                min-width: 86px;
+                height: 25px;
+                line-height: 25px;
+                padding: 0 10px;
+                border-radius: 2px;
+                border: 1px solid #E6EAF2;
                 font-size: 12px;
                 color: #3a3c40;
               }
+            }
+          }
+
+          .list {
+            margin-top: 14px;
+
+            .w1{
+              width: 200px;
+            }
+            .w2{
+              width: 77px;
+            }
+
+            dt {
+              margin-bottom: 12px;
+              span {
+                font-size: 12px;
+                color: #959ba6;
+              }
+            }
+
+            dd {
+              margin-bottom: 12px;
 
               .circle {
-                width: 10px;
-                height: 10px;
+                width: 12px;
+                height: 12px;
                 padding: 3px;
-                border-radius: 50%;
-                border: 1px solid #C2C7CC;
-                position: relative;
+                border-radius: 18px;
+                border: 1px solid #ACB3BF;
                 cursor: pointer;
 
                 &.act {
@@ -1147,71 +1007,99 @@
 
                   i {
                     display: block;
-                    width: 10px;
-                    height: 10px;
+                    width: 12px;
+                    height: 12px;
                     background: #0081D2;
-                    border-radius: 50%;
+                    border-radius: 12px;
                   }
                 }
+              }
+
+              .c1{
+                font-size: 12px;
+                color: #5c5f66;
+                margin-right: 6px;
+                margin-left: 4px;
+              }
+              .c2{
+                padding: 0 3px;
+                height:16px;
+                line-height: 16px;
+                text-align: center;
+                background:#0081D2;
+                border-radius:2px;
+                font-size: 12px;
+                color: #FFFFFF;
+              }
+
+              .t1 {
+                font-size: 12px;
+                color: #5c5f66;
+              }
+
+              &:nth-of-type(n+3) {
+                display: none;
+              }
+            }
+          }
+
+          .pcb-delivery-more {
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+
+            span {
+              color: #959ba6;
+              font-size: 12px;
+            }
+
+            .arrow-icon {
+              height: 20px;
+              width: 20px;
+              background: url(../../images/pcb/arrow-b.png) no-repeat center;
+              background-size: cover;
+            }
+
+            &.curr{
+              .arrow-icon{
+                background: url(../../images/pcb/arrow-t.png) no-repeat center;
+                background-size: cover;
               }
             }
           }
         }
       }
-
-
-      .gift-div {
-        .gift-mark {
-          .gift-icon {
-            height: 18px;
-            width: 18px;
-            background: url('../../images/pcb/gift.png') no-repeat;
-            background-size: 100% 100%;
-          }
-
-          .text {
-            color: #E82121;
-            font-size: 14px;
-            font-weight: 600;
-            margin-left: 6px;
-          }
-        }
-
-        p {
-          color: #E82121;
-          font-size: 12px;
-          padding: 7px 0 25px;
-          line-height: 17px;
-        }
-      }
-
-      .warn-div {
-        padding: 20px 20px 20px 20px;
-
-        .warn-title {
-          span {
-            font-size: 14px;
-            color: #5C5F66;
-            font-weight: 600;
-          }
-
-          .warn-icon {
-            height: 18px;
-            width: 18px;
-            background: url('../../images/pcb/warn-icon.png') no-repeat;
-            background-size: 100% 100%;
-            margin-right: 6px;
-          }
-        }
-
-        .warn-tips {
-          margin-top: 6px;
-          font-size: 12px;
-          color: #959BA6
-        }
-      }
     }
   }
+
+  .btn {
+    width: 380px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #0081D2;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+
+    &:hover {
+      background: #0090EB;
+    }
+  }
+
+  .tip {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #959ba6;
+
+    a {
+      margin-left: 8px;
+      color: #e89721;
+    }
+  }
+
+
 }
 
 .board-up-layer {
