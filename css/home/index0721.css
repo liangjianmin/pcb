@@ -2096,6 +2096,13 @@ body {
   font-size: 16px;
   color: #959BA6;
 }
+.home-section .evaluate-section .list-pic .bd ul li a .text .text-bottom .text-bottom-r .praise-div .icon.curr {
+  color: #0081D2;
+}
+.home-section .evaluate-section .list-pic .bd ul li a .text .text-bottom .text-bottom-r .praise-div .bb {
+  font-size: 12px;
+  color: #959BA6;
+}
 .home-section .news-questions-section {
   padding: 50px 0 40px;
 }
