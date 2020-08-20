@@ -1764,6 +1764,7 @@ body {
 .pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .r .t2 {
   font-size: 14px;
   color: #5c5f66;
+  text-decoration: line-through;
 }
 .pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .r .t3 {
   font-size: 20px;
