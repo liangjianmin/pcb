@@ -2609,4 +2609,15 @@ label .iconiconfontquestion .arrow-tips .tips {
   height: 28px !important;
   line-height: 28px !important;
 }
+.pcb-ad {
+  background: #F7F9FC;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pcb-ad img {
+  width: 1180px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=index.css.map */
