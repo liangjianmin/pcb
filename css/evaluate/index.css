@@ -1668,6 +1668,23 @@ body {
 .evaluate-page .evaluate-page-list ul li a .text .star dd.default {
   color: #afb2bc;
 }
+.evaluate-page .evaluate-page-list ul li a .text .icon-box {
+  margin-top: 5px;
+  text-align: right;
+}
+.evaluate-page .evaluate-page-list ul li a .text .icon-box .icon {
+  font-size: 16px;
+  color: #959BA6;
+  vertical-align: middle;
+}
+.evaluate-page .evaluate-page-list ul li a .text .icon-box .icon.curr {
+  color: #0081D2;
+}
+.evaluate-page .evaluate-page-list ul li a .text .icon-box span {
+  vertical-align: middle;
+  font-size: 12px;
+  color: #959BA6;
+}
 .evaluate-page-detail {
   background: #F7F9FC;
   padding: 22px 0 70px 0;
@@ -1809,5 +1826,22 @@ body {
 }
 .evaluate-page-detail .wrap .list li a .text .star dd.default {
   color: #afb2bc;
+}
+.evaluate-page-detail .wrap .list li a .text .icon-box {
+  margin-top: 5px;
+  text-align: right;
+}
+.evaluate-page-detail .wrap .list li a .text .icon-box .icon {
+  font-size: 16px;
+  color: #959BA6;
+  vertical-align: middle;
+}
+.evaluate-page-detail .wrap .list li a .text .icon-box .icon.curr {
+  color: #0081D2;
+}
+.evaluate-page-detail .wrap .list li a .text .icon-box span {
+  vertical-align: middle;
+  font-size: 12px;
+  color: #959BA6;
 }
 /*# sourceMappingURL=index.css.map */
