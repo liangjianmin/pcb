@@ -1624,20 +1624,20 @@ body {
 .evaluate-page .evaluate-page-list ul li a {
   display: block;
 }
-.evaluate-page .evaluate-page-list ul li a .pic {
+.evaluate-page .evaluate-page-list ul li .pic {
   width: 280px;
   height: 220px;
   overflow: hidden;
 }
-.evaluate-page .evaluate-page-list ul li a .pic img {
+.evaluate-page .evaluate-page-list ul li .pic img {
   width: 280px;
   height: 220px;
 }
-.evaluate-page .evaluate-page-list ul li a .text {
+.evaluate-page .evaluate-page-list ul li .text {
   padding: 20px 20px 30px 20px;
   background: #ffffff;
 }
-.evaluate-page .evaluate-page-list ul li a .text .t1 {
+.evaluate-page .evaluate-page-list ul li .text .t1 {
   font-size: 14px;
   color: #5c5f66;
   margin-bottom: 30px;
@@ -1650,37 +1650,37 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.evaluate-page .evaluate-page-list ul li a .text .t2 {
+.evaluate-page .evaluate-page-list ul li .text .t2 {
   font-size: 14px;
   color: #3a3c40;
   margin-bottom: 6px;
 }
-.evaluate-page .evaluate-page-list ul li a .text .t3 {
+.evaluate-page .evaluate-page-list ul li .text .t3 {
   font-size: 12px;
   color: #959BA6;
 }
-.evaluate-page .evaluate-page-list ul li a .text .star dd {
+.evaluate-page .evaluate-page-list ul li .text .star dd {
   float: left;
   font-size: 16px;
   color: #ea9621;
   margin-right: 5px;
 }
-.evaluate-page .evaluate-page-list ul li a .text .star dd.default {
+.evaluate-page .evaluate-page-list ul li .text .star dd.default {
   color: #afb2bc;
 }
-.evaluate-page .evaluate-page-list ul li a .text .icon-box {
+.evaluate-page .evaluate-page-list ul li .text .icon-box {
   margin-top: 5px;
   text-align: right;
 }
-.evaluate-page .evaluate-page-list ul li a .text .icon-box .icon {
+.evaluate-page .evaluate-page-list ul li .text .icon-box .icon {
   font-size: 16px;
   color: #959BA6;
   vertical-align: middle;
 }
-.evaluate-page .evaluate-page-list ul li a .text .icon-box .icon.curr {
+.evaluate-page .evaluate-page-list ul li .text .icon-box .icon.curr {
   color: #0081D2;
 }
-.evaluate-page .evaluate-page-list ul li a .text .icon-box span {
+.evaluate-page .evaluate-page-list ul li .text .icon-box span {
   vertical-align: middle;
   font-size: 12px;
   color: #959BA6;
@@ -1782,21 +1782,21 @@ body {
 .evaluate-page-detail .wrap .list li a {
   display: block;
 }
-.evaluate-page-detail .wrap .list li a .pic {
+.evaluate-page-detail .wrap .list li .pic {
   position: relative;
   width: 280px;
   height: 220px;
   overflow: hidden;
 }
-.evaluate-page-detail .wrap .list li a .pic img {
+.evaluate-page-detail .wrap .list li .pic img {
   width: 280px;
   height: 220px;
 }
-.evaluate-page-detail .wrap .list li a .text {
+.evaluate-page-detail .wrap .list li .text {
   padding: 20px 20px 30px 20px;
   background: #ffffff;
 }
-.evaluate-page-detail .wrap .list li a .text .t1 {
+.evaluate-page-detail .wrap .list li .text .t1 {
   height: 40px;
   font-size: 14px;
   color: #5c5f66;
@@ -1809,37 +1809,37 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.evaluate-page-detail .wrap .list li a .text .t2 {
+.evaluate-page-detail .wrap .list li .text .t2 {
   font-size: 14px;
   color: #3a3c40;
   margin-bottom: 6px;
 }
-.evaluate-page-detail .wrap .list li a .text .t3 {
+.evaluate-page-detail .wrap .list li .text .t3 {
   font-size: 12px;
   color: #959BA6;
 }
-.evaluate-page-detail .wrap .list li a .text .star dd {
+.evaluate-page-detail .wrap .list li .text .star dd {
   float: left;
   font-size: 16px;
   color: #ea9621;
   margin-right: 5px;
 }
-.evaluate-page-detail .wrap .list li a .text .star dd.default {
+.evaluate-page-detail .wrap .list li .text .star dd.default {
   color: #afb2bc;
 }
-.evaluate-page-detail .wrap .list li a .text .icon-box {
+.evaluate-page-detail .wrap .list li .text .icon-box {
   margin-top: 5px;
   text-align: right;
 }
-.evaluate-page-detail .wrap .list li a .text .icon-box .icon {
+.evaluate-page-detail .wrap .list li .text .icon-box .icon {
   font-size: 16px;
   color: #959BA6;
   vertical-align: middle;
 }
-.evaluate-page-detail .wrap .list li a .text .icon-box .icon.curr {
+.evaluate-page-detail .wrap .list li .text .icon-box .icon.curr {
   color: #0081D2;
 }
-.evaluate-page-detail .wrap .list li a .text .icon-box span {
+.evaluate-page-detail .wrap .list li .text .icon-box span {
   vertical-align: middle;
   font-size: 12px;
   color: #959BA6;

@@ -2000,20 +2000,20 @@ body {
 .home-section .evaluate-section .list-pic .bd ul li a {
   display: block;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .pic {
+.home-section .evaluate-section .list-pic .bd ul li .pic {
   width: 280px;
   height: 180px;
   overflow: hidden;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .pic img {
+.home-section .evaluate-section .list-pic .bd ul li .pic img {
   width: 280px;
   height: 220px;
   transition: all 0.2s ease;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .pic:hover img {
+.home-section .evaluate-section .list-pic .bd ul li .pic:hover img {
   transform: scale(1.1);
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text {
+.home-section .evaluate-section .list-pic .bd ul li .text {
   background: #ffffff;
   height: 173px;
   border-radius: 10px 10px 0px 0px;
@@ -2023,83 +2023,82 @@ body {
   box-sizing: border-box;
   padding: 0 30px;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-top {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-top {
   padding-top: 20px;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-top .im {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-top .im {
   width: 36px;
   height: 36px;
   margin-right: 10px;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-top .im img {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-top .im img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-top-l .icon {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-top-l .icon {
   font-size: 36px;
   color: #959BA6;
   margin-right: 10px;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-top-l .username {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-top-l .username {
   font-size: 14px;
   font-weight: 600;
   color: #3A3C40;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-top-l .address {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-top-l .address {
   font-size: 12px;
   color: #959BA6;
   margin-top: 2px;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-top-r {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-top-r {
   padding-top: 8px;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-top-r .icon {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-top-r .icon {
   font-size: 14px;
   color: #E89721;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-top-r .default {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-top-r .default {
   color: #afb2bc;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-center {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-center {
   font-size: 12px;
   color: #5C5F66;
   line-height: 17px;
   padding: 13px 0;
   height: 74px;
   box-sizing: border-box;
-  text-overflow: -o-ellipsis-lastline;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-bottom .text-bottom-l {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-bottom .text-bottom-l {
   font-size: 12px;
   color: #959BA6;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-bottom .text-bottom-r .see-div {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-bottom .text-bottom-r .see-div {
   color: #959BA6;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-bottom .text-bottom-r .see-div .icon {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-bottom .text-bottom-r .see-div .icon {
   font-size: 16px;
   vertical-align: sub;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-bottom .text-bottom-r .see-div span {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-bottom .text-bottom-r .see-div span {
   font-size: 12px;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-bottom .text-bottom-r .praise-div {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-bottom .text-bottom-r .praise-div {
   margin-left: 10px;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-bottom .text-bottom-r .praise-div .icon {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-bottom .text-bottom-r .praise-div .icon {
   font-size: 16px;
   color: #959BA6;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-bottom .text-bottom-r .praise-div .icon.curr {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-bottom .text-bottom-r .praise-div .icon.curr {
   color: #0081D2;
 }
-.home-section .evaluate-section .list-pic .bd ul li a .text .text-bottom .text-bottom-r .praise-div .bb {
+.home-section .evaluate-section .list-pic .bd ul li .text .text-bottom .text-bottom-r .praise-div .bb {
   font-size: 12px;
   color: #959BA6;
 }
