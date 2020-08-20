@@ -887,6 +887,7 @@ body {
   font-size: 14px;
   color: #666666;
   margin-right: 13px;
+  white-space: nowrap;
 }
 .selects-qty .wrap .inp {
   width: 158px;
@@ -1765,8 +1766,10 @@ body {
   display: block;
 }
 .evaluate-page-detail .wrap .list li a .pic {
+  position: relative;
   width: 280px;
   height: 220px;
+  overflow: hidden;
 }
 .evaluate-page-detail .wrap .list li a .pic img {
   width: 280px;
@@ -1777,6 +1780,7 @@ body {
   background: #ffffff;
 }
 .evaluate-page-detail .wrap .list li a .text .t1 {
+  height: 40px;
   font-size: 14px;
   color: #5c5f66;
   margin-bottom: 30px;
