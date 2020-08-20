@@ -597,7 +597,8 @@
                                 </div>
                             </span></label>
                             <div class="pcb-textarea lineBlock va-t">
-                                <textarea placeholder="请在此填写该PCB的详细信息，以方便我们理解您的需求"></textarea>
+                                <textarea id="txtCustomNote" placeholder="请在此填写该PCB的详细信息，以方便我们理解您的需求"></textarea>
+                                <span class="limitWords">0/200</span>
                             </div>
                         </div>
                     </div>
@@ -1355,6 +1356,18 @@
       $(this).addClass('act');
     });
 
+    //控制文字输入字数
+    $("#txtCustomNote").on('input  propertychange', function () {
+      var val = $(this).val();
+      if (val) {
+        if (val.length > 200) {
+          $(this).val($(this).val().substring(0, 200));
+          $(".limitWords").text('50/50');
+        } else {
+          $(".limitWords").text(val.length + '/200');
+        }
+      }
+    });
 
   })
 </script>

@@ -1435,6 +1435,7 @@ body {
 }
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-textarea,
 .pcb .section .pcb-l .pcb-bz .pcb-block .pcb-textarea {
+  position: relative;
   width: 590px;
   height: 80px;
   border-radius: 2px;
@@ -1451,6 +1452,15 @@ body {
 .pcb .section .pcb-l .pcb-box .pcb-block .pcb-textarea textarea::-webkit-input-placeholder,
 .pcb .section .pcb-l .pcb-bz .pcb-block .pcb-textarea textarea::-webkit-input-placeholder {
   color: #959ba6;
+}
+.pcb .section .pcb-l .pcb-box .pcb-block .pcb-textarea .limitWords,
+.pcb .section .pcb-l .pcb-bz .pcb-block .pcb-textarea .limitWords {
+  font-size: 12px;
+  color: #959ba6;
+  position: absolute;
+  right: 14px;
+  bottom: 9px;
+  z-index: 1;
 }
 .pcb .section .pcb-l .pcb-block-slideup {
   padding: 20px 30px 30px 30px;
