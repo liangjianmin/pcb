@@ -1583,6 +1583,9 @@ body {
   font-size: 14px;
   color: #ffffff;
 }
+.evaluate-page {
+  background: #F7F9FC;
+}
 .evaluate-page .evaluate-page-head {
   width: 100%;
   height: 260px;
@@ -1613,75 +1616,116 @@ body {
   width: 1216px;
 }
 .evaluate-page .evaluate-page-list ul li {
+  position: relative;
   float: left;
-  height: 383px;
+  height: 330px;
   margin-right: 20px;
-  margin-bottom: 30px;
-}
-.evaluate-page .evaluate-page-list ul li:nth-of-type(4n) {
-  margin-right: 0;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+  width: 280px;
 }
 .evaluate-page .evaluate-page-list ul li a {
   display: block;
 }
 .evaluate-page .evaluate-page-list ul li .pic {
   width: 280px;
-  height: 220px;
+  height: 180px;
   overflow: hidden;
 }
 .evaluate-page .evaluate-page-list ul li .pic img {
   width: 280px;
   height: 220px;
+  transition: all 0.2s ease;
+}
+.evaluate-page .evaluate-page-list ul li .pic:hover img {
+  transform: scale(1.1);
 }
 .evaluate-page .evaluate-page-list ul li .text {
-  padding: 20px 20px 30px 20px;
   background: #ffffff;
+  height: 173px;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  z-index: 2;
+  top: -20px;
+  box-sizing: border-box;
+  padding: 0 30px;
 }
-.evaluate-page .evaluate-page-list ul li .text .t1 {
+.evaluate-page .evaluate-page-list ul li .text .text-top {
+  padding-top: 20px;
+}
+.evaluate-page .evaluate-page-list ul li .text .text-top .im {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+.evaluate-page .evaluate-page-list ul li .text .text-top .im img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.evaluate-page .evaluate-page-list ul li .text .text-top-l .icon {
+  font-size: 36px;
+  color: #959BA6;
+  margin-right: 10px;
+}
+.evaluate-page .evaluate-page-list ul li .text .text-top-l .username {
   font-size: 14px;
-  color: #5c5f66;
-  margin-bottom: 30px;
-  width: 240px;
-  height: 38px;
-  white-space: normal;
-  display: -webkit-box;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  font-weight: 600;
+  color: #3A3C40;
+}
+.evaluate-page .evaluate-page-list ul li .text .text-top-l .address {
+  font-size: 12px;
+  color: #959BA6;
+  margin-top: 2px;
+}
+.evaluate-page .evaluate-page-list ul li .text .text-top-r {
+  padding-top: 8px;
+}
+.evaluate-page .evaluate-page-list ul li .text .text-top-r .icon {
+  font-size: 14px;
+  color: #E89721;
+}
+.evaluate-page .evaluate-page-list ul li .text .text-top-r .default {
+  color: #afb2bc;
+}
+.evaluate-page .evaluate-page-list ul li .text .text-center {
+  font-size: 12px;
+  color: #5C5F66;
+  line-height: 17px;
+  padding: 13px 0;
+  height: 74px;
+  box-sizing: border-box;
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
-.evaluate-page .evaluate-page-list ul li .text .t2 {
-  font-size: 14px;
-  color: #3a3c40;
-  margin-bottom: 6px;
-}
-.evaluate-page .evaluate-page-list ul li .text .t3 {
+.evaluate-page .evaluate-page-list ul li .text .text-bottom .text-bottom-l {
   font-size: 12px;
   color: #959BA6;
 }
-.evaluate-page .evaluate-page-list ul li .text .star dd {
-  float: left;
+.evaluate-page .evaluate-page-list ul li .text .text-bottom .text-bottom-r .see-div {
+  color: #959BA6;
+}
+.evaluate-page .evaluate-page-list ul li .text .text-bottom .text-bottom-r .see-div .icon {
   font-size: 16px;
-  color: #ea9621;
-  margin-right: 5px;
+  vertical-align: sub;
 }
-.evaluate-page .evaluate-page-list ul li .text .star dd.default {
-  color: #afb2bc;
+.evaluate-page .evaluate-page-list ul li .text .text-bottom .text-bottom-r .see-div span {
+  font-size: 12px;
 }
-.evaluate-page .evaluate-page-list ul li .text .icon-box {
-  margin-top: 5px;
-  text-align: right;
+.evaluate-page .evaluate-page-list ul li .text .text-bottom .text-bottom-r .praise-div {
+  margin-left: 10px;
 }
-.evaluate-page .evaluate-page-list ul li .text .icon-box .icon {
+.evaluate-page .evaluate-page-list ul li .text .text-bottom .text-bottom-r .praise-div .icon {
   font-size: 16px;
   color: #959BA6;
-  vertical-align: middle;
 }
-.evaluate-page .evaluate-page-list ul li .text .icon-box .icon.curr {
+.evaluate-page .evaluate-page-list ul li .text .text-bottom .text-bottom-r .praise-div .icon.curr {
   color: #0081D2;
 }
-.evaluate-page .evaluate-page-list ul li .text .icon-box span {
-  vertical-align: middle;
+.evaluate-page .evaluate-page-list ul li .text .text-bottom .text-bottom-r .praise-div .bb {
   font-size: 12px;
   color: #959BA6;
 }
@@ -1771,76 +1815,116 @@ body {
   width: 1216px;
 }
 .evaluate-page-detail .wrap .list li {
+  position: relative;
   float: left;
-  height: 383px;
+  height: 330px;
   margin-right: 20px;
-  margin-bottom: 30px;
-}
-.evaluate-page-detail .wrap .list li:nth-of-type(4n) {
-  margin-right: 0;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+  width: 280px;
 }
 .evaluate-page-detail .wrap .list li a {
   display: block;
 }
 .evaluate-page-detail .wrap .list li .pic {
-  position: relative;
   width: 280px;
-  height: 220px;
+  height: 180px;
   overflow: hidden;
 }
 .evaluate-page-detail .wrap .list li .pic img {
   width: 280px;
   height: 220px;
+  transition: all 0.2s ease;
+}
+.evaluate-page-detail .wrap .list li .pic:hover img {
+  transform: scale(1.1);
 }
 .evaluate-page-detail .wrap .list li .text {
-  padding: 20px 20px 30px 20px;
   background: #ffffff;
+  height: 173px;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  z-index: 2;
+  top: -20px;
+  box-sizing: border-box;
+  padding: 0 30px;
 }
-.evaluate-page-detail .wrap .list li .text .t1 {
-  height: 40px;
+.evaluate-page-detail .wrap .list li .text .text-top {
+  padding-top: 20px;
+}
+.evaluate-page-detail .wrap .list li .text .text-top .im {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+.evaluate-page-detail .wrap .list li .text .text-top .im img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.evaluate-page-detail .wrap .list li .text .text-top-l .icon {
+  font-size: 36px;
+  color: #959BA6;
+  margin-right: 10px;
+}
+.evaluate-page-detail .wrap .list li .text .text-top-l .username {
   font-size: 14px;
-  color: #5c5f66;
-  margin-bottom: 30px;
-  width: 240px;
-  white-space: normal;
-  display: -webkit-box;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  font-weight: 600;
+  color: #3A3C40;
+}
+.evaluate-page-detail .wrap .list li .text .text-top-l .address {
+  font-size: 12px;
+  color: #959BA6;
+  margin-top: 2px;
+}
+.evaluate-page-detail .wrap .list li .text .text-top-r {
+  padding-top: 8px;
+}
+.evaluate-page-detail .wrap .list li .text .text-top-r .icon {
+  font-size: 14px;
+  color: #E89721;
+}
+.evaluate-page-detail .wrap .list li .text .text-top-r .default {
+  color: #afb2bc;
+}
+.evaluate-page-detail .wrap .list li .text .text-center {
+  font-size: 12px;
+  color: #5C5F66;
+  line-height: 17px;
+  padding: 13px 0;
+  height: 74px;
+  box-sizing: border-box;
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
-.evaluate-page-detail .wrap .list li .text .t2 {
-  font-size: 14px;
-  color: #3a3c40;
-  margin-bottom: 6px;
-}
-.evaluate-page-detail .wrap .list li .text .t3 {
+.evaluate-page-detail .wrap .list li .text .text-bottom .text-bottom-l {
   font-size: 12px;
   color: #959BA6;
 }
-.evaluate-page-detail .wrap .list li .text .star dd {
-  float: left;
+.evaluate-page-detail .wrap .list li .text .text-bottom .text-bottom-r .see-div {
+  color: #959BA6;
+}
+.evaluate-page-detail .wrap .list li .text .text-bottom .text-bottom-r .see-div .icon {
   font-size: 16px;
-  color: #ea9621;
-  margin-right: 5px;
+  vertical-align: sub;
 }
-.evaluate-page-detail .wrap .list li .text .star dd.default {
-  color: #afb2bc;
+.evaluate-page-detail .wrap .list li .text .text-bottom .text-bottom-r .see-div span {
+  font-size: 12px;
 }
-.evaluate-page-detail .wrap .list li .text .icon-box {
-  margin-top: 5px;
-  text-align: right;
+.evaluate-page-detail .wrap .list li .text .text-bottom .text-bottom-r .praise-div {
+  margin-left: 10px;
 }
-.evaluate-page-detail .wrap .list li .text .icon-box .icon {
+.evaluate-page-detail .wrap .list li .text .text-bottom .text-bottom-r .praise-div .icon {
   font-size: 16px;
   color: #959BA6;
-  vertical-align: middle;
 }
-.evaluate-page-detail .wrap .list li .text .icon-box .icon.curr {
+.evaluate-page-detail .wrap .list li .text .text-bottom .text-bottom-r .praise-div .icon.curr {
   color: #0081D2;
 }
-.evaluate-page-detail .wrap .list li .text .icon-box span {
-  vertical-align: middle;
+.evaluate-page-detail .wrap .list li .text .text-bottom .text-bottom-r .praise-div .bb {
   font-size: 12px;
   color: #959BA6;
 }
