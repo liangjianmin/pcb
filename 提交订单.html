@@ -183,40 +183,72 @@
             <!--快递方式-->
             <div class="address-type clr bor">
                 <div class="fl l lbBox">
-                    <span class="tit va-m">快递方式</span>
-                    <div class="lineBlock va-m arrow-wrap">
+                    <div class="tit va-t lineBlock">
+                        <p class="t1">快递方式</p>
+                        <p><span class="t2">重量：</span><em class="t3">1.5kg</em></p>
+                    </div>
+                    <div class="lineBlock va-t  arrow-wrap">
                         <b class="iconfont iconiconfontquestion"></b>
                         <div class="text">
                             <i class="jiantou"></i>
                             <P class="t1">快递方式文案缺失</P>
                         </div>
                     </div>
-                    <ul class="delivery lineBlock va-m">
-                        <li class="curr lbBox">
-                            <i class="lineBlock va-m"></i>
-                            <span class="lineBlock va-m">顺丰现付</span>
-                            <b class="lineBlock emptys"></b>
+                    <ul class="express-list lineBlock va-t">
+                        <li class="lbBox">
+                            <div class="lineBlock va-m w1">
+                                <div class="circle act lineBlock va-m">
+                                    <i></i>
+                                </div>
+                                <span class="c1 va-m">京东快递(航空)</span>
+                                <span class="c2 va-m lineBlock">推荐</span>
+                            </div>
+                            <div class="lineBlock va-m w2">
+                                <span class="c3">物流时效：</span>
+                                <span class="c4">1-2天</span>
+                            </div>
+                            <div class="lineBlock va-m w3">
+                                <span class="c5">运费：</span>
+                                <span class="c6">￥25.00</span>
+                            </div>
                         </li>
                         <li class="lbBox">
-                            <i class="lineBlock va-m"></i>
-                            <span class="lineBlock va-m">顺丰到付</span>
-                            <b class="lineBlock emptys"></b>
+                            <div class="lineBlock va-m w1">
+                                <div class="circle  lineBlock va-m">
+                                    <i></i>
+                                </div>
+                                <span class="c1 va-m">顺丰快递(航空)</span>
+                            </div>
+                            <div class="lineBlock va-m w2">
+                                <span class="c3">物流时效：</span>
+                                <span class="c4">1-2天</span>
+                            </div>
+                            <div class="lineBlock va-m w3">
+                                <span class="c5">运费：</span>
+                                <span class="c6">￥25.00</span>
+                            </div>
+                        </li>
+                        <li class="lbBox">
+                            <div class="lineBlock va-m w1">
+                                <div class="circle  lineBlock va-m">
+                                    <i></i>
+                                </div>
+                                <span class="c1 va-m">顺丰标快(陆运)</span>
+                            </div>
+                            <div class="lineBlock va-m w2">
+                                <span class="c3">物流时效：</span>
+                                <span class="c4">1-2天</span>
+                            </div>
+                            <div class="lineBlock va-m w3">
+                                <span class="c5">运费：</span>
+                                <span class="c6">￥25.00</span>
+                            </div>
                         </li>
                     </ul>
-                </div>
-                <div class="fr r lbBox">
-                    <p class="lineBlock t1" style="margin-right: 30px">
-                        <span>物流时效：</span>
-                        <em>1-2天</em>
-                    </p>
-                    <p class="lineBlock t1" style="margin-right: 30px">
-                        <span>重量：</span>
-                        <em>1.587kg</em>
-                    </p>
-                    <p class="lineBlock t2">
-                        <span>快递费用：</span>
-                        <em>￥25.00</em>
-                    </p>
+                    <div class="arrow-box">
+                        <span>加载更多物流</span>
+                        <i class="iconfont iconzujiantubiaojiantou1"></i>
+                    </div>
                 </div>
             </div>
             <!--订单信息-->
@@ -434,7 +466,7 @@
                             <li class="lbBox status">
                                 <div class="l-text lineBlock va-m">
                                     <p class="t1">
-                                       <b>打样券</b>
+                                        <b>打样券</b>
                                     </p>
                                     <p class="t3">企业认证客户使用</p>
                                 </div>
@@ -624,9 +656,9 @@
         <dt id="backtop">
             <a href="javascript:;">
                 <div class="iconfont iconzujiantubiaojiantou2">
-                   
-                </div>        
-             </a>
+
+                </div>
+            </a>
         </dt>
     </dl>
 </div>
@@ -1043,6 +1075,31 @@
 </script>
 <script type="text/javascript">
   $(function () {
+
+    $(".express-list li :gt(1)").hide();
+    $(".express-list li :gt(1)").prev().addClass('none');
+
+
+    //运费预付
+    $(document).on('click', '.circle ', function () {
+      $(".express-list").find('.circle').removeClass('act');
+      $(this).addClass('act');
+    });
+
+
+    $(document).on('click', '.arrow-box', function () {
+      $(this).toggleClass('curr');
+      if ($(this).hasClass('curr')) {
+        $(this).find('span').text('隐藏更多物流');
+        $(this).find('i').removeClass('iconzujiantubiaojiantou1').addClass('iconzujiantubiaojiantou2');
+        $(".express-list").find('li').show();
+        $(".express-list li :gt(1)").prev().removeClass('none');
+      } else {
+        $(this).find('span').text('加载更多物流');
+        $(this).find('i').removeClass('iconzujiantubiaojiantou2').addClass('iconzujiantubiaojiantou1');
+        $(".express-list li :gt(1)").hide();
+      }
+    });
 
 
     //查看物料信息

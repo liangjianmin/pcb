@@ -1849,6 +1849,19 @@ body {
   font-size: 12px;
   color: #3a3c40;
 }
+.pcb .section .pcb-r .psb-submit-box .pcb-delivery .pcb-delivery-select .layui-input {
+  height: 25px !important;
+  font-size: 12px;
+  color: #3A3C40;
+}
+.pcb .section .pcb-r .psb-submit-box .pcb-delivery .pcb-delivery-select .layui-form-select dl dd {
+  font-size: 12px;
+  color: #3A3C40;
+}
+.pcb .section .pcb-r .psb-submit-box .pcb-delivery .pcb-delivery-select .layui-form-select dl dd.layui-this {
+  color: #ffffff;
+  background-color: #0081d2;
+}
 .pcb .section .pcb-r .psb-submit-box .pcb-delivery .list {
   margin-top: 14px;
 }
