@@ -1906,9 +1906,6 @@ body {
   font-size: 12px;
   color: #5c5f66;
 }
-.pcb .section .pcb-r .psb-submit-box .pcb-delivery .list dd:nth-of-type(n+3) {
-  display: none;
-}
 .pcb .section .pcb-r .psb-submit-box .pcb-delivery .pcb-delivery-more {
   margin-top: 10px;
   text-align: center;
