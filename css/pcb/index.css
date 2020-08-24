@@ -1928,7 +1928,7 @@ body {
   background: url(../../images/pcb/arrow-t.png) no-repeat center;
   background-size: cover;
 }
-.pcb .btn {
+.pcb .btn-s {
   width: 380px;
   height: 50px;
   line-height: 50px;
@@ -1939,7 +1939,7 @@ body {
   color: #ffffff;
   display: block;
 }
-.pcb .btn:hover {
+.pcb .btn-s:hover {
   background: #0090EB;
 }
 .pcb .tip {
