@@ -1624,8 +1624,6 @@ body {
 .pcb .section .pcb-r {
   width: 380px;
   border-radius: 2px;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 .pcb .section .pcb-r .psb-submit-box {
   padding: 17px 20px 20px 20px;
