@@ -1860,6 +1860,7 @@ body {
 .pcb .section .pcb-r .psb-submit-box .pcb-delivery .pcb-delivery-select .layui-form-select dl {
   top: 24px;
   max-height: 223px;
+  bottom: inherit;
 }
 .pcb .section .pcb-r .psb-submit-box .pcb-delivery .pcb-delivery-select .layui-form-select dl dd {
   font-size: 12px;
