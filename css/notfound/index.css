@@ -1101,10 +1101,11 @@ body {
 }
 .notfound .home-price .home-price-wrap .l {
   padding: 40px;
-  width: 400px;
+  width: 380px;
   height: 220px;
   background: url('../../images/home/xb.png') no-repeat center;
   background-size: cover;
+  transition: all 0.2s ease;
 }
 .notfound .home-price .home-price-wrap .l .t1 {
   font-size: 24px;
@@ -1153,7 +1154,6 @@ body {
   background: #E89721;
   border-radius: 2px;
   display: block;
-  margin: 0 auto;
   overflow: hidden;
 }
 .notfound .home-price .home-price-wrap .l .btn .imme_price_txt1 {
@@ -1189,42 +1189,82 @@ body {
 .notfound .home-price .home-price-wrap .l .btn:hover .imme_price_txt2 {
   transform: translate(100px, 0);
 }
+.notfound .home-price .home-price-wrap .l:hover {
+  margin-top: -3px;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transform: translate3d(0, -1px, 0);
+  -ms-transform: translate3d(0, -1px, 0);
+  transform: translate3d(0, -1px, 0);
+}
 .notfound .home-price .home-price-wrap .r ul li {
-  width: 328px;
-  height: 278px;
+  position: relative;
+  width: 340px;
+  height: 300px;
   float: left;
-  border-radius: 2px;
-  border: 1px solid #E6EAF2;
-  padding: 20px 0 0 0;
   margin-right: 20px;
+  transition: all 0.2s ease;
 }
 .notfound .home-price .home-price-wrap .r ul li:nth-of-type(2n) {
   margin-right: 0;
 }
-.notfound .home-price .home-price-wrap .r ul li .pic {
-  width: 160px;
-  height: 120px;
-  margin: 0 auto 20px;
-}
 .notfound .home-price .home-price-wrap .r ul li .pic img {
-  width: 160px;
-  height: 120px;
+  width: 340px;
+  height: 146px;
 }
-.notfound .home-price .home-price-wrap .r ul .t1 {
-  font-size: 16px;
+.notfound .home-price .home-price-wrap .r ul li:hover {
+  margin-top: -3px;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transform: translate3d(0, -1px, 0);
+  -ms-transform: translate3d(0, -1px, 0);
+  transform: translate3d(0, -1px, 0);
+}
+.notfound .home-price .home-price-wrap .r ul li .pic-desc {
+  height: 160px;
+  box-shadow: 0px 8px 24px 0px rgba(58, 60, 64, 0.05);
+  border-radius: 10px 10px 0px 0px;
+  background-color: #fff;
+  position: relative;
+  top: -6px;
+  z-index: 2;
+}
+.notfound .home-price .home-price-wrap .r ul li .pic-desc .t1 {
+  font-size: 18px;
   color: #3a3c40;
   text-align: center;
   font-weight: bold;
+  padding: 16px 10px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.notfound .home-price .home-price-wrap .r ul .t2 {
+.notfound .home-price .home-price-wrap .r ul li .pic-desc .t2 {
+  padding: 4px 10px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   text-align: center;
   font-size: 12px;
-  color: #5c5f66;
-  margin-bottom: 20px;
+  color: #959BA6;
+}
+.notfound .home-price .home-price-wrap .r ul li .pic-desc .items {
+  margin-top: 10px;
+  text-align: center;
+}
+.notfound .home-price .home-price-wrap .r ul li .pic-desc .items .item {
+  border: 1px solid #E6EAF2;
+  padding: 2px 4px;
+  font-size: 12px;
+  color: #959BA6;
+  margin-right: 14px;
+}
+.notfound .home-price .home-price-wrap .r ul li .pic-desc .items .item:last-child {
+  margin-right: 0;
 }
 .notfound .home-price .home-price-wrap .r ul .btn {
   position: relative;
-  width: 120px;
+  width: 160px;
   height: 36px;
   background: #0081D2;
   border-radius: 2px;
@@ -1235,6 +1275,7 @@ body {
   margin: 0 auto;
   display: block;
   overflow: hidden;
+  margin-top: 15px;
 }
 .notfound .home-price .home-price-wrap .r ul .btn .imme_price_txt1 {
   transform: translate(-90px, 0);
@@ -1265,9 +1306,9 @@ body {
   z-index: 7;
 }
 .notfound .home-price .home-price-wrap .r ul .btn:hover .imme_price_txt1 {
-  transform: translate(22px, 0);
+  transform: translate(44px, 0);
 }
 .notfound .home-price .home-price-wrap .r ul .btn:hover .imme_price_txt2 {
-  transform: translate(100px, 0);
+  transform: translate(150px, 0);
 }
 /*# sourceMappingURL=index.css.map */

@@ -77,10 +77,11 @@
     .home-price-wrap {
       .l {
         padding: 40px;
-        width: 400px;
+        width: 380px;
         height: 220px;
         background: url('../../images/home/xb.png') no-repeat center;
         background-size: cover;
+        transition: all 0.2s ease;
 
         .t1 {
           font-size: 24px;
@@ -136,7 +137,6 @@
           background: #E89721;
           border-radius: 2px;
           display: block;
-          margin: 0 auto;
           overflow: hidden;
 
           .imme_price_txt1 {
@@ -180,52 +180,100 @@
             }
           }
         }
+
+        &:hover {
+          margin-top: -3px;
+          -webkit-transition: all .3s cubic-bezier(.55, 0, .1, 1);
+          transition: all .3s cubic-bezier(.55, 0, .1, 1);
+          -webkit-transform: translate3d(0, -1px, 0);
+          -ms-transform: translate3d(0, -1px, 0);
+          transform: translate3d(0, -1px, 0);
+        }
       }
 
       .r {
         ul {
           li {
-            width: 328px;
-            height: 278px;
+            position: relative;
+            width: 340px;
+            height: 300px;
             float: left;
-            border-radius: 2px;
-            border: 1px solid #E6EAF2;
-            padding: 20px 0 0 0;
             margin-right: 20px;
+            transition: all 0.2s ease;
 
             &:nth-of-type(2n) {
               margin-right: 0;
             }
 
             .pic {
-              width: 160px;
-              height: 120px;
-              margin: 0 auto 20px;
-
               img {
-                width: 160px;
-                height: 120px;
+                width: 340px;
+                height: 146px;
+              }
+            }
+
+            &:hover {
+              margin-top: -3px;
+              -webkit-transition: all .3s cubic-bezier(.55, 0, .1, 1);
+              transition: all .3s cubic-bezier(.55, 0, .1, 1);
+              -webkit-transform: translate3d(0, -1px, 0);
+              -ms-transform: translate3d(0, -1px, 0);
+              transform: translate3d(0, -1px, 0);
+            }
+
+            .pic-desc {
+              height: 160px;
+              box-shadow: 0px 8px 24px 0px rgba(58, 60, 64, 0.05);
+              border-radius: 10px 10px 0px 0px;
+              background-color: #fff;
+              position: relative;
+              top: -6px;
+              z-index: 2;
+
+              .t1 {
+                font-size: 18px;
+                color: #3a3c40;
+                text-align: center;
+                font-weight: bold;
+                padding: 16px 10px 0;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+
+              .t2 {
+                padding: 4px 10px 0;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                text-align: center;
+                font-size: 12px;
+                color: #959BA6;
+              }
+
+              .items {
+                margin-top: 10px;
+                text-align: center;
+
+                .item {
+                  border: 1px solid #E6EAF2;
+                  padding: 2px 4px;
+                  font-size: 12px;
+                  color: #959BA6;
+                  margin-right: 14px;
+
+                  &:last-child {
+                    margin-right: 0;
+                  }
+                }
               }
             }
           }
 
-          .t1 {
-            font-size: 16px;
-            color: #3a3c40;
-            text-align: center;
-            font-weight: bold;
-          }
-
-          .t2 {
-            text-align: center;
-            font-size: 12px;
-            color: #5c5f66;
-            margin-bottom: 20px;
-          }
 
           .btn {
             position: relative;
-            width: 120px;
+            width: 160px;
             height: 36px;
             background: #0081D2;
             border-radius: 2px;
@@ -236,6 +284,7 @@
             margin: 0 auto;
             display: block;
             overflow: hidden;
+            margin-top: 15px;
 
             .imme_price_txt1 {
               transform: translate(-90px, 0);
@@ -269,13 +318,14 @@
               z-index: 7;
             }
 
+
             &:hover {
               .imme_price_txt1 {
-                transform: translate(22px, 0);
+                transform: translate(44px, 0);
               }
 
               .imme_price_txt2 {
-                transform: translate(100px, 0);
+                transform: translate(150px, 0);
               }
             }
           }
