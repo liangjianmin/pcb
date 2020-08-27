@@ -1035,7 +1035,7 @@ body {
 }
 .register-section {
   width: 100%;
-  padding: 40px 0 70px 0;
+  padding: 30px 0 30px 0;
   background: #F7F9FC;
 }
 .register-section .register-section-wrap {
@@ -1172,6 +1172,51 @@ body {
   text-align: center;
   font-size: 14px;
   color: #0081d2;
+}
+.register-section .register-section-wrap .txt-foot {
+  margin-top: 40px;
+  text-align: center;
+}
+.register-section .register-section-wrap .txt-foot .txt-foot-tit {
+  position: relative;
+  font-size: 14px;
+  color: #5C5F66;
+  margin-bottom: 20px;
+}
+.register-section .register-section-wrap .txt-foot .txt-foot-tit:before {
+  width: 117px;
+  height: 1px;
+  background: #E6EAF2;
+  color: #E6EAF2;
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+.register-section .register-section-wrap .txt-foot .txt-foot-tit:after {
+  width: 117px;
+  height: 1px;
+  background: #E6EAF2;
+  color: #E6EAF2;
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+.register-section .register-section-wrap .txt-foot .box a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background: #E6EAF2;
+  line-height: 40px;
+}
+.register-section .register-section-wrap .txt-foot .box a.mr {
+  margin-right: 68px;
+}
+.register-section .register-section-wrap .txt-foot .box a .iconfont {
+  font-size: 25px;
+  color: #ffffff;
 }
 .register-agreement {
   width: 100%;
