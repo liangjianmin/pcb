@@ -1492,4 +1492,7 @@ body {
   color: #5c5f66;
   height: 38px;
 }
+.nc_wrapper {
+  width: 100% !important;
+}
 /*# sourceMappingURL=index.css.map */
