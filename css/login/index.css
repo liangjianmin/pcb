@@ -1166,4 +1166,7 @@ body {
   font-size: 14px;
   color: #0081d2;
 }
+.nc_wrapper {
+  width: 100% !important;
+}
 /*# sourceMappingURL=index.css.map */
