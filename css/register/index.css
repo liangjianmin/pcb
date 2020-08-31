@@ -1037,6 +1037,9 @@ body {
 .nc-container .nc_scale .nc_bg {
   background: #0081D2 !important;
 }
+.nc-container .nc_scale .btn_ok {
+  color: #0081D2 !important;
+}
 .register-section {
   width: 100%;
   padding-top: 40px;
@@ -1502,5 +1505,8 @@ body {
 .nc-container .nc_scale .nc_ok,
 .nc-container .nc_scale .nc_bg {
   background: #0081D2 !important;
+}
+.nc-container .nc_scale .btn_ok {
+  color: #0081D2 !important;
 }
 /*# sourceMappingURL=index.css.map */
