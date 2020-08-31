@@ -1033,6 +1033,10 @@ body {
   border-color: #0081D2 !important;
   background-color: #0081D2 !important;
 }
+.nc-container .nc_scale .nc_ok,
+.nc-container .nc_scale .nc_bg {
+  background: #0081D2 !important;
+}
 .contactus .banner {
   height: 258px;
   background: url(../../images/aboutus/bg.png) no-repeat center;
