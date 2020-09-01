@@ -539,4 +539,16 @@ body {
   width: 100%;
   height: 100%;
 }
+#verCode #nc_1_wrapper {
+  width: 100% !important;
+}
+#verCode .nc_bg {
+  background: #0081D2 !important;
+}
+#verCode .nc_scale {
+  height: 32px !important;
+}
+#verCode .btn_ok {
+  color: #0081D2 !important;
+}
 /*# sourceMappingURL=index.css.map */
