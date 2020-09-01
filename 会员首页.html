@@ -392,6 +392,49 @@
                             </td>
                             <td class="type7 va-t">
                                 <a class="t1">订单详情</a>
+                                <div class="production-schedule">
+                                    <span class="production-schedule-tit">生产进度</span>
+                                    <div class="production-schedule-wrap">
+                                        <p class="tt">生产进度</p>
+                                        <ul class="list-box">
+                                            <li class="clr">
+                                                <div class="fl production-schedule-l">
+                                                    <i class="iconfont iconzujiantubiaochenggong"></i>
+                                                    <span title="开料开料开料开料开料开料">开料开料开料开料开料开料</span>
+                                                </div>
+                                                <div class="fr production-schedule-r">09-01 10:46</div>
+                                            </li>
+                                            <li class="clr">
+                                                <div class="fl production-schedule-l">
+                                                    <i class="iconfont iconzujiantubiaochenggong"></i>
+                                                    <span title="开料">开料</span>
+                                                </div>
+                                                <div class="fr production-schedule-r">09-01 10:46</div>
+                                            </li>
+                                            <li class="clr">
+                                                <div class="fl production-schedule-l">
+                                                    <i class="iconfont iconzujiantubiaochenggong"></i>
+                                                    <span title="开料">开料</span>
+                                                </div>
+                                                <div class="fr production-schedule-r">09-01 10:46</div>
+                                            </li>
+                                            <li class="clr">
+                                                <div class="fl production-schedule-l">
+                                                    <i class="iconfont iconzujiantubiaochenggong"></i>
+                                                    <span title="开料">开料</span>
+                                                </div>
+                                                <div class="fr production-schedule-r">09-01 10:46</div>
+                                            </li>
+                                            <li class="clr">
+                                                <div class="fl production-schedule-l">
+                                                    <i class="iconfont iconzujiantubiaochenggong"></i>
+                                                    <span title="开料">开料</span>
+                                                </div>
+                                                <div class="fr production-schedule-r">09-01 10:46</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -812,7 +855,7 @@
             <div class="input txt lbBox" style="margin-top: 10px">
                 <span class="lineBlock va-t t2">其它选项</span>
                 <div class="lineBlock va-t" style="width: 230px;">
-                    <textarea placeholder="请输入内容"  maxlength="50" class="layui-textarea"></textarea>
+                    <textarea placeholder="请输入内容" maxlength="50" class="layui-textarea"></textarea>
                 </div>
             </div>
         </div>
@@ -916,7 +959,7 @@
     });
 
 
-    $(document).on('click','#download',function () {
+    $(document).on('click', '#download', function () {
       layer.open({
         type: 1,
         skin: 'aa',
@@ -932,9 +975,9 @@
     });
 
 
-    $(document).on('click','.pending_review_btn',function () {
-      var val=$("input[name='user']").val();
-      if(!val){
+    $(document).on('click', '.pending_review_btn', function () {
+      var val = $("input[name='user']").val();
+      if (!val) {
         layer.msg('购⽅（甲⽅）（必填）');
       }
 
