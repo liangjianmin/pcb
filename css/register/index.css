@@ -539,16 +539,14 @@ body {
   width: 100%;
   height: 100%;
 }
-#verCode #nc_1_wrapper {
+#verCode .slider {
   width: 100% !important;
+  left: 0 !important;
 }
-#verCode .nc_bg {
-  background: #0081D2 !important;
+#verCode .bg-green {
+  background-color: #0081D2 !important;
 }
-#verCode .nc_scale {
-  height: 32px !important;
-}
-#verCode .btn_ok {
+#verCode .icon-ok {
   color: #0081D2 !important;
 }
 /*# sourceMappingURL=index.css.map */

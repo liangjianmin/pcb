@@ -24,6 +24,9 @@
 <body>
 <div id="app">
     <div class="register">
+        <input type="hidden" value="" id="Nc_token">
+        <input type="hidden" value="" id="Nc_sessionid">
+        <input type="hidden" value="" id="Nc_sign">
         <div class="head row verCenter rowCenter">
             <img src="./images/register/logo.png">
         </div>
@@ -94,7 +97,7 @@
 <script type="text/javascript">
   var nc_token = ["CF_APP_1", (new Date()).getTime(), Math.random()].join(':');
 
-  window.onload=function () {
+  window.onload = function () {
     var nc = NoCaptcha.init({
       //声明滑动验证需要渲染的目标元素ID。
       renderTo: '#verCode',
@@ -122,6 +125,11 @@
         window.console && console.log(nc_token)
         window.console && console.log(data.csessionid)
         window.console && console.log(data.sig)
+
+        document.getElementById('Nc_token').value = nc_token;
+        document.getElementById('Nc_sessionid').value = data.csessionid;
+        document.getElementById('Nc_sign').value = data.sig;
+
       },
       error: function (s) {
 
@@ -167,7 +175,10 @@
         Pwd: '',
         PwdConfirm: '',
         WebPromotion: '',
-        WebSource: ''
+        WebSource: '',
+        Nc_token: '',
+        Nc_sessionid: '',
+        Nc_sign: ''
       }
     },
     created() {
@@ -314,7 +325,10 @@
           'PwdConfirm': this.form.PwdConfirm,
           'ValidCode': this.form.ValidCode,
           'WebPromotion': Util.getCookie('WebPromotion'),
-          'WebSource': this.form.WebSource
+          'WebSource': this.form.WebSource,
+          'Nc_token': document.getElementById('Nc_token').value,
+          'Nc_sessionid': document.getElementById('Nc_sessionid').value,
+          'Nc_sign': document.getElementById('Nc_sign').value,
         }).then((data) => {
           let res = data.data;
           if (res.Code === 200) {
