@@ -1040,161 +1040,303 @@ body {
 .nc-container .nc_scale .btn_ok {
   color: #0081D2 !important;
 }
+* {
+  box-sizing: border-box;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+/* 两侧对齐 */
+.bothSide {
+  justify-content: space-between;
+}
+/* 平均分布 */
+.avarage {
+  justify-content: space-around;
+}
+/* 水平居中 */
+.rowCenter {
+  justify-content: center;
+}
+/* 垂直居中 */
+.verCenter {
+  align-items: center;
+}
 .sheet {
-  width: 790px;
+  width: 1140px;
   margin: 0 auto;
-  padding-bottom: 500px;
 }
-.sheet table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
+.sheet .sheet1 {
+  width: 1138px;
+  border: 4px solid #000000;
 }
-.sheet .sheet-box1 tr td {
-  position: relative;
-  padding: 20px;
-  border: 4px solid #231815;
+.sheet .sheet1 li {
+  border-bottom: 4px solid #000000;
 }
-.sheet .sheet-box1 tr td .t1 {
-  color: #231815;
-  font-size: 60px;
+.sheet .sheet1 li.box1 {
+  height: 263px;
 }
-.sheet .sheet-box1 tr td .text {
-  margin-left: 18px;
+.sheet .sheet1 li.box1 .w1 {
+  width: 856px;
+  height: 100%;
+  border-right: 4px solid #000000;
 }
-.sheet .sheet-box1 tr td .text .t2 {
-  font-size: 24px;
-  width: 695px;
-  color: #313333;
-  opacity: 0.8;
+.sheet .sheet1 li.box1 .w1 img {
+  display: block;
+  margin: 0 auto;
 }
-.sheet .sheet-box1 tr td .text .t3 {
-  font-size: 24px;
-  color: #313333;
-  opacity: 0.8;
+.sheet .sheet1 li.box1 .w1 p {
+  margin-top: 23px;
+  font-size: 40px;
+  color: #000000;
 }
-.sheet .sheet-box1 tr td .t4 {
-  font-size: 24px;
-  color: #313333;
-  opacity: 0.8;
-  padding-bottom: 18px;
-  border-bottom: 4px solid #231815;
+.sheet .sheet1 li.box1 .w2 {
+  width: 286px;
 }
-.sheet .sheet-box1 tr td .t5 {
-  color: #231815;
-  font-size: 82px;
+.sheet .sheet1 li.box2 {
+  height: 324px;
 }
-.sheet .sheet-box1 tr td .t6 {
-  width: 66px;
+.sheet .sheet1 li.box2 .tit {
+  font-size: 145px;
+  color: #000000;
+}
+.sheet .sheet1 li.box2 .text .t1 {
+  font-size: 36px;
+  color: #000000;
+}
+.sheet .sheet1 li.box2 .text .t2 {
+  font-size: 36px;
+  color: #000000;
+}
+.sheet .sheet1 li.box3 {
+  height: 311px;
+}
+.sheet .sheet1 li.box3 .w1 {
+  width: 394px;
+  border-right: 4px solid #000000;
+}
+.sheet .sheet1 li.box3 .w1 .t1 {
+  height: 74px;
+  line-height: 74px;
+  text-align: right;
+  font-size: 36px;
+  color: #000000;
+  padding-right: 65px;
+  border-bottom: 4px solid #000000;
+}
+.sheet .sheet1 li.box3 .w1 .t2 {
+  font-size: 166px;
+  color: #000000;
+  text-align: center;
+}
+.sheet .sheet1 li.box3 .w2 {
+  width: 382px;
+  border-right: 4px solid #000000;
+}
+.sheet .sheet1 li.box3 .w3 {
+  width: 122px;
+  border-right: 4px solid #000000;
+}
+.sheet .sheet1 li.box3 .w3 p {
+  font-size: 86px;
   color: #afaeae;
-  font-size: 50px;
+  text-align: center;
+  line-height: 98px;
 }
-.sheet .sheet-box1 tr td .t7 {
-  border-top: 4px solid #231815;
-  color: #231815;
-  font-size: 82px;
+.sheet .sheet1 li.box3 .w4 {
+  width: 252px;
 }
-.sheet .sheet-box2 tr td {
-  padding: 20px;
-  border: 4px solid #231815;
+.sheet .sheet1 li.box3 .w4 .t1 {
+  height: 205px;
+  border-bottom: 4px solid #000000;
 }
-.sheet .sheet-box2 tr td .text {
-  margin-left: 18px;
+.sheet .sheet1 li.box3 .w4 .t2 {
+  font-size: 81px;
+  color: #000000;
+  text-align: center;
 }
-.sheet .sheet-box2 tr td .text .t1 {
-  font-size: 28px;
-  width: 695px;
-  color: #313333;
-  opacity: 0.8;
+.sheet .sheet1 li:last-child {
+  border-bottom: none;
 }
-.sheet .sheet-box2 tr td .text .t2 {
-  font-size: 28px;
-  color: #313333;
-  opacity: 0.8;
+.sheet .sheet2 {
+  width: 1138px;
+  border: 4px solid #000000;
 }
-.sheet .sheet-box2 tr td .t3 {
-  font-size: 28px;
-  color: #313333;
-  opacity: 0.8;
+.sheet .sheet2 li {
+  border-bottom: 4px solid #000000;
 }
-.sheet .sheet-box2 tr td .t4 {
-  font-size: 28px;
-  color: #313333;
-  opacity: 0.8;
+.sheet .sheet2 li.box1 {
+  height: 134px;
 }
-.sheet .sheet-box2 tr td .ttt {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
+.sheet .sheet2 li.box1 p {
+  width: 100%;
+  text-align: left;
+  font-size: 36px;
+  color: #000000;
+  padding-left: 120px;
 }
-.sheet .sheet-box2 tr td .tt {
-  padding-left: 20px;
-  padding-top: 18px;
-  padding-bottom: 10px;
-  border-top: 4px solid #231815;
+.sheet .sheet2 li.box2 {
+  height: 312px;
 }
-.sheet .sheet-box3 tr td {
-  padding: 20px;
-  border: 4px solid #231815;
+.sheet .sheet2 li.box2 .w {
+  border-right: 4px solid #000000;
+  flex: 0 0 50%;
 }
-.sheet .sheet-box3 tr td .t1 {
-  font-size: 28px;
-  color: #313333;
-  opacity: 0.8;
+.sheet .sheet2 li.box2 .w:last-child {
+  border-right: none;
 }
-.sheet .sheet-box3 tr td .t2 {
-  font-size: 28px;
-  color: #313333;
-  opacity: 0.8;
+.sheet .sheet2 li.box2 .t1 {
+  padding-left: 27px;
+  padding-top: 30px;
+  font-size: 36px;
+  color: #000000;
 }
-.sheet .sheet-box3 tr td .t3 {
-  font-size: 24px;
-  color: #313333;
-  opacity: 0.8;
+.sheet .sheet2 li.box2 .t2 {
+  height: 158px;
+  padding-left: 27px;
+  padding-top: 30px;
+  font-size: 36px;
+  color: #000000;
+  border-bottom: 4px solid #000000;
 }
-.sheet .sheet-box3 tr td .t4 {
-  font-size: 18px;
-  color: #313333;
-  opacity: 0.8;
+.sheet .sheet2 li.box2 .t3 {
+  padding-left: 17px;
+  height: 158px;
+  font-size: 34px;
+  color: #000000;
+}
+.sheet .sheet2 li.box2 .t3 p {
+  width: 100%;
+  text-align: left;
+}
+.sheet .sheet2 li.box3 {
+  height: 263px;
+}
+.sheet .sheet2 li.box3 .w {
+  border-right: 4px solid #000000;
+  flex: 0 0 50%;
+}
+.sheet .sheet2 li.box3 .w:last-child {
+  border-right: none;
+}
+.sheet .sheet2 li:last-child {
+  border-bottom: none;
+}
+.sheet .sheet3 {
+  margin-top: 54px;
+  margin-bottom: 54px;
+  width: 1138px;
+  border: 4px solid #000000;
+}
+.sheet .sheet3 li {
+  border-bottom: 4px solid #000000;
+}
+.sheet .sheet3 li.box1 {
+  height: 206px;
+}
+.sheet .sheet3 li.box1 .w1 {
+  width: 1136px;
+  text-align: right;
+  border-right: 4px solid #000000;
+  padding-right: 55px;
+  align-items: flex-end;
+}
+.sheet .sheet3 li.box1 .w1 p {
+  font-size: 40px;
+  color: #000000;
+}
+.sheet .sheet3 li.box1 .w2 {
+  width: 170px;
+}
+.sheet .sheet3 li.box1 .w2 p {
+  line-height: 103px;
+  height: 103px;
+  font-size: 33px;
+  color: #000000;
+  text-align: center;
   white-space: nowrap;
 }
-.sheet .sheet-box3 tr td .t4 span {
-  width: 28%;
-  display: inline-block;
+.sheet .sheet3 li.box1 .w2 p:first-child {
+  border-bottom: 4px solid #000000;
 }
-.sheet .sheet-box3 tr td .t5 {
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
-  color: #313333;
-  opacity: 0.8;
-  white-space: nowrap;
-  border-bottom: 4px solid #231815;
+.sheet .sheet3 li.box2 {
+  height: 110px;
 }
-.sheet .sheet-box3 tr td .t6 {
+.sheet .sheet3 li.box2 p {
+  width: 100%;
+  text-align: left;
+  font-size: 36px;
+  color: #000000;
+  padding-left: 109px;
+}
+.sheet .sheet3 li.box3 {
+  height: 216px;
+}
+.sheet .sheet3 li.box3 .w1 {
+  width: 370px;
+  border-right: 4px solid #000000;
+}
+.sheet .sheet3 li.box3 .w2 {
+  width: 772px;
+  padding-left: 10px;
+}
+.sheet .sheet3 li.box3 .t1 {
+  height: 144px;
+  border-bottom: 4px solid #000000;
+  font-size: 34px;
+  color: #000000;
   padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
-  color: #313333;
-  opacity: 0.8;
+}
+.sheet .sheet3 li.box3 .t2 {
+  line-height: 68px;
+  height: 68px;
+  font-size: 34px;
+  padding-left: 20px;
+  color: #000000;
+}
+.sheet .sheet3 li.box3 .text {
+  width: 100%;
+  text-align: left;
+}
+.sheet .sheet3 li.box3 .text p {
+  width: 33%;
+  text-align: left;
+  font-size: 25px;
+  color: #000000;
   white-space: nowrap;
 }
-.sheet .sheet-box3 tr td .t7 {
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 24px;
-  color: #313333;
-  white-space: nowrap;
+.sheet .sheet3 li.box4 {
+  color: #000000;
+  font-size: 30px;
 }
-.sheet .sheet-box3 tr td .t8 {
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 24px;
-  color: #313333;
+.sheet .sheet3 li.box4 p {
+  line-height: 64px;
+}
+.sheet .sheet3 li.box4 .w1 {
+  width: 201px;
+  height: 64px;
   white-space: nowrap;
+  padding-left: 18px;
+  border-right: 4px solid #000000;
+}
+.sheet .sheet3 li.box4 .w2 {
+  width: 257px;
+  height: 64px;
+  white-space: nowrap;
+  padding-left: 18px;
+  border-right: 4px solid #000000;
+}
+.sheet .sheet3 li.box4 .w3 {
+  width: 688px;
+  white-space: nowrap;
+  padding-left: 14px;
+}
+.sheet .sheet3 li:last-child {
+  border-bottom: none;
 }
 /*# sourceMappingURL=index.css.map */
