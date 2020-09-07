@@ -1099,7 +1099,19 @@ body {
   width: 286px;
 }
 .sheet .sheet1 li.box2 {
+  position: relative;
   height: 324px;
+}
+.sheet .sheet1 li.box2 .icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: -54px auto 0;
+  width: 236px;
+  height: 108px;
+  background: url("../../images/sheet/001.png") no-repeat center;
+  background-size: cover;
 }
 .sheet .sheet1 li.box2 .tit {
   font-size: 145px;
