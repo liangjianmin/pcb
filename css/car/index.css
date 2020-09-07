@@ -1215,6 +1215,18 @@ body {
   border-top: 1px solid #E6EAF2;
   border-bottom: 1px solid #E6EAF2;
 }
+.car-section .car-list table tr td .del-disabled {
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: #E82121;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: block;
+  margin: 0 auto;
+}
 .car-section .car-list table tr td.box0 {
   height: 50px;
   white-space: nowrap;
