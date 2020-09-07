@@ -1160,6 +1160,29 @@ body {
   color: #0081d2;
   font-size: 20px;
 }
+.car-section .shop-tit {
+  width: 1146px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  background: rgba(255, 224, 178, 0.5);
+  margin-top: 20px;
+  padding-right: 14px;
+}
+.car-section .shop-tit i {
+  font-size: 20px;
+  color: #e89721;
+}
+.car-section .shop-tit span {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #e89721;
+}
+.car-section .shop-tit em {
+  font-size: 20px;
+  color: #ACB3BF;
+  cursor: pointer;
+}
 .car-section .car-list {
   width: 1180px;
   margin-top: 20px;
@@ -1173,16 +1196,51 @@ body {
   height: 60px;
   background: #F7F9FC;
   font-size: 14px;
-  color: #5c5f66;
+  padding-left: 20px;
   font-weight: normal;
   text-align: left;
-  padding-left: 20px;
+}
+.car-section .car-list table tr th span {
+  color: #3a3c40;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.car-section .car-list table tr th em {
+  color: #5c5f66;
 }
 .car-section .car-list table tr td {
   vertical-align: top;
   padding: 30px 0 30px 20px;
   border-top: 1px solid #E6EAF2;
   border-bottom: 1px solid #E6EAF2;
+}
+.car-section .car-list table tr td.box0 {
+  height: 50px;
+  white-space: nowrap;
+  padding: 0;
+  padding-left: 20px;
+  vertical-align: middle;
+  background: #F7F9FC;
+}
+.car-section .car-list table tr td.box0 .checkedbox {
+  width: 30px;
+}
+.car-section .car-list table tr td.box0 .invalid {
+  background: #3A3C40;
+  opacity: 0.5;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #ffffff;
+  width: 30px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+.car-section .car-list table tr td.box0 .t1 {
+  font-size: 16px;
+  color: #3a3c40;
+  white-space: nowrap;
 }
 .car-section .car-list table tr td.box1 {
   white-space: nowrap;
@@ -1799,5 +1857,47 @@ body {
 }
 .onsroll {
   position: static !important;
+}
+.shop-layer {
+  padding: 23px 30px 38px 30px;
+}
+.shop-layer .head .text .t1 {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.shop-layer .head .text .t2 {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-top: 5px;
+}
+.shop-layer .btn {
+  margin-top: 30px;
+  text-align: right;
+  white-space: nowrap;
+}
+.shop-layer .btn .canel {
+  width: 100px;
+  height: 40px;
+  background: #0081D2;
+  border-radius: 2px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.shop-layer .btn .ok {
+  width: 100px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #0081D2;
+  line-height: 40px;
+  text-align: center;
+  background: #FFFFFF;
+  font-size: 14px;
+  color: #0081D2;
+  font-weight: bold;
 }
 /*# sourceMappingURL=index.css.map */
