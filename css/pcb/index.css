@@ -2672,6 +2672,7 @@ label .iconiconfontquestion .arrow-tips .tips {
   left: 0;
   right: 0;
   text-align: center;
+  display: none;
 }
 .pcb-ad .wrap .hd li {
   display: inline-block;
