@@ -2650,10 +2650,40 @@ label .iconiconfontquestion .arrow-tips .tips {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.pcb-ad img {
-  width: 1180px;
+.pcb-ad .wrap {
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
+.pcb-ad .wrap .bd ul {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+}
+.pcb-ad .wrap .bd ul li .pic img {
+  width: 100%;
   height: 60px;
   display: block;
   margin: 0 auto;
+}
+.pcb-ad .wrap .hd {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.pcb-ad .wrap .hd li {
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  background: #FFFFFF;
+  cursor: pointer;
+  margin-right: 4px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+.pcb-ad .wrap .hd li.on {
+  background-color: #0081D2;
 }
 /*# sourceMappingURL=index.css.map */
