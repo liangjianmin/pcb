@@ -1771,8 +1771,49 @@ body {
   margin-bottom: 12px;
 }
 .pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .l {
+  position: relative;
   font-size: 14px;
   color: #5c5f66;
+  cursor: pointer;
+}
+.pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .l .iconfont:hover .arrow-tips {
+  display: block;
+}
+.pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .l .arrow-tips {
+  position: absolute;
+  top: 18px;
+  left: 54px;
+  height: auto;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  z-index: 111;
+  background: #fff;
+  display: none;
+}
+.pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .l .arrow-tips.arrow-tips-500 {
+  transition: all 0.3s linear;
+}
+.pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .l .arrow-tips .arrow {
+  position: relative;
+  z-index: 4;
+  top: 1px;
+  left: 21px;
+  display: block;
+  height: 8px;
+  width: 16px;
+  background: url('../../images/pcb/top-arrow.png') no-repeat;
+  background-size: 100% 100%;
+}
+.pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .l .arrow-tips .tips {
+  background: #fff;
+  box-shadow: 0px 5px 20px 0px rgba(172, 179, 191, 0.2);
+  padding: 20px;
+  border: 1px solid #0081D2;
+  z-index: 3;
+  font-size: 12px;
+  color: #5C5F66;
+  width: 280px;
+  white-space: pre-wrap;
 }
 .pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .r .t1 {
   font-size: 14px;
