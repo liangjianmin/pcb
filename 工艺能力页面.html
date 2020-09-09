@@ -47,11 +47,21 @@
 <div class="home">
     <div class="width-1180 nav-wrap clr">
         <ul class="nav fl">
-            <li class="curr"><a href="">首页</a></li>
-            <li><a href="">PCB快速报价</a></li>
-            <li><a href="">高级PCB报价</a></li>
-            <li><a href="">SMT贴片</a></li>
-            <li><a href="">钢网计价</a></li>
+            <li class="curr"><a href="" class="link">首页</a></li>
+            <li><a class="link" href="">PCB快速报价</a></li>
+            <li><a class="link" href="">客户晒单</a></li>
+            <li><a class="link" href="">制程工艺</a></li>
+            <li><a class="link" href="">新闻资讯</a></li>
+            <li><a class="link" href="">帮助中心</a></li>
+            <li><a class="link" href="">关于我们</a></li>
+            <li>
+                <a class="link" href="">PCB快速报价</a>
+                <i class="iconfont iconzujiantubiaojiantou1"></i>
+                <dl>
+                    <dd><a href="">联系我们</a></dd>
+                    <dd><a href="">联系我们</a></dd>
+                </dl>
+            </li>
         </ul>
         <div class="fr login-bar">
             <!--未登录-->
@@ -112,319 +122,380 @@
         <table class="processshow-table">
             <tbody>
             <tr style="box-sizing: border-box;" class="firstRow">
+                <th width="5%">
+                    <span>项目</span>
+                </th>
+                <th width="30%">
+                    <span>内容</span>
+                </th>
                 <th width="25%">
-                    <span>项目名称</span>
+                    <span>工艺能力</span>
                 </th>
-                <th width="75%">
-                    <span>制程能力</span>
+                <th width="40%">
+                    <span>备注</span>
                 </th>
             </tr>
             <tr>
                 <td>
-                    <p class="t">层数</p>
-                    <p>Layer Count</p>
+                    <p>1</p>
                 </td>
-                <td>1-8层 备注：层数，是指PCB中的电气层数（敷铜层数）。目前猎板只接受1~8层通孔板（不接受盲埋孔板）</td>
+                <td>层数</td>
+                <td>1-8</td>
+                <td>层数，是指PCB中的电气层数（敷铜层数）。目前猎板只接受1~8层通孔板（不接受盲埋孔板）</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">生产板尺寸（最大）</p>
-                    <p>Panel Size(Max)</p>
+                    <p>2</p>
                 </td>
-                <td>620×620mm 备注：猎板开料裁剪的工作板一般尺寸为60cm * 50cm，通常允许客户的PCB设计尺寸在45cm * 45cm以内，具体以文件审核为准。</td>
+                <td>板材</td>
+                <td>FR-4</td>
+                <td>（PDF文件）</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">生产板尺寸（最小）</p>
-                    <p>Panel Size(Min)</p>
+                    <p>3</p>
                 </td>
-                <td>60×60mm 备注：猎板开料裁剪的工作板一般尺寸为60cm * 50cm，通常允许客户的PCB设计尺寸在45cm * 45cm以内，具体以文件审核为准。</td>
+                <td>油墨</td>
+                <td>太阳、广信系列</td>
+                <td>（PDF文件）</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">板厚度（最大）</p>
-                    <p>Board Thickness(Max)</p>
+                    <p>4</p>
                 </td>
-                <td>3.2mm 备注：目前生产板厚：0.8/1.0/1.2/1.6/2.0/2.4 mm，客户有特殊需求请联系所属客服</td>
+                <td>生产板尺寸（最大）</td>
+                <td>620×620mm</td>
+                <td>猎板开料裁剪的工作板一般尺寸为62cm * 52cm，通常允许客户的PCB设计尺寸在61cm * 50cm以内，资料内拼板最大尺寸48cm*48cm，具体以文件审核为准。</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">板厚度（最小）</p>
-                    <p>Board Thickness(Min)</p>
+                    <p>5</p>
                 </td>
-                <td>0.3mm 备注：目前生产板厚：0.8/1.0/1.2/1.6/2.0/2.4 mm，客户有特殊需求请联系所属客服</td>
+                <td>生产板尺寸（最小）</td>
+                <td>60×60mm</td>
+                <td>猎板开料裁剪的工作板一般尺寸为60cm * 50cm，通常允许客户的PCB设计尺寸在45cm * 45cm以内，具体以文件审核为准。</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">芯板厚度（最小）</p>
-                    <p>Thin Core Thickness(Min)</p>
+                    <p>6</p>
                 </td>
-                <td>0.15mm 备注：内层不含铜厚度</td>
+                <td>板厚度（最大）</td>
+                <td>3.2mm</td>
+                <td>目前生产板厚： 0.8/1.0/1.2/1.6/2.0/2.4 mm，客户有特殊需求请联系所属客服</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">成品厚度公差（板厚≥0.8mm）</p>
-                    <p>Finished Board Thickness Tolerance(Board Thickness≥0.8mm)</p>
+                    <p>7</p>
                 </td>
-                <td>±10% 备注：比如板厚T=1.6mm，实物板厚为1.44mm（T－1.6×10%）~1.76mm（T＋1.6×10%）</td>
+                <td>板厚度（最小）</td>
+                <td>0.3mm</td>
+                <td>目前生产板厚： 0.8/1.0/1.2/1.6/2.0/2.4 mm，客户有特殊需求请联系所属客服</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">成品厚度公差（0.4mm≤板厚< 0.8mm）</p>
-                    <p>inished Board Thickness Tolerance(0.4mm≤Board Thickness<0.8mm)</p>
+                    <p>8</p>
                 </td>
-                <td>±0.075mm 备注：比如板厚T=0.6mm，实物板厚为0.5mm（T-0.1）~0.7mm（T+0.1）</td>
+                <td>芯板厚度（最小）</td>
+                <td>0.15mm</td>
+                <td>内层不含铜厚度</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">板曲(最小)</p>
-                    <p>Warpage(Min)</p>
+                    <p>9</p>
                 </td>
+                <td>成品厚度公差（板厚≥0.8mm）</td>
+                <td>±10%</td>
+                <td>比如板厚T=1.6mm，实物板厚为1.44mm（T－1.6×10%）~1.76mm（T＋1.6×10%）</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>10</p>
+                </td>
+                <td>成品厚度公差（0.4mm≤板厚< 0.8mm）</td>
+                <td>±0.075mm</td>
+                <td>比如板厚T=0.6mm，实物板厚为0.5mm（T-0.1）~0.7mm（T+0.1）</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>11</p>
+                </td>
+                <td>板曲(最小)</td>
                 <td>0.75%</td>
+                <td></td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">钻孔孔径（最大）</p>
-                    <p>Drill Size(Max)</p>
+                    <p>12</p>
                 </td>
-                <td>Φ6.0mm 备注：大于6.0mm可扩孔</td>
+                <td>钻孔孔径（最大）</td>
+                <td>Φ6.0mm</td>
+                <td>大于6.0mm可扩孔</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">钻孔孔径（最小）</p>
-                    <p>Drill Size(Min)</p>
+                    <p>13</p>
                 </td>
-                <td>Φ0.25mm 备注：0.25mm是钻孔的最小孔径</td>
+                <td>钻孔孔径（最小）</td>
+                <td>Φ0.25mm</td>
+                <td>0.25mm是钻孔的最小孔径</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">外层底铜厚度(最小)</p>
-                    <p>Base Copper Thickness of Outer Layer(Min)</p>
+                    <p>14</p>
                 </td>
-                <td>单面板：HOZ、双面及多层1/3 OZ 备注：指成品电路板外层线路铜箔的最小厚度，猎板最小做到：单面板HOZ、双面及多层1/3 OZ</td>
+                <td>外层底铜厚度(最小)</td>
+                <td>单面板：HOZ、双面及多层1/3 OZ</td>
+                <td>指成品电路板外层线路铜箔的最小厚度，猎板最小做到：单面板HOZ、双面及多层1/3 OZ</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">外层底铜厚度(最大)</p>
-                    <p>Base Copper Thickness of Outer Layer(Max)</p>
+                    <p>15</p>
                 </td>
-                <td>4 OZ 备注：指成品电路板外层线路铜箔的最大厚度，猎板最大做到4 OZ</td>
+                <td>外层底铜厚度(最大)</td>
+                <td>4 OZ</td>
+                <td>指成品电路板外层线路铜箔的最大厚度，猎板最大做到4 OZ</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">内层底铜厚度(最小)</p>
-                    <p>Base Copper Thickness of inner Layer(Min)</p>
+                    <p>16</p>
                 </td>
-                <td>1/3 OZ 备注：指成品电路板内层线路铜箔的最小厚度，猎板最小做到1/3 OZ</td>
+                <td>内层底铜厚度(最小)</td>
+                <td>1/3 OZ</td>
+                <td>指成品电路板内层线路铜箔的最小厚度，猎板最小做到1/3 OZ</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">内层底铜厚度(最大)</p>
-                    <p>Base Copper Thickness of inner Layer(Min)</p>
+                    <p>17</p>
                 </td>
-                <td>3 OZ 备注：指成品电路板内层线路铜箔的最大厚度，猎板最大做到3 OZ</td>
+                <td>内层底铜厚度(最大)</td>
+                <td>3 OZ</td>
+                <td>指成品电路板内层线路铜箔的最大厚度，猎板最大做到3 OZ</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">绝缘层厚度(最小)</p>
-                    <p>Dielectric Thickness(Min)</p>
+                    <p>18</p>
                 </td>
-                <td>0.10mm 备注：PP胶片压合后厚度0.10mm</td>
+                <td>绝缘层厚度(最小)</td>
+                <td>0.10mm</td>
+                <td>PP胶片压合后厚度0.10mm</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">孔电镀纵横比(最大)</p>
-                    <p>Aspect Ratio(Max)</p>
+                    <p>19</p>
                 </td>
+                <td>孔电镀纵横比(最大)</td>
                 <td>10:1</td>
+                <td></td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">孔径公差(镀通孔)</p>
-                    <p>Hole Diameter Tolerance(PTH)</p>
+                    <p>20</p>
                 </td>
-                <td>±0.075mm 备注：镀铜孔：钻孔的公差为±0.075mm，例如设计为0.6mm的孔，实物板的成品孔径在0.525mm-0.675mm是合格允许的</td>
+                <td>孔径公差(PTH有铜孔)</td>
+                <td>±0.075mm</td>
+                <td>PTH有铜孔：钻孔的公差为±0.075mm，例如设计为0.6mm的孔，实物板的成品孔径在0.525mm-0.675mm是合格允许的</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">孔径公差(非镀通孔)</p>
-                    <p>Hole Diameter Tolerance(NPTH)</p>
+                    <p>21</p>
                 </td>
-                <td>±0.05mm 备注：非镀铜孔：钻孔的公差为±0.05mm，例如设计为0.6mm的孔，实物板的成品孔径在0.55mm-0.65mm是合格允许的</td>
-            </tr>
-            <tr>
-                <td>
-                    <p class="t">孔位公差</p>
-                    <p>Hole Position Tolerance(Compared with CAD Data)</p>
-                </td>
+                <td>孔径公差(NPTH无铜孔)</td>
                 <td>±0.05mm</td>
+                <td>NPTH无铜孔：钻孔的公差为±0.05mm，例如设计为0.6mm的孔，实物板的成品孔径在0.55mm-0.65mm是合格允许的</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">孔壁铜厚（通孔）</p>
-                    <p>Holewall Copper Thickness(Full Hole)</p>
+                    <p>22</p>
                 </td>
-                <td>常规平均值≥18um 备注：客户可另作指定</td>
+                <td>孔位公差</td>
+                <td>±0.05mm</td>
+                <td></td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">外层设计线宽/间距（最小）</p>
-                    <p>Line Width/Spacing of Outer Layer(Min)</p>
+                    <p>23</p>
                 </td>
+                <td>孔壁铜厚（通孔）</td>
+                <td>常规平均值≥18um</td>
+                <td>客户可另作指定</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>24</p>
+                </td>
+                <td>外层设计线宽/间距（最小）</td>
                 <td>
                     T/T OZ: 3mil/ 3mil（T=1/3OZ）<br/>
-                    H/H OZ: 4mil/ 4mil<br/>
-                    1/1 OZ: 4mil/ 4mil<br/>
-                    2/2 OZ: 6mil/ 6mil<br/>
+                    H/H OZ: 4mil/  4mil<br/>
+                    1/1 OZ: 4mil/  4mil<br/>
+                    2/2 OZ: 6mil/  6mil<br/>
                     3/3 OZ: 10mil/ 10mil<br/>
-                    4/4OZ：14 mil/ 14 mil<br/>
-                    备注：此参数为猎板默认
+                    4/4OZ：14 mil/ 14 mil
                 </td>
+                <td>此参数为猎板默认</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">内层设计线宽/间距（最小）</p>
-                    <p>Line Width/Spacing of Inner Layer(Min)</p>
+                    <p>25</p>
                 </td>
+                <td>内层设计线宽/间距（最小）</td>
                 <td>
                     T/T OZ: 3mil/ 3mil（T=1/3OZ）<br/>
                     H/H OZ: 4mil/ 4mil<br/>
                     1/1 OZ: 4mil/ 4mil<br/>
                     2/2 OZ: 5mil/ 5mil<br/>
-                    3/3 OZ: 8mil/ 8mil<br/>
-                    备注：此参数为猎板默认
+                    3/3 OZ:  8mil/ 8mil
                 </td>
+                <td>此参数为猎板默认</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">蚀刻公差</p>
-                    <p>Etching Tolerance</p>
+                    <p>26</p>
                 </td>
-                <td>±15% 备注：例如线宽 T=4mil，实际线宽为3.4mil（T－4mil×15%）~4.6mil（T＋4mil×15%）</td>
+                <td>蚀刻公差</td>
+                <td>±15%</td>
+                <td>例如线宽 T=4mil，实际线宽为3.4mil（T－4mil×15%）~4.6mil（T＋4mil×15%）</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">外层图形对孔位精度（最小）</p>
-                    <p>Outer Image to Hole Tolerance(Min)</p>
+                    <p>27</p>
                 </td>
-                <td>±3mil 备注：线路图像对孔位精度，实物相差±3mil是合格允许的</td>
+                <td>外层图形对孔位精度（最小）</td>
+                <td>±3mil</td>
+                <td>线路图像对孔位精度，实物相差±3mil是合格允许的</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">孔位对孔位精度(最小)</p>
-                    <p>Hole to Hole Tolerance(Min)</p>
+                    <p>28</p>
                 </td>
-                <td>±2mil 备注：线路图像孔位对实物孔位精度±2mil是合格允许的</td>
+                <td>孔位对孔位精度(最小)</td>
+                <td>±2mil</td>
+                <td>线路图像孔位对实物孔位精度±2mil是合格允许的</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">阻焊对位精度公差</p>
-                    <p>Solder Mask Registration Tolerance</p>
+                    <p>29</p>
                 </td>
-                <td>±3mil 备注：线路图像对防焊位置精度公差±3mil是合格允许的</td>
+                <td>阻焊对位精度公差</td>
+                <td>±3mil</td>
+                <td>线路图像对防焊位置精度公差±3mil是合格允许的</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">阻焊厚度（最小）</p>
-                    <p>Solder Mask Thickness(Min)</p>
+                    <p>30</p>
                 </td>
-                <td>≥8μm 备注：猎板阻焊采用广信油墨≥8μm</td>
+                <td>阻焊厚度（最小）</td>
+                <td>≥8μm</td>
+                <td>猎板阻焊采用广信油墨≥8μm</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">阻焊桥宽（最小）</p>
-                    <p>Solder Mask Bridge Width(Min)</p>
+                    <p>31</p>
                 </td>
+                <td>阻焊桥宽（最小）</td>
                 <td>
                     绿油：4mil<br/>
                     黑/白色：5mil<br/>
-                    其他杂色油：4mil<br/>
-                    备注：若有阻焊桥要求，必须备注！阻焊桥 价格会根据工艺要求上浮。若阻焊颜色为绿色焊盘间保留油墨宽度必须≥4mil，黑色、白色焊盘间保留油墨宽度必须≥5mil，其它杂色油焊盘间保留油墨宽度必须为≥4mil
+                    其他杂色油：4mil
+
                 </td>
+                <td>若有阻焊桥要求，必须备注！阻焊桥 价格会根据工艺要求上浮。若阻焊颜色为绿色焊盘间保留油墨宽度必须≥4mil，黑色、白色焊盘间保留油墨宽度必须≥5mil，其它杂色油焊盘间保留油墨宽度必须为≥4mil</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">阻焊塞孔孔径</p>
-                    <p>Solder Mask Plugged Hole Diameter</p>
+                    <p>32</p>
                 </td>
-                <td>≤0.45mm 备注：为了提高小孔径过孔的稳定性，猎板阻焊塞孔孔径规定≤0.45mm</td>
+                <td>阻焊塞孔孔径</td>
+                <td>≤0.45mm</td>
+                <td>为了提高小孔径过孔的稳定性，猎板阻焊塞孔孔径规定≤0.45mm</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">沉镍沉金镍厚</p>
-                    <p>Minimum Nickel Thickness of ENIG</p>
+                    <p>33</p>
                 </td>
-                <td>100-200uin 备注：特殊需求可指定</td>
+                <td>沉镍沉金镍厚</td>
+                <td>100-200uin</td>
+                <td>特殊需求可指定</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">沉镍沉金金厚</p>
-                    <p>Minimum Gold Thickness of ENIG(Max)</p>
+                    <p>34</p>
                 </td>
-                <td>1-3uin 备注：特殊需求可指定</td>
+                <td>沉镍沉金金厚</td>
+                <td>1-3uin</td>
+                <td>特殊需求可指定</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">锡厚（热风整平）</p>
-                    <p>Solder Thickness on XFP(HAL)</p>
+                    <p>35</p>
                 </td>
-                <td>200-300uin</td>
+                <td>锡厚（热风整平）</td>
+                <td>2-40μm</td>
+                <td></td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">铣外形公差</p>
-                    <p>Routing Dimension Tolerance</p>
+                    <p>36</p>
                 </td>
+                <td>铣外形公差</td>
                 <td>±4mil</td>
+                <td></td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">铣外形公差（孔到边）</p>
-                    <p>Routing Dimension Tolerance(Hole to Edge)</p>
+                    <p>37</p>
                 </td>
+                <td>铣外形公差（孔到边）</td>
                 <td>±4mil</td>
+                <td></td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">铣外形圆弧（内角）（最小）</p>
-                    <p>Radius by Routing (Internal Angle)(Min)</p>
+                    <p>38</p>
                 </td>
+                <td>铣外形圆弧（内角）（最小）</td>
                 <td>R≥0.5mm</td>
+                <td></td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">铣沉头孔孔径</p>
-                    <p>Countersink Hole Size</p>
+                    <p>39</p>
                 </td>
+                <td>铣沉头孔孔径</td>
+                <td>依客户要求</td>
                 <td>依客户要求</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">V-CUT剩余厚度公差（最小）</p>
-                    <p>V-CUT Remaining Thickness Tolerance(MIN)</p>
+                    <p>40</p>
                 </td>
-                <td>±0.10mm 备注：V-CUT剩余厚度公差最小±0.10mm</td>
+                <td>V-CUT剩余厚度公差（最小）</td>
+                <td>±0.10mm</td>
+                <td>V-CUT剩余厚度公差最小±0.10mm</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">V-CUT错位度（最小）</p>
-                    <p>V-CUT MISREGISTRATION （MIN）</p>
+                    <p>41</p>
                 </td>
-                <td>0.10mm 备注：V-CUT错位度最小0.10mm</td>
+                <td>V-CUT错位度（最小）</td>
+                <td>0.10mm</td>
+                <td>V-CUT错位度最小0.10mm</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">V-CUT板厚厚度（最小/最大）</p>
-                    <p>V-CUT Board Thickness(Min/Max）</p>
+                    <p>42</p>
                 </td>
-                <td>0.5mm/3.2mm 备注：目前猎板支持V-CUT板厚0.5mm~3.2mm</td>
+                <td>V-CUT板厚厚度（最小/最大）</td>
+                <td>0.5mm/3.2mm</td>
+                <td>目前猎板支持V-CUT板厚0.5mm~3.2mm</td>
             </tr>
             <tr>
                 <td>
-                    <p class="t">阻抗公差（最小）</p>
-                    <p>Impedance Tolerance(Min)</p>
+                    <p>43</p>
                 </td>
-                <td>±10% 备注：例如选择的阻抗值为T=50Ω，实际阻抗为45Ω（T－50Ω×10%）~55Ω（T＋50Ω×10%）</td>
+                <td>阻抗公差（最小）</td>
+                <td>±10%</td>
+                <td>例如选择的阻抗值为T=50Ω，实际阻抗为45Ω（T－50Ω×10%）~55Ω（T＋50Ω×10%）</td>
             </tr>
             </tbody>
         </table>
