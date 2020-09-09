@@ -232,6 +232,11 @@ body {
   position: relative;
   height: 324px;
 }
+.sheet .sheet1 li.box2 .shou {
+  position: absolute;
+  left: 9px;
+  bottom: 52px;
+}
 .sheet .sheet1 li.box2 .icon-txt {
   position: absolute;
   left: 0;
