@@ -235,7 +235,12 @@ body {
 .sheet .sheet1 li.box2 .shou {
   position: absolute;
   left: 9px;
-  bottom: 52px;
+  bottom: 88px;
+}
+.sheet .sheet1 li.box2 .cod {
+  position: absolute;
+  right: 0;
+  bottom: 129px;
 }
 .sheet .sheet1 li.box2 .icon-txt {
   position: absolute;
@@ -248,8 +253,15 @@ body {
   text-align: center;
 }
 .sheet .sheet1 li.box2 .tit {
-  font-size: 145px;
+  font-size: 116px;
   color: #000000;
+  text-align: left;
+  width: 100%;
+  padding-left: 15px;
+}
+.sheet .sheet1 li.box2 .text {
+  width: 100%;
+  padding-left: 100px;
 }
 .sheet .sheet1 li.box2 .text .t1 {
   font-size: 36px;
