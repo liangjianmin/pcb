@@ -197,6 +197,20 @@ body {
 .verCenter {
   align-items: center;
 }
+.printing {
+  padding-top: 38px;
+}
+.printing .printing-head {
+  text-align: center;
+  height: 98px;
+}
+.printing .printing-text {
+  text-align: center;
+}
+.printing .printing-text span {
+  font-size: 26px;
+  color: #000000;
+}
 .sheet {
   width: 1140px;
   margin: 0 auto;
