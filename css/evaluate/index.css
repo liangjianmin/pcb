@@ -1603,6 +1603,10 @@ body {
   background-size: cover;
   text-align: center;
 }
+.evaluate-page .evaluate-page-head.bgg {
+  background: url("../../images/factory/bb.png") no-repeat center !important;
+  background-size: cover !important;
+}
 .evaluate-page .evaluate-page-head .t1 {
   padding-top: 60px;
   margin-bottom: 15px;
