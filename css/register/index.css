@@ -1164,7 +1164,7 @@ body {
 .register-section .register-section-wrap .btn {
   margin-top: 28px;
 }
-.register-section .register-section-wrap .btn a {
+.register-section .register-section-wrap .btn .a {
   width: 380px;
   height: 60px;
   line-height: 60px;
