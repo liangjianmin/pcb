@@ -1047,8 +1047,8 @@ body {
   width: 100%;
   padding-top: 40px;
   height: 1000px;
-  background: url("../../images/registerPage/1.png") no-repeat center -30px;
-  background-size: cover;
+  /**background: url("../../images/registerPage/1.png") no-repeat center -30px;
+  background-size: cover;**/
 }
 .register-section .register-section-wrap {
   width: 380px;
