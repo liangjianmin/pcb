@@ -6,6 +6,90 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "17195899",
+      "name": "icon／单色／手机",
+      "font_class": "icondanseshouji5",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "17184531",
+      "name": "icon／单色／手机(4)",
+      "font_class": "icondanseshouji4",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "17184532",
+      "name": "icon／单色／手机(2)",
+      "font_class": "icondanseshouji21",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "17184533",
+      "name": "icon／单色／手机",
+      "font_class": "icondanseshouji3",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "17184534",
+      "name": "矩形(1)",
+      "font_class": "juxing1",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "17184535",
+      "name": "矩形",
+      "font_class": "juxing",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "17184536",
+      "name": "矩形(3)",
+      "font_class": "juxing3",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "17184537",
+      "name": "icon／单色／手机(1)",
+      "font_class": "icondanseshouji12",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "17184538",
+      "name": "矩形(2)",
+      "font_class": "juxing2",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "17184539",
+      "name": "矩形(4)",
+      "font_class": "juxing4",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "17184540",
+      "name": "icon／单色／手机(3)",
+      "font_class": "icondanseshouji31",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "17184223",
+      "name": "icon／单色／手机",
+      "font_class": "icondanseshouji2",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
       "icon_id": "16253436",
       "name": "编组",
       "font_class": "bianzu",

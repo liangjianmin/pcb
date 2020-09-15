@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="./js/flexible.min.js"></script>
+    <link rel="stylesheet" href="./js/vue/index.css"/>
+    <link rel="stylesheet" href="./css/index/index.css">
+</head>
+<body>
+<div id="app">
+    <div class="pcb-head row bothSide verCenter">
+        <a class="logo">
+            <img src="./images/index/logo.png" alt="">
+        </a>
+        <div class="bar row verCenter">
+            <div class="row verCenter">
+                <a href="javascript:;" class="link">注册</a>
+                <a href="javascript:;" class="line">|</a>
+                <a href="javascript:;" class="link">登录</a>
+            </div>
+            <div class="toggle" @click="show=!show">
+                <i class="iconfont iconicondanseshouji2"></i>
+            </div>
+        </div>
+    </div>
+    <div class="pcb-banner">
+        <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+            <van-swipe-item>
+                <van-image fit="cover" src="http://img.ichunt.com/images/cms/202001/17/34dbed9a18740816d1ff0f006c82cc52.jpg" alt=""/>
+            </van-swipe-item>
+            <van-swipe-item>
+                <van-image fit="cover" src="http://img.ichunt.com/images/cms/202001/17/dc3f594fce33ed782f16172958b64746.jpg" alt=""/>
+            </van-swipe-item>
+        </van-swipe>
+    </div>
+    <div class="pcb-content">
+        <ul class="pcb-box1 row avarage">
+            <li class="column rowCenter verCenter">
+                <i class="ico-1"></i>
+                <p>免费打样</p>
+            </li>
+            <li class="column rowCenter verCenter">
+                <i class="ico-2"></i>
+                <p>24小时出货</p>
+            </li>
+            <li class="column rowCenter verCenter">
+                <i class="ico-3"></i>
+                <p>免加急费</p>
+            </li>
+            <li class="column rowCenter verCenter">
+                <i class="ico-4"></i>
+                <p>质保一年</p>
+            </li>
+        </ul>
+        <div class="pcb-box2">
+            <p class="t1">猎板专业PCB打样、小批量加工</p>
+            <p class="t2">100%满足IPC II级标准，品质问题假一赔十</p>
+            <div class="list">
+                <van-swipe class="my-swipe" :autoplay="30000000" indicator-color="white">
+                    <van-swipe-item>
+                        <div class="column box">
+                            <div class="top row verCenter">
+                                <div class="pic">
+                                    <img src="http://img.ichunt.com/images/cms/202001/17/34dbed9a18740816d1ff0f006c82cc52.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p class="row verCenter"><em>尺寸: </em><span>10cmx10cm</span></p>
+                                    <p class="row verCenter"><em>层数: </em><span>单双面</span></p>
+                                    <p class="row verCenter"><em>板材: </em><span>建滔A级材</span></p>
+                                    <p class="row verCenter"><em>数量: </em><span>5/10片</span></p>
+                                    <p class="row verCenter"><em>交期: </em><span>24小时</span></p>
+                                </div>
+                            </div>
+                            <div class="bottom row">
+                                <a href="javascript:;" class="btn1 row verCenter rowCenter">
+                                    <em>价格:</em>
+                                    <span>30/40元</span>
+                                </a>
+                                <a href="javascript:;" class="btn2 row verCenter rowCenter">立即下单</a>
+                            </div>
+                        </div>
+                    </van-swipe-item>
+                    <van-swipe-item>
+                        <div class="column box">
+                            <div class="top row verCenter">
+                                <div class="pic">
+                                    <img src="http://img.ichunt.com/images/cms/202001/17/34dbed9a18740816d1ff0f006c82cc52.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p class="row verCenter"><em>尺寸: </em><span>10cmx10cm</span></p>
+                                    <p class="row verCenter"><em>层数: </em><span>单双面</span></p>
+                                    <p class="row verCenter"><em>板材: </em><span>建滔A级材</span></p>
+                                    <p class="row verCenter"><em>数量: </em><span>5/10片</span></p>
+                                    <p class="row verCenter"><em>交期: </em><span>24小时</span></p>
+                                </div>
+                            </div>
+                            <div class="bottom row">
+                                <a href="javascript:;" class="btn1 row verCenter rowCenter">
+                                    <em>价格:</em>
+                                    <span>30/40元</span>
+                                </a>
+                                <a href="javascript:;" class="btn2 row verCenter rowCenter">立即下单</a>
+                            </div>
+                        </div>
+                    </van-swipe-item>
+                </van-swipe>
+            </div>
+        </div>
+        <div class="pcb-box3">
+            <p class="t1">行业首推质保一年</p>
+            <p class="t2">100%满足IPC II级标准，品质问题假一赔十</p>
+            <div class="box column verCenter rowCenter mb">
+                <p class="row verCenter">
+                    <em>
+                        <i class="iconfont iconbianzu"></i>
+                    </em>
+                    <span>单双面打样 24小时出货</span>
+                </p>
+                <p class="row verCenter">
+                    <em>
+                        <i class="iconfont iconbianzu"></i>
+                    </em>
+                    <span>小批量加工 48小时出货</span>
+                </p>
+                <div class="pic">
+                    <img src="./images/index/b1.png" alt="">
+                    <a href="javascript:;" class="btn">立即下单</a>
+                </div>
+            </div>
+            <div class="box column verCenter rowCenter">
+                <div class="row avarage wrap">
+                    <p class="row verCenter">
+                        <em>
+                            <i class="iconfont iconbianzu"></i>
+                        </em>
+                        <span>建滔A级板材</span>
+                    </p>
+                    <p class="row verCenter">
+                        <em>
+                            <i class="iconfont iconbianzu"></i>
+                        </em>
+                        <span>广信油墨</span>
+                    </p>
+                </div>
+                <div class="row avarage wrap">
+                    <p class="row verCenter">
+                        <em>
+                            <i class="iconfont iconbianzu"></i>
+                        </em>
+                        <span>IPC II级标准</span>
+                    </p>
+                    <p class="row verCenter">
+                        <em>
+                            <i class="iconfont iconbianzu"></i>
+                        </em>
+                        <span>飞针全测</span>
+                    </p>
+                </div>
+                <div class="pic">
+                    <img src="./images/index/b1.png" alt="">
+                    <a href="javascript:;" class="btns">立即定制</a>
+                </div>
+            </div>
+        </div>
+        <div class="pcb-box4">
+            <p class="t1">实拍生产线，设备保证品质</p>
+            <p class="t2">秉承“诚信为本，质量第一”的发展理念，为广大用户提供更优质的PCB定制服务</p>
+            <ul class="tab">
+                <li class="curr">东台钻机</li>
+                <li>竞铭沉铜电镀</li>
+                <li>DES水平处理线</li>
+                <li>阻焊字符</li>
+                <li>东台钻机</li>
+                <li>竞铭沉铜电镀</li>
+            </ul>
+            <ul class="list">
+                <li>
+                    <img src="./images/index/b1.png" alt="">
+                    <p>高速六轴钻孔机</p>
+                </li>
+                <li>
+                    <img src="./images/index/b1.png" alt="">
+                    <p>双头钻孔机</p>
+                </li>
+                <li>
+                    <img src="./images/index/b1.png" alt="">
+                    <p>全进口西风主轴</p>
+                </li>
+            </ul>
+        </div>
+        <div class="pcb-box5">
+            <p class="t1">用户晒单</p>
+            <p class="t2">已有100000+用户选择我们，您的每一个分享都是对我们莫大的支持与信赖</p>
+            <ul class="list row">
+                <li>
+                    <div class="pic">
+                        <img src="./images/index/b1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="tt">生产的速度快，质量不错，效果非常好，以后需要还以后需要还以后需要还</p>
+                        <div class="row bothSide bottom">
+                            <div class="row verCenter">
+                                <div class="head">
+                                    <img src="./images/index/b1.png" alt="">
+                                </div>
+                                <span class="head-txt">陈小姐</span>
+                            </div>
+                            <dl class="row star">
+                                <dd></dd>
+                                <dd></dd>
+                                <dd></dd>
+                                <dd></dd>
+                                <dd class="disabled"></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <img src="./images/index/b1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="tt">生产的速度快，质量不错，效果非常好，以后需要还以后需要还以后需要还</p>
+                        <div class="row bothSide bottom">
+                            <div class="row verCenter">
+                                <div class="head">
+                                    <img src="./images/index/b1.png" alt="">
+                                </div>
+                                <span class="head-txt">陈小姐</span>
+                            </div>
+                            <dl class="row star">
+                                <dd></dd>
+                                <dd></dd>
+                                <dd></dd>
+                                <dd></dd>
+                                <dd class="disabled"></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <img src="./images/index/b1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="tt">生产的速度快，质量不错，效果非常好，以后需要还以后需要还以后需要还</p>
+                        <div class="row bothSide bottom">
+                            <div class="row verCenter">
+                                <div class="head">
+                                    <img src="./images/index/b1.png" alt="">
+                                </div>
+                                <span class="head-txt">陈小姐</span>
+                            </div>
+                            <dl class="row star">
+                                <dd></dd>
+                                <dd></dd>
+                                <dd></dd>
+                                <dd></dd>
+                                <dd class="disabled"></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <img src="./images/index/b1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="tt">生产的速度快，质量不错，效果非常好，以后需要还以后需要还以后需要还</p>
+                        <div class="row bothSide bottom">
+                            <div class="row verCenter">
+                                <div class="head">
+                                    <img src="./images/index/b1.png" alt="">
+                                </div>
+                                <span class="head-txt">陈小姐</span>
+                            </div>
+                            <dl class="row star">
+                                <dd></dd>
+                                <dd></dd>
+                                <dd></dd>
+                                <dd></dd>
+                                <dd class="disabled"></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="more row rowCenter  verCenter">
+                <span>查看更多</span>
+                <i class="iconfont iconicondanseshouji4"></i>
+            </div>
+        </div>
+        <div class="pcb-box6">
+            <ul class="list row">
+                <li>
+                    <img src="./images/index/a1.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/index/a2.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/index/a1.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/index/a2.png" alt="">
+                </li>
+            </ul>
+            <div class="kefu row bothSide verCenter">
+                <div class="row verCenter">
+                    <i class="iconfont iconicondanseshouji5"></i>
+                    <div>
+                        <p class="t1">7*24小时</p>
+                        <p class="t1"> 客服在线</p>
+                    </div>
+                </div>
+                <div class="tel row rowCenter verCenter">0571 - 86609386</div>
+            </div>
+        </div>
+    </div>
+    <div class="pcb-footer">
+        <p class="title row rowCenter verCenter">
+            <a href="javascript:;" class="link">猎芯网</a>
+            <a href="javascript:;" class="line">|</a>
+            <a href="javascript:;" class="link">电脑端</a>
+        </p>
+        <p class="t1">@ 2019-2020 pcbhunt.com All right reserved.</p>
+        <p class="t1">版权所有:杭州猎板网络科技有限公司</p>
+        <p class="t1">工信部备案号：浙ICP备20015009号-1</p>
+    </div>
+    <div class="suspension row rowCenter">
+        <a href="javascript:;" class="btn1 row rowCenter verCenter">立即登录</a>
+        <a href="javascript:;" class="btn2 row rowCenter verCenter">免费注册</a>
+    </div>
+    <div class="shade-nav" :class="{'show':show}">
+        <i class="arrow"></i>
+        <ul class="column">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">会员中心</a></li>
+            <li><a href="javascript:;">快速计价</a></li>
+            <li><a href="javascript:;">购物车</a></li>
+            <li><a href="javascript:;">邀请注册</a></li>
+            <li><a href="javascript:;">关于猎板</a></li>
+        </ul>
+    </div>
+    <!--导航栏-->
+    <ul class="nav row  avarage verCenter">
+        <li class="curr">
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing"></i>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing1"></i>
+                <p>订单</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing2"></i>
+                <p>计价</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing3"></i>
+                <p>消息</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing4"></i>
+                <p>我的</p>
+            </a>
+        </li>
+    </ul>
+    <!--导航栏end-->
+</div>
+
+<script src="./js/vue/vue.min.js"></script>
+<script src="./js/vue/axios.min.js"></script>
+<script src="./js/vue/vant.min.js"></script>
+<script src="./js/util.js"></script>
+<script>
+
+  new Vue({
+    el: '#app',
+    data: {
+      show:false
+    },
+    created() {
+    },
+    methods: {}
+  });
+
+</script>
+</body>
+</html>

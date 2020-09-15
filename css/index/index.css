@@ -1,0 +1,894 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.eot?t=1600159402003');
+  /* IE9 */
+  src: url('iconfont.eot?t=1600159402003#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'), url('iconfont.woff?t=1600159402003') format('woff'), url('iconfont.ttf?t=1600159402003') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('iconfont.svg?t=1600159402003#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconicondanseshouji5:before {
+  content: "\e6a2";
+}
+.iconicondanseshouji4:before {
+  content: "\e698";
+}
+.iconicondanseshouji21:before {
+  content: "\e699";
+}
+.iconicondanseshouji3:before {
+  content: "\e69a";
+}
+.iconjuxing1:before {
+  content: "\e69b";
+}
+.iconjuxing:before {
+  content: "\e69c";
+}
+.iconjuxing3:before {
+  content: "\e69d";
+}
+.iconicondanseshouji12:before {
+  content: "\e69e";
+}
+.iconjuxing2:before {
+  content: "\e69f";
+}
+.iconjuxing4:before {
+  content: "\e6a0";
+}
+.iconicondanseshouji31:before {
+  content: "\e6a1";
+}
+.iconicondanseshouji2:before {
+  content: "\e694";
+}
+.iconbianzu:before {
+  content: "\e68e";
+}
+.iconxingzhuangjiehe:before {
+  content: "\e68d";
+}
+.iconxingzhuangjiehe1:before {
+  content: "\e68c";
+}
+.iconicondanseshouji11:before {
+  content: "\e68b";
+}
+.iconicondanseshouji1:before {
+  content: "\e689";
+}
+.iconicondanseshouji:before {
+  content: "\e68a";
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+html,
+body {
+  font-family: sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  border: none;
+  -webkit-appearance: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol,
+ul,
+dl {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+em,
+b,
+i {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+.clr {
+  *zoom: 1;
+  clear: both;
+}
+.clr:after {
+  content: ".";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.fl {
+  float: left;
+  _display: inline;
+}
+.fr {
+  float: right;
+  _display: inline;
+}
+.va-t {
+  vertical-align: top;
+}
+.va-m {
+  vertical-align: middle;
+}
+.va-b {
+  vertical-align: bottom;
+}
+.i-hide {
+  display: none;
+}
+.i-show {
+  display: block;
+}
+.lineBlock {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.lbBox {
+  font-size: 0 !important;
+  *word-spacing: -1px !important;
+}
+.boxsiz {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  overflow-x: hidden;
+}
+.emptys {
+  margin-left: -1px;
+  width: 1px;
+  height: 100%;
+  font-size: 0;
+  vertical-align: middle;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+/* 两侧对齐 */
+.bothSide {
+  justify-content: space-between;
+}
+/* 平均分布 */
+.avarage {
+  justify-content: space-around;
+}
+/* 水平居中 */
+.rowCenter {
+  justify-content: center;
+}
+/* 垂直居中 */
+.verCenter {
+  align-items: center;
+}
+.boxFlex {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.boxFlexs {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+@media (min-width: 750px) {
+  html {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  html body {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;
+  }
+}
+#app {
+  padding-bottom: 1.5rem;
+}
+.pcb-head {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 44px;
+  background: #F0F9FC;
+  padding: 0 0.48rem;
+  z-index: 99;
+}
+.pcb-head .logo {
+  width: 83px;
+  height: 24px;
+}
+.pcb-head .logo img {
+  width: 83px;
+  height: 24px;
+}
+.pcb-head .bar .link {
+  font-size: 12px;
+  color: #0081d2;
+}
+.pcb-head .bar .line {
+  font-size: 12px;
+  color: #0081d2;
+  padding: 0 0.15rem;
+}
+.pcb-head .bar .toggle .iconfont {
+  margin-left: 0.53rem;
+  font-size: 24px;
+  color: #686E73;
+}
+.pcb-banner {
+  margin-top: 44px;
+  width: 100%;
+  height: 4.27rem;
+  overflow: hidden;
+}
+.pcb-banner .my-swipe {
+  width: 100%;
+  height: 100%;
+}
+.pcb-banner .my-swipe .van-swipe-item {
+  width: 100% !important;
+}
+.pcb-banner .my-swipe .van-swipe-item .van-image {
+  width: 100% !important;
+  height: 100% !important;
+}
+.pcb-content .pcb-box1 {
+  padding-top: 0.53rem;
+  padding-bottom: 0.63rem;
+  border-bottom: 1px solid #E9F2F5;
+}
+.pcb-content .pcb-box1 li .ico-1 {
+  width: 44px;
+  height: 44px;
+  background: url("../../images/index/i1.png") no-repeat center;
+  background-size: cover;
+}
+.pcb-content .pcb-box1 li .ico-2 {
+  width: 44px;
+  height: 44px;
+  background: url("../../images/index/i2.png") no-repeat center;
+  background-size: cover;
+}
+.pcb-content .pcb-box1 li .ico-3 {
+  width: 44px;
+  height: 44px;
+  background: url("../../images/index/i3.png") no-repeat center;
+  background-size: cover;
+}
+.pcb-content .pcb-box1 li .ico-4 {
+  width: 44px;
+  height: 44px;
+  background: url("../../images/index/i4.png") no-repeat center;
+  background-size: cover;
+}
+.pcb-content .pcb-box1 li p {
+  margin-top: 0.2rem;
+  font-size: 11px;
+  color: #2e3033;
+  font-weight: bold;
+}
+.pcb-content .pcb-box2 {
+  border-bottom: 1px solid #E9F2F5;
+  padding: 0.64rem 0.31rem 1.22rem 0.31rem;
+  overflow: hidden;
+}
+.pcb-content .pcb-box2 .t1 {
+  text-align: center;
+  font-size: 16px;
+  color: #2e3033;
+  font-weight: bold;
+  margin-bottom: 0.13rem;
+}
+.pcb-content .pcb-box2 .t2 {
+  text-align: center;
+  font-size: 12px;
+  color: #8a9fa6;
+}
+.pcb-content .pcb-box2 .list {
+  margin-top: 0.53rem;
+}
+.pcb-content .pcb-box2 .list .van-swipe {
+  overflow: visible !important;
+}
+.pcb-content .pcb-box2 .list .van-swipe-item {
+  margin-right: 0.32rem !important;
+}
+.pcb-content .pcb-box2 .list .van-swipe__indicators {
+  bottom: -28px !important;
+}
+.pcb-content .pcb-box2 .list .van-swipe__indicator {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #BFDCE6 !important;
+  opacity: 1 !important;
+}
+.pcb-content .pcb-box2 .list .van-swipe__indicator--active {
+  background: #0860BF !important;
+}
+.pcb-content .pcb-box2 .list .box {
+  background: #FFFFFF;
+  box-shadow: 0px 7px 10px 0px rgba(138, 159, 166, 0.2);
+  border-radius: 3px;
+  border: 1px solid #BFDCE6;
+  padding: 0.37rem 0.31rem;
+}
+.pcb-content .pcb-box2 .list .box .top .pic {
+  width: 134px;
+  height: 134px;
+}
+.pcb-content .pcb-box2 .list .box .top .pic img {
+  width: 134px;
+  height: 134px;
+}
+.pcb-content .pcb-box2 .list .box .top .text {
+  margin-left: 0.33rem;
+}
+.pcb-content .pcb-box2 .list .box .top .text p {
+  margin-bottom: 0.19rem;
+}
+.pcb-content .pcb-box2 .list .box .top .text p em {
+  font-size: 12px;
+  color: #556266;
+}
+.pcb-content .pcb-box2 .list .box .top .text p span {
+  font-size: 12px;
+  color: #2e3033;
+  font-weight: bold;
+}
+.pcb-content .pcb-box2 .list .box .bottom {
+  margin-top: 0.4rem;
+}
+.pcb-content .pcb-box2 .list .box .bottom a {
+  height: 30px;
+}
+.pcb-content .pcb-box2 .list .box .bottom a.btn1 {
+  width: 3.59rem;
+  border: 1px solid #ACC6CF;
+}
+.pcb-content .pcb-box2 .list .box .bottom a.btn1 em {
+  font-size: 12px;
+  color: #556266;
+}
+.pcb-content .pcb-box2 .list .box .bottom a.btn1 span {
+  margin-left: 0.01rem;
+  font-size: 14px;
+  color: #0860bf;
+}
+.pcb-content .pcb-box2 .list .box .bottom a.btn2 {
+  margin-left: 0.32rem;
+  width: 3.12rem;
+  background: #0860BF;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.pcb-content .pcb-box3 {
+  padding: 0.63rem 0.48rem 0.91rem 0.48rem;
+  border-bottom: 1px solid #E9F2F5;
+}
+.pcb-content .pcb-box3 .t1 {
+  text-align: center;
+  font-size: 16px;
+  color: #2e3033;
+  font-weight: bold;
+  margin-bottom: 0.13rem;
+}
+.pcb-content .pcb-box3 .t2 {
+  text-align: center;
+  font-size: 12px;
+  color: #8a9fa6;
+}
+.pcb-content .pcb-box3 .box {
+  margin-top: 0.64rem;
+  padding-top: 0.59rem;
+  border: 1px solid #BFDCE6;
+}
+.pcb-content .pcb-box3 .box.mb {
+  margin-bottom: 0.53rem;
+}
+.pcb-content .pcb-box3 .box .wrap {
+  width: 75%;
+}
+.pcb-content .pcb-box3 .box p {
+  margin-bottom: 0.36rem;
+}
+.pcb-content .pcb-box3 .box p em {
+  width: 14px;
+  height: 14px;
+  background: #0860BF;
+  border-radius: 50%;
+}
+.pcb-content .pcb-box3 .box p em .iconfont {
+  font-size: 14px;
+  color: #ffffff;
+}
+.pcb-content .pcb-box3 .box p span {
+  margin-left: 0.12rem;
+  font-size: 12px;
+  color: #556266;
+}
+.pcb-content .pcb-box3 .box .pic {
+  margin-top: 0.69rem;
+  position: relative;
+  width: 100%;
+  height: 4.36rem;
+}
+.pcb-content .pcb-box3 .box .pic img {
+  width: 100%;
+  height: 4.36rem;
+}
+.pcb-content .pcb-box3 .box .pic .btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.3rem;
+  width: 2.4rem;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #0860BF;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.pcb-content .pcb-box3 .box .pic .btns {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.3rem;
+  width: 2.4rem;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #E89721;
+  border-radius: 3px;
+  border: 1px solid #E89721;
+  font-size: 12px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.pcb-content .pcb-box4 {
+  padding: 0.64rem 0 0.91rem 0;
+  background: linear-gradient(180deg, #E9F2F5 0%, #FFFFFF 100%);
+  border-radius: 8px 8px 0px 0px;
+}
+.pcb-content .pcb-box4 .t1 {
+  font-size: 16px;
+  color: #2e3033;
+  font-weight: bold;
+  margin-bottom: 0.13rem;
+  text-align: center;
+}
+.pcb-content .pcb-box4 .t2 {
+  width: 277px;
+  margin: 0 auto 0.64rem;
+  font-size: 12px;
+  color: #8a9fa6;
+  text-align: center;
+  line-height: 17px;
+}
+.pcb-content .pcb-box4 .tab {
+  padding-left: 0.48rem;
+  border-bottom: 1px solid #BFDCE6;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.pcb-content .pcb-box4 .tab li {
+  position: relative;
+  font-size: 14px;
+  color: #556266;
+  font-weight: bold;
+  margin-right: 0.8rem;
+  padding-bottom: 0.38rem;
+  display: inline-block;
+}
+.pcb-content .pcb-box4 .tab li.curr {
+  color: #2e3033;
+  font-size: 16px;
+}
+.pcb-content .pcb-box4 .tab li.curr:after {
+  width: 100%;
+  height: 5px;
+  background: #0860BF;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  content: '';
+}
+.pcb-content .pcb-box4 .list {
+  margin-top: 0.52rem;
+  text-align: center;
+}
+.pcb-content .pcb-box4 .list li {
+  position: relative;
+  width: 105px;
+  height: 140px;
+  display: inline-block;
+  margin-right: 0.32rem;
+}
+.pcb-content .pcb-box4 .list li:nth-of-type(3n) {
+  margin-right: 0;
+}
+.pcb-content .pcb-box4 .list li img {
+  width: 105px;
+  height: 140px;
+}
+.pcb-content .pcb-box4 .list li p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 28px;
+  height: 28px;
+  text-align: center;
+  background: #0860BF;
+  border-radius: 0px 0px 3px 3px;
+  opacity: 0.9;
+  font-size: 11px;
+  color: #ffffff;
+}
+.pcb-content .pcb-box5 {
+  padding: 0.64rem 0 0.83rem 0;
+  background: #E9F2F5;
+  border-radius: 8px 8px 0px 0px;
+}
+.pcb-content .pcb-box5 .t1 {
+  font-size: 16px;
+  color: #2e3033;
+  font-weight: bold;
+  margin-bottom: 0.13rem;
+  text-align: center;
+}
+.pcb-content .pcb-box5 .t2 {
+  width: 277px;
+  margin: 0 auto 0.64rem;
+  font-size: 12px;
+  color: #8a9fa6;
+  text-align: center;
+  line-height: 17px;
+}
+.pcb-content .pcb-box5 .list {
+  padding: 0 0.48rem;
+  flex-wrap: wrap;
+}
+.pcb-content .pcb-box5 .list li {
+  width: 4.37rem;
+  margin-right: 0.29rem;
+  margin-bottom: 0.27rem;
+}
+.pcb-content .pcb-box5 .list li:nth-of-type(2n) {
+  margin-right: 0;
+}
+.pcb-content .pcb-box5 .list li .pic {
+  width: 4.37rem;
+  height: 3.28rem;
+}
+.pcb-content .pcb-box5 .list li .pic img {
+  width: 4.37rem;
+  height: 3.28rem;
+}
+.pcb-content .pcb-box5 .list li .text {
+  background: #ffffff;
+  padding: 0.32rem;
+  border-radius: 3px;
+}
+.pcb-content .pcb-box5 .list li .text .tt {
+  font-size: 10px;
+  color: #556266;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 0.32rem;
+}
+.pcb-content .pcb-box5 .list li .text .bottom .head {
+  width: 14px;
+  height: 14px;
+}
+.pcb-content .pcb-box5 .list li .text .bottom .head img {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+.pcb-content .pcb-box5 .list li .text .bottom .head-txt {
+  margin-left: 0.11rem;
+  font-size: 10px;
+  color: #8a9fa6;
+}
+.pcb-content .pcb-box5 .list li .text .bottom .star dd {
+  width: 12px;
+  height: 12px;
+  background: url("../../images/index/s1.png") no-repeat center;
+  background-size: contain;
+}
+.pcb-content .pcb-box5 .list li .text .bottom .star dd.disabled {
+  background: url("../../images/index/s2.png") no-repeat center;
+  background-size: contain;
+}
+.pcb-content .pcb-box5 .more {
+  height: 44px;
+  border-radius: 3px;
+}
+.pcb-content .pcb-box5 .more span {
+  font-size: 13px;
+  color: #556266;
+  margin-right: 0.13rem;
+}
+.pcb-content .pcb-box5 .more .iconfont {
+  font-size: 14px;
+  color: #adc7cf;
+}
+.pcb-content .pcb-box6 {
+  position: relative;
+  padding: 0.91rem 0 1.75rem 0;
+}
+.pcb-content .pcb-box6 .list {
+  padding-left: 0.48rem;
+  overflow-x: auto;
+}
+.pcb-content .pcb-box6 .list li {
+  width: 3.57rem;
+  height: 1.61rem;
+  margin-right: 0.32rem;
+}
+.pcb-content .pcb-box6 .list li img {
+  width: 100%;
+  height: 100%;
+}
+.pcb-content .pcb-box6 .kefu {
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  right: 0;
+  width: 9.04rem;
+  padding: 0 0.32rem;
+  height: 69px;
+  background: #0860BF;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+.pcb-content .pcb-box6 .kefu .iconfont {
+  font-size: 40px;
+  color: #ffffff;
+  margin-right: 0.27rem;
+}
+.pcb-content .pcb-box6 .kefu .t1 {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.pcb-content .pcb-box6 .kefu .tel {
+  width: 152px;
+  height: 32px;
+  background: rgba(0, 129, 210, 0.8);
+  border-radius: 16px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.pcb-footer {
+  text-align: center;
+  background: #2E3033;
+  padding: 1.51rem 0 0.56rem 0;
+}
+.pcb-footer .title {
+  margin-bottom: 0.29rem;
+}
+.pcb-footer .title .link {
+  font-size: 13px;
+  color: #0860bf;
+}
+.pcb-footer .title .line {
+  font-size: 13px;
+  color: #556266;
+  padding: 0 0.12rem;
+}
+.pcb-footer .t1 {
+  color: #556266;
+  font-size: 13px;
+  line-height: 25px;
+}
+.suspension {
+  padding: 0.2rem 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 59px;
+  width: 100%;
+  background: #ffffff;
+}
+.suspension .btn1 {
+  width: 117px;
+  height: 30px;
+  background: rgba(8, 96, 191, 0.2);
+  border-radius: 3px;
+  font-size: 12px;
+  color: #0860BF;
+  font-weight: bold;
+  margin-right: 1.24rem;
+}
+.suspension .btn2 {
+  width: 117px;
+  height: 30px;
+  background: #0860BF;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.shade-nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 44px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  display: none;
+}
+.shade-nav.show {
+  display: block;
+}
+.shade-nav .arrow {
+  position: absolute;
+  top: -8px;
+  right: 0.62rem;
+  width: 15px;
+  height: 15px;
+  background: url(../../images/index/arr.png) no-repeat center;
+  background-size: cover;
+  display: block;
+  z-index: 99999999999;
+}
+.shade-nav ul {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: #0860BF;
+  border-radius: 3px;
+  z-index: 99999999999;
+  width: 3.1rem;
+  padding-top: 0.32rem;
+  padding-bottom: 0.38rem;
+}
+.shade-nav ul li {
+  padding-left: 0.54rem;
+  margin-bottom: 0.54rem;
+}
+.shade-nav ul li:last-child {
+  margin-bottom: 0;
+}
+.shade-nav ul li a {
+  color: #ffffff;
+  font-size: 12px;
+}
+.nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 59px;
+  background: #ffffff;
+  padding-top: 0.09rem;
+  padding-bottom: 0.09rem;
+  border-top: 1px solid #BFDCE6;
+  z-index: 100;
+}
+.nav li a {
+  display: block;
+}
+.nav li a .iconfont {
+  font-size: 28px;
+  color: #2e3033;
+  text-align: center;
+}
+.nav li a p {
+  margin-top: 5px;
+  font-size: 9px;
+  color: #556266;
+  text-align: center;
+}
+.nav li.curr a .iconfont {
+  color: #0860bf;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,754 @@
+@import "../common/base.less";
+
+#app {
+  padding-bottom: 1.5rem;
+}
+
+.pcb-head {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 44px;
+  background: #F0F9FC;
+  padding: 0 0.48rem;
+  z-index: 99;
+
+  .logo {
+    width: 83px;
+    height: 24px;
+
+    img {
+      width: 83px;
+      height: 24px;
+    }
+  }
+
+  .bar {
+    .link {
+      font-size: 12px;
+      color: #0081d2;
+    }
+
+    .line {
+      font-size: 12px;
+      color: #0081d2;
+      padding: 0 0.15rem;
+    }
+
+    .toggle {
+      .iconfont {
+        margin-left: 0.53rem;
+        font-size: 24px;
+        color: #686E73;
+      }
+    }
+  }
+}
+
+.pcb-banner {
+  margin-top: 44px;
+  width: 100%;
+  height: 4.27rem;
+  overflow: hidden;
+
+  .my-swipe {
+    width: 100%;
+    height: 100%;
+
+    .van-swipe-item {
+      width: 100% !important;
+
+      .van-image {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
+
+.pcb-content {
+  .pcb-box1 {
+    padding-top: 0.53rem;
+    padding-bottom: 0.63rem;
+    border-bottom: 1px solid #E9F2F5;
+
+    li {
+      .ico-1 {
+        width: 44px;
+        height: 44px;
+        background: url("../../images/index/i1.png") no-repeat center;
+        background-size: cover;
+      }
+
+      .ico-2 {
+        width: 44px;
+        height: 44px;
+        background: url("../../images/index/i2.png") no-repeat center;
+        background-size: cover;
+      }
+
+      .ico-3 {
+        width: 44px;
+        height: 44px;
+        background: url("../../images/index/i3.png") no-repeat center;
+        background-size: cover;
+      }
+
+      .ico-4 {
+        width: 44px;
+        height: 44px;
+        background: url("../../images/index/i4.png") no-repeat center;
+        background-size: cover;
+      }
+
+      p {
+        margin-top: 0.2rem;
+        font-size: 11px;
+        color: #2e3033;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .pcb-box2 {
+    border-bottom: 1px solid #E9F2F5;
+    padding: 0.64rem 0.31rem 1.22rem 0.31rem;
+    overflow: hidden;
+
+    .t1 {
+      text-align: center;
+      font-size: 16px;
+      color: #2e3033;
+      font-weight: bold;
+      margin-bottom: 0.13rem;
+    }
+
+    .t2 {
+      text-align: center;
+      font-size: 12px;
+      color: #8a9fa6;
+    }
+
+    .list {
+      margin-top: 0.53rem;
+
+      .van-swipe {
+        overflow: visible !important;
+      }
+
+      .van-swipe-item {
+        margin-right: 0.32rem !important;
+      }
+
+      .van-swipe__indicators {
+        bottom: -28px !important;
+      }
+
+      .van-swipe__indicator {
+        width: 8px !important;
+        height: 8px !important;
+        background-color: #BFDCE6 !important;
+        opacity: 1 !important;
+      }
+
+      .van-swipe__indicator--active {
+        background: #0860BF !important;
+      }
+
+      .box {
+        background: #FFFFFF;
+        box-shadow: 0px 7px 10px 0px rgba(138, 159, 166, 0.2);
+        border-radius: 3px;
+        border: 1px solid #BFDCE6;
+        padding: 0.37rem 0.31rem;
+
+        .top {
+          .pic {
+            width: 134px;
+            height: 134px;
+
+            img {
+              width: 134px;
+              height: 134px;
+
+            }
+          }
+
+          .text {
+            margin-left: 0.33rem;
+
+            p {
+              margin-bottom: 0.19rem;
+
+              em {
+                font-size: 12px;
+                color: #556266;
+              }
+
+              span {
+                font-size: 12px;
+                color: #2e3033;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        .bottom {
+          margin-top: 0.4rem;
+
+          a {
+            height: 30px;
+
+            &.btn1 {
+              width: 3.59rem;
+              border: 1px solid #ACC6CF;
+
+              em {
+                font-size: 12px;
+                color: #556266;
+              }
+
+              span {
+                margin-left: 0.01rem;
+                font-size: 14px;
+                color: #0860bf;
+              }
+            }
+
+            &.btn2 {
+              margin-left: 0.32rem;
+              width: 3.12rem;
+              background: #0860BF;
+              font-size: 12px;
+              color: #ffffff;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .pcb-box3 {
+    padding: 0.63rem 0.48rem 0.91rem 0.48rem;
+    border-bottom: 1px solid #E9F2F5;
+
+    .t1 {
+      text-align: center;
+      font-size: 16px;
+      color: #2e3033;
+      font-weight: bold;
+      margin-bottom: 0.13rem;
+    }
+
+    .t2 {
+      text-align: center;
+      font-size: 12px;
+      color: #8a9fa6;
+    }
+
+    .box {
+      margin-top: 0.64rem;
+      padding-top: 0.59rem;
+      border: 1px solid #BFDCE6;
+
+      &.mb {
+        margin-bottom: 0.53rem;
+      }
+
+      .wrap {
+        width: 75%;
+      }
+
+      p {
+        margin-bottom: 0.36rem;
+
+        em {
+          width: 14px;
+          height: 14px;
+          background: #0860BF;
+          border-radius: 50%;
+
+          .iconfont {
+            font-size: 14px;
+            color: #ffffff;
+          }
+        }
+
+        span {
+          margin-left: 0.12rem;
+          font-size: 12px;
+          color: #556266;
+        }
+      }
+
+      .pic {
+        margin-top: 0.69rem;
+        position: relative;
+        width: 100%;
+        height: 4.36rem;
+
+        img {
+          width: 100%;
+          height: 4.36rem;
+        }
+
+        .btn {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -0.3rem;
+          width: 2.4rem;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          background: #0860BF;
+          border-radius: 3px;
+          font-size: 12px;
+          color: #ffffff;
+          margin: 0 auto;
+        }
+
+        .btns {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -0.3rem;
+          width: 2.4rem;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          background: #E89721;
+          border-radius: 3px;
+          border: 1px solid #E89721;
+          font-size: 12px;
+          color: #ffffff;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .pcb-box4 {
+    padding: 0.64rem 0 0.91rem 0;
+    background: linear-gradient(180deg, #E9F2F5 0%, #FFFFFF 100%);
+    border-radius: 8px 8px 0px 0px;
+
+    .t1 {
+      font-size: 16px;
+      color: #2e3033;
+      font-weight: bold;
+      margin-bottom: 0.13rem;
+      text-align: center;
+    }
+
+    .t2 {
+      width: 277px;
+      margin: 0 auto 0.64rem;
+      font-size: 12px;
+      color: #8a9fa6;
+      text-align: center;
+      line-height: 17px;
+    }
+
+    .tab {
+      padding-left: 0.48rem;
+      border-bottom: 1px solid #BFDCE6;
+      white-space: nowrap;
+      overflow-x: auto;
+
+
+      li {
+        position: relative;
+        font-size: 14px;
+        color: #556266;
+        font-weight: bold;
+        margin-right: 0.8rem;
+        padding-bottom: 0.38rem;
+        display: inline-block;
+
+        &.curr {
+          color: #2e3033;
+          font-size: 16px;
+
+          &:after {
+            width: 100%;
+            height: 5px;
+            background: #0860BF;
+            border-radius: 2px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 0;
+            content: '';
+          }
+        }
+      }
+    }
+
+    .list {
+      margin-top: 0.52rem;
+      text-align: center;
+
+      li {
+        position: relative;
+        width: 105px;
+        height: 140px;
+        display: inline-block;
+        margin-right: 0.32rem;
+
+        &:nth-of-type(3n) {
+          margin-right: 0;
+        }
+
+        img {
+          width: 105px;
+          height: 140px;
+        }
+
+        p {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          line-height: 28px;
+          height: 28px;
+          text-align: center;
+          background: #0860BF;
+          border-radius: 0px 0px 3px 3px;
+          opacity: 0.9;
+          font-size: 11px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .pcb-box5 {
+    padding: 0.64rem 0 0.83rem 0;
+    background: #E9F2F5;
+    border-radius: 8px 8px 0px 0px;
+
+    .t1 {
+      font-size: 16px;
+      color: #2e3033;
+      font-weight: bold;
+      margin-bottom: 0.13rem;
+      text-align: center;
+    }
+
+    .t2 {
+      width: 277px;
+      margin: 0 auto 0.64rem;
+      font-size: 12px;
+      color: #8a9fa6;
+      text-align: center;
+      line-height: 17px;
+    }
+
+    .list {
+      padding: 0 0.48rem;
+      flex-wrap: wrap;
+
+      li {
+        width: 4.37rem;
+        margin-right: 0.29rem;
+        margin-bottom: 0.27rem;
+
+        &:nth-of-type(2n) {
+          margin-right: 0;
+        }
+
+        .pic {
+          width: 4.37rem;
+          height: 3.28rem;
+
+          img {
+            width: 4.37rem;
+            height: 3.28rem;
+          }
+        }
+
+        .text {
+          background: #ffffff;
+          padding: 0.32rem;
+          border-radius: 3px;
+
+          .tt {
+            font-size: 10px;
+            color: #556266;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            margin-bottom: 0.32rem;
+          }
+
+          .bottom {
+            .head {
+              width: 14px;
+              height: 14px;
+
+              img {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+              }
+            }
+
+            .head-txt {
+              margin-left: 0.11rem;
+              font-size: 10px;
+              color: #8a9fa6;
+            }
+
+            .star {
+              dd {
+                width: 12px;
+                height: 12px;
+                background: url("../../images/index/s1.png") no-repeat center;
+                background-size: contain;
+
+                &.disabled {
+                  background: url("../../images/index/s2.png") no-repeat center;
+                  background-size: contain;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .more {
+      height: 44px;
+      border-radius: 3px;
+
+      span {
+        font-size: 13px;
+        color: #556266;
+        margin-right: 0.13rem;
+      }
+
+      .iconfont {
+        font-size: 14px;
+        color: #adc7cf;
+      }
+    }
+  }
+
+  .pcb-box6 {
+    position: relative;
+    padding: 0.91rem 0 1.75rem 0;
+
+
+    .list {
+      padding-left: 0.48rem;
+      overflow-x: auto;
+
+      li {
+        width: 3.57rem;
+        height: 1.61rem;
+        margin-right: 0.32rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .kefu {
+      position: absolute;
+      bottom: -36px;
+      left: 0;
+      right: 0;
+      width: 9.04rem;
+      padding: 0 0.32rem;
+      height: 69px;
+      background: #0860BF;
+      border-radius: 3px;
+      margin: 0 auto;
+
+      .iconfont {
+        font-size: 40px;
+        color: #ffffff;
+        margin-right: 0.27rem;
+      }
+
+      .t1 {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: bold;
+      }
+
+      .tel {
+        width: 152px;
+        height: 32px;
+        background: rgba(0, 129, 210, 0.8);
+        border-radius: 16px;
+        font-size: 14px;
+        color: #ffffff;
+      }
+    }
+
+
+  }
+}
+
+.pcb-footer {
+  text-align: center;
+  background: #2E3033;
+  padding: 1.51rem 0 0.56rem 0;
+
+  .title {
+    margin-bottom: 0.29rem;
+
+    .link {
+      font-size: 13px;
+      color: #0860bf;
+    }
+
+    .line {
+      font-size: 13px;
+      color: #556266;
+      padding: 0 0.12rem;
+    }
+  }
+
+  .t1 {
+    color: #556266;
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+
+.suspension {
+  padding: 0.2rem 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 59px;
+  width: 100%;
+  background: #ffffff;
+
+  .btn1 {
+    width: 117px;
+    height: 30px;
+    background: rgba(8, 96, 191, 0.2);
+    border-radius: 3px;
+    font-size: 12px;
+    color: #0860BF;
+    font-weight: bold;
+    margin-right: 1.24rem;
+  }
+
+  .btn2 {
+    width: 117px;
+    height: 30px;
+    background: #0860BF;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+
+.shade-nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 44px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  .arrow {
+    position: absolute;
+    top: -8px;
+    right: 0.62rem;
+    width: 15px;
+    height: 15px;
+    background: url(../../images/index/arr.png) no-repeat center;
+    background-size: cover;
+    display: block;
+    z-index: 99999999999;
+  }
+
+  ul {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background: #0860BF;
+    border-radius: 3px;
+    z-index: 99999999999;
+    width: 3.1rem;
+    padding-top: 0.32rem;
+    padding-bottom: 0.38rem;
+
+    li {
+      padding-left: 0.54rem;
+      margin-bottom: 0.54rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: #ffffff;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 59px;
+  background: #ffffff;
+  padding-top: 0.09rem;
+  padding-bottom: 0.09rem;
+  border-top: 1px solid #BFDCE6;
+  z-index: 100;
+
+  li {
+    a {
+      display: block;
+
+      .iconfont {
+        font-size: 28px;
+        color: #2e3033;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: 9px;
+        color: #556266;
+        text-align: center;
+      }
+    }
+
+    &.curr {
+      a {
+        .iconfont {
+          color: #0860bf;
+        }
+      }
+    }
+  }
+}
