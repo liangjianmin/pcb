@@ -386,6 +386,7 @@ body {
   overflow: visible !important;
 }
 .pcb-content .pcb-box2 .list .van-swipe-item {
+  width: 46% !important;
   margin-right: 0.32rem !important;
 }
 .pcb-content .pcb-box2 .list .van-swipe__indicators {
