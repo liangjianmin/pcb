@@ -215,13 +215,102 @@
                                     <img src="./images/home/pic1.png" alt="">
                                 </dd>
                             </dl>
-                            <p class="t3">建议事项(我司优选A文案)：</p>
+                            <p class="t3 clr">
+                                <span class="fl">建议事项(我司优选A文案)：</span>
+                                <a href="javascript:;" class="btn fr replaybtn">发起回复</a>
+                            </p>
+                            <dl class="suggestion clr">
+                                <dd>A、我是建议的具体内容；</dd>
+                                <dd>B、我是建议的具体内容；</dd>
+                                <dd>C、我是建议的具体内容；</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="question-tit clr">
+                        <div class="fl l lbBox">
+                            <div class="text lineBlock" style="width: 429px;">
+                                <span class="t1">工程人员：</span>
+                                <span class="t2">10031-蔡跃鹏</span>
+                            </div>
+                            <div class="text lineBlock">
+                                <span class="t1">消息时间：</span>
+                                <span class="t2">2020-07-17 10:39</span>
+                            </div>
+                        </div>
+                        <div class="fr r">
+                            <span class="t2">已回复</span>
+                        </div>
+                    </div>
+                    <div class="question-box lbBox">
+                        <p class="lineBlock va-t t1">问题描述：</p>
+                        <div class="lineBlock va-t wrap-bar">
+                            <p class="t2">上传的文件是6层板，订单里确是2板，存在异常情况，该问题已经影响订单的正常生产，请及时确认，以免影响您的订单。</p>
+                            <dl class="pic-list clr">
+                                <dd>
+                                    <img src="./images/home/pic1.png" alt="">
+                                </dd>
+                                <dd>
+                                    <img src="./images/home/pic1.png" alt="">
+                                </dd>
+                                <dd>
+                                    <img src="./images/home/pic1.png" alt="">
+                                </dd>
+                                <dd>
+                                    <img src="./images/home/pic1.png" alt="">
+                                </dd>
+                            </dl>
+                            <p class="t3 clr">
+                                <span class="fl">建议事项(我司优选A文案)：</span>
+                                <a href="javascript:;" class="btn fr replaybtn">发起回复</a>
+                            </p>
                             <dl class="suggestion clr">
                                 <dd>A、我是建议的具体内容；</dd>
                                 <dd>B、我是建议的具体内容；</dd>
                                 <dd>C、我是建议的具体内容；</dd>
                             </dl>
                             <p class="t4">沟通记录：</p>
+                            <div class="replay">
+                                <div class="x">
+                                    <div class="pic va-t lineBlock">
+                                        <img src="./images/aboutus/002.png" alt="">
+                                    </div>
+                                    <div class="text lineBlock va-t">
+                                        <p class="text-a clr">
+                                            <span class="fl">客户</span>
+                                            <em class="fr">2020-07-17 18:53</em>
+                                        </p>
+                                        <p class="text-b">我的文件上传错了，稍后联系你们的业务人员重新上传工程文件，谢谢！</p>
+                                        <div class="text-pic">
+                                            <div class="box clr">
+                                                <img src="./images/aboutus/002.png" alt="">
+                                            </div>
+                                            <div class="box">
+                                                <img src="./images/aboutus/002.png" alt="">
+                                            </div>
+                                            <div class="box">
+                                                <img src="./images/aboutus/002.png" alt="">
+                                            </div>
+                                            <div class="box">
+                                                <img src="./images/aboutus/002.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="y">
+                                    <div class="pic lineBlock va-m">
+                                        <img src="./images/aboutus/002.png" alt="">
+                                    </div>
+                                    <div class="text lineBlock va-m">
+                                        <p class="text-a clr">
+                                            <span class="fl">CAM审单员</span>
+                                            <em class="fr">2020-07-17 18:53</em>
+                                        </p>
+                                        <p class="text-b">我的文件上传错了，稍后联系你们的业务人员重新上传工程文件，谢谢！</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -373,14 +462,102 @@
     </div>
 </div>
 <!--footer end-->
+<script type="text/html" id="schemeHtml">
+    <div class="scheme-layer">
+        <ul class="list-wrap">
+            <li class="lbBox">
+                <span class="circle lineBlock va-m act"><i></i></span>
+                <span class="lineBlock va-m text">A、我是建议的具体内容<b>(我司优先)</b></span>
+            </li>
+            <li class="lbBox">
+                <div class="circle lineBlock va-m"><i></i></div>
+                <span class="lineBlock va-m text">B、我是建议的具体内容</span>
+            </li>
+            <li class="lbBox">
+                <div class="circle lineBlock va-m"><i></i></div>
+                <span class="lineBlock va-m text">C、我是建议的具体内容</span>
+            </li>
+            <li class="lbBox">
+                <div class="circle lineBlock va-m"><i></i></div>
+                <span class="lineBlock va-m text">D、以上均不选</span>
+            </li>
+        </ul>
+        <div class="msg" style="display: none">
+            <div class="msg-content">
+                <textarea id="txtCustomNote" placeholder="请输入回复信息及方案"></textarea>
+                <span class="limitWords">0/30</span>
+            </div>
+            <dl class="pic-list clr">
+                <dd>
+                    <img src="./images/home/xb.png" alt="">
+                    <b class="delete">删除</b>
+                </dd>
+                <dd>
+                    <img src="./images/home/xb.png" alt="">
+                    <b class="delete">删除</b>
+                </dd>
+                <dd class="default">
+                    <i class="iconfont iconzujiantubiaojiantou6"></i>
+                    <span>选择图片</span>
+                </dd>
+            </dl>
+        </div>
+        <div class="btn-wrap lbBox">
+            <a href="javascript:;" class="btn-1">不接受修改方案</a>
+            <a href="javascript:;" class="btn-2">提交回复</a>
+        </div>
+    </div>
+</script>
+
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
   $(function () {
+    
+    layer.open({
+      type: 1,
+      title: '<span>请您选择解决方案(必选)</span>',
+      area: ['640px ', 'auto'],
+      shadeClose: true,
+      move: false,
+      content: $("#schemeHtml").html(),
+      success: function (layero, index) {
+        
+      }
+    });
+    
+    
+    $(document).on('click', '.replaybtn', function () {
+      
+    });
+    
+    $(document).on('click', '.scheme-layer .list-wrap li', function () {
+      var index = $(this).index();
+      $(".scheme-layer .list-wrap li").find('.circle').removeClass('act');
+      $(this).find('.circle').addClass('act');
+      if (index == 3) {
+        $('.scheme-layer').find('.msg').show();
+      } else {
+        $('.scheme-layer').find('.msg').hide();
+      }
+    });
 
 
+    //控制文字输入字数
+    $("#txtCustomNote").on('input  propertychange', function () {
+      var val = $(this).val();
+      if (val) {
+        if (val.length > 30) {
+          $(this).val($(this).val().substring(0, 30));
+          $(".limitWords").text('30/30');
+        } else {
+          $(".limitWords").text(val.length + '/30');
+        }
+      }
+    });
+    
   })
 </script>
 </body>
