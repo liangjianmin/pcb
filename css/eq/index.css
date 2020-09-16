@@ -1195,4 +1195,87 @@ body {
   color: #3a3c40;
   font-weight: bold;
 }
+.eq .content .question li {
+  border-radius: 2px;
+  border: 1px solid #E6EAF2;
+  margin-bottom: 20px;
+  padding-bottom: 24px;
+}
+.eq .content .question li .question-tit {
+  height: 57px;
+  line-height: 57px;
+  background: #F7F9FC;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.eq .content .question li .question-tit .l .text .t1 {
+  font-size: 14px;
+  color: #959ba6;
+  vertical-align: middle;
+}
+.eq .content .question li .question-tit .l .text .t2 {
+  margin-left: 16px;
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.eq .content .question li .question-tit .r .t1 {
+  font-size: 16px;
+  color: #e82121;
+  font-weight: bold;
+}
+.eq .content .question li .question-box {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.eq .content .question li .question-box .t1 {
+  font-size: 14px;
+  color: #959ba6;
+}
+.eq .content .question li .question-box .wrap-bar {
+  width: 1036px;
+}
+.eq .content .question li .question-box .wrap-bar .t2 {
+  font-size: 14px;
+  color: #5c5f66;
+}
+.eq .content .question li .question-box .wrap-bar .pic-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #E6EAF2;
+}
+.eq .content .question li .question-box .wrap-bar .pic-list dd {
+  width: 70px;
+  height: 52px;
+  border-radius: 2px;
+  margin-right: 15px;
+  float: left;
+}
+.eq .content .question li .question-box .wrap-bar .pic-list dd img {
+  width: 70px;
+  height: 52px;
+  border-radius: 2px;
+}
+.eq .content .question li .question-box .wrap-bar .t3 {
+  padding-top: 23px;
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+}
+.eq .content .question li .question-box .wrap-bar .suggestion {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.eq .content .question li .question-box .wrap-bar .suggestion dd {
+  margin-right: 40px;
+  float: left;
+  font-size: 14px;
+  color: #0081d2;
+}
+.eq .content .question li .question-box .wrap-bar .t4 {
+  font-size: 14px;
+  color: #3a3c40;
+  font-weight: bold;
+}
 /*# sourceMappingURL=index.css.map */
