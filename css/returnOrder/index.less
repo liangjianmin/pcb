@@ -83,6 +83,7 @@
         font-size: 14px;
         color: #5c5f66;
         margin-right: 60px;
+        white-space: nowrap;
       }
 
       .iconfont {
@@ -161,6 +162,7 @@
         .wrap {
           margin-top: 3px;
           white-space: nowrap;
+
           label {
             font-size: 14px;
             color: #666666;
@@ -255,6 +257,124 @@
           color: #959ba6;
         }
       }
+
+      .test-tab {
+        li {
+          float: left;
+          width: 121px;
+          height: 44px;
+          line-height: 44px;
+          background: #F7F9FC;
+          border-radius: 2px;
+          border: 1px solid #E6EAF2;
+          margin-right: 16px;
+          font-size: 14px;
+          color: #5c5f66;
+          text-align: center;
+          cursor: pointer;
+
+          &.curr {
+            color: #3a3c40;
+            font-weight: bold;
+            height: 42px;
+            line-height: 42px;
+            border: 2px solid #0081D2;
+          }
+        }
+      }
+
+      .t4 {
+        font-size: 14px;
+        color: #5c5f66;
+        margin-left: 5px;
+      }
+
+      .t5 {
+        font-size: 14px;
+        color: #5c5f66;
+        font-weight: bold;
+      }
+
+      .pay-wrap {
+        .pay-t1 {
+          font-size: 20px;
+          color: #e82121;
+          font-weight: bold;
+        }
+
+        .detail {
+          cursor: pointer;
+          margin-left: 20px;
+
+          em {
+            font-size: 12px;
+            color: #959ba6;
+          }
+
+          .arrow-icon {
+            height: 20px;
+            width: 20px;
+            background: url(../../images/pcb/arrow-b.png) no-repeat center;
+            background-size: cover;
+          }
+
+          &.ii {
+            .arrow-icon {
+              background: url(../../images/pcb/arrow-t.png) no-repeat center;
+              background-size: cover;
+            }
+          }
+        }
+      }
+
+      .detail-wrap {
+        margin-left: 133px;
+        width: 680px;
+        border-collapse: collapse;
+        border: 1px solid #E6EAF2;
+        display: none;
+
+        tr {
+          .bor {
+            border-right: 1px solid #E6EAF2;
+          }
+
+          td {
+            height: 32px;
+            border-bottom: 1px solid #E6EAF2;
+            white-space: nowrap;
+
+            &.bornone {
+              border-bottom: none;
+            }
+
+            .tx {
+              width: 68px;
+              font-size: 12px;
+              color: #5C5F66;
+              box-sizing: border-box;
+              padding: 0 10px;
+              height: 100%;
+              line-height: 34px;
+              background-color: #F7F9FC;
+
+            }
+
+            .ty {
+              font-size: 12px;
+              color: #3a3c40;
+              width: 92px;
+              overflow: hidden;
+              display: inline-block;
+              text-overflow: ellipsis;
+              vertical-align: middle;
+              box-sizing: border-box;
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+
     }
 
     .btns {
