@@ -762,6 +762,11 @@ body {
   line-height: 28px;
   margin-bottom: 22px;
 }
+.about-us .content .section-text .company .txt p em {
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+}
 .about-us .content .map-box {
   position: relative;
   width: 100%;
