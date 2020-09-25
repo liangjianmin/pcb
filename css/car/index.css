@@ -1217,6 +1217,7 @@ body {
   padding: 16px 0 16px 20px;
   border-top: 1px solid #E6EAF2;
   border-bottom: 1px solid #E6EAF2;
+  width: 294px;
 }
 .car-section .car-list table tr td .del-disabled {
   width: 100px;
