@@ -1213,6 +1213,7 @@ body {
   color: #5c5f66;
 }
 .car-section .car-list table tr td {
+  width: 297px;
   vertical-align: top;
   padding: 16px 0 16px 20px;
   border-top: 1px solid #E6EAF2;
