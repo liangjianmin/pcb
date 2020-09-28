@@ -501,6 +501,15 @@ body {
   height: 3px;
   content: '';
 }
+.home .nav-wrap .nav li a.xb {
+  position: absolute;
+  left: 41px;
+  top: -5px;
+  width: 50px;
+  height: 20px;
+  background: url('../../images/home/yu.png') no-repeat center;
+  background-size: cover;
+}
 .home .nav-wrap .nav li a.link {
   font-size: 16px;
   color: #FFFFFF;
