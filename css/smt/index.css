@@ -1481,6 +1481,45 @@ body {
   bottom: 9px;
   z-index: 1;
 }
+.pcb .section .pcb-l .pcb-box .tbtb,
+.pcb .section .pcb-l .pcb-bz .tbtb {
+  font-size: 16px;
+  color: #3a3c40;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.pcb .section .pcb-l .pcb-box .upload-pcb .wrap,
+.pcb .section .pcb-l .pcb-bz .upload-pcb .wrap {
+  width: 140px;
+  height: 30px;
+  background: #0081D2;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+.pcb .section .pcb-l .pcb-box .upload-pcb .wrap .iconfont,
+.pcb .section .pcb-l .pcb-bz .upload-pcb .wrap .iconfont {
+  font-size: 20px;
+  color: #ffffff;
+}
+.pcb .section .pcb-l .pcb-box .upload-pcb .wrap span,
+.pcb .section .pcb-l .pcb-bz .upload-pcb .wrap span {
+  font-size: 14px;
+  color: #ffffff;
+}
+.pcb .section .pcb-l .pcb-box .upload-pcb .upload-t1,
+.pcb .section .pcb-l .pcb-bz .upload-pcb .upload-t1 {
+  font-size: 14px;
+  color: #5c5f66;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pcb .section .pcb-l .pcb-box .upload-pcb .upload-t2,
+.pcb .section .pcb-l .pcb-bz .upload-pcb .upload-t2 {
+  font-size: 14px;
+  color: #0081d2;
+}
 .pcb .section .pcb-l .pcb-block-slideup {
   padding: 20px 30px 30px 30px;
   margin-bottom: 20px;
@@ -1833,6 +1872,10 @@ body {
   font-size: 14px;
   color: #5c5f66;
   text-decoration: line-through;
+}
+.pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .r .t22 {
+  font-size: 14px;
+  color: #5c5f66;
 }
 .pcb .section .pcb-r .psb-submit-box .pcb-price .detail li .r .t3 {
   font-size: 20px;
@@ -2736,5 +2779,9 @@ label .iconiconfontquestion .arrow-tips .tips {
 }
 .pcb-ad .wrap .hd li.on {
   background-color: #0081D2;
+}
+.loginlayer .layui-layer-content {
+  height: auto !important;
+  overflow: hidden !important;
 }
 /*# sourceMappingURL=index.css.map */

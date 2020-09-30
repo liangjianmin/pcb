@@ -730,7 +730,7 @@ body {
   overflow: hidden;
 }
 .login-layer {
-  padding: 50px 60px 40px 60px;
+  padding: 20px 60px 40px 60px;
 }
 .login-layer .inpt {
   position: relative;
