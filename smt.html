@@ -177,7 +177,7 @@
                                 <span class="iconfont iconiconfontquestion va-m">
                                     <div class="arrow-tips">
                                         <i class="arrow"></i>
-                                        <p class="tips">最低选择5片，面积计算方式为（长*宽*板子数量）面积一平米内，数量50pcs内为样板，超出此范围则为小批量。</p>
+                                        <p class="tips">BOM清单中物料的分类数量。</p>
                                     </div>
                                 </span>
                             </label>
@@ -195,7 +195,7 @@
                                 <span class="iconfont iconiconfontquestion va-m">
                                     <div class="arrow-tips">
                                         <i class="arrow"></i>
-                                        <p class="tips">最低选择5片，面积计算方式为（长*宽*板子数量）面积一平米内，数量50pcs内为样板，超出此范围则为小批量。</p>
+                                        <p class="tips">单板生产数量。</p>
                                     </div>
                                 </span>
                             </label>
@@ -209,7 +209,7 @@
                                 <span class="iconfont iconiconfontquestion va-m">
                                     <div class="arrow-tips">
                                         <i class="arrow"></i>
-                                        <p class="tips">最低选择5片，面积计算方式为（长*宽*板子数量）面积一平米内，数量50pcs内为样板，超出此范围则为小批量。</p>
+                                        <p class="tips">PCB板的SMT加工，是单面加工还是双面。</p>
                                     </div>
                                 </span>
                             </label>
@@ -223,7 +223,7 @@
                             <label class="lineBlock va-m">单片插件点数：<span class="iconfont iconiconfontquestion va-m">
                                 <div class="arrow-tips">
                                     <i class="arrow"></i>
-                                    <p class="tips">最低选择5片，面积计算方式为（长*宽*板子数量）面积一平米内，数量50pcs内为样板，超出此范围则为小批量。</p>
+                                    <p class="tips">单片板子上的插件元器件，有多少个引脚则计数为几个焊点。</p>
                                 </div>
                             </span></label>
                             <div class="pcb-block-inline lineBlock va-m lbBox">
@@ -235,12 +235,11 @@
                                         <div class="sl-div">
                                             <i class="arrow"></i>
                                             <p class="img-p">
-                                                <img src="./images/pcb/sl1.png" alt="">
+                                                <img src="./images/smt/2.png" alt="">
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <!--单片贴片点数-->
@@ -249,7 +248,7 @@
                                 <span class="iconfont iconiconfontquestion va-m">
                                     <div class="arrow-tips">
                                         <i class="arrow"></i>
-                                        <p class="tips">最低选择5片，面积计算方式为（长*宽*板子数量）面积一平米内，数量50pcs内为样板，超出此范围则为小批量。</p>
+                                        <p class="tips">单片板子上的焊点数量，例如一个贴片电阻有两个焊接点，则计数为2个。</p>
                                     </div>
                                 </span>
                             </label>
@@ -262,26 +261,18 @@
                                         <div class="sl-div">
                                             <i class="arrow"></i>
                                             <p class="img-p">
-                                                <img src="./images/pcb/sl1.png" alt="">
+                                                <img src="./images/smt/1.png" alt="">
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                     <div class="pcb-box">
                         <!--工艺要求-->
                         <div class="pcb-block lbBox" id="technologyRequire">
-                            <label class="lineBlock va-m">工艺要求：
-                                <span class="iconfont iconiconfontquestion va-m">
-                                    <div class="arrow-tips">
-                                        <i class="arrow"></i>
-                                        <p class="tips">最低选择5片，面积计算方式为（长*宽*板子数量）面积一平米内，数量50pcs内为样板，超出此范围则为小批量。</p>
-                                    </div>
-                                </span>
-                            </label>
+                            <label class="lineBlock va-m">工艺要求：</label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
                                 <li class="curr" data-value="有铅">有铅</li>
                                 <li data-value="无铅">无铅</li>
@@ -289,14 +280,7 @@
                         </div>
                         <!--确认生产稿-->
                         <div class="pcb-block lbBox" id="confirmProduction">
-                            <label class="lineBlock va-m">确认生产稿：
-                                <span class="iconfont iconiconfontquestion va-m">
-                                    <div class="arrow-tips">
-                                        <i class="arrow"></i>
-                                        <p class="tips">最低选择5片，面积计算方式为（长*宽*板子数量）面积一平米内，数量50pcs内为样板，超出此范围则为小批量。</p>
-                                    </div>
-                                </span>
-                            </label>
+                            <label class="lineBlock va-m">确认生产稿：</label>
                             <ul class="pcb-block-inline  lineBlock va-m clr">
                                 <li class="curr" data-value="不需要">不需要</li>
                                 <li data-value="先贴一片拍照确认">先贴一片拍照确认</li>
@@ -1123,6 +1107,240 @@
         </form>
     </div>
 </script>
+<script type="text/html" id="uploadHtml">
+    <div>
+        <div class="smt-layer">
+            <p class="tip">目前仅支持关联在猎板网购物车中的PCB订单，如果需要下单帮助，请联系<a href="https://wpa1.qq.com/9iUApnXa?_type=wpa&qidian=true">在线客服人员</a></p>
+            <table class="list">
+                <tbody>
+                <tr>
+                    <th>物料基本信息</th>
+                    <th>数量</th>
+                    <th>价格</th>
+                    <th>更新时间</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="type1">
+                            <input type="checkbox" checked="checked">
+                            <div class="lineBlock va-t txt">
+                                <p class="t1">
+                                    <span class="lineBlock va-m">20082200026  23*23.23cm   </span>
+                                    <em class="va-m">2层</em>
+                                </p>
+                                <p class="t2">
+                                    <span>1.6mm  绿油白字   无铅喷锡</span>
+                                    <a href="javascript:;">明细</a>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type2">
+                            2SET
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type3">
+                            ￥500.00
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type4">
+                            2020-3-30 17:56
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="type1">
+                            <input type="checkbox" checked="checked">
+                            <div class="lineBlock va-t txt">
+                                <p class="t1">
+                                    <span class="lineBlock va-m">20082200026  23*23.23cm   </span>
+                                    <em class="va-m">2层</em>
+                                </p>
+                                <p class="t2">
+                                    <span>1.6mm  绿油白字   无铅喷锡</span>
+                                    <a href="javascript:;">明细</a>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type2">
+                            2SET
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type3">
+                            ￥500.00
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type4">
+                            2020-3-30 17:56
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="type1">
+                            <input type="checkbox" checked="checked">
+                            <div class="lineBlock va-t txt">
+                                <p class="t1">
+                                    <span class="lineBlock va-m">20082200026  23*23.23cm   </span>
+                                    <em class="va-m">2层</em>
+                                </p>
+                                <p class="t2">
+                                    <span>1.6mm  绿油白字   无铅喷锡</span>
+                                    <a href="javascript:;">明细</a>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type2">
+                            2SET
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type3">
+                            ￥500.00
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type4">
+                            2020-3-30 17:56
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="type1">
+                            <input type="checkbox" checked="checked">
+                            <div class="lineBlock va-t txt">
+                                <p class="t1">
+                                    <span class="lineBlock va-m">20082200026  23*23.23cm   </span>
+                                    <em class="va-m">2层</em>
+                                </p>
+                                <p class="t2">
+                                    <span>1.6mm  绿油白字   无铅喷锡</span>
+                                    <a href="javascript:;">明细</a>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type2">
+                            2SET( 100PCS )
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type3">
+                            ￥500.00
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type4">
+                            2020-3-30 17:56
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="type1">
+                            <input type="checkbox">
+                            <div class="lineBlock va-t txt">
+                                <p class="t1">
+                                    <span class="lineBlock va-m">20082200026  23*23.23cm   </span>
+                                    <em class="va-m">2层</em>
+                                </p>
+                                <p class="t2">
+                                    <span>1.6mm  绿油白字   无铅喷锡</span>
+                                    <a href="javascript:;">明细</a>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type2">
+                            2SET
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type3">
+                            ￥500.00
+                        </div>
+                    </td>
+                    <td>
+                        <div class="type4">
+                            2020-3-30 17:56
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="btn-wrap clr">
+                <div class="fr r">
+                    <a href="javascript:;" class="canel lineBlock va-m">取消</a>
+                    <a href="javascript:;" class="ok lineBlock va-m">确认</a>
+                </div>
+            </div>
+        </div>
+        <div class="upload-layer">
+            <div class="upload-text">
+                <p>请尽量提供gerber文件，由于版本兼容性，其他格式可能会导致导出错误问题。</p>
+                <p>如果版本为空，则使用ALtium Designer10.0转移到gerber默认值。因此，请填写版本号。</p>
+            </div>
+            <ul class="tab lbBox">
+                <li class="lineBlock">
+                <span class="circle lineBlock va-m act">
+                    <i></i>
+                </span>
+                    <span class="txt va-m">(RS-274-X)</span>
+                </li>
+                <li class="lineBlock">
+                <span class="circle lineBlock va-m">
+                    <i></i>
+                </span>
+                    <span class="txt va-m">(RS-274-X)</span>
+                </li>
+                <li class="lineBlock">
+                <span class="circle lineBlock va-m">
+                    <i></i>
+                </span>
+                    <span class="txt va-m">(RS-274-X)</span>
+                </li>
+            </ul>
+            <div class="upload-box">
+                <div class="lineBlock va-m">
+                    <p class="upload-ico">
+                        <i class="iconfont iconzujiantubiaojiantou4 va-m"></i>
+                        <span class="va-m">上传文件</span>
+                    </p>
+                    <p class="text">.rar或.zip最大10M（.pcb .pcbdoc .cam .brd和gerber文件） </p>
+                </div>
+                <b class="lineBlock emptys"></b>
+            </div>
+            <!--上传成功时候的状态-->
+            <div class="upload-show clr">
+                <div class="fl l">
+                    <i class="iconfont iconzujiantubiaojiantou3 va-m"></i>
+                    <span class="va-m">我是PCB文件.zip</span>
+                </div>
+                <a class="fr r" href="javascript:;">重新上传</a>
+            </div>
+            <div class="btn-wrap clr">
+                <div class="fl l"><em>*</em>免责声明：请仔细检查下单参数，PCB生产以下单参数为准，其他（如订单备注、上传文件内、附件等）出现的参数均视为无效。</div>
+                <div class="fr r">
+                    <a href="javascript:;" class="canel lineBlock va-m">取消</a>
+                    <a href="javascript:;" class="ok lineBlock va-m">确认</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
 
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
@@ -1147,21 +1365,50 @@
     }
 
 
-
     //快键登录
+    /* layer.open({
+       type: 1,
+       title: '<span>猎板网登录</span>',
+       skin: 'autolayer',
+       area: ['500px', 'auto'],
+       shadeClose: true,
+       move: false,
+       content: $("#loginhtml").html(),
+       success: function (layero, index) {
+
+
+       }
+     });
+   */
+
+    //上传
     layer.open({
       type: 1,
-      title: '<span>猎板网登录</span>',
-      skin: 'loginlayer',
-      area: ['500px', 'auto'],
+      title: '<em class="curr sbs">SMT关联PCB</em><em class="sbs">上传PCB文件</em>',
+      area: ['780px', 'auto'],
+      skin: 'autolayer',
       shadeClose: true,
       move: false,
-      content: $("#loginhtml").html(),
+      content: $("#uploadHtml").html(),
       success: function (layero, index) {
 
+        layui.laypage.render({
+          elem: 'pagination',
+          count: 100,
+          limit: 10,
+          curr: 1,
+          theme: '#0081D2',
+          jump: function (obj, first) {
 
+            if (!first) {
+
+
+            }
+          }
+        });
       }
     });
+
 
     //加入购物车
     /* layer.open({
@@ -1263,7 +1510,7 @@
         //滑动条的宽度。
         customWidth: 300,
         //业务键字段，可为空。为便于线上问题的排查，建议您按照线上问题定位文档中推荐的方法配置该字段值。
-        trans:{"key1":"code0"},
+        trans: {"key1": "code0"},
         //语言。PC端Web页面场景默认支持18国语言，详细配置方法请参见自定义文案与多语言文档。
         language: "cn",
         //是否启用。一般情况，保持默认值（true）即可。
@@ -1271,7 +1518,7 @@
         //内部网络请求的超时时间。一般情况建议保持默认值（3000ms）。
         timeout: 3000,
         //允许服务器超时重复次数，默认5次。超过重复次数后将触发报错。
-        times:5,
+        times: 5,
         //前端滑动验证通过时会触发该回调参数。您可以在该回调参数中将请求标识（token）、会话ID（sessionid）、签名串（sig）字段记录下来，随业务请求一同发送至您的服务端调用验签。
         callback: function (data) {
           window.console && console.log(nc_token)

@@ -24,75 +24,74 @@
       Util.tabs('.stick-slide li', function (index, val) {
       
       });
-  
+      
       //工艺要求
       Util.tabs('#technologyRequire ul li', function (index, val) {
-    
+      
       });
-  
+      
       //确认生产稿
       Util.tabs('#confirmProduction ul li', function (index, val) {
-    
+      
       });
-  
+      
       //PCBA线路板
       Util.tabs('#PCBA ul li', function (index, val) {
-    
+      
       });
       
       //PCBA是否已拼版
       Util.tabs('#PCBAIs ul li', function (index, val) {
-    
+      
       });
-  
-  
+      
+      
       //BOM配件
       Util.tabs('#BOMParts ul li', function (index, val) {
-    
+      
       });
-  
+      
       //钢网
       Util.tabs('#steelMesh ul li', function (index, val) {
-    
+      
       });
-  
+      
       
       //刷三防漆
       Util.tabs('#painting ul li', function (index, val) {
-    
+      
       });
-  
-  
-  
+      
+      
       //功能测试
       Util.tabs('#test ul li', function (index, val) {
-    
+      
       });
-  
+      
       //烧录程序
       Util.tabs('#burnRecord ul li', function (index, val) {
-    
+      
       });
-  
+      
       //PCBA板分板出货
       Util.tabs('#shipment ul li', function (index, val) {
-    
+      
       });
-  
+      
       //包装选项
       Util.tabs('#packagingOptions ul li', function (index, val) {
-    
+      
       });
-  
+      
       //包装选项
       Util.tabs('#xray ul li', function (index, val) {
-    
+      
       });
       
       //BOM文件
       var upload1 = layui.upload.render({
         elem: '#bomUpload',
-        url:  "/oss/upload",
+        url: "/oss/upload",
         accept: 'file',
         data: {source: 2, pf: 20},
         done: function (res) {
@@ -102,27 +101,37 @@
           //请求异常回调
         }
       });
-  
-  
+      
+      
       //贴片坐标文件
       var upload2 = layui.upload.render({
         elem: '#patchUpload',
-        url:  "/oss/upload",
+        url: "/oss/upload",
         accept: 'file',
         data: {source: 2, pf: 20},
         done: function (res) {
-      
+        
         },
         error: function () {
           //请求异常回调
         }
       });
-  
-  
-  
-  
-  
-  
+      
+      
+      //收缩
+      $(document).on('click', '.sbs', function () {
+        var index = $(this).index();
+        $(this).addClass('curr').siblings('.sbs').removeClass('curr');
+        if(index == 0){
+          $(".smt-layer").show();
+          $(".upload-layer").hide();
+        }else if(index == 1){
+          $(".smt-layer").hide();
+          $(".upload-layer").show();
+        }
+      });
+      
+      
       //收缩
       $(document).on('click', '.shrink', function () {
         opt.onscrollFn();
@@ -194,7 +203,6 @@
       $(document).on('click', '.board-up-layer .canel', function () {
         layer.closeAll();
       });
-
       
       
       return this;

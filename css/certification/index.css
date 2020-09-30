@@ -1052,6 +1052,24 @@ body {
 .nc-container .nc_scale .btn_ok {
   color: #0081D2 !important;
 }
+.layui-layer-title em {
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.layui-layer-title em.curr:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  text-align: center;
+  width: 100%;
+  height: 5px;
+  background: #0081D2;
+  content: "";
+  display: inline-block;
+}
 .certification .common-title {
   color: #3A3C40;
   text-align: center;

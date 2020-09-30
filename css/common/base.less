@@ -530,7 +530,7 @@ body {
         height: 48px;
         display: block;
         text-align: center;
-          line-height: 48px;
+        line-height: 48px;
 
         .iconfont {
           font-size: 40px;
@@ -569,14 +569,14 @@ body {
           content: '';
         }
 
-        a.xb{
+        a.xb {
           position: absolute;
           left: 41px;
           top: -5px;
           width: 50px;
           height: 20px;
           background: url('../../images/home/yu.png') no-repeat center;
-          background-size:cover;
+          background-size: cover;
         }
 
         a.link {
@@ -1242,9 +1242,10 @@ body {
   background-color: #0081D2 !important;
 }
 
-#nc_1_wrapper{
+#nc_1_wrapper {
   width: 100% !important;
 }
+
 .nc-container .nc_scale .nc_ok, .nc-container .nc_scale .nc_bg {
   background: #0081D2 !important;
 }
@@ -1254,6 +1255,29 @@ body {
 }
 
 
+.layui-layer-title {
+  em {
+    position: relative;
+    display: inline-block;
+    margin-right: 40px;
+    cursor: pointer;
+
+    &.curr {
+      &:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        text-align: center;
+        width: 100%;
+        height: 5px;
+        background: #0081D2;
+        content: "";
+        display: inline-block;
+      }
+    }
+  }
+}
 
 
 
