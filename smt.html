@@ -1290,47 +1290,70 @@
         </div>
         <div class="upload-layer">
             <div class="upload-text">
-                <p>请尽量提供gerber文件，由于版本兼容性，其他格式可能会导致导出错误问题。</p>
-                <p>如果版本为空，则使用ALtium Designer10.0转移到gerber默认值。因此，请填写版本号。</p>
+              <!--  <p>请尽量提供gerber文件，由于版本兼容性，其他格式可能会导致导出错误问题。</p>
+                <p>如果版本为空，则使用ALtium Designer10.0转移到gerber默认值。因此，请填写版本号。</p>-->
             </div>
-            <ul class="tab lbBox">
-                <li class="lineBlock">
-                <span class="circle lineBlock va-m act">
-                    <i></i>
-                </span>
-                    <span class="txt va-m">(RS-274-X)</span>
-                </li>
-                <li class="lineBlock">
-                <span class="circle lineBlock va-m">
-                    <i></i>
-                </span>
-                    <span class="txt va-m">(RS-274-X)</span>
-                </li>
-                <li class="lineBlock">
-                <span class="circle lineBlock va-m">
-                    <i></i>
-                </span>
-                    <span class="txt va-m">(RS-274-X)</span>
-                </li>
-            </ul>
-            <div class="upload-box">
-                <div class="lineBlock va-m">
-                    <p class="upload-ico">
-                        <i class="iconfont iconzujiantubiaojiantou4 va-m"></i>
-                        <span class="va-m">上传文件</span>
-                    </p>
-                    <p class="text">.rar或.zip最大10M（.pcb .pcbdoc .cam .brd和gerber文件） </p>
+            <!-- <ul class="tab lbBox">
+                 <li class="lineBlock">
+                 <span class="circle lineBlock va-m act">
+                     <i></i>
+                 </span>
+                     <span class="txt va-m">(RS-274-X)</span>
+                 </li>
+                 <li class="lineBlock">
+                 <span class="circle lineBlock va-m">
+                     <i></i>
+                 </span>
+                     <span class="txt va-m">(RS-274-X)</span>
+                 </li>
+                 <li class="lineBlock">
+                 <span class="circle lineBlock va-m">
+                     <i></i>
+                 </span>
+                     <span class="txt va-m">(RS-274-X)</span>
+                 </li>
+             </ul>-->
+            <div style="text-align: center;white-space: nowrap">
+                <div class="upload-box lineBlock va-m" style="width: 32%;margin-right:2%">
+                    <!--<div class="lineBlock va-m">
+                        <p class="upload-ico">
+                            <i class="iconfont iconzujiantubiaojiantou4 va-m"></i>
+                            <span class="va-m">上传BOM文件</span>
+                        </p>
+                        <p class="text">仅支持xls,csv,xlsx文件格式</p>
+                    </div>-->
+                    <!--已上传-->
+                    <div class="lineBlock show  va-m clr" style="text-align: center">
+                        <div>
+                            <i class="iconfont iconzujiantubiaojiantou3 va-m" style="font-size: 20px;color: #e8b46b;"></i>
+                            <span title="" class="lineBlock va-m" style="width: 130px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis">我是PCB文我是PCB文件我是PCB文件件.zip</span>
+                        </div>
+                        <a href="javascript:;" style="color: #0081d2;">重新上传</a>
+                    </div>
+                    <b class="lineBlock emptys"></b>
                 </div>
-                <b class="lineBlock emptys"></b>
+                <div class="upload-box lineBlock va-m" style="width: 32%;margin-right:2%">
+                    <div class="lineBlock va-m">
+                        <p class="upload-ico">
+                            <i class="iconfont iconzujiantubiaojiantou4 va-m"></i>
+                            <span class="va-m">上传PCB文件</span>
+                        </p>
+                        <p class="text">仅支持rar文件格式</p>
+                    </div>
+                    <b class="lineBlock emptys"></b>
+                </div>
+                <div class="upload-box lineBlock va-m" style="width: 33%">
+                    <div class="lineBlock va-m">
+                        <p class="upload-ico">
+                            <i class="iconfont iconzujiantubiaojiantou4 va-m"></i>
+                            <span class="va-m">上传坐标文件</span>
+                        </p>
+                        <p class="text">仅支持rar,xls,csv,xlsx,txt文件格式</p>
+                    </div>
+                    <b class="lineBlock emptys"></b>
+                </div>
             </div>
             <!--上传成功时候的状态-->
-            <div class="upload-show clr">
-                <div class="fl l">
-                    <i class="iconfont iconzujiantubiaojiantou3 va-m"></i>
-                    <span class="va-m">我是PCB文件.zip</span>
-                </div>
-                <a class="fr r" href="javascript:;">重新上传</a>
-            </div>
             <div class="btn-wrap clr">
                 <div class="fl l"><em>*</em>免责声明：请仔细检查下单参数，PCB生产以下单参数为准，其他（如订单备注、上传文件内、附件等）出现的参数均视为无效。</div>
                 <div class="fr r">
@@ -1384,7 +1407,7 @@
     //上传
     layer.open({
       type: 1,
-      title: '<em class="curr sbs">SMT关联PCB</em><em class="sbs">上传PCB文件</em>',
+      title: '<em class="curr sbs">SMT关联PCB</em><em class="sbs">上传文件</em>',
       area: ['780px', 'auto'],
       skin: 'autolayer',
       shadeClose: true,
