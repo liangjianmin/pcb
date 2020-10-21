@@ -358,6 +358,7 @@
 
       .no-invoice {
         padding-bottom: 10px;
+
         a {
           width: 118px;
           height: 38px;
@@ -652,6 +653,17 @@
             padding-left: 26px;
             padding-bottom: 15px;
             border-left: 2px solid #E6EAF2;
+
+            &.none {
+              border-left: none;
+              p{
+                color: #959ba6;
+              }
+              &:after{
+                color: #959ba6;
+                background: transparent;
+              }
+            }
 
             &:after {
               position: absolute;

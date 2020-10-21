@@ -1568,6 +1568,16 @@ body {
   padding-bottom: 15px;
   border-left: 2px solid #E6EAF2;
 }
+.pcb-order-detail .pcb-order-section .pcb-logistics .c ul li.none {
+  border-left: none;
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .c ul li.none p {
+  color: #959ba6;
+}
+.pcb-order-detail .pcb-order-section .pcb-logistics .c ul li.none:after {
+  color: #959ba6;
+  background: transparent;
+}
 .pcb-order-detail .pcb-order-section .pcb-logistics .c ul li:after {
   position: absolute;
   left: -6px;
