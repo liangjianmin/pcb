@@ -1634,6 +1634,7 @@ body {
   color: #5C5F66;
   cursor: pointer;
   position: relative;
+  display: block;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5:hover {
   color: #0081D2;
@@ -1673,6 +1674,15 @@ body {
   position: relative;
   margin-top: 15px;
 }
+.user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text .tip .wrap {
+  position: relative;
+  text-align: left;
+  color: #3a3c40;
+  padding-left: 29px;
+  border-bottom: 1px solid #E6EAF2;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text .tip .mark {
   position: absolute;
   display: block;
@@ -1680,7 +1690,7 @@ body {
   height: 9px;
   border-radius: 50% 50%;
   background-color: #ACB3BF;
-  top: 5px;
+  top: 59px;
 }
 .user-center .user-center-r .user-center-section .data-list table tbody tr td.type6 .t5 .translate-tips .tips-text .tip .mark.active {
   background-color: #0081D2;

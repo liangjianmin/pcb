@@ -536,6 +536,7 @@
                     color: #5C5F66;
                     cursor: pointer;
                     position: relative;
+                    display: block;
 
                     &:hover {
                       color: #0081D2;
@@ -577,7 +578,15 @@
                         .tip {
                           position: relative;
                           margin-top: 15px;
-
+                          .wrap{
+                            position: relative;
+                            text-align: left;
+                            color: #3a3c40;
+                            padding-left: 29px;
+                            border-bottom: 1px solid #E6EAF2;
+                            padding-bottom: 8px;
+                            margin-bottom: 8px;
+                          }
                           .mark {
                             position: absolute;
                             display: block;
@@ -585,7 +594,7 @@
                             height: 9px;
                             border-radius: 50% 50%;
                             background-color: #ACB3BF;
-                            top: 5px;
+                            top: 59px;
 
                             &.active {
                               background-color: #0081D2;
