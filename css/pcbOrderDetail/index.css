@@ -1540,6 +1540,7 @@ body {
   border-radius: 2px;
   padding: 30px 30px 30px 30px;
   border: 1px solid #E6EAF2;
+  margin-bottom: 10px;
 }
 .pcb-order-detail .pcb-order-section .pcb-logistics .l {
   width: 500px;
