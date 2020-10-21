@@ -1076,6 +1076,7 @@ body {
   background: #F7F9FC;
 }
 .login-section .login-section-wrap {
+  position: relative;
   width: 380px;
   margin: 0 auto;
   padding: 30px 100px 68px 100px;
@@ -1202,6 +1203,114 @@ body {
 .login-section .login-section-wrap .login-bar .r a {
   font-size: 14px;
   color: #0081d2;
+}
+.login-section .login-section-wrap .other-login {
+  margin-top: 60px;
+  text-align: center;
+}
+.login-section .login-section-wrap .other-login .t1 {
+  position: relative;
+  font-size: 14px;
+  color: #5c5f66;
+}
+.login-section .login-section-wrap .other-login .t1:before {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 117px;
+  height: 1px;
+  color: #e6eaf2;
+  background: #E6EAF2;
+  content: '';
+}
+.login-section .login-section-wrap .other-login .t1:after {
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 117px;
+  height: 1px;
+  color: #e6eaf2;
+  background: #E6EAF2;
+  content: '';
+}
+.login-section .login-section-wrap .other-login .icon-wrap {
+  margin-top: 24px;
+}
+.login-section .login-section-wrap .other-login .icon-wrap li {
+  background: #E6EAF2;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.login-section .login-section-wrap .other-login .icon-wrap li:hover {
+  background: #0081D2;
+}
+.login-section .login-section-wrap .other-login .icon-wrap li .iconfont {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.login-section .login-section-wrap .code-login {
+  cursor: pointer;
+}
+.login-section .login-section-wrap .code-login .pull-left {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  background: url("../../images/home/code2.jpg") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+.login-section .login-section-wrap .code-login .pull-lefts {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  background: url("../../images/home/code1.jpg") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+.login-section .login-section-wrap .onRegister2 .wrp_code {
+  border: 1px solid #E2E2E2;
+  width: 198px;
+  height: 198px;
+  margin: 0 auto;
+}
+.login-section .login-section-wrap .onRegister2 .wrp_code .qrcode {
+  width: 198px;
+  height: 198px;
+}
+.login-section .login-section-wrap .onRegister2 .info {
+  margin-top: 15px;
+}
+.login-section .login-section-wrap .onRegister2 .info .t1 {
+  text-align: center;
+  color: #373737;
+  font-size: 13px;
+}
+.login-section .login-section-wrap .onRegister2 .text-center {
+  margin-top: 20px;
+  text-align: center;
+}
+.login-section .login-section-wrap .onRegister2 .text-center .t1 {
+  font-size: 14px;
+  color: #0081d2;
+  margin-right: 20px;
+}
+.login-section .login-section-wrap .onRegister2 .text-center .t1:hover {
+  text-decoration: underline;
+}
+.login-section .login-section-wrap .onRegister2 .text-center .t2 {
+  font-size: 14px;
+  color: #0081d2;
+}
+.login-section .login-section-wrap .onRegister2 .text-center .t2:hover {
+  text-decoration: underline;
 }
 .nc_wrapper {
   width: 100% !important;

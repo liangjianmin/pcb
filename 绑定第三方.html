@@ -9,9 +9,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/login/index.css"/>
-    <script type="text/javascript" src="//g.alicdn.com/sd/ncpc/nc.js?t=2015052012"></script>
+<link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/findpwd/index.css"/>
 </head>
 
 <body>
@@ -112,70 +111,49 @@
 <!--head end-->
 
 <!--section-->
-<div class="login-section">
-    <div class="login-section-wrap">
-        <div class="text">
-            <p class="tit lineBlock">手机登录</p>
-            <!--格式不对的时候显示-->
-            <p class="error" style="display: none"><i class="iconfont iconzujiantubiaojinggao va-m"></i><span class="va-m">密码错误，请重新输入！</span></p>
-        </div>
-        <div class="onRegister1" style="display: block">
+<div class="find-section">
+    <div class="find-sectionn-wrap">
+        <div style="display: block">
+            <p class="tit lineBlock">绑定第三方账户</p>
+            <ul class="status lbBox">
+                <li class="lineBlock curr1">
+                    <span class="lineBlock">1</span>
+                    <p>验证身份</p>
+                    <b class="line1"></b>
+                </li>
+                <li class="lineBlock curr2">
+                    <span class="lineBlock">2</span>
+                    <p>重置成功</p>
+                    <b class="line1"></b>
+                </li>
+            </ul>
             <form>
-                <div class="code-login">
-                    <div class="rel pull-left"></div>
-                </div>
-                <div class="inpt error">
-                    <i class="iconfont iconzujiantubiaoshouji"></i>
-                    <input type="text" placeholder="请输入手机号码" class="inp"/>
-                </div>
-                <div class="inpt" id="verCode"></div>
-                <div class="inpt status">
-                    <i class="iconfont iconzujiantubiaomima"></i>
-                    <input type="text" placeholder="请输入登录密码" class="inp"/>
-                </div>
-                <div class="btn">
-                    <a href="javascript:;">登录</a>
-                </div>
-                <div class="login-bar clr">
-                    <div class="fl l">
-                    <span class="circle act lineBlock va-m">
-                        <i></i>
-                    </span>
-                        <span class="txt va-m">记住登录状态</span>
+                <div class="foram-wrap">
+                    <div>
+                        <div class="inpt error">
+                            <i class="iconfont iconzujiantubiaoshouji"></i>
+                            <input type="text" placeholder="请输入手机号码" class="inp"/>
+                            <p class="error-text" style="display: block">* 验证码错误，请输入正确的验证码</p>
+                        </div>
+                        <div class="inpt">
+                            <i class="iconfont iconzujiantubiaodunpai"></i>
+                            <input type="text" placeholder="请输入短信验证码" class="inp"/>
+                            <input type="button" value="发送验证码" class="button-class code-btn">
+                            <p class="error-text">* 验证码错误，请输入正确的验证码</p>
+                        </div>
                     </div>
-                    <div class="fr r">
-                        <a href="" class="mr24">注册新用户</a>
-                        <a href="">忘记密码？</a>
+                    <div class="btn">
+                        <a href="javascript:;">下一步</a>
                     </div>
-                </div>
-                <div class="other-login">
-                    <p class="t1">第三方帐号登录</p>
-                    <ul class="lbBox icon-wrap">
-                        <li class="lineBlock">
-                            <a href="javascript:;">
-                                <i class="iconfont iconzujiantubiaoweixin"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </form>
         </div>
-        <div class="onRegister2" style="display: none">
-            <form>
-                <div class="code-login">
-                    <div class="rel pull-lefts"></div>
-                </div>
-                <div class="wrp_code">
-                    <img class="qrcode lightBorder" src="https://open.weixin.qq.com/connect/qrcode/011m6Xt01sNKkl2L">
-                </div>
-                <div class="info">
-                    <p class="t1">请使用微信扫描二维码登录</p>
-                </div>
-                <p class="text-center">
-                    <a class="t1" href="javascript:;">密码登录</a>
-                    <a class="t2" href="javascript:;">免费注册</a>
-                </p>
-            </form>
+        <!--账户绑定成功-->
+        <div class="success" style="display: none">
+            <i class="iconfont iconzujiantubiaochenggong"></i>
+            <p class="t1">账户绑定成功</p>
+            <p class="t2">请妥善保管您的账户信息。</p>
+            <a class="btn" href="">返回个人中心</a>
         </div>
     </div>
 </div>
@@ -260,66 +238,37 @@
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
   $(function () {
+    $(".code-btn").on('click', function () {
+      var $codetext = $(this);
 
-    //切换其他登录
-    $(document).on('click', '.pull-left', function () {
-      $(".onRegister1").hide();
-      $(".onRegister2").show();
-      $(".text .tit").text('微信扫码登录');
-    });
+      //开始倒计时
+      var second = 60, timer = null;
+
+      timer = setInterval(function () {
+
+        second -= 1;
+
+        if (second > 0) {
+
+          $codetext.val(second + '秒');
+
+          $codetext.attr('disabled', "true");
+
+          $codetext.addClass('btnDisabled');
+
+        } else {
+
+          clearInterval(timer);
+
+          $codetext.removeAttr('disabled');
+
+          $codetext.val('重新获取');
+
+          $codetext.removeClass('btnDisabled');
 
 
-    $(document).on('click', '.pull-lefts', function () {
-      $(".onRegister1").show();
-      $(".onRegister2").hide();
-      $(".text .tit").text('手机登录');
-    });
-
-
-
-
-    $(".circle").on('click', function () {
-      $(this).toggleClass('act');
-    });
-
-
-    var nc_token = ["CF_APP_1", (new Date()).getTime(), Math.random()].join(':');
-    var NC_Opt =
-      {
-        //声明滑动验证需要渲染的目标元素ID。
-        renderTo: "#verCode",
-        //应用类型标识。它和使用场景标识（scene字段）一起决定了滑动验证的业务场景与后端对应使用的策略模型。您可以在人机验证控制台的配置管理页签找到对应的appkey字段值，请务必正确填写。
-        appkey: "CF_APP_1",
-        //使用场景标识。它和应用类型标识（appkey字段）一起决定了滑动验证的业务场景与后端对应使用的策略模型。您可以在人机验证控制台的配置管理页签找到对应的scene值，请务必正确填写。
-        scene: "register",
-        //滑动验证码的主键，请勿将该字段定义为固定值。确保每个用户每次打开页面时，其token值都是不同的。系统默认的格式为：”您的appkey”+”时间戳”+”随机数”。
-        token: nc_token,
-        //滑动条的宽度。
-        customWidth: 300,
-        //业务键字段，可为空。为便于线上问题的排查，建议您按照线上问题定位文档中推荐的方法配置该字段值。
-        trans: {"key1": "code0"},
-        //语言。PC端Web页面场景默认支持18国语言，详细配置方法请参见自定义文案与多语言文档。
-        language: "cn",
-        //是否启用。一般情况，保持默认值（true）即可。
-        isEnabled: true,
-        //内部网络请求的超时时间。一般情况建议保持默认值（3000ms）。
-        timeout: 3000,
-        //允许服务器超时重复次数，默认5次。超过重复次数后将触发报错。
-        times: 5,
-        //前端滑动验证通过时会触发该回调参数。您可以在该回调参数中将请求标识（token）、会话ID（sessionid）、签名串（sig）字段记录下来，随业务请求一同发送至您的服务端调用验签。
-        callback: function (data) {
-          window.console && console.log(nc_token)
-          window.console && console.log(data.csessionid)
-          window.console && console.log(data.sig)
         }
-      }
-    var nc = new noCaptcha(NC_Opt)
-    //用于自定义文案。详细配置方法请参见自定义文案与多语言文档。
-    nc.upLang('cn', {
-      _startTEXT: "请按住滑块，拖动到最右边",
-      _yesTEXT: "验证通过",
-      _error300: "哎呀，出错了，点击<a href=\"javascript:__nc.reset()\">刷新</a>再来一次",
-      _errorNetwork: "网络不给力，请<a href=\"javascript:__nc.reset()\">点击刷新</a>"
+      }, 1000);
     })
   })
 </script>
