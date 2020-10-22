@@ -340,10 +340,11 @@ body {
 .sldie-bar {
   position: fixed;
   right: 5px;
-  bottom: 100px;
+  top: 50%;
   width: 48px;
   z-index: 999;
-  display: none;
+  margin-top: -154px;
+  display: block !important;
 }
 .sldie-bar dl {
   width: 48px;
@@ -380,7 +381,7 @@ body {
   padding: 8px 0;
   box-sizing: border-box;
   top: 0;
-  left: -215px;
+  left: -200px;
   display: none;
 }
 .sldie-bar dl dd a.phone-a .phone-div .item {
@@ -409,7 +410,7 @@ body {
   background-color: #fff;
   z-index: 99;
   top: 0;
-  left: -215px;
+  left: -200px;
   display: none;
   box-sizing: border-box;
   padding-top: 20px;

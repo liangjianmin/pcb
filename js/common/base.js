@@ -46,9 +46,9 @@
         var height = $(window).scrollTop();
         
         if (height > 100) {
-          $(".sldie-bar").fadeIn();
+          $("#backtop").fadeIn();
         } else {
-          $(".sldie-bar").fadeOut();
+          $("#backtop").fadeOut();
         }
       });
       
