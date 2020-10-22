@@ -730,7 +730,7 @@ body {
   overflow: hidden;
 }
 .login-layer {
-  padding: 20px 60px 40px 60px;
+  padding: 63px 60px 40px 60px;
 }
 .login-layer .inpt {
   position: relative;
@@ -826,6 +826,114 @@ body {
 .login-layer .login-bar .r a {
   font-size: 14px;
   color: #0081d2;
+}
+.login-layer .other-login {
+  margin-top: 60px;
+  text-align: center;
+}
+.login-layer .other-login .t1 {
+  position: relative;
+  font-size: 14px;
+  color: #5c5f66;
+}
+.login-layer .other-login .t1:before {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 117px;
+  height: 1px;
+  color: #e6eaf2;
+  background: #E6EAF2;
+  content: '';
+}
+.login-layer .other-login .t1:after {
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 117px;
+  height: 1px;
+  color: #e6eaf2;
+  background: #E6EAF2;
+  content: '';
+}
+.login-layer .other-login .icon-wrap {
+  margin-top: 24px;
+}
+.login-layer .other-login .icon-wrap li {
+  background: #E6EAF2;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.login-layer .other-login .icon-wrap li:hover {
+  background: #0081D2;
+}
+.login-layer .other-login .icon-wrap li .iconfont {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.login-layer .code-login {
+  cursor: pointer;
+}
+.login-layer .code-login .pull-left {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url("../../images/home/code2.jpg") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+.login-layer .code-login .pull-lefts {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url("../../images/home/code1.jpg") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+.login-layer .onRegister2 .wrp_code {
+  border: 1px solid #E2E2E2;
+  width: 198px;
+  height: 198px;
+  margin: 0 auto;
+}
+.login-layer .onRegister2 .wrp_code .qrcode {
+  width: 198px;
+  height: 198px;
+}
+.login-layer .onRegister2 .info {
+  margin-top: 15px;
+}
+.login-layer .onRegister2 .info .t1 {
+  text-align: center;
+  color: #373737;
+  font-size: 13px;
+}
+.login-layer .onRegister2 .text-center {
+  margin-top: 20px;
+  text-align: center;
+}
+.login-layer .onRegister2 .text-center .t1 {
+  font-size: 14px;
+  color: #0081d2;
+  margin-right: 20px;
+}
+.login-layer .onRegister2 .text-center .t1:hover {
+  text-decoration: underline;
+}
+.login-layer .onRegister2 .text-center .t2 {
+  font-size: 14px;
+  color: #0081d2;
+}
+.login-layer .onRegister2 .text-center .t2:hover {
+  text-decoration: underline;
 }
 .website-tip {
   text-align: center;

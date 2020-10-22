@@ -855,7 +855,7 @@ body {
 }
 
 .login-layer {
-  padding: 20px 60px 40px 60px;
+  padding: 63px 60px 40px 60px;
 
   .inpt {
     position: relative;
@@ -974,6 +974,135 @@ body {
       a {
         font-size: 14px;
         color: #0081d2;
+      }
+    }
+  }
+
+  .other-login {
+    margin-top: 60px;
+    text-align: center;
+
+    .t1 {
+      position: relative;
+      font-size: 14px;
+      color: #5c5f66;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 11px;
+        width: 117px;
+        height: 1px;
+        color: #e6eaf2;
+        background: #E6EAF2;
+        content: '';
+      }
+
+      &:after {
+        position: absolute;
+        right: 0;
+        top: 11px;
+        width: 117px;
+        height: 1px;
+        color: #e6eaf2;
+        background: #E6EAF2;
+        content: '';
+      }
+    }
+
+    .icon-wrap {
+      margin-top: 24px;
+
+      li {
+        background: #E6EAF2;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+          background: #0081D2;
+        }
+
+        .iconfont {
+          font-size: 30px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .code-login {
+    cursor: pointer;
+    .pull-left {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      background: url("../../images/home/code2.jpg") no-repeat center;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    .pull-lefts {
+      position: absolute;
+      top: 10px;
+      right: 10px; 
+      width: 40px;
+      height: 40px;
+      background: url("../../images/home/code1.jpg") no-repeat center;
+      background-size: cover;
+      cursor: pointer;
+    }
+  }
+
+  .onRegister2 {
+    .wrp_code {
+      border: 1px solid #E2E2E2;
+      width: 198px;
+      height: 198px;
+      margin: 0 auto;
+
+      .qrcode {
+        width: 198px;
+        height: 198px;
+      }
+    }
+
+    .info {
+      margin-top: 15px;
+
+      .t1 {
+        text-align: center;
+        color: #373737;
+        font-size: 13px;
+      }
+    }
+
+    .text-center {
+      margin-top: 20px;
+      text-align: center;
+
+      .t1 {
+        font-size: 14px;
+        color: #0081d2;
+        margin-right: 20px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .t2 {
+        font-size: 14px;
+        color: #0081d2;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

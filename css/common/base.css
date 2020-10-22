@@ -206,7 +206,7 @@ body {
   height: 100%;
 }
 .pcb-head .pcb-head-wrap .l .t1 {
-  font-size: 16px;
+  font-size: 13px;
   color: #5c5f66;
   font-weight: 600;
   margin-left: 20px;
@@ -217,6 +217,11 @@ body {
 .pcb-head .pcb-head-wrap .r .t1 em {
   font-size: 12px;
   color: #959ba6;
+}
+.pcb-head .pcb-head-wrap .r .t1 .iconfont {
+  color: #0081d2;
+  font-size: 20px;
+  cursor: pointer;
 }
 .pcb-head .pcb-head-wrap .r .t1 span {
   font-size: 12px;
@@ -299,8 +304,8 @@ body {
 }
 .pcb-footer .pcb-footer-bottom {
   border-top: 1px solid #E6EAF2;
-  padding-top: 30px;
-  margin-top: 30px;
+  padding-top: 20px;
+  margin-top: 10px;
 }
 .pcb-footer .pcb-footer-bottom .l .text {
   width: 504px;
@@ -484,6 +489,7 @@ body {
   height: 48px;
   line-height: 48px;
   margin-right: 40px;
+  white-space: nowrap;
   transition: all 0.2s ease;
 }
 .home .nav-wrap .nav li.curr:after {
@@ -495,10 +501,45 @@ body {
   height: 3px;
   content: '';
 }
-.home .nav-wrap .nav li a {
+.home .nav-wrap .nav li a.xb {
+  position: absolute;
+  left: 41px;
+  top: -5px;
+  width: 50px;
+  height: 20px;
+  background: url('../../images/home/yu.png') no-repeat center;
+  background-size: cover;
+}
+.home .nav-wrap .nav li a.link {
   font-size: 16px;
   color: #FFFFFF;
   font-weight: bold;
+}
+.home .nav-wrap .nav li .iconzujiantubiaojiantou1 {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.home .nav-wrap .nav li dl {
+  position: absolute;
+  bottom: -74px;
+  width: 100%;
+  left: 0;
+  background: #0081D2;
+  z-index: 99999999;
+  display: none;
+}
+.home .nav-wrap .nav li dl dd {
+  text-align: center;
+  height: 37px;
+  line-height: 37px;
+  transition: all 0.2s ease;
+}
+.home .nav-wrap .nav li dl dd:hover {
+  background: #0090EB;
+}
+.home .nav-wrap .nav li dl dd a {
+  font-size: 14px;
+  color: #ffffff;
 }
 .home .nav-wrap .nav li.curr a,
 .home .nav-wrap .nav li:hover a {
@@ -512,6 +553,9 @@ body {
   width: 100%;
   height: 3px;
   content: '';
+}
+.home .nav-wrap .nav li:hover dl {
+  display: block;
 }
 .home .nav-wrap .login-bar {
   height: 100%;
@@ -571,6 +615,7 @@ body {
 }
 .home .nav-wrap .login-bar .logged-in {
   height: 100%;
+  vertical-align: top;
 }
 .home .nav-wrap .login-bar .logged-in .logged-in-bar {
   position: relative;
@@ -685,7 +730,7 @@ body {
   overflow: hidden;
 }
 .login-layer {
-  padding: 50px 60px 40px 60px;
+  padding: 63px 60px 40px 60px;
 }
 .login-layer .inpt {
   position: relative;
@@ -782,6 +827,114 @@ body {
   font-size: 14px;
   color: #0081d2;
 }
+.login-layer .other-login {
+  margin-top: 60px;
+  text-align: center;
+}
+.login-layer .other-login .t1 {
+  position: relative;
+  font-size: 14px;
+  color: #5c5f66;
+}
+.login-layer .other-login .t1:before {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 117px;
+  height: 1px;
+  color: #e6eaf2;
+  background: #E6EAF2;
+  content: '';
+}
+.login-layer .other-login .t1:after {
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 117px;
+  height: 1px;
+  color: #e6eaf2;
+  background: #E6EAF2;
+  content: '';
+}
+.login-layer .other-login .icon-wrap {
+  margin-top: 24px;
+}
+.login-layer .other-login .icon-wrap li {
+  background: #E6EAF2;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.login-layer .other-login .icon-wrap li:hover {
+  background: #0081D2;
+}
+.login-layer .other-login .icon-wrap li .iconfont {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.login-layer .code-login {
+  cursor: pointer;
+}
+.login-layer .code-login .pull-left {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url("../../images/home/code2.jpg") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+.login-layer .code-login .pull-lefts {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url("../../images/home/code1.jpg") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+.login-layer .onRegister2 .wrp_code {
+  border: 1px solid #E2E2E2;
+  width: 198px;
+  height: 198px;
+  margin: 0 auto;
+}
+.login-layer .onRegister2 .wrp_code .qrcode {
+  width: 198px;
+  height: 198px;
+}
+.login-layer .onRegister2 .info {
+  margin-top: 15px;
+}
+.login-layer .onRegister2 .info .t1 {
+  text-align: center;
+  color: #373737;
+  font-size: 13px;
+}
+.login-layer .onRegister2 .text-center {
+  margin-top: 20px;
+  text-align: center;
+}
+.login-layer .onRegister2 .text-center .t1 {
+  font-size: 14px;
+  color: #0081d2;
+  margin-right: 20px;
+}
+.login-layer .onRegister2 .text-center .t1:hover {
+  text-decoration: underline;
+}
+.login-layer .onRegister2 .text-center .t2 {
+  font-size: 14px;
+  color: #0081d2;
+}
+.login-layer .onRegister2 .text-center .t2:hover {
+  text-decoration: underline;
+}
 .website-tip {
   text-align: center;
   height: 40px;
@@ -851,6 +1004,7 @@ body {
   font-size: 14px;
   color: #666666;
   margin-right: 13px;
+  white-space: nowrap;
 }
 .selects-qty .wrap .inp {
   width: 158px;
@@ -884,3 +1038,144 @@ body {
   background-color: #f3f3f3;
   color: #666666;
 }
+.pcb-ad .indexRightAd {
+  position: fixed;
+  width: 140px;
+  height: 254px;
+  bottom: 54px;
+  z-index: 101;
+}
+.pcb-ad .indexRightAd img {
+  width: 140px;
+  height: 254px;
+}
+.pcb-ad .indexRightAd.none {
+  left: -150px;
+}
+.pcb-ad .indexRightAd.show {
+  left: 10px;
+}
+.pcb-ad .fast-key {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 120px;
+  background: #0860BF;
+  z-index: 999;
+}
+.pcb-ad .fast-key.none {
+  display: none;
+}
+.pcb-ad .fast-key.show {
+  display: block;
+}
+.pcb-ad .fast-key .fast-key-wrap .l {
+  position: relative;
+  height: 120px;
+  white-space: nowrap;
+}
+.pcb-ad .fast-key .fast-key-wrap .l .pic {
+  position: absolute;
+  top: -46px;
+  left: 0;
+  width: 162px;
+  height: 146px;
+  background: url("../../images/registerPage/b.png") no-repeat center;
+  background-size: cover;
+}
+.pcb-ad .fast-key .fast-key-wrap .l .text {
+  margin-left: 191px;
+}
+.pcb-ad .fast-key .fast-key-wrap .l .text .t1 {
+  font-size: 20px;
+  color: #f7f9fc;
+}
+.pcb-ad .fast-key .fast-key-wrap .l .text .t2 {
+  font-size: 30px;
+  color: #f7f9fc;
+  font-weight: bold;
+}
+.pcb-ad .fast-key .fast-key-wrap .l .text .t2 em {
+  font-size: 30px;
+  color: #e0c629;
+  font-weight: bold;
+}
+.pcb-ad .fast-key .fast-key-wrap .r {
+  position: relative;
+  height: 120px;
+  white-space: nowrap;
+}
+.pcb-ad .fast-key .fast-key-wrap .r .iconzujiantubiaojiantou10 {
+  position: absolute;
+  right: -46px;
+  top: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.pcb-ad .fast-key .fast-key-wrap .r .input-wrap {
+  width: 360px;
+  height: 48px;
+  border-radius: 2px;
+  background: #FFFFFF;
+  border: 1px solid #ffffff;
+}
+.pcb-ad .fast-key .fast-key-wrap .r .input-wrap .iconfont {
+  font-size: 30px;
+  color: #BBC1CC;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.pcb-ad .fast-key .fast-key-wrap .r .input-wrap input {
+  font-size: 14px;
+  height: 100%;
+  vertical-align: middle;
+}
+.pcb-ad .fast-key .fast-key-wrap .r .input-wrap input::-webkit-input-placeholder {
+  color: #959ba6;
+}
+.pcb-ad .fast-key .fast-key-wrap .r .btn {
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #e89721;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 20px;
+}
+.layui-form-checked[lay-skin=primary] i {
+  border-color: #0081D2 !important;
+  background-color: #0081D2 !important;
+}
+#nc_1_wrapper {
+  width: 100% !important;
+}
+.nc-container .nc_scale .nc_ok,
+.nc-container .nc_scale .nc_bg {
+  background: #0081D2 !important;
+}
+.nc-container .nc_scale .btn_ok {
+  color: #0081D2 !important;
+}
+.layui-layer-title em {
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.layui-layer-title em.curr:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  text-align: center;
+  width: 100%;
+  height: 5px;
+  background: #0081D2;
+  content: "";
+  display: inline-block;
+}
+/*# sourceMappingURL=base.css.map */
