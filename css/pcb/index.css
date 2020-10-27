@@ -1297,6 +1297,7 @@ body {
 }
 .pcb .section .pcb-l .pcb-box .pcb-block,
 .pcb .section .pcb-l .pcb-bz .pcb-block {
+  position: relative;
   margin-bottom: 5px;
   white-space: nowrap;
 }
@@ -1446,9 +1447,13 @@ body {
   font-size: 14px;
   color: #3a3c40;
 }
-.pcb .section .pcb-l .pcb-box .pcb-block .pcb_boardcolor li,
-.pcb .section .pcb-l .pcb-bz .pcb-block .pcb_boardcolor li {
-  margin-bottom: 10px;
+.pcb .section .pcb-l .pcb-box .pcb-block .pcb_boardcolor li span,
+.pcb .section .pcb-l .pcb-bz .pcb-block .pcb_boardcolor li span {
+  color: #5c5f66;
+}
+.pcb .section .pcb-l .pcb-box .pcb-block .pcb_boardcolor li:nth-child(-n + 6),
+.pcb .section .pcb-l .pcb-bz .pcb-block .pcb_boardcolor li:nth-child(-n + 6) {
+  margin-bottom: 5px;
 }
 .pcb .section .pcb-l .pcb-box .pcb-block .text,
 .pcb .section .pcb-l .pcb-bz .pcb-block .text {
@@ -2263,6 +2268,9 @@ body {
   text-align: center;
 }
 .wt1 {
+  position: absolute;
+  right: 88px;
+  top: 0;
   height: 54px;
   width: 156px;
   margin-left: 20px;
@@ -2278,12 +2286,12 @@ body {
   margin-left: 10px;
 }
 .wt4 {
-  height: 32px;
+  height: 30px;
   width: 80px;
   margin-left: 10px;
 }
 .wt5 {
-  height: 36px;
+  height: 30px;
   width: 31px;
   margin-left: 10px;
 }

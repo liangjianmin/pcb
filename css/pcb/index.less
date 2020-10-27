@@ -140,6 +140,7 @@
         }
 
         .pcb-block {
+          position: relative;
           margin-bottom: 5px;
           white-space: nowrap;
 
@@ -321,7 +322,12 @@
 
           .pcb_boardcolor {
             li {
-              margin-bottom: 10px;
+              span{
+                color: #5c5f66;
+              }
+              &:nth-child(-n + 6) {
+                margin-bottom: 5px;
+              }
             }
           }
 
@@ -1327,6 +1333,9 @@
 }
 
 .wt1 {
+  position: absolute;
+  right: 88px;
+  top: 0;
   height: 54px;
   width: 156px;
   margin-left: 20px;
@@ -1345,13 +1354,13 @@
 }
 
 .wt4 {
-  height: 32px;
+  height: 30px;
   width: 80px;
   margin-left: 10px;
 }
 
 .wt5 {
-  height: 36px;
+  height: 30px;
   width: 31px;
   margin-left: 10px;
 }
