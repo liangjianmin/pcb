@@ -318,6 +318,7 @@ body {
   width: 162px;
   background: #FFFFFF;
   border: 1px solid #E4ECED;
+  z-index: 9999;
 }
 .p-head .box .r .material .list-box .list li {
   position: relative;

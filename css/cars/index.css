@@ -318,6 +318,7 @@ body {
   width: 162px;
   background: #FFFFFF;
   border: 1px solid #E4ECED;
+  z-index: 9999;
 }
 .p-head .box .r .material .list-box .list li {
   position: relative;
@@ -860,7 +861,7 @@ body {
 }
 .section-car .cart-section .box dd .time {
   height: 40px;
-  background: #D2ECFF;
+  background: #e1f1fe;
 }
 .section-car .cart-section .box dd .time .time-text em {
   font-size: 14px;
@@ -1145,16 +1146,18 @@ body {
   color: #131414;
   opacity: 0.6;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 6px;
 }
 .section-car .cart-section .box dd .list li .color6 .t2 {
   font-size: 14px;
   color: #131414;
   opacity: 0.6;
 }
-.section-car .cart-section .box dd .list li:hover,
 .section-car .cart-section .box dd .list li.curr {
   background: #FFF9F2;
+}
+.section-car .cart-section .box dd .list li:hover {
+  background: #EBF6FF;
 }
 .section-car .cart-section .box dd .package {
   padding-top: 12px;
