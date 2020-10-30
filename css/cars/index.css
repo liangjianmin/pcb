@@ -942,13 +942,82 @@ body {
   margin-left: 12px;
 }
 .section-car .cart-section .box dd .list li .color1 .text .t2 {
+  position: relative;
   margin-top: 6px;
+}
+.section-car .cart-section .box dd .list li .color1 .text .t2 .wrap {
   font-size: 14px;
   color: #131414;
 }
-.section-car .cart-section .box dd .list li .color1 .text .t2 em {
+.section-car .cart-section .box dd .list li .color1 .text .t2 .wrap em {
   margin-left: 16px;
   color: #0a60be;
+  cursor: pointer;
+}
+.section-car .cart-section .box dd .list li .color1 .text .t2 .detail-box {
+  position: absolute;
+  top: -51px;
+  left: 175px;
+  z-index: 1;
+  display: none;
+}
+.section-car .cart-section .box dd .list li .color1 .text .t2 .detail-box .left {
+  position: absolute;
+  left: -8px;
+  top: 53px;
+  width: 10px;
+  height: 17px;
+  background: url("../../images/p-home/left.png") no-repeat center;
+  background-size: cover;
+}
+.section-car .cart-section .box dd .list li .color1 .text .t2 .detail-box table {
+  width: 670px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #0A60BE;
+}
+.section-car .cart-section .box dd .list li .color1 .text .t2 .detail-box table tr td {
+  padding-left: 24px;
+  border: 1px solid #E4ECED;
+  height: 39px;
+}
+.section-car .cart-section .box dd .list li .color1 .text .t2 .detail-box table tr td.t1 {
+  width: 145px;
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.section-car .cart-section .box dd .list li .color1 .text .t2 .detail-box table tr td.t2 {
+  background: #EDF6F7;
+  width: 187px;
+  color: #131414;
+  font-size: 14px;
+  font-weight: bold;
+}
+.section-car .cart-section .box dd .list li .color1 .text .t2:hover .detail-box {
+  display: block;
+}
+.section-car .cart-section .box dd .list li .color2 .timebox0 {
+  width: 52px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid #51B8C9;
+  white-space: nowrap;
+}
+.section-car .cart-section .box dd .list li .color2 .timebox0 .tt {
+  width: 28px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+  color: #00A4BF;
+}
+.section-car .cart-section .box dd .list li .color2 .timebox0 .hour {
+  width: 24px;
+  background: #00A4BF;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
 }
 .section-car .cart-section .box dd .list li .color2 .timebox {
   width: 52px;

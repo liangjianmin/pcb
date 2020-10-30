@@ -9,6 +9,7 @@
     text-align: center;
     margin-top: 88px;
     margin-bottom: 100px;
+
     .iconfont {
       font-size: 154px;
       color: #494c4d;
@@ -294,19 +295,103 @@
                 }
 
                 .t2 {
+                  position: relative;
                   margin-top: 6px;
-                  font-size: 14px;
-                  color: #131414;
 
-                  em {
-                    margin-left: 16px;
-                    color: #0a60be;
+                  .wrap {
+                    font-size: 14px;
+                    color: #131414;
+
+                    em {
+                      margin-left: 16px;
+                      color: #0a60be;
+                      cursor: pointer;
+                    }
+                  }
+
+                  .detail-box {
+                    position: absolute;
+                    top: -51px;
+                    left: 175px;
+                    z-index: 1;
+                    display: none;
+
+                    .left {
+                      position: absolute;
+                      left: -8px;
+                      top: 53px;
+                      width: 10px;
+                      height: 17px;
+                      background: url("../../images/p-home/left.png") no-repeat center;
+                      background-size: cover;
+                    }
+
+                    table {
+                      width: 670px;
+                      background: #FFFFFF;
+                      box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+                      border: 1px solid #0A60BE;
+
+                      tr {
+                        td {
+                          padding-left: 24px;
+                          border: 1px solid #E4ECED;
+                          height: 39px;
+
+                          &.t1 {
+                            width: 145px;
+                            font-size: 14px;
+                            color: #131414;
+                            opacity: 0.6;
+                          }
+
+                          &.t2 {
+                            background: #EDF6F7;
+                            width: 187px;
+                            color: #131414;
+                            font-size: 14px;
+                            font-weight: bold;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  &:hover {
+                    .detail-box {
+                      display: block;
+                    }
                   }
                 }
               }
             }
 
             .color2 {
+              .timebox0 {
+                width: 52px;
+                height: 18px;
+                border-radius: 2px;
+                border: 1px solid #51B8C9;
+                white-space: nowrap;
+
+                .tt {
+                  width: 28px;
+                  text-align: center;
+                  line-height: 18px;
+                  font-size: 14px;
+                  color: #00A4BF;
+                }
+
+                .hour {
+                  width: 24px;
+                  background: #00A4BF;
+                  font-size: 14px;
+                  color: #ffffff;
+                  font-weight: bold;
+                  text-align: center;
+                }
+              }
+
               .timebox {
                 width: 52px;
                 height: 18px;
