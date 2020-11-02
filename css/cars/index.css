@@ -726,10 +726,26 @@ body {
   font-size: 16px;
   color: #ffffff;
   text-align: center;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.layui-layer-title span.disabled {
+  width: 144px;
+  height: 28px;
+  background: #FFFFFF;
+  border: 1px solid rgba(166, 173, 173, 0.5);
+  color: #0a60be;
+  font-weight: bold;
 }
 .layui-layer-page .layui-layer-content {
   height: auto !important;
   overflow-y: hidden !important;
+}
+.pcb-layer-box .layui-layer-title {
+  margin-left: 24px;
+}
+.pcb-layer-box .layui-layer-title span {
+  cursor: pointer;
 }
 .section-car {
   background: #E8F1F2;

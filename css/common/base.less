@@ -831,6 +831,17 @@ body {
     font-size: 16px;
     color: #ffffff;
     text-align: center;
+    vertical-align: middle;
+    margin-right: 20px;
+
+    &.disabled {
+      width: 144px;
+      height: 28px;
+      background: #FFFFFF;
+      border: 1px solid rgba(166, 173, 173, 0.5);
+      color: #0a60be;
+      font-weight: bold;
+    }
   }
 }
 
@@ -839,3 +850,9 @@ body {
   overflow-y: hidden !important;
 }
 
+.pcb-layer-box .layui-layer-title{
+  margin-left: 24px;
+  span{
+    cursor: pointer;
+  }
+}
