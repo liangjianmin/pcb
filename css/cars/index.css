@@ -370,8 +370,6 @@ body {
 .p-nav .box ul li {
   position: relative;
   padding: 0 20px;
-  height: 32px;
-  line-height: 32px;
   text-align: center;
   vertical-align: middle;
   margin-right: 10px;
@@ -479,6 +477,8 @@ body {
   display: block;
 }
 .p-nav .box ul li.curr {
+  height: 32px;
+  line-height: 32px;
   background: #FFFFFF;
   border-radius: 2px;
 }
