@@ -700,6 +700,37 @@ body {
   background-color: #f3f3f3;
   color: #666666;
 }
+.layui-layer-setwin .layui-layer-close1 {
+  background-position: -96px -37px !important;
+}
+.layui-layer-ico {
+  background: url("../../images/p-home/icon.png") no-repeat !important;
+}
+.layui-layer-setwin a {
+  width: 18px !important;
+  height: 18px !important;
+}
+.layui-layer-title {
+  height: auto !important;
+  padding: 16px 0 !important;
+  background-color: #ffffff !important;
+  border: none !important;
+  line-height: inherit !important;
+}
+.layui-layer-title span {
+  width: 146px;
+  height: 30px;
+  background: #0A60BE;
+  display: inline-block;
+  line-height: 30px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+.layui-layer-page .layui-layer-content {
+  height: auto !important;
+  overflow-y: hidden !important;
+}
 .section-car {
   background: #E8F1F2;
   padding-top: 12px;
@@ -1152,6 +1183,7 @@ body {
   font-size: 14px;
   color: #131414;
   opacity: 0.6;
+  cursor: pointer;
 }
 .section-car .cart-section .box dd .list li.curr {
   background: #FFF9F2;
@@ -1382,5 +1414,288 @@ body {
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
+}
+.car-layer {
+  padding: 0 24px 28px 24px;
+}
+.car-layer .t1 {
+  padding-left: 20px;
+  height: 30px;
+  background: #D2ECFF;
+  border: 1px solid #AAD0F2;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+.car-layer .t1 em {
+  font-size: 14px;
+  color: #131414;
+}
+.car-layer .t1 span {
+  font-size: 14px;
+  color: #0a60be;
+}
+.car-layer .t2 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+.car-layer .t3 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+  margin-bottom: 32px;
+}
+.car-layer .tab {
+  text-align: center;
+}
+.car-layer .tab li {
+  margin-right: 40px;
+}
+.car-layer .tab li:last-child {
+  margin-right: 0;
+}
+.car-layer .tab li .circle {
+  width: 12px;
+  height: 12px;
+  padding: 3px;
+  border-radius: 18px;
+  border: 1px solid #C2C7CC;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+}
+.car-layer .tab li .circle.act {
+  border-color: #0081D2;
+}
+.car-layer .tab li .circle.act i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #0081D2;
+  border-radius: 12px;
+}
+.car-layer .tab li .t4 {
+  font-size: 16px;
+  color: #131414;
+  font-weight: bold;
+  margin-left: 12px;
+}
+.car-layer .tab li .t5 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+  margin-left: 8px;
+}
+.car-layer .tab li.curr .circle {
+  border-color: #0081D2;
+}
+.car-layer .tab li.curr .circle i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #0081D2;
+  border-radius: 12px;
+}
+.car-layer .upload {
+  width: 632px;
+  height: 136px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px dashed rgba(166, 173, 173, 0.5);
+  margin: 20px auto 0;
+  cursor: pointer;
+  text-align: center;
+}
+.car-layer .upload .iconfont {
+  font-size: 40px;
+  color: #0a60be;
+}
+.car-layer .upload .upload-t1 {
+  font-size: 20px;
+  color: #131414;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.car-layer .upload .upload-t2 {
+  margin-top: 28px;
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.car-layer .uploading-box .uploading {
+  margin: 33px auto 0;
+  position: relative;
+  width: 630px;
+  height: 62px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid rgba(166, 173, 173, 0.5);
+  line-height: 64px;
+}
+.car-layer .uploading-box .uploading .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #D2ECFF;
+  height: 64px;
+  z-index: 1;
+}
+.car-layer .uploading-box .uploading .iconfont {
+  position: relative;
+  z-index: 2;
+  font-size: 28px;
+  color: #4f5355;
+  margin-left: 24px;
+}
+.car-layer .uploading-box .uploading .txt {
+  position: relative;
+  font-size: 16px;
+  color: #131414;
+  font-weight: bold;
+  z-index: 2;
+}
+.car-layer .uploading-box .uploading .status {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  height: 20px;
+  line-height: 20px;
+  margin-top: -10px;
+  color: #0a60be;
+  font-size: 14px;
+  z-index: 2;
+}
+.car-layer .uploading-box .uploading-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+  display: block;
+}
+.car-layer .upload-done {
+  width: 630px;
+  height: 62px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid rgba(166, 173, 173, 0.5);
+  margin: 33px auto 0;
+}
+.car-layer .upload-done .l {
+  height: 100%;
+  margin-left: 24px;
+}
+.car-layer .upload-done .l .iconfont {
+  color: #4f5355;
+  font-size: 28px;
+}
+.car-layer .upload-done .l .txt {
+  font-size: 16px;
+  color: #131414;
+  font-weight: bold;
+}
+.car-layer .upload-done .btn {
+  margin-right: 24px;
+  line-height: 62px;
+  font-size: 14px;
+  color: #0a60be;
+  cursor: pointer;
+}
+.car-layer .btn-box {
+  margin-top: 38px;
+}
+.car-layer .btn-box .l {
+  width: 542px;
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.car-layer .btn-box .btn {
+  width: 152px;
+  height: 40px;
+  background: #0A60BE;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+}
+.car-layer .show {
+  display: none;
+}
+.car-layer .table-box {
+  width: 800px;
+  margin: 16px auto 0;
+}
+.car-layer .table-box tr th {
+  height: 34px;
+  background: #E8F1F2;
+  font-weight: normal;
+  text-align: left;
+  opacity: 0.6;
+  padding-left: 20px;
+}
+.car-layer .table-box tr td {
+  cursor: pointer;
+  border-bottom: 1px solid #E4ECED;
+  padding: 11px 0 12px 20px;
+}
+.car-layer .table-box tr td .circle {
+  width: 12px;
+  height: 12px;
+  padding: 3px;
+  border-radius: 18px;
+  border: 1px solid #C2C7CC;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+}
+.car-layer .table-box tr td .circle.act {
+  border-color: #0081D2;
+}
+.car-layer .table-box tr td .circle.act i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #0081D2;
+  border-radius: 12px;
+}
+.car-layer .table-box tr td .tb {
+  margin-left: 14px;
+}
+.car-layer .table-box tr td .tb p {
+  font-size: 14px;
+  color: #131414;
+}
+.car-layer .table-box tr td .type2 {
+  font-size: 14px;
+  color: #131414;
+}
+.car-layer .table-box tr td .type3 {
+  font-size: 14px;
+  color: #131414;
+  font-weight: bold;
+}
+.car-layer .table-box tr td .type4 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.car-layer .table-box tr:hover {
+  background: #FFF9F2;
+}
+.car-layer .steel-btn {
+  width: 152px;
+  height: 40px;
+  background: #0A60BE;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+  margin: 24px auto 0;
+  display: block;
 }
 /*# sourceMappingURL=index.css.map */
