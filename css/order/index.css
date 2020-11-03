@@ -901,4 +901,115 @@ body {
   text-align: center;
   line-height: 32px;
 }
+.section-order .order-box {
+  margin-top: 8px;
+}
+.section-order .order-box .list {
+  background: #FFFFFF;
+}
+.section-order .order-box .list dt {
+  height: 48px;
+}
+.section-order .order-box .list dt .icontubiao13 {
+  font-size: 32px;
+  color: #0a60be;
+}
+.section-order .order-box .list dt .t1 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.section-order .order-box .list dt .t2 {
+  font-size: 14px;
+  color: #131414;
+  font-weight: bold;
+}
+.section-order .order-box .list dt .timebox0 {
+  width: 52px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid #51B8C9;
+  white-space: nowrap;
+}
+.section-order .order-box .list dt .timebox0 .tt {
+  width: 28px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+  color: #00A4BF;
+}
+.section-order .order-box .list dt .timebox0 .hour {
+  width: 24px;
+  background: #00A4BF;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.section-order .order-box .list dt .timebox1 {
+  width: 52px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid #5998D9;
+  white-space: nowrap;
+}
+.section-order .order-box .list dt .timebox1 .tt {
+  width: 28px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+  color: #0a60be;
+}
+.section-order .order-box .list dt .timebox1 .hour {
+  width: 24px;
+  background: #0A60BE;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.section-order .order-box .list dt .timebox2 {
+  width: 52px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid #EFB769;
+  white-space: nowrap;
+}
+.section-order .order-box .list dt .timebox2 .tt {
+  width: 28px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+  color: #E59115;
+}
+.section-order .order-box .list dt .timebox2 .hour {
+  width: 24px;
+  background: #E59115;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.section-order .order-box .list dt .timebox3 {
+  width: 52px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid #F2ACAD;
+  white-space: nowrap;
+}
+.section-order .order-box .list dt .timebox3 .tt {
+  width: 28px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+  color: #D65B5B;
+}
+.section-order .order-box .list dt .timebox3 .hour {
+  width: 24px;
+  background: #D65B5B;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
 /*# sourceMappingURL=index.css.map */

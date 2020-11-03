@@ -1067,21 +1067,21 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.section-car .cart-section .box dd .list li .color2 .timebox {
+.section-car .cart-section .box dd .list li .color2 .timebox1 {
   width: 52px;
   height: 18px;
   border-radius: 2px;
   border: 1px solid #5998D9;
   white-space: nowrap;
 }
-.section-car .cart-section .box dd .list li .color2 .timebox .tt {
+.section-car .cart-section .box dd .list li .color2 .timebox1 .tt {
   width: 28px;
   text-align: center;
   line-height: 18px;
   font-size: 14px;
   color: #0a60be;
 }
-.section-car .cart-section .box dd .list li .color2 .timebox .hour {
+.section-car .cart-section .box dd .list li .color2 .timebox1 .hour {
   width: 24px;
   background: #0A60BE;
   font-size: 14px;
