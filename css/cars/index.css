@@ -718,7 +718,7 @@ body {
   line-height: inherit !important;
 }
 .layui-layer-title span {
-  width: 146px;
+  padding: 0 24px;
   height: 30px;
   background: #0A60BE;
   display: inline-block;

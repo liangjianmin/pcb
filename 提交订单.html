@@ -192,12 +192,12 @@
                     <b class="lineBlock emptys"></b>
                 </div>
                 <div class="fr r lbBox">
-                    <a href="javascript:;" class="btn1 lineBlock va-m lbBox">
+                    <a href="javascript:;" class="btn1 lineBlock va-m lbBox viewAddress">
                         <span>更多地址</span>
                         <i class="iconfont icontubiao9"></i>
                         <b class="lineBlock emptys"></b>
                     </a>
-                    <a href="javascript:;" class="btn2 lineBlock va-m">新增收货地址</a>
+                    <a href="javascript:;" class="btn2 lineBlock va-m add">新增收货地址</a>
                     <b class="lineBlock emptys"></b>
                 </div>
             </div>
@@ -327,11 +327,11 @@
                                 <em>-￥50.00</em>
                             </div>
                             <div class="lineBlock va-m" style="margin-right: 24px;">
-                                <span>抵扣券：</span>
+                                <span>税费：</span>
                                 <em>-￥50.00</em>
                             </div>
                             <div class="lineBlock va-m">
-                                <span>抵扣券：</span>
+                                <span>小计：</span>
                                 <b>-￥50.00</b>
                             </div>
                             <b class="lineBlock emptys"></b>
@@ -452,11 +452,11 @@
                                 <em>-￥50.00</em>
                             </div>
                             <div class="lineBlock va-m" style="margin-right: 24px;">
-                                <span>抵扣券：</span>
+                                <span>税费：</span>
                                 <em>-￥50.00</em>
                             </div>
                             <div class="lineBlock va-m">
-                                <span>抵扣券：</span>
+                                <span>小计：</span>
                                 <b>-￥50.00</b>
                             </div>
                             <b class="lineBlock emptys"></b>
@@ -492,6 +492,68 @@
                         <em class="t2 va-m">同收件人</em>
                         <b class="lineBlock emptys"></b>
                     </div>
+                </div>
+                <div class="order-bar clr">
+                    <div class="fl l">
+                        <div class="remarks lbBox">
+                            <span class="lineBlock va-t t1">订单备注</span>
+                            <textarea placeholder="仅填写订单、物流等特殊要求"></textarea>
+                            <span class="limit">0/30</span>
+                        </div>
+                        <div class="address-order">
+                            <i class="iconfont icontubiao15 va-m"></i>
+                            <span class="t1 va-m">拾贰。</span>
+                            <span class="t2 va-m">15012479484</span>
+                            <span class="t3 va-m">广东省深圳市龙岗区坂田街道五和大道南路2号万科星火Online天枢仓6栋3楼</span>
+                        </div>
+                    </div>
+                    <div class="fr r">
+                        <ul class="price">
+                            <li class="clr">
+                                <span class="t1 fl">包裹1：</span>
+                                <span class="t2 fr">￥4596.00</span>
+                            </li>
+                            <li class="clr">
+                                <span class="t3 fl">运费(25kg)：</span>
+                                <span class="t2 fr">￥120.00</span>
+                            </li>
+                            <li class="clr">
+                                <span class="t3 fl">抵扣券：</span>
+                                <span class="t2 fr">-￥50.00</span>
+                            </li>
+                            <li class="clr">
+                                <span class="t3 fl">税费：</span>
+                                <span class="t2 fr">￥500.00</span>
+                            </li>
+                            <li class="clr">
+                                <span class="t1 fl">包裹2：</span>
+                                <span class="t2 fr">￥4596.00</span>
+                            </li>
+                            <li class="clr">
+                                <span class="t3 fl">运费(25kg)：</span>
+                                <span class="t2 fr">￥120.00</span>
+                            </li>
+                            <li class="clr">
+                                <span class="t3 fl">抵扣券：</span>
+                                <span class="t2 fr">-￥50.00</span>
+                            </li>
+                            <li class="clr">
+                                <span class="t3 fl">税费：</span>
+                                <span class="t2 fr">￥500.00</span>
+                            </li>
+                        </ul>
+                        <div class="toggle">
+                            <span class="">隐藏明细</span>
+                            <i class="iconfont icontubiao5"></i>
+                        </div>
+                        <div class="total-text clr">
+                            <div class="fl t1">应付总额：</div>
+                            <div class="fr t2">￥4716.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clr">
+                    <a href="javascript:;" class="submit fr">提交订单</a>
                 </div>
             </div>
         </div>
@@ -576,6 +638,115 @@
 </div>
 <!--footer end-->
 
+<script type="text/html" id="addAddressHtml">
+    <div class="address-box">
+        <div class="clr inp-wrap">
+            <div class="fl l">
+                <label class="tit">姓名</label>
+                <div class="inp-box">
+                    <input type="text" placeholder="请输入收件人姓名" class="inp w1"/>
+                </div>
+            </div>
+            <div class="fr r">
+                <label class="tit">手机号码</label>
+                <div class="inp-box">
+                    <input type="text" placeholder="请输入手机号码" class="inp w1"/>
+                </div>
+            </div>
+        </div>
+        <div class="clr inp-wrap">
+            <div class="fl l">
+                <label class="tit">地区</label>
+                <div class="inp-box">
+                    <input type="text" placeholder="选择省/市/区" class="inp w2"/>
+                </div>
+            </div>
+        </div>
+        <div class="clr inp-wrap">
+            <label class="tit">详细地址</label>
+            <div class="inp-box">
+                <textarea placeholder="请完善详细地址"></textarea>
+            </div>
+        </div>
+        <div class="clr btn-box">
+            <div class="fl l lbBox">
+                <i class="icon lineBlock va-m curr va-m"></i>
+                <span class="va-m">设为默认</span>
+            </div>
+            <a class="fr r" href="javascript:;">保存地址</a>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="viewAddressHtml">
+    <div class="view-address">
+        <ul class="list">
+            <li class="curr">
+                <div class="operation">
+                    <a href="javascript:;" class="t1">设为默认</a>
+                    <a href="javascript:;" class="t2">编辑</a>
+                    <a href="javascript:;" class="t3">删除</a>
+                </div>
+                <div class="lineBlock va-m">
+                    <p class="t1">
+                        <span>收件人：</span>
+                        <em class="lineBlock" style="width: 224px;">拾贰。</em>
+                        <span>联系方式：</span>
+                        <em>15012479484</em>
+                    </p>
+                    <p class="t2">
+                        <span>广东省深圳市龙岗区坂田街道五和大道南路2号万科星火Online天枢仓6栋3楼</span>
+                        <a href="javascript:;" class="default">默认地址</a>
+                    </p>
+                </div>
+                <b class="lineBlock emptys"></b>
+            </li>
+            <li>
+                <div class="operation">
+                    <a href="javascript:;" class="t1">设为默认</a>
+                    <a href="javascript:;" class="t2">编辑</a>
+                    <a href="javascript:;" class="t3">删除</a>
+                </div>
+                <div class="lineBlock va-m">
+                    <p class="t1">
+                        <span>收件人：</span>
+                        <em class="lineBlock" style="width: 224px;">拾贰。</em>
+                        <span>联系方式：</span>
+                        <em>15012479484</em>
+                    </p>
+                    <p class="t2">
+                        <span>浙江省杭州市拱墅区万达广场C座16楼</span>
+                    </p>
+                </div>
+                <b class="lineBlock emptys"></b>
+            </li>
+            <li>
+                <div class="operation">
+                    <a href="javascript:;" class="t1">设为默认</a>
+                    <a href="javascript:;" class="t2">编辑</a>
+                    <a href="javascript:;" class="t3">删除</a>
+                </div>
+                <div class="lineBlock va-m">
+                    <p class="t1">
+                        <span>收件人：</span>
+                        <em class="lineBlock" style="width: 224px;">拾贰。</em>
+                        <span>联系方式：</span>
+                        <em>15012479484</em>
+                    </p>
+                    <p class="t2">
+                        <span>广东省深圳市龙岗区坂田街道五和大道南路2号万科星火Online天枢仓6栋3楼</span>
+                    </p>
+                </div>
+                <b class="lineBlock emptys"></b>
+            </li>
+        </ul>
+        <div class="clr btn-box">
+            <div class="fl l lbBox">
+                <span class="va-m">新增收货地址</span>
+            </div>
+            <a class="fr r" href="javascript:;">确 认</a>
+        </div>
+    </div>
+</script>
 
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
@@ -584,6 +755,78 @@
 <script type="text/javascript">
   $(function () {
 
+
+    //新增地址
+    $(document).on('click', '.add', function () {
+
+      layer.open({
+        type: 1,
+        title: '<span>新增地址</span>',
+        area: ['572px', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#addAddressHtml").html(),
+        success: function (layero, index) {
+          layui.form.render();
+
+        }
+      });
+
+    });
+
+
+
+    //选择地址
+    $(document).on('click', '.viewAddress', function () {
+
+      layer.open({
+        type: 1,
+        title: '<span>选择地址</span>',
+        area: ['848px', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#viewAddressHtml").html(),
+        success: function (layero, index) {
+          layui.form.render();
+
+        }
+      });
+      
+    });
+
+
+    //新增地址
+    $(document).on('click', '.add', function () {
+
+      layer.open({
+        type: 1,
+        title: '<span>新增地址</span>',
+        area: ['572px', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#addAddressHtml").html(),
+        success: function (layero, index) {
+          layui.form.render();
+
+        }
+      });
+
+    });
+
+
+    $(document).on('click', '.toggle', function () {
+      if ($(this).hasClass('curr')) {
+        $(this).removeClass('curr');
+        $(this).find('span').text('隐藏明细');
+        $(this).find('.iconfont').removeClass('icontubiao9').addClass('icontubiao5');
+        $('.price').find('li').show();
+      } else {
+        $(this).addClass('curr');
+        $(this).find('.iconfont').removeClass('icontubiao5').addClass('icontubiao9');
+        $(this).find('span').text('展开明细');
+        $(".price li:gt(0)").hide();
+      }
+    });
 
   })
 </script>
