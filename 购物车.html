@@ -44,46 +44,56 @@
                 <i class="iconfont icontubiao2"></i>
                 <span>0</span>
             </a>
-            <div class="avatar lineBlock va-m">
-                <img src="http://img.ichunt.com/images/ichunt/minProgram/bcaf917ddb6a16e9dc72cbfa3d9edb35.jpg" alt="">
+            <!--已登录-->
+            <div class="lineBlock va-m" style="display: none">
+                <div class="avatar lineBlock va-m">
+                    <img src="http://img.ichunt.com/images/ichunt/minProgram/bcaf917ddb6a16e9dc72cbfa3d9edb35.jpg" alt="">
+                </div>
+                <div class="material lineBlock va-m">
+                    <div class="wrap lineBlock lbBox">
+                        <span class="tel va-m">185****0841</span>
+                        <span class="point"></span>
+                        <i class="icon lineBlock va-m"></i>
+                    </div>
+                    <b class="lineBlock emptys"></b>
+                    <div class="list-box">
+                        <i class="up"></i>
+                        <ul class="list">
+                            <li>
+                                <a href="">
+                                    <i class="iconfont icontubiao14"></i>
+                                    <span>站内信</span>
+                                    <em class="num">2</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="iconfont icontubiao13"></i>
+                                    <span>我的订单</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="iconfont icontubiao21"></i>
+                                    <span>会员中心</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="iconfont icontubiao31"></i>
+                                    <span class="color">安全退出</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="material lineBlock va-m">
-                <div class="wrap lineBlock lbBox">
-                    <span class="tel va-m">185****0841</span>
-                    <span class="point"></span>
-                    <i class="icon lineBlock va-m"></i>
-                </div>
-                <b class="lineBlock emptys"></b>
-                <div class="list-box">
-                    <i class="up"></i>
-                    <ul class="list">
-                        <li>
-                            <a href="">
-                                <i class="iconfont icontubiao14"></i>
-                                <span>站内信</span>
-                                <em class="num">2</em>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="iconfont icontubiao13"></i>
-                                <span>我的订单</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="iconfont icontubiao21"></i>
-                                <span>会员中心</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="iconfont icontubiao31"></i>
-                                <span class="color">安全退出</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <!--未登录-->
+            <div class="lineBlock va-m">
+                <i class="iconfont icontubiao16 va-m"></i>
+                <a href="javascript:;" class="link va-m ml">登录</a>
+                <span class="line3 lineBlock va-m"></span>
+                <a href="javascript:;" class="link va-m">注册</a>
             </div>
             <b class="lineBlock emptys"></b>
         </div>
@@ -1598,7 +1608,7 @@
 
 
     //钢网pcb弹窗
-    layer.open({
+   /* layer.open({
       type: 1,
       title: '<span class="disabled">上传PCB文件</span><span>绑定PCB订单</span>',
       skin: 'pcb-layer-box',
@@ -1611,7 +1621,7 @@
 
       }
     });
-
+*/
     $('#pcb_qty_layers').numofboards();
 
 

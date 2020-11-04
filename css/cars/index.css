@@ -219,6 +219,13 @@ body {
   color: #bec5c6;
   margin: 0 8px;
 }
+.p-head .box .r .line3 {
+  width: 1px;
+  height: 16px;
+  background: #BEC5C6;
+  color: #bec5c6;
+  margin: 0 6px;
+}
 .p-head .box .r .t1 {
   font-size: 14px;
   color: #131414;
@@ -359,6 +366,18 @@ body {
 }
 .p-head .box .r .material:hover .list-box {
   display: block;
+}
+.p-head .box .r .icontubiao16 {
+  font-size: 28px;
+  color: #0a60be;
+}
+.p-head .box .r .link {
+  font-size: 14px;
+  color: #0a60be;
+  font-weight: bold;
+}
+.p-head .box .r .link.ml {
+  margin-left: 8px;
 }
 .p-nav {
   height: 48px;
