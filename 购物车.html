@@ -1315,6 +1315,43 @@
 </div>
 <!--footer end-->
 
+<!--slidebar-->
+<div class="slide-bar-box">
+    <dl>
+        <dd>
+            <a href="javascript:;" class="lbBox">
+                <i class="iconfont icontubiao"></i>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dd>
+        <dd>
+            <a href="javascript:;" class="lbBox">
+                <i class="iconfont icontubiao1"></i>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dd>
+        <dd>
+            <a href="javascript:;" class="lbBox">
+                <i class="iconfont icontubiao3"></i>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dd>
+        <dd class="last">
+            <a href="javascript:;" class="lbBox">
+                <i class="iconfont icontubiao4"></i>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dd>
+        <dt id="backtop">
+            <a href="javascript:;" class="lbBox">
+                <i class="iconfont icontubiao5"></i>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dt>
+    </dl>
+</div>
+<!--slidebar end-->
+
 
 <script type="text/html" id="uploadHtml">
     <div class="car-layer">
@@ -1591,20 +1628,20 @@
     });
 
 
-    //上传PCB文件弹窗
-     layer.open({
-       type: 1,
-       title: '<span>上传PCB文件</span>',
-       skin: 'pcb-layer-box',
-       area: ['848px', 'auto'],
-       shadeClose: true,
-       move: false,
-       content: $("#uploadHtml").html(),
-       success: function (layero, index) {
-         layui.form.render();
+  /*  //上传PCB文件弹窗
+    layer.open({
+      type: 1,
+      title: '<span>上传PCB文件</span>',
+      skin: 'pcb-layer-box',
+      area: ['848px', 'auto'],
+      shadeClose: true,
+      move: false,
+      content: $("#uploadHtml").html(),
+      success: function (layero, index) {
+        layui.form.render();
 
-       }
-     });
+      }
+    });
 
 
     //钢网pcb弹窗
@@ -1620,7 +1657,8 @@
         layui.form.render();
 
       }
-    });
+    });*/
+
     $('#pcb_qty_layers').numofboards();
 
 

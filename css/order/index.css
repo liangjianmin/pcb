@@ -766,6 +766,45 @@ body {
 .pcb-layer-box .layui-layer-title span {
   cursor: pointer;
 }
+.slide-bar-box {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -118px;
+  z-index: 9999;
+}
+.slide-bar-box dl {
+  height: 50px;
+}
+.slide-bar-box dl dd {
+  height: 49px;
+  background: #FFFFFF;
+  border: 1px solid #AAD0F2;
+  border-bottom: none;
+  text-align: center;
+}
+.slide-bar-box dl dd.last {
+  height: 48px;
+  border-bottom: 1px solid #AAD0F2;
+}
+.slide-bar-box dl dd a .iconfont {
+  font-size: 40px;
+  color: #0a60be;
+  vertical-align: middle;
+}
+.slide-bar-box dl dt {
+  margin-top: 10px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #AAD0F2;
+  text-align: center;
+  display: none;
+}
+.slide-bar-box dl dt a .iconfont {
+  font-size: 30px;
+  color: #0a60be;
+  vertical-align: middle;
+}
 .section-order {
   background: #E8F1F2;
   padding-bottom: 40px;

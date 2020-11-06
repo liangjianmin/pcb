@@ -879,3 +879,47 @@ body {
     cursor: pointer;
   }
 }
+
+.slide-bar-box{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -118px;
+  z-index: 9999;
+  dl{
+    height: 50px;
+    dd{
+      height: 49px;
+      background: #FFFFFF;
+      border: 1px solid #AAD0F2;
+      border-bottom: none;
+      text-align: center;
+      &.last{
+        height: 48px;
+        border-bottom: 1px solid #AAD0F2;
+      }
+      a{
+        .iconfont{
+          font-size: 40px;
+          color: #0a60be;
+          vertical-align: middle;
+        }
+      }
+    }
+    dt{
+      margin-top: 10px;
+      height: 48px;
+      background: #FFFFFF;
+      border: 1px solid #AAD0F2;
+      text-align: center;
+      display: none;
+      a{
+        .iconfont{
+          font-size: 30px;
+          color: #0a60be;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
