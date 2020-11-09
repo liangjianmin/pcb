@@ -1236,6 +1236,9 @@ body {
 }
 .login-section .login-section-wrap .text {
   margin-bottom: 40px;
+  text-align: center;
+  white-space: nowrap;
+  border-bottom: 1px solid #F7F9FC;
 }
 .login-section .login-section-wrap .text .error {
   width: 380px;
@@ -1253,10 +1256,15 @@ body {
   color: #e82121;
 }
 .login-section .login-section-wrap .text .tit {
+  width: 50%;
   font-size: 20px;
-  color: #3a3c40;
+  color: #959BA6;
+  padding-bottom: 30px;
   font-weight: bold;
-  padding-bottom: 19px;
+  cursor: pointer;
+}
+.login-section .login-section-wrap .text .tit.curr {
+  color: #3a3c40;
   border-bottom: 10px solid #0081D2;
 }
 .login-section .login-section-wrap .inpt {
@@ -1307,6 +1315,15 @@ body {
 }
 .login-section .login-section-wrap .inpt.status .iconfont {
   color: #0081d2;
+}
+.login-section .login-section-wrap .inpt .button-class {
+  font-size: 14px;
+  color: #0081d2;
+  position: absolute;
+  right: 21px;
+  top: 21px;
+  font-weight: bold;
+  background: none;
 }
 .login-section .login-section-wrap .btn {
   margin-top: 20px;
@@ -1461,6 +1478,9 @@ body {
 }
 .login-section .login-section-wrap .onRegister2 .text-center .t2:hover {
   text-decoration: underline;
+}
+.login-section .cypbb {
+  display: none;
 }
 .nc_wrapper {
   width: 100% !important;
