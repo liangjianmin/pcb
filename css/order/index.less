@@ -146,15 +146,19 @@
       .t2 {
         width: 128px;
         height: 32px;
-        background: #D2ECFF;
+        margin-left: 40px;
+        background: #FFFFFF;
         border-radius: 2px;
-        border: 1px solid #0A60BE;
+        border: 1px solid rgba(166, 173, 173, 0.5);
         font-size: 14px;
         color: #131414;
-        font-weight: bold;
         line-height: 32px;
         text-align: center;
-        margin-left: 40px;
+        &.curr{
+          border: 1px solid #0A60BE;
+          background: #D2ECFF;
+          font-weight: bold;
+        }
       }
 
       .t3 {
@@ -178,6 +182,12 @@
         color: #131414;
         text-align: center;
         line-height: 32px;
+        cursor: pointer;
+        &.curr{
+          border: 1px solid #0A60BE;
+          background: #D2ECFF;
+          font-weight: bold;
+        }
       }
     }
 
