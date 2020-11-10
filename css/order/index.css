@@ -1195,9 +1195,7 @@ body {
   margin-left: 57px;
 }
 .section-order .order-box .list li .total .l .sel-coupon select {
-  width: 356px;
-  height: auto;
-  padding: 4px 0;
+  height: 30px;
   background: #FFFFFF;
   border-radius: 2px;
   border: 1px solid rgba(166, 173, 173, 0.5);
