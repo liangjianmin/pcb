@@ -979,6 +979,7 @@ body {
 }
 .section-order .order-box .list li .top {
   height: 48px;
+  white-space: nowrap;
 }
 .section-order .order-box .list li .top .icontubiao13 {
   font-size: 32px;
