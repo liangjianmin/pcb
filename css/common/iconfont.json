@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "18158976",
+      "name": "图标／大图标／异常",
+      "font_class": "tubiaodatubiaoyichang",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "18158977",
+      "name": "图标／大图标／失败",
+      "font_class": "tubiaodatubiaoshibai",
+      "unicode": "e6d0",
+      "unicode_decimal": 59088
+    },
+    {
+      "icon_id": "18156602",
+      "name": "图标 (4)",
+      "font_class": "tubiao41",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    },
+    {
       "icon_id": "18152229",
       "name": "图标",
       "font_class": "tubiao17",
