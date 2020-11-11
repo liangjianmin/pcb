@@ -1445,6 +1445,9 @@ body {
   margin-bottom: 8px;
   display: block;
 }
+.address-box .inp-wrap .inp-box {
+  position: relative;
+}
 .address-box .inp-wrap .inp-box .inp {
   height: 28px;
   background: #FFFFFF;
@@ -1598,5 +1601,22 @@ body {
   font-size: 14px;
   color: #ffffff;
   text-align: center;
+}
+.city-picker-dropdown {
+  width: 100% !important;
+  height: 160px;
+  overflow-y: scroll;
+}
+.city-picker-dropdown::-webkit-scrollbar {
+  width: 10px;
+}
+.city-picker-dropdown::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px #CFCFCF;
+}
+.city-picker-dropdown::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #EBEBEB;
 }
 /*# sourceMappingURL=index.css.map */

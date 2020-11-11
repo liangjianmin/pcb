@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
     <link rel="stylesheet" type="text/css" href="css/order/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/plugin/city-picker/css/city-picker.css"/>
 </head>
 
 <body>
@@ -704,7 +705,7 @@
             <div class="fl l">
                 <label class="tit">地区</label>
                 <div class="inp-box">
-                    <input type="text" placeholder="选择省/市/区" class="inp w2"/>
+                    <input type="text" placeholder="选择省/市/区" class="inp w2" id="city-picker"/>
                 </div>
             </div>
         </div>
@@ -797,38 +798,20 @@
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
-<script type="text/javascript" src="js/common/numofboards.js"></script>
+<script src="js/plugin/city-picker/js/city-picker.data.js"></script>
+<script src="js/plugin/city-picker/js/city-picker.js"></script>
 <script type="text/javascript">
   $(function () {
 
 
     setTimeout(function () {
       $(".tabbox").eq(0).trigger('click');
-    },0)
+    }, 0)
 
-    Util.tabs('.tabbox',function (index) {
+    Util.tabs('.tabbox', function (index) {
       
     })
     
-
-    //新增地址
-    $(document).on('click', '.add', function () {
-
-      layer.open({
-        type: 1,
-        title: '<span>新增地址</span>',
-        area: ['572px', 'auto'],
-        shadeClose: true,
-        move: false,
-        content: $("#addAddressHtml").html(),
-        success: function (layero, index) {
-          layui.form.render();
-
-        }
-      });
-
-    });
-
 
 
     //选择地址
@@ -862,6 +845,12 @@
         content: $("#addAddressHtml").html(),
         success: function (layero, index) {
           layui.form.render();
+
+          $("#city-picker").citypicker({
+            province: "",
+            city: "",
+            district: ""
+          });
 
         }
       });

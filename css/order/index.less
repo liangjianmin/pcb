@@ -473,7 +473,7 @@
               margin-left: 57px;
 
               select {
-                height: 30px; 
+                height: 30px;
                 background: #FFFFFF;
                 border-radius: 2px;
                 border: 1px solid rgba(166, 173, 173, 0.5);
@@ -782,6 +782,8 @@
     }
 
     .inp-box {
+      position: relative;
+
       .inp {
         &.w1 {
           width: 252px;
@@ -973,5 +975,27 @@
       color: #ffffff;
       text-align: center;
     }
+  }
+}
+
+.city-picker-dropdown {
+  width: 100% !important;
+  height: 160px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #fff;
+
+    box-shadow: 0px 2px 4px 0px #CFCFCF;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #EBEBEB;
   }
 }
