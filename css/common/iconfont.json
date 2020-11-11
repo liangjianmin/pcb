@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "18152229",
+      "name": "图标",
+      "font_class": "tubiao17",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "18152230",
+      "name": "图标 (1)",
+      "font_class": "tubiao18",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "18152231",
+      "name": "图标 (3)",
+      "font_class": "tubiao32",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "18152232",
+      "name": "图标 (2)",
+      "font_class": "tubiao22",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "18152186",
+      "name": "图标／大图标／成功",
+      "font_class": "tubiaodatubiaochenggong",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
       "icon_id": "18030329",
       "name": "图标",
       "font_class": "tubiao16",
