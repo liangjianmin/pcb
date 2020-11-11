@@ -948,6 +948,8 @@ body {
   margin-left: 16px;
 }
 .order-pay .payment-method .list li .icontubiao18 {
+  position: relative;
+  top: -7px;
   font-size: 28px;
   color: #0a60be;
   margin-left: 16px;
@@ -1078,5 +1080,78 @@ body {
   font-size: 20px;
   color: #ffffff;
   font-weight: bold;
+}
+.pay-box {
+  padding: 0 24px 24px 24px;
+}
+.pay-box .tit {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #E4ECED;
+}
+.pay-box .tit .l {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #131414;
+  font-weight: bold;
+}
+.pay-box .tit .r {
+  font-size: 24px;
+  color: #e59115;
+  font-weight: bold;
+}
+.pay-box .text {
+  padding-top: 10px;
+}
+.pay-box .text li {
+  margin-bottom: 8px;
+}
+.pay-box .text li:last-child {
+  margin-bottom: 0;
+}
+.pay-box .text li .t1 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.pay-box .text li .t2 {
+  font-size: 14px;
+  color: #131414;
+}
+.pay-box .text li .t3 {
+  font-size: 14px;
+  color: #131414;
+  font-weight: bold;
+}
+.pay-box .bar-text {
+  margin-top: 16px;
+}
+.pay-box .bar-text .l .t1 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.pay-box .bar-text .l .error {
+  font-size: 14px;
+  color: #bc0a0a;
+}
+.pay-box .bar-text .r a {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.pay-box .btn-box {
+  margin-top: 30px;
+}
+.pay-box .btn-box .btn {
+  width: 152px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #0A60BE;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  display: block;
 }
 /*# sourceMappingURL=index.css.map */

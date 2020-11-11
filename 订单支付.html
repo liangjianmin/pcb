@@ -243,7 +243,7 @@
                     <div class="text-1 lineBlock va-t">
                         <p class="a">
                             <span>专属汇款账号：</span>
-                            <em>320 2093 9999  9999 9999  9999 2</em>
+                            <em>320 2093 9999 9999 9999 9999 2</em>
                         </p>
                         <a href="javascript:;" class="download">下载对公转账资料</a>
                     </div>
@@ -253,7 +253,7 @@
                     </div>
                     <div class="text-3 lineBlock va-t">
                         <p>
-                            <i class="icon lineBlock va-m curr va-m"></i>
+                            <i class="icon lineBlock va-m curr va-m" id="agree"></i>
                             <span class="xb va-m">我已授权款项到账后会自动完成该笔订单支付</span>
                         </p>
                         <p class="tt">*确认使用快捷对公转款支付后,该订单将只能通过对公转账的方式来支付</p>
@@ -394,115 +394,36 @@
 </div>
 <!--slidebar end-->
 
-<script type="text/html" id="addAddressHtml">
-    <div class="address-box">
-        <div class="clr inp-wrap">
-            <div class="fl l">
-                <label class="tit">姓名</label>
-                <div class="inp-box">
-                    <input type="text" placeholder="请输入收件人姓名" class="inp w1"/>
-                </div>
-            </div>
-            <div class="fr r">
-                <label class="tit">手机号码</label>
-                <div class="inp-box">
-                    <input type="text" placeholder="请输入手机号码" class="inp w1"/>
-                </div>
-            </div>
-        </div>
-        <div class="clr inp-wrap">
-            <div class="fl l">
-                <label class="tit">地区</label>
-                <div class="inp-box">
-                    <input type="text" placeholder="选择省/市/区" class="inp w2"/>
-                </div>
-            </div>
-        </div>
-        <div class="clr inp-wrap">
-            <label class="tit">详细地址</label>
-            <div class="inp-box">
-                <textarea placeholder="请完善详细地址"></textarea>
-            </div>
-        </div>
-        <div class="clr btn-box">
-            <div class="fl l lbBox">
-                <i class="icon lineBlock va-m curr va-m"></i>
-                <span class="va-m">设为默认</span>
-            </div>
-            <a class="fr r" href="javascript:;">保存地址</a>
-        </div>
-    </div>
-</script>
-<script type="text/html" id="viewAddressHtml">
-    <div class="view-address">
-        <ul class="list">
-            <li class="curr">
-                <div class="operation">
-                    <a href="javascript:;" class="t1">设为默认</a>
-                    <a href="javascript:;" class="t2">编辑</a>
-                    <a href="javascript:;" class="t3">删除</a>
-                </div>
-                <div class="lineBlock va-m">
-                    <p class="t1">
-                        <span>收件人：</span>
-                        <em class="lineBlock" style="width: 224px;">拾贰。</em>
-                        <span>联系方式：</span>
-                        <em>15012479484</em>
-                    </p>
-                    <p class="t2">
-                        <span>广东省深圳市龙岗区坂田街道五和大道南路2号万科星火Online天枢仓6栋3楼</span>
-                        <a href="javascript:;" class="default">默认地址</a>
-                    </p>
-                </div>
-                <b class="lineBlock emptys"></b>
+<script type="text/html" id="payHtml">
+    <div class="pay-box">
+        <p class="tit clr">
+            <span class="fl l">应付总额：</span>
+            <span class="fr r">￥4716.00</span>
+        </p>
+        <ul class="text">
+            <li class="clr">
+                <span class="fl t1">订单编号：</span>
+                <span class="fr t2">1239421348234</span>
             </li>
-            <li>
-                <div class="operation">
-                    <a href="javascript:;" class="t1">设为默认</a>
-                    <a href="javascript:;" class="t2">编辑</a>
-                    <a href="javascript:;" class="t3">删除</a>
-                </div>
-                <div class="lineBlock va-m">
-                    <p class="t1">
-                        <span>收件人：</span>
-                        <em class="lineBlock" style="width: 224px;">拾贰。</em>
-                        <span>联系方式：</span>
-                        <em>15012479484</em>
-                    </p>
-                    <p class="t2">
-                        <span>浙江省杭州市拱墅区万达广场C座16楼</span>
-                    </p>
-                </div>
-                <b class="lineBlock emptys"></b>
-            </li>
-            <li>
-                <div class="operation">
-                    <a href="javascript:;" class="t1">设为默认</a>
-                    <a href="javascript:;" class="t2">编辑</a>
-                    <a href="javascript:;" class="t3">删除</a>
-                </div>
-                <div class="lineBlock va-m">
-                    <p class="t1">
-                        <span>收件人：</span>
-                        <em class="lineBlock" style="width: 224px;">拾贰。</em>
-                        <span>联系方式：</span>
-                        <em>15012479484</em>
-                    </p>
-                    <p class="t2">
-                        <span>广东省深圳市龙岗区坂田街道五和大道南路2号万科星火Online天枢仓6栋3楼</span>
-                    </p>
-                </div>
-                <b class="lineBlock emptys"></b>
+            <li class="clr">
+                <span class="fl t1">订单编号：</span>
+                <span class="fr t3">￥5000.00</span>
             </li>
         </ul>
-        <div class="clr btn-box">
-            <div class="fl l lbBox">
-                <span class="va-m">新增收货地址</span>
+        <div class="bar-text clr">
+            <div class="fl l">
+                <p class="t1">*请输入6位数字支付密码</p>
             </div>
-            <a class="fr r" href="javascript:;">确 认</a>
+            <div class="fr r">
+                <a href="javascript:;">忘记密码？</a>
+            </div>
+        </div>
+        <div class="clr btn-box">
+            <a href="javascript:;" class="fr btn">立即付款</a>
         </div>
     </div>
 </script>
+
 
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
@@ -511,11 +432,28 @@
 <script type="text/javascript">
   $(function () {
 
+    layer.open({
+      type: 1,
+      title: '<span>余额支付</span>',
+      area: ['524px', 'auto'],
+      shadeClose: true,
+      move: false,
+      content: $("#payHtml").html(),
+      success: function (layero, index) {
+
+
+      }
+    });
+
+
     Util.tabs('.list li', function (index) {
 
     });
 
 
+    $(document).on('click', '#agree', function () {
+      $(this).toggleClass('curr');
+    });
 
 
   })
