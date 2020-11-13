@@ -364,7 +364,7 @@ body {
   color: #131414;
   opacity: 0.6;
 }
-.p-head .box .r .material:hover .list-box {
+.p-head .box .r .hov:hover .list-box {
   display: block;
 }
 .p-head .box .r .icontubiao16 {
