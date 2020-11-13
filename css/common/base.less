@@ -410,7 +410,9 @@ body {
     height: 48px;
 
     ul {
+      height: 48px;
       li {
+        height: 100%;
         position: relative;
         padding: 0 20px;
 
@@ -420,8 +422,8 @@ body {
 
         .hot {
           position: absolute;
-          top: -13px;
-          right: 13px;
+          top: -3px;
+          right: 10px;
           width: 31px;
           height: 14px;
           line-height: 14px;
@@ -468,7 +470,7 @@ body {
 
           .up {
             position: absolute;
-            top: 1px;
+            top: -7px;
             left: 0;
             right: 0;
             width: 18px;
@@ -481,7 +483,7 @@ body {
 
           .list {
             position: absolute;
-            top: 8px;
+            top: 0px;
             width: 132px;
             background: #FFFFFF;
             border: 1px solid #E4ECED;
@@ -889,6 +891,7 @@ body {
   dl{
     height: 50px;
     dd{
+      position: relative;
       height: 49px;
       background: #FFFFFF;
       border: 1px solid #AAD0F2;
@@ -903,6 +906,66 @@ body {
           font-size: 40px;
           color: #0a60be;
           vertical-align: middle;
+        }
+      }
+      .show{
+        position: absolute;
+        left: -164px;
+        top: -1px;
+        width: 162px;
+        background: #FFFFFF;
+        padding: 10px 0;
+        border: 1px solid #E4ECED;
+        text-align: left;
+        white-space: nowrap;
+        display: none;
+        .iconfont{
+          color: #0a60be;
+          font-size: 32px;
+          margin-left: 12px;
+        }
+        .text{
+          margin-left: 4px;
+          .tit{
+            font-size: 14px;
+            color: #131414;
+            font-weight: bold;
+            line-height: 20px;
+          }
+          .t1{
+            font-size: 12px;
+            color: #0a60be;
+          }
+          .t2{
+            font-size: 12px;
+            color: #131414;
+            opacity: 0.6;
+            margin-bottom: 2px;
+          }
+          .t3{
+            font-size: 12px;
+            color: #131414;
+            opacity: 0.6;
+          }
+        }
+        .pic{
+          img{
+            width: 120px;
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+          }
+          p{
+            margin-top: 7px;
+            font-size: 14px;
+            color: #494c4d;
+            text-align: center;
+          }
+        }
+      }
+      &:hover{
+        .show{
+          display: block;
         }
       }
     }
@@ -920,6 +983,37 @@ body {
           vertical-align: middle;
         }
       }
+    }
+  }
+}
+
+.confirm-box{
+  padding: 0 24px 24px 24px;
+  .pay-doing-text {
+    margin-top: 22px;
+
+    .btn-1 {
+      width: 150px;
+      height: 38px;
+      background: #FFFFFF;
+      border-radius: 2px;
+      border: 1px solid #5998D9;
+      line-height: 38px;
+      text-align: center;
+      font-size: 14px;
+      color: #0A60BE;
+    }
+
+    .btn-2 {
+      width: 152px;
+      height: 40px;
+      background: #0A60BE;
+      border-radius: 2px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+      margin-left: 16px;
     }
   }
 }

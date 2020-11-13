@@ -110,20 +110,25 @@
                     <span>HOT</span>
                     <i></i>
                 </div>
-                <a href="" class="link">PCB计价</a>
+                <a href="" class="link va-m">PCB计价</a>
+                <b class="lineBlock emptys"></b>
             </li>
             <li class="lineBlock">
-                <a href="" class="link">SMT贴装</a>
+                <a href="" class="link va-m">SMT贴装</a>
+                <b class="lineBlock emptys"></b>
             </li>
             <li class="lineBlock">
-                <a href="" class="link">客户晒单</a>
+                <a href="" class="link va-m">客户晒单</a>
+                <b class="lineBlock emptys"></b>
             </li>
             <li class="lineBlock">
-                <a href="" class="link">新闻资讯</a>
+                <a href="" class="link va-m">新闻资讯</a>
+                <b class="lineBlock emptys"></b>
             </li>
             <li class="lineBlock">
                 <a href="" class="link va-m">工厂展示</a>
                 <i class="arrow lineBlock va-m"></i>
+                <b class="lineBlock emptys"></b>
                 <div class="list-box">
                     <i class="up"></i>
                     <dl class="list">
@@ -148,6 +153,7 @@
             <li class="lineBlock">
                 <a href="" class="link va-m">了解猎板</a>
                 <i class="arrow lineBlock va-m"></i>
+                <b class="lineBlock emptys"></b>
                 <div class="list-box">
                     <i class="up"></i>
                     <dl class="list">
@@ -345,7 +351,7 @@
                             </div>
                             <div class="lineBlock va-t color6">
                                 <a class="t1">去下单</a>
-                                <p class="t2">删除</p>
+                                <p class="t2 delete">删除</p>
                             </div>
                         </li>
                         <li class="lbBox">
@@ -1323,24 +1329,51 @@
                 <i class="iconfont icontubiao"></i>
                 <b class="lineBlock emptys"></b>
             </a>
+            <div class="show lbBox">
+                <i class="iconfont icontubiao va-t"></i>
+                <div class="text lineBlock va-t">
+                    <p class="tit">在线客服</p>
+                    <a class="t1">800183356</a>
+                </div>
+            </div>
         </dd>
         <dd>
             <a href="javascript:;" class="lbBox">
                 <i class="iconfont icontubiao1"></i>
                 <b class="lineBlock emptys"></b>
             </a>
+            <div class="show lbBox">
+                <i class="iconfont icontubiao1 va-t"></i>
+                <div class="text lineBlock va-t">
+                    <p class="tit">服务热线</p>
+                    <p class="t2">0571-86609386</p>
+                    <p class="t3">15068181342</p>
+                </div>
+            </div>
         </dd>
         <dd>
             <a href="javascript:;" class="lbBox">
                 <i class="iconfont icontubiao3"></i>
                 <b class="lineBlock emptys"></b>
             </a>
+            <div class="show lbBox">
+               <div class="pic">
+                   <img src="./images/p-footer/code.png" alt="">
+                   <p>微信公众号</p>
+               </div>
+            </div>
         </dd>
         <dd class="last">
             <a href="javascript:;" class="lbBox">
                 <i class="iconfont icontubiao4"></i>
                 <b class="lineBlock emptys"></b>
             </a>
+            <div class="show lbBox">
+                <i class="iconfont icontubiao4 va-m"></i>
+                <div class="text lineBlock va-m">
+                    <p class="tit">意见反馈</p>
+                </div>
+            </div>
         </dd>
         <dt id="backtop">
             <a href="javascript:;" class="lbBox">
@@ -1352,6 +1385,16 @@
 </div>
 <!--slidebar end-->
 
+
+<script type="text/html" id="confirmHtml">
+    <div class="confirm-box">
+        <div class="pay-doing-text  fr lbBox">
+            <a href="javascript:;" class="btn-1 lineBlock">取消</a>
+            <a href="javascript:;" class="btn-2 lineBlock">确定</a>
+        </div>
+        <b class="clr"></b>
+    </div>
+</script>
 
 <script type="text/html" id="uploadHtml">
     <div class="car-layer">
@@ -1627,37 +1670,50 @@
       $(".pcb-layer-box").find('.show').eq(index).show().siblings('.hide').hide();
     });
 
-
-  /*  //上传PCB文件弹窗
     layer.open({
       type: 1,
-      title: '<span>上传PCB文件</span>',
-      skin: 'pcb-layer-box',
-      area: ['848px', 'auto'],
+      title: '<span>提示</span>',
+      area: ['524px', 'auto'],
       shadeClose: true,
       move: false,
-      content: $("#uploadHtml").html(),
+      content: $("#confirmHtml").html(),
       success: function (layero, index) {
-        layui.form.render();
+
 
       }
     });
 
 
-    //钢网pcb弹窗
-    layer.open({
-      type: 1,
-      title: '<span class="disabled">上传PCB文件</span><span>绑定PCB订单</span>',
-      skin: 'pcb-layer-box',
-      area: ['848px', 'auto'],
-      shadeClose: true,
-      move: false,
-      content: $("#uploadSmtHtml").html(),
-      success: function (layero, index) {
-        layui.form.render();
+    /*  //上传PCB文件弹窗
+      layer.open({
+        type: 1,
+        title: '<span>上传PCB文件</span>',
+        skin: 'pcb-layer-box',
+        area: ['848px', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#uploadHtml").html(),
+        success: function (layero, index) {
+          layui.form.render();
 
-      }
-    });*/
+        }
+      });
+
+
+      //钢网pcb弹窗
+      layer.open({
+        type: 1,
+        title: '<span class="disabled">上传PCB文件</span><span>绑定PCB订单</span>',
+        skin: 'pcb-layer-box',
+        area: ['848px', 'auto'],
+        shadeClose: true,
+        move: false,
+        content: $("#uploadSmtHtml").html(),
+        success: function (layero, index) {
+          layui.form.render();
+
+        }
+      });*/
 
     $('#pcb_qty_layers').numofboards();
 
