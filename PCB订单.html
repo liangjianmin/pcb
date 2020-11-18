@@ -413,6 +413,7 @@
                                 <p class="t1">20 SET</p>
                             </td>
                             <td class="type3 va-t">
+                                <p style="color: #0081D2;font-size: 14px;margin-bottom: 10px;">生产稿待客服确认</p>
                                 <p class="t1 lbBox">
                                     <i class="iconfont iconzujiantubiaojiantou3 va-m"></i>
                                     <span class="va-m">PCBHUNT.pcb</span>
@@ -431,6 +432,7 @@
                             </td>
                             <td class="type7 va-t">
                                 <a class="t1">订单详情</a>
+                                <a href="javascript:;" class="btn">确认生产稿</a>
                             </td>
                         </tr>
                         <tr>
@@ -868,7 +870,7 @@
             <div class="input txt lbBox" style="margin-top: 10px">
                 <span class="lineBlock va-t t2">其它选项</span>
                 <div class="lineBlock va-t" style="width: 230px;">
-                    <textarea placeholder="请输入内容"  maxlength="50" class="layui-textarea"></textarea>
+                    <textarea placeholder="请输入内容" maxlength="50" class="layui-textarea"></textarea>
                 </div>
             </div>
         </div>
@@ -930,13 +932,130 @@
         <a href="javascript:;" class="btn pending_review_btn">生成合同并下载</a>
     </div>
 </script>
-
+<script type="text/html" id="productionHtml">
+    <div class="production-layer">
+        <p class="tip-text">*填写及时确认生产稿信息，可以更快的安排您的订单投产</p>
+        <div class="text lbBox">
+            <span>订单时间：</span>
+            <em style="margin-right: 40px;">2020-11-13 16:28</em>
+            <span>生产稿更新时间：</span>
+            <em style="margin-right: 40px;">2020-11-13 16:50</em>
+            <span>已更新次数：</span>
+            <em style="margin-right: 8px;">2次</em>
+            <a href="javascript:;">查看记录</a>
+        </div>
+        <div class="down-box lbBox">
+            <span class="tit lineBlock va-m">当前生产稿文件：</span>
+            <div class="down lineBlock va-m clr">
+                <div class="fl l lbBox">
+                    <i class="iconfont iconzujiantubiaojiantou3 va-m"></i>
+                    <span class="va-m">我是生产稿的订单编号XXXXXX.rar</span>
+                    <b class="lineBlock emptys"></b>
+                </div>
+                <div class="fr r">
+                    <a href="javascript:;" class="va-m">点击下载</a>
+                    <b class="lineBlock emptys"></b>
+                </div>
+            </div>
+            <b class="lineBlock emptys"></b>
+        </div>
+        <div class="information">
+            <p class="tit">填写以下生产搞信息</p>
+            <div class="lbBox">
+                <span class="t1 va-m">生产稿：</span>
+                <div class="circle lineBlock va-m act">
+                    <i></i>
+                </div>
+                <span class="tt va-m" style="margin-right: 40px;">确认通过</span>
+                <div class="circle lineBlock va-m">
+                    <i></i>
+                </div>
+                <span class="tt va-m" style="margin-right: 28px;">不通过</span>
+                <span class="t2 va-m">提示:确认通过后，如需更改生产稿,请联系</span>
+                <a href="javascript:;" class="link va-m">客服人员</a>
+            </div>
+        </div>
+        <div class="pic-box">
+            <p class="tit"><span>图片反馈</span><em>（选填）</em></p>
+            <ul class="pic-list lineBlock va-m clr">
+                <li>
+                    <img src="./images/evaluate/1.jpg" alt="">
+                    <a href="javascript:;" class="del">删除</a>
+                </li>
+                <li>
+                    <img src="./images/evaluate/1.jpg" alt="">
+                    <a href="javascript:;" class="del">删除</a>
+                </li>
+                <li>
+                    <img src="./images/evaluate/1.jpg" alt="">
+                    <a href="javascript:;" class="del">删除</a>
+                </li>
+                <li>
+                    <img src="./images/evaluate/1.jpg" alt="">
+                    <a href="javascript:;" class="del">删除</a>
+                </li>
+                <li>
+                    <img src="./images/evaluate/1.jpg" alt="">
+                    <a href="javascript:;" class="del">删除</a>
+                </li>
+                <li class="last">
+                    <i class="iconfont iconzujiantubiaojiantou6"></i>
+                    <p>选择图片</p>
+                </li>
+            </ul>
+            <p class="text">图片文件最大不得超过5M，最多上传4张（仅支持jpg.png格式文件）</p>
+        </div>
+        <div class="text-area">
+            <p class="tit"><span>文字反馈</span><em>（选填）</em></p>
+            <textarea placeholder="请输入您生产稿的反馈建议" id="txtCustomNote"></textarea>
+            <span class="limitWords">0/500</span>
+        </div>
+        <div class="btn-box lbBox">
+            <a href="javascript:;" class="btn1 lineBlock">取消</a>
+            <a href="javascript:;" class="btn2 lineBlock">确认</a>
+        </div>
+    </div>
+</script>
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/slide.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
 <script type="text/javascript">
   $(function () {
+
+    //控制文字输入字数
+    $(document).on('input  propertychange', '#txtCustomNote', function () {
+      var val = $(this).val();
+      if (val) {
+        if (val.length > 500) {
+          $(this).val($(this).val().substring(0, 500));
+          $(".limitWords").text('500/500');
+        } else {
+          $(".limitWords").text(val.length + '/500');
+        }
+      }
+    });
+
+
+    $(document).on('click', '.circle ', function () {
+      $(".information").find('.circle').removeClass('act');
+      $(this).addClass('act');
+    });
+
+
+    /* layer.open({
+       type: 1,
+       skin: 'aa',
+       title: '<span>确认生产稿</span>',
+       area: ['780px', 'auto'],
+       shadeClose: true,
+       move: false,
+       content: $("#productionHtml").html(),
+       success: function (layero, index) {
+         layui.form.render();
+       }
+     });
+ */
 
     $(document).on('click', '.canel', function () {
       layer.open({
@@ -971,16 +1090,16 @@
 
     });
 
-    $(document).on('click','.pending_review_btn',function () {
-      var val=$("input[name='user']").val();
-      if(!val){
+    $(document).on('click', '.pending_review_btn', function () {
+      var val = $("input[name='user']").val();
+      if (!val) {
         layer.msg('购⽅（甲⽅）（必填）');
       }
 
       //layer.closeAll();
     });
 
-    $(document).on('click','#download',function () {
+    $(document).on('click', '#download', function () {
       layer.open({
         type: 1,
         skin: 'aa',
