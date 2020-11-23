@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="./css/paymentSetting/index.css"/>
     <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
 </head>
@@ -243,6 +243,7 @@
 </div>
 <!--footer end-->
 
+
 <script type="text/html" id="accountBalanceTipHtml">
     <div class="paymentSetting-layer">
         <div class="head lbBox">
@@ -256,6 +257,58 @@
         </div>
         <div class="btn lbBox">
             <a href="javascript:;" class="ok lineBlock">关闭</a>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="safeSecurityHtml">
+    <div class="paymentSetting-layer">
+        <div class="inpt-wrap">
+            <label class="lineBlock va-m">绑定手机号：</label>
+            <span class="t1 lineBlock va-m">15012479484 </span>
+        </div>
+        <div class="inpt-wrap">
+            <label class="lineBlock va-m">* 短信验证码：</label>
+            <div class="code-wrap lineBlock va-m">
+                <input type="text" placeholder="请输入短信验证码" class="inp0">
+                <input type="button" value="发送验证码" class="code">
+            </div>
+        </div>
+        <div class="inpt-wrap">
+            <label class="lineBlock va-t" style="margin-top: 12px;">* 支付密码：</label>
+            <div class="lineBlock va-t pwd">
+                <div class="lbBox input-box">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                </div>
+                <p class="t2">* 请设置新6位数字支付密码</p>
+            </div>
+        </div>
+        <div class="inpt-wrap">
+            <label class="lineBlock va-t" style="margin-top: 12px;">* 重复密码：</label>
+            <div class="lineBlock va-t pwd">
+                <div class="lbBox input-box">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                    <input type="password" placeholder="" class="inp2 w2" maxlength="1">
+                </div>
+                <p class="t2">* 请再次输入6位数字支付密码</p>
+            </div>
+        </div>
+        <div class="inpt-wrap">
+            <label class="lineBlock va-m">* 验证码：</label>
+            <input type="text" class="lineBlock va-m inp1 w3" placeholder="">
+            <a href="javascript:;" class="imgCode"><img src="./images/home/verify.png" alt=""></a>
+            <span class="va-m t3">看不清楚？换一张</span>
+        </div>
+        <div class="btn">
+            <a href="javascript:;">保存</a>
         </div>
     </div>
 </script>
@@ -332,6 +385,19 @@
     shadeClose: true,
     move: false,
     content: $("#accountBalanceTipHtml").html(),
+    success: function (layero, index) {
+
+
+    }
+  });
+
+  layer.open({
+    type: 1,
+    title: '<span>支付安全设置</span>',
+    area: ['640px ', 'auto'],
+    shadeClose: true,
+    move: false,
+    content: $("#safeSecurityHtml").html(),
     success: function (layero, index) {
 
 
