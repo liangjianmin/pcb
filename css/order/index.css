@@ -894,6 +894,70 @@ body {
   color: #ffffff;
   margin-left: 16px;
 }
+.kefu-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -118px;
+  margin-left: 662px;
+  width: 90px;
+  height: 126px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #E4ECED;
+  text-align: center;
+  z-index: 9999;
+}
+.kefu-box .t1 {
+  padding-top: 36px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #131414;
+  font-weight: bold;
+}
+.kefu-box .t2 {
+  font-size: 12px;
+  color: #131414;
+  padding-bottom: 4px;
+  opacity: 0.6;
+}
+.kefu-box .t3 {
+  font-size: 12px;
+  color: #131414;
+  opacity: 0.6;
+}
+.kefu-box .im {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #E4ECED;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.kefu-box .text {
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  right: 0;
+  width: 92px;
+  height: 28px;
+  background: #0A60BE;
+  border-radius: 14px;
+  text-align: center;
+  display: block;
+}
+.kefu-box .text .iconfont {
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 2px;
+}
+.kefu-box .text span {
+  font-size: 12px;
+  color: #ffffff;
+}
 .section-order {
   background: #E8F1F2;
   padding-bottom: 40px;
@@ -1062,13 +1126,14 @@ body {
 }
 .section-order .order-box .list li {
   background: #FFFFFF;
-  padding: 0 24px 0 24px;
   margin-bottom: 10px;
-  border-top: 1px solid #AAD0F2;
 }
 .section-order .order-box .list li .top {
+  padding-left: 24px;
   height: 48px;
   white-space: nowrap;
+  background: #D2ECFF;
+  margin-bottom: 8px;
 }
 .section-order .order-box .list li .top .icontubiao13 {
   font-size: 32px;
@@ -1084,13 +1149,16 @@ body {
   color: #131414;
   font-weight: bold;
 }
-.section-order .order-box .list li .top .sel {
-  margin-left: 14px;
-}
 .section-order .order-box .list li .top .sel select {
   font-size: 14px;
-  color: #0a60be;
+  color: #131414;
   cursor: pointer;
+  width: 184px;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  font-weight: bold;
+  border: 1px solid rgba(166, 173, 173, 0.5);
 }
 .section-order .order-box .list li .top .timebox0 {
   width: 52px;
@@ -1184,6 +1252,9 @@ body {
   font-weight: bold;
   text-align: center;
 }
+.section-order .order-box .list li dl {
+  padding: 0 24px 0 24px;
+}
 .section-order .order-box .list li dl dt {
   padding-left: 20px;
   height: 35px;
@@ -1253,6 +1324,7 @@ body {
   font-weight: bold;
 }
 .section-order .order-box .list li .total {
+  padding: 0 24px 0 24px;
   height: 54px;
 }
 .section-order .order-box .list li .total .l {

@@ -894,6 +894,70 @@ body {
   color: #ffffff;
   margin-left: 16px;
 }
+.kefu-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -118px;
+  margin-left: 662px;
+  width: 90px;
+  height: 126px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #E4ECED;
+  text-align: center;
+  z-index: 9999;
+}
+.kefu-box .t1 {
+  padding-top: 36px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #131414;
+  font-weight: bold;
+}
+.kefu-box .t2 {
+  font-size: 12px;
+  color: #131414;
+  padding-bottom: 4px;
+  opacity: 0.6;
+}
+.kefu-box .t3 {
+  font-size: 12px;
+  color: #131414;
+  opacity: 0.6;
+}
+.kefu-box .im {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #E4ECED;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.kefu-box .text {
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  right: 0;
+  width: 92px;
+  height: 28px;
+  background: #0A60BE;
+  border-radius: 14px;
+  text-align: center;
+  display: block;
+}
+.kefu-box .text .iconfont {
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 2px;
+}
+.kefu-box .text span {
+  font-size: 12px;
+  color: #ffffff;
+}
 .order-pay {
   background: #E8F1F2;
   padding-top: 12px;
