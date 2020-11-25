@@ -502,7 +502,7 @@
                         <b class="lineBlock emptys"></b>
                     </div>
                     <div class="fr r lbBox">
-                        <i class="icon lineBlock va-m curr va-m"></i>
+                        <i class="icon lineBlock va-m  va-m addresseeMan "></i>
                         <em class="t2 va-m">同收件人</em>
                         <b class="lineBlock emptys"></b>
                     </div>
@@ -810,7 +810,6 @@
         </div>
     </div>
 </script>
-
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
@@ -885,6 +884,19 @@
         $(this).find('.iconfont').removeClass('icontubiao5').addClass('icontubiao9');
         $(this).find('span').text('展开明细');
         $(".price li:gt(0)").hide();
+      }
+    });
+
+
+    $(document).on('click', '.addresseeMan', function () {
+      if ($(this).hasClass('curr')) {
+        $(this).removeClass('curr');
+        $(".order-detail").find('input').removeAttr("disabled");
+        $(".order-detail").find('input').css('background','transparent');
+      } else {
+        $(this).addClass('curr');
+        $(".order-detail").find('input').attr('disabled','disabled');
+        $(".order-detail").find('input').css('background','#EDF6F7');
       }
     });
 
