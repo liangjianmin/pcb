@@ -959,8 +959,310 @@ body {
   color: #ffffff;
 }
 .section-opcb {
-  background: #E8F1F2;
-  padding-top: 12px;
-  padding-bottom: 40px;
+  background: #FFFFFF;
+}
+.section-opcb .tit {
+  padding-top: 33px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #E4ECED;
+}
+.section-opcb .tit .l {
+  font-size: 22px;
+  color: #131414;
+  font-weight: bold;
+}
+.section-opcb .tit .r {
+  line-height: 30px;
+}
+.section-opcb .tit .r a {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.section-opcb .content {
+  padding-top: 30px;
+}
+.section-opcb .content .pic {
+  width: 666px;
+}
+.section-opcb .content .pic .box {
+  position: relative;
+  width: 666px;
+  height: 344px;
+}
+.section-opcb .content .pic .box img {
+  width: 666px;
+  height: 344px;
+}
+.section-opcb .content .pic .box .bg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 54px;
+  height: 54px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  z-index: 1;
+  text-align: center;
+  margin: -27px auto 0;
+  cursor: pointer;
+  display: none;
+}
+.section-opcb .content .pic .box .bg i {
+  width: 36px;
+  height: 36px;
+  background: url("../../images/p-pcb/sear.png") no-repeat center;
+  background-size: cover;
+  display: block;
+  margin-left: 9px;
+  margin-top: 9px;
+}
+.section-opcb .content .pic .box:hover .bg {
+  display: block;
+}
+.section-opcb .content .pic .text {
+  text-align: center;
+}
+.section-opcb .content .pic .text .t1 {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #0a60be;
+}
+.section-opcb .content .pic .text .t2 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #131414;
+}
+.section-opcb .content .pic .text .t2 a {
+  color: #0a60be;
+}
+.section-opcb .content .wrap-box {
+  margin-left: 53px;
+}
+.section-opcb .content .wrap-box .t1 {
+  font-size: 32px;
+  color: #131414;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.section-opcb .content .wrap-box .t2 {
+  font-size: 14px;
+  color: #131414;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+.section-opcb .content .wrap-box .title .l {
+  font-size: 20px;
+  color: #131414;
+  font-weight: bold;
+}
+.section-opcb .content .wrap-box .title .r {
+  font-size: 14px;
+  color: #0a60be;
+}
+.section-opcb .content .wrap-box .tab1 {
+  width: 524px;
+  margin-top: 16px;
+  border-bottom: 1px solid #E4ECED;
+  padding-bottom: 30px;
+  margin-bottom: 29px;
+}
+.section-opcb .content .wrap-box .tab1 li {
+  position: relative;
+  width: 522px;
+  height: 62px;
+  line-height: 64px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid rgba(166, 173, 173, 0.5);
+  cursor: pointer;
+}
+.section-opcb .content .wrap-box .tab1 li p {
+  padding-left: 24px;
+  font-size: 16px;
+  color: #131414;
+  font-weight: bold;
+}
+.section-opcb .content .wrap-box .tab1 li:first-child {
+  margin-bottom: 16px;
+}
+.section-opcb .content .wrap-box .tab2 {
+  width: 522px;
+  margin-top: 16px;
+  border-bottom: 1px solid #E4ECED;
+  padding-bottom: 30px;
+}
+.section-opcb .content .wrap-box .tab2 li {
+  width: 522px;
+  height: 62px;
+  line-height: 64px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid rgba(166, 173, 173, 0.5);
+  cursor: pointer;
+}
+.section-opcb .content .wrap-box .tab2 li .l {
+  padding-left: 24px;
+  font-size: 16px;
+  color: #131414;
+  font-weight: bold;
+}
+.section-opcb .content .wrap-box .tab2 li .r {
+  padding-right: 24px;
+  font-size: 16px;
+  color: #131414;
+}
+.section-opcb .content .wrap-box .tab2 li:first-child {
+  margin-bottom: 16px;
+}
+.section-opcb .content .wrap-box .tab3 {
+  margin-top: 16px;
+  width: 524px;
+}
+.section-opcb .content .wrap-box .tab3 li {
+  width: 252px;
+  height: 126px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid rgba(166, 173, 173, 0.5);
+  text-align: center;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  float: left;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.section-opcb .content .wrap-box .tab3 li.curr {
+  width: 250px;
+}
+.section-opcb .content .wrap-box .tab3 li span {
+  width: 48px;
+  height: 48px;
+  display: block;
+  border-radius: 50%;
+}
+.section-opcb .content .wrap-box .tab3 li p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #131414;
+}
+.section-opcb .content .wrap-box .tab3 li:nth-of-type(2n) {
+  margin-right: 0;
+}
+.section-opcb .content .wrap-box .tab4 {
+  margin-top: 16px;
+  width: 524px;
+}
+.section-opcb .content .wrap-box .tab4 li {
+  width: 252px;
+  height: 126px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid rgba(166, 173, 173, 0.5);
+  text-align: center;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  float: left;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.section-opcb .content .wrap-box .tab4 li.curr {
+  width: 250px;
+}
+.section-opcb .content .wrap-box .tab4 li .t1 {
+  font-size: 22px;
+  color: #131414;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.section-opcb .content .wrap-box .tab4 li .t2 {
+  font-size: 16px;
+  color: #131414;
+}
+.section-opcb .content .wrap-box .tab4 li:nth-of-type(2n) {
+  margin-right: 0;
+}
+.section-opcb .content .wrap-box .tab li.curr {
+  border-radius: 6px;
+  border: 2px solid #0A60BE;
+  box-shadow: 0 0 0 3px #AAD0F2;
+}
+.section-opcb .content .wrap-box .inp-box {
+  margin-top: 14px;
+  width: 524px;
+  height: 64px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid rgba(166, 173, 173, 0.5);
+}
+.section-opcb .content .wrap-box .inp-box input {
+  line-height: 64px;
+  margin-left: 24px;
+  font-size: 16px;
+}
+.section-opcb .content .wrap-box .inp-box input::-webkit-input-placeholder {
+  color: #131414;
+  opacity: 0.6;
+}
+.section-opcb .total-price {
+  margin-top: 44px;
+  border-top: 1px solid #E4ECED;
+  padding-top: 16px;
+  padding-bottom: 28px;
+}
+.section-opcb .total-price .l .iconfont {
+  font-size: 32px;
+  color: #969898;
+  margin-right: 6px;
+}
+.section-opcb .total-price .l .text {
+  margin-top: 8px;
+}
+.section-opcb .total-price .l .text .t1 {
+  font-size: 16px;
+  color: #131414;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.section-opcb .total-price .l .text .t2 {
+  font-size: 14px;
+  color: #131414;
+  margin-bottom: 8px;
+}
+.section-opcb .total-price .l .text .t3 {
+  font-size: 14px;
+  color: #0a60be;
+}
+.section-opcb .total-price .r {
+  margin-top: 10px;
+}
+.section-opcb .total-price .r .t1 {
+  font-size: 32px;
+  color: #131414;
+  line-height: 45px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.section-opcb .total-price .r .iconfont {
+  font-size: 20px;
+  color: #0a60be;
+}
+.section-opcb .total-price .r .t2 {
+  font-size: 14px;
+  color: #0a60be;
+}
+.section-opcb .total-price .r .btn {
+  width: 200px;
+  height: 64px;
+  background: #0A60BE;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 64px;
+  margin-left: 100px;
 }
 /*# sourceMappingURL=index.css.map */
