@@ -37,6 +37,17 @@
       
       Util.imgZoom($(".imgZoomT"), true);
       
+      
+      if (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE", "")) < 9) {
+        $("html").append('<div class="browser">\n' +
+          '    <div class="width-1180 tip-wrap">\n' +
+          '        <span>当前页面部分功能无法正常使用, 可能因为您当前浏览器版本过低,请更换浏览器或升级后再试.</span>\n' +
+          '        <i class="iconfont iconzujiantubiaojiantou10" title="关闭"></i>\n' +
+          '    </div>\n' +
+          '</div>');
+      }
+      
+      
       return this;
     },
     handleBind: function (opt) {

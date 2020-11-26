@@ -1329,6 +1329,33 @@ body {
   color: #ffffff;
   font-size: 14px;
 }
+.browser {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background: #ffe0b2;
+  z-index: 999999;
+}
+.browser .tip-wrap {
+  position: relative;
+}
+.browser .tip-wrap span {
+  font-size: 14px;
+  color: #e89721;
+}
+.browser .tip-wrap .iconfont {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 15px;
+  color: #e89721;
+  cursor: pointer;
+}
 .certification .common-title {
   color: #3A3C40;
   text-align: center;
