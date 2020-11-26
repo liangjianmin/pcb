@@ -1267,6 +1267,7 @@ body {
   opacity: 0.6;
 }
 .section-order .order-box .list li dl dd {
+  min-height: 44px;
   padding: 12px 0 14px 20px;
   border-bottom: 1px solid #E4ECED;
 }
@@ -1278,6 +1279,7 @@ body {
 .section-order .order-box .list li dl dd .type1 .t2 {
   font-size: 14px;
   color: #131414;
+  display: none;
 }
 .section-order .order-box .list li dl dd .type2 {
   font-size: 14px;
@@ -1322,6 +1324,12 @@ body {
   font-size: 14px;
   color: #131414;
   font-weight: bold;
+}
+.section-order .order-box .list li dl dd:hover {
+  background: #EBF6FF;
+}
+.section-order .order-box .list li dl dd:hover .type1 .t2 {
+  display: block;
 }
 .section-order .order-box .list li .total {
   background: #ffffff;
