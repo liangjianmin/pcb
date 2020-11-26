@@ -1125,15 +1125,14 @@ body {
   margin-top: 8px;
 }
 .section-order .order-box .list li {
-  background: #FFFFFF;
   margin-bottom: 10px;
+  border: 2px solid transparent;
 }
 .section-order .order-box .list li .top {
   padding-left: 24px;
   height: 48px;
   white-space: nowrap;
   background: #D2ECFF;
-  margin-bottom: 8px;
 }
 .section-order .order-box .list li .top .icontubiao13 {
   font-size: 32px;
@@ -1253,7 +1252,8 @@ body {
   text-align: center;
 }
 .section-order .order-box .list li dl {
-  padding: 0 24px 0 24px;
+  background: #ffffff;
+  padding: 8px 24px 0 24px;
 }
 .section-order .order-box .list li dl dt {
   padding-left: 20px;
@@ -1324,6 +1324,7 @@ body {
   font-weight: bold;
 }
 .section-order .order-box .list li .total {
+  background: #ffffff;
   padding: 0 24px 0 24px;
   height: 54px;
 }
@@ -1384,8 +1385,8 @@ body {
   color: #0a60be;
   font-weight: bold;
 }
-.section-order .order-box .list li:first-child {
-  border-top: none;
+.section-order .order-box .list li:hover {
+  border: 2px solid #0A60BE;
 }
 .section-order .order-box .order-detail {
   padding: 0 24px 24px 24px;
