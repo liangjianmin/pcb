@@ -221,9 +221,9 @@
             <div class="delivery lbBox">
                 <span class="t1 va-m">交货方式</span>
                 <a href="javascript:;" class="lineBlock t2 tabbox va-m">分开发货 (推荐)</a>
-                <p class="t3 lineBlock va-m">每个订单的交期独立发货，但可能会产生<em>额外的物流费用</em>。</p>
+                <!-- <p class="t3 lineBlock va-m">每个订单的交期独立发货，但可能会产生<em>额外的物流费用</em>。</p>-->
                 <p class="t4 lineBlock va-m tabbox">合并发货 (实惠)</p>
-                <p class="t3 lineBlock va-m">以当前订单中最长交期为发货时间，<em>交货周期较长</em>。</p>
+                <p class="t3 lineBlock va-m">每个订单的交期独立发货，但可能会产生<em>额外的物流费用</em>。</p>
                 <b class="lineBlock emptys"></b>
             </div>
         </div>
@@ -824,10 +824,13 @@
     }, 0)
 
     Util.tabs('.tabbox', function (index) {
-      
-    })
+      if (index == 1) {
+        $(".delivery").find('.t3').html('每个订单的交期独立发货，但可能会产生<em>额外的物流费用</em>。');
+      } else if (index == 2) {
+        $(".delivery").find('.t3').html('以当前订单中最长交期为发货时间，<em>交货周期较长</em>。');
+      }
+    });
     
-
 
     //选择地址
     $(document).on('click', '.viewAddress', function () {
@@ -892,11 +895,11 @@
       if ($(this).hasClass('curr')) {
         $(this).removeClass('curr');
         $(".order-detail").find('input').removeAttr("disabled");
-        $(".order-detail").find('input').css('background','transparent');
+        $(".order-detail").find('input').css('background', 'transparent');
       } else {
         $(this).addClass('curr');
-        $(".order-detail").find('input').attr('disabled','disabled');
-        $(".order-detail").find('input').css('background','#EDF6F7');
+        $(".order-detail").find('input').attr('disabled', 'disabled');
+        $(".order-detail").find('input').css('background', '#EDF6F7');
       }
     });
 
