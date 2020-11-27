@@ -1412,6 +1412,11 @@
         $(this).toggleClass('check-box-curr');
     });
 
+
+    $(document).on('click', '.tbb', function () {
+      $(this).prev().trigger('click');
+    });
+
   })
 </script>
 </body>
