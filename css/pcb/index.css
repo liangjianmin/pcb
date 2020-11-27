@@ -1824,6 +1824,7 @@ body {
   color: #5c5f66;
   margin-left: 4px;
   margin-right: 12px;
+  cursor: pointer;
 }
 .pcb .section .pcb-l .pcb-block-slideup {
   padding: 20px 30px 30px 30px;
