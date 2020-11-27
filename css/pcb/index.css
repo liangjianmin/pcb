@@ -1790,6 +1790,10 @@ body {
   bottom: 9px;
   z-index: 1;
 }
+.pcb .section .pcb-l .pcb-box .pcb-block .choice-box,
+.pcb .section .pcb-l .pcb-bz .pcb-block .choice-box {
+  height: 35px;
+}
 .pcb .section .pcb-l .pcb-box .pcb-block .choice-box .check-box,
 .pcb .section .pcb-l .pcb-bz .pcb-block .choice-box .check-box {
   width: 18px;
