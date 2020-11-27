@@ -1279,7 +1279,58 @@ body {
 .section-order .order-box .list li dl dd .type1 .t2 {
   font-size: 14px;
   color: #131414;
+  position: relative;
+  margin-top: 6px;
+}
+.section-order .order-box .list li dl dd .type1 .t2 .wrap {
+  font-size: 14px;
+  color: #131414;
   display: none;
+}
+.section-order .order-box .list li dl dd .type1 .t2 .wrap em {
+  margin-left: 16px;
+  color: #0a60be;
+  cursor: pointer;
+}
+.section-order .order-box .list li dl dd .type1 .t2 .detail-box {
+  position: absolute;
+  top: -51px;
+  left: 175px;
+  z-index: 1;
+  display: none;
+}
+.section-order .order-box .list li dl dd .type1 .t2 .detail-box .left {
+  position: absolute;
+  left: -8px;
+  top: 53px;
+  width: 10px;
+  height: 17px;
+  background: url("../../images/p-home/left.png") no-repeat center;
+  background-size: cover;
+}
+.section-order .order-box .list li dl dd .type1 .t2 .detail-box table {
+  width: 670px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #0A60BE;
+}
+.section-order .order-box .list li dl dd .type1 .t2 .detail-box table tr td {
+  padding-left: 24px;
+  border: 1px solid #E4ECED;
+  height: 39px;
+}
+.section-order .order-box .list li dl dd .type1 .t2 .detail-box table tr td.t1 {
+  width: 145px;
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.section-order .order-box .list li dl dd .type1 .t2 .detail-box table tr td.t2 {
+  background: #EDF6F7;
+  width: 187px;
+  color: #131414;
+  font-size: 14px;
+  font-weight: bold;
 }
 .section-order .order-box .list li dl dd .type2 {
   font-size: 14px;
@@ -1328,7 +1379,7 @@ body {
 .section-order .order-box .list li dl dd:hover {
   background: #EBF6FF;
 }
-.section-order .order-box .list li dl dd:hover .type1 .t2 {
+.section-order .order-box .list li dl dd:hover .type1 .t2 .wrap {
   display: block;
 }
 .section-order .order-box .list li .total {
@@ -1414,12 +1465,16 @@ body {
   background: #FFFFFF;
   border-radius: 2px;
   border: 1px solid #BEC5C6;
-  cursor: pointer;
 }
 .section-order .order-box .order-detail .box .l .icon.curr {
   background: url("../../images/p-cart/select.png") no-repeat center;
   background-size: cover;
   border: 1px solid #0A60BE;
+}
+.section-order .order-box .order-detail .box .l .icon.disabled {
+  background: url("../../images/p-cart/disabled.png") no-repeat center;
+  background-size: cover;
+  border: 1px solid #BEC5C6;
 }
 .section-order .order-box .order-detail .box .l .t1 {
   font-size: 16px;

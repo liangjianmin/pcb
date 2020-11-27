@@ -378,7 +378,68 @@
               .t2 {
                 font-size: 14px;
                 color: #131414;
-                display: none;
+                position: relative;
+                margin-top: 6px;
+
+                .wrap {
+                  font-size: 14px;
+                  color: #131414;
+                  display: none;
+
+                  em {
+                    margin-left: 16px;
+                    color: #0a60be;
+                    cursor: pointer;
+                  }
+                }
+
+                .detail-box {
+                  position: absolute;
+                  top: -51px;
+                  left: 175px;
+                  z-index: 1;
+                  display: none;
+
+                  .left {
+                    position: absolute;
+                    left: -8px;
+                    top: 53px;
+                    width: 10px;
+                    height: 17px;
+                    background: url("../../images/p-home/left.png") no-repeat center;
+                    background-size: cover;
+                  }
+
+                  table {
+                    width: 670px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+                    border: 1px solid #0A60BE;
+
+                    tr {
+                      td {
+                        padding-left: 24px;
+                        border: 1px solid #E4ECED;
+                        height: 39px;
+
+                        &.t1 {
+                          width: 145px;
+                          font-size: 14px;
+                          color: #131414;
+                          opacity: 0.6;
+                        }
+
+                        &.t2 {
+                          background: #EDF6F7;
+                          width: 187px;
+                          color: #131414;
+                          font-size: 14px;
+                          font-weight: bold;
+                        }
+                      }
+                    }
+                  }
+                }
 
               }
             }
@@ -446,7 +507,9 @@
               background: #EBF6FF;
               .type1{
                 .t2{
-                  display: block;
+                  .wrap{
+                    display: block;
+                  }
                 }
               }
             }
@@ -556,12 +619,16 @@
             background: #FFFFFF;
             border-radius: 2px;
             border: 1px solid #BEC5C6;
-            cursor: pointer;
 
             &.curr {
               background: url("../../images/p-cart/select.png") no-repeat center;
               background-size: cover;
               border: 1px solid #0A60BE;
+            }
+            &.disabled {
+              background: url("../../images/p-cart/disabled.png") no-repeat center;
+              background-size: cover;
+              border: 1px solid #BEC5C6;
             }
           }
 

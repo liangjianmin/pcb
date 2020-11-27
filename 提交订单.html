@@ -275,7 +275,76 @@
                         <dd class="lbBox">
                             <div class="lineBlock va-t type1" style="width: 388px;">
                                 <p class="t1">20082200026 23*23.23cm 2层 1.6mm</p>
-                                <div class="t2">绿油白字 无铅喷锡</div>
+                                <div class="t2">
+                                    <div class="wrap">绿油白字 无铅喷锡<em>明细</em></div>
+                                    <div class="detail-box">
+                                        <i class="left"></i>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td class="t1">单片尺寸：</td>
+                                                <td class="t2">23.00 cm * 23.00 cm</td>
+                                                <td class="t1">拼版款数：</td>
+                                                <td class="t2">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">层数：</td>
+                                                <td class="t2">2层</td>
+                                                <td class="t1">过孔处理：</td>
+                                                <td class="t2">过孔盖油</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">阻焊颜色：</td>
+                                                <td class="t2">绿色</td>
+                                                <td class="t1">焊盘喷镀：</td>
+                                                <td class="t2">无铅喷锡</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">字符：</td>
+                                                <td class="t2">白色</td>
+                                                <td class="t1">板厚：</td>
+                                                <td class="t2">1.6mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">铜厚(内/外)：</td>
+                                                <td class="t2">1oz / 1oz</td>
+                                                <td class="t1">最小线宽/线距：</td>
+                                                <td class="t2">8/8mil↑</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">最小孔径：</td>
+                                                <td class="t2">0.4 mm</td>
+                                                <td class="t1">出货类型：</td>
+                                                <td class="t2">单片/1*1拼版</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">板材：</td>
+                                                <td class="t2">FR-4 tg130</td>
+                                                <td class="t1">数量：</td>
+                                                <td class="t2">300PCS</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">是否接受打叉板：</td>
+                                                <td class="t2">接受</td>
+                                                <td class="t1">阻抗：</td>
+                                                <td class="t2">无</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">测试：</td>
+                                                <td class="t2">AOI光学</td>
+                                                <td class="t1">金手指倒边：</td>
+                                                <td class="t2">无</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">V割方式：</td>
+                                                <td class="t2">V割</td>
+                                                <td class="t1"></td>
+                                                <td class="t2"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                             <p class="lineBlock va-t type2" style="width: 216px;">2020.10.29 </p>
                             <p class="lineBlock va-t type3" style="width: 184px;">200 PCS </p>
@@ -482,7 +551,7 @@
                 <div class="box clr">
                     <div class="fl l lbBox">
                         <span class="t1 va-m">订单发票</span>
-                        <i class="icon lineBlock va-m curr va-m"></i>
+                        <i class="icon lineBlock va-m curr disabled va-m"></i>
                         <em class="t2 va-m">需要发票</em>
                         <b class="lineBlock emptys"></b>
                     </div>
@@ -901,6 +970,13 @@
         $(".order-detail").find('input').attr('disabled', 'disabled');
         $(".order-detail").find('input').css('background', '#EDF6F7');
       }
+    });
+
+
+    $(".type1 .t2 .wrap em").hover(function () {
+        $(this).parent().next().show();
+    },function () {
+      $(this).parent().next().hide();
     });
 
   })
