@@ -79,7 +79,6 @@
   padding-bottom: 25px;
 }
 
-
 .bor {
   border-bottom: 10px solid #E6EAF2;
 }
@@ -313,7 +312,7 @@
             }
 
             span {
-              font-size: 13px; 
+              font-size: 13px;
               color: #3a3c40;
             }
 
@@ -322,9 +321,10 @@
 
           .pcb_boardcolor {
             li {
-              span{
+              span {
                 color: #5c5f66;
               }
+
               &:nth-child(-n + 6) {
                 margin-bottom: 5px;
               }
@@ -500,6 +500,37 @@
               right: 14px;
               bottom: 9px;
               z-index: 1;
+            }
+          }
+
+          .choice-box{
+            .check-box {
+              width: 18px;
+              height: 18px;
+              background: #FFFFFF;
+              border-radius: 2px;
+              border: 1px solid #BEC5C6;
+              text-align: center;
+              cursor: pointer;
+              line-height: 18px;
+
+              .iconfont {
+                font-size: 0px;
+              }
+
+              &.check-box-curr {
+                border: 1px solid #0A60BE;
+                .iconfont {
+                  color: #0081d2;
+                  font-size: 16px;
+                }
+              }
+            }
+            .tbb{
+              font-size: 14px;
+              color: #131414;
+              margin-left: 4px;
+              margin-right: 12px;
             }
           }
         }
@@ -880,13 +911,15 @@
                 font-size: 14px;
                 color: #5c5f66;
                 cursor: pointer;
-                .iconfont{
-                  &:hover{
-                    .arrow-tips{
+
+                .iconfont {
+                  &:hover {
+                    .arrow-tips {
                       display: block;
                     }
                   }
                 }
+
                 .arrow-tips {
                   position: absolute;
                   top: 18px;
@@ -1334,7 +1367,7 @@
 
 .wt1 {
   position: absolute;
-  right: 39px;  
+  right: 39px;
   top: 0;
   height: 54px;
   width: 156px;

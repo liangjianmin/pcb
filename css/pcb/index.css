@@ -1790,6 +1790,37 @@ body {
   bottom: 9px;
   z-index: 1;
 }
+.pcb .section .pcb-l .pcb-box .pcb-block .choice-box .check-box,
+.pcb .section .pcb-l .pcb-bz .pcb-block .choice-box .check-box {
+  width: 18px;
+  height: 18px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #BEC5C6;
+  text-align: center;
+  cursor: pointer;
+  line-height: 18px;
+}
+.pcb .section .pcb-l .pcb-box .pcb-block .choice-box .check-box .iconfont,
+.pcb .section .pcb-l .pcb-bz .pcb-block .choice-box .check-box .iconfont {
+  font-size: 0px;
+}
+.pcb .section .pcb-l .pcb-box .pcb-block .choice-box .check-box.check-box-curr,
+.pcb .section .pcb-l .pcb-bz .pcb-block .choice-box .check-box.check-box-curr {
+  border: 1px solid #0A60BE;
+}
+.pcb .section .pcb-l .pcb-box .pcb-block .choice-box .check-box.check-box-curr .iconfont,
+.pcb .section .pcb-l .pcb-bz .pcb-block .choice-box .check-box.check-box-curr .iconfont {
+  color: #0081d2;
+  font-size: 16px;
+}
+.pcb .section .pcb-l .pcb-box .pcb-block .choice-box .tbb,
+.pcb .section .pcb-l .pcb-bz .pcb-block .choice-box .tbb {
+  font-size: 14px;
+  color: #131414;
+  margin-left: 4px;
+  margin-right: 12px;
+}
 .pcb .section .pcb-l .pcb-block-slideup {
   padding: 20px 30px 30px 30px;
   margin-bottom: 20px;
