@@ -472,11 +472,10 @@
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
-
 <script type="text/javascript">
   $(function () {
     
-    Util.tabs('.tab li',function (index) {
+    Util.tabs('.tab li', function (index) {
       
     });
     
@@ -484,6 +483,20 @@
       photos: "#box",
       anim: 5
     });
+
+
+    $(window).on("scroll", function () {
+      commonAnimationAction();
+    });
+
+
+    function commonAnimationAction() {
+      var offSetTop = $(".pic").offset().top;
+      var height = $(window).scrollTop();
+      if (height > offSetTop) {
+
+      }
+    }
 
   })
 
