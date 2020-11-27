@@ -991,7 +991,7 @@ body {
   width: 666px;
   height: 344px;
 }
-.section-opcb .content .pic .box img {
+.section-opcb .content .pic .box .im1 {
   width: 666px;
   height: 344px;
 }
@@ -1010,10 +1010,9 @@ body {
   cursor: pointer;
   display: none;
 }
-.section-opcb .content .pic .box .bg i {
+.section-opcb .content .pic .box .bg .im2 {
   width: 36px;
   height: 36px;
-  background: url("../../images/p-pcb/sear.png") no-repeat center;
   background-size: cover;
   display: block;
   margin-left: 9px;
@@ -1037,6 +1036,10 @@ body {
 }
 .section-opcb .content .pic .text .t2 a {
   color: #0a60be;
+}
+.section-opcb .content .pic .fix {
+  position: fixed;
+  top: 0;
 }
 .section-opcb .content .wrap-box {
   margin-left: 53px;

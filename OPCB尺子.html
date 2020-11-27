@@ -194,15 +194,17 @@
         </div>
         <div class="content lbBox">
             <div class="pic lineBlock va-t">
-                <div class="box" id="box">
-                    <img src="./images/p-pcb/b1.jpg" layer-src="./images/p-pcb/b2.jpg" alt="">
-                    <div class="bg">
-                        <i></i>
+                <div class="fix-box">
+                    <div class="box" id="box">
+                        <img src="./images/p-pcb/b1.jpg" layer-src="./images/p-pcb/b2.jpg" alt="" class="im1">
+                        <div class="bg">
+                            <img src="./images/p-pcb/sear.png" alt="" class="im2" layer-src="./images/p-pcb/b2.jpg" >
+                        </div>
                     </div>
-                </div>
-                <div class="text">
-                    <p class="t1">查看定制样例</p>
-                    <p class="t2">有定制PCB尺子方面的疑问？ <a href="javascript:;">与客服在线交流</a></p>
+                    <div class="text">
+                        <p class="t1">查看定制样例</p>
+                        <p class="t2">有定制PCB尺子方面的疑问？ <a href="javascript:;">与客服在线交流</a></p>
+                    </div>
                 </div>
             </div>
             <div class="wrap-box lineBlock va-t">
@@ -494,7 +496,9 @@
       var offSetTop = $(".pic").offset().top;
       var height = $(window).scrollTop();
       if (height > offSetTop) {
-
+        $('.pic').find('.fix-box').addClass('fix');
+      } else {
+        $('.pic').find('.fix-box').removeClass('fix');
       }
     }
 
