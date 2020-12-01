@@ -390,9 +390,11 @@
                         <div class="fl l lbBox">
                             <span class="t1 va-m">抵扣券</span>
                             <div class="lineBlock va-m sel-coupon">
+                                <span class="txt">￥50</span>
                                 <select name="">
-                                    <option value="">省20元：PCB订单金额满100.00-50.00</option>
-                                    <option value="">省20元：PCB订单金额满100.00-50.00</option>
+                                    <option value="0">满100.00可用</option>
+                                    <option value="1">满200.00可用</option>
+                                    <option value="2">满300.00可用</option>
                                 </select>
                             </div>
                             <p class="lineBlock va-m t2">
@@ -514,9 +516,11 @@
                         <div class="fl l lbBox">
                             <span class="t1 va-m">抵扣券</span>
                             <div class="lineBlock va-m sel-coupon">
+                                <span class="txt">￥50</span>
                                 <select name="">
-                                    <option value="">省20元：PCB订单金额满100.00-50.00</option>
-                                    <option value="">省20元：PCB订单金额满100.00-50.00</option>
+                                    <option value="0">满100.00可用</option>
+                                    <option value="1">满200.00可用</option>
+                                    <option value="2">满300.00可用</option>
                                 </select>
                             </div>
                             <p class="lineBlock va-m t2">
@@ -888,6 +892,22 @@
   $(function () {
 
 
+    $(document).on('change', '.sel-coupon select', function () {
+      var val = $(this).val();
+
+      console.log(val)
+
+      if (val == 0) {
+        $('.sel-coupon .txt').text('￥50');
+      } else if (val == 1) {
+        $('.sel-coupon .txt').text('￥100');
+      }else if (val == 2) {
+        $('.sel-coupon .txt').text('￥150');
+      }
+
+
+    });
+
     setTimeout(function () {
       $(".tabbox").eq(0).trigger('click');
     }, 0)
@@ -974,8 +994,8 @@
 
 
     $(".type1 .t2 .wrap em").hover(function () {
-        $(this).parent().next().show();
-    },function () {
+      $(this).parent().next().show();
+    }, function () {
       $(this).parent().next().hide();
     });
 

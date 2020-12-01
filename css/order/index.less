@@ -173,7 +173,7 @@
       }
 
       .t4 {
-        margin-left:16px;
+        margin-left: 16px;
         width: 138px;
         height: 32px;
         background: #FFFFFF;
@@ -203,6 +203,7 @@
       li {
         margin-bottom: 10px;
         border: 2px solid transparent;
+
         .top {
           padding-left: 24px;
           height: 48px;
@@ -350,6 +351,7 @@
         dl {
           background: #ffffff;
           padding: 8px 24px 0 24px;
+
           dt {
             padding-left: 20px;
             height: 35px;
@@ -503,11 +505,12 @@
               }
             }
 
-            &:hover{
+            &:hover {
               background: #EBF6FF;
-              .type1{
-                .t2{
-                  .wrap{
+
+              .type1 {
+                .t2 {
+                  .wrap {
                     display: block;
                   }
                 }
@@ -554,17 +557,33 @@
             }
 
             .sel-coupon {
+              position: relative;
               margin-left: 57px;
+              width: 220px;
+
+              .txt {
+                position: absolute;
+                left: 16px;
+                top: 9px;
+                font-size: 16px;
+                color: #ffffff;
+                font-weight: bold;
+              }
 
               select {
-                height: 30px;
-                background: #FFFFFF;
-                border-radius: 2px;
-                border: 1px solid rgba(166, 173, 173, 0.5);
-                font-size: 14px;
+
+                width: 220px;
+                height: 40px;
+                background: url("../../images/p-cart/coupon.png") no-repeat center;
+                background-size: cover;
+                font-size: 12px;
                 color: #131414;
                 font-weight: bold;
-                cursor: pointer;
+                text-indent: 88px;
+
+                option {
+                  text-indent: 88px;
+                }
               }
             }
           }
@@ -593,7 +612,7 @@
         }
 
 
-        &:hover{
+        &:hover {
           border: 2px solid #0A60BE;
         }
 
@@ -625,6 +644,7 @@
               background-size: cover;
               border: 1px solid #0A60BE;
             }
+
             &.disabled {
               background: url("../../images/p-cart/disabled.png") no-repeat center;
               background-size: cover;

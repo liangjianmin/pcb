@@ -1414,17 +1414,30 @@ body {
   color: #0a60be;
 }
 .section-order .order-box .list li .total .l .sel-coupon {
+  position: relative;
   margin-left: 57px;
+  width: 220px;
+}
+.section-order .order-box .list li .total .l .sel-coupon .txt {
+  position: absolute;
+  left: 16px;
+  top: 9px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
 }
 .section-order .order-box .list li .total .l .sel-coupon select {
-  height: 30px;
-  background: #FFFFFF;
-  border-radius: 2px;
-  border: 1px solid rgba(166, 173, 173, 0.5);
-  font-size: 14px;
+  width: 220px;
+  height: 40px;
+  background: url("../../images/p-cart/coupon.png") no-repeat center;
+  background-size: cover;
+  font-size: 12px;
   color: #131414;
   font-weight: bold;
-  cursor: pointer;
+  text-indent: 88px;
+}
+.section-order .order-box .list li .total .l .sel-coupon select option {
+  text-indent: 88px;
 }
 .section-order .order-box .list li .total .r {
   padding-right: 30px;
