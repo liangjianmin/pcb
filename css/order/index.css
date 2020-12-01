@@ -1420,11 +1420,13 @@ body {
 }
 .section-order .order-box .list li .total .l .sel-coupon .txt {
   position: absolute;
-  left: 16px;
+  left: 0;
   top: 9px;
   font-size: 16px;
   color: #ffffff;
   font-weight: bold;
+  width: 71px;
+  text-align: center;
 }
 .section-order .order-box .list li .total .l .sel-coupon select {
   width: 220px;
