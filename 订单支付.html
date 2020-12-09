@@ -182,8 +182,6 @@
 <!--head end-->
 
 <!--section-->
-
-<!--section end-->
 <div class="order-pay">
     <div class="width-1280">
         <div class="top clr">
@@ -287,6 +285,8 @@
         </div>
     </div>
 </div>
+<!--section end-->
+
 <!--footer-->
 <div class="p-footer">
     <div class="width-1280 box">
@@ -411,10 +411,6 @@
                 <span class="fl t1">订单编号：</span>
                 <span class="fr t2">1239421348234</span>
             </li>
-            <li class="clr">
-                <span class="fl t1">订单编号：</span>
-                <span class="fr t3">￥5000.00</span>
-            </li>
         </ul>
         <div class="num lbBox">
             <input type="password" placeholder="" class="inp w1 error" maxlength="1">
@@ -455,6 +451,13 @@
         </ul>
         <div class="code">
             <img src="./images/p-cart/code.png" alt="">
+            <div class="invalid">
+                <p>当前支付二维码已失效，请刷新页面</p>
+                <a class="text" href="javascript:;">
+                    <i class="iconfont icontubiao23 va-m"></i>
+                    <em class="va-m">刷新</em>
+                </a>
+            </div>
         </div>
         <div class="code-btn">请使用微信扫描二维码支付</div>
     </div>
@@ -474,11 +477,9 @@
         <b class="clr"></b>
     </div>
 </script>
-
 <script type="text/javascript" src="js/common/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
 <script type="text/javascript" src="js/common/base.js"></script>
-
 <script type="text/javascript">
   $(function () {
 

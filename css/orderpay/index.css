@@ -1334,6 +1334,7 @@ body {
   display: block;
 }
 .pay-box .code {
+  position: relative;
   width: 306px;
   height: 306px;
   background: #FFFFFF;
@@ -1345,6 +1346,32 @@ body {
   display: block;
   width: 260px;
   height: 260px;
+}
+.pay-box .code .invalid {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  width: 308px;
+  height: 310px;
+}
+.pay-box .code .invalid p {
+  font-size: 14px;
+  color: #131414;
+  text-align: center;
+  margin-top: 123px;
+  margin-bottom: 20px;
+}
+.pay-box .code .invalid .text .iconfont {
+  font-size: 28px;
+  color: #0a60be;
+  margin-right: 8px;
+}
+.pay-box .code .invalid .text em {
+  font-size: 14px;
+  color: #0a60be;
+  font-weight: bold;
 }
 .pay-box .code-btn {
   width: 226px;

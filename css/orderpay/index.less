@@ -469,6 +469,7 @@
   }
 
   .code {
+    position: relative;
     width: 306px;
     height: 306px;
     background: #FFFFFF;
@@ -480,6 +481,34 @@
       display: block;
       width: 260px;
       height: 260px;
+    }
+    .invalid{
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      text-align: center;
+      background: rgba(255,255,255,0.8);
+      width: 308px;
+      height: 310px;
+      p{
+        font-size: 14px;
+        color: #131414;
+        text-align: center;
+        margin-top: 123px;
+        margin-bottom: 20px;
+      }
+      .text{
+        .iconfont{
+          font-size: 28px;
+          color: #0a60be;
+          margin-right: 8px;
+        }
+        em{
+          font-size: 14px;
+          color: #0a60be;
+          font-weight: bold;
+        }
+      }
     }
   }
 
