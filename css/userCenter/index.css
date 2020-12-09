@@ -2181,6 +2181,21 @@ body {
 .user-center .user-center-r .user-center-section .drying-list ul li a .text .star dd.default {
   color: #afb2bc;
 }
+.user-ad {
+  height: 60px;
+}
+.user-ad a {
+  position: relative;
+  display: block;
+}
+.user-ad a .iconfont {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 15px;
+  color: #e89721;
+  cursor: pointer;
+}
 .user-center-layer {
   padding: 30px;
 }

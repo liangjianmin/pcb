@@ -46,6 +46,14 @@
 </div>
 <!--head end-->
 
+<div class="user-ad">
+    <div class="width-1180">
+        <a href="javascript:;">
+            <i class="iconfont iconzujiantubiaojiantou10" title="关闭" id="close"></i>
+            <img src="./images/home/1.jpg" alt="">
+        </a>
+    </div>
+</div>
 <!--section-->
 <div class="user-center">
     <div class="width-1180  clr">
@@ -1052,6 +1060,11 @@
       }
 
       //layer.closeAll();
+    });
+
+
+    $(document).on('click', '#close', function () {
+        $(this).parents('.user-ad').slideUp();
     });
 
 
