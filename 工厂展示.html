@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="./js/flexible.min.js"></script>
+    <link rel="stylesheet" href="./js/vue/index.css"/>
+    <link rel="stylesheet" href="./css/factory/index.css">
+</head>
+<body>
+<div id="app">
+    <div class="pcb-head row bothSide verCenter">
+        <a class="logo">
+            <img src="./images/index/logo.png" alt="">
+        </a>
+        <div class="bar row verCenter">
+            <div class="row verCenter">
+                <a href="javascript:;" class="link">注册</a>
+                <a href="javascript:;" class="line">|</a>
+                <a href="javascript:;" class="link">登录</a>
+            </div>
+            <div class="toggle" @click="show=!show">
+                <i class="iconfont iconicondanseshouji2"></i>
+            </div>
+        </div>
+    </div>
+    <div class="factory-banner">
+        <p class="t1">猎板极速PCB智慧工厂</p>
+        <p class="t2">自主研发智能生产管理系统，在线计价下单， 提升生产效率，缩短交期</p>
+    </div>
+    <div class="factory-content">
+        <div class="section color1">
+            <div class="tit">
+                <p class="t1"><span>东台钻机</span></p>
+            </div>
+            <p class="txt">采用台湾东台钻机，全线性马达，高负荷、高精度滚珠螺杆，定位精度±0.05mm，自钻孔精度±0.018mm，自动刀径/断刀检测，全面杜绝槽孔歪斜/漏钻孔/孔径不符等问题</p>
+            <ul class="list clr">
+                <li>
+                    <img src="./images/factory/1.png" alt=""/>
+                    <p>高速六轴钻孔机</p>
+                </li>
+                <li>
+                    <img src="./images/factory/2.png" alt=""/>
+                    <p>东台钻机</p>
+                </li>
+                <li>
+                    <img src="./images/factory/3.png" alt=""/>
+                    <p>双头钻孔机</p>
+                </li>
+                <li>
+                    <img src="./images/factory/4.png" alt=""/>
+                    <p>全进口西风主轴</p>
+                </li>
+            </ul>
+        </div>
+        <div class="section color2">
+            <div class="tit">
+                <p class="t1"><span>竞铭沉铜电镀</span></p>
+            </div>
+            <p class="txt">采用台湾竞铭品牌，全自动沉铜电镀设备，深孔能力13：1，镀铜均匀性达97%以上</p>
+            <ul class="list clr">
+                <li>
+                    <img src="./images/factory/5.png" alt=""/>
+                    <p>电镀线</p>
+                </li>
+                <li>
+                    <img src="./images/factory/6.png" alt=""/>
+                    <p>沉铜线</p>
+                </li>
+                <li>
+                    <img src="./images/factory/7.png" alt=""/>
+                    <p>沉铜全线自动添加</p>
+                </li>
+                <li>
+                    <img src="./images/factory/8.png" alt=""/>
+                    <p>沉铜线细节</p>
+                </li>
+            </ul>
+        </div>
+        <div class="section color2">
+            <div class="tit">
+                <p class="t1"><span>DES水平处理线</span></p>
+            </div>
+            <p class="txt">采用线路显影+真空蚀刻+退膜联机生产模式，有效提升连贯作业，降低残膜、残铜、蚀刻不净</p>
+            <ul class="list clr">
+                <li>
+                    <img src="./images/factory/9.png" alt=""/>
+                    <p>全自动真空蚀刻</p>
+                </li>
+                <li>
+                    <img src="./images/factory/10.png" alt=""/>
+                    <p>传统磨刷+精细喷砂双效处理</p>
+                </li>
+                <li>
+                    <img src="./images/factory/11.png" alt=""/>
+                    <p>全自动DES联线</p>
+                </li>
+                <li>
+                    <img src="./images/factory/12.png" alt=""/>
+                    <p>线路前处理</p>
+                </li>
+            </ul>
+        </div>
+        <div class="section color2">
+            <div class="tit">
+                <p class="t1"><span>阻焊字符</span></p>
+            </div>
+            <p class="txt">万级净化无尘室+全新文字喷涂机，有效规避板面垃圾、传统网印、文字模糊、印偏问题</p>
+            <ul class="list clr">
+                <li>
+                    <img src="./images/factory/13.png" alt=""/>
+                    <p>多级分段烘烤</p>
+                </li>
+                <li>
+                    <img src="./images/factory/14.png" alt=""/>
+                    <p>阻焊丝印</p>
+                </li>
+                <li>
+                    <img src="./images/factory/15.png" alt=""/>
+                    <p>图形曝光</p>
+                </li>
+                <li>
+                    <img src="./images/factory/16.png" alt=""/>
+                    <p>阻焊超声波显影</p>
+                </li>
+            </ul>
+        </div>
+        <div class="section color2">
+            <div class="tit">
+                <p class="t1"><span>成型</span></p>
+            </div>
+            <p class="txt">为符合客户要求的出货尺寸，对PCB板进行CNC锣边或V-CUT，工艺能力满足0.10mm以内</p>
+            <ul class="list clr">
+                <li>
+                    <img src="./images/factory/17.png" alt=""/>
+                    <p>CNC锣板成型</p>
+                </li>
+                <li>
+                    <img src="./images/factory/18.png" alt=""/>
+                    <p>CNC锣板成型</p>
+                </li>
+                <li>
+                    <img src="./images/factory/19.png" alt=""/>
+                    <p>CNC锣板成型</p>
+                </li>
+                <li>
+                    <img src="./images/factory/20.png" alt=""/>
+                    <p>全自动六刀V-CUT</p>
+                </li>
+            </ul>
+        </div>
+        <div class="section color2">
+            <div class="tit">
+                <p class="t1"><span>高速飞针测试设备</span></p>
+            </div>
+            <p class="txt">出货前采用自动电测或飞针测试，杜绝一切开路、短路，确保每块板都是良品</p>
+            <ul class="list clr">
+                <li>
+                    <img src="./images/factory/17.png" alt=""/>
+                    <p>高速飞针测试设备</p>
+                </li>
+                <li>
+                    <img src="./images/factory/18.png" alt=""/>
+                    <p>高速飞针测试设备</p>
+                </li>
+                <li>
+                    <img src="./images/factory/19.png" alt=""/>
+                    <p>高速飞针测试设备</p>
+                </li>
+                <li>
+                    <img src="./images/factory/20.png" alt=""/>
+                    <p>高速飞针测试设备</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pcb-footer">
+        <div class="kefu row bothSide verCenter">
+            <div class="row verCenter"><i class="iconfont iconicondanseshouji5"></i>
+                <div><p class="t1">7*24小时</p>
+                    <p class="t1"> 客服在线</p></div>
+            </div>
+            <div class="tel row rowCenter verCenter">0571 - 86609386</div>
+        </div>
+        <p class="title row rowCenter verCenter">
+            <a href="javascript:;" class="link">猎芯网</a>
+            <a href="javascript:;" class="line">|</a>
+            <a href="javascript:;" class="link">电脑端</a>
+        </p>
+        <p class="t1">@ 2019-2020 pcbhunt.com All right reserved.</p>
+        <p class="t1">版权所有:杭州猎板网络科技有限公司</p>
+        <p class="t1">工信部备案号：浙ICP备20015009号-1</p>
+    </div>
+    <div class="shade-nav" :class="{'show':show}">
+        <i class="arrow"></i>
+        <ul class="column">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">会员中心</a></li>
+            <li><a href="javascript:;">快速计价</a></li>
+            <li><a href="javascript:;">购物车</a></li>
+            <li><a href="javascript:;">邀请注册</a></li>
+            <li><a href="javascript:;">关于猎板</a></li>
+        </ul>
+    </div>
+    <!--导航栏-->
+    <ul class="nav row  avarage verCenter">
+        <li class="curr">
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing"></i>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing1"></i>
+                <p>订单</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing2"></i>
+                <p>计价</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing3"></i>
+                <p>消息</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing4"></i>
+                <p>我的</p>
+            </a>
+        </li>
+    </ul>
+    <!--导航栏end-->
+</div>
+
+<script src="./js/vue/vue.min.js"></script>
+<script src="./js/vue/axios.min.js"></script>
+<script src="./js/vue/vant.min.js"></script>
+<script src="./js/util.js"></script>
+<script>
+
+  new Vue({
+    el: '#app',
+    data: {
+      show: false
+    },
+    created() {
+    },
+    methods: {}
+  });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+@import "../common/base.less";
+
+.abouts-banner {
+  margin-top: 44px;
+  width: 100%;
+  height: 169px;
+  background: url("../../images/abouts/1.png") no-repeat center;
+  background-size: cover;
+  text-align: center;
+
+  .t1 {
+    padding-top: 34px;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .t2 {
+    width: 6.93rem;
+    font-size: 13px;
+    color: #ffffff;
+    margin: 10px auto 0;
+  }
+}
+
+.abouts-content {
+  position: relative;
+  padding-bottom: 32px;
+  top: -7px;
+
+  .section {
+    padding: 0.53rem 0.48rem 0 0.48rem;
+    border-radius: 8px 8px 0px 0px;
+
+    &.color1 {
+      background: #ffffff;
+    }
+
+    &.color2 {
+      background: linear-gradient(180deg, #E9F2F5 0%, #FFFFFF 100%);
+    }
+
+    .title {
+      padding-bottom: 12px;
+      border-bottom: 1px solid #BFDCE6;
+      margin-bottom: 0.39rem;
+
+      .t1 {
+        font-size: 14px;
+        color: #2E3033;
+        font-weight: bold;
+        margin-bottom: 0.13rem;
+      }
+
+      .t2 {
+        font-size: 12px;
+        color: #8a9fa6;
+      }
+    }
+
+    .text {
+      padding-top: 0.39rem;
+      font-size: 12px;
+      color: #556266;
+      line-height: 20px;
+
+      p {
+        margin-bottom: 22px;
+      }
+    }
+
+    .course {
+      padding-left: 29px;
+
+      border-left: 1px dashed #BFDCE6;
+      li {
+        position: relative;
+        margin-bottom: 14px;
+        &:after{
+          width: 12px;
+          height: 12px;
+          background: #FFFFFF;
+          border: 2px solid #0860BF;
+          border-radius: 50%;
+          position: absolute;
+          left: -38px;
+          top: 12px;
+          content: '';
+        }
+
+        p {
+          width: 252px;
+          height: 40px;
+          background: #0860BF;
+          border-radius: 3px;
+          line-height: 40px;
+
+          span {
+            padding-left: 12px;
+            padding-right: 24px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+
+          }
+
+          em {
+            font-size: 12px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .advantage{
+      .iconfont{
+        font-size: 64px;
+        color: #0860bf;
+      }
+      .t1{
+        margin-top: 0.4rem;
+        font-size: 14px;
+        color: #2e3033;
+        font-weight: bold;
+      }
+    }
+  }
+}

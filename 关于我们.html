@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="./js/flexible.min.js"></script>
+    <link rel="stylesheet" href="./js/vue/index.css"/>
+    <link rel="stylesheet" href="./css/abouts/index.css">
+</head>
+<body>
+<div id="app">
+    <div class="pcb-head row bothSide verCenter">
+        <a class="logo">
+            <img src="./images/index/logo.png" alt="">
+        </a>
+        <div class="bar row verCenter">
+            <div class="row verCenter">
+                <a href="javascript:;" class="link">注册</a>
+                <a href="javascript:;" class="line">|</a>
+                <a href="javascript:;" class="link">登录</a>
+            </div>
+            <div class="toggle" @click="show=!show">
+                <i class="iconfont iconicondanseshouji2"></i>
+            </div>
+        </div>
+    </div>
+    <div class="abouts-banner"></div>
+    <div class="abouts-content">
+        <div class="section color1">
+            <div class="title">
+                <p class="t1">公司介绍</p>
+                <p class="t2">Enterprise introduction</p>
+            </div>
+            <div class="text">
+                <p>杭州猎板网络科技有限公司总部设在浙江省杭州市拱墅区万达广场，是一家专注于PCB极速打样的智慧工厂，由猎芯网投资控股（猎芯网 ICHUNT.COM，是中国领先电子元器件B2B交易服务平台，先后获得经纬中国、微光、华诺、京东战投、海通证券等多轮融资）。</p>
+                <p>猎板重构了传统PCB工厂生产管理模式，以互联网+工业4.0技术为依托，利用大数据、云计算、物联网等新技术，全面实现了线上线下协同生产。其利用数据化技术自主研发的PCB在线计价、自助下单、上传文件、查看订单进度等生产管理系统，缩短了传统生产交期，为用户提供1-8层PCB板24小时极速打样、48小时小批量生产服务。</p>
+                <p>猎板极速PCB智慧工厂年产能25万平方米，占地面积数万平方米，核心设备数量160+，员工人数200+，多层线路板工程师50+。猎板深知产品的交期和品质的重要性，坚持使用行业一线品牌设备 (台湾东台钻机、台湾竞铭自动沉铜、台湾竞铭电镀线等)，坚持优质的设备工艺配置，选用真空蚀刻、高解析光源灯组、进口西风精铣主轴，坚持从源头保障品质,板材选用建滔A级板，油墨选用太阳、广信，铜选用铜陵有色，锡选用云南锡业，在保障品质的同时实现样板24小时、小批量48小时极速交货。工厂严格按照6S生产管理规范，PCB出货100%满足IPC II级标准，并敢于承诺质保一年，品质问题“一赔十”。 </p>
+                <p>猎板以“让电子制造更高效”为企业使命，秉承“ 诚信为本，质量第一”的发展理念,为用户提供更优质的PCB定制服务。我们承诺：不流入不良品、不生产不良品、不流出不良品，用心做好每一块板。</p>
+            </div>
+        </div>
+        <div class="section color2">
+            <div class="title">
+                <p class="t1">猎芯集团融资历程</p>
+                <p class="t2">Financing</p>
+            </div>
+            <ul class="course">
+                <li>
+                    <p><span>2015.11.23</span><em>经纬PreA轮融资</em></p>
+                </li>
+                <li>
+                    <p><span>2016.05.10</span><em>微光+经纬A轮融资</em></p>
+                </li>
+                <li>
+                    <p><span>2016.12.20</span><em>华诺A+轮融资</em></p>
+                </li>
+                <li>
+                    <p><span>2017.12.26</span><em>京东战投B轮融资</em></p>
+                </li>
+                <li>
+                    <p><span>2018.09.26</span><em>海通证券B+轮融资</em></p>
+                </li>
+            </ul>
+        </div>
+        <div class="section color2">
+            <div class="title">
+                <p class="t1">智造优势</p>
+                <p class="t2">Advantage</p>
+            </div>
+            <ul class="advantage row">
+                <li>
+                    <i class="iconfont iconicondanseshouji21"></i>
+                    <p class="t1">交期快</p>
+                    <div class="txt">
+                        <p>·单双面板24小时出货</p>
+                        <p>·小批量48小时出货</p>
+                        <p>·顺丰速运，次日达</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconfont iconicondanseshouji12"></i>
+                    <p class="t1">品质好</p>
+                    <div class="txt">
+                        <p>·采用建滔A级板材</p>
+                        <p>·采用广信油墨</p>
+                        <p>·100%飞针AOI测试</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconfont iconicondanseshouji31"></i>
+                    <p class="t1">高性价比</p>
+                    <div class="txt">
+                        <p>·单双面板打样30元/款</p>
+                        <p>·免加急费</p>
+                        <p>·普通BGA免费</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconfont iconicondanseshouji21"></i>
+                    <p class="t1">服务好</p>
+                    <div class="txt">
+                        <p>·专业客服7*24小时服务</p>
+                        <p>·全程跟进服务</p>
+                        <p>·耐心、细心、专业</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pcb-footer">
+        <div class="kefu row bothSide verCenter">
+            <div class="row verCenter"><i class="iconfont iconicondanseshouji5"></i>
+                <div><p class="t1">7*24小时</p>
+                    <p class="t1"> 客服在线</p></div>
+            </div>
+            <div class="tel row rowCenter verCenter">0571 - 86609386</div>
+        </div>
+        <p class="title row rowCenter verCenter">
+            <a href="javascript:;" class="link">猎芯网</a>
+            <a href="javascript:;" class="line">|</a>
+            <a href="javascript:;" class="link">电脑端</a>
+        </p>
+        <p class="t1">@ 2019-2020 pcbhunt.com All right reserved.</p>
+        <p class="t1">版权所有:杭州猎板网络科技有限公司</p>
+        <p class="t1">工信部备案号：浙ICP备20015009号-1</p>
+    </div>
+    <div class="shade-nav" :class="{'show':show}">
+        <i class="arrow"></i>
+        <ul class="column">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">会员中心</a></li>
+            <li><a href="javascript:;">快速计价</a></li>
+            <li><a href="javascript:;">购物车</a></li>
+            <li><a href="javascript:;">邀请注册</a></li>
+            <li><a href="javascript:;">关于猎板</a></li>
+        </ul>
+    </div>
+    <!--导航栏-->
+    <ul class="nav row  avarage verCenter">
+        <li class="curr">
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing"></i>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing1"></i>
+                <p>订单</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing2"></i>
+                <p>计价</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing3"></i>
+                <p>消息</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing4"></i>
+                <p>我的</p>
+            </a>
+        </li>
+    </ul>
+    <!--导航栏end-->
+</div>
+
+<script src="./js/vue/vue.min.js"></script>
+<script src="./js/vue/axios.min.js"></script>
+<script src="./js/vue/vant.min.js"></script>
+<script src="./js/util.js"></script>
+<script>
+
+  new Vue({
+    el: '#app',
+    data: {
+      show: false
+    },
+    created() {
+    },
+    methods: {}
+  });
+
+</script>
+</body>
+</html>
