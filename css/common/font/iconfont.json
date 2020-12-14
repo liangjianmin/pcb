@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "18801862",
+      "name": "icon／单色／手机",
+      "font_class": "icondanseshouji6",
+      "unicode": "e6d8",
+      "unicode_decimal": 59096
+    },
+    {
+      "icon_id": "18801863",
+      "name": "icon／单色／手机 (1)",
+      "font_class": "icondanseshouji13",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
+    },
+    {
       "icon_id": "18796711",
       "name": "定位",
       "font_class": "dingwei",

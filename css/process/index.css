@@ -476,90 +476,111 @@ body {
   color: #0081d2;
   margin-left: 0.16rem;
 }
-.factory-banner {
+.process {
   margin-top: 44px;
+}
+.process .process-banner {
+  text-align: center;
   width: 100%;
   height: 169px;
   background: url("../../images/factory/bg.png") no-repeat center;
   background-size: cover;
-  text-align: center;
 }
-.factory-banner .t1 {
+.process .process-banner .t1 {
   padding-top: 34px;
   font-size: 24px;
   color: #ffffff;
   font-weight: bold;
 }
-.factory-banner .t2 {
+.process .process-banner .t2 {
   width: 6.93rem;
   font-size: 13px;
   color: #ffffff;
   margin: 10px auto 0;
 }
-.factory-content {
+.process .process-section {
   position: relative;
-  padding-bottom: 32px;
+  padding-bottom: 1.5rem;
   top: -7px;
-}
-.factory-content .section {
-  padding: 0.64rem 0.48rem 0 0.48rem;
   border-radius: 8px 8px 0px 0px;
-}
-.factory-content .section.color1 {
   background: #ffffff;
 }
-.factory-content .section.color2 {
-  background: linear-gradient(180deg, #E9F2F5 0%, #FFFFFF 100%);
+.process .process-section .list {
+  padding-left: 0.48rem;
 }
-.factory-content .section .tit {
-  padding-bottom: 10px;
+.process .process-section .list li {
+  padding-right: 0.48rem;
   border-bottom: 1px solid #BFDCE6;
 }
-.factory-content .section .tit .t1 {
+.process .process-section .list li .open {
+  display: none;
+}
+.process .process-section .list li .open .dl-box dd {
+  padding: 0.39rem 0.48rem 0.36rem 0;
+  border-bottom: 1px solid #BFDCE6;
+  white-space: nowrap;
+}
+.process .process-section .list li .open .dl-box dd .t1 {
+  font-size: 14px;
+  color: #2e3033;
+  font-weight: bold;
+  margin-bottom: 0.32rem;
+}
+.process .process-section .list li .open .dl-box dd .t2 {
+  line-height: 17px;
+}
+.process .process-section .list li .open .dl-box dd .t2 span {
+  font-size: 12px;
+  color: #8a9fa6;
+}
+.process .process-section .list li .open .dl-box dd .t2 em {
+  font-size: 12px;
+  color: #556266;
+  width: 7rem;
+  white-space: normal;
+}
+.process .process-section .list li .open .dl-box dd .t2 em.color1 {
+  color: #0860bf;
+}
+.process .process-section .list li .open .hide-btn {
+  font-size: 12px;
+  color: #0860bf;
+  display: block;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+.process .process-section .list li .shrink {
+  height: 50px;
+}
+.process .process-section .list li .shrink span {
   font-size: 16px;
   color: #2e3033;
   font-weight: bold;
 }
-.factory-content .section .tit .t1 span {
-  position: relative;
+.process .process-section .list li .shrink .iconicondanseshouji6 {
+  font-size: 18px;
+  color: #acc6cf;
 }
-.factory-content .section .tit .t1 span:after {
-  position: absolute;
-  left: 0;
-  bottom: -11px;
-  width: 100%;
-  height: 5px;
-  background: #0860BF;
-  border-radius: 2px;
-  content: '';
+.process .process-section .list li .shrink .iconicondanseshouji13 {
+  font-size: 18px;
+  color: #0860bf;
+  display: none;
 }
-.factory-content .section .txt {
-  font-size: 12px;
-  color: #8a9fa6;
-  line-height: 17px;
-  margin-top: 0.37rem;
+.process .process-section .list li.curr {
+  border-bottom: none;
 }
-.factory-content .section .list {
-  padding-top: 0.37rem;
-  padding-bottom: 10px;
+.process .process-section .list li.curr .open {
+  display: block;
 }
-.factory-content .section .list li {
-  float: left;
-  width: 4.36rem;
-  margin-right: 0.32rem;
+.process .process-section .list li.curr .shrink span {
+  font-size: 16px;
+  color: #0860bf;
+  font-weight: bold;
 }
-.factory-content .section .list li:nth-of-type(2n) {
-  margin-right: 0;
+.process .process-section .list li.curr .shrink .iconicondanseshouji13 {
+  display: block;
 }
-.factory-content .section .list li img {
-  width: 100%;
-  height: 107px;
-}
-.factory-content .section .list li p {
-  height: 40px;
-  line-height: 40px;
-  font-size: 11px;
-  color: #556266;
-  text-align: center;
+.process .process-section .list li.curr .shrink .iconicondanseshouji6 {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */

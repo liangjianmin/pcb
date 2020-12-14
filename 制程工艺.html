@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="./js/flexible.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./js/vue/index.css"/>
+    <link rel="stylesheet" href="./css/process/index.css">
+</head>
+<body>
+<div id="app">
+    <div class="pcb-head row bothSide verCenter">
+        <a class="logo">
+            <img src="./images/index/logo.png" alt="">
+        </a>
+        <a class="fask-key row verCenter">
+            <i class="iconfont iconjuxing5"></i>
+            <span>快速计价</span>
+        </a>
+        <div class="bar row verCenter" style="display: none">
+            <div class="row verCenter">
+                <a href="javascript:;" class="link">注册</a>
+                <a href="javascript:;" class="line">|</a>
+                <a href="javascript:;" class="link">登录</a>
+            </div>
+            <div class="toggle" @click="show=!show">
+                <i class="iconfont iconicondanseshouji2"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="process">
+        <div class="process-banner">
+            <p class="t1">猎板极速PCB智慧工厂</p>
+            <p class="t2">自主研发智能生产管理系统，在线计价下单， 提升生产效率，缩短交期</p>
+        </div>
+        <div class="process-section">
+            <ul class="list">
+                <li>
+                    <div class="shrink row bothSide verCenter">
+                        <span>PCB Specifications</span>
+                        <i class="iconfont iconicondanseshouji6"></i>
+                        <i class="iconfont iconicondanseshouji13"></i>
+                    </div>
+                    <div class="open">
+                        <dl class="dl-box">
+                            <dd>
+                                <p class="t1">·Layer count</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>1,2,4,6 layers</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">The number of copper layers in the board.</em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Controlled Impedance</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>4/6 layer, default layer stack-up</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t color1">Controlled Impedance PCB Layer Stackup JLCPCB Impedance Calculator</em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Material </p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>FR-4</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t color1">FR-4 Standard Tg 130-140/ Tg 155</em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Dielectric constant </p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>4.5(double-side PCB)</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">
+                                        7628 structure 4.6<br/>
+                                        2313 structure 4.05<br/>
+                                        2116 structure 4.25<br/>
+                                    </em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Max. Dimension</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>400x500mm</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">The maximum dimension JLCPCB can accept</em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Dimension Tolerance</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>±0.2mm</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">±0.2mm for CNC routing, and ±0.4mm for V- scoring </em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Board Thickness</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>0.4/0.6/0.8/1.0/1.2/1.6/2.0mm</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">The thickness of finished board.</em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Thickness Tolerance( Thickness≥1.0mm)</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>400x500mm</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">e.g. For the 1.6mm board thickness, the finished board thickness ranges from 1.44mm(T-1.6×10%) to 1.76mm(T+1.6×10%) </em>
+                                </p>
+                            </dd>
+                        </dl>
+                        <a href="javascript:;" class="hide-btn">隐藏</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="shrink row bothSide verCenter">
+                        <span>Drill/Hole Size</span>
+                        <i class="iconfont iconicondanseshouji6"></i>
+                        <i class="iconfont iconicondanseshouji13"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="shrink row bothSide verCenter">
+                        <span>Minimum Annular Ring</span>
+                        <i class="iconfont iconicondanseshouji6"></i>
+                        <i class="iconfont iconicondanseshouji13"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="shrink row bothSide verCenter">
+                        <span>Minimum clearance</span>
+                        <i class="iconfont iconicondanseshouji6"></i>
+                        <i class="iconfont iconicondanseshouji13"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="shrink row bothSide verCenter">
+                        <span>Minimum trace width and spacing</span>
+                        <i class="iconfont iconicondanseshouji6"></i>
+                        <i class="iconfont iconicondanseshouji13"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="shrink row bothSide verCenter">
+                        <span>BGA</span>
+                        <i class="iconfont iconicondanseshouji6"></i>
+                        <i class="iconfont iconicondanseshouji13"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="shrink row bothSide verCenter">
+                        <span>Solder Mask</span>
+                        <i class="iconfont iconicondanseshouji6"></i>
+                        <i class="iconfont iconicondanseshouji13"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="shrink row bothSide verCenter">
+                        <span>Legend</span>
+                        <i class="iconfont iconicondanseshouji6"></i>
+                        <i class="iconfont iconicondanseshouji13"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="shrink row bothSide verCenter">
+                        <span>Board Outlines</span>
+                        <i class="iconfont iconicondanseshouji6"></i>
+                        <i class="iconfont iconicondanseshouji13"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="shrink row bothSide verCenter">
+                        <span>Panelization</span>
+                        <i class="iconfont iconicondanseshouji6"></i>
+                        <i class="iconfont iconicondanseshouji13"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="pcb-footer">
+        <div class="kefu row bothSide verCenter">
+            <div class="row verCenter"><i class="iconfont iconicondanseshouji5"></i>
+                <div><p class="t1">7*24小时</p>
+                    <p class="t1"> 客服在线</p></div>
+            </div>
+            <div class="tel row rowCenter verCenter">0571 - 86609386</div>
+        </div>
+        <p class="title row rowCenter verCenter">
+            <a href="javascript:;" class="link">猎芯网</a>
+            <a href="javascript:;" class="line">|</a>
+            <a href="javascript:;" class="link">电脑端</a>
+        </p>
+        <p class="t1">@ 2019-2020 pcbhunt.com All right reserved.</p>
+        <p class="t1">版权所有:杭州猎板网络科技有限公司</p>
+        <p class="t1">工信部备案号：浙ICP备20015009号-1</p>
+    </div>
+    <div class="shade-nav" :class="{'show':show}">
+        <i class="arrow"></i>
+        <ul class="column">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">会员中心</a></li>
+            <li><a href="javascript:;">快速计价</a></li>
+            <li><a href="javascript:;">购物车</a></li>
+            <li><a href="javascript:;">邀请注册</a></li>
+            <li><a href="javascript:;">关于猎板</a></li>
+        </ul>
+    </div>
+    <!--导航栏-->
+    <ul class="nav row  avarage verCenter">
+        <li class="curr">
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing"></i>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing1"></i>
+                <p>订单</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing2"></i>
+                <p>计价</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing3"></i>
+                <p>消息</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing4"></i>
+                <p>我的</p>
+            </a>
+        </li>
+    </ul>
+    <!--导航栏end-->
+</div>
+
+<script src="./js/vue/vue.min.js"></script>
+<script src="./js/vue/axios.min.js"></script>
+<script src="./js/vue/vant.min.js"></script>
+<script src="./js/util.js"></script>
+<script>
+
+  $(function () {
+    $(document).on('click', '.process-section .list li', function () {
+      if ($(this).hasClass('curr')) {
+        $(this).removeClass('curr');
+      } else {
+        $(this).addClass('curr');
+      }
+    });
+  })
+
+</script>
+</body>
+</html>
