@@ -73,10 +73,12 @@
       padding-left: 29px;
 
       border-left: 1px dashed #BFDCE6;
+
       li {
         position: relative;
         margin-bottom: 14px;
-        &:after{
+
+        &:after {
           width: 12px;
           height: 12px;
           background: #FFFFFF;
@@ -112,16 +114,87 @@
       }
     }
 
-    .advantage{
-      .iconfont{
-        font-size: 64px;
-        color: #0860bf;
+    .advantage {
+      flex-wrap: wrap;
+
+      li {
+        flex: 0 0 50%;
+        text-align: center;
+        margin-bottom: 0.48rem;
+
+        .i1 {
+          width: 64px;
+          height: 64px;
+          background: url("../../images/abouts/a.png") no-repeat center;
+          background-size: cover;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .i2 {
+          width: 64px;
+          height: 64px;
+          background: url("../../images/abouts/b.png") no-repeat center;
+          background-size: cover;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .i3 {
+          width: 64px;
+          height: 64px;
+          background: url("../../images/abouts/c.png") no-repeat center;
+          background-size: cover;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .i4 {
+          width: 64px;
+          height: 64px;
+          background: url("../../images/abouts/d.png") no-repeat center;
+          background-size: cover;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .t1 {
+          margin-top: 0.4rem;
+          font-size: 14px;
+          color: #2e3033;
+          font-weight: bold;
+        }
+
+        .txt {
+          margin-top: 0.19rem;
+
+          p {
+            font-size: 12px;
+            color: #8a9fa6;
+          }
+        }
       }
-      .t1{
-        margin-top: 0.4rem;
-        font-size: 14px;
-        color: #2e3033;
-        font-weight: bold;
+    }
+
+    .team{
+      flex-wrap: wrap;
+      li{
+        flex: 0 0 4.36rem;
+        margin-bottom: 0.37rem;
+        margin-right: 0.32rem;
+        &:nth-of-type(2n){
+          margin-right: 0;
+        }
+        img{
+          width: 100%;
+          height: 107px;
+        }
+        p{
+          font-size: 11px;
+          color: #556266;
+          margin-top: 0.27rem;
+          text-align: center;
+        }
       }
     }
   }

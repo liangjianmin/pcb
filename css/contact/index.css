@@ -470,174 +470,111 @@ body {
   color: #0081d2;
   margin-left: 0.16rem;
 }
-.abouts-banner {
+.contact-banner {
   margin-top: 44px;
   width: 100%;
   height: 169px;
-  background: url("../../images/abouts/1.png") no-repeat center;
+  background: url("../../images/contact/1.png") no-repeat center;
   background-size: cover;
   text-align: center;
 }
-.abouts-banner .t1 {
-  padding-top: 34px;
-  font-size: 24px;
-  color: #ffffff;
-  font-weight: bold;
-}
-.abouts-banner .t2 {
-  width: 6.93rem;
-  font-size: 13px;
-  color: #ffffff;
-  margin: 10px auto 0;
-}
-.abouts-content {
+.contact-content {
   position: relative;
   padding-bottom: 32px;
   top: -7px;
 }
-.abouts-content .section {
+.contact-content .section {
   padding: 0.53rem 0.48rem 0 0.48rem;
   border-radius: 8px 8px 0px 0px;
 }
-.abouts-content .section.color1 {
+.contact-content .section.color1 {
   background: #ffffff;
 }
-.abouts-content .section.color2 {
+.contact-content .section.color2 {
   background: linear-gradient(180deg, #E9F2F5 0%, #FFFFFF 100%);
 }
-.abouts-content .section .title {
+.contact-content .section .title {
   padding-bottom: 12px;
   border-bottom: 1px solid #BFDCE6;
   margin-bottom: 0.39rem;
 }
-.abouts-content .section .title .t1 {
+.contact-content .section .title .t1 {
   font-size: 14px;
   color: #2E3033;
   font-weight: bold;
   margin-bottom: 0.13rem;
 }
-.abouts-content .section .title .t2 {
+.contact-content .section .title .t2 .iconfont {
+  font-size: 14px;
+  color: #8a9fa6;
+  margin-right: 0.16rem;
+}
+.contact-content .section .title .t2 span {
   font-size: 12px;
   color: #8a9fa6;
 }
-.abouts-content .section .text {
-  padding-top: 0.39rem;
+.contact-content .section .title .pic {
+  margin-top: 0.27rem;
+  margin-bottom: 0.47rem;
+}
+.contact-content .section .title .pic img {
+  width: 100%;
+}
+.contact-content .section .type1 {
+  margin-bottom: 0.6rem;
+}
+.contact-content .section .type1 li {
+  height: 58px;
+  border: 1px solid #BFDCE6;
+  margin-bottom: 0.27rem;
+}
+.contact-content .section .type1 li .iconfont {
+  font-size: 26px;
+  color: #0860bf;
+  margin-left: 0.53rem;
+}
+.contact-content .section .type1 li span {
   font-size: 12px;
   color: #556266;
-  line-height: 20px;
+  margin-left: 0.49rem;
+  margin-right: 0.89rem;
 }
-.abouts-content .section .text p {
-  margin-bottom: 22px;
-}
-.abouts-content .section .course {
-  padding-left: 29px;
-  border-left: 1px dashed #BFDCE6;
-}
-.abouts-content .section .course li {
-  position: relative;
-  margin-bottom: 14px;
-}
-.abouts-content .section .course li:after {
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-  border: 2px solid #0860BF;
-  border-radius: 50%;
-  position: absolute;
-  left: -38px;
-  top: 12px;
-  content: '';
-}
-.abouts-content .section .course li p {
-  width: 252px;
-  height: 40px;
-  background: #0860BF;
-  border-radius: 3px;
-  line-height: 40px;
-}
-.abouts-content .section .course li p span {
-  padding-left: 12px;
-  padding-right: 24px;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 14px;
-}
-.abouts-content .section .course li p em {
-  font-size: 12px;
-  color: #ffffff;
-}
-.abouts-content .section .advantage {
-  flex-wrap: wrap;
-}
-.abouts-content .section .advantage li {
-  flex: 0 0 50%;
-  text-align: center;
-  margin-bottom: 0.48rem;
-}
-.abouts-content .section .advantage li .i1 {
-  width: 64px;
-  height: 64px;
-  background: url("../../images/abouts/a.png") no-repeat center;
-  background-size: cover;
-  display: block;
-  margin: 0 auto;
-}
-.abouts-content .section .advantage li .i2 {
-  width: 64px;
-  height: 64px;
-  background: url("../../images/abouts/b.png") no-repeat center;
-  background-size: cover;
-  display: block;
-  margin: 0 auto;
-}
-.abouts-content .section .advantage li .i3 {
-  width: 64px;
-  height: 64px;
-  background: url("../../images/abouts/c.png") no-repeat center;
-  background-size: cover;
-  display: block;
-  margin: 0 auto;
-}
-.abouts-content .section .advantage li .i4 {
-  width: 64px;
-  height: 64px;
-  background: url("../../images/abouts/d.png") no-repeat center;
-  background-size: cover;
-  display: block;
-  margin: 0 auto;
-}
-.abouts-content .section .advantage li .t1 {
-  margin-top: 0.4rem;
+.contact-content .section .type1 li em {
   font-size: 14px;
   color: #2e3033;
   font-weight: bold;
 }
-.abouts-content .section .advantage li .txt {
-  margin-top: 0.19rem;
+.contact-content .section .type2 {
+  margin-bottom: 0.6rem;
 }
-.abouts-content .section .advantage li .txt p {
+.contact-content .section .type2 li {
+  padding: 0.29rem 0 0.37rem 0;
+  border: 1px solid #BFDCE6;
+  margin-bottom: 0.27rem;
+}
+.contact-content .section .type2 li .iconfont {
+  font-size: 26px;
+  color: #0860bf;
+  margin-left: 0.53rem;
+}
+.contact-content .section .type2 li .text {
+  margin-left: 0.49rem;
+}
+.contact-content .section .type2 li .text .t1 {
+  font-size: 14px;
+  color: #2e3033;
+  font-weight: bold;
+  margin-bottom: 0.32rem;
+}
+.contact-content .section .type2 li .text .t2 {
+  margin-bottom: 0.13rem;
+}
+.contact-content .section .type2 li .text .t2 em {
   font-size: 12px;
   color: #8a9fa6;
 }
-.abouts-content .section .team {
-  flex-wrap: wrap;
-}
-.abouts-content .section .team li {
-  flex: 0 0 4.36rem;
-  margin-bottom: 0.37rem;
-  margin-right: 0.32rem;
-}
-.abouts-content .section .team li:nth-of-type(2n) {
-  margin-right: 0;
-}
-.abouts-content .section .team li img {
-  width: 100%;
-  height: 107px;
-}
-.abouts-content .section .team li p {
-  font-size: 11px;
+.contact-content .section .type2 li .text .t2 span {
+  font-size: 12px;
   color: #556266;
-  margin-top: 0.27rem;
-  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

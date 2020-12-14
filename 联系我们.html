@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="./js/flexible.min.js"></script>
+    <link rel="stylesheet" href="./js/vue/index.css"/>
+    <link rel="stylesheet" href="./css/contact/index.css">
+</head>
+<body>
+<div id="app">
+    <div class="pcb-head row bothSide verCenter">
+        <a class="logo">
+            <img src="./images/index/logo.png" alt="">
+        </a>
+        <a class="fask-key row verCenter">
+            <i class="iconfont iconjuxing5"></i>
+            <span>快速计价</span>
+        </a>
+        <div class="bar row verCenter" style="display: none">
+            <div class="row verCenter">
+                <a href="javascript:;" class="link">注册</a>
+                <a href="javascript:;" class="line">|</a>
+                <a href="javascript:;" class="link">登录</a>
+            </div>
+            <div class="toggle" @click="show=!show">
+                <i class="iconfont iconicondanseshouji2"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-banner"></div>
+    <div class="contact-content">
+        <div class="section color1">
+            <div class="title">
+                <p class="t1">联系我们</p>
+            </div>
+            <ul class="type1">
+                <li class="row verCenter">
+                    <i class="iconfont icondianhua"></i>
+                    <span>服务热线</span>
+                    <em>0571-86609386</em>
+                </li>
+                <li class="row verCenter">
+                    <i class="iconfont iconqq"></i>
+                    <span>在线客服</span>
+                    <em>800183356</em>
+                </li>
+                <li class="row verCenter">
+                    <i class="iconfont iconyouxiang va-m"></i>
+                    <span>联系邮箱</span>
+                    <em>service@pcbhunt.com</em>
+                </li>
+            </ul>
+        </div>
+        <div class="section color2">
+            <div class="title">
+                <p class="t1">打款信息</p>
+            </div>
+            <ul class="type2">
+                <li class="row">
+                    <i class="iconfont iconyinhang"></i>
+                    <div class="text">
+                        <p class="t1">银行账号</p>
+                        <p class="t2"><em>账户名： </em><span>杭州猎板网络科技有限公司</span></p>
+                        <p class="t2"><em>账户： </em><span>3301 0401 6001 4873 429</span></p>
+                        <p class="t2"><em>开户行： </em><span>杭州银行湖墅支行</span></p>
+                    </div>
+                </li>
+                <li class="row">
+                    <i class="iconfont iconzhifubao"></i>
+                    <div class="text">
+                        <p class="t1">支付宝账号</p>
+                        <p class="t2"><em>账户名： </em><span>杭州猎板网络科技有限公司</span></p>
+                        <p class="t2"><em>账户： </em><span> lieban@pcbhunt.com</span></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="section color2">
+            <div class="title" style="border-bottom: none">
+                <p class="t1">猎板（杭州）客户服务中心</p>
+                <p class="t2">
+                    <i class="iconfont icondingwei"></i>
+                    <span>杭州市拱墅区万达广场C座16楼</span>
+                </p>
+                <div class="pic">
+                    <img src="./images/contact/map1.jpg" alt="">
+                </div>
+                <p class="t1">猎板（珠海）生产基地</p>
+                <p class="t2">
+                    <i class="iconfont icondingwei"></i>
+                    <span>珠海市金湾区红旗镇幸福中路8号明宏工业园A厂房</span>
+                </p>
+                <div class="pic">
+                    <img src="./images/contact/map2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pcb-footer">
+        <div class="kefu row bothSide verCenter">
+            <div class="row verCenter"><i class="iconfont iconicondanseshouji5"></i>
+                <div><p class="t1">7*24小时</p>
+                    <p class="t1"> 客服在线</p></div>
+            </div>
+            <div class="tel row rowCenter verCenter">0571 - 86609386</div>
+        </div>
+        <p class="title row rowCenter verCenter">
+            <a href="javascript:;" class="link">猎芯网</a>
+            <a href="javascript:;" class="line">|</a>
+            <a href="javascript:;" class="link">电脑端</a>
+        </p>
+        <p class="t1">@ 2019-2020 pcbhunt.com All right reserved.</p>
+        <p class="t1">版权所有:杭州猎板网络科技有限公司</p>
+        <p class="t1">工信部备案号：浙ICP备20015009号-1</p>
+    </div>
+    <div class="shade-nav" :class="{'show':show}">
+        <i class="arrow"></i>
+        <ul class="column">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">会员中心</a></li>
+            <li><a href="javascript:;">快速计价</a></li>
+            <li><a href="javascript:;">购物车</a></li>
+            <li><a href="javascript:;">邀请注册</a></li>
+            <li><a href="javascript:;">关于猎板</a></li>
+        </ul>
+    </div>
+    <!--导航栏-->
+    <ul class="nav row  avarage verCenter">
+        <li class="curr">
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing"></i>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing1"></i>
+                <p>订单</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing2"></i>
+                <p>计价</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing3"></i>
+                <p>消息</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconjuxing4"></i>
+                <p>我的</p>
+            </a>
+        </li>
+    </ul>
+    <!--导航栏end-->
+</div>
+
+<script src="./js/vue/vue.min.js"></script>
+<script src="./js/vue/axios.min.js"></script>
+<script src="./js/vue/vant.min.js"></script>
+<script src="./js/util.js"></script>
+<script>
+
+  new Vue({
+    el: '#app',
+    data: {
+      show: false
+    },
+    created() {
+    },
+    methods: {}
+  });
+
+</script>
+</body>
+</html>
