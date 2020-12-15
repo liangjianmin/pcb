@@ -1564,6 +1564,16 @@ body {
   color: #ffffff;
   font-weight: bold;
 }
+.section-car .cart-section .car-tip .iconfont {
+  color: #e59115;
+  font-size: 18px;
+  margin-right: 3px;
+}
+.section-car .cart-section .car-tip span {
+  font-size: 12px;
+  color: #e59115;
+  margin-right: 9px;
+}
 .fast {
   height: 120px;
   background: #D2ECFF;
