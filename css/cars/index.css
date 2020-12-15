@@ -1564,6 +1564,9 @@ body {
   color: #ffffff;
   font-weight: bold;
 }
+.section-car .cart-section .car-tip {
+  margin-right: 198px;
+}
 .section-car .cart-section .car-tip .iconfont {
   color: #e59115;
   font-size: 18px;
