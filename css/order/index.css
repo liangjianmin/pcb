@@ -1069,6 +1069,7 @@ body {
   text-align: center;
 }
 .section-order .address-box .delivery {
+  position: relative;
   height: 53px;
   background: #FFFFFF;
   padding-left: 24px;
@@ -1120,6 +1121,14 @@ body {
   border: 1px solid #0A60BE;
   background: #D2ECFF;
   font-weight: bold;
+}
+.section-order .address-box .delivery .back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
 }
 .section-order .order-box {
   margin-top: 8px;
