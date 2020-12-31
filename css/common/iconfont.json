@@ -6,6 +6,13 @@
   "description": "pcb海外版",
   "glyphs": [
     {
+      "icon_id": "19167683",
+      "name": "icon／home／video",
+      "font_class": "iconhomevideo",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
       "icon_id": "19165865",
       "name": "icon／bottom／staff",
       "font_class": "iconbottomstaff",
