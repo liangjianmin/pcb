@@ -1,12 +1,99 @@
 @import '../common/base.less';
 
-.pcbbuy-banner{
-
+.pcbbuy-banner {
   height: 430px;
   background: linear-gradient(180deg, #135CA3 0%, #1D7FB8 100%);
 }
 
-.home-section {
+.pcbbuy-section {
 
+  .pcbbuy-news {
+    padding: 30px 0 40px 0;
+
+    ul {
+      text-align: center;
+
+      li {
+        width: 33.3%;
+        overflow: hidden;
+
+        a {
+          display: block;
+          white-space: nowrap;
+
+          span {
+            font-size: 14px;
+            color: #1180c9;
+            font-weight: bold;
+            vertical-align: middle;
+          }
+
+          b {
+            font-size: 14px;
+            color: #222222;
+            font-weight: bold;
+            margin-left: 6px;
+            margin-right: 6px;
+            vertical-align: middle;
+            font-style: normal;
+          }
+
+          em {
+            width: 310px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            color: #666666;
+            font-style: normal;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.pcbbuy-footer-top {
+  padding: 33px 0;
+  background: #F1F9FF;
+
+  ul {
+    white-space: nowrap;
+
+    li {
+      width: 25%;
+      text-align: center;
+      border-right: 1px solid #D7E8F5;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      .iconfont {
+        font-size: 66px;
+        color: #1180c9;
+      }
+
+      .text {
+        text-align: left;
+        margin-left: 15px;
+
+        .t1 {
+          font-size: 24px;
+          color: #1180c9;
+          font-weight: bold;
+        }
+
+        .t2 {
+          margin-top: 5px;
+          font-size: 14px;
+          color: #222222;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 

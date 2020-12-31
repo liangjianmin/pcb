@@ -6,6 +6,34 @@
   "description": "pcb海外版",
   "glyphs": [
     {
+      "icon_id": "19165865",
+      "name": "icon／bottom／staff",
+      "font_class": "iconbottomstaff",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "19165866",
+      "name": "icon／bottom／guarantee",
+      "font_class": "iconbottomguarantee",
+      "unicode": "e6dd",
+      "unicode_decimal": 59101
+    },
+    {
+      "icon_id": "19165867",
+      "name": "icon／bottom／time",
+      "font_class": "iconbottomtime",
+      "unicode": "e6de",
+      "unicode_decimal": 59102
+    },
+    {
+      "icon_id": "19165868",
+      "name": "icon／bottom／global",
+      "font_class": "iconbottomglobal",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
       "icon_id": "19162207",
       "name": "icon／header／time",
       "font_class": "iconheadertime",
