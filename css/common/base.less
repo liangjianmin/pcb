@@ -134,15 +134,14 @@ a:hover, a:focus {
 
 html, body {
   width: 100%;
-  min-width: 1360px;
 }
 
 body {
-  min-width: 1180px;
+  min-width: 1280px;
 }
 
-.width-1180 {
-  width: 1180px;
+.width-1280 {
+  width: 1280px;
   margin: 0 auto;
 }
 
@@ -158,7 +157,238 @@ body {
 }
 
 .pcbbuy-head {
+  height: 60px;
+  background: #ffffff;
 
+  .l {
+    height: 60px;
+
+    .logo {
+      width: 384px;
+      height: 33px;
+
+      img {
+        width: 384px;
+        height: 33px;
+      }
+    }
+
+    .text {
+      margin-left: 80px;
+
+      .t1 {
+        font-size: 11px;
+        color: #666666;
+        margin-bottom: 3px;
+      }
+
+      .t2 {
+        font-size: 11px;
+        color: #666666;
+      }
+    }
+  }
+
+  .r {
+    height: 60px;
+
+    .text {
+      .t1 {
+        margin-bottom: 3px;
+
+        .iconfont {
+          font-size: 12px;
+          color: #222222;
+        }
+
+        span {
+          font-size: 12px;
+          color: #222222;
+          font-weight: bold;
+          margin-left: 3px;
+        }
+      }
+
+      .t2 {
+        font-size: 11px;
+        color: #666666;
+      }
+    }
+
+    .car-bar {
+      margin-left: 60px;
+
+      .iconfont {
+        font-size: 19px;
+        color: #ed3400;
+      }
+
+      span {
+        font-size: 12px;
+        color: #222222;
+        margin-left: 3px;
+        margin-right: 3px;
+      }
+
+      em {
+        font-size: 12px;
+        color: #ed3400;
+      }
+    }
+
+    .login-bar {
+      margin-left: 19px;
+
+      .iconfont {
+        font-size: 19px;
+        color: #1180c9;
+        margin-right: 3px;
+      }
+
+      a {
+        font-size: 12px;
+        color: #1180c9;
+        vertical-align: middle;
+        font-weight: bold;
+      }
+
+      em {
+        font-size: 12px;
+        color: #222222;
+        vertical-align: middle;
+        margin: 0 7px;
+      }
+    }
+  }
+}
+
+.pcbbuy-nav {
+  height: 40px;
+  background: #1360A7;
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  .box {
+    height: 40px;
+
+    a {
+      position: relative;
+      font-size: 14px;
+      color: #FFFFFF;
+      vertical-align: middle;
+      opacity: 0.7;
+      margin-right: 60px;
+
+      &.curr {
+        font-weight: bold;
+        opacity: 1;
+
+        &:after {
+          position: absolute;
+          bottom: -7px;
+          left: 0;
+          right: 0;
+          width: 80%;
+          height: 3px;
+          background: #FFFFFF;
+          border-radius: 2px;
+          margin: 0 auto;
+          content: '';
+        }
+      }
+    }
+  }
+}
+
+.pcbbuy-footer {
+  width: 100%;
+
+  .top {
+    height: 225px;
+    background: #09223C;
+    border-radius: 1px;
+
+    .l {
+      padding-top: 40px;
+      height: 225px;
+
+      img {
+        width: 157px;
+        height: 33px;
+      }
+
+      .t1 {
+        font-size: 12px;
+        color: #1180c9;
+        font-weight: bold;
+        margin-top: 14px;
+        margin-bottom: 10px;
+      }
+
+      .t2 {
+        font-size: 10px;
+        color: #ffffff;
+        width: 359px;
+        line-height: 14px;
+        opacity: 0.6;
+      }
+    }
+
+    .r {
+      padding-top: 40px;
+      dl {
+        vertical-align: top;
+        margin-right: 150px;
+        dt {
+          font-size: 18px;
+          color: #ffffff;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+
+        dd {
+          margin-bottom: 15px;
+          a {
+            font-size: 14px;
+            color: #ffffff;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    border-top: 1px solid #17395D;
+    height: 69px;
+    background: #04192F;
+    border-radius: 1px;
+
+    .l {
+      height: 69px;
+    }
+
+    .r {
+      height: 69px;
+    }
+
+    span {
+      font-size: 10px;
+      color: #ffffff;
+    }
+
+    .im1 {
+      width: 181px;
+      height: 38px;
+      margin-left: 8px;
+    }
+
+    .im2 {
+      width: 418px;
+      height: 25px;
+      margin-left: 4px;
+    }
+  }
 }
 
 
