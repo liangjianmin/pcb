@@ -18,30 +18,24 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <script src="./js/flexible.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
     <link rel="stylesheet" href="./js/vue/index.css"/>
     <link rel="stylesheet" href="./css/factory/index.css">
 </head>
 <body>
 <div id="app">
-    <div class="pcb-head row bothSide verCenter">
-        <a class="logo">
-            <img src="./images/index/logo.png" alt="">
+    <!--head-->
+    <div class="pcbbuy-head row verCenter rowCenter">
+        <a class="arrow" href="javascript:;">
+            <i class="iconfont iconback"></i>
         </a>
-        <a class="fask-key row verCenter">
-            <i class="iconfont iconjuxing5"></i>
-            <span>快速计价</span>
-        </a>
-        <div class="bar row verCenter" style="display: none">
-            <div class="row verCenter">
-                <a href="javascript:;" class="link">注册</a>
-                <a href="javascript:;" class="line">|</a>
-                <a href="javascript:;" class="link">登录</a>
-            </div>
-            <div class="toggle" @click="show=!show">
-                <i class="iconfont iconicondanseshouji2"></i>
-            </div>
+        <h2>工厂展示</h2>
+        <div class="menu">
+            <i class="iconfont iconicondanseshouji7"></i>
         </div>
     </div>
+    <!--head end-->
+
     <div class="factory-banner">
         <p class="t1">猎板极速PCB智慧工厂</p>
         <p class="t2">自主研发智能生产管理系统，在线计价下单， 提升生产效率，缩短交期</p>
@@ -192,35 +186,14 @@
             </ul>
         </div>
     </div>
-    <div class="pcb-footer">
-        <div class="kefu row bothSide verCenter">
-            <div class="row verCenter"><i class="iconfont iconicondanseshouji5"></i>
-                <div><p class="t1">7*24小时</p>
-                    <p class="t1"> 客服在线</p></div>
-            </div>
-            <div class="tel row rowCenter verCenter">0571 - 86609386</div>
-        </div>
-        <p class="title row rowCenter verCenter">
-            <a href="javascript:;" class="link">猎芯网</a>
-            <a href="javascript:;" class="line">|</a>
-            <a href="javascript:;" class="link">电脑端</a>
-        </p>
-        <p class="t1">@ 2019-2020 pcbhunt.com All right reserved.</p>
-        <p class="t1">版权所有:杭州猎板网络科技有限公司</p>
-        <p class="t1">工信部备案号：浙ICP备20015009号-1</p>
+
+    <!--bar-->
+    <div class="bar-box row rowCenter">
+        <a href="javascript:;" class="btn1 row rowCenter verCenter">立即登录</a>
+        <a href="javascript:;" class="btn2 row rowCenter verCenter">免费注册</a>
     </div>
-    <div class="shade-nav" :class="{'show':show}">
-        <i class="arrow"></i>
-        <ul class="column">
-            <li><a href="javascript:;">首页</a></li>
-            <li><a href="javascript:;">会员中心</a></li>
-            <li><a href="javascript:;">快速计价</a></li>
-            <li><a href="javascript:;">购物车</a></li>
-            <li><a href="javascript:;">邀请注册</a></li>
-            <li><a href="javascript:;">关于猎板</a></li>
-        </ul>
-    </div>
-    <!--导航栏-->
+    <!--bar end-->
+    <!--nav-->
     <ul class="nav row  avarage verCenter">
         <li class="curr">
             <a href="javascript:;">
@@ -230,30 +203,68 @@
         </li>
         <li>
             <a href="javascript:;">
-                <i class="iconfont iconjuxing1"></i>
-                <p>订单</p>
-            </a>
-        </li>
-        <li>
-            <a href="javascript:;">
-                <i class="iconfont iconjuxing2"></i>
+                <i class="iconfont iconjijia"></i>
                 <p>计价</p>
             </a>
         </li>
         <li>
             <a href="javascript:;">
-                <i class="iconfont iconjuxing3"></i>
-                <p>消息</p>
+                <i class="iconfont icongouwuche"></i>
+                <p>购物车</p>
             </a>
         </li>
         <li>
             <a href="javascript:;">
-                <i class="iconfont iconjuxing4"></i>
+                <i class="iconfont icondingdan"></i>
+                <p>订单</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont iconwode"></i>
                 <p>我的</p>
             </a>
         </li>
     </ul>
-    <!--导航栏end-->
+    <!--nav end-->
+
+    <!--menu-->
+    <div class="menu-box">
+        <div class="box">
+            <div class="logo-box">
+                <i class="logo"></i>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="row verCenter curr">
+                        <i class="iconfont iconshaidan"></i>
+                        <span>客户晒单</span>
+                    </li>
+                    <li class="row verCenter">
+                        <i class="iconfont iconzhicheng"></i>
+                        <span>制程工艺</span>
+                    </li>
+                    <li class="row verCenter">
+                        <i class="iconfont icongongchang"></i>
+                        <span>工厂展示</span>
+                    </li>
+                    <li class="row verCenter">
+                        <i class="iconfont iconguanyu"></i>
+                        <span>关于猎板</span>
+                    </li>
+                    <li class="row verCenter">
+                        <i class="iconfont iconlianxi"></i>
+                        <span>联系我们</span>
+                    </li>
+                    <li class="row verCenter">
+                        <i class="iconfont iconbangzhu"></i>
+                        <span>帮助中心</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--menu end-->
 </div>
 
 <script src="./js/vue/vue.min.js"></script>

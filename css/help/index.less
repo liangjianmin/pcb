@@ -1,0 +1,114 @@
+@import "../common/base.less";
+
+html, body {
+  height: 100%;
+}
+
+.help {
+  padding-top: 44px;
+  min-height: 100%;
+  background: #F7F8FA;
+
+  .section {
+    padding-top: 0.32rem;
+
+    .list {
+      padding: 0 0.32rem;
+
+      li {
+        margin-bottom: 0.27rem;
+
+        a {
+          .show {
+            padding: 0 0.32rem 0 0.27rem;
+            height: 42px;
+            background: #ffffff;
+            border-radius: 3px;
+
+            span {
+              font-size: 16px;
+              color: #323233;
+              font-weight: bold;
+            }
+
+            .iconzujiantubiaojiantou {
+              font-size: 20px;
+              color: #999999;
+            }
+
+            .iconiconbangzhushouqi {
+              font-size: 20px;
+              color: #999999;
+              display: none;
+            }
+          }
+
+          .hide-text {
+            padding: 0.4rem 0 0.53rem 0.27rem;
+            border-top: 1px solid #E7E7E7;
+            background: #ffffff;
+            display: none;
+
+            p {
+              margin-bottom: 0.4rem;
+              font-size: 14px;
+              color: #323233;
+              line-height: 20px;
+            }
+          }
+        }
+
+        &.curr {
+          a {
+            .iconzujiantubiaojiantou {
+              display: none;
+            }
+
+            .iconiconbangzhushouqi {
+              display: block;
+            }
+
+            .hide-text {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .detail {
+    padding: 0.53rem 0.32rem 2rem 0.32rem;
+
+    .t1 {
+      font-size: 19px;
+      color: #323233;
+      font-weight: bold;
+    }
+
+    .content {
+      margin-top: 0.53rem;
+      font-size: 15px;
+      color: #323233;
+      line-height: 29px;
+    }
+
+    .bar-text {
+      margin-top: 1.3rem;
+      padding-top: 0.4rem;
+      border-top: 1px solid #E7E7E7;
+
+      .iconfont {
+        font-size: 24px;
+        color: #008aff;
+      }
+
+      span {
+        font-size: 14px;
+        color: #323233;
+        margin-left: 0.13rem;
+      }
+    }
+  }
+}
+

@@ -20,96 +20,45 @@
     <script src="./js/flexible.min.js"></script>
     <script src="./js/jquery.min.js"></script>
     <link rel="stylesheet" href="./js/vue/index.css"/>
-    <link rel="stylesheet" href="./css/contact/index.css">
+    <link rel="stylesheet" href="./css/notice/index.css">
 </head>
 <body>
-<div id="app">
+<div id="app" class="notice">
     <!--head-->
     <div class="pcbbuy-head row verCenter rowCenter">
         <a class="arrow" href="javascript:;">
             <i class="iconfont iconback"></i>
         </a>
-        <h2>联系我们</h2>
+        <h2>公告</h2>
         <div class="menu">
             <i class="iconfont iconicondanseshouji7"></i>
         </div>
     </div>
     <!--head end-->
-    <div class="contact-banner"></div>
-    <div class="contact-content">
-        <div class="section color1">
-            <div class="title">
-                <p class="t1">联系我们</p>
+
+    <!--section-->
+    <div class="detail">
+        <p class="tit">全球领先元器件分销商得捷电子Digi-Key与猎板网签署合作协议</p>
+        <div class="bar-text row bothSide">
+            <span class="t1">2018/11/16 17:12</span>
+            <div class="row verCenter text">
+                <i class="iconfont iconicondanseshouji8"></i>
+                <span>1.0w</span>
             </div>
-            <ul class="type1">
-                <li class="row verCenter">
-                    <i class="iconfont icondianhua"></i>
-                    <span>服务热线</span>
-                    <em>0571-86609386</em>
-                </li>
-                <li class="row verCenter">
-                    <i class="iconfont iconqq"></i>
-                    <span>在线客服</span>
-                    <em>800183356</em>
-                </li>
-                <li class="row verCenter">
-                    <i class="iconfont iconyouxiang va-m"></i>
-                    <span>联系邮箱</span>
-                    <em>service@pcbhunt.com</em>
-                </li>
-            </ul>
         </div>
-        <div class="section color2">
-            <div class="title">
-                <p class="t1">打款信息</p>
-            </div>
-            <ul class="type2">
-                <li class="row">
-                    <i class="iconfont iconyinhang"></i>
-                    <div class="text">
-                        <p class="t1">银行账号</p>
-                        <p class="t2"><em>账户名： </em><span>杭州猎板网络科技有限公司</span></p>
-                        <p class="t2"><em>账户： </em><span>3301 0401 6001 4873 429</span></p>
-                        <p class="t2"><em>开户行： </em><span>杭州银行湖墅支行</span></p>
-                    </div>
-                </li>
-                <li class="row">
-                    <i class="iconfont iconzhifubao"></i>
-                    <div class="text">
-                        <p class="t1">支付宝账号</p>
-                        <p class="t2"><em>账户名： </em><span>杭州猎板网络科技有限公司</span></p>
-                        <p class="t2"><em>账户： </em><span> lieban@pcbhunt.com</span></p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="section color2">
-            <div class="title" style="border-bottom: none">
-                <p class="t1">猎板（杭州）客户服务中心</p>
-                <p class="t2">
-                    <i class="iconfont icondingwei"></i>
-                    <span>杭州市拱墅区万达广场C座16楼</span>
-                </p>
-                <div class="pic">
-                    <img src="./images/contact/map1.jpg" alt="">
-                </div>
-                <p class="t1">猎板（珠海）生产基地</p>
-                <p class="t2">
-                    <i class="iconfont icondingwei"></i>
-                    <span>珠海市金湾区红旗镇幸福中路8号明宏工业园A厂房</span>
-                </p>
-                <div class="pic">
-                    <img src="./images/contact/map2.jpg" alt="">
-                </div>
-            </div>
+        <div class="content">
+            为了确保所有客户购买的都是商城最新批次进货的物料，即日起商城将严格实施仓储管理先进先出的理念，后续发货会存在同款编带物料2段发货的可能（单款编带物料整盘的除外），例如整盘/盒数量为5000，实际购买数量为9000或4000时，非整盘部分可能分为2段2000或者1段500和1段3500等现象，但在商城没有另外通知的情况下，我司确保不会出现超过2段以上的情况， 我司不接受订单内备注不需要接段，恕不接受此类投诉，请广大客户谅解及支持！（特别提示：商城不提供任何方式接带服务，需上贴片机的客户需自行接带）
         </div>
     </div>
+    <!--section end-->
+
     <!--bar-->
     <div class="bar-box row rowCenter">
         <a href="javascript:;" class="btn1 row rowCenter verCenter">立即登录</a>
         <a href="javascript:;" class="btn2 row rowCenter verCenter">免费注册</a>
     </div>
     <!--bar end-->
+
     <!--nav-->
     <ul class="nav row  avarage verCenter">
         <li class="curr">
@@ -182,6 +131,7 @@
         </div>
     </div>
     <!--menu end-->
+
 </div>
 
 <script src="./js/vue/vue.min.js"></script>
@@ -190,15 +140,9 @@
 <script src="./js/util.js"></script>
 <script>
 
-  new Vue({
-    el: '#app',
-    data: {
-      show: false
-    },
-    created() {
-    },
-    methods: {}
-  });
+  $(function () {
+
+  })
 
 </script>
 </body>
