@@ -1,10 +1,87 @@
 {
   "id": "2165284",
-  "name": "pc_pcbhunt",
+  "name": "pcb_pc",
   "font_family": "iconfont",
   "css_prefix_text": "icon",
   "description": "",
   "glyphs": [
+    {
+      "icon_id": "19229159",
+      "name": "图标／售后",
+      "font_class": "tubiaoshouhou2",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "19229158",
+      "name": "图标",
+      "font_class": "tubiao27",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
+      "icon_id": "19224934",
+      "name": "图标／售后 (1)",
+      "font_class": "tubiaoshouhou11",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "19224928",
+      "name": "图标／售后",
+      "font_class": "tubiaoshouhou1",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "19224352",
+      "name": "图标",
+      "font_class": "tubiao26",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "19224309",
+      "name": "图标 (1)",
+      "font_class": "tubiao110",
+      "unicode": "e6f3",
+      "unicode_decimal": 59123
+    },
+    {
+      "icon_id": "19224304",
+      "name": "图标",
+      "font_class": "tubiao25",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "19224278",
+      "name": "图标／发票",
+      "font_class": "tubiaofapiao",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    },
+    {
+      "icon_id": "19224279",
+      "name": "图标／设置",
+      "font_class": "tubiaoshezhi",
+      "unicode": "e6f0",
+      "unicode_decimal": 59120
+    },
+    {
+      "icon_id": "19224280",
+      "name": "图标／售后",
+      "font_class": "tubiaoshouhou",
+      "unicode": "e6f1",
+      "unicode_decimal": 59121
+    },
+    {
+      "icon_id": "19223118",
+      "name": "图标",
+      "font_class": "tubiao24",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
     {
       "icon_id": "18707029",
       "name": "图标",

@@ -958,9 +958,70 @@ body {
   font-size: 12px;
   color: #ffffff;
 }
+.page-bg {
+  background: #E8F1F2;
+}
+.menu {
+  width: 200px;
+}
+.menu dl {
+  background: #ffffff;
+  padding-bottom: 20px;
+}
+.menu dl dt {
+  padding-left: 24px;
+  height: 48px;
+  background: #0A60BE;
+}
+.menu dl dt .iconfont {
+  font-size: 24px;
+  color: #ffffff;
+}
+.menu dl dt span {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.menu dl dd {
+  margin-top: 14px;
+}
+.menu dl dd .tit {
+  padding-left: 24px;
+  margin-bottom: 8px;
+}
+.menu dl dd .tit .iconfont {
+  font-size: 24px;
+  color: #77797a;
+}
+.menu dl dd .tit span {
+  font-size: 16px;
+  color: #131414;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.menu dl dd .list li {
+  line-height: 20px;
+  padding-left: 56px;
+  margin-bottom: 6px;
+}
+.menu dl dd .list li:last-child {
+  margin-bottom: 0;
+}
+.menu dl dd .list li a {
+  font-size: 14px;
+  color: rgba(19, 20, 20, 0.6);
+  transition: all 0.2s ease;
+}
+.menu dl dd .list li.curr a,
+.menu dl dd .list li:hover a {
+  color: #0a60be;
+  font-weight: bold;
+}
 .fast {
   height: 120px;
   background: #D2ECFF;
+  border-top: 1px solid #AAD0F2;
 }
 .fast .box {
   height: 100%;
@@ -1035,5 +1096,312 @@ body {
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
+}
+.section .user-title {
+  padding: 16px 0;
+}
+.section .user-title .iconfont {
+  font-size: 12px;
+  color: #bec5c6;
+  margin: 0 10px;
+}
+.section .user-title a {
+  font-size: 12px;
+  color: #131414;
+}
+.section .user-title a.curr {
+  color: #131414;
+  font-weight: bold;
+}
+.section .content {
+  padding-bottom: 40px;
+}
+.section .content .right-bar {
+  width: 1064px;
+}
+.section .content .right-bar .tab li {
+  position: relative;
+  float: left;
+  width: 112px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  cursor: pointer;
+}
+.section .content .right-bar .tab li span {
+  color: #131414;
+  font-size: 16px;
+  font-weight: bold;
+}
+.section .content .right-bar .tab li em {
+  position: absolute;
+  left: 82px;
+  top: 3px;
+  padding: 0 5px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  background: #E59115;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #ffffff;
+}
+.section .content .right-bar .tab li.curr {
+  background: #FFFFFF;
+}
+.section .content .right-bar .tab li.curr span {
+  color: #0a60be;
+}
+.section .content .right-bar .search-box {
+  padding-left: 24px;
+  padding-right: 30px;
+  height: 54px;
+  background: #FFFFFF;
+  white-space: nowrap;
+}
+.section .content .right-bar .search-box .select-type {
+  width: 252px;
+  height: 28px;
+  line-height: 28px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid rgba(166, 173, 173, 0.5);
+  font-size: 14px;
+  color: #131414;
+  font-weight: bold;
+}
+.section .content .right-bar .search-box .select-type option {
+  font-size: 14px;
+  color: #131414;
+}
+.section .content .right-bar .search-box .inpt {
+  width: 252px;
+  height: 28px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid rgba(166, 173, 173, 0.5);
+  font-size: 14px;
+  text-indent: 10px;
+}
+.section .content .right-bar .search-box .inpt::-webkit-input-placeholder {
+  color: rgba(19, 20, 20, 0.6);
+}
+.section .content .right-bar .search-box .color {
+  color: #131414;
+  font-weight: bold;
+}
+.section .content .right-bar .search-box .color::-webkit-input-placeholder {
+  color: #131414;
+  font-weight: bold;
+}
+.section .content .right-bar .search-box .search-btn {
+  margin-left: 16px;
+  width: 80px;
+  height: 30px;
+  background: #0A60BE;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+}
+.section .content .right-bar .search-box .time label {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.section .content .right-bar .data-box {
+  margin-top: 12px;
+  width: 100%;
+}
+.section .content .right-bar .data-box dl dt {
+  background: #FFFFFF;
+  height: 40px;
+  line-height: 40px;
+}
+.section .content .right-bar .data-box dl dt span {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.section .content .right-bar .data-box dl dd {
+  margin-bottom: 12px;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+.section .content .right-bar .data-box dl dd .top {
+  height: 40px;
+  background: #DEF1FF;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.section .content .right-bar .data-box dl dd .top .l {
+  height: 100%;
+}
+.section .content .right-bar .data-box dl dd .top .l .text {
+  vertical-align: middle;
+}
+.section .content .right-bar .data-box dl dd .top .l .text .iconfont {
+  font-size: 24px;
+  color: #0a60be;
+  margin-right: 6px;
+}
+.section .content .right-bar .data-box dl dd .top .l .text .t1 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.section .content .right-bar .data-box dl dd .top .l .text .t2 {
+  font-size: 14px;
+  color: #131414;
+  font-weight: bold;
+}
+.section .content .right-bar .data-box dl dd .top .r {
+  height: 100%;
+  white-space: nowrap;
+}
+.section .content .right-bar .data-box dl dd .top .r .t1 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.section .content .right-bar .data-box dl dd .top .r .bar {
+  margin-left: 20px;
+}
+.section .content .right-bar .data-box dl dd .top .r .bar .iconfont {
+  font-size: 24px;
+  color: #0a60be;
+}
+.section .content .right-bar .data-box dl dd .top .r .bar span {
+  font-size: 14px;
+  color: #0a60be;
+  margin-left: 4px;
+}
+.section .content .right-bar .data-box dl dd .list li {
+  white-space: nowrap;
+  padding: 12px 0;
+  background: #ffffff;
+  border-bottom: 1px solid #E4ECED;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 {
+  white-space: nowrap;
+  padding-left: 24px;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .t1 {
+  font-size: 14px;
+  color: #131414;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .text {
+  font-size: 14px;
+  color: #131414;
+  margin-bottom: 6px;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .t2 {
+  font-size: 14px;
+  color: #131414;
+}
+.section .content .right-bar .data-box dl dd .list li .box2 {
+  font-size: 14px;
+  color: #131414;
+}
+.section .content .right-bar .data-box dl dd .list li .box3 .font-text {
+  font-size: 14px;
+  color: #e59115;
+  margin-bottom: 2px;
+}
+.section .content .right-bar .data-box dl dd .list li .box3 .iconfont {
+  font-size: 28px;
+  color: #131414;
+}
+.section .content .right-bar .data-box dl dd .list li .box3 .text {
+  margin-left: 8px;
+}
+.section .content .right-bar .data-box dl dd .list li .box3 .text .t1 {
+  width: 140px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  color: #131414;
+  text-decoration: underline;
+  margin-bottom: 6px;
+}
+.section .content .right-bar .data-box dl dd .list li .box3 .text .t2 {
+  font-size: 14px;
+  color: #0a60be;
+}
+.section .content .right-bar .data-box dl dd .list li .box4 .time1 {
+  width: 45px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+.section .content .right-bar .data-box dl dd .list li .box4 .time1 span {
+  width: 24px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #0a60be;
+  font-size: 14px;
+  border: 1px solid #5998D9;
+  border-right: none;
+}
+.section .content .right-bar .data-box dl dd .list li .box4 .time1 em {
+  width: 20px;
+  height: 20px;
+  background: #0A60BE;
+  border-radius: 0 2px 2px 0;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.section .content .right-bar .data-box dl dd .list li .box5 {
+  font-size: 14px;
+  color: #131414;
+}
+.section .content .right-bar .data-box dl dd .list li .box6 .t1 {
+  font-size: 14px;
+  color: #E59115;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.section .content .right-bar .data-box dl dd .list li .box6 .t2 {
+  font-size: 14px;
+  color: #0A60BE;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.section .content .right-bar .data-box dl dd .list li .box6 .t3 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+  margin-bottom: 6px;
+}
+.section .content .right-bar .data-box dl dd .list li .box6 .errror {
+  font-size: 14px;
+  color: #bc0a0a;
+  font-weight: bold;
+}
+.section .content .right-bar .data-box dl dd .list li .box7 .detail {
+  font-size: 14px;
+  color: #0a60be;
+  margin-bottom: 6px;
+  display: block;
+}
+.section .content .right-bar .data-box dl dd .list li .box7 .collect .iconfont {
+  font-size: 20px;
+  color: #0a60be;
+}
+.section .content .right-bar .data-box dl dd .list li .box7 .collect span {
+  margin-left: 2px;
+  font-size: 14px;
+  color: #0a60be;
+}
+.section .content .right-bar .data-box dl dd:hover {
+  border: 2px solid #0A60BE;
 }
 /*# sourceMappingURL=index.css.map */
