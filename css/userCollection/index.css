@@ -1228,6 +1228,7 @@ body {
   background: #FFFFFF;
   height: 40px;
   line-height: 40px;
+  border-bottom: 1px solid #E4ECED;
 }
 .section .content .right-bar .data-box dl dt span {
   font-size: 14px;
@@ -1236,56 +1237,7 @@ body {
 }
 .section .content .right-bar .data-box dl dd {
   margin-bottom: 12px;
-  border: 2px solid transparent;
   transition: all 0.2s ease;
-}
-.section .content .right-bar .data-box dl dd .top {
-  height: 40px;
-  background: #DEF1FF;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-.section .content .right-bar .data-box dl dd .top .l {
-  height: 100%;
-}
-.section .content .right-bar .data-box dl dd .top .l .text {
-  vertical-align: middle;
-}
-.section .content .right-bar .data-box dl dd .top .l .text .iconfont {
-  font-size: 24px;
-  color: #0a60be;
-  margin-right: 6px;
-}
-.section .content .right-bar .data-box dl dd .top .l .text .t1 {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .top .l .text .t2 {
-  font-size: 14px;
-  color: #131414;
-  font-weight: bold;
-}
-.section .content .right-bar .data-box dl dd .top .r {
-  height: 100%;
-  white-space: nowrap;
-}
-.section .content .right-bar .data-box dl dd .top .r .t1 {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .top .r .bar {
-  margin-left: 20px;
-}
-.section .content .right-bar .data-box dl dd .top .r .bar .iconfont {
-  font-size: 24px;
-  color: #0a60be;
-}
-.section .content .right-bar .data-box dl dd .top .r .bar span {
-  font-size: 14px;
-  color: #0a60be;
-  margin-left: 4px;
 }
 .section .content .right-bar .data-box dl dd .list li {
   white-space: nowrap;
@@ -1293,12 +1245,26 @@ body {
   background: #ffffff;
   border-bottom: 1px solid #E4ECED;
 }
+.section .content .right-bar .data-box dl dd .list li:last-child {
+  border-bottom: none;
+}
 .section .content .right-bar .data-box dl dd .list li:hover {
   background: #EBF6FF;
 }
 .section .content .right-bar .data-box dl dd .list li .box1 {
   white-space: nowrap;
   padding-left: 24px;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .new {
+  width: 28px;
+  height: 18px;
+  line-height: 18px;
+  background: #E59115;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 8px;
 }
 .section .content .right-bar .data-box dl dd .list li .box1 .t1 {
   margin-bottom: 6px;
@@ -1545,37 +1511,7 @@ body {
 }
 .section .content .right-bar .data-box dl dd .list li .box6 .t1 {
   font-size: 14px;
-  color: #E59115;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .t2 {
-  font-size: 14px;
-  color: #0A60BE;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .t3 {
-  font-size: 14px;
   color: #131414;
-  opacity: 0.6;
-  margin-bottom: 6px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .t4 {
-  font-size: 14px;
-  color: #131414;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .errror {
-  font-size: 14px;
-  color: #bc0a0a;
-  font-weight: bold;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .question {
-  font-size: 14px;
-  color: #e59115;
-  font-weight: bold;
   margin-bottom: 6px;
 }
 .section .content .right-bar .data-box dl dd .list li .box7 .btn {
@@ -1596,6 +1532,7 @@ body {
   color: #0a60be;
   margin-bottom: 6px;
   display: block;
+  margin-left: 13px;
 }
 .section .content .right-bar .data-box dl dd .list li .box7 .collect .iconfont {
   font-size: 20px;
@@ -1605,72 +1542,6 @@ body {
   margin-left: 2px;
   font-size: 14px;
   color: #0a60be;
-}
-.section .content .right-bar .data-box dl dd .bottom {
-  padding-left: 24px;
-  padding-right: 24px;
-  background: #FFFFFF;
-  height: 48px;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-l {
-  height: 48px;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-l .text span {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-l .text em {
-  font-size: 14px;
-  color: #131414;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r {
-  height: 48px;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r .re-btn {
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  background: #0A60BE;
-  border-radius: 2px;
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: bold;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r .btn {
-  width: 100px;
-  height: 30px;
-  background: #E59115;
-  border-radius: 2px;
-  line-height: 30px;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r .t1 {
-  font-size: 14px;
-  color: #131414;
-  margin-left: 20px;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r .t2 {
-  font-size: 16px;
-  color: #e59115;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r .t3 {
-  font-size: 14px;
-  color: #131414;
-}
-.section .content .right-bar .data-box dl dd.disabled .top .r .bar .iconfont {
-  color: #a6adad;
-}
-.section .content .right-bar .data-box dl dd.disabled .top .r .bar span {
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd:hover {
-  border: 2px solid #0A60BE;
 }
 .no-empty {
   text-align: center;
@@ -1707,5 +1578,14 @@ body {
   color: #ffffff;
   margin: 0 auto;
   display: block;
+}
+.ad {
+  width: 1064px;
+  height: 60px;
+  margin: 16px 0;
+}
+.ad img {
+  width: 1064px;
+  height: 60px;
 }
 /*# sourceMappingURL=index.css.map */

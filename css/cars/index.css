@@ -961,6 +961,85 @@ body {
 .page-bg {
   background: #E8F1F2;
 }
+.user-fast {
+  height: 120px;
+  background: #D2ECFF;
+  border-top: 1px solid #AAD0F2;
+}
+.user-fast .box {
+  height: 100%;
+}
+.user-fast .box .text .t1 {
+  font-size: 20px;
+  color: #131414;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.user-fast .box .text .t2 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.user-fast .box .form-box {
+  margin-left: 120px;
+}
+.user-fast .box .form-box .w1 {
+  width: 122px;
+  height: 38px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #5998D9;
+  text-indent: 10px;
+  font-size: 14px;
+}
+.user-fast .box .form-box .w1::-webkit-input-placeholder {
+  color: #131414;
+  opacity: 0.6;
+}
+.user-fast .box .form-box .t1 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+  margin: 0 8px;
+}
+.user-fast .box .form-box .t2 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+  margin-left: 8px;
+  margin-right: 18px;
+}
+.user-fast .box .form-box .num-box .inp {
+  width: 164px;
+  height: 38px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #5998D9;
+  text-indent: 10px;
+  font-size: 14px;
+}
+.user-fast .box .form-box .num-box .inp::-webkit-input-placeholder {
+  color: #131414;
+  opacity: 0.6;
+}
+.user-fast .box .form-box .fast-btn {
+  margin-left: 19px;
+  width: 166px;
+  height: 40px;
+  background: #0A60BE;
+  border-radius: 2px;
+  text-align: center;
+}
+.user-fast .box .form-box .fast-btn .iconfont {
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 4px;
+}
+.user-fast .box .form-box .fast-btn span {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+}
 .section-car {
   background: #E8F1F2;
   padding-top: 12px;

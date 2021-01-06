@@ -961,6 +961,85 @@ body {
 .page-bg {
   background: #E8F1F2;
 }
+.user-fast {
+  height: 120px;
+  background: #D2ECFF;
+  border-top: 1px solid #AAD0F2;
+}
+.user-fast .box {
+  height: 100%;
+}
+.user-fast .box .text .t1 {
+  font-size: 20px;
+  color: #131414;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.user-fast .box .text .t2 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.user-fast .box .form-box {
+  margin-left: 120px;
+}
+.user-fast .box .form-box .w1 {
+  width: 122px;
+  height: 38px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #5998D9;
+  text-indent: 10px;
+  font-size: 14px;
+}
+.user-fast .box .form-box .w1::-webkit-input-placeholder {
+  color: #131414;
+  opacity: 0.6;
+}
+.user-fast .box .form-box .t1 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+  margin: 0 8px;
+}
+.user-fast .box .form-box .t2 {
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+  margin-left: 8px;
+  margin-right: 18px;
+}
+.user-fast .box .form-box .num-box .inp {
+  width: 164px;
+  height: 38px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #5998D9;
+  text-indent: 10px;
+  font-size: 14px;
+}
+.user-fast .box .form-box .num-box .inp::-webkit-input-placeholder {
+  color: #131414;
+  opacity: 0.6;
+}
+.user-fast .box .form-box .fast-btn {
+  margin-left: 19px;
+  width: 166px;
+  height: 40px;
+  background: #0A60BE;
+  border-radius: 2px;
+  text-align: center;
+}
+.user-fast .box .form-box .fast-btn .iconfont {
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 4px;
+}
+.user-fast .box .form-box .fast-btn span {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+}
 .menu {
   width: 200px;
 }
@@ -1379,9 +1458,56 @@ body {
   color: #131414;
 }
 .section .content .right-bar .data-box dl dd .list li .box1 .detail {
+  position: relative;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .detail .tx {
   font-size: 14px;
   color: #0a60be;
-  margin-left: 8px;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .detail .detail-box {
+  position: absolute;
+  top: -51px;
+  left: 37px;
+  z-index: 1;
+  display: none;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .detail .detail-box .left {
+  position: absolute;
+  left: -8px;
+  top: 53px;
+  width: 10px;
+  height: 17px;
+  background: url("../../images/p-home/left.png") no-repeat center;
+  background-size: cover;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .detail .detail-box table {
+  width: 670px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #0A60BE;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .detail .detail-box table tr td {
+  padding-left: 24px;
+  border: 1px solid #E4ECED;
+  height: 39px;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .detail .detail-box table tr td.t1 {
+  width: 145px;
+  font-size: 14px;
+  color: #131414;
+  opacity: 0.6;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .detail .detail-box table tr td.t2 {
+  background: #EDF6F7;
+  width: 187px;
+  color: #131414;
+  font-size: 14px;
+  font-weight: bold;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .detail:hover .detail-box {
+  display: block;
 }
 .section .content .right-bar .data-box dl dd .list li .box1 .fandan {
   width: 40px;
@@ -1453,85 +1579,6 @@ body {
   margin-left: 4px;
   font-size: 16px;
   color: #0a60be;
-}
-.fast {
-  height: 120px;
-  background: #D2ECFF;
-  border-top: 1px solid #AAD0F2;
-}
-.fast .box {
-  height: 100%;
-}
-.fast .box .text .t1 {
-  font-size: 20px;
-  color: #131414;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-.fast .box .text .t2 {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.fast .box .form-box {
-  margin-left: 120px;
-}
-.fast .box .form-box .w1 {
-  width: 122px;
-  height: 38px;
-  background: #FFFFFF;
-  border-radius: 2px;
-  border: 1px solid #5998D9;
-  text-indent: 10px;
-  font-size: 14px;
-}
-.fast .box .form-box .w1::-webkit-input-placeholder {
-  color: #131414;
-  opacity: 0.6;
-}
-.fast .box .form-box .t1 {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-  margin: 0 8px;
-}
-.fast .box .form-box .t2 {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-  margin-left: 8px;
-  margin-right: 18px;
-}
-.fast .box .form-box .num-box .inp {
-  width: 164px;
-  height: 38px;
-  background: #FFFFFF;
-  border-radius: 2px;
-  border: 1px solid #5998D9;
-  text-indent: 10px;
-  font-size: 14px;
-}
-.fast .box .form-box .num-box .inp::-webkit-input-placeholder {
-  color: #131414;
-  opacity: 0.6;
-}
-.fast .box .form-box .fast-btn {
-  margin-left: 19px;
-  width: 166px;
-  height: 40px;
-  background: #0A60BE;
-  border-radius: 2px;
-  text-align: center;
-}
-.fast .box .form-box .fast-btn .iconfont {
-  font-size: 20px;
-  color: #ffffff;
-  margin-right: 4px;
-}
-.fast .box .form-box .fast-btn span {
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: bold;
 }
 .kefu-qq {
   position: fixed;

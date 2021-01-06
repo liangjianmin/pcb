@@ -452,9 +452,68 @@
                   }
 
                   .detail {
-                    font-size: 14px;
-                    color: #0a60be;
+                    position: relative;
                     margin-left: 8px;
+                    cursor: pointer;
+
+                    .tx {
+                      font-size: 14px;
+                      color: #0a60be;
+                    }
+
+                    .detail-box {
+                      position: absolute;
+                      top: -51px;
+                      left:37px;
+                      z-index: 1;
+                      display: none;
+
+                      .left {
+                        position: absolute;
+                        left: -8px;
+                        top: 53px;
+                        width: 10px;
+                        height: 17px;
+                        background: url("../../images/p-home/left.png") no-repeat center;
+                        background-size: cover;
+                      }
+
+                      table {
+                        width: 670px;
+                        background: #FFFFFF;
+                        box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+                        border: 1px solid #0A60BE;
+
+                        tr {
+                          td {
+                            padding-left: 24px;
+                            border: 1px solid #E4ECED;
+                            height: 39px;
+
+                            &.t1 {
+                              width: 145px;
+                              font-size: 14px;
+                              color: #131414;
+                              opacity: 0.6;
+                            }
+
+                            &.t2 {
+                              background: #EDF6F7;
+                              width: 187px;
+                              color: #131414;
+                              font-size: 14px;
+                              font-weight: bold;
+                            }
+                          }
+                        }
+                      }
+                    }
+
+                    &:hover {
+                      .detail-box {
+                        display: block;
+                      }
+                    }
                   }
 
                   .fandan {
@@ -560,108 +619,6 @@
   }
 }
 
-.fast {
-  height: 120px;
-  background: #D2ECFF;
-  border-top: 1px solid #AAD0F2;
-
-  .box {
-    height: 100%;
-
-    .text {
-      .t1 {
-        font-size: 20px;
-        color: #131414;
-        font-weight: bold;
-        margin-bottom: 8px;
-      }
-
-      .t2 {
-        font-size: 14px;
-        color: #131414;
-        opacity: 0.6;
-      }
-    }
-
-    .form-box {
-      margin-left: 120px;
-
-      .w1 {
-        width: 122px;
-        height: 38px;
-        background: #FFFFFF;
-        border-radius: 2px;
-        border: 1px solid #5998D9;
-        text-indent: 10px;
-        font-size: 14px;
-
-        &::-webkit-input-placeholder {
-          color: #131414;
-          opacity: 0.6;
-        }
-
-      }
-
-      .t1 {
-        font-size: 14px;
-        color: #131414;
-        opacity: 0.6;
-        margin: 0 8px;
-      }
-
-      .t2 {
-        font-size: 14px;
-        color: #131414;
-        opacity: 0.6;
-        margin-left: 8px;
-        margin-right: 18px;
-      }
-
-
-      .num-box {
-        .inp {
-          width: 164px;
-          height: 38px;
-          background: #FFFFFF;
-          border-radius: 2px;
-          border: 1px solid #5998D9;
-          text-indent: 10px;
-          font-size: 14px;
-
-          &::-webkit-input-placeholder {
-            color: #131414;
-            opacity: 0.6;
-          }
-        }
-      }
-
-      .fast-btn {
-        margin-left: 19px;
-        width: 166px;
-        height: 40px;
-        background: #0A60BE;
-        border-radius: 2px;
-        text-align: center;
-
-        .iconfont {
-          font-size: 20px;
-          color: #ffffff;
-          margin-right: 4px;
-        }
-
-        span {
-          font-size: 14px;
-          color: #ffffff;
-          font-weight: bold;
-        }
-      }
-
-    }
-
-  }
-
-}
-
 .kefu-qq {
   position: fixed;
   right: 50%;
@@ -763,6 +720,7 @@
 
     .r {
       cursor: pointer;
+
       .iconfont {
         font-size: 12px;
         color: #131414;
@@ -779,6 +737,7 @@
   .news {
     padding-left: 16px;
     padding-top: 9px;
+
     .t1 {
       width: 156px;
       font-size: 14px;
@@ -796,14 +755,16 @@
   }
 }
 
-.no-empty{
+.no-empty {
   text-align: center;
-  .iconfont{
+
+  .iconfont {
     font-size: 111px;
     color: #0860bf;
     text-align: center;
   }
-  .t1{
+
+  .t1 {
     margin-top: 40px;
     margin-bottom: 6px;
     font-size: 24px;
@@ -811,14 +772,16 @@
     font-weight: bold;
     text-align: center;
   }
-  .t2{
+
+  .t2 {
     font-size: 14px;
     color: #131414;
     opacity: 0.6;
     margin-bottom: 28px;
     text-align: center;
   }
-  .order-btn{
+
+  .order-btn {
     width: 152px;
     height: 40px;
     background: #0A60BE;

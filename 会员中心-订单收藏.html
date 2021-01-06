@@ -11,7 +11,7 @@
     <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
-    <link rel="stylesheet" type="text/css" href="css/userOrder/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/userCollection/index.css"/>
 </head>
 
 <body>
@@ -208,7 +208,7 @@
                             <b class="lineBlock emptys"></b>
                         </div>
                         <ul class="list">
-                            <li class="curr">
+                            <li>
                                 <a href="javascript:;">PCB订单</a>
                             </li>
                             <li>
@@ -217,7 +217,7 @@
                             <li>
                                 <a href="javascript:;">钢网订单</a>
                             </li>
-                            <li>
+                            <li class="curr">
                                 <a href="javascript:;">订单收藏</a>
                             </li>
                         </ul>
@@ -312,23 +312,10 @@
                 </dl>
             </div>
             <div class="fr right-bar">
-                <ul class="tab clr">
-                    <li class="curr"><span>所有订单</span></li>
-                    <li><span>待付款</span><em>2</em></li>
-                    <li><span>已付款</span></li>
-                    <li><span>生产中</span><em>4</em></li>
-                    <li><span>已发货</span><em>12</em></li>
-                    <li><span>EQ问客</span></li>
-                    <li><span>已取消</span></li>
-                </ul>
                 <div class="search-box lbBox">
                     <input type="text" class="inpt va-m" placeholder="订单号/文件名称"/>
-                    <select name="" class="select-type va-m" style="margin-left: 16px;margin-right: 60px;">
-                        <option value="">请选择订单状态</option>
-                        <option value="">待付款</option>
-                    </select>
-                    <div class="time lineBlock va-m">
-                        <label class="va-m">订单时间：</label>
+                    <div class="time lineBlock va-m" style="margin-left: 20px">
+                        <label class="va-m">收藏时间：</label>
                         <i class="iconfont icontubiao8 time-ico"></i>
                         <input type="text" class="inpt va-m color" placeholder="请选择时间范围" id="time"/>
                     </div>
@@ -338,9 +325,7 @@
                 <div class="data-box">
                     <div class="no-empty">
                         <i class="iconfont icontubiao13"></i>
-                        <p class="t1">暂无订单信息</p>
-                        <p class="t2">现在下单，预计明日12:00可以发货</p>
-                        <a href="javascript:;" class="order-btn">立即下单</a>
+                        <p class="t1">暂无收藏的订单</p>
                     </div>
                     <dl>
                         <dt class="lbBox">
@@ -348,50 +333,17 @@
                             <span class="lineBlock" style="width: 109px;">数量</span>
                             <span class="lineBlock" style="width: 212px;">文件</span>
                             <span class="lineBlock" style="width: 81px;">时效</span>
-                            <span class="lineBlock" style="width: 152px;">价格</span>
-                            <span class="lineBlock" style="width: 100px;">状态</span>
+                            <span class="lineBlock" style="width: 124px;">价格</span>
+                            <span class="lineBlock" style="width: 140px;">收藏时间</span>
                             <span class="lineBlock">操作</span>
                         </dt>
                         <dd>
-                            <div class="top clr">
-                                <div class="fl l">
-                                    <div class="lineBlock text" style="width: 200px;">
-                                        <i class="iconfont icontubiao25 va-m"></i>
-                                        <span class="t1 va-m">订单包: </span>
-                                        <span class="t2 va-m">G584826</span>
-                                    </div>
-                                    <div class="lineBlock text" style="width: 222px;">
-                                        <span class="t1">订单时间:  </span>
-                                        <span class="t2">2020/8/31 16:28</span>
-                                    </div>
-                                    <div class="lineBlock text">
-                                        <span class="t1">预估交期:  </span>
-                                        <span class="t2">2020/9/10</span>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                                <div class="fr r lbBox">
-                                    <span class="t1 va-m">取消订单</span>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">合同</span>
-                                    </div>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">发货单</span>
-                                    </div>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">出货报告</span>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                            </div>
                             <ul class="list">
                                 <li class="lbBox">
                                     <div class="box1 lineBlock va-t" style="width: 283px;">
                                         <p class="t1">
                                             <span class="p1 va-m">NO#: #H2W-298921</span>
+                                            <span class="lineBlock va-m new">新</span>
                                         </p>
                                         <div class="text">
                                             <span class="t">1.6mm 2层 69.00*72.0cm</span>
@@ -466,7 +418,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="t2">建滔A级 FR-4 绿油白字 有铅喷锡</p>
                                     </div>
                                     <div class="box2 lineBlock va-t" style="width: 109px">50000 PCS</div>
                                     <div class="box3 lineBlock va-t" style="width: 212px">
@@ -484,18 +435,13 @@
                                             <em class="lineBlock va-m">H</em>
                                         </div>
                                     </div>
-                                    <div class="box5 lineBlock va-t" style="width: 152px;">￥1000000.00</div>
-                                    <div class="box6 lineBlock va-t" style="width: 100px;">
-                                        <p class="t1">待付款</p>
-                                        <p class="t2">审单通过</p>
-                                        <p class="t3">审核详情</p>
+                                    <div class="box5 lineBlock va-t" style="width: 124px;">￥1000000.00</div>
+                                    <div class="box6 lineBlock va-t" style="width: 140px;">
+                                        <p class="t1">2020/8/31 16:28</p>
                                     </div>
                                     <div class="box7 lineBlock va-t">
-                                        <a href="javascript:;" class="detail">订单详情</a>
-                                        <div class="collect">
-                                            <i class="iconfont icontubiaoshouhou2 va-m"></i>
-                                            <span class="va-m">收藏</span>
-                                        </div>
+                                        <a href="javascript:;" class="btn">下单购买</a>
+                                        <a href="javascript:;" class="detail">取消收藏</a>
                                     </div>
                                     <b class="lineBlock emptys"></b>
                                 </li>
@@ -602,82 +548,21 @@
                                             <em class="lineBlock va-m">H</em>
                                         </div>
                                     </div>
-                                    <div class="box5 lineBlock va-t" style="width: 152px;">￥1000000.00</div>
-                                    <div class="box6 lineBlock va-t" style="width: 100px;">
-                                        <p class="t1">待付款</p>
-                                        <p class="t2">审单通过</p>
-                                        <p class="t3">审核详情</p>
+                                    <div class="box5 lineBlock va-t" style="width: 124px;">￥1000000.00</div>
+                                    <div class="box6 lineBlock va-t" style="width: 140px;">
+                                        <p class="t1">2020/8/31 16:28</p>
                                     </div>
                                     <div class="box7 lineBlock va-t">
-                                        <a href="javascript:;" class="detail">订单详情</a>
+                                        <a href="javascript:;" class="btn">下单购买</a>
+                                        <a href="javascript:;" class="detail">取消收藏</a>
                                     </div>
                                     <b class="lineBlock emptys"></b>
                                 </li>
-                            </ul>
-                            <div class="bottom clr">
-                                <div class="fl p-l">
-                                    <div class="text lineBlock va-m" style="width: 185px;">
-                                        <span>提货方式：</span>
-                                        <em>顺丰快递</em>
-                                    </div>
-                                    <div class="text lineBlock va-m" style="width: 210px;">
-                                        <span>快递费用：</span>
-                                        <em>￥110.00 (含税)</em>
-                                    </div>
-                                    <div class="text lineBlock va-m">
-                                        <span>优惠金额：</span>
-                                        <em>-￥110.00</em>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                                <div class="fr p-r">
-                                    <a href="javascript:;" class="lineBlock va-m btn">去付款</a>
-                                    <span class="t1 va-m">订单金额：</span>
-                                    <span class="t2 va-m">￥113000.00</span>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                            </div>
-                        </dd>
-                        <dd>
-                            <div class="top clr">
-                                <div class="fl l">
-                                    <div class="lineBlock text" style="width: 200px;">
-                                        <i class="iconfont icontubiao25 va-m"></i>
-                                        <span class="t1 va-m">订单包: </span>
-                                        <span class="t2 va-m">G584826</span>
-                                    </div>
-                                    <div class="lineBlock text" style="width: 222px;">
-                                        <span class="t1">订单时间:  </span>
-                                        <span class="t2">2020/8/31 16:28</span>
-                                    </div>
-                                    <div class="lineBlock text">
-                                        <span class="t1">预估交期:  </span>
-                                        <span class="t2">2020/9/10</span>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                                <div class="fr r lbBox">
-                                    <span class="t1 va-m">取消订单</span>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">合同</span>
-                                    </div>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">发货单</span>
-                                    </div>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">出货报告</span>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                            </div>
-                            <ul class="list">
                                 <li class="lbBox">
                                     <div class="box1 lineBlock va-t" style="width: 283px;">
                                         <p class="t1">
                                             <span class="p1 va-m">NO#: #H2W-298921</span>
+                                            <span class="lineBlock va-m new">新</span>
                                         </p>
                                         <div class="text">
                                             <span class="t">1.6mm 2层 69.00*72.0cm</span>
@@ -752,14 +637,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="t2">建滔A级 FR-4 绿油白字 有铅喷锡</p>
                                     </div>
                                     <div class="box2 lineBlock va-t" style="width: 109px">50000 PCS</div>
                                     <div class="box3 lineBlock va-t" style="width: 212px">
                                         <div>
-                                            <i class="iconfont icontubiao6"></i>
-                                            <div class="reupload lineBlock va-t">
-                                                <a class="t1" href="javascript:;">重新上传文件</a>
+                                            <i class="iconfont icontubiao27"></i>
+                                            <div class="text lineBlock va-m">
+                                                <p class="t1">H2W-298921_CGQ298921_CGQ</p>
+                                                <a class="t2" href="javascript:;">下载工程文件</a>
                                             </div>
                                         </div>
                                     </div>
@@ -769,18 +654,13 @@
                                             <em class="lineBlock va-m">H</em>
                                         </div>
                                     </div>
-                                    <div class="box5 lineBlock va-t" style="width: 152px;">￥1000000.00</div>
-                                    <div class="box6 lineBlock va-t" style="width: 100px;">
-                                        <p class="t1">待付款</p>
-                                        <p class="t2">审单通过</p>
-                                        <p class="t3">审核详情</p>
+                                    <div class="box5 lineBlock va-t" style="width: 124px;">￥1000000.00</div>
+                                    <div class="box6 lineBlock va-t" style="width: 140px;">
+                                        <p class="t1">2020/8/31 16:28</p>
                                     </div>
                                     <div class="box7 lineBlock va-t">
-                                        <a href="javascript:;" class="detail">订单详情</a>
-                                        <div class="collect">
-                                            <i class="iconfont icontubiaoshouhou2 va-m"></i>
-                                            <span class="va-m">收藏</span>
-                                        </div>
+                                        <a href="javascript:;" class="btn">下单购买</a>
+                                        <a href="javascript:;" class="detail">取消收藏</a>
                                     </div>
                                     <b class="lineBlock emptys"></b>
                                 </li>
@@ -867,93 +747,41 @@
                                     </div>
                                     <div class="box2 lineBlock va-t" style="width: 109px">50000 PCS</div>
                                     <div class="box3 lineBlock va-t" style="width: 212px">
-                                       <div>
-                                           <i class="iconfont icontubiao6"></i>
-                                           <div class="reupload lineBlock va-t">
-                                               <a class="t1" href="javascript:;">重新上传文件</a>
-                                               <a class="t1" href="javascript:;">重新上传坐标文件</a>
-                                               <a class="t1" href="javascript:;">重新上传BOM文件</a>
-                                           </div>
-                                       </div>
-                                    </div>
-                                    <div class="box4 lineBlock va-t" style="width: 81px">
-                                        <div class="time3 lbBox">
-                                            <span class="lineBlock va-m">4</span>
-                                            <em class="lineBlock va-m">天</em>
+                                        <div>
+                                            <i class="iconfont icontubiao27"></i>
+                                            <div class="text lineBlock va-m">
+                                                <p class="b lbBox">
+                                                    <span class="lineBlock va-m">坐标：</span>
+                                                    <em class="lineBlock va-m">H2W-2989H2W-2989</em>
+                                                </p>
+                                                <p class="b lbBox">
+                                                    <span class="lineBlock va-m">BOM：</span>
+                                                    <em class="lineBlock va-m">H2W-2989H2W-2989</em>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box5 lineBlock va-t" style="width: 152px;">￥1000000.00</div>
-                                    <div class="box6 lineBlock va-t" style="width: 100px;">
-                                        <p class="t1">待付款</p>
-                                        <p class="errror">审单不通过</p>
-                                        <p class="t3">审核详情</p>
+                                    <div class="box4 lineBlock va-t" style="width: 81px">
+                                        <div class="time2 lbBox">
+                                            <span class="lineBlock va-m">48</span>
+                                            <em class="lineBlock va-m">H</em>
+                                        </div>
+                                    </div>
+                                    <div class="box5 lineBlock va-t" style="width: 124px;">￥1000000.00</div>
+                                    <div class="box6 lineBlock va-t" style="width: 140px;">
+                                        <p class="t1">2020/8/31 16:28</p>
                                     </div>
                                     <div class="box7 lineBlock va-t">
-                                        <a href="javascript:;" class="detail">订单详情</a>
+                                        <a href="javascript:;" class="btn">下单购买</a>
+                                        <a href="javascript:;" class="detail">取消收藏</a>
                                     </div>
                                     <b class="lineBlock emptys"></b>
                                 </li>
-                            </ul>
-                            <div class="bottom clr">
-                                <div class="fl p-l">
-                                    <div class="text lineBlock va-m" style="width: 185px;">
-                                        <span>提货方式：</span>
-                                        <em>顺丰快递</em>
-                                    </div>
-                                    <div class="text lineBlock va-m" style="width: 210px;">
-                                        <span>快递费用：</span>
-                                        <em>￥110.00 (含税)</em>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                                <div class="fr p-r">
-                                    <a href="javascript:;" class="lineBlock va-m btn">去付款</a>
-                                    <span class="t1 va-m">订单金额：</span>
-                                    <span class="t2 va-m">￥113000.00</span>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                            </div>
-                        </dd>
-                        <dd>
-                            <div class="top clr">
-                                <div class="fl l">
-                                    <div class="lineBlock text" style="width: 200px;">
-                                        <i class="iconfont icontubiao25 va-m"></i>
-                                        <span class="t1 va-m">订单包: </span>
-                                        <span class="t2 va-m">G584826</span>
-                                    </div>
-                                    <div class="lineBlock text" style="width: 222px;">
-                                        <span class="t1">订单时间:  </span>
-                                        <span class="t2">2020/8/31 16:28</span>
-                                    </div>
-                                    <div class="lineBlock text">
-                                        <span class="t1">预估交期:  </span>
-                                        <span class="t2">2020/9/10</span>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                                <div class="fr r lbBox">
-                                    <span class="t1 va-m">取消订单</span>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">合同</span>
-                                    </div>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">发货单</span>
-                                    </div>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">出货报告</span>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                            </div>
-                            <ul class="list">
                                 <li class="lbBox">
                                     <div class="box1 lineBlock va-t" style="width: 283px;">
                                         <p class="t1">
                                             <span class="p1 va-m">NO#: #H2W-298921</span>
+                                            <span class="lineBlock va-m new">新</span>
                                         </p>
                                         <div class="text">
                                             <span class="t">1.6mm 2层 69.00*72.0cm</span>
@@ -1028,11 +856,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="t2">建滔A级 FR-4 绿油白字 有铅喷锡</p>
                                     </div>
                                     <div class="box2 lineBlock va-t" style="width: 109px">50000 PCS</div>
                                     <div class="box3 lineBlock va-t" style="width: 212px">
-                                        <p class="font-text">生产稿待客服确认</p>
                                         <div>
                                             <i class="iconfont icontubiao27"></i>
                                             <div class="text lineBlock va-m">
@@ -1047,18 +873,13 @@
                                             <em class="lineBlock va-m">H</em>
                                         </div>
                                     </div>
-                                    <div class="box5 lineBlock va-t" style="width: 152px;">￥1000000.00</div>
-                                    <div class="box6 lineBlock va-t" style="width: 100px;">
-                                        <p class="t4">已付款</p>
-                                        <p class="question">EQ问客中</p>
-                                        <p class="t3">审核详情</p>
+                                    <div class="box5 lineBlock va-t" style="width: 124px;">￥1000000.00</div>
+                                    <div class="box6 lineBlock va-t" style="width: 140px;">
+                                        <p class="t1">2020/8/31 16:28</p>
                                     </div>
                                     <div class="box7 lineBlock va-t">
-                                        <a href="javascript:;" class="detail">订单详情</a>
-                                        <div class="collect">
-                                            <i class="iconfont icontubiaoshouhou2 va-m"></i>
-                                            <span class="va-m">收藏</span>
-                                        </div>
+                                        <a href="javascript:;" class="btn">下单购买</a>
+                                        <a href="javascript:;" class="detail">取消收藏</a>
                                     </div>
                                     <b class="lineBlock emptys"></b>
                                 </li>
@@ -1145,94 +966,41 @@
                                     </div>
                                     <div class="box2 lineBlock va-t" style="width: 109px">50000 PCS</div>
                                     <div class="box3 lineBlock va-t" style="width: 212px">
-                                        <p class="font-text">生产稿处理中</p>
                                         <div>
                                             <i class="iconfont icontubiao27"></i>
                                             <div class="text lineBlock va-m">
-                                                <p class="t1">H2W-298921_CGQ298921_CGQ</p>
-                                                <a class="t2" href="javascript:;">下载工程文件</a>
+                                                <p class="b lbBox">
+                                                    <span class="lineBlock va-m">坐标：</span>
+                                                    <em class="lineBlock va-m">H2W-2989H2W-2989</em>
+                                                </p>
+                                                <p class="b lbBox">
+                                                    <span class="lineBlock va-m">BOM：</span>
+                                                    <em class="lineBlock va-m">H2W-2989H2W-2989</em>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="box4 lineBlock va-t" style="width: 81px">
-                                        <div class="time3 lbBox">
-                                            <span class="lineBlock va-m">4</span>
-                                            <em class="lineBlock va-m">天</em>
+                                        <div class="time2 lbBox">
+                                            <span class="lineBlock va-m">48</span>
+                                            <em class="lineBlock va-m">H</em>
                                         </div>
                                     </div>
-                                    <div class="box5 lineBlock va-t" style="width: 152px;">￥1000000.00</div>
-                                    <div class="box6 lineBlock va-t" style="width: 100px;">
-                                        <p class="t4">已付款</p>
-                                        <p class="question">EQ问客中</p>
-                                        <p class="t3">审核详情</p>
+                                    <div class="box5 lineBlock va-t" style="width: 124px;">￥1000000.00</div>
+                                    <div class="box6 lineBlock va-t" style="width: 140px;">
+                                        <p class="t1">2020/8/31 16:28</p>
                                     </div>
                                     <div class="box7 lineBlock va-t">
-                                        <a href="javascript:;" class="detail">订单详情</a>
-                                        <a href="javascript:;" class="detail">生产进度</a>
+                                        <a href="javascript:;" class="btn">下单购买</a>
+                                        <a href="javascript:;" class="detail">取消收藏</a>
                                     </div>
                                     <b class="lineBlock emptys"></b>
                                 </li>
-                            </ul>
-                            <div class="bottom clr">
-                                <div class="fl p-l">
-                                    <div class="text lineBlock va-m" style="width: 185px;">
-                                        <span>提货方式：</span>
-                                        <em>顺丰快递</em>
-                                    </div>
-                                    <div class="text lineBlock va-m" style="width: 210px;">
-                                        <span>快递费用：</span>
-                                        <em>￥110.00 (含税)</em>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                                <div class="fr p-r">
-                                    <a href="javascript:;" class="lineBlock va-m btn">支付尾款</a>
-                                    <span class="t1 va-m">订单金额：</span>
-                                    <span class="t2 va-m">￥113000.00</span>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                            </div>
-                        </dd>
-                        <dd>
-                            <div class="top clr">
-                                <div class="fl l">
-                                    <div class="lineBlock text" style="width: 200px;">
-                                        <i class="iconfont icontubiao25 va-m"></i>
-                                        <span class="t1 va-m">订单包: </span>
-                                        <span class="t2 va-m">G584826</span>
-                                    </div>
-                                    <div class="lineBlock text" style="width: 222px;">
-                                        <span class="t1">订单时间:  </span>
-                                        <span class="t2">2020/8/31 16:28</span>
-                                    </div>
-                                    <div class="lineBlock text">
-                                        <span class="t1">预估交期:  </span>
-                                        <span class="t2">2020/9/10</span>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                                <div class="fr r lbBox">
-                                    <span class="t1 va-m">取消订单</span>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">合同</span>
-                                    </div>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">发货单</span>
-                                    </div>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">出货报告</span>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                            </div>
-                            <ul class="list">
                                 <li class="lbBox">
                                     <div class="box1 lineBlock va-t" style="width: 283px;">
                                         <p class="t1">
                                             <span class="p1 va-m">NO#: #H2W-298921</span>
+                                            <span class="lineBlock va-m new">新</span>
                                         </p>
                                         <div class="text">
                                             <span class="t">1.6mm 2层 69.00*72.0cm</span>
@@ -1307,11 +1075,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="t2">建滔A级 FR-4 绿油白字 有铅喷锡</p>
                                     </div>
                                     <div class="box2 lineBlock va-t" style="width: 109px">50000 PCS</div>
                                     <div class="box3 lineBlock va-t" style="width: 212px">
-                                        <p class="font-text">生产稿待客服确认</p>
                                         <div>
                                             <i class="iconfont icontubiao27"></i>
                                             <div class="text lineBlock va-m">
@@ -1326,18 +1092,13 @@
                                             <em class="lineBlock va-m">H</em>
                                         </div>
                                     </div>
-                                    <div class="box5 lineBlock va-t" style="width: 152px;">￥1000000.00</div>
-                                    <div class="box6 lineBlock va-t" style="width: 100px;">
-                                        <p class="t4">已付款</p>
-                                        <p class="question">EQ问客中</p>
-                                        <p class="t3">审核详情</p>
+                                    <div class="box5 lineBlock va-t" style="width: 124px;">￥1000000.00</div>
+                                    <div class="box6 lineBlock va-t" style="width: 140px;">
+                                        <p class="t1">2020/8/31 16:28</p>
                                     </div>
                                     <div class="box7 lineBlock va-t">
-                                        <a href="javascript:;" class="detail">订单详情</a>
-                                        <div class="collect">
-                                            <i class="iconfont icontubiaoshouhou2 va-m"></i>
-                                            <span class="va-m">收藏</span>
-                                        </div>
+                                        <a href="javascript:;" class="btn">下单购买</a>
+                                        <a href="javascript:;" class="detail">取消收藏</a>
                                     </div>
                                     <b class="lineBlock emptys"></b>
                                 </li>
@@ -1424,337 +1185,43 @@
                                     </div>
                                     <div class="box2 lineBlock va-t" style="width: 109px">50000 PCS</div>
                                     <div class="box3 lineBlock va-t" style="width: 212px">
-                                        <p class="font-text">生产稿处理中</p>
                                         <div>
                                             <i class="iconfont icontubiao27"></i>
                                             <div class="text lineBlock va-m">
-                                                <p class="t1">H2W-298921_CGQ298921_CGQ</p>
-                                                <a class="t2" href="javascript:;">下载工程文件</a>
+                                                <p class="b lbBox">
+                                                    <span class="lineBlock va-m">坐标：</span>
+                                                    <em class="lineBlock va-m">H2W-2989H2W-2989</em>
+                                                </p>
+                                                <p class="b lbBox">
+                                                    <span class="lineBlock va-m">BOM：</span>
+                                                    <em class="lineBlock va-m">H2W-2989H2W-2989</em>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="box4 lineBlock va-t" style="width: 81px">
-                                        <div class="time3 lbBox">
-                                            <span class="lineBlock va-m">4</span>
-                                            <em class="lineBlock va-m">天</em>
-                                        </div>
-                                    </div>
-                                    <div class="box5 lineBlock va-t" style="width: 152px;">￥1000000.00</div>
-                                    <div class="box6 lineBlock va-t" style="width: 100px;">
-                                        <p class="t4">已付款</p>
-                                        <p class="question">EQ问客中</p>
-                                        <p class="t3">审核详情</p>
-                                    </div>
-                                    <div class="box7 lineBlock va-t">
-                                        <a href="javascript:;" class="btn">评价有礼</a>
-                                        <a href="javascript:;" class="btn">返单</a>
-                                        <a href="javascript:;" class="detail">订单详情</a>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </li>
-                            </ul>
-                            <div class="bottom clr">
-                                <div class="fl p-l">
-                                    <div class="text lineBlock va-m" style="width: 185px;">
-                                        <span>提货方式：</span>
-                                        <em>顺丰快递</em>
-                                    </div>
-                                    <div class="text lineBlock va-m" style="width: 210px;">
-                                        <span>快递费用：</span>
-                                        <em>￥110.00 (含税)</em>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                                <div class="fr p-r">
-                                    <span class="t1 va-m">订单金额：</span>
-                                    <span class="t2 va-m">￥113000.00</span>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                            </div>
-                        </dd>
-                        <dd class="disabled">
-                            <div class="top clr">
-                                <div class="fl l">
-                                    <div class="lineBlock text" style="width: 200px;">
-                                        <i class="iconfont icontubiao25 va-m"></i>
-                                        <span class="t1 va-m">订单包: </span>
-                                        <span class="t2 va-m">G584826</span>
-                                    </div>
-                                    <div class="lineBlock text" style="width: 222px;">
-                                        <span class="t1">订单时间:  </span>
-                                        <span class="t2">2020/8/31 16:28</span>
-                                    </div>
-                                    <div class="lineBlock text">
-                                        <span class="t1">预估交期:  </span>
-                                        <span class="t2">2020/9/10</span>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                                <div class="fr r lbBox">
-                                    <span class="t1 va-m">取消订单</span>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">合同</span>
-                                    </div>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">发货单</span>
-                                    </div>
-                                    <div class="bar lineBlock va-m">
-                                        <i class="iconfont icontubiao110 va-m"></i>
-                                        <span class="va-m">出货报告</span>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                            </div>
-                            <ul class="list">
-                                <li class="lbBox">
-                                    <div class="box1 lineBlock va-t" style="width: 283px;">
-                                        <p class="t1">
-                                            <span class="p1 va-m">NO#: #H2W-298921</span>
-                                        </p>
-                                        <div class="text">
-                                            <span class="t">1.6mm 2层 69.00*72.0cm</span>
-                                            <div class="lineBlock detail va-m">
-                                                <span class="tx">明细</span>
-                                                <div class="detail-box">
-                                                    <i class="left"></i>
-                                                    <table>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="t1">单片尺寸：</td>
-                                                            <td class="t2">23.00 cm * 23.00 cm</td>
-                                                            <td class="t1">拼版款数：</td>
-                                                            <td class="t2">1</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">层数：</td>
-                                                            <td class="t2">2层</td>
-                                                            <td class="t1">过孔处理：</td>
-                                                            <td class="t2">过孔盖油</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">阻焊颜色：</td>
-                                                            <td class="t2">绿色</td>
-                                                            <td class="t1">焊盘喷镀：</td>
-                                                            <td class="t2">无铅喷锡</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">字符：</td>
-                                                            <td class="t2">白色</td>
-                                                            <td class="t1">板厚：</td>
-                                                            <td class="t2">1.6mm</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">铜厚(内/外)：</td>
-                                                            <td class="t2">1oz / 1oz</td>
-                                                            <td class="t1">最小线宽/线距：</td>
-                                                            <td class="t2">8/8mil↑</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">最小孔径：</td>
-                                                            <td class="t2">0.4 mm</td>
-                                                            <td class="t1">出货类型：</td>
-                                                            <td class="t2">单片/1*1拼版</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">板材：</td>
-                                                            <td class="t2">FR-4 tg130</td>
-                                                            <td class="t1">数量：</td>
-                                                            <td class="t2">300PCS</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">是否接受打叉板：</td>
-                                                            <td class="t2">接受</td>
-                                                            <td class="t1">阻抗：</td>
-                                                            <td class="t2">无</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">测试：</td>
-                                                            <td class="t2">AOI光学</td>
-                                                            <td class="t1">金手指倒边：</td>
-                                                            <td class="t2">无</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">V割方式：</td>
-                                                            <td class="t2">V割</td>
-                                                            <td class="t1"></td>
-                                                            <td class="t2"></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="t2">建滔A级 FR-4 绿油白字 有铅喷锡</p>
-                                    </div>
-                                    <div class="box2 lineBlock va-t" style="width: 109px">50000 PCS</div>
-                                    <div class="box3 lineBlock va-t" style="width: 212px">
-                                        <p class="font-text">生产稿待客服确认</p>
-                                        <div>
-                                            <i class="iconfont icontubiao27"></i>
-                                            <div class="text lineBlock va-m">
-                                                <p class="t1">H2W-298921_CGQ298921_CGQ</p>
-                                                <a class="no" href="javascript:;">暂无工程文件</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="box4 lineBlock va-t" style="width: 81px">
-                                        <div class="time1 lbBox">
-                                            <span class="lineBlock va-m">24</span>
+                                        <div class="time2 lbBox">
+                                            <span class="lineBlock va-m">48</span>
                                             <em class="lineBlock va-m">H</em>
                                         </div>
                                     </div>
-                                    <div class="box5 lineBlock va-t" style="width: 152px;">￥1000000.00</div>
-                                    <div class="box6 lineBlock va-t" style="width: 100px;">
-                                        <p class="t4">已付款</p>
-                                        <p class="question">EQ问客中</p>
-                                        <p class="t3">审核详情</p>
+                                    <div class="box5 lineBlock va-t" style="width: 124px;">￥1000000.00</div>
+                                    <div class="box6 lineBlock va-t" style="width: 140px;">
+                                        <p class="t1">2020/8/31 16:28</p>
                                     </div>
                                     <div class="box7 lineBlock va-t">
-                                        <a href="javascript:;" class="detail">订单详情</a>
-                                        <div class="collect">
-                                            <i class="iconfont icontubiaoshouhou2 va-m"></i>
-                                            <span class="va-m">收藏</span>
-                                        </div>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </li>
-                                <li class="lbBox">
-                                    <div class="box1 lineBlock va-t" style="width: 283px;">
-                                        <p class="t1">
-                                            <span class="p1 va-m">NO#: #H2W-298921</span>
-                                            <span class="va-m lineBlock p2">SMT</span>
-                                            <a href="javascript:;" class="va-m lineBlock fandan">返单</a>
-                                        </p>
-                                        <div class="text">
-                                            <span class="t">12pcs * 12 Points</span>
-                                            <div class="lineBlock detail va-m">
-                                                <span class="tx">明细</span>
-                                                <div class="detail-box">
-                                                    <i class="left"></i>
-                                                    <table>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="t1">单片尺寸：</td>
-                                                            <td class="t2">23.00 cm * 23.00 cm</td>
-                                                            <td class="t1">拼版款数：</td>
-                                                            <td class="t2">1</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">层数：</td>
-                                                            <td class="t2">2层</td>
-                                                            <td class="t1">过孔处理：</td>
-                                                            <td class="t2">过孔盖油</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">阻焊颜色：</td>
-                                                            <td class="t2">绿色</td>
-                                                            <td class="t1">焊盘喷镀：</td>
-                                                            <td class="t2">无铅喷锡</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">字符：</td>
-                                                            <td class="t2">白色</td>
-                                                            <td class="t1">板厚：</td>
-                                                            <td class="t2">1.6mm</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">铜厚(内/外)：</td>
-                                                            <td class="t2">1oz / 1oz</td>
-                                                            <td class="t1">最小线宽/线距：</td>
-                                                            <td class="t2">8/8mil↑</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">最小孔径：</td>
-                                                            <td class="t2">0.4 mm</td>
-                                                            <td class="t1">出货类型：</td>
-                                                            <td class="t2">单片/1*1拼版</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">板材：</td>
-                                                            <td class="t2">FR-4 tg130</td>
-                                                            <td class="t1">数量：</td>
-                                                            <td class="t2">300PCS</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">是否接受打叉板：</td>
-                                                            <td class="t2">接受</td>
-                                                            <td class="t1">阻抗：</td>
-                                                            <td class="t2">无</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">测试：</td>
-                                                            <td class="t2">AOI光学</td>
-                                                            <td class="t1">金手指倒边：</td>
-                                                            <td class="t2">无</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="t1">V割方式：</td>
-                                                            <td class="t2">V割</td>
-                                                            <td class="t1"></td>
-                                                            <td class="t2"></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="box2 lineBlock va-t" style="width: 109px">50000 PCS</div>
-                                    <div class="box3 lineBlock va-t" style="width: 212px">
-                                        <p class="font-text">生产稿处理中</p>
-                                        <div>
-                                            <i class="iconfont icontubiao27"></i>
-                                            <div class="text lineBlock va-m">
-                                                <p class="t1">H2W-298921_CGQ298921_CGQ</p>
-                                                <a class="t2" href="javascript:;">下载工程文件</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="box4 lineBlock va-t" style="width: 81px">
-                                        <div class="time3 lbBox">
-                                            <span class="lineBlock va-m">4</span>
-                                            <em class="lineBlock va-m">天</em>
-                                        </div>
-                                    </div>
-                                    <div class="box5 lineBlock va-t" style="width: 152px;">￥1000000.00</div>
-                                    <div class="box6 lineBlock va-t" style="width: 100px;">
-                                        <p class="t4">已付款</p>
-                                        <p class="question">EQ问客中</p>
-                                        <p class="t3">审核详情</p>
-                                    </div>
-                                    <div class="box7 lineBlock va-t">
-                                        <a href="javascript:;" class="btn">评价有礼</a>
-                                        <a href="javascript:;" class="btn">返单</a>
-                                        <a href="javascript:;" class="detail">订单详情</a>
+                                        <a href="javascript:;" class="btn">下单购买</a>
+                                        <a href="javascript:;" class="detail">取消收藏</a>
                                     </div>
                                     <b class="lineBlock emptys"></b>
                                 </li>
                             </ul>
-                            <div class="bottom clr">
-                                <div class="fl p-l">
-                                    <div class="text lineBlock va-m" style="width: 185px;">
-                                        <span>提货方式：</span>
-                                        <em>顺丰快递</em>
-                                    </div>
-                                    <div class="text lineBlock va-m" style="width: 210px;">
-                                        <span>快递费用：</span>
-                                        <em>￥110.00 (含税)</em>
-                                    </div>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                                <div class="fr p-r">
-                                    <a href="javascript:;" class="lineBlock va-m re-btn">重新下单</a>
-                                    <span class="t1 va-m" style="margin-left: 20px;">尾款费用：</span>
-                                    <span class="t3 va-m">￥110.00 (含税)</span>
-                                    <span class="t1 va-m">订单金额：</span>
-                                    <span class="t2 va-m">￥113000.00</span>
-                                    <b class="lineBlock emptys"></b>
-                                </div>
-                            </div>
                         </dd>
                     </dl>
+                </div>
+                <div id="pagination" style="text-align: right"></div>
+                <div class="ad">
+                    <img src="./images/p-home/quote.png" alt="">
                 </div>
             </div>
         </div>
@@ -1935,8 +1402,19 @@
 <script type="text/javascript">
   $(function () {
 
-    Util.tabs('.tab  li', function (index) {
-      
+    layui.laypage.render({
+      elem: 'pagination',
+      count: 100,
+      limit: 10,
+      curr: 1,
+      theme: '#0A60BE',
+      jump: function (obj, first) {
+
+        if (!first) {
+
+
+        }
+      }
     });
 
     layui.laydate.render({
