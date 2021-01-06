@@ -370,9 +370,220 @@ body {
   height: 25px;
   margin-left: 4px;
 }
+.layui-layer-title {
+  color: #222222 !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
 .pcbbuy-banner {
+  position: relative;
   height: 430px;
   background: linear-gradient(180deg, #135CA3 0%, #1D7FB8 100%);
+}
+.pcbbuy-banner .banner {
+  position: relative;
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+  z-index: 2;
+}
+.pcbbuy-banner .banner .bd {
+  height: 430px;
+}
+.pcbbuy-banner .banner .bd ul {
+  height: 430px;
+}
+.pcbbuy-banner .banner .bd ul li {
+  width: 100%;
+  height: 430px;
+}
+.pcbbuy-banner .banner .bd ul li a {
+  width: 100%;
+  height: 430px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+}
+.pcbbuy-banner .banner .hd {
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.pcbbuy-banner .banner .hd li {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  opacity: 0.5;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  margin-right: 12px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  border-radius: 50%;
+}
+.pcbbuy-banner .banner .hd li.on {
+  opacity: 1;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+.pcbbuy-banner .wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -646px;
+  margin-top: -150px;
+  width: 560px;
+  height: 300px;
+  background: #FFFFFF;
+  z-index: 22;
+}
+.pcbbuy-banner .wrap .tab {
+  width: 130px;
+  height: 300px;
+  background: #1180C9;
+}
+.pcbbuy-banner .wrap .tab li {
+  position: relative;
+  height: 59px;
+  line-height: 59px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.pcbbuy-banner .wrap .tab li p {
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.pcbbuy-banner .wrap .tab li.curr:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 60px;
+  background: #FFFFFF;
+  content: '';
+}
+.pcbbuy-banner .wrap .tab li.curr p {
+  opacity: 1;
+  font-weight: bold;
+}
+.pcbbuy-banner .wrap .show-box {
+  padding-left: 15px;
+  display: none;
+}
+.pcbbuy-banner .wrap .show-box .form-box {
+  width: 403px;
+}
+.pcbbuy-banner .wrap .show-box .form-box li {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.pcbbuy-banner .wrap .show-box .form-box li:nth-of-type(2n) {
+  margin-right: 0;
+}
+.pcbbuy-banner .wrap .show-box .form-box .label {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 6px;
+}
+.pcbbuy-banner .wrap .show-box .form-box .type1 .input-box .w1 {
+  width: 28px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  background: #F1F2F7;
+  font-size: 12px;
+  color: #666666;
+  border: 1px solid #DDDDDD;
+  border-left: none;
+  border-right: none;
+}
+.pcbbuy-banner .wrap .show-box .form-box .type1 .input-box .w2 {
+  width: 34px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  background: #F1F2F7;
+  border: 1px solid #DDDDDD;
+  border-left: none;
+  font-size: 12px;
+  color: #666666;
+}
+.pcbbuy-banner .wrap .show-box .form-box .type1 .input-box .inp {
+  height: 33px;
+  line-height: 33px;
+  text-indent: 7px;
+  border: 1px solid #DDDDDD;
+  font-size: 14px;
+}
+.pcbbuy-banner .wrap .show-box .form-box .type1 .input-box .inp::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #cccccc;
+}
+.pcbbuy-banner .wrap .show-box .form-box .type2 .input-box select {
+  width: 168px;
+  height: 35px;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  font-size: 14px;
+  color: #222222;
+  padding-left: 7px;
+}
+.pcbbuy-banner .wrap .show-box .form-box .type3 .input-box select {
+  width: 214px;
+  height: 35px;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  font-size: 14px;
+  color: #222222;
+  padding-left: 7px;
+}
+.pcbbuy-banner .wrap .show-box .form-box .type4 .input-box .inp {
+  width: 188px;
+  height: 33px;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  text-indent: 7px;
+  font-size: 14px;
+}
+.pcbbuy-banner .wrap .show-box .form-box .type4 .input-box .inp::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #cccccc;
+}
+.pcbbuy-banner .wrap .show-box .tit {
+  padding-top: 20px;
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.pcbbuy-banner .wrap .show-box .btn-box .btn {
+  width: 128px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #F38A16;
+  border-radius: 3px;
+  margin-right: 15px;
+}
+.pcbbuy-banner .wrap .show-box .btn-box .btn .iconfont {
+  font-size: 18px;
+  color: #ffffff;
+}
+.pcbbuy-banner .wrap .show-box .btn-box .btn span {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.pcbbuy-banner .wrap .show-box .btn-box .t1 {
+  font-size: 14px;
+  color: #1180c9;
 }
 .pcbbuy-section .pcbbuy-news {
   padding: 30px 0 40px 0;
@@ -447,6 +658,562 @@ body {
   font-size: 14px;
   color: #1180c9;
 }
+.pcbbuy-section .discover .wrap-bar {
+  height: 156px;
+}
+.pcbbuy-section .discover .wrap-bar .box-l {
+  width: 222px;
+  height: 156px;
+  background: #FFFFFF;
+  border-right: 1px solid #DDDDDD;
+}
+.pcbbuy-section .discover .wrap-bar .box-l .t1 {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+  text-align: center;
+}
+.pcbbuy-section .discover .wrap-bar .box-l .btn {
+  width: 173px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #1180C9;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 30px auto 0;
+  display: block;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li {
+  position: relative;
+  float: left;
+  width: 130px;
+  text-align: center;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li:after {
+  position: absolute;
+  left: 100px;
+  top: 12px;
+  width: 46px;
+  height: 10px;
+  content: '';
+  background: url("../../images/home/arrow.png") no-repeat center;
+  z-index: 3;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li:last-child:after {
+  background: none;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li p {
+  width: 84px;
+  font-size: 12px;
+  color: #222222;
+  text-align: center;
+  font-weight: bold;
+  margin: 15px auto 0;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li i {
+  background-image: url("../../images/icn.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li .icn-1 {
+  background-position: 0 0;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li .icn-2 {
+  background-position: -41px 0;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li .icn-3 {
+  background-position: -83px 0;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li .icn-4 {
+  background-position: -126px 0;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li .icn-5 {
+  background-position: -178px 0;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li .icn-6 {
+  background-position: -228px -1px;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li .icn-7 {
+  background-position: -283px -1px;
+}
+.pcbbuy-section .discover .wrap-bar .box-r li .icn-8 {
+  background-position: -339px 0;
+}
+.pcbbuy-section .box1 {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background: #F8F8F8;
+  border-top: 2px solid #1180C9;
+}
+.pcbbuy-section .box1 .tit {
+  font-size: 24px;
+  color: #222222;
+  font-weight: bold;
+}
+.pcbbuy-section .box1 .list {
+  margin-top: 20px;
+}
+.pcbbuy-section .box1 .list li {
+  position: relative;
+  width: 240px;
+  height: 400px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  margin-right: 20px;
+  transition: all 0.4s ease;
+}
+.pcbbuy-section .box1 .list li:last-child {
+  margin-right: 0;
+}
+.pcbbuy-section .box1 .list li .im {
+  width: 182px;
+  height: 101px;
+  display: block;
+  margin: 44px auto 54px;
+}
+.pcbbuy-section .box1 .list li .t1 {
+  font-size: 18px;
+  color: #222222;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pcbbuy-section .box1 .list li .t2 {
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pcbbuy-section .box1 .list li .t3 {
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pcbbuy-section .box1 .list li .btn {
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  background: #1180C9;
+  box-shadow: 0px 3px 10px 2px rgba(26, 108, 209, 0.15);
+  border-radius: 21px;
+  margin: 0 auto;
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.pcbbuy-section .box1 .list li:hover {
+  box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.05);
+}
+.pcbbuy-section .box1 .list li:hover:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10px;
+  background: #1180C9;
+  border-radius: 0px 0px 6px 6px;
+  content: '';
+}
+.pcbbuy-section .box2 {
+  background: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.pcbbuy-section .box2 .tit {
+  font-size: 24px;
+  color: #222222;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.pcbbuy-section .box2 .title {
+  margin-bottom: 20px;
+}
+.pcbbuy-section .box2 .title .l {
+  font-size: 24px;
+  color: #222222;
+  font-weight: bold;
+}
+.pcbbuy-section .box2 .title .r {
+  font-size: 14px;
+  color: #666666;
+}
+.pcbbuy-section .box2 .assembly-box {
+  margin-bottom: 40px;
+}
+.pcbbuy-section .box2 .assembly-box .l {
+  width: 628px;
+  height: 318px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #DDDDDD;
+}
+.pcbbuy-section .box2 .assembly-box .l dl dt {
+  white-space: nowrap;
+  height: 39px;
+  line-height: 39px;
+  background: #F8F8F8;
+  border-bottom: 1px solid #DDDDDD;
+}
+.pcbbuy-section .box2 .assembly-box .l dl dt span {
+  font-size: 14px;
+  color: #222222;
+}
+.pcbbuy-section .box2 .assembly-box .l dl dd {
+  height: 40px;
+  line-height: 40px;
+}
+.pcbbuy-section .box2 .assembly-box .l dl dd .p1 img {
+  width: 21px;
+  height: 15px;
+}
+.pcbbuy-section .box2 .assembly-box .l dl dd .p1 span {
+  font-size: 13px;
+  color: #222222;
+  margin-left: 4px;
+}
+.pcbbuy-section .box2 .assembly-box .l dl dd .p2 {
+  font-size: 13px;
+  color: #222222;
+}
+.pcbbuy-section .box2 .assembly-box .l dl dd .p3 {
+  font-size: 13px;
+  color: #222222;
+}
+.pcbbuy-section .box2 .assembly-box .l dl dd .p4 {
+  font-size: 13px;
+  color: #222222;
+}
+.pcbbuy-section .box2 .assembly-box .r {
+  width: 628px;
+  height: 318px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #DDDDDD;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-box {
+  height: 290px;
+  border-right: 1px solid #E8EAEC;
+  width: 253px;
+  margin-top: 15px;
+  padding-left: 15px;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-box .t {
+  font-size: 16px;
+  color: #222222;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-box .t2 {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-box .ico-box li {
+  margin-right: 20px;
+  text-align: center;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-box .ico-box li .time-t1 {
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-box .ico-box li .time-t2 {
+  font-size: 12px;
+  color: #666666;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-box .ico-box li i {
+  background-image: url("../../images/icn.png");
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin: 0 auto;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-box .ico-box li .icn-1 {
+  background-position: -399px -5px;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-box .ico-box li .icn-2 {
+  background-position: -443px -5px;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-box .ico-box li .icn-3 {
+  background-position: -461px -48px;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-pox {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-pox .tit {
+  font-size: 16px;
+  color: #222222;
+  font-weight: bold;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-pox .t1 {
+  width: 326px;
+  white-space: normal;
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px;
+  margin-bottom: 17px;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-pox .video-box {
+  width: 325px;
+  height: 190px;
+}
+.pcbbuy-section .box2 .assembly-box .r .p-pox .video-box .video {
+  width: 325px;
+  height: 190px;
+}
+.pcbbuy-section .box2 .list li {
+  width: 303px;
+  height: 330px;
+  border: 1px solid transparent;
+  margin-right: 20px;
+  transition: all 0.2s ease;
+}
+.pcbbuy-section .box2 .list li:hover {
+  box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #DDDDDD;
+}
+.pcbbuy-section .box2 .list li:last-child {
+  margin-right: 0;
+}
+.pcbbuy-section .box2 .list li .pic {
+  width: 285px;
+  height: 185px;
+  display: block;
+  margin: 10px auto 12px;
+}
+.pcbbuy-section .box2 .list li .pic img {
+  width: 285px;
+  height: 185px;
+}
+.pcbbuy-section .box2 .list li .wrap {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.pcbbuy-section .box2 .list li .wrap .t1 {
+  font-size: 12px;
+  color: #666666;
+  line-height: 17px;
+  margin-bottom: 15px;
+  white-space: normal;
+}
+.pcbbuy-section .box2 .list li .wrap .text .im {
+  width: 21px;
+  height: 15px;
+}
+.pcbbuy-section .box2 .list li .wrap .text span {
+  font-size: 14px;
+  color: #222222;
+  margin-left: 10px;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom {
+  margin-top: 10px;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .l .star {
+  width: 16px;
+  height: 16px;
+  background: url("../../images/home/start.png") no-repeat center;
+  background-size: cover;
+  margin-right: 5px;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .l .star.disabled {
+  background: url("../../images/home/star-def.png") no-repeat center;
+  background-size: cover;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .r .time1 {
+  width: 50px;
+  height: 20px;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .r .time1 span {
+  width: 24px;
+  height: 18px;
+  font-size: 12px;
+  color: #ed3400;
+  border: 1px solid #ED3400;
+  border-right: none;
+  border-radius: 3px 0px 0px 3px;
+  text-align: center;
+  line-height: 18px;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .r .time1 em {
+  width: 25px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background: #ED3400;
+  border-radius: 0px 3px 3px 0px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .r .time2 {
+  width: 50px;
+  height: 20px;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .r .time2 span {
+  width: 24px;
+  height: 18px;
+  font-size: 12px;
+  color: #F38A16;
+  border: 1px solid #F38A16;
+  border-right: none;
+  border-radius: 3px 0px 0px 3px;
+  text-align: center;
+  line-height: 18px;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .r .time2 em {
+  width: 25px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background: #F38A16;
+  border-radius: 0px 3px 3px 0px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .r .time3 {
+  width: 50px;
+  height: 20px;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .r .time3 span {
+  width: 24px;
+  height: 18px;
+  font-size: 12px;
+  color: #1180C9;
+  border: 1px solid #1180C9;
+  border-right: none;
+  border-radius: 3px 0px 0px 3px;
+  text-align: center;
+  line-height: 18px;
+}
+.pcbbuy-section .box2 .list li .wrap .bottom .r .time3 em {
+  width: 25px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background: #1180C9;
+  border-radius: 0px 3px 3px 0px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.pcbbuy-section .box3 {
+  width: 100%;
+  height: 470px;
+  background: url("../../images/home/bb.png") no-repeat center;
+  background-size: cover;
+}
+.pcbbuy-section .box3 .tit {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.pcbbuy-section .box3 .list {
+  text-align: center;
+}
+.pcbbuy-section .box3 .list li {
+  width: 413px;
+  height: 332px;
+  background: #FFFFFF;
+  margin-right: 20px;
+}
+.pcbbuy-section .box3 .list li:last-child {
+  margin-right: 0;
+}
+.pcbbuy-section .box3 .list li .pic {
+  width: 413px;
+  height: 230px;
+}
+.pcbbuy-section .box3 .list li .pic img {
+  width: 413px;
+  height: 230px;
+}
+.pcbbuy-section .box3 .list li .text {
+  text-align: left;
+  padding: 15px 0 0 15px;
+}
+.pcbbuy-section .box3 .list li .text .t1 {
+  font-size: 18px;
+  color: #222222;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.pcbbuy-section .box3 .list li .text .t2 {
+  font-size: 14px;
+  color: #666666;
+}
+.pcbbuy-section .box4 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #ffffff;
+}
+.pcbbuy-section .box4 .tit .l {
+  font-size: 24px;
+  color: #222222;
+  font-weight: bold;
+}
+.pcbbuy-section .box4 .tit .r {
+  font-size: 14px;
+  color: #666666;
+}
+.pcbbuy-section .box4 .list {
+  margin-top: 20px;
+}
+.pcbbuy-section .box4 .list li {
+  width: 628px;
+  float: left;
+  height: 160px;
+  border: 1px solid transparent;
+  background: #FFFFFF;
+}
+.pcbbuy-section .box4 .list li:hover {
+  border: 1px solid #DDDDDD;
+  box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.05);
+}
+.pcbbuy-section .box4 .list li .top {
+  padding: 0 20px 0 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.pcbbuy-section .box4 .list li .top .p-l {
+  font-size: 18px;
+  color: #222222;
+  font-weight: bold;
+}
+.pcbbuy-section .box4 .list li .top .p-r {
+  font-size: 18px;
+  color: #999999;
+  font-weight: bold;
+}
+.pcbbuy-section .box4 .list li .text {
+  padding: 0 20px 0 15px;
+  white-space: nowrap;
+}
+.pcbbuy-section .box4 .list li .text span {
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+}
+.pcbbuy-section .box4 .list li .text em {
+  white-space: normal;
+  width: 570px;
+  font-size: 14px;
+  color: #666666;
+}
 .pcbbuy-footer-top {
   padding: 33px 0;
   background: #F1F9FF;
@@ -462,9 +1229,23 @@ body {
 .pcbbuy-footer-top ul li:last-child {
   border-right: none;
 }
-.pcbbuy-footer-top ul li .iconfont {
-  font-size: 66px;
-  color: #1180c9;
+.pcbbuy-footer-top ul li i {
+  width: 66px;
+  height: 66px;
+  background-image: url("../../images/icn.png");
+  background-repeat: no-repeat;
+}
+.pcbbuy-footer-top ul li .i-1 {
+  background-position: 0 -76px;
+}
+.pcbbuy-footer-top ul li .i-2 {
+  background-position: -69px -76px;
+}
+.pcbbuy-footer-top ul li .i-3 {
+  background-position: -139px -77px;
+}
+.pcbbuy-footer-top ul li .i-4 {
+  background-position: -208px -80px;
 }
 .pcbbuy-footer-top ul li .text {
   text-align: left;

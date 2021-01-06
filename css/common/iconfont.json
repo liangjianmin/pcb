@@ -6,6 +6,41 @@
   "description": "pcb海外版",
   "glyphs": [
     {
+      "icon_id": "19249646",
+      "name": "Message／_Icon／Success",
+      "font_class": "Message_IconSuccess",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "19249313",
+      "name": "icon／login／优惠券",
+      "font_class": "iconloginyouhuiquan",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "19239755",
+      "name": "icon／home／计算",
+      "font_class": "iconhomejisuan",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "19185722",
+      "name": "icon／home／assembly／sales",
+      "font_class": "iconhomeassemblysales",
+      "unicode": "e6e2",
+      "unicode_decimal": 59106
+    },
+    {
+      "icon_id": "19185657",
+      "name": "icon／home／assembly／24h",
+      "font_class": "iconhomeassembly24h",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
       "icon_id": "19167683",
       "name": "icon／home／video",
       "font_class": "iconhomevideo",

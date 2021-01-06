@@ -1,0 +1,571 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  font-family: sans-serif;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  border: none;
+}
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol,
+ul,
+dl {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+img {
+  border: none;
+}
+em {
+  font-style: normal;
+}
+.clr {
+  zoom: 1;
+}
+.clr:after {
+  content: ".";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.fl {
+  float: left;
+  _display: inline;
+}
+.fr {
+  float: right;
+  _display: inline;
+}
+.va-t {
+  vertical-align: top;
+}
+.va-m {
+  vertical-align: middle;
+}
+.va-b {
+  vertical-align: bottom;
+}
+.i-hide {
+  display: none;
+}
+.i-show {
+  display: block;
+}
+.lineBlock {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.lbBox {
+  font-size: 0 !important;
+  *word-spacing: -1px !important;
+}
+.emptys {
+  margin-left: -1px;
+  width: 1px;
+  height: 100%;
+  font-size: 0;
+  vertical-align: middle;
+}
+label,
+dd,
+dd,
+dt {
+  font-weight: normal;
+}
+.boxsiz {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  min-width: 1280px;
+}
+.width-1280 {
+  width: 1280px;
+  margin: 0 auto;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -icab-text-overflow: ellipsis;
+  -khtml-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.pcbbuy-head {
+  height: 60px;
+  background: #ffffff;
+}
+.pcbbuy-head .l {
+  height: 60px;
+}
+.pcbbuy-head .l .logo {
+  width: 384px;
+  height: 33px;
+}
+.pcbbuy-head .l .logo img {
+  width: 384px;
+  height: 33px;
+}
+.pcbbuy-head .l .text {
+  margin-left: 80px;
+}
+.pcbbuy-head .l .text .t1 {
+  font-size: 11px;
+  color: #666666;
+  margin-bottom: 3px;
+}
+.pcbbuy-head .l .text .t2 {
+  font-size: 11px;
+  color: #666666;
+}
+.pcbbuy-head .r {
+  height: 60px;
+}
+.pcbbuy-head .r .text .t1 {
+  margin-bottom: 3px;
+}
+.pcbbuy-head .r .text .t1 .iconfont {
+  font-size: 12px;
+  color: #222222;
+}
+.pcbbuy-head .r .text .t1 span {
+  font-size: 12px;
+  color: #222222;
+  font-weight: bold;
+  margin-left: 3px;
+}
+.pcbbuy-head .r .text .t2 {
+  font-size: 11px;
+  color: #666666;
+}
+.pcbbuy-head .r .car-bar {
+  margin-left: 60px;
+}
+.pcbbuy-head .r .car-bar .iconfont {
+  font-size: 19px;
+  color: #ed3400;
+}
+.pcbbuy-head .r .car-bar span {
+  font-size: 12px;
+  color: #222222;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.pcbbuy-head .r .car-bar em {
+  font-size: 12px;
+  color: #ed3400;
+}
+.pcbbuy-head .r .login-bar {
+  margin-left: 19px;
+}
+.pcbbuy-head .r .login-bar .iconfont {
+  font-size: 19px;
+  color: #1180c9;
+  margin-right: 3px;
+}
+.pcbbuy-head .r .login-bar a {
+  font-size: 12px;
+  color: #1180c9;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.pcbbuy-head .r .login-bar em {
+  font-size: 12px;
+  color: #222222;
+  vertical-align: middle;
+  margin: 0 7px;
+}
+.pcbbuy-nav {
+  height: 40px;
+  background: #1360A7;
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.pcbbuy-nav .box {
+  height: 40px;
+}
+.pcbbuy-nav .box a {
+  position: relative;
+  font-size: 14px;
+  color: #FFFFFF;
+  vertical-align: middle;
+  opacity: 0.7;
+  margin-right: 60px;
+}
+.pcbbuy-nav .box a.curr {
+  font-weight: bold;
+  opacity: 1;
+}
+.pcbbuy-nav .box a.curr:after {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 3px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  margin: 0 auto;
+  content: '';
+}
+.pcbbuy-footer {
+  width: 100%;
+}
+.pcbbuy-footer .footer-top {
+  background: #09223C;
+  border-radius: 1px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.pcbbuy-footer .footer-top .l img {
+  width: 157px;
+  height: 33px;
+}
+.pcbbuy-footer .footer-top .l .t1 {
+  font-size: 12px;
+  color: #1180c9;
+  font-weight: bold;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+.pcbbuy-footer .footer-top .l .t2 {
+  font-size: 10px;
+  color: #ffffff;
+  width: 359px;
+  line-height: 14px;
+  opacity: 0.6;
+}
+.pcbbuy-footer .footer-top .r {
+  padding-top: 40px;
+}
+.pcbbuy-footer .footer-top .r dl {
+  vertical-align: top;
+  margin-right: 150px;
+}
+.pcbbuy-footer .footer-top .r dl dt {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.pcbbuy-footer .footer-top .r dl dd {
+  margin-bottom: 15px;
+}
+.pcbbuy-footer .footer-top .r dl dd a {
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.pcbbuy-footer .footer-bottom {
+  border-top: 1px solid #17395D;
+  height: 69px;
+  background: #04192F;
+  border-radius: 1px;
+}
+.pcbbuy-footer .footer-bottom .l {
+  height: 69px;
+}
+.pcbbuy-footer .footer-bottom .r {
+  height: 69px;
+}
+.pcbbuy-footer .footer-bottom span {
+  font-size: 10px;
+  color: #ffffff;
+}
+.pcbbuy-footer .footer-bottom .im1 {
+  width: 181px;
+  height: 38px;
+  margin-left: 8px;
+}
+.pcbbuy-footer .footer-bottom .im2 {
+  width: 418px;
+  height: 25px;
+  margin-left: 4px;
+}
+.layui-layer-title {
+  color: #222222 !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+.register-box {
+  padding: 88px 0;
+  background: #F5F5F5;
+  text-align: center;
+}
+.register-box .pic {
+  width: 520px;
+  height: 510px;
+  background: url("../../images/login/login_bg2.png") no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+.register-box .register-bar {
+  text-align: left;
+  width: 400px;
+  height: 510px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 8px 8px 0px;
+}
+.register-box .register-bar .t1 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #222222;
+  font-weight: bold;
+  text-align: center;
+}
+.register-box .register-bar .wrap {
+  padding-left: 50px;
+}
+.register-box .register-bar .wrap .inp-box {
+  position: relative;
+  margin-bottom: 15px;
+}
+.register-box .register-bar .wrap .inp-box .error {
+  position: absolute;
+  right: 61px;
+  top: 0;
+  font-size: 11px;
+  color: #ed3400;
+}
+.register-box .register-bar .wrap .inp-box .tt {
+  font-size: 14px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+.register-box .register-bar .wrap .inp-box .inp input {
+  width: 288px;
+  height: 38px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+  font-size: 14px;
+  text-indent: 10px;
+}
+.register-box .register-bar .wrap .inp-box .inp input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+.register-box .register-bar .wrap .inp-box .inp select {
+  width: 300px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.register-box .register-bar .wrap .btn {
+  width: 300px;
+  height: 40px;
+  background: #1180C9;
+  border-radius: 3px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+.register-box .register-bar .wrap .keep {
+  padding-right: 50px;
+  margin-top: 20px;
+}
+.register-box .register-bar .wrap .keep .l .check {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #CCCCCC;
+}
+.register-box .register-bar .wrap .keep .l span {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #666666;
+}
+.register-box .register-bar .wrap .keep .l em {
+  font-size: 12px;
+  color: #1180c9;
+  cursor: pointer;
+}
+.register-box .register-bar .wrap .keep .r .iconfont {
+  font-size: 14px;
+  color: #f38a16;
+}
+.register-box .register-bar .wrap .keep .r span {
+  font-size: 12px;
+  color: #ed3400;
+  margin-left: 3px;
+}
+.register-box .register-bar .wrap .text {
+  margin-top: 15px;
+  text-align: center;
+}
+.register-box .register-bar .wrap .text span {
+  font-size: 14px;
+  color: #222222;
+}
+.register-box .register-bar .wrap .text em {
+  font-size: 14px;
+  color: #1180c9;
+}
+.register-success {
+  padding: 88px 0;
+  background: #F5F5F5;
+  text-align: center;
+}
+.register-success .box {
+  width: 800px;
+  height: 440px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.register-success .box .iconfont {
+  font-size: 56px;
+  color: #52c41a;
+}
+.register-success .box .t1 {
+  font-size: 16px;
+  color: #222222;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.register-success .box .t2 {
+  font-size: 14px;
+  color: #666666;
+  width: 690px;
+  line-height: 20px;
+  margin: 0 auto 63px;
+}
+.register-success .box .btn1 {
+  width: 220px;
+  height: 40px;
+  background: #1180C9;
+  border-radius: 3px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto 20px;
+}
+.register-success .box .btn2 {
+  width: 218px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #1180C9;
+  display: block;
+  margin: 0 auto;
+}
+.register-success .box .btn2 span {
+  font-size: 14px;
+  color: #1180c9;
+}
+.register-success .box .btn2 em {
+  font-size: 14px;
+  color: #ed3400;
+}
+.service-layer {
+  padding: 20px;
+}
+.service-layer .content {
+  font-size: 12px;
+  color: #666666;
+  line-height: 17px;
+}
+/*# sourceMappingURL=index.css.map */
