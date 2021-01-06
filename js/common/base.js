@@ -61,9 +61,13 @@
       });
       
       
-      $(document).on('click', '.website-tip .iconfont', function () {
-        $(".website-tip").hide();
+      $(document).on('click', '.closebox', function () {
+        $(".closebox").parent().parent().slideUp();
       });
+      
+      
+      
+      
       
       return this;
     },

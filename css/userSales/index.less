@@ -14,10 +14,11 @@
     a {
       font-size: 12px;
       color: #131414;
-
+      opacity: 0.6;
       &.curr {
         color: #131414;
         font-weight: bold;
+        opacity: 1;
       }
     }
   }
@@ -69,15 +70,14 @@
       }
 
       .data-box {
-        margin-top: 12px;
         width: 100%;
+        display: none;
 
         dl {
           dt {
             background: #FFFFFF;
             height: 40px;
             line-height: 40px;
-            border-bottom: 1px solid #E4ECED;;
 
             span {
               font-size: 14px;
@@ -230,6 +230,20 @@
                   .t2 {
                     font-size: 14px;
                     color: #131414;
+                  }
+
+                  .relation {
+                    margin-top: 6px;
+
+                    span {
+                      font-size: 14px;
+                      color: #131414;
+                    }
+
+                    em {
+                      font-size: 14px;
+                      color: #0a60be;
+                    }
                   }
 
                 }
@@ -417,8 +431,14 @@
                     font-size: 14px;
                     color: #131414;
                     margin-bottom: 6px;
+                    font-weight: bold;
                   }
-
+                  .t4{
+                    font-size: 14px;
+                    color: #e59115;
+                    margin-bottom: 6px;
+                    font-weight: bold;
+                  }
                 }
 
                 .box7 {

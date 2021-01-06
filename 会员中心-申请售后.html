@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>猎板网</title>
+    <meta name="keywords" content="猎板网-全功能定制PCB服务"/>
+    <meta name="description" content="猎板网-全功能定制PCB服务"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="./css/common/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/plugin/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="css/userApplySales/index.css"/>
+</head>
+
+<body>
+
+<!--head-->
+<div class="p-head">
+    <div class="width-1280 box clr">
+        <div class="fl l lbBox">
+            <h2 class="logo lineBlock va-m">
+                <a href="/"><img src="./images/p-home/logo.png" alt=""></a>
+            </h2>
+            <h2 class="lineBlock text va-m">
+                <p>猎芯旗下</p>
+                <p>全球电子硬件智造平台</p>
+            </h2>
+            <b class="lineBlock emptys"></b>
+        </div>
+        <div class="fr r lbBox">
+            <p class="lineBlock va-m t1">服务时间：周一至周六 09:00-22:00</p>
+            <span class="line1 lineBlock va-m"></span>
+            <p class="lineBlock va-m t2">
+                <i class="iconfont icontubiao va-m"></i>
+                <span class="va-m" style="margin-right: 12px">800183356</span>
+                <i class="iconfont icontubiao10 va-m"></i>
+                <span class="va-m">服务热线：0571-86609386</span>
+                <span class="line2 lineBlock va-m"></span>
+                <span class="va-m">15068181342</span>
+            </p>
+            <a class="car-ico lineBlock va-m">
+                <i class="iconfont icontubiao2"></i>
+                <span>0</span>
+            </a>
+            <!--已登录-->
+            <div class="lineBlock va-m hov">
+                <div class="avatar lineBlock va-m">
+                    <img src="http://img.ichunt.com/images/ichunt/minProgram/bcaf917ddb6a16e9dc72cbfa3d9edb35.jpg" alt="">
+                </div>
+                <div class="material lineBlock va-m">
+                    <div class="wrap lineBlock lbBox">
+                        <span class="tel va-m">185****0841</span>
+                        <span class="point"></span>
+                        <i class="icon lineBlock va-m"></i>
+                    </div>
+                    <b class="lineBlock emptys"></b>
+                    <div class="list-box">
+                        <i class="up"></i>
+                        <ul class="list">
+                            <li>
+                                <a href="">
+                                    <i class="iconfont icontubiao14"></i>
+                                    <span>站内信</span>
+                                    <em class="num">2</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="iconfont icontubiao13"></i>
+                                    <span>我的订单</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="iconfont icontubiao21"></i>
+                                    <span>会员中心</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="iconfont icontubiao31"></i>
+                                    <span class="color">安全退出</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--未登录-->
+            <div class="lineBlock va-m" style="display: none">
+                <i class="iconfont icontubiao16 va-m"></i>
+                <a href="javascript:;" class="link va-m ml">登录</a>
+                <span class="line3 lineBlock va-m"></span>
+                <a href="javascript:;" class="link va-m">注册</a>
+            </div>
+            <b class="lineBlock emptys"></b>
+        </div>
+    </div>
+</div>
+<div class="p-nav">
+    <div class="width-1280 box">
+        <ul class="lineBlock va-m lbBox">
+            <li class="lineBlock curr">
+                <a href="" class="link">首页</a>
+            </li>
+            <li class="lineBlock">
+                <div class="hot">
+                    <span>HOT</span>
+                    <i></i>
+                </div>
+                <a href="" class="link va-m">PCB计价</a>
+                <b class="lineBlock emptys"></b>
+            </li>
+            <li class="lineBlock">
+                <a href="" class="link va-m">SMT贴装</a>
+                <b class="lineBlock emptys"></b>
+            </li>
+            <li class="lineBlock">
+                <a href="" class="link va-m">客户晒单</a>
+                <b class="lineBlock emptys"></b>
+            </li>
+            <li class="lineBlock">
+                <a href="" class="link va-m">新闻资讯</a>
+                <b class="lineBlock emptys"></b>
+            </li>
+            <li class="lineBlock">
+                <a href="" class="link va-m">工厂展示</a>
+                <i class="arrow lineBlock va-m"></i>
+                <b class="lineBlock emptys"></b>
+                <div class="list-box">
+                    <i class="up"></i>
+                    <dl class="list">
+                        <dd>
+                            <a href="">
+                                <span>站内信</span>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="">
+                                <span>我的订单</span>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="">
+                                <span>会员中心</span>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <li class="lineBlock">
+                <a href="" class="link va-m">了解猎板</a>
+                <i class="arrow lineBlock va-m"></i>
+                <b class="lineBlock emptys"></b>
+                <div class="list-box">
+                    <i class="up"></i>
+                    <dl class="list">
+                        <dd>
+                            <a href="">
+                                <span>站内信</span>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="">
+                                <span>我的订单</span>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="">
+                                <span>会员中心</span>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+        </ul>
+        <b class="lineBlock emptys"></b>
+    </div>
+</div>
+<!--head end-->
+
+<!--section-->
+<div class="section page-bg">
+    <div class="width-1280">
+        <div class="user-title lbBox">
+            <a href="javascript:;">首页</a>
+            <span class="iconfont icontubiao41"></span>
+            <a href="javascript:;">会员中心</a>
+            <span class="iconfont icontubiao41"></span>
+            <a href="javascript:;">订单售后</a>
+            <span class="iconfont icontubiao41"></span>
+            <a href="javascript:;" class="curr">申请售后</a>
+        </div>
+        <div class="content clr">
+            <div class="fl menu">
+                <dl>
+                    <dt class="lbBox">
+                        <a href="javascript:;">
+                            <i class="iconfont icontubiao24 va-m"></i>
+                            <span class="va-m">会员中心</span>
+                            <b class="lineBlock emptys"></b>
+                        </a>
+                    </dt>
+                    <dd>
+                        <div class="tit lbBox">
+                            <i class="iconfont icontubiao13 va-m"></i>
+                            <span class="va-m">订单管理</span>
+                            <b class="lineBlock emptys"></b>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <a href="javascript:;">PCB订单</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">SMT订单</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">钢网订单</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">订单收藏</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <div class="tit lbBox">
+                            <i class="iconfont icontubiao17 va-m"></i>
+                            <span class="va-m">账户钱包</span>
+                            <b class="lineBlock emptys"></b>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <a href="javascript:;">我的抵扣券</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">账户余额</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">支付安全设置</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <div class="tit lbBox">
+                            <i class="iconfont icontubiaofapiao va-m"></i>
+                            <span class="va-m">发票管理</span>
+                            <b class="lineBlock emptys"></b>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <a href="javascript:;">开票资料</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">申请开票</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">开票记录</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <div class="tit lbBox">
+                            <i class="iconfont icontubiaoshouhou va-m"></i>
+                            <span class="va-m">售后服务</span>
+                            <b class="lineBlock emptys"></b>
+                        </div>
+                        <ul class="list">
+                            <li class="curr">
+                                <a href="javascript:;">订单售后</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">晒单评价</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <div class="tit lbBox">
+                            <i class="iconfont icontubiaoshezhi va-m"></i>
+                            <span class="va-m">账号设置</span>
+                            <b class="lineBlock emptys"></b>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <a href="javascript:;">收货地址</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">账户资料</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">企业认证</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">安全设置</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">账户绑定</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <div class="tit lbBox">
+                            <i class="iconfont icontubiao7 va-m"></i>
+                            <span class="va-m">资料管理</span>
+                            <b class="lineBlock emptys"></b>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <a href="javascript:;">已上传文件</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="fr right-bar">
+                <ul class="tab clr">
+                    <li class="curr"><span>申请售后</span></li>
+                </ul>
+                <div class="data-box">
+                    <dl>
+                        <dt class="lbBox">
+                            <span class="lineBlock" style="width: 283px;padding-left: 24px;">订单信息</span>
+                            <span class="lineBlock" style="width: 109px;">数量</span>
+                            <span class="lineBlock" style="width: 232px;">文件</span>
+                            <span class="lineBlock" style="width: 108px;">时效</span>
+                            <span class="lineBlock" style="width: 194px;">价格</span>
+                            <span class="lineBlock">操作</span>
+                        </dt>
+                        <dd>
+                            <ul class="list">
+                                <li class="lbBox">
+                                    <div class="box1 lineBlock va-t" style="width: 283px;">
+                                        <p class="t1">
+                                            <span class="p1 va-m">NO#: #H2W-298921</span>
+                                            <span class="lineBlock va-m new">新</span>
+                                        </p>
+                                        <div class="text">
+                                            <span class="t">1.6mm 2层 69.00*72.0cm</span>
+                                            <div class="lineBlock detail va-m">
+                                                <span class="tx">明细</span>
+                                                <div class="detail-box">
+                                                    <i class="left"></i>
+                                                    <table>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="t1">单片尺寸：</td>
+                                                            <td class="t2">23.00 cm * 23.00 cm</td>
+                                                            <td class="t1">拼版款数：</td>
+                                                            <td class="t2">1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="t1">层数：</td>
+                                                            <td class="t2">2层</td>
+                                                            <td class="t1">过孔处理：</td>
+                                                            <td class="t2">过孔盖油</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="t1">阻焊颜色：</td>
+                                                            <td class="t2">绿色</td>
+                                                            <td class="t1">焊盘喷镀：</td>
+                                                            <td class="t2">无铅喷锡</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="t1">字符：</td>
+                                                            <td class="t2">白色</td>
+                                                            <td class="t1">板厚：</td>
+                                                            <td class="t2">1.6mm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="t1">铜厚(内/外)：</td>
+                                                            <td class="t2">1oz / 1oz</td>
+                                                            <td class="t1">最小线宽/线距：</td>
+                                                            <td class="t2">8/8mil↑</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="t1">最小孔径：</td>
+                                                            <td class="t2">0.4 mm</td>
+                                                            <td class="t1">出货类型：</td>
+                                                            <td class="t2">单片/1*1拼版</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="t1">板材：</td>
+                                                            <td class="t2">FR-4 tg130</td>
+                                                            <td class="t1">数量：</td>
+                                                            <td class="t2">300PCS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="t1">是否接受打叉板：</td>
+                                                            <td class="t2">接受</td>
+                                                            <td class="t1">阻抗：</td>
+                                                            <td class="t2">无</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="t1">测试：</td>
+                                                            <td class="t2">AOI光学</td>
+                                                            <td class="t1">金手指倒边：</td>
+                                                            <td class="t2">无</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="t1">V割方式：</td>
+                                                            <td class="t2">V割</td>
+                                                            <td class="t1"></td>
+                                                            <td class="t2"></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box2 lineBlock va-t" style="width: 109px">50000 PCS</div>
+                                    <div class="box3 lineBlock va-t" style="width: 232px">
+                                        <div>
+                                            <i class="iconfont icontubiao27"></i>
+                                            <div class="text lineBlock va-m">
+                                                <p class="t1">H2W-298921_CGQ298921_CGQ</p>
+                                                <a class="t2" href="javascript:;">下载工程文件</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box4 lineBlock va-t" style="width: 108px;">
+                                        <div class="time1 lbBox">
+                                            <span class="lineBlock va-m">24</span>
+                                            <em class="lineBlock va-m">H</em>
+                                        </div>
+                                    </div>
+                                    <div class="box5 lineBlock va-t" style="width: 194px;">￥1000000.00</div>
+                                    <div class="box7 lineBlock va-t">
+                                        <a href="javascript:;" class="detail">订单详情</a>
+                                    </div>
+                                    <b class="lineBlock emptys"></b>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="apply-text">
+                    <div class="box bor">
+                        <div class="input-wrap lbBox">
+                            <label class="lineBlock va-m">问题数量：</label>
+                            <div class="input-box lineBlock va-m">
+                                <input type="text" placeholder="请输入问题产品数量" class="inp1"/>
+                                <span class="tt">*最多可提交数量为<em>500</em>个</span>
+                            </div>
+                        </div>
+                        <div class="input-wrap lbBox">
+                            <label class="lineBlock va-m">售后原因：</label>
+                            <div class="input-box lineBlock va-m">
+                                <select name="">
+                                    <option value="0">请选择售后原因</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-wrap lbBox">
+                            <label class="lineBlock va-t">问题描述：</label>
+                            <div class="input-box lineBlock va-t">
+                                <textarea placeholder="请输入问题描述，不得少于10个字。"></textarea>
+                            </div>
+                        </div>
+                        <div class="input-wrap lbBox">
+                            <label class="lineBlock va-t">上传凭证：</label>
+                            <div class="upload-box lineBlock va-t">
+                                <div class="upload-wrap lbBox">
+                                    <ul class="pic-list lineBlock va-t clr">
+                                        <li>
+                                            <i class="iconfont icontubiaodatubiaoshibai"></i>
+                                            <img src="https://www.pcbhunt.com/uploadfile/supply_comment_watermark/2020/12/29/2020122915252083379315_%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202012291523582.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icontubiaodatubiaoshibai"></i>
+                                            <img src="https://www.pcbhunt.com/uploadfile/supply_comment_watermark/2020/12/29/2020122915252083379315_%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202012291523582.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icontubiaodatubiaoshibai"></i>
+                                            <img src="https://www.pcbhunt.com/uploadfile/supply_comment_watermark/2020/12/29/2020122915252083379315_%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202012291523582.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                    <div class="upload-btn lineBlock va-t">
+                                        <i class="iconfont icontubiao6"></i>
+                                        <p>选择图片</p>
+                                    </div>
+                                </div>
+                                <p class="upload-text" style="margin-bottom: 6px;margin-top: 10px;">*为了帮助您更好的解决问题，请上传图片（问题产品图片/检测报告）</p>
+                                <p class="upload-text">*最多可上传5张图片，每张图片大小不超过5M，支持bmp,gif,jpg,png,jpeg格式文件</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="input-wrap lbBox">
+                            <label class="lineBlock va-m">联系人：</label>
+                            <div class="input-box lineBlock va-m">
+                                <input type="text" placeholder="。" class="inp2" value="拾贰"/>
+                            </div>
+                        </div>
+                        <div class="input-wrap lbBox">
+                            <label class="lineBlock va-m">联系电话：</label>
+                            <div class="input-box lineBlock va-m">
+                                <input type="text" placeholder="拾贰。" class="inp2" value="拾贰"/>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="sumit-btn">提交售后</a>
+                        <div class="reminder">
+                            <p class="t1">温馨提示：</p>
+                            <p class="t2">
+                                • 售后审核通过后以短信形式告知，或在售后记录中查询；<br/>
+                                • 提交服务单后，售后专员可能与您电话沟通，请保持手机畅通；<br/>
+                                • 退货处理成功后退款金额将原路返回到您的支持账户中；<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--section end-->
+
+<div class="user-fast">
+    <div class="width-1280 clr box">
+        <div class="text lineBlock va-m">
+            <p class="t1">猎板极速PCB智慧工厂</p>
+            <p class="t2">打样24小时出货，小批量48小时出货，免加急费，100%满足IPC II级标准</p>
+        </div>
+        <div class="form-box lineBlock va-m lbBox">
+            <input type="text" placeholder="高度/Y" class="w1 va-m"/>
+            <span class="t1 va-m">X</span>
+            <input type="text" placeholder="宽度/Y" class="w1 va-m"/>
+            <span class="t2 va-m">cm</span>
+            <div class="lineBlock sel-div va-m num-box" id="pcb_qty_layers" style="position: relative">
+                <input type="text" autocomplete="off" placeholder="请选择数量(PCS)" name="Num" class="input-v lineBlock txt-wrap va-m inp" style="width: 160px">
+            </div>
+            <a href="javascript:;" class="fast-btn lineBlock va-m">
+                <i class="iconfont iconjijia va-m"></i>
+                <span class="va-m">立即计价</span>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </div>
+        <b class="lineBlock emptys"></b>
+    </div>
+</div>
+
+<!--footer-->
+<div class="p-footer">
+    <div class="width-1280 box">
+        <div class="top clr">
+            <div class="fl l">
+                <ul class="clr">
+                    <li>
+                        <dl>
+                            <dt>产品中心</dt>
+                            <dd><a href="">PCB计价</a></dd>
+                            <dd><a href="">特价板</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>新闻资讯</dt>
+                            <dd><a href="">企业动态</a></dd>
+                            <dd><a href="">行业动态</a></dd>
+                            <dd><a href="">技术知识</a></dd>
+                            <dd><a href="">电路图</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>帮助中心</dt>
+                            <dd><a href="">下单流程</a></dd>
+                            <dd><a href="">支付流程</a></dd>
+                            <dd><a href="">开票流程</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>关于猎板</dt>
+                            <dd><a href="">关于猎板</a></dd>
+                            <dd><a href="">联系我们</a></dd>
+                            <dd><a href="">工厂展示</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr r lbBox">
+                <i class="iconfont icontubiao1 va-t"></i>
+                <div class="text lineBlock va-t">
+                    <p class="t1">服务热线</p>
+                    <p class="t2">0571 - 86609386</p>
+                    <p class="t3">150 6818 1342</p>
+                    <p class="t4">服务时间：9:00-22:00</p>
+                    <p class="t5">客服邮箱：service@pcbhunt.com</p>
+                </div>
+                <div class="lineBlock va-m code-pic">
+                    <img src="./images/p-footer/code.png" alt="">
+                    <p>微信公众号</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="t1">Copyright © www.PCBhunt.com, All Rights Reserved. 版权所有:杭州猎板网络科技有限公司 浙ICP备20015009号-1</p>
+            <p class="t2">联系地址：浙江省杭州市拱墅区万达广场C栋16楼</p>
+        </div>
+        <div class="copyright clr">
+            <div class="fl l lbBox">
+                <span class="tit va-m">合作快递：</span>
+                <i class="i1 lineBlock va-m"></i>
+                <i class="i2 lineBlock va-m"></i>
+            </div>
+            <div class="fr r">
+                <span class="tit va-m">支付方式：</span>
+                <i class="i3 lineBlock va-m"></i>
+                <i class="i4 lineBlock va-m"></i>
+                <i class="i5 lineBlock va-m"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+<!--slidebar-->
+<div class="slide-bar-box">
+    <dl>
+        <dd>
+            <a href="javascript:;" class="lbBox">
+                <i class="iconfont icontubiao"></i>
+                <b class="lineBlock emptys"></b>
+            </a>
+            <div class="show lbBox">
+                <i class="iconfont icontubiao va-t"></i>
+                <div class="text lineBlock va-t">
+                    <p class="tit">在线客服</p>
+                    <a class="t1">800183356</a>
+                </div>
+            </div>
+        </dd>
+        <dd>
+            <a href="javascript:;" class="lbBox">
+                <i class="iconfont icontubiao1"></i>
+                <b class="lineBlock emptys"></b>
+            </a>
+            <div class="show lbBox">
+                <i class="iconfont icontubiao1 va-t"></i>
+                <div class="text lineBlock va-t">
+                    <p class="tit">服务热线</p>
+                    <p class="t2">0571-86609386</p>
+                    <p class="t3">15068181342</p>
+                </div>
+            </div>
+        </dd>
+        <dd>
+            <a href="javascript:;" class="lbBox">
+                <i class="iconfont icontubiao3"></i>
+                <b class="lineBlock emptys"></b>
+            </a>
+            <div class="show lbBox">
+                <div class="pic">
+                    <img src="./images/p-footer/code.png" alt="">
+                    <p>微信公众号</p>
+                </div>
+            </div>
+        </dd>
+        <dd class="last">
+            <a href="javascript:;" class="lbBox">
+                <i class="iconfont icontubiao4"></i>
+                <b class="lineBlock emptys"></b>
+            </a>
+            <div class="show lbBox">
+                <i class="iconfont icontubiao4 va-m"></i>
+                <div class="text lineBlock va-m">
+                    <p class="tit">意见反馈</p>
+                </div>
+            </div>
+        </dd>
+        <dt id="backtop">
+            <a href="javascript:;" class="lbBox">
+                <i class="iconfont icontubiao5"></i>
+                <b class="lineBlock emptys"></b>
+            </a>
+        </dt>
+    </dl>
+</div>
+<!--slidebar end-->
+
+<script type="text/html" id="successHtml">
+    <div class="success-layer">
+        <div class="box lbBox">
+            <i class="iconfont icontubiaodatubiaochenggong va-m"></i>
+            <div class="text lineBlock va-m">
+                <p class="t1">售后申请提交成功</p>
+                <p class="t2">售后专员可能与您电话沟通，请保持手机畅通</p>
+            </div>
+        </div>
+        <div class="btn lbBox">
+            <a href="javascript:;" class="btn1 lineBlock va-m">售后详情</a>
+            <a href="javascript:;" class="btn2 lineBlock va-m">关闭</a>
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript" src="js/common/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugin/layui/layui.all.js"></script>
+<script type="text/javascript" src="js/common/base.js"></script>
+<script type="text/javascript">
+  $(function () {
+
+
+    layer.open({
+      type: 1,
+      title: '<span>申请售后</span>',
+      area: ['524px', 'auto'],
+      shadeClose: true,
+      move: false,
+      content: $("#successHtml").html(),
+      success: function (layero, index) {
+        layui.form.render();
+
+      }
+    });
+
+
+
+  })
+</script>
+</body>
+
+</html>

@@ -1040,6 +1040,34 @@ body {
   color: #ffffff;
   font-weight: bold;
 }
+.user-tip-box {
+  width: 1062px;
+  height: 30px;
+  line-height: 30px;
+  background: #FFF1E3;
+  border-radius: 2px;
+  border: 1px solid #FADEBA;
+}
+.user-tip-box .l {
+  height: 30px;
+  padding-left: 12px;
+}
+.user-tip-box .l .iconfont {
+  font-size: 24px;
+  color: #e59115;
+}
+.user-tip-box .l span {
+  font-size: 14px;
+  color: #e59115;
+}
+.user-tip-box .r {
+  padding-right: 10px;
+}
+.user-tip-box .r .iconfont {
+  font-size: 12px;
+  color: #b6b9b7;
+  cursor: pointer;
+}
 .section-car {
   background: #E8F1F2;
   padding-top: 12px;
