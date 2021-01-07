@@ -375,6 +375,11 @@ body {
   font-size: 16px !important;
   font-weight: bold !important;
 }
+.pcbbuy-tip {
+  height: 38px;
+  background: #E6F7FF;
+  border: 1px solid #91D5FF;
+}
 .pcbbuy-banner {
   position: relative;
   height: 430px;

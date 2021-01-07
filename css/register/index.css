@@ -375,6 +375,11 @@ body {
   font-size: 16px !important;
   font-weight: bold !important;
 }
+.pcbbuy-tip {
+  height: 38px;
+  background: #E6F7FF;
+  border: 1px solid #91D5FF;
+}
 .register-box {
   padding: 88px 0;
   background: #F5F5F5;
