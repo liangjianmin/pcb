@@ -6,6 +6,76 @@
   "description": "pcb海外版",
   "glyphs": [
     {
+      "icon_id": "19269502",
+      "name": "icon／问号",
+      "font_class": "iconwenhao",
+      "unicode": "e704",
+      "unicode_decimal": 59140
+    },
+    {
+      "icon_id": "19262672",
+      "name": "icon／order／skype",
+      "font_class": "iconorderskype",
+      "unicode": "e703",
+      "unicode_decimal": 59139
+    },
+    {
+      "icon_id": "19262168",
+      "name": "icon／instant／upload",
+      "font_class": "iconinstantupload1",
+      "unicode": "e700",
+      "unicode_decimal": 59136
+    },
+    {
+      "icon_id": "19262169",
+      "name": "Message／_Icon／Error",
+      "font_class": "Message_IconError",
+      "unicode": "e701",
+      "unicode_decimal": 59137
+    },
+    {
+      "icon_id": "19262170",
+      "name": "icon／order／remove",
+      "font_class": "iconorderremove",
+      "unicode": "e702",
+      "unicode_decimal": 59138
+    },
+    {
+      "icon_id": "19262147",
+      "name": "icon／instant／upload",
+      "font_class": "iconinstantupload",
+      "unicode": "e6ff",
+      "unicode_decimal": 59135
+    },
+    {
+      "icon_id": "19262137",
+      "name": "icon／center／order／ziliao备份",
+      "font_class": "iconcenterorderziliaobeifen",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    },
+    {
+      "icon_id": "19262116",
+      "name": "icon／center／order／ziliao",
+      "font_class": "iconcenterorderziliao",
+      "unicode": "e6fd",
+      "unicode_decimal": 59133
+    },
+    {
+      "icon_id": "19262096",
+      "name": "icon／提示／close",
+      "font_class": "icontishiclose",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    },
+    {
+      "icon_id": "19262052",
+      "name": "Shape",
+      "font_class": "Shape",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    },
+    {
       "icon_id": "19249646",
       "name": "Message／_Icon／Success",
       "font_class": "Message_IconSuccess",

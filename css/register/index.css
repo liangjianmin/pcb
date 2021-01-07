@@ -375,10 +375,144 @@ body {
   font-size: 16px !important;
   font-weight: bold !important;
 }
+.pcbbuy-footer-top {
+  padding: 33px 0;
+  background: #F1F9FF;
+}
+.pcbbuy-footer-top ul {
+  white-space: nowrap;
+}
+.pcbbuy-footer-top ul li {
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid #D7E8F5;
+}
+.pcbbuy-footer-top ul li:last-child {
+  border-right: none;
+}
+.pcbbuy-footer-top ul li i {
+  width: 66px;
+  height: 66px;
+  background-image: url("../../images/icn.png");
+  background-repeat: no-repeat;
+}
+.pcbbuy-footer-top ul li .i-1 {
+  background-position: 0 -76px;
+}
+.pcbbuy-footer-top ul li .i-2 {
+  background-position: -69px -76px;
+}
+.pcbbuy-footer-top ul li .i-3 {
+  background-position: -139px -77px;
+}
+.pcbbuy-footer-top ul li .i-4 {
+  background-position: -208px -80px;
+}
+.pcbbuy-footer-top ul li .text {
+  text-align: left;
+  margin-left: 15px;
+}
+.pcbbuy-footer-top ul li .text .t1 {
+  font-size: 24px;
+  color: #1180c9;
+  font-weight: bold;
+}
+.pcbbuy-footer-top ul li .text .t2 {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+}
 .pcbbuy-tip {
   height: 38px;
   background: #E6F7FF;
   border: 1px solid #91D5FF;
+  padding: 0 16px;
+}
+.pcbbuy-tip .l {
+  height: 38px;
+}
+.pcbbuy-tip .l .iconfont {
+  font-size: 14px;
+  color: #1890ff;
+}
+.pcbbuy-tip .l span {
+  font-size: 14px;
+  color: #222222;
+  margin-left: 8px;
+}
+.pcbbuy-tip .r {
+  height: 38px;
+}
+.pcbbuy-tip .r .iconfont {
+  font-size: 12px;
+  color: #8a9499;
+  cursor: pointer;
+}
+.layui-layer {
+  border-radius: 6px !important;
+}
+.layui-layer-title {
+  border-radius: 6px 6px 0 0 !important;
+  background: transparent !important;
+}
+.layui-layer-page .layui-layer-content {
+  height: auto !important;
+  overflow: hidden;
+}
+.layer-footer {
+  text-align: right;
+  padding: 12px 20px 12px 0;
+  background: #F8F8F8;
+  box-shadow: 0px 1px 0px 0px #DDDDDD;
+  border-radius: 0px 0px 6px 6px;
+  border-top: 1px solid #DDDDDD;
+}
+.layer-footer .btn1 {
+  width: 67px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+  font-size: 14px;
+  color: #222222;
+  margin-right: 15px;
+}
+.layer-footer .btn2 {
+  min-width: 70px;
+  padding: 0 12px;
+  height: 30px;
+  background: #1180C9;
+  border-radius: 3px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+.circle {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 50%;
+}
+.circle.act {
+  border: 1px solid #1180C9;
+}
+.circle.act span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+  background: #1180C9;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 .register-box {
   padding: 88px 0;
