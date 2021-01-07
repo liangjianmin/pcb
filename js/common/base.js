@@ -62,7 +62,7 @@
       
       
       $(document).on('click', '.closebox', function () {
-        $(".closebox").parent().parent().slideUp();
+        $(this).parent().slideUp();
       });
       
       
