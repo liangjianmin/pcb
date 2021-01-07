@@ -63,7 +63,7 @@
       p {
         margin-top: 0.2rem;
         font-size: 11px;
-        color: #2e3033;
+        color: #323233;
         font-weight: bold;
       }
     }
@@ -73,11 +73,13 @@
     border-bottom: 1px solid #E9F2F5;
     padding: 0.64rem 0.31rem 1.22rem 0.31rem;
     overflow: hidden;
+    background: linear-gradient(180deg, #DFF0FF 0%, #FFFFFF 100%);
+    border-radius: 8px 8px 0px 0px;
 
     .t1 {
       text-align: center;
       font-size: 16px;
-      color: #2e3033;
+      color: #323233;
       font-weight: bold;
       margin-bottom: 0.13rem;
     }
@@ -85,7 +87,7 @@
     .t2 {
       text-align: center;
       font-size: 12px;
-      color: #8a9fa6;
+      color: #666666;
     }
 
     .list {
@@ -112,7 +114,7 @@
       }
 
       .van-swipe__indicator--active {
-        background: #0860BF !important;
+        background: #008AFF !important;
       }
 
       .box {
@@ -172,14 +174,14 @@
               span {
                 margin-left: 0.01rem;
                 font-size: 14px;
-                color: #0860bf;
+                color: #008AFF;
               }
             }
 
             &.btn2 {
               margin-left: 0.32rem;
               width: 3.12rem;
-              background: #0860BF;
+              background: #008AFF;
               font-size: 12px;
               color: #ffffff;
               font-weight: bold;
@@ -228,7 +230,7 @@
         em {
           width: 14px;
           height: 14px;
-          background: #0860BF;
+          background: #008AFF;
           border-radius: 50%;
 
           .iconfont {
@@ -264,7 +266,7 @@
           height: 30px;
           line-height: 30px;
           text-align: center;
-          background: #0860BF;
+          background: #008AFF;
           border-radius: 3px;
           font-size: 12px;
           color: #ffffff;
@@ -336,7 +338,7 @@
           &:after {
             width: 100%;
             height: 5px;
-            background: #0860BF;
+            background: #008AFF;
             border-radius: 2px;
             position: absolute;
             left: 0;
@@ -377,7 +379,7 @@
           line-height: 28px;
           height: 28px;
           text-align: center;
-          background: #0860BF;
+          background: #008AFF;
           border-radius: 0px 0px 3px 3px;
           opacity: 0.9;
           font-size: 11px;
@@ -389,7 +391,7 @@
 
   .pcb-box5 {
     padding: 0.64rem 0 0.83rem 0;
-    background: #E9F2F5;
+    background: linear-gradient(180deg, #DFF0FF 0%, #FFFFFF 100%);
     border-radius: 8px 8px 0px 0px;
 
     .t1 {
@@ -401,12 +403,15 @@
     }
 
     .t2 {
-      width: 277px;
-      margin: 0 auto 0.64rem;
       font-size: 12px;
-      color: #8a9fa6;
+      color: #556266;
       text-align: center;
-      line-height: 17px;
+      margin-bottom: 0.4rem;
+
+      em {
+        font-weight: bold;
+        color: #e89721;
+      }
     }
 
     .list {
@@ -414,9 +419,58 @@
       flex-wrap: wrap;
 
       li {
+        position: relative;
         width: 4.37rem;
         margin-right: 0.29rem;
         margin-bottom: 0.27rem;
+
+        .time1 {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 43px;
+          height: 20px;
+          background: #FFFFFF;
+          border-radius: 3px;
+          border: 1px solid #FF9900;
+
+          span {
+            width: 23px;
+            font-size: 14px;
+            color: #ff9900;
+          }
+
+          em {
+            width: 20px;
+            font-size: 14px;
+            color: #ffffff;
+            background: #FF9900;
+          }
+        }
+
+        .time2 {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 43px;
+          height: 20px;
+          background: #FFFFFF;
+          border-radius: 3px;
+          border: 1px solid #FF6010;
+
+          span {
+            width: 23px;
+            font-size: 14px;
+            color: #FF6010;
+          }
+
+          em {
+            width: 20px;
+            font-size: 14px;
+            color: #ffffff;
+            background: #FF6010;
+          }
+        }
 
         &:nth-of-type(2n) {
           margin-right: 0;
@@ -439,7 +493,7 @@
 
           .tt {
             font-size: 10px;
-            color: #556266;
+            color: #666666;
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
@@ -484,8 +538,10 @@
     }
 
     .more {
-      height: 44px;
-      border-radius: 3px;
+      margin: 0.2rem 0.32rem 0 0.32rem;
+      height: 38px;
+      border-radius: 22px;
+      border: 1px solid #DDDDDD;
 
       span {
         font-size: 13px;
@@ -495,12 +551,143 @@
 
       .iconfont {
         font-size: 14px;
-        color: #adc7cf;
+        color: #ACC6CF;
       }
     }
   }
 
   .pcb-box6 {
+    position: relative;
+    background: linear-gradient(180deg, #DFF0FF 0%, #FFFFFF 100%);
+    border-radius: 8px 8px 0px 0px;
+    padding: 0.64rem 0 0 0;
+    margin-bottom: 0.67rem;
+
+    .text1 {
+      margin-bottom: 0.37rem;
+
+      li {
+        text-align: center;
+
+        .t1 {
+          font-size: 16px;
+          color: #e89721;
+          font-weight: bold;
+          margin-bottom: 0.13rem;
+        }
+
+        .t2 {
+          font-size: 12px;
+          color: #556266;
+        }
+      }
+    }
+
+    .text2 {
+      margin-bottom: 0.27rem;
+
+      li {
+        .t1 {
+          font-size: 12px;
+          color: #2e3033;
+          font-weight: bold;
+        }
+
+        .t2 {
+          font-size: 12px;
+          color: #556266;
+        }
+
+        .t3 {
+          font-size: 12px;
+          color: #008aff;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .list {
+      width: 100%;
+
+      tr {
+        padding: 0 18px;
+        th {
+          font-size: 12px;
+          color: #ffffff;
+          height: 29px;
+          background: #008AFF;
+        }
+
+        td {
+          &.bor{
+            border-bottom: 1px solid #BFDCE6;
+          }
+          height: 40px;
+          text-align: center;
+          .t1 {
+            font-size: 12px;
+            color: #2e3033;
+          }
+
+          .t2 {
+            font-size: 12px;
+            color: #ff6010;
+            font-weight: bold;
+          }
+
+          .time1 {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 43px;
+            height: 20px;
+            background: #FFFFFF;
+            border-radius: 3px;
+            border: 1px solid #FF9900;
+
+            span {
+              width: 23px;
+              font-size: 14px;
+              color: #ff9900;
+            }
+
+            em {
+              width: 20px;
+              font-size: 14px;
+              color: #ffffff;
+              background: #FF9900;
+            }
+          }
+
+          .time2 {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 43px;
+            height: 20px;
+            background: #FFFFFF;
+            border-radius: 3px;
+            border: 1px solid #FF6010;
+
+            span {
+              width: 23px;
+              font-size: 14px;
+              color: #FF6010;
+            }
+
+            em {
+              width: 20px;
+              font-size: 14px;
+              color: #ffffff;
+              background: #FF6010;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pcb-box7 {
     position: relative;
     padding: 0.91rem 0 1.75rem 0;
 
@@ -529,9 +716,10 @@
       width: 9.04rem;
       padding: 0 0.32rem;
       height: 69px;
-      background: #0860BF;
+      background: #008AFF;
       border-radius: 3px;
       margin: 0 auto;
+      z-index: 2;
 
       .iconfont {
         font-size: 40px;
@@ -548,8 +736,9 @@
       .tel {
         width: 152px;
         height: 32px;
-        background: rgba(0, 129, 210, 0.8);
         border-radius: 16px;
+        opacity: 0.8;
+        border: 1px solid #FFFFFF;
         font-size: 14px;
         color: #ffffff;
       }
@@ -574,7 +763,7 @@
     background: rgba(8, 96, 191, 0.2);
     border-radius: 3px;
     font-size: 12px;
-    color: #0860BF;
+    color: #008AFF;
     font-weight: bold;
     margin-right: 1.24rem;
   }
@@ -582,7 +771,7 @@
   .btn2 {
     width: 117px;
     height: 30px;
-    background: #0860BF;
+    background: #008AFF;
     border-radius: 3px;
     font-size: 12px;
     color: #ffffff;
