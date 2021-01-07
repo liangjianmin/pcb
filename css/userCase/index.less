@@ -15,7 +15,6 @@
       font-size: 12px;
       color: #131414;
       opacity: 0.6;
-
       &.curr {
         color: #131414;
         font-weight: bold;
@@ -70,90 +69,9 @@
         }
       }
 
-      .search-box {
-        padding-left: 24px;
-        padding-right: 30px;
-        height: 54px;
-        background: #FFFFFF;
-        white-space: nowrap;
-
-        .select-type {
-          width: 252px;
-          height: 28px;
-          line-height: 28px;
-          background: #FFFFFF;
-          border-radius: 2px;
-          border: 1px solid rgba(166, 173, 173, 0.5);
-          font-size: 14px;
-          color: #131414;
-          font-weight: bold;
-
-          option {
-            font-size: 14px;
-            color: #131414;
-          }
-        }
-
-        .inpt {
-          width: 252px;
-          height: 28px;
-          background: #FFFFFF;
-          border-radius: 2px;
-          border: 1px solid rgba(166, 173, 173, 0.5);
-          font-size: 14px;
-          text-indent: 10px;
-
-          &::-webkit-input-placeholder {
-            color: rgba(19, 20, 20, 0.6);
-          }
-
-
-        }
-
-        .color {
-          color: #131414;
-          font-weight: bold;
-
-          &::-webkit-input-placeholder {
-            color: #131414;
-            font-weight: bold;
-          }
-        }
-
-        .search-btn {
-          margin-left: 16px;
-          width: 80px;
-          height: 30px;
-          background: #0A60BE;
-          border-radius: 2px;
-          font-size: 14px;
-          color: #ffffff;
-          text-align: center;
-          line-height: 30px;
-        }
-
-        .time {
-          position: relative;
-
-          label {
-            font-size: 14px;
-            color: #131414;
-            opacity: 0.6;
-          }
-
-          .time-ico {
-            position: absolute;
-            right: 0;
-            top: 2px;
-            font-size: 24px;
-            color: #494c4d;
-          }
-        }
-      }
-
       .data-box {
-        margin-top: 12px;
         width: 100%;
+        display: none;
 
         dl {
           dt {
@@ -170,69 +88,7 @@
 
           dd {
             margin-bottom: 12px;
-            border: 2px solid transparent;
             transition: all 0.2s ease;
-
-            .top {
-              height: 40px;
-              background: #DEF1FF;
-              padding-left: 24px;
-              padding-right: 24px;
-
-              .l {
-                height: 100%;
-
-                .text {
-                  vertical-align: middle;
-
-                  .iconfont {
-                    font-size: 24px;
-                    color: #0a60be;
-                    margin-right: 6px;
-                  }
-
-                  .t1 {
-                    font-size: 14px;
-                    color: #131414;
-                    opacity: 0.6;
-                  }
-
-                  .t2 {
-                    font-size: 14px;
-                    color: #131414;
-                    font-weight: bold;
-                  }
-                }
-
-              }
-
-              .r {
-                height: 100%;
-                white-space: nowrap;
-
-                .t1 {
-                  font-size: 14px;
-                  color: #131414;
-                  opacity: 0.6;
-
-                }
-
-                .bar {
-                  margin-left: 20px;
-
-                  .iconfont {
-                    font-size: 24px;
-                    color: #0a60be;
-                  }
-
-                  span {
-                    font-size: 14px;
-                    color: #0a60be;
-                    margin-left: 4px;
-                  }
-                }
-              }
-            }
 
             .list {
               li {
@@ -241,6 +97,10 @@
                 background: #ffffff;
                 border-bottom: 1px solid #E4ECED;
 
+                &:last-child {
+                  border-bottom: none;
+                }
+
                 &:hover {
                   background: #EBF6FF;
                 }
@@ -248,6 +108,18 @@
                 .box1 {
                   white-space: nowrap;
                   padding-left: 24px;
+
+                  .new {
+                    width: 28px;
+                    height: 18px;
+                    line-height: 18px;
+                    background: #E59115;
+                    border-radius: 2px;
+                    font-size: 12px;
+                    color: #ffffff;
+                    text-align: center;
+                    margin-left: 8px;
+                  }
 
                   .t1 {
                     margin-bottom: 6px;
@@ -358,6 +230,20 @@
                   .t2 {
                     font-size: 14px;
                     color: #131414;
+                  }
+
+                  .relation {
+                    margin-top: 6px;
+
+                    span {
+                      font-size: 14px;
+                      color: #131414;
+                    }
+
+                    em {
+                      font-size: 14px;
+                      color: #0a60be;
+                    }
                   }
 
                 }
@@ -541,175 +427,17 @@
                 }
 
                 .box6 {
-                  .logistics-box {
-                    position: relative;
-                    cursor: pointer;
-
-                    .tit {
-                      font-size: 14px;
-                      color: #0A60BE;
-                    }
-
-                    .logistics {
-                      position: absolute;
-                      left: -435px;
-                      top: -29px;
-                      width: 362px;
-                      height: 423px;
-                      background: #FFFFFF;
-                      box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
-                      border: 1px solid #0A60BE;
-                      padding: 20px 24px 0 24px;
-                      z-index: 99;
-                      .arrow{
-                        position: absolute;
-                        right: -9px;
-                        top: 28px;
-                        width: 10px;
-                        height: 17px;
-                        z-index: 99999;
-                        background: url('../../images/arrow.png') no-repeat center;
-                        background-size: cover;
-                        display: block;
-                      }
-                      .logistics-tab {
-                        height: 33px;
-                        border-bottom: 1px solid #E4ECED;
-                        margin-bottom: 12px;
-
-                        .bb {
-                          width: 58px;
-                          height: 33px;
-                          float: left;
-                          font-size: 14px;
-                          color: #0A60BE;
-                          text-align: center;
-                          line-height: 33px;
-                          margin-right: 20px;
-
-                          &.curr {
-                            background: #0A60BE;
-                            color: #FFFFFF;
-                            font-weight: bold;
-                          }
-                        }
-                      }
-
-                      .text {
-                        margin-bottom: 4px;
-
-                        span {
-                          font-size: 14px;
-                          color: #131414;
-                          opacity: 0.6;
-                        }
-
-                        em {
-                          font-size: 14px;
-                          color: #131414;
-                        }
-
-                        b {
-                          font-size: 14px;
-                          color: #131414;
-                          opacity: 0.6;
-                        }
-                      }
-
-                      .logistics-list {
-                        margin-top: 16px;
-                        border-left: 2px solid #D2ECFF;
-                        height: 230px;
-                        overflow-y: auto;
-                        overflow-x: visible;
-                        .info {
-                          position: relative;
-                          margin-bottom: 16px;
-
-                          &::after {
-                            position: absolute;
-                            left: 0px;
-                            top: 0;
-                            width: 10px;
-                            height: 10px;
-                            background: #AAD0F2;
-                            content: '';
-                            border-radius: 50%;
-                          }
-
-                          .l-1 {
-                            width: 293px;
-                            color: #131414;
-                            font-weight: bold;
-                            margin-bottom: 4px;
-                            font-size: 14px;
-                            white-space: normal;
-                            padding-left: 18px;
-                          }
-
-                          .l-2 {
-                            padding-left: 18px;
-                            font-size: 14px;
-                            color: #131414;
-                            opacity: 0.6;
-                          }
-
-                          &.curr {
-                            &::after {
-                              width: 14px;
-                              height: 14px;
-                              background: #0A60BE;
-                              left: -34px;
-                            }
-
-                            .l-1 {
-                              color: #0A60BE;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-
                   .t1 {
                     font-size: 14px;
-                    color: #E59115;
-                    font-weight: bold;
-                    margin-bottom: 6px;
-                  }
-
-                  .t2 {
-                    font-size: 14px;
-                    color: #0A60BE;
-                    font-weight: bold;
-                    margin-bottom: 6px;
-                  }
-
-                  .t3 {
-                    font-size: 14px;
                     color: #131414;
-                    opacity: 0.6;
                     margin-bottom: 6px;
-                  }
-
-                  .t4 {
-                    font-size: 14px;
-                    color: #131414;
-                    font-weight: bold;
-                    margin-bottom: 6px;
-                  }
-
-                  .errror {
-                    font-size: 14px;
-                    color: #bc0a0a;
                     font-weight: bold;
                   }
-
-                  .question {
+                  .t4{
                     font-size: 14px;
                     color: #e59115;
-                    font-weight: bold;
                     margin-bottom: 6px;
+                    font-weight: bold;
                   }
                 }
 
@@ -733,6 +461,7 @@
                     color: #0a60be;
                     margin-bottom: 6px;
                     display: block;
+                    margin-left: 13px;
                   }
 
                   .collect {
@@ -751,94 +480,6 @@
               }
             }
 
-            .bottom {
-              padding-left: 24px;
-              padding-right: 24px;
-              background: #FFFFFF;
-              height: 48px;
-
-              .p-l {
-                height: 48px;
-
-                .text {
-                  span {
-                    font-size: 14px;
-                    color: #131414;
-                    opacity: 0.6;
-                  }
-
-                  em {
-                    font-size: 14px;
-                    color: #131414;
-                  }
-                }
-              }
-
-              .p-r {
-                height: 48px;
-
-                .re-btn {
-                  width: 100px;
-                  height: 30px;
-                  line-height: 30px;
-                  text-align: center;
-                  background: #0A60BE;
-                  border-radius: 2px;
-                  font-size: 14px;
-                  color: #ffffff;
-                  font-weight: bold;
-                }
-
-                .btn {
-                  width: 100px;
-                  height: 30px;
-                  background: #E59115;
-                  border-radius: 2px;
-                  line-height: 30px;
-                  font-size: 14px;
-                  color: #ffffff;
-                  text-align: center;
-                }
-
-                .t1 {
-                  font-size: 14px;
-                  color: #131414;
-                  margin-left: 20px;
-                  opacity: 0.6;
-                }
-
-                .t2 {
-                  font-size: 16px;
-                  color: #e59115;
-                }
-
-                .t3 {
-                  font-size: 14px;
-                  color: #131414;
-                }
-              }
-            }
-
-            &.disabled {
-              .top {
-                .r {
-                  .bar {
-                    .iconfont {
-                      color: #a6adad;
-                    }
-
-                    span {
-                      color: #131414;
-                      opacity: 0.6;
-                    }
-                  }
-                }
-              }
-            }
-
-            &:hover {
-              border: 2px solid #0A60BE;
-            }
           }
         }
 

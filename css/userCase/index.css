@@ -1182,77 +1182,9 @@ body {
 .section .content .right-bar .tab li.curr span {
   color: #0a60be;
 }
-.section .content .right-bar .search-box {
-  padding-left: 24px;
-  padding-right: 30px;
-  height: 54px;
-  background: #FFFFFF;
-  white-space: nowrap;
-}
-.section .content .right-bar .search-box .select-type {
-  width: 252px;
-  height: 28px;
-  line-height: 28px;
-  background: #FFFFFF;
-  border-radius: 2px;
-  border: 1px solid rgba(166, 173, 173, 0.5);
-  font-size: 14px;
-  color: #131414;
-  font-weight: bold;
-}
-.section .content .right-bar .search-box .select-type option {
-  font-size: 14px;
-  color: #131414;
-}
-.section .content .right-bar .search-box .inpt {
-  width: 252px;
-  height: 28px;
-  background: #FFFFFF;
-  border-radius: 2px;
-  border: 1px solid rgba(166, 173, 173, 0.5);
-  font-size: 14px;
-  text-indent: 10px;
-}
-.section .content .right-bar .search-box .inpt::-webkit-input-placeholder {
-  color: rgba(19, 20, 20, 0.6);
-}
-.section .content .right-bar .search-box .color {
-  color: #131414;
-  font-weight: bold;
-}
-.section .content .right-bar .search-box .color::-webkit-input-placeholder {
-  color: #131414;
-  font-weight: bold;
-}
-.section .content .right-bar .search-box .search-btn {
-  margin-left: 16px;
-  width: 80px;
-  height: 30px;
-  background: #0A60BE;
-  border-radius: 2px;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 30px;
-}
-.section .content .right-bar .search-box .time {
-  position: relative;
-}
-.section .content .right-bar .search-box .time label {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .search-box .time .time-ico {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 24px;
-  color: #494c4d;
-}
 .section .content .right-bar .data-box {
-  margin-top: 12px;
   width: 100%;
+  display: none;
 }
 .section .content .right-bar .data-box dl dt {
   background: #FFFFFF;
@@ -1266,56 +1198,7 @@ body {
 }
 .section .content .right-bar .data-box dl dd {
   margin-bottom: 12px;
-  border: 2px solid transparent;
   transition: all 0.2s ease;
-}
-.section .content .right-bar .data-box dl dd .top {
-  height: 40px;
-  background: #DEF1FF;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-.section .content .right-bar .data-box dl dd .top .l {
-  height: 100%;
-}
-.section .content .right-bar .data-box dl dd .top .l .text {
-  vertical-align: middle;
-}
-.section .content .right-bar .data-box dl dd .top .l .text .iconfont {
-  font-size: 24px;
-  color: #0a60be;
-  margin-right: 6px;
-}
-.section .content .right-bar .data-box dl dd .top .l .text .t1 {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .top .l .text .t2 {
-  font-size: 14px;
-  color: #131414;
-  font-weight: bold;
-}
-.section .content .right-bar .data-box dl dd .top .r {
-  height: 100%;
-  white-space: nowrap;
-}
-.section .content .right-bar .data-box dl dd .top .r .t1 {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .top .r .bar {
-  margin-left: 20px;
-}
-.section .content .right-bar .data-box dl dd .top .r .bar .iconfont {
-  font-size: 24px;
-  color: #0a60be;
-}
-.section .content .right-bar .data-box dl dd .top .r .bar span {
-  font-size: 14px;
-  color: #0a60be;
-  margin-left: 4px;
 }
 .section .content .right-bar .data-box dl dd .list li {
   white-space: nowrap;
@@ -1323,12 +1206,26 @@ body {
   background: #ffffff;
   border-bottom: 1px solid #E4ECED;
 }
+.section .content .right-bar .data-box dl dd .list li:last-child {
+  border-bottom: none;
+}
 .section .content .right-bar .data-box dl dd .list li:hover {
   background: #EBF6FF;
 }
 .section .content .right-bar .data-box dl dd .list li .box1 {
   white-space: nowrap;
   padding-left: 24px;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .new {
+  width: 28px;
+  height: 18px;
+  line-height: 18px;
+  background: #E59115;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 8px;
 }
 .section .content .right-bar .data-box dl dd .list li .box1 .t1 {
   margin-bottom: 6px;
@@ -1421,6 +1318,17 @@ body {
 .section .content .right-bar .data-box dl dd .list li .box1 .t2 {
   font-size: 14px;
   color: #131414;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .relation {
+  margin-top: 6px;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .relation span {
+  font-size: 14px;
+  color: #131414;
+}
+.section .content .right-bar .data-box dl dd .list li .box1 .relation em {
+  font-size: 14px;
+  color: #0a60be;
 }
 .section .content .right-bar .data-box dl dd .list li .box2 {
   font-size: 14px;
@@ -1573,153 +1481,17 @@ body {
   font-size: 14px;
   color: #131414;
 }
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box {
-  position: relative;
-  cursor: pointer;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .tit {
-  font-size: 14px;
-  color: #0A60BE;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics {
-  position: absolute;
-  left: -435px;
-  top: -29px;
-  width: 362px;
-  height: 423px;
-  background: #FFFFFF;
-  box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
-  border: 1px solid #0A60BE;
-  padding: 20px 24px 0 24px;
-  z-index: 99;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .arrow {
-  position: absolute;
-  right: -9px;
-  top: 28px;
-  width: 10px;
-  height: 17px;
-  z-index: 99999;
-  background: url('../../images/arrow.png') no-repeat center;
-  background-size: cover;
-  display: block;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .logistics-tab {
-  height: 33px;
-  border-bottom: 1px solid #E4ECED;
-  margin-bottom: 12px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .logistics-tab .bb {
-  width: 58px;
-  height: 33px;
-  float: left;
-  font-size: 14px;
-  color: #0A60BE;
-  text-align: center;
-  line-height: 33px;
-  margin-right: 20px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .logistics-tab .bb.curr {
-  background: #0A60BE;
-  color: #FFFFFF;
-  font-weight: bold;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .text {
-  margin-bottom: 4px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .text span {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .text em {
-  font-size: 14px;
-  color: #131414;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .text b {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .logistics-list {
-  margin-top: 16px;
-  border-left: 2px solid #D2ECFF;
-  height: 230px;
-  overflow-y: auto;
-  overflow-x: visible;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .logistics-list .info {
-  position: relative;
-  margin-bottom: 16px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .logistics-list .info::after {
-  position: absolute;
-  left: 0px;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  background: #AAD0F2;
-  content: '';
-  border-radius: 50%;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .logistics-list .info .l-1 {
-  width: 293px;
-  color: #131414;
-  font-weight: bold;
-  margin-bottom: 4px;
-  font-size: 14px;
-  white-space: normal;
-  padding-left: 18px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .logistics-list .info .l-2 {
-  padding-left: 18px;
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .logistics-list .info.curr::after {
-  width: 14px;
-  height: 14px;
-  background: #0A60BE;
-  left: -34px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .logistics-box .logistics .logistics-list .info.curr .l-1 {
-  color: #0A60BE;
-}
 .section .content .right-bar .data-box dl dd .list li .box6 .t1 {
   font-size: 14px;
-  color: #E59115;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .t2 {
-  font-size: 14px;
-  color: #0A60BE;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .t3 {
-  font-size: 14px;
   color: #131414;
-  opacity: 0.6;
   margin-bottom: 6px;
+  font-weight: bold;
 }
 .section .content .right-bar .data-box dl dd .list li .box6 .t4 {
   font-size: 14px;
-  color: #131414;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .errror {
-  font-size: 14px;
-  color: #bc0a0a;
-  font-weight: bold;
-}
-.section .content .right-bar .data-box dl dd .list li .box6 .question {
-  font-size: 14px;
   color: #e59115;
-  font-weight: bold;
   margin-bottom: 6px;
+  font-weight: bold;
 }
 .section .content .right-bar .data-box dl dd .list li .box7 .btn {
   width: 80px;
@@ -1739,6 +1511,7 @@ body {
   color: #0a60be;
   margin-bottom: 6px;
   display: block;
+  margin-left: 13px;
 }
 .section .content .right-bar .data-box dl dd .list li .box7 .collect .iconfont {
   font-size: 20px;
@@ -1748,72 +1521,6 @@ body {
   margin-left: 2px;
   font-size: 14px;
   color: #0a60be;
-}
-.section .content .right-bar .data-box dl dd .bottom {
-  padding-left: 24px;
-  padding-right: 24px;
-  background: #FFFFFF;
-  height: 48px;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-l {
-  height: 48px;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-l .text span {
-  font-size: 14px;
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-l .text em {
-  font-size: 14px;
-  color: #131414;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r {
-  height: 48px;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r .re-btn {
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  background: #0A60BE;
-  border-radius: 2px;
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: bold;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r .btn {
-  width: 100px;
-  height: 30px;
-  background: #E59115;
-  border-radius: 2px;
-  line-height: 30px;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r .t1 {
-  font-size: 14px;
-  color: #131414;
-  margin-left: 20px;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r .t2 {
-  font-size: 16px;
-  color: #e59115;
-}
-.section .content .right-bar .data-box dl dd .bottom .p-r .t3 {
-  font-size: 14px;
-  color: #131414;
-}
-.section .content .right-bar .data-box dl dd.disabled .top .r .bar .iconfont {
-  color: #a6adad;
-}
-.section .content .right-bar .data-box dl dd.disabled .top .r .bar span {
-  color: #131414;
-  opacity: 0.6;
-}
-.section .content .right-bar .data-box dl dd:hover {
-  border: 2px solid #0A60BE;
 }
 .no-empty {
   text-align: center;

@@ -1,0 +1,295 @@
+@import '../common/base.less';
+@import '../common/menu.less';
+
+.section {
+  .user-title {
+    padding: 16px 0;
+
+    .iconfont {
+      font-size: 12px;
+      color: #bec5c6;
+      margin: 0 10px;
+    }
+
+    a {
+      font-size: 12px;
+      color: #131414;
+      opacity: 0.6;
+
+      &.curr {
+        color: #131414;
+        font-weight: bold;
+        opacity: 1;
+      }
+    }
+  }
+
+  .content {
+    padding-bottom: 40px;
+
+    .right-bar {
+      width: 1064px;
+
+      .search-box {
+        padding-left: 24px;
+        padding-right: 30px;
+        height: 54px;
+        background: #FFFFFF;
+        white-space: nowrap;
+
+        .input-wrap {
+          .label {
+            font-size: 14px;
+            color: #131414;
+            opacity: 0.6;
+          }
+        }
+
+        .select-type {
+          width: 252px;
+          height: 28px;
+          line-height: 28px;
+          background: #FFFFFF;
+          border-radius: 2px;
+          border: 1px solid rgba(166, 173, 173, 0.5);
+          font-size: 14px;
+          color: #131414;
+          font-weight: bold;
+
+          option {
+            font-size: 14px;
+            color: #131414;
+          }
+        }
+
+        .inpt {
+          width: 252px;
+          height: 28px;
+          background: #FFFFFF;
+          border-radius: 2px;
+          border: 1px solid rgba(166, 173, 173, 0.5);
+          font-size: 14px;
+          text-indent: 10px;
+
+          &::-webkit-input-placeholder {
+            color: rgba(19, 20, 20, 0.6);
+          }
+
+
+        }
+
+        .color {
+          color: #131414;
+          font-weight: bold;
+
+          &::-webkit-input-placeholder {
+            color: #131414;
+            font-weight: bold;
+          }
+        }
+
+        .search-btn {
+          margin-left: 16px;
+          width: 80px;
+          height: 30px;
+          background: #0A60BE;
+          border-radius: 2px;
+          font-size: 14px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 30px;
+        }
+
+        .download-all {
+          width: 78px;
+          height: 28px;
+          line-height: 28px;
+          background: #FFFFFF;
+          text-align: center;
+          border-radius: 2px;
+          border: 1px solid #5998D9;
+          font-size: 14px;
+          color: #0A60BE;
+          margin-left: 16px;
+          font-weight: bold;
+        }
+
+        .time {
+          position: relative;
+
+          label {
+            font-size: 14px;
+            color: #131414;
+            opacity: 0.6;
+          }
+
+          .time-ico {
+            position: absolute;
+            right: 0;
+            top: 2px;
+            font-size: 24px;
+            color: #494c4d;
+          }
+        }
+      }
+
+      .data-box {
+        margin-top: 12px;
+        background-color: #FFFFFF;
+        padding: 16px 24px 0 24px;
+
+        dl {
+          dt {
+            background: #E8F1F2;
+            height: 40px;
+            line-height: 40px;
+
+            span {
+              font-size: 14px;
+              color: #131414;
+              opacity: 0.6;
+            }
+          }
+
+          dd {
+            margin-bottom: 12px;
+            transition: all 0.2s ease;
+
+            .list {
+              li {
+                white-space: nowrap;
+                padding: 10px 0;
+                background: #ffffff;
+                border-bottom: 1px solid #E4ECED;
+
+                &:hover {
+                  background: #EBF6FF;
+                }
+
+                .box1 {
+                  .checkbox {
+                    width: 20px;
+                    height: 20px;
+                    background: transparent;
+                    border-radius: 2px;
+                    border: 1px solid #BEC5C6;
+
+                  }
+
+                  .iconfont {
+                    font-size: 35px;
+                    color: #0860BF;
+                    margin-left: 16px;
+                  }
+
+                  .t1 {
+                    width: 192px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    font-size: 14px;
+                    color: #131414;
+                    font-weight: bold;
+                    padding-left: 2px;
+                  }
+
+                }
+
+                .box2 {
+                  font-size: 14px;
+                  color: #131414;
+                }
+
+                .box3 {
+                  font-size: 14px;
+                  color: #131414;
+                  opacity: 0.6;
+                }
+
+                .box4 {
+                  font-size: 14px;
+                  color: #131414;
+                }
+
+                .box5 {
+                  font-size: 14px;
+                  color: #131414;
+                }
+
+                .box6 {
+                  .iconfont {
+                    font-size: 28px;
+                    color: #0A60BE;
+                  }
+
+                  span {
+                    font-size: 14px;
+                    color: #131414;
+                    opacity: 0.6;
+                    margin-left: 4px;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+
+      }
+
+    }
+
+  }
+}
+
+.no-empty {
+  text-align: center;
+  margin-bottom: 30px;
+
+  .iconfont {
+    font-size: 111px;
+    color: #0860bf;
+    text-align: center;
+  }
+
+  .t1 {
+    margin-top: 40px;
+    margin-bottom: 6px;
+    font-size: 24px;
+    color: #131414;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .t2 {
+    font-size: 14px;
+    color: #131414;
+    opacity: 0.6;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .order-btn {
+    width: 152px;
+    height: 40px;
+    background: #0A60BE;
+    border-radius: 2px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.ad {
+  width: 1064px;
+  height: 60px;
+  margin: 16px 0;
+
+  img {
+    width: 1064px;
+    height: 60px;
+  }
+}
