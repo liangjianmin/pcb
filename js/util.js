@@ -76,6 +76,9 @@ $(function () {
   $(document).on('click', '.pcbbuy-head .menu', function () {
       $(".menu-box").show();
   });
+  $(document).on('click', '.home-had .bar', function () {
+    $(".menu-box").show();
+  });
   $(document).on('click', '.menu-box', function () {
     $(".menu-box").hide();
   });
