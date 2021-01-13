@@ -688,20 +688,23 @@ body {
 .pcb-banner {
   margin-top: 44px;
   width: 100%;
-  height: 4rem;
+  height: 150px;
   overflow: hidden;
   padding: 0 0.32rem;
+  box-sizing: border-box;
 }
 .pcb-banner .my-swipe {
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 .pcb-banner .my-swipe .van-swipe-item {
-  width: 100% !important;
+  box-sizing: border-box;
 }
 .pcb-banner .my-swipe .van-swipe-item .van-image {
   width: 100% !important;
   height: 100% !important;
+  box-sizing: border-box;
 }
 .pcb-banner .my-swipe .van-swipe-item img,
 .pcb-banner .my-swipe .van-swipe-item .pic {
@@ -1240,6 +1243,7 @@ body {
 }
 .pcb-content .pcb-box6 .list {
   width: 100%;
+  overflow: hidden;
 }
 .pcb-content .pcb-box6 .list dt {
   padding: 0 0.48rem;
@@ -1305,9 +1309,71 @@ body {
   color: #ffffff;
   background: #FF6010;
 }
+.pcb-content .pcb-box6 .shaidan {
+  height: 200px;
+  overflow: hidden;
+}
+.pcb-content .pcb-box6 .shaidan ul {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.pcb-content .pcb-box6 .shaidan ul li {
+  margin: 0 0.48rem;
+  height: 40px;
+  border-bottom: 1px solid #BFDCE6;
+}
+.pcb-content .pcb-box6 .shaidan ul li .box {
+  flex: 0 0 16%;
+}
+.pcb-content .pcb-box6 .shaidan ul li .t1 {
+  font-size: 12px;
+  color: #2e3033;
+}
+.pcb-content .pcb-box6 .shaidan ul li .t2 {
+  font-size: 12px;
+  color: #ff6010;
+  font-weight: bold;
+}
+.pcb-content .pcb-box6 .shaidan ul li .time1 {
+  width: 43px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #FF9900;
+}
+.pcb-content .pcb-box6 .shaidan ul li .time1 b {
+  width: 23px;
+  font-size: 14px;
+  color: #ff9900;
+}
+.pcb-content .pcb-box6 .shaidan ul li .time1 em {
+  width: 20px;
+  font-size: 14px;
+  color: #ffffff;
+  background: #FF9900;
+}
+.pcb-content .pcb-box6 .shaidan ul li .time2 {
+  width: 43px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #FF6010;
+}
+.pcb-content .pcb-box6 .shaidan ul li .time2 b {
+  width: 23px;
+  font-size: 14px;
+  color: #FF6010;
+}
+.pcb-content .pcb-box6 .shaidan ul li .time2 em {
+  width: 20px;
+  font-size: 14px;
+  color: #ffffff;
+  background: #FF6010;
+}
 .pcb-content .pcb-box7 {
   position: relative;
-  padding: 0.91rem 0 1.75rem 0;
+  padding: 0 0 1.75rem 0;
 }
 .pcb-content .pcb-box7 .list {
   padding-left: 0.48rem;

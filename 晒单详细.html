@@ -93,158 +93,36 @@
                 <span class="t1">我也要晒单</span>
             </div>
         </div>
-        <ul class="list row">
-            <li>
-                <div class="time-b row rowCenter verCenter">
-                    <span class="row rowCenter verCenter">48</span>
-                    <em class="row rowCenter verCenter">h</em>
-                </div>
-                <div class="pic">
-                    <img src="./images/index/b1.png" alt="">
-                </div>
-                <div class="text">
-                    <p class="t1">猎板是我打板速度最快的，服务态度非常好，下次还会在下次还会在猎下次还会在猎猎</p>
-                    <div class="bottom row bothSide">
-                        <div class="person row verCenter">
-                            <img src="./images/abouts/t2.png" alt="">
-                            <span>王先生</span>
-                        </div>
-                        <div class="star row verCenter">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s2.png" alt="">
+        <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="onLoad">
+            <ul class="list row">
+                <li v-for="item in list" :key="item" >
+                    <div class="time-b row rowCenter verCenter">
+                        <span class="row rowCenter verCenter">48</span>
+                        <em class="row rowCenter verCenter">h</em>
+                    </div>
+                    <div class="pic">
+                        <img src="./images/index/b1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="t1">猎板是我打板速度最快的，服务态度非常好，下次还会在下次还会在猎下次还会在猎猎</p>
+                        <div class="bottom row bothSide">
+                            <div class="person row verCenter">
+                                <img src="./images/abouts/t2.png" alt="">
+                                <span>王先生</span>
+                            </div>
+                            <div class="star row verCenter">
+                                <img src="./images/index/s1.png" alt="">
+                                <img src="./images/index/s1.png" alt="">
+                                <img src="./images/index/s1.png" alt="">
+                                <img src="./images/index/s1.png" alt="">
+                                <img src="./images/index/s2.png" alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <div class="time-b row rowCenter verCenter">
-                    <span class="row rowCenter verCenter">48</span>
-                    <em class="row rowCenter verCenter">h</em>
-                </div>
-                <div class="pic">
-                    <img src="./images/index/b1.png" alt="">
-                </div>
-                <div class="text">
-                    <p class="t1">猎板是我打板速度最快的，服务态度非常好，下次还会在下次还会在猎下次还会在猎猎</p>
-                    <div class="bottom row bothSide">
-                        <div class="person row verCenter">
-                            <img src="./images/abouts/t2.png" alt="">
-                            <span>王先生</span>
-                        </div>
-                        <div class="star row verCenter">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="time-a row rowCenter verCenter">
-                    <span class="row rowCenter verCenter">24</span>
-                    <em class="row rowCenter verCenter">h</em>
-                </div>
-                <div class="pic">
-                    <img src="./images/index/b1.png" alt="">
-                </div>
-                <div class="text">
-                    <p class="t1">猎板是我打板速度最快的，服务态度非常好，下次还会在下次还会在猎下次还会在猎猎</p>
-                    <div class="bottom row bothSide">
-                        <div class="person row verCenter">
-                            <img src="./images/abouts/t2.png" alt="">
-                            <span>王先生</span>
-                        </div>
-                        <div class="star row verCenter">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="time-a row rowCenter verCenter">
-                    <span class="row rowCenter verCenter">24</span>
-                    <em class="row rowCenter verCenter">h</em>
-                </div>
-                <div class="pic">
-                    <img src="./images/index/b1.png" alt="">
-                </div>
-                <div class="text">
-                    <p class="t1">猎板是我打板速度最快的，服务态度非常好，下次还会在下次还会在猎下次还会在猎猎</p>
-                    <div class="bottom row bothSide">
-                        <div class="person row verCenter">
-                            <img src="./images/abouts/t2.png" alt="">
-                            <span>王先生</span>
-                        </div>
-                        <div class="star row verCenter">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="time-a row rowCenter verCenter">
-                    <span class="row rowCenter verCenter">24</span>
-                    <em class="row rowCenter verCenter">h</em>
-                </div>
-                <div class="pic">
-                    <img src="./images/index/b1.png" alt="">
-                </div>
-                <div class="text">
-                    <p class="t1">猎板是我打板速度最快的，服务态度非常好，下次还会在下次还会在猎下次还会在猎猎</p>
-                    <div class="bottom row bothSide">
-                        <div class="person row verCenter">
-                            <img src="./images/abouts/t2.png" alt="">
-                            <span>王先生</span>
-                        </div>
-                        <div class="star row verCenter">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="time-a row rowCenter verCenter">
-                    <span class="row rowCenter verCenter">24</span>
-                    <em class="row rowCenter verCenter">h</em>
-                </div>
-                <div class="pic">
-                    <img src="./images/index/b1.png" alt="">
-                </div>
-                <div class="text">
-                    <p class="t1">猎板是我打板速度最快的，服务态度非常好，下次还会在下次还会在猎下次还会在猎猎</p>
-                    <div class="bottom row bothSide">
-                        <div class="person row verCenter">
-                            <img src="./images/abouts/t2.png" alt="">
-                            <span>王先生</span>
-                        </div>
-                        <div class="star row verCenter">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s1.png" alt="">
-                            <img src="./images/index/s2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </van-list>
+
     </div>
     <!--section end-->
 
@@ -339,11 +217,35 @@
   new Vue({
     el: '#app',
     data: {
-      show: false
+      list: [],
+      loading: false,
+      finished: false
     },
     created() {
+
     },
     methods: {
+      onLoad() {
+
+
+
+        // setTimeout 仅做示例，真实场景中一般为 ajax 请求
+        setTimeout(() => {
+          for (let i = 0; i < 10; i++) {
+            this.list.push(this.list.length + 1);
+          }
+
+          // 加载状态结束
+          this.loading = false;
+
+          // 数据全部加载完成
+          if (this.list.length >= 40) {
+            this.finished = true;
+          }
+        }, 1000);
+      }
+
+
 
     }
   });

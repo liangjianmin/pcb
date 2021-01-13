@@ -24,21 +24,22 @@
 <body>
 <div id="app">
     <div class="home-had row bothSide verCenter">
-        <a class="logo">
-
-        </a>
+        <a href="" class="logo"></a>
         <h2>猎板PCB</h2>
         <div class="bar row verCenter">
             <i class="iconfont iconicondanseshouji7"></i>
         </div>
     </div>
     <div class="pcb-banner">
-        <van-swipe class="my-swipe" :autoplay="30000000" indicator-color="white">
+        <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
             <van-swipe-item>
-               <div class="pic" style="background: url('https://www.pcbhunt.com/images/home/lb2.png');background-size: cover;"></div>
+                <img src="./images/index/banner1.png"/>
             </van-swipe-item>
             <van-swipe-item>
-                <van-image fit="cover" src="http://img.ichunt.com/images/cms/202001/17/dc3f594fce33ed782f16172958b64746.jpg" alt=""/>
+                <img src="./images/index/banner2.png"/>
+            </van-swipe-item>
+            <van-swipe-item>
+                <img src="./images/index/banner3.png"/>
             </van-swipe-item>
         </van-swipe>
     </div>
@@ -116,47 +117,67 @@
             </div>
         </div>
         <div class="pcb-box4a">
-            <ul class="tab">
-                <li class="curr">板边包铜</li>
-                <li>双色油墨</li>
-                <li>插接孔</li>
-                <li>喇叭孔</li>
-                <li>方槽</li>
-                <li>竞铭沉铜电镀</li>
-            </ul>
-            <ul class="list">
-                <li>
-                    <img src="./images/index/b1.png" alt="">
-                </li>
-            </ul>
+            <van-tabs v-model="actives" :color="color" :ellipsis="ellipsis">
+                <van-tab title="板边包铜">
+                    <ul class="list">
+                        <li>
+                            <img src="./images/index/b1.png" alt="">
+                        </li>
+                    </ul>
+                </van-tab>
+                <van-tab title="双色油墨">
+                    1
+                </van-tab>
+                <van-tab title="插接孔">
+                    2
+                </van-tab>
+                <van-tab title="喇叭孔">
+                    3
+                </van-tab>
+                <van-tab title="方槽">
+                    4
+                </van-tab>
+            </van-tabs>
+
         </div>
         <div class="pcb-box4">
             <p class="t1">自有工厂</p>
             <p class="t2">
                 猎板珠海生产基地，年产能<em>25平方</em>，核心设备数量<em>160+</em>，员工人数<em>200+</em>，多层线路工程师<em>50+</em>。猎板以互联网+工业4.0技术为依托，利用大数据、云计算、物联网等新技术，全面实现了线上线下协同生产。
             </p>
-            <ul class="tab">
-                <li class="curr">东台钻机</li>
-                <li>竞铭沉铜电镀</li>
-                <li>DES水平处理线</li>
-                <li>阻焊字符</li>
-                <li>东台钻机</li>
-                <li>竞铭沉铜电镀</li>
-            </ul>
-            <ul class="list">
-                <li>
-                    <img src="./images/index/b1.png" alt="">
-                    <p>高速六轴钻孔机</p>
-                </li>
-                <li>
-                    <img src="./images/index/b1.png" alt="">
-                    <p>双头钻孔机</p>
-                </li>
-                <li>
-                    <img src="./images/index/b1.png" alt="">
-                    <p>全进口西风主轴</p>
-                </li>
-            </ul>
+            <van-tabs v-model="active" :color="color" :ellipsis="ellipsis">
+                <van-tab title="东台钻机">
+                    <ul class="list">
+                        <li>
+                            <img src="./images/index/b1.png" alt="">
+                            <p>高速六轴钻孔机</p>
+                        </li>
+                        <li>
+                            <img src="./images/index/b1.png" alt="">
+                            <p>双头钻孔机</p>
+                        </li>
+                        <li>
+                            <img src="./images/index/b1.png" alt="">
+                            <p>全进口西风主轴</p>
+                        </li>
+                    </ul>
+                </van-tab>
+                <van-tab title="竞铭沉铜电镀">
+                    1
+                </van-tab>
+                <van-tab title="DES水平处理线">
+                    2
+                </van-tab>
+                <van-tab title="阻焊字符">
+                    3
+                </van-tab>
+                <van-tab title="阻焊字符">
+                    4
+                </van-tab>
+                <van-tab title="阻焊字符">
+                    5
+                </van-tab>
+            </van-tabs>
         </div>
         <div class="pcb-box-a">
             <p class="t1">发展历程</p>
@@ -311,7 +332,7 @@
                     <span class="t3">2956单</span>
                 </li>
             </ul>
-            <dl class="list">
+            <dl class="list" >
                 <dt class="row verCenter avarage">
                     <span>客户</span>
                     <span style="text-align: center">下单日期</span>
@@ -320,72 +341,271 @@
                     <span style="text-align: center">交期</span>
                     <span style="text-align: right">金额</span>
                 </dt>
-                <dd class="row verCenter avarage">
-                    <span class="t1 box">蔡*</span>
-                    <span class="t1 box" style="text-align: center">12-11</span>
-                    <span class="t1 box" style="text-align: center">2层</span>
-                    <span class="t1 box" style="text-align: center">15 PCS</span>
-                    <div class="box" style="text-align: center">
+            </dl>
+            <div class="shaidan">
+                <ul>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
                         <span class="time1 row verCenter">
                             <b class="row rowCenter verCenter">24</b>
                             <em class="row rowCenter verCenter">H</em>
                         </span>
-                    </div>
-                    <span class="t2">￥127.00</span>
-                </dd>
-                <dd class="row verCenter avarage">
-                    <span class="t1 box">蔡*</span>
-                    <span class="t1 box" style="text-align: center">12-11</span>
-                    <span class="t1 box" style="text-align: center">2层</span>
-                    <span class="t1 box" style="text-align: center">15 PCS</span>
-                    <div class="box" style="text-align: center">
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
                         <span class="time2 row verCenter">
                             <b class="row rowCenter verCenter">48</b>
                             <em class="row rowCenter verCenter">H</em>
                         </span>
-                    </div>
-                    <span class="t2">￥127.00</span>
-                </dd>
-                <dd class="row verCenter avarage">
-                    <span class="t1 box">蔡*</span>
-                    <span class="t1 box" style="text-align: center">12-11</span>
-                    <span class="t1 box" style="text-align: center">2层</span>
-                    <span class="t1 box" style="text-align: center">15 PCS</span>
-                    <div class="box" style="text-align: center">
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
                         <span class="time1 row verCenter">
                             <b class="row rowCenter verCenter">24</b>
                             <em class="row rowCenter verCenter">H</em>
                         </span>
-                    </div>
-                    <span class="t2">￥127.00</span>
-                </dd>
-                <dd class="row verCenter avarage">
-                    <span class="t1 box">蔡*</span>
-                    <span class="t1 box" style="text-align: center">12-11</span>
-                    <span class="t1 box" style="text-align: center">2层</span>
-                    <span class="t1 box" style="text-align: center">15 PCS</span>
-                    <div class="box" style="text-align: center">
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
                         <span class="time1 row verCenter">
                             <b class="row rowCenter verCenter">24</b>
                             <em class="row rowCenter verCenter">H</em>
                         </span>
-                    </div>
-                    <span class="t2">￥127.00</span>
-                </dd>
-                <dd class="row verCenter avarage">
-                    <span class="t1 box">蔡*</span>
-                    <span class="t1 box" style="text-align: center">12-11</span>
-                    <span class="t1 box" style="text-align: center">2层</span>
-                    <span class="t1 box" style="text-align: center">15 PCS</span>
-                    <div class="box" style="text-align: center">
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
                         <span class="time2 row verCenter">
+                            <b class="row rowCenter verCenter">48</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time1 row verCenter">
                             <b class="row rowCenter verCenter">24</b>
                             <em class="row rowCenter verCenter">H</em>
                         </span>
-                    </div>
-                    <span class="t2">￥127.00</span>
-                </dd>
-            </dl>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time1 row verCenter">
+                            <b class="row rowCenter verCenter">24</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time2 row verCenter">
+                            <b class="row rowCenter verCenter">48</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time1 row verCenter">
+                            <b class="row rowCenter verCenter">24</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time1 row verCenter">
+                            <b class="row rowCenter verCenter">24</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time2 row verCenter">
+                            <b class="row rowCenter verCenter">48</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time1 row verCenter">
+                            <b class="row rowCenter verCenter">24</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time1 row verCenter">
+                            <b class="row rowCenter verCenter">24</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time2 row verCenter">
+                            <b class="row rowCenter verCenter">48</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time1 row verCenter">
+                            <b class="row rowCenter verCenter">24</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time2 row verCenter">
+                            <b class="row rowCenter verCenter">48</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time1 row verCenter">
+                            <b class="row rowCenter verCenter">24</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time2 row verCenter">
+                            <b class="row rowCenter verCenter">48</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time1 row verCenter">
+                            <b class="row rowCenter verCenter">24</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                    <li class="row verCenter avarage">
+                        <span class="t1 box">蔡*</span>
+                        <span class="t1 box" style="text-align: center">12-11</span>
+                        <span class="t1 box" style="text-align: center">2层</span>
+                        <span class="t1 box" style="text-align: center">15 PCS</span>
+                        <div class="box" style="text-align: center">
+                        <span class="time2 row verCenter">
+                            <b class="row rowCenter verCenter">48</b>
+                            <em class="row rowCenter verCenter">H</em>
+                        </span>
+                        </div>
+                        <span class="t2">￥127.00</span>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="pcb-box7">
             <ul class="list row">
@@ -510,12 +730,39 @@
 <script src="./js/util.js"></script>
 <script>
 
+    $(function () {
+
+      var $notesTxt = $(".shaidan ul");
+      if ($notesTxt.length > 0) {
+        var z = 0;
+
+        function up() {
+          $notesTxt.animate({
+            'top': (z - 40) + 'px'
+          }, 1500, 'linear', function () {
+            $notesTxt.css({
+              'top': '0px'
+            }).find(".li:first").appendTo($notesTxt);
+            up();
+          });
+        }
+        up();
+      }
+
+
+    })
+
   new Vue({
     el: '#app',
     data: {
-      show: false
+      show: false,
+      ellipsis: false,
+      actives: 0,
+      active: 0,
+      color: '#008AFF'
     },
     created() {
+
     },
     methods: {}
   });
