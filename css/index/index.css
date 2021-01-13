@@ -781,11 +781,10 @@ body {
   overflow: visible !important;
 }
 .pcb-content .pcb-box2 .list .van-swipe-item {
-  width: 46% !important;
   margin-right: 0.32rem !important;
 }
 .pcb-content .pcb-box2 .list .van-swipe__indicators {
-  bottom: -28px !important;
+  bottom: -17px !important;
 }
 .pcb-content .pcb-box2 .list .van-swipe__indicator {
   width: 8px !important;
@@ -1385,8 +1384,10 @@ body {
   padding: 0 0 1.75rem 0;
 }
 .pcb-content .pcb-box7 .list {
+  width: 100%;
   padding-left: 0.48rem;
   overflow-x: auto;
+  white-space: nowrap;
 }
 .pcb-content .pcb-box7 .list li {
   width: 3.57rem;
