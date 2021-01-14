@@ -985,6 +985,7 @@ body {
   width: 100%;
 }
 .pcb-content .pcb-box4 {
+  overflow-x: hidden;
   padding: 0.53rem 0 0.53rem 0;
   background: linear-gradient(180deg, #DFF0FF 0%, #FFFFFF 100%);
   border-radius: 8px 8px 0px 0px;
@@ -1042,6 +1043,9 @@ body {
 .pcb-content .pcb-box4 .list {
   margin-top: 0.52rem;
   text-align: center;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-left: 0.32rem;
 }
 .pcb-content .pcb-box4 .list li {
   position: relative;
