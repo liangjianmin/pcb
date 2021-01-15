@@ -1169,6 +1169,7 @@ body {
   border-radius: 3px;
 }
 .pcb-content .pcb-box5 .list li .text .tt {
+  height: 32px;
   font-size: 10px;
   color: #666666;
   display: -webkit-box;
