@@ -153,6 +153,103 @@
                         <i class="iconfont iconicondanseshouji6"></i>
                         <i class="iconfont iconicondanseshouji13"></i>
                     </div>
+                    <div class="open">
+                        <dl class="dl-box">
+                            <dd>
+                                <p class="t1">·Layer count</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>1,2,4,6 layers</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">The number of copper layers in the board.</em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Controlled Impedance</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>4/6 layer, default layer stack-up</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t color1">Controlled Impedance PCB Layer Stackup JLCPCB Impedance Calculator</em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Material </p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>FR-4</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t color1">FR-4 Standard Tg 130-140/ Tg 155</em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Dielectric constant </p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>4.5(double-side PCB)</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">
+                                        7628 structure 4.6<br/>
+                                        2313 structure 4.05<br/>
+                                        2116 structure 4.25<br/>
+                                    </em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Max. Dimension</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>400x500mm</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">The maximum dimension JLCPCB can accept</em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Dimension Tolerance</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>±0.2mm</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">±0.2mm for CNC routing, and ±0.4mm for V- scoring </em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Board Thickness</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>0.4/0.6/0.8/1.0/1.2/1.6/2.0mm</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">The thickness of finished board.</em>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="t1">·Thickness Tolerance( Thickness≥1.0mm)</p>
+                                <p class="t2">
+                                    <span>Capability：</span>
+                                    <em>400x500mm</em>
+                                </p>
+                                <p class="t2 lbBox">
+                                    <span class="va-t">Notes ：</span>
+                                    <em class="lineBlock va-t">e.g. For the 1.6mm board thickness, the finished board thickness ranges from 1.44mm(T-1.6×10%) to 1.76mm(T+1.6×10%) </em>
+                                </p>
+                            </dd>
+                        </dl>
+                        <a href="javascript:;" class="hide-btn">隐藏</a>
+                    </div>
                 </li>
                 <li>
                     <div class="shrink row bothSide verCenter">
@@ -303,6 +400,7 @@
 
   $(function () {
     $(document).on('click', '.process-section .list li', function () {
+      $('.process-section .list li').removeClass('curr');
       if ($(this).hasClass('curr')) {
         $(this).removeClass('curr');
       } else {
