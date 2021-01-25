@@ -843,6 +843,9 @@ body {
   font-size: 12px;
   color: #666666;
 }
+.caseshow .section-detail .detail .share-box-ico .box .def {
+  color: #999;
+}
 .caseshow .section-detail .title {
   padding: 0.67rem 0.32rem 0.27rem 0.32rem;
   background: #F7F8FA;
