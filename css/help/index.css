@@ -738,13 +738,45 @@ body {
   padding-top: 0.4rem;
   border-top: 1px solid #E7E7E7;
 }
-.help .detail .bar-text .iconfont {
+.help .detail .bar-text .box .iconfont {
   font-size: 24px;
-  color: #008aff;
+  color: #666666;
 }
-.help .detail .bar-text span {
+.help .detail .bar-text .box span {
   font-size: 14px;
   color: #323233;
   margin-left: 0.13rem;
+}
+.help .detail .bar-text .box.curr .iconfont {
+  color: #008AFF;
+}
+.help .detail .show .wrap {
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+.help .detail .show .wrap textarea {
+  width: 9.37rem;
+  margin: 0 auto;
+  height: 125px;
+  background: #F7F8FA;
+  border-radius: 1px;
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  padding: 9px;
+  font-size: 14px;
+  display: block;
+  resize: none;
+}
+.help .detail .show .wrap textarea::-webkit-input-placeholder {
+  color: #cccccc;
+}
+.help .detail .show .btn {
+  margin: 0 12px;
+  height: 44px;
+  background: #008AFF;
+  box-shadow: 0px 4px 8px 0px rgba(0, 138, 255, 0.2);
+  border-radius: 22px;
+  font-size: 16px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=index.css.map */

@@ -54,6 +54,12 @@
                 <span>我要反馈</span>
             </div>
         </div>
+        <div class="show" style="display: none">
+            <div class="wrap">
+                <textarea placeholder="请输入我要反馈信息"></textarea>
+            </div>
+            <a href="javascript:;" class="btn row rowCenter verCenter">提交反馈</a>
+        </div>
     </div>
     <!--section end-->
 
@@ -146,7 +152,15 @@
 <script>
 
   $(function () {
-
+    $(document).on('click', '.bar-text .box', function () {
+      var index=$(this).index();
+      $(this).addClass('curr').siblings('.box').removeClass('curr');
+      if(index == 2){
+        $(".show").show();
+      }else{
+        $(".show").hide();
+      }
+    });
   })
 
 </script>
