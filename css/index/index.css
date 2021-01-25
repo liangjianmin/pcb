@@ -1445,4 +1445,7 @@ body {
 .van-swipe__indicator--active {
   background: #008AFF !important;
 }
+.van-tabs__wrap--scrollable .van-tab {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=index.css.map */
