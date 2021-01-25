@@ -706,6 +706,7 @@ body {
 .contact-content .section .title .pic {
   margin-top: 0.27rem;
   margin-bottom: 0.47rem;
+  height: 144px;
 }
 .contact-content .section .title .pic img {
   width: 100%;

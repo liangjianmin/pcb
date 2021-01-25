@@ -21,6 +21,7 @@
     <script src="./js/jquery.min.js"></script>
     <link rel="stylesheet" href="./js/vue/index.css"/>
     <link rel="stylesheet" href="./css/contact/index.css">
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=67jMQ5DmYTe1TLMBKFUTcZAR" type="text/javascript"></script>
 </head>
 <body>
 <div id="app">
@@ -91,17 +92,13 @@
                     <i class="iconfont icondingwei"></i>
                     <span>杭州市拱墅区万达广场C座16楼</span>
                 </p>
-                <div class="pic">
-                    <img src="./images/contact/map1.jpg" alt="">
-                </div>
+                <div class="pic" id="allmap"></div>
                 <p class="t1">猎板（珠海）生产基地</p>
                 <p class="t2">
                     <i class="iconfont icondingwei"></i>
                     <span>珠海市金湾区红旗镇幸福中路8号明宏工业园A厂房</span>
                 </p>
-                <div class="pic">
-                    <img src="./images/contact/map2.jpg" alt="">
-                </div>
+                <div class="pic" id="allmaps"></div>
             </div>
         </div>
     </div>
@@ -192,16 +189,27 @@
 <script src="./js/vue/vant.min.js"></script>
 <script src="./js/util.js"></script>
 <script>
-
-  new Vue({
-    el: '#app',
-    data: {
-      show: false
-    },
-    created() {
-    },
-    methods: {}
+  $(function () {
+    ShowMap('120.128126,30.337052', '杭州猎板网络科技有限公司', '浙江省杭州市拱墅区万达商业中心', '86-17706535310', '021-888888888', '20');
+    ShowMaps('113.327317,22.11858', '猎板（珠海）生产基地', '珠海市金湾区红旗镇幸福中路8号明宏工业园A厂房', '86-17706535310', '021-888888888', '20');
   });
+
+  function ShowMap(zuobiao, name, addrsee, phone, chuanzhen, zoom) {
+    var arrzuobiao = zuobiao.split(',');
+    var map = new BMap.Map("allmap");
+    map.centerAndZoom(new BMap.Point(arrzuobiao[0], arrzuobiao[1]), zoom);
+    map.addControl(new BMap.NavigationControl());
+    var marker = new BMap.Marker(new BMap.Point(arrzuobiao[0], arrzuobiao[1]));
+    map.addOverlay(marker);
+  }
+  function ShowMaps(zuobiao, name, addrsee, phone, chuanzhen, zoom) {
+    var arrzuobiao = zuobiao.split(',');
+    var map = new BMap.Map("allmaps");
+    map.centerAndZoom(new BMap.Point(arrzuobiao[0], arrzuobiao[1]), zoom);
+    map.addControl(new BMap.NavigationControl());
+    var marker = new BMap.Marker(new BMap.Point(arrzuobiao[0], arrzuobiao[1]));
+    map.addOverlay(marker);
+  }
 
 </script>
 </body>
