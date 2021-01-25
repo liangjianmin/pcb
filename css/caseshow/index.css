@@ -823,11 +823,17 @@ body {
 .caseshow .section-detail .detail .share-box .my-swipe {
   width: 100%;
   height: 100%;
-}
-.caseshow .section-detail .detail .share-box .my-swipe .van-swipe-item {
   width: 100% !important;
 }
+.caseshow .section-detail .detail .share-box .my-swipe .van-swipe-item {
+  box-sizing: border-box;
+}
 .caseshow .section-detail .detail .share-box .my-swipe .van-swipe-item .van-image {
+  width: 100% !important;
+  height: 100% !important;
+}
+.caseshow .section-detail .detail .share-box .my-swipe .van-swipe-item img,
+.caseshow .section-detail .detail .share-box .my-swipe .van-swipe-item .pic {
   width: 100% !important;
   height: 100% !important;
 }
