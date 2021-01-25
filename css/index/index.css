@@ -780,14 +780,8 @@ body {
 .pcb-content .pcb-box2 .list {
   margin-top: 0.53rem;
 }
-.pcb-content .pcb-box2 .list .van-swipe {
-  overflow: visible !important;
-}
-.pcb-content .pcb-box2 .list .van-swipe-item {
-  margin-right: 0.32rem !important;
-}
 .pcb-content .pcb-box2 .list .van-swipe__indicators {
-  bottom: -17px !important;
+  bottom: 13px !important;
 }
 .pcb-content .pcb-box2 .list .van-swipe__indicator {
   width: 8px !important;
@@ -803,7 +797,7 @@ body {
   box-shadow: 0px 7px 10px 0px rgba(138, 159, 166, 0.2);
   border-radius: 3px;
   border: 1px solid #BFDCE6;
-  padding: 0.37rem 0.31rem;
+  padding: 0.37rem 0.31rem 40px 0.31rem;
 }
 .pcb-content .pcb-box2 .list .box .top .pic {
   width: 134px;
@@ -1445,7 +1439,7 @@ body {
   width: 12px !important;
   height: 4px !important;
   background: #BFDCE6 !important;
-  border-radius: 2px !important;
+  border-radius: 6px !important;
   opacity: 1 !important;
 }
 .van-swipe__indicator--active {
