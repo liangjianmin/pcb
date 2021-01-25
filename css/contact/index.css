@@ -736,6 +736,11 @@ body {
   color: #323233;
   font-weight: bold;
 }
+.contact-content .section .type1 li a {
+  font-size: 14px;
+  color: #323233;
+  font-weight: bold;
+}
 .contact-content .section .type2 {
   margin-bottom: 0.6rem;
 }
