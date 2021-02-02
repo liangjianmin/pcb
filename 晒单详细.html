@@ -64,13 +64,13 @@
             <div class="share-box">
                 <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
                     <van-swipe-item>
-                        <img src="./images/index/banner1.png"/>
+                        <div class="pic" style="background: url('./images/index/banner1.png') no-repeat center;background-size: cover;"></div>
                     </van-swipe-item>
                     <van-swipe-item>
-                        <img src="./images/index/banner2.png"/>
+                        <div class="pic" style="background: url('./images/index/banner2.png') no-repeat center;background-size: cover;"></div>
                     </van-swipe-item>
                     <van-swipe-item>
-                        <img src="./images/index/banner3.png"/>
+                        <div class="pic" style="background: url('./images/index/banner3.png') no-repeat center;background-size: cover;"></div>
                     </van-swipe-item>
                 </van-swipe>
             </div>
@@ -126,7 +126,6 @@
                 </li>
             </ul>
         </van-list>
-
     </div>
     <!--section end-->
 
@@ -230,8 +229,6 @@
     },
     methods: {
       onLoad() {
-
-
 
         // setTimeout 仅做示例，真实场景中一般为 ajax 请求
         setTimeout(() => {

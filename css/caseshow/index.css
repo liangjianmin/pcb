@@ -834,7 +834,10 @@ body {
   width: 100% !important;
   height: 100% !important;
 }
-.caseshow .section-detail .detail .share-box .my-swipe .van-swipe-item img,
+.caseshow .section-detail .detail .share-box .my-swipe .van-swipe-item img {
+  width: 100% !important;
+  height: 100% !important;
+}
 .caseshow .section-detail .detail .share-box .my-swipe .van-swipe-item .pic {
   width: 100% !important;
   height: 100% !important;
