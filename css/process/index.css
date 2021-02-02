@@ -598,6 +598,8 @@ body {
 .pcbbuy-head .menu {
   position: absolute;
   right: 0.48rem;
+  top: 6px;
+  z-index: 9999;
 }
 .pcbbuy-head .menu .iconfont {
   font-size: 32px;
